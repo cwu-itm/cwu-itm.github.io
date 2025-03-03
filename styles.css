@@ -4,35 +4,69 @@
 
 html {
  font-size:16px;
+ color:#333;
+ font-family: Poppins, sans-serif;
 }
 
 body { 
  background-color: #FFF;
- margin:5% auto;
+ margin:2% auto;
  width:90%;
- font-family: Oswald, 'Poppins', sans-serif;
- font-weight:100;
-}
-
-main {
- margin:40px 0;
- max-width:600px;
+ max-width:39rem;
+ font-weight:400;
 }
 
 
-.reg {
-	background-color:forestgreen;
-	color:#ddd;
+
+header {
+	display:grid;
+	grid-template-rows: 1fr;
+	gap: 0;
+	justify-content: start;
+
 }
 
-.reg:active,
-.leave:active {
-	background-color:#444;
-	color:white;
+header p {
+	margin-top:-1rem;
+	padding:0;
+	text-align: right;
+	font-size:1rem;
+}
+
+nav {
+
+	margin-top:.75rem;
+	background-color:darkslategrey;
+	padding:.25rem .5rem;
+	border-radius:5px;
+}
+
+nav ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content:space-evenly;
+}
+
+nav a {
+
+	text-decoration: none;
+	color:#EEE;
+
+}
+
+h1, h2, h3 {
+
+	font-family: Oswald, sans-serif;
+
 }
 
 h1 {
-	font-size:2.5rem;
+	font-size:4rem;
+	margin-bottom:0;
+
 }
 
 h2 {
@@ -42,4 +76,13 @@ h2 {
 	text-transform: uppercase;
 }
 
+main {
+	margin:4rem 0;
+	
+   }
 
+   main p {
+
+	font-size:.875rem;
+
+   }
