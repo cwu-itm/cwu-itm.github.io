@@ -78,7 +78,6 @@ nav ul {
     transition: color 0.3s ease;
 	text-decoration: underline;
 	text-underline-offset:.5rem;
-	
 }
 
 nav a {
@@ -135,7 +134,8 @@ nav a:hover span:nth-child(even) {
     transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content div {
     color: #333;
     margin: .875rem; 1rem;
 	font-size: 1.25rem;
