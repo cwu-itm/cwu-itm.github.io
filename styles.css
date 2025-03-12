@@ -13,7 +13,7 @@ body {
     background-color: #FFF;
     margin: 2% auto;
     width: 90%;
-    max-width: 39rem;
+    max-width: 59rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.6;
@@ -24,8 +24,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 0;
+}
+
+h1 span {
+
+    color:rgb(150, 40, 62);
 }
 
 h2 {
@@ -35,8 +40,22 @@ h2 {
     text-transform: uppercase;
 }
 
+#banner {
+
+width:100%;
+margin-top:1.5rem;
+margin-bottom:1rem;
+
+}
+
+#banner img {
+
+    width:100%; 
+    display:block;
+}
+
 main {
-    margin: 4rem 0;
+    margin:0;
 }
 
 main p {
@@ -58,7 +77,6 @@ header p {
 /* Navigation Styles */
 nav {
     margin-top: .75rem;
-    border-radius: 5px;
 }
 
 nav ul {
@@ -70,16 +88,6 @@ nav ul {
 	justify-content: space-between;
 }
 
-.current-page {
-	color:darkslategrey;
-	font-size: 1.25rem;
-    font-weight: 500;
-    display: inline-block;
-    transition: color 0.3s ease;
-	text-decoration: underline;
-	text-underline-offset:.5rem;
-}
-
 nav a {
     font-size: 1.25rem;
     text-decoration: none;
@@ -89,22 +97,39 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: darkslategrey;
-	
-}
-
 nav a span {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
+/* On hover */
 nav a:hover span:nth-child(odd) {
     transform: rotate(4deg);
+    color: darkslategrey;
+    text-decoration: underline;
+	text-underline-offset:.5rem;
 }
 
 nav a:hover span:nth-child(even) {
     transform: rotate(-4deg);
+    color: darkslategrey;
+    text-decoration: underline;
+	text-underline-offset:.5rem;
+}
+
+/* On active class (when the link is clicked) */
+nav a.active span:nth-child(odd) {
+    transform: rotate(4deg);
+    color: darkslategrey;
+    text-decoration: underline;
+	text-underline-offset:.5rem;
+}
+
+nav a.active span:nth-child(even) {
+    transform: rotate(-4deg);
+    color: #2f4f4f;
+    text-decoration: underline;
+	text-underline-offset:.5rem;
 }
 
 /* Dropdown Styles */
@@ -129,36 +154,52 @@ nav a:hover span:nth-child(even) {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
 .dropdown-content a,
 .dropdown-content div {
-    color: #333;
-    margin: .875rem; 1rem;
+    margin: .875rem 1rem;
 	font-size: 1.25rem;
     display: block;
-    
     transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    color: darkslategrey;
 }
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 1rem;
+    margin-top: 4rem;
+    border-top:2px solid #333;
 }
 
 footer a {
     text-decoration: underline;
-    color: #333;
+    color: #2E86AB;
 }
 
 footer a:hover {
-    color: #555;
+    color: #2f4f4f;
+}
+
+@media screen and (min-width:693px) and (max-width:1038px) {
+    body {
+        max-width: 39rem;
+    }
+
+    h1 {
+        font-size:4rem;
+    }
+}
+
+@media screen and (min-width:515px) and (max-width:692px) {
+
+    body {
+
+        max-width:29rem;
+    }
+
+    h1 {
+        font-size: 2.975rem;
+    }
 }

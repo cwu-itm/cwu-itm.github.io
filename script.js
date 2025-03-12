@@ -10,5 +10,13 @@ window.onload = function() {
             span.textContent = letter;
             link.appendChild(span); // Append each span to the link
         });
+
+        // Add click event to mark the link as active
+        link.addEventListener('click', function() {
+            // Remove 'active' class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add 'active' class to the clicked link
+            link.classList.add('active');
+        });
     });
 };
