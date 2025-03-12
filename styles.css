@@ -56,28 +56,11 @@ nav a:hover {
     color: darkslategrey;
 }
 
-h1, h2, h3 {
-    font-family: Oswald, sans-serif;
-}
+nav a:active {
 
-h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-}
+	text-decoration:line-through;
+	rotate:calc(-4deg)
 
-h2 {
-    font-size: 2rem;
-    font-family: 'Karantina', cursive;
-    letter-spacing: .125rem;
-    text-transform: uppercase;
-}
-
-main {
-    margin: 4rem 0;
-}
-
-main p {
-    font-size: .875rem;
 }
 
 /* Dropdown styles */
@@ -118,4 +101,28 @@ main p {
 
 .dropdown-content a:hover {
     color: darkslategrey;
+}
+
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Karantina', cursive;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 4rem 0;
+}
+
+main p {
+    font-size: .875rem;
 }
