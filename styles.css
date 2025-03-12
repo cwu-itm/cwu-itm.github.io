@@ -1,106 +1,22 @@
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+/* Global Styles */
 html {
     font-size: 16px;
     color: #333;
     font-family: Poppins, sans-serif;
 }
 
-body { 
+body {
     background-color: #FFF;
     margin: 2% auto;
     width: 90%;
     max-width: 39rem;
     font-weight: 400;
-}
-
-header {
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 0;
-    justify-content: start;
-}
-
-header p {
-    margin-top: -1rem;
-    padding: 0;
-    text-align: right;
     font-size: 1rem;
-}
-
-nav {
-    margin-top: .75rem;
-    border-radius: 5px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-evenly;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    text-align: left;
-    font-weight: 500;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    color: darkslategrey;
-}
-
-nav a:active {
-
-	text-decoration:line-through;
-	rotate:calc(-4deg)
-
-}
-
-/* Dropdown styles */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s ease, visibility 0s 0s;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-	border-top-left-radius:5px;
-	border-bottom-right-radius:5px;
-    background-color: #EEE; /* Matches the navbar */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s 0.3s;
-}
-
-.dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    color: darkslategrey;
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
@@ -125,4 +41,124 @@ main {
 
 main p {
     font-size: .875rem;
+}
+
+/* Header Styles */
+header {
+    display: grid;
+    justify-content: start;
+}
+
+header p {
+    margin-top: -1rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: .75rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+	justify-content: space-between;
+}
+
+.current-page {
+	color:darkslategrey;
+	font-size: 1.25rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: color 0.3s ease;
+	text-decoration: underline;
+	text-underline-offset:.5rem;
+	
+}
+
+nav a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color:#2E86AB;
+    font-weight: 500;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: darkslategrey;
+	
+}
+
+nav a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover span:nth-child(odd) {
+    transform: rotate(4deg);
+}
+
+nav a:hover span:nth-child(even) {
+    transform: rotate(-4deg);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s 0s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EEE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.dropdown-content a {
+    color: #333;
+    margin: .875rem; 1rem;
+	font-size: 1.25rem;
+    display: block;
+    
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: darkslategrey;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #333;
+}
+
+footer a:hover {
+    color: #555;
 }
