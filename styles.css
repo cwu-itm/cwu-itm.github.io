@@ -35,7 +35,6 @@ h1 span {
 
 h2 {
     font-size: 2rem;
-    font-family: 'Karantina', cursive;
     letter-spacing: .125rem;
     text-transform: uppercase;
 }
@@ -61,6 +60,69 @@ main {
 main p {
     font-size: .875rem;
 }
+
+/* Container for the portfolio section */
+.portfolio ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* 3 columns, adjust as necessary */
+    gap: 20px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px; /* Creates a 3D effect */
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back when flipped */
+    transition: transform 0.5s ease, background-color 0.5s, color 0.5s;
+}
+
+.card-front {
+    background-color: rgb(240, 240, 240);
+    color: rgb(46, 134, 171);
+}
+
+.card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg); /* Start with the back side hidden */
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg); /* Flips the front when hovered */
+}
+
+.card:hover .card-back {
+    transform: rotateY(360deg); /* Flips the back */
+    background-color: rgb(150, 40, 62); /* Change the background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
 
 /* Header Styles */
 header {
@@ -91,7 +153,7 @@ nav ul {
 nav a {
     font-size: 1.25rem;
     text-decoration: none;
-    color:#2E86AB;
+    color:rgb(46, 134, 171);
     font-weight: 500;
     display: inline-block;
     transition: color 0.3s ease;
@@ -105,14 +167,14 @@ nav a span {
 /* On hover */
 nav a:hover span:nth-child(odd) {
     transform: rotate(4deg);
-    color: darkslategrey;
+    color: rgb(47, 79, 79);
     text-decoration: underline;
 	text-underline-offset:.5rem;
 }
 
 nav a:hover span:nth-child(even) {
     transform: rotate(-4deg);
-    color: darkslategrey;
+    color: rgb(47, 79, 79);
     text-decoration: underline;
 	text-underline-offset:.5rem;
 }
@@ -120,7 +182,7 @@ nav a:hover span:nth-child(even) {
 /* On active class (when the link is clicked) */
 nav a.active span:nth-child(odd) {
     transform: rotate(4deg);
-    color: darkslategrey;
+    color: rgb(47, 79, 79);
     text-decoration: underline;
 	text-underline-offset:.5rem;
 }
