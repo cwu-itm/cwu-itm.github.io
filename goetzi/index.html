@@ -16,26 +16,68 @@
          <!-- Module 1.1 Blog Post Starts Here-->
          <article>
             <header class="article-header">
-               <h2>Module 1.1 Blog Post</h2>
+               <h2>The Overlap Between MBSE and Technical Writing</h2>
             </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
-            <h3>Offal Tofu Cred Green Juice</h3>
-            <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
-            <h3>Blue Roof Pour-Over Man Bun</h3>
-            <p>Yuccie mukbang pickled activated charcoal. PBR&B selfies DSA mustache authentic. Gochujang kombucha big mood retro, you probably haven't heard of them +1 lomo. Tbh pour-over yr viral gorpcore poutine four dollar toast. Bicycle rights man bun try-hard, mlkshk roof party occupy succulents taxidermy kogi enamel pin brunch paleo poutine yr. Blue bottle street art waistcoat typewriter yr hot chicken polaroid helvetica pitchfork.</p>
-            <ul>
-               <li>Neutra umami slow-carb vegan dreamcatcher.</li>
-               <li>Tacos cornhole humblebrag ethical.</li>
-               <li>DSA santo big mood organic charcoal bitters.</li>
-               <li>Hot chicken pitchfork poutine.</li>
-            </ul>
-            <h3>Mlkshk Stumptown Hot Chicken</h3>
-            <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
+            <p>If there’s one thing that’s become clear to me while learning about Systems Engineering and MBSE (Model-Based Systems Engineering), it’s this: nothing happens in isolation. Not the system, not the documentation, and definitely not the language we use to talk about them.
+               Model-Based Systems Engineering and technical communication actually share some overlapping responsibilities. One of the three main causes of system failure is communication: when it fails or becomes ambiguous. The same can be said for technical writing. That’s especially interesting to me, because as a technical writer, my job is to make sure communication is never ambiguous. It should be concise, clear, and accessible.
+               Also… didn’t that one plane literally fall out of the sky because of bad documentation? Yeah, that’s right. It did.</p>
+
+               <p>In 2006, the GLO 1907 / Embraer Legacy 600 mid-air collision over Brazil happened because of a mismatch between how aircraft systems behaved and what the documentation and procedures led the crew to expect. The transponder, which powers the TCAS (Traffic Collision Avoidance System), was off, and the pilots didn’t realize it. As a result, a Boeing 737 collided with the business jet. The crash sparked major scrutiny of checklist design and pushed for clearer, more reliable cockpit documentation.
+               So again: nothing happens in isolation. Not the system, not the documentation, and in the case of MBSE, not the models either.</p>
+               <p>In MBSE, this insight, that nothing happens in isolation, is foundational. The very structure of MBSE resists siloed thinking. Instead, it promotes systems thinking, where every element, model, document, and behavior is interdependent and traceable (Holt, 2023, p. 2).
+               And that same interdependence? It shows up in our language too, not just in the systems and models, but in how we talk about them.</p>
+               </p>
+            <h3>Terminology</h3>
+            <p>There are two types of language to consider in MBSE: domain-specific language and spoken language. In this blog, my audience expects English. In MBSE, it’s often SysML (Systems Modeling Language). Domain-specific language = jargon. Spoken language = plain language or English. Technical Writing needs to be accessible to those who need the information, so it is written in plain language, which seems to happen often in MBSE, too. 
+               You’ll also find overlaps with technical writing and UX here. Just like in UX, Systems Engineering is applied across the entire lifecycle of a system (Holt, 2023, p. 13). And just like UX writers tailor content to users, systems engineers tailor models to stakeholders.
+               </p>
+            <h3>The Role of Abstraction</h3>
+            <p>The most notable thing about MBSE is where the data resides: in the abstraction.
+               Abstraction in MBSE means the model contains just enough information to make the system successful. It’s not about storing huge volumes of data. It’s about filtering out what’s unnecessary, just like in technical writing. In tech writing, clarity and precision come from giving users exactly what they need to complete a task or understand a process. Too much becomes noise; too little becomes a barrier. In both cases, you’re creating a meaningful, efficient abstraction of reality.
+               </p>
+      <h3>The Concept of a View</h3>
+      <p>An essential part of any MBSE model is consistency. In MBSE, this is referred to as a View, which is a grouping of information related to a specific concern or stakeholder need.
+         A View is a smaller unit of the overall system. Since the system in MBSE is made up of models, and those models only contain relevant information, it follows that Views are composed of relevant groupings. Again: nothing more, nothing less.
+        <p> <b>The process of forming a view:</b></p>
+        <p> 1.	<b>Identify the Stakeholder.</b> Who wants to look at this information? Why? What decisions or actions depend on it?</p>
+        <p> 2.	<b>Define the information.</b> What exactly does this stakeholder need to see?</p>
+        <p> 3.	<b>Clarify the language.</b> What language or terminology makes this information useful to them? Are they a developer (jargon)? A customer (plain language)?</p>
+         <p>If information doesn’t meet those three criteria, it’s not a View, it’s just data. And irrelevant data clutters the system.</p>
+         Just like in technical writing, MBSE requires you to tailor your message. In technical writing, we often build user personas to understand our audience. In MBSE, stakeholders are clearly defined by their requests and role in the system. The clarity of knowing who wants what helps maintain relevance in the system.
+
+         </p>
+            <h3>Single Source of Truth</h3>
+            <p>Views must also be consistent with one another. The difference between data and a View is that a View is contextualized and aligned with the rest of the model. If it isn’t, it’s just raw data, fragmented and potentially misleading.
+               Once Views and models are consistent, the system can be considered a single source of truth.
+               The Introduction to Model-Based System Engineering (MBSE) and SysML presentation at the Delaware Valley INCOSE Chapter Meeting (2015) emphasized this point: in MBSE, constructs are defined once and reused across the system.
+               In technical writing, this same concept exists: single-sourcing. Writers create centralized content modules that can be reused across documents, formats, and platforms (Archbee, n.d.).
+               So again, technical writing and MBSE align closely here. Both the document and the model serve as consistent, filtered representations of information, providing the right people with the right information at the right time.
+</p>          
+<h3>MBSE: The Future?</h3>     
+<p>According to multiple sources, MBSE is, and historically has been, expected to become the most widely used systems engineering method.
+   In 2012, an article in IEEE Transactions on Systems, Man, and Cybernetics stated:
+   “It is expected that this paradigm will become a standard practice in the SE field in the next years... the future of SE will be model-based, embracing high-fidelity static and dynamic models at different levels of abstraction” (Ramos, Ferreira, & Barceló, 2012, p. 106).
+   INCOSE’s Vision 2035 also predicts that by 2035, all systems engineering will move “towards a fully Model-Based Systems Engineering environment” and that it will be a cornerstone of digital transformation (INCOSE, 2022).
+   But here’s the thing: our course textbook was published in July 2023, and MBSE still isn’t the industry standard. So… what’s holding it up?</p>
+  <p>The 2012 article anticipated that a solid MBSE body of knowledge would be achieved within 10 years. Judging by the sheer amount of literature and training materials now available, that prediction seems to have come true.
+   But implementation? That’s a different story.</p>
+   <p>Here are a few possible reasons:</p>
+  <p> •	Cultural Shift: MBSE requires a deep change in how teams think and work. It’s more than adopting a new tool, it’s changing mindsets, workflows, and collaboration styles.</p>
+  <p> •	Cost & Complexity: The tools and platforms used in MBSE can be expensive and technically demanding. Smaller companies or those running legacy systems often can’t support full adoption.</p>
+  <p> •	Learning Curve: Languages like SysML require specialized knowledge. Everyone from engineers to stakeholders needs to be trained in how to read and use the models effectively.</p>
+   <p>Back in 2012, the article stated that MBSE’s potential would only be realized by overcoming cultural and technical barriers. Experts called for metrics, human-centric design, and stronger modeling tools. In many ways, those goals have been reached. It may just take another decade for adoption to catch up, but I agree with INCOSE, it will happen, it’s just a matter of when. </p>
+ <p> After all, NASA uses MBSE. And they’re doing some of the most complex systems engineering on the planet.
+   </p>
             <footer class="article-footer">
                 <h3>Sources:</h3>
                 <ol>
-                    <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
+                    <p><li>Archbee. (n.d.). Single-sourcing in technical writing. https://www.archbee.com/blog/single-sourcing-in-technical-writing</p>
+                    <p> Holt, J. (2023). Systems engineering demystified (2nd ed.). Packt Publishing.</p>
+                     <p>Introduction to model-based system engineering (MBSE) and SysML. (2015, July 30). Presented at the Delaware Valley INCOSE Chapter Meeting. https://www.incose.org/docs/default-source/delaware-valley/2015-07-30-intro-to-mbse.pdf</p>
+                     <p>Ramos, A. L., Ferreira, J. V., & Barceló, J. (2012). Model-based systems engineering: An emerging approach for modern systems. IEEE Transactions on Systems, Man, and Cybernetics—Part C: Applications and Reviews, 42(1), 101–111. https://doi.org/10.1109/TSMCC.2011.2160629</p>
+                     
+                     
+                     </li>
                     </ol>
             </footer>
          </article>
