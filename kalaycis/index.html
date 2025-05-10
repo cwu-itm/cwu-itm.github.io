@@ -373,7 +373,179 @@
              </ul>
                                        
 
-         <!-- Module 2.2 Blog Post Starts here -->
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designing for Usability</title>
+</head>
+<body>
+  <header>
+    <h1>Designing for Usability: How Memory, Vision, and Mental Shortcuts Shape Digital Interaction</h1>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>Why does it feel like an uphill battle to utilize some digital systems while others are so easy? How well a system fits with human perception, thought, memory, and behavior is the answer. Usability is more than just aesthetics; it's about minimizing cognitive load, honoring memory function, and reacting as users anticipate. When designers overlook the realities of how users see, think, and remember, even the most powerful tools can become frustrating obstacles. In contrast, interfaces that feel natural and responsive are often deeply rooted in cognitive and behavioral science.</p>
+  
+    <p>This blog draws upon Tesler's Law of Conservation of Complexity, Jeff Johnson's <em>Designing with the Mind in Mind</em> (Ch. 6–9), ethical UX principles, and best practices in accessibility and visual communication to explore what makes a digital system genuinely usable. It examines core psychological constraints such as visual focus, memory limitations, and attention span, and offers real-world examples that demonstrate how good design can improve not only task efficiency, but also emotional well-being and trust. In a world increasingly shaped by digital tools, understanding usability is no longer optional—it’s essential to creating inclusive, effective, and ethical systems.</p>
+  </section>  
+
+  <section>
+    <h2>1. Human Perception: Designing with Vision in Mind</h2>
+    <p>The first step in visual design is to comprehend how people see. Even while displays provide information on the whole canvas, not all of it is equally visible to our eyes. Despite making up only around 1% of the retina, our foveal vision—the sharp center of our gaze—receives half of the visual cortex's processing power, claims Johnson (2020). While human peripheral vision is good at detecting motion, it is not very good at recognizing color, form, or writing.</p>
+    <p>Although people concentrate on a small portion of the screen, designers frequently believe that consumers "see everything" on it. Unless they move or are exceptionally bright, static things outside of this focus are readily overlooked (Johnson, 2020). For this reason, important options, system status updates, and call-to-action buttons ought to always be located in the center of the screen. A "Submit" button, for instance, should never be hidden in a corner where users can miss it.</p>
+    <figure>
+      <img src="images/Schematic_diagram_of_the_human_eye_en.svg.png" alt="Diagram of foveal and peripheral vision" width="600">
+      <figcaption>Figure 1: Human visual attention is sharply focused in the fovea. Source: Wikimedia Commons</figcaption>
+    </figure>
+    
+  </section>
+
+  <section>
+    <h2>2. Memory and Mental Models: Reducing the Mental Load</h2>
+    <p>Only 5 to 9 items can usually be stored in human short-term memory for a few seconds unless they are practiced. According to Johnson (2020), long-term memory is broad but influenced by emotion and circumstance, making it frequently erroneous.</p>
+    <p>Designers have to deal with this constraint by:</p>
+    <ul>
+      <li>Showing instead of telling</li>
+      <li>Maintaining visibility of instructions</li>
+      <li>Information chunking and step reduction (Johnson, 2020, Ch. 7)</li>
+    </ul>
+    <p>For instance, a form that shows past inputs (such as a search phrase they remember or autofill recommendations) enables users to identify rather than remember.</p>
+    <p>Mental models also play a huge role. Users build internal models of how systems work based on past experiences. For example, a gear icon usually implies “settings.” Violating these expectations confuses and frustrates users. Snapchat's early interface famously lacked labeled icons and traditional navigation, leading new users to feel alienated and disoriented.</p>
+  </section>
+</body>
+</html>
+<section>
+  <h2>3. Attention, Tasks, and Interface Flow</h2>
+  <p>Johnson (2020, Ch. 8) describes user behavior through the goal-execute-evaluate cycle:</p>
+  <ul>
+    <li>Set a goal</li>
+    <li>Take action</li>
+    <li>Evaluate results</li>
+  </ul>
+  <p>Interfaces should support this cycle by:</p>
+  <ul>
+    <li>Making next steps clear</li>
+    <li>Providing real-time feedback</li>
+    <li>Allowing users to undo or confirm actions</li>
+  </ul>
+  <p>Multistep tasks should also:</p>
+  <ul>
+    <li>Show progress</li>
+    <li>Preserve the user’s state</li>
+    <li>Offer breadcrumbs or status indicators</li>
+  </ul>
+  <p>For instance, online tax applications like TurboTax guide users one question at a time, clearly tracking progress while preserving prior responses. This method supports task continuity and reduces anxiety, especially in systems that require high accuracy.</p>
+</section>
+<section>
+  <h2>4. Recognition Over Recall</h2>
+  <p>The idea that recognition is simpler than recall is reaffirmed by Johnson (2020, Ch. 9). Individuals recognize well-known symbols, thumbnails, and labels far more quickly than they can recall names or orders.</p>
+  <p>Effective systems leverage recognition by:</p>
+  <ul>
+    <li>Showing menus rather than hiding options behind commands</li>
+    <li>Using icons with text labels</li>
+    <li>Highlighting frequent or recent actions</li>
+  </ul>
+  <p>For instance, Spotify enables users to immediately re-engage without searching by displaying their favorite playlists and recently played songs at the top of the homepage. Poor systems, on the other hand, depend on users to "guess what's next" or "remember what to type." Drop-offs result from users being frustrated.</p>
+</section>
+<section>
+  <h2>5. Feedback: Making Systems Feel Alive</h2>
+  <p>Systems interact through feedback. Giving prompt feedback, whether it be to validate an action, point out mistakes, or illustrate progress, fosters flow and trust. According to Johnson (2020), consumers use feedback to "evaluate results," which completes the cycle of their interactions.</p>
+  <p>Real-time alerts and snack bars are excellent instances of non-intrusive feedback. Snackbars should be positioned at the bottom of the screen with brief, understandable text and optional actions like "Undo," according to Material Design 3 (n.d.).</p>
+  <p>For instance, a Snackbar titled "Note deleted – Undo" appears after a note is erased in Google Keep, allowing users to take control while verifying the activity. Without feedback, users doubt the effectiveness of their actions, which might result in mistakes, repetition, or desertion.</p>
+  <figure>
+    <img src="images/unnamed.png" alt="Example of a Snackbar UI with Undo button" width="600">
+    <figcaption>Figure 3: A Snackbar provides unobtrusive, time-bound feedback with optional actions. Source: Material Design 3</figcaption>
+  </figure>
+  
+</section>
+<section>
+  <h2>6. Cognitive Load: Where Bad Design Fails Us</h2>
+  <p>Cognitive load increases when users must:</p>
+  <ul>
+    <li>Remember previous steps</li>
+    <li>Interpret vague labels</li>
+    <li>Navigate complex menus</li>
+    <li>Process too much information at once</li>
+  </ul>
+  <p>According to Tesler's Law, complexity is unavoidable, but the system should bear the majority of the load rather than the user (Tesler, 1984). Designers must either conceal complicated tasks under intuitive design or automate portions of them.</p>
+  <p>For instance, Gmail's Smart Compose anticipates your sentence, copies the sender's information, and suggests responses. This simplifies the process by adding complexity to the system.</p>
+  <p><strong>Bad example:</strong> Students must manually search for codes, copy them, and hope they input them correctly in many university registration systems, which transfers all the work to the user.</p>
+</section>
+<section>
+  <h2>7. Real-World Examples: Good vs. Bad Usability</h2>
+  <p>An excellent example is the language-learning program Duolingo, which makes use of minimal decision points, gamified feedback, and habit loops. Filho (2022) asserts that "Duolingo lowers friction by using chunked content, positive feedback, and familiar layouts." Memory strain is reduced because users always know what to do next and the software retains their progress.</p>
+  <figure>
+    <img src="images/1_wIwDWvbzT7slfz6akQX3yg.png" alt="Duolingo app interface showing user progress and gamification elements" width="600">
+    <figcaption>Figure 2: Duolingo uses intuitive progress indicators and familiar iconography. Source: UX Collective / Medium</figcaption>
+  </figure>
+  
+
+  <p><strong>Bad Example:</strong> EMRs (Electronic Medical Records): According to Downing, Bates, and Longhurst (2020), the majority of EMRs are erratic, disorganized, and offer little in the way of feedback. Doctors frequently experience user burnout as a result of these systems, spending more time navigating interfaces than assisting patients. Patient treatment is compromised by the unclear layout and absence of real-time feedback.</p>
+
+  <p>These illustrations demonstrate that usability affects user well-being, safety, and performance and is not a luxury.</p>
+</section>
+<section>
+  <h2>8. Ethical Design: When Usability Becomes a Responsibility</h2>
+  <p>Ethical obligation accompanies enormous design capability. Persuasive design elements, such as endless scroll, autoplay, and notification loops, leverage behavioral psychology to keep users interested, frequently at the expense of their mental health, as explained in Chapter 11 of Laws of UX. Pull-to-refresh, for instance, simulates how slot machines operate and offers varying payout schedules that encourage compulsive monitoring (Laws of UX, Ch. 11).</p>
+
+  <p>Despite their apparent "engagement," these patterns have cognitive consequences, particularly for teenagers whose self-control and attention spans are still growing.</p>
+
+  <p>Ethical design means:</p>
+  <ul>
+    <li>Limiting harmful loops</li>
+    <li>Providing opt-outs and time settings</li>
+    <li>Designing with marginalized users in mind</li>
+  </ul>
+
+  <p>Default settings also shape behavior. Most users don’t change defaults, so setting “opt-in tracking” or “dark mode” as default can influence user behavior silently. Despite its well-meaning creation, Facebook's "Like" button has had detrimental effects on social validation and anxiety (Laws of UX, Ch. 11).</p>
+
+  <p>Ethical usability prioritizes the user's emotional and psychological safety in addition to usability.</p>
+</section>
+<section>
+  <h2>Conclusion</h2>
+  <p>Designing for usability requires a thorough grasp of how people see, think, remember, and act; it is not about slick features or minimalist fashions. The best systems assist the user at every stage—from task-oriented attention to the ethical use of persuasive design, and from foveal focus to short-term memory—without requiring them to think more than is necessary. Tesler's Law must be followed by designers, who must bear complexity for the user. They must respect attentional boundaries, provide real-time input, employ graphics carefully, and design for recognition rather than recall. Lastly, they need to use their design power in an ethical way, creating systems that are not just functional but also compassionate.</p>
+
+  <p>In addition to lowering friction, a usable system improves inclusivity, satisfaction, and trust. People are more likely to stick with a system, refer others to it, and accomplish their objectives when they feel comfortable using it. However, poorly designed interfaces drive users away, increase mistakes, and can have serious consequences in crucial industries like healthcare or finance. As a result, usability is an essential part of responsible digital design and not a secondary consideration.</p>
+
+  <p>In a time when almost every part of our lives is shaped by digital systems, it is a professional duty to design with empathy. This involves anticipating user requirements, respecting their cognitive boundaries, and staying away from deceptive tactics that take advantage of human psychology in order to increase engagement. Remember that the best technology feels human, not just works well, whether you're creating a language app, a healthcare portal, or an online store.</p>
+
+  <p>Allow the language of clarity, purpose, and care to be expressed through each button, layout, and interaction. That's what truly usable design is all about.</p>
+</section>
+<section>
+  <h2>Sources</h2>
+  <ul>
+    <li>
+      Downing, N. L., Bates, D. W., & Longhurst, C. A. (2020). <em>Physician burnout in the electronic health record era: Are we ignoring the real cause?</em> Journal of the American Medical Informatics Association, 27(7), 1040–1041. 
+      <a href="https://doi.org/10.1093/jamia/ocaa088" target="_blank">https://doi.org/10.1093/jamia/ocaa088</a>
+    </li>
+    <li>
+      Filho, B. (2022, May 25). <em>Duolingo’s UX is addictively good—here’s why</em>. UX Collective. 
+      <a href="https://uxdesign.cc/duolingos-ux-is-addictively-good-heres-why-44d3a924fef9" target="_blank">https://uxdesign.cc/duolingos-ux-is-addictively-good-heres-why-44d3a924fef9</a>
+    </li>
+    <li>
+      Hick, W. E. (1952). <em>On the rate of gain of information</em>. Quarterly Journal of Experimental Psychology, 4(1), 11–26. 
+      <a href="https://doi.org/10.1080/17470215208416600" target="_blank">https://doi.org/10.1080/17470215208416600</a>
+    </li>
+    <li>
+      Interaction Design Foundation. (n.d.). <em>Tesler’s Law of the Conservation of Complexity</em>. 
+      <a href="https://www.interaction-design.org/literature/book/the-glossary-of-human-computer-interaction/tesler-s-law-of-the-conservation-of-complexity" target="_blank">https://www.interaction-design.org/.../tesler-s-law-of-the-conservation-of-complexity</a>
+    </li>
+    <li>
+      Johnson, J. (2020). <em>DESIGNING WITH THE MIND IN MIND: simple guide to understanding user interface design guidelines</em>. Morgan Kaufmann Publisher.
+    </li>
+    <li>
+      Yablonski, J. (2020). <em>Laws of UX: using psychology to design better products & services</em>. O’Reilly Media, Incorporated.
+    </li>
+    <li>
+      Material Design. (n.d.). <em>Snackbars</em>. Material Design 3. 
+      <a href="https://m3.material.io/components/snackbar" target="_blank">https://m3.material.io/components/snackbar</a>
+    </li>
+  </ul>
+</section>
+
 
          <!-- Module 2.3 Blog Post Starts here -->
 
