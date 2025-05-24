@@ -37,7 +37,9 @@ h2 {
 
     font-family: Oswald, sans-serif;
     font-size:2rem;
-
+    background-color: rgb(108, 17, 36);
+    color: rgb(255, 217, 217);
+    padding: 1rem;
 }
 h3 {
     font-size:1.5rem;
@@ -50,5 +52,21 @@ ol {
     padding-left:0;
     list-style-type: none;
     font-size:.875rem;
+}
 
+.article-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;
+}
+
+p, li, figcaption {
+    font-weight: 300;
+    font-size: .875rem;
 }
