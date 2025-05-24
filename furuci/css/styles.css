@@ -5,19 +5,23 @@
 /* Global Styles */
 html {
     font-size: 16px;
-    color: #333;
+    color: #F685EA;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
+    background-color: #E81E76;
     margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
+    width: 100%;
+    max-width: 30rem;
+    font-weight: 300;
+    font-size: .875rem;
     line-height: 1.3;
+    padding-top: 0;
+    padding-top: 0;
+    padding-left: 1;
+    padding-right: 1;
 }
 
 main {
@@ -27,27 +31,88 @@ main {
 }
 
 h1 {
+    color: #F685EA;
+    font-family: Oswald, sans-serif;
+    font-size:.875rem;
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
+body {
+
+     background-color: #E81E76;
+    margin: 1% auto;
+    width: 100%;
+    max-width: 30rem;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.3;
+    padding-top: 0;
+    padding-top: 0;
+    padding-left: 1;
+    padding-right: 1;
 
 }
+
 
 h2 {
-
+    color: #F685EA;
     font-family: Oswald, sans-serif;
-    font-size:2rem;
+    font-size:.875rem;
 
 }
+
+body {
+
+     background-color: #E81E76;
+    margin: 1% auto;
+    width: 100%;
+    max-width: 30rem;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.3;
+    padding-top: 0;
+    padding-top: 0;
+    padding-left: 1;
+    padding-right: 1;
+    
+}
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+     color: #F685EA;
+    font-family: Oswald, sans-serif;
+    font-size:.875rem;
 }
 
+
+body {
+
+     background-color: #E81E76;
+    margin: 1% auto;
+    width: 100%;
+    max-width: 30rem;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.3;
+    padding-top: 0;
+    padding-top: 0;
+    padding-left: 1;
+    padding-right: 1;
+    
+}
 ol {
 
     margin-top:0;
-    padding-left:0;
+    padding-left:1;
+    padding-right: 1;
+    list-style-type: none;
+    font-size:.875rem;
+
+}
+
+dl {
+
+    margin-top:0;
+    margin-bottom: 1.5rem;
+    padding-left:1;
+    padding-right: 1;
     list-style-type: none;
     font-size:.875rem;
 
