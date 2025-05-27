@@ -345,8 +345,7 @@ h2 {
   grid-column: 4 / 12;
   grid-row: 2 / 3;
   display:flex;
-  width:100%;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items:center;
 
 }
@@ -502,8 +501,6 @@ main {
 
 }
 
-
-
 .page-footer {
 
   display:grid;
@@ -514,6 +511,7 @@ main {
   color:inherit;
   background-color:inherit;
   text-align: left;
+  padding:0;
 
 }
 

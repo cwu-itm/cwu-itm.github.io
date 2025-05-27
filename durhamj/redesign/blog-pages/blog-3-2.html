@@ -4,13 +4,24 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Student Name | Portfolio</title>
    </head>
-   <body>
+   <body class="page-container">
 <!-- Page Header  -->
-<header class="page-header">
-   <h1>The <span>Digital</span> Environment Blog</h1>
-   <p>Do or do not; there is no try.</p>
+<header class="page-header mobile-menu">
+   <h1>DEV/BLOG</h1>
+   <nav id="main-nav">
+      <a href="../index.html">Technology</a>
+      <a href="#">Culture</a>
+      <a href="#">Lifestyle</a>
+      <a href="#">People</a>
+      <a href="#">About</a>
+      <a href="#">Subscribe</a>
+   </nav>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
 </header>
 <!-- Main Content Area  -->
       <main>
@@ -82,9 +93,15 @@
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
-       <p>Copyright &copy; 2025</p>
-       <p>Central Washington University<br>Department of Infomration Technology Management</p>
-       <p><a href="../index.html">&#8617; Back</a></p>
+       <p class="copyright">Copyright &copy; 2025 | <a href="mailto:john.durham@cwu.edu">DEV/BLOG</a> | All Rights Reserved.</p>
       </footer>
+<script>function myFunction() {
+  var x = document.getElementById("main-nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} </script>
    </body>
 </html>
