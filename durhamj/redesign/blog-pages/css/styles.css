@@ -173,19 +173,20 @@ figcaption {
 .flex-list {
 
     display:flex;
-    align-content: space-between;
 
 }
 
 .flex-list :nth-child(1) {
 
-    width:50%;
+    width:49%;
+    margin-right:1%;
 
 }
 
 .flex-list :nth-child(2) {
 
-    width:50%;
+    width:49%;
+    margin-left:1%;
 
 }
   
