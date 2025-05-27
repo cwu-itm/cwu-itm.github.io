@@ -176,6 +176,18 @@ figcaption {
     align-content: space-between;
 
 }
+
+.flex-list :nth-child(1) {
+
+    width:50%;
+
+}
+
+.flex-list :nth-child(2) {
+
+    width:50%;
+
+}
   
   /* Mobile Menu */
   
