@@ -114,16 +114,23 @@ main ol > li {
 
 }
 
-dl {
+.flex-list {
 
-    margin:0 auto;
-    width:90%;
+    margin:1rem auto;
+    padding:1rem;
+    background-color:#333;
+    color:white;
+    border-radius:5px;
 
 }
 
 dt {
 
+    font-family:Oswald;
+    font-weight: 400;  
+    text-transform: uppercase;
     margin-bottom:.25rem;
+    margin-left:0;
 
 }
 
@@ -131,8 +138,8 @@ dd {
 
     font-size:.875rem;
     font-weight:300;
-    margin-left:0;
     margin-bottom:.75rem;
+    margin-left:0;
 
 
 }
@@ -145,10 +152,12 @@ img {
 
 }
 
+
+
 .image-bar {
 
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap:2rem;
     padding:2rem;
     background-color:#F5F6F4;
@@ -160,6 +169,7 @@ figure {
 
     margin:0;
     padding:0;
+    width:100%;
 
 }
 figcaption {
@@ -167,28 +177,6 @@ figcaption {
     padding:.25rem auto;
     font-size:.75rem;
     font-weight:300;
-
-}
-
-.flex-list {
-
-    display:flex;
-    margin:0 auto;
-    width:90%;
-
-}
-
-.flex-list :nth-child(1) {
-
-    width:49%;
-    margin-right:1%;
-
-}
-
-.flex-list :nth-child(2) {
-
-    width:49%;
-    margin-left:1%;
 
 }
   
@@ -360,7 +348,7 @@ figcaption {
       grid-row: 2 / 3;
       display:flex;
       justify-content: space-evenly;
-  align-items:center;
+      align-items:center;
     
     }
     
@@ -371,6 +359,30 @@ figcaption {
       font-size:1.25rem;
     
     }
+
+    .flex-list {
+
+    display:flex;
+    gap:1rem;
+    margin:1rem auto;
+    width:fit-content;
+
+}
+
+  dl {
+
+
+    width:90%;
+    padding:1rem;
+  
+
+  }
+
+  .image-bar {
+
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 
   .archives {
  
