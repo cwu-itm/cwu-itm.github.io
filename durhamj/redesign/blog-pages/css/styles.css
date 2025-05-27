@@ -62,12 +62,6 @@ body {
     
   }
   
-  main img {
-  
-    width:100%;
-  
-  }
-  
   .page-footer {
 
     padding:2rem 1rem;
@@ -173,6 +167,13 @@ figcaption {
     padding:.25rem auto;
     font-size:.75rem;
     font-weight:300;
+
+}
+
+.flex-list {
+
+    display:flex;
+    align-content: space-between;
 
 }
   
