@@ -37,18 +37,76 @@ h2 {
 
     font-family: Oswald, sans-serif;
     font-size:2rem;
+    color:#EEF;
+    text-transform: uppercase;
+    padding:1rem;
 
 }
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
+    font-weight:400;
 }
 
-ol {
+ol, ul, p {
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
     font-size:.875rem;
+    font-weight:300;
+
+}
+
+dl {
+
+    margin:0 auto;
+    width:90%;
+
+}
+
+dt {
+
+    margin-bottom:.25rem;
+
+}
+
+dd {
+
+    font-size:.875rem;
+    font-weight:300;
+    margin-left:0;
+    margin-bottom:.75rem;
+
+
+}
+
+figure {
+
+    margin:.5rem 0;
+
+}
+
+figure > img {
+
+    width:100%;
+    max-width:30rem;
+
+}
+
+figcaption {
+
+    padding:.25rem auto;
+    font-size:.875rem;
+    font-weight:300;
+
+}
+
+.article-header {
+
+    background-color:#87B38D;
+      
+}
+
+.article-content {
+
+    padding:0 1rem;
 
 }
