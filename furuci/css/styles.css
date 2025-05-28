@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    background-color: #E81E76;
+
+     background-color: #E81E76;
     margin: 1% auto;
     width: 100%;
     max-width: 30rem;
@@ -22,6 +23,7 @@ body {
     padding-top: 0;
     padding-left: 1;
     padding-right: 1;
+    
 }
 
 main {
@@ -34,22 +36,8 @@ h1 {
     color: #F685EA;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
-
-body {
-
-     background-color: #E81E76;
-    margin: 1% auto;
-    width: 100%;
-    max-width: 30rem;
-    font-weight: 300;
-    font-size: .875rem;
-    line-height: 1.3;
-    padding-top: 0;
-    padding-top: 0;
-    padding-left: 1;
-    padding-right: 1;
-
 }
+
 
 
 h2 {
@@ -59,21 +47,7 @@ h2 {
 
 }
 
-body {
 
-     background-color: #E81E76;
-    margin: 1% auto;
-    width: 100%;
-    max-width: 30rem;
-    font-weight: 300;
-    font-size: .875rem;
-    line-height: 1.3;
-    padding-top: 0;
-    padding-top: 0;
-    padding-left: 1;
-    padding-right: 1;
-    
-}
 
 h3 {
      color: #F685EA;
@@ -82,21 +56,7 @@ h3 {
 }
 
 
-body {
 
-     background-color: #E81E76;
-    margin: 1% auto;
-    width: 100%;
-    max-width: 30rem;
-    font-weight: 300;
-    font-size: .875rem;
-    line-height: 1.3;
-    padding-top: 0;
-    padding-top: 0;
-    padding-left: 1;
-    padding-right: 1;
-    
-}
 ol {
 
     margin-top:0;
