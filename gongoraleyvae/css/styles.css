@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: #fff;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -21,34 +21,49 @@ body {
 }
 
 main {
+    margin-bottom: 3rem;
+    padding: 0 1rem; /* Applying left and right padding to main content */
+}
 
-    margin-bottom:3rem;
-
+/* Blog Headings */
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+    color: #fff; /* Contrasting font color */
+    padding: 1rem; /* 1rem = 16px based on html font-size */
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-size: 4rem;
+    background-color: #4A90E2;
 }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+    font-size: 2rem;
+    background-color: #6B7B8E;
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.5rem;
+    background-color: #8FBC8F;
 }
 
 ol {
-
-    margin-top:0;
-    padding-left:0;
+    margin-top: 0;
+    padding-left: 0;
     list-style-type: none;
-    font-size:.875rem;
+    font-size: 0.875rem;
+}
 
+/* Blog Content (excluding headings) */
+p, ul, ol, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem; /* Equivalent to 14px if html font-size was 16px */
+    padding: 0 1rem; /* Top/bottom 0, left/right 1rem */
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;
+    max-width: 30rem;
+    height: auto;
 }
