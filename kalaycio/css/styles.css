@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #f9f9f9; /* Light gray background for full page */
+    background-color: #f9f9f9;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -22,16 +22,30 @@ body {
 
 main {
     margin-bottom: 3rem;
-    background-color: #ffffff; /* White content area */
+    background-color: #ffffff;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-/* Headings - Readable and Balanced */
+/* Page Title (e.g., Portfolio) */
+.site-title, h1.site-title {
+    color: #0a0a23;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    background-color: #ffffffcc;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Headings */
 h1 {
     font-family: Oswald, sans-serif;
-    font-size: 2.5rem; /* Reduced for better readability */
+    font-size: 2.5rem;
     background-color: #0a0a23;
     color: #ffffff;
     padding: 1rem;
@@ -42,7 +56,7 @@ h1 {
 
 h2 {
     font-family: Oswald, sans-serif;
-    font-size: 1.75rem; /* Reduced from 2rem */
+    font-size: 1.75rem;
     background-color: #0a0a23;
     color: #ffffff;
     padding: 1rem;
@@ -51,10 +65,19 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem; /* Reduced from 1.5rem */
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     font-family: Oswald, sans-serif;
     color: #222;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #0a0a23;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #ddd;
 }
 
 /* Lists */
@@ -68,14 +91,14 @@ ol, ul {
 p,
 figcaption {
     font-weight: 300;
-    font-size: 0.875rem; /* 14px */
-    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
 }
 
 /* Images */
 img {
     width: 100%;
-    max-width: 30rem; /* 480px */
+    max-width: 30rem;
     height: auto;
     display: block;
     margin: 1rem auto;
@@ -124,4 +147,46 @@ footer ul {
 footer li {
     margin-bottom: 0.5rem;
     font-size: 0.875rem;
+}
+
+/* Navigation Flexbox */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0a23;
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+nav a {
+    color: #ffffff;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Two-Column Layout */
+.columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.columns .column {
+    flex: 1;
+}
+
+/* Image Grid */
+.image-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: #f0f0f0;
+}
+
+.image-bar img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
