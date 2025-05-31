@@ -5,13 +5,14 @@
 /* Global Styles */
 html {
     font-size: 16px;
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
+    background-color:#fc80be ;
 }
 
 body {
-    background-color: ##fe40b9;
+    background-color: #fc80be;
     margin: 1% auto;
     width: 100%;
     max-width: 30rem;
@@ -31,7 +32,7 @@ main {
 }
 
 h1 {
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 }
@@ -40,7 +41,7 @@ h1 {
 
 
 h2 {
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 
@@ -48,7 +49,7 @@ h2 {
 
 
 h3 {
-     color: #F685EA;
+     color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 }
@@ -72,5 +73,9 @@ dl {
     padding-right: 1;
     list-style-type: none;
     font-size:.875rem;
+
+} 
+image {
+
 
 }
