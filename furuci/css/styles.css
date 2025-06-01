@@ -75,7 +75,8 @@ dl {
     font-size:.875rem;
 
 } 
-image {
-
+image-orientation {
+    width: 100%;
+    max-width: 30rem;
 
 }
