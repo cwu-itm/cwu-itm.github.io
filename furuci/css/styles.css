@@ -9,6 +9,8 @@ html {
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
     background-color:#fc80be ;
+
+
 }
 
 body {
@@ -28,6 +30,9 @@ body {
 main {
 
     margin-bottom:3rem;
+    background-image: url("/shared-assets/images/examples/background image bows.jpg");
+    padding: 1rem;
+
 
 }
 
@@ -78,5 +83,7 @@ dl {
 img {
     width: 100%;
     max-width: 30rem;
+    
 
-}
+} 
+
