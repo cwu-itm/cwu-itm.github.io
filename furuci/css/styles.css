@@ -6,14 +6,17 @@
 
 html {
     font-size: 16px;
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
+    background-color:#fc80be ;
+
+
 }
 
 body {
 
-     background-color: #E81E76;
+    background-color: #fc80be;
     margin: 1% auto;
     width: 100%;
     max-width: 30rem;
@@ -30,33 +33,29 @@ body {
 main {
 
     margin-bottom:3rem;
+    background-image: url("/shared-assets/images/examples/background image bows.jpg");
+    padding: 1rem;
 
 }
 
 h1 {
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 }
-
-
 
 h2 {
-    color: #F685EA;
+    color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 
 }
-
-
 
 h3 {
-     color: #F685EA;
+     color: #f0ebee;
     font-family: Oswald, sans-serif;
     font-size:.875rem;
 }
-
-
 
 ol {
 
@@ -77,11 +76,10 @@ dl {
     list-style-type: none;
     font-size:.875rem;
 
-}
-
+} 
 img {
+    width: 100%;
+    max-width: 30rem;
+    
 
-    width:100%;
-    max-width:30rem;
-
-}
+} 
