@@ -20,38 +20,110 @@ body {
     line-height: 1.3;
 }
 
-main {
-
-    margin-bottom:3rem;
-
-}
-
-h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
-}
-
-h2 {
+.page-header {
+  
+    background:#333 url("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-blend-mode: overlay;
+    color:#FFF;
+    padding:1rem;
+   
+  }
+  
+  .page-header > h1 {
+    
     font-family: Oswald, sans-serif;
     font-size:2rem;
-    color:#fff;
-    text-transform: uppercase;
+    text-align: center;
+    margin:0;
     padding:1rem;
-}
+    border:solid 2px #FFF;
+    border-top-left-radius:25px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    width:35%;
+  }
+
+  main {
+
+    margin:1rem;
+    display:grid;
+  
+  }
+
+  main p {
+  
+    font-size:.875rem;
+    font-weight:300;
+    margin-top:0;
+    
+  }
+  
+  .page-footer {
+
+    padding:2rem 1rem;
+    font-size:.875rem;
+    background-color:#333;
+    color:#FFF;
+    text-align:center;
+  
+  }
+  
+  .page-footer a {
+  
+    color:#F1D23F;
+  
+  }
+
+h2 {
+  
+    font-family: Oswald, sans-serif;
+    font-size:2rem;
+    font-weight:500;
+    margin-top:0;
+    margin-bottom:0;
+  }
+
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
     font-weight:400;
 }
 
-ol, p {
+p {
 
     margin-top:0;
     padding-left:0;
     list-style-type: none;
     font-size:.875rem;
+
+}
+
+main ol {
+
+    padding-left:1rem;
+    font-size:.875rem;
+    font-weight:300;
+
+}
+
+img {
+
+    width:100%;
+    max-width:30rem;
+    border-radius:5px;
+
+}
+
+
+
+.image-bar {
+
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    padding:2rem;
+    background-color:#ffffff;
+    border-radius:5px;
 
 }
 
@@ -80,3 +152,21 @@ figcaption {
     padding:0 1rem;
 
 }
+
+#main-nav {
+  
+    display: none;
+  
+  }
+  
+  #main-nav > a {
+  
+    text-decoration: none;
+    color:#3d9497;
+    font-size:2.5vw;
+    font-weight:400;
+    padding:.75rem;
+    display:block; 
+    width:fit-content;
+  
+  }
