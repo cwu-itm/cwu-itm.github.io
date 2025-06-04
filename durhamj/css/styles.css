@@ -21,6 +21,8 @@ body {
     background-image: url(../images/usgs-hoS3dzgpHzw-unsplash.jpg);
     background-size: cover;
     background-repeat:no-repeat;
+    width:100vw;
+    height:100vh;
 }
 
 body { 
