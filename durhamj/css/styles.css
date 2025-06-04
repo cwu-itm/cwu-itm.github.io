@@ -24,6 +24,7 @@ body {
     width:100vw;
     height:100vh;
     font-family: 'Roboto', sans-serif;
+    padding:2rem;
 }
 
 p {
@@ -44,7 +45,7 @@ h1 {
 nav {
 
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto;
     gap:1rem;
 
 }
