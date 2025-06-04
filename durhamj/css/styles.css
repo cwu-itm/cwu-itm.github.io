@@ -23,7 +23,7 @@ body {
     background-repeat:no-repeat;
     width:100vw;
     height:100vh;
-    max-width:37.5rem;
+    max-width:48rem;
     font-family: 'Roboto', sans-serif;
     padding:2rem;
 }
@@ -68,6 +68,12 @@ nav a {
 @media screen and (min-width:769px) {
 
 
+    body {
+
+        max-width:58rem;
+
+    }
+    
     h1 {
      font-size:4rem;
     }
