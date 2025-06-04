@@ -59,9 +59,9 @@ nav a {
     text-decoration: none;
     display:block;
     font-size:.875rem;
-    color:#333;
+    font-weight:600;
+    color:#1B2A41;
     padding:.5rem;
-    align-content: center;
 
 }
 
