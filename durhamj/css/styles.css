@@ -2,8 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
- font-size:16px;
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;    
+}
+
+:root {
+    font-size:16px;
+    color:#324A5F;
+    font-family:Roboto;
+    --main-color:#FFF;
+    --main-bg-color:#1B2A41;
+}
+
+body {
+    color:var(--main-color);
+    background-image: url(../images/usgs-hoS3dzgpHzw-unsplash.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+header {
+    margin:0 auto;
+    padding:2rem 0;
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
 
 body { 
