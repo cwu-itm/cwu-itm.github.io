@@ -51,7 +51,6 @@ nav {
     border-radius:5px;
     margin:1rem 0;
 
-
 }
 
 nav a {
@@ -66,13 +65,6 @@ nav a {
 }
 
 @media screen and (min-width:769px) {
-
-
-    body {
-
-        max-width:58rem;
-
-    }
     
     h1 {
      font-size:4rem;
@@ -81,8 +73,21 @@ nav a {
     nav {
         
     display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    
+    }
+}
+
+@media screen and (min-width:968px) {
+
+ nav {
+        
+    display:grid;
     grid-template-columns: repeat(5, 1fr);
     gap:1rem;
     
     }
+
+    
 }
