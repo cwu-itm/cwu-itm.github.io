@@ -45,9 +45,7 @@ h1 {
 
 nav {
 
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap:1rem;
+    display:block;
     background-color:rgba(255, 255, 255, 0.5);
     border:1px solid #333;
     border-radius:5px;
@@ -65,4 +63,15 @@ nav a {
     padding:.5rem;
     align-content: center;
 
+}
+
+@media screen and (min-width:769px) {
+
+    nav {
+        
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1rem;
+    
+    }
 }
