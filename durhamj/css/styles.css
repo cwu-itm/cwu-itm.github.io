@@ -38,7 +38,7 @@ main {
 }
 
 h1 {
- font-size:4rem;
+ font-size:3rem;
  font-family: 'Oswald', san-serif;
  letter-spacing: .125rem;
 }
@@ -67,6 +67,11 @@ nav a {
 
 @media screen and (min-width:769px) {
 
+
+    h1 {
+     font-size:4rem;
+    }
+    
     nav {
         
     display:grid;
