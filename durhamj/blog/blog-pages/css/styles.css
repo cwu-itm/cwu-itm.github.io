@@ -61,6 +61,19 @@ body {
     margin-top:0;
     
   }
+
+  .article-header {
+
+    background-color:#c4c4c4;
+    padding:1rem;
+
+  }
+
+  .article-content {
+
+    padding:0 1rem;
+
+  }
   
   .page-footer {
 
