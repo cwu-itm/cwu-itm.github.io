@@ -18,11 +18,10 @@
 
 body {
     color:var(--main-color);
+    background-color:var(--main-bg-color);
     background-image: url(../images/usgs-hoS3dzgpHzw-unsplash.jpg);
-    background-size: cover;
     background-repeat:no-repeat;
-    width:100vw;
-    height:100vh;
+    background-size:3000px 3000px;
     max-width:48rem;
     font-family: 'Roboto', sans-serif;
     padding:2rem;
@@ -46,10 +45,7 @@ h1 {
 nav {
 
     display:block;
-    background-color:rgba(255, 255, 255, 0.5);
-    border:1px solid #333;
-    border-radius:5px;
-    margin:1rem 0;
+    
 
 }
 
@@ -57,10 +53,18 @@ nav a {
 
     text-decoration: none;
     display:block;
-    font-size:.875rem;
+    height:200px;
+    width:200px;
+    font-size:1rem;
     font-weight:600;
     color:#1B2A41;
     padding:.5rem;
+    background-color:rgba(255, 255, 255, 0.5);
+    border:1px solid #333;
+    border-radius:5px;
+    margin:1rem 0;
+    align-content: center;
+    text-align: center;
 
 }
 
