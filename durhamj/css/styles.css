@@ -62,7 +62,14 @@ nav {
    
 }
 
-nav a {
+nav ul {
+
+    margin:0 2rem;
+    list-style-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+
+}
+
+nav ul li a {
 
     display:block;
     font-size:1rem;
@@ -126,13 +133,14 @@ footer {
 
     }
     
-    nav {
+    nav ul {
         
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         gap:.5rem;
     
     }
+
 
     footer {
 
