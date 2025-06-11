@@ -2,171 +2,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
-html {
-    font-size: 18px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;    
+}
+
+:root {
+    font-size:18px;
+    font-family:Roboto;
+    --primary-color:rgba(255, 255, 255, 1);
+    --secondary-color:#135b6d;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    background-blend-mode:overlay;
+    width: 100%;
+    height: 100vh;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
-}
 
-.page-header {
-  
-    background:#333 url("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-blend-mode: overlay;
-    color:#FFF;
-    padding:1rem;
-   
-  }
-  
-  .page-header > h1 {
+    color:var(--primary-color);
+    padding:2rem;
+    opacity:.7;
     
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-    text-align: center;
-    margin:0;
-    padding:1rem;
-    border:solid 2px #FFF;
-    border-top-left-radius:25px;
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
-    width:35%;
-  }
-
-  main {
-
-    margin:1rem;
-    display:grid;
-  
-  }
-
-  main p {
-  
-    font-size:.875rem;
-    font-weight:300;
-    margin-top:0;
-    
-  }
-  
-  .page-footer {
-
-    padding:2rem 1rem;
-    font-size:.875rem;
-    background-color:#333;
-    color:#FFF;
-    text-align:center;
-  
-  }
-  
-  .page-footer a {
-  
-    color:#F1D23F;
-  
-  }
-
-h2 {
-  
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-    font-weight:500;
-    margin-top:0;
-    margin-bottom:0;
-  }
-
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
-    font-weight:400;
 }
 
 p {
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+ margin:2rem 0;
 
 }
 
-main ol {
+main {
 
-    padding-left:1rem;
-    font-size:.875rem;
-    font-weight:300;
+    max-width:48rem;
+ 
+}
+
+h1 {
+ font-size:3rem;
+ font-family: 'Oswald', san-serif;
+}
+
+h2 {
+
+    font-size:1.5rem;
+    font-family: 'Oswald', san-serif;
 
 }
 
-img {
+nav {
 
-    width:100%;
-    max-width:30rem;
-    border-radius:5px;
+    display:block;
+}
+
+nav ul {
+
+    margin:0 2rem;
+    list-style-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
 
 }
 
+nav ul li a {
 
-
-.image-bar {
-
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:2rem;
-    padding:2rem;
-    background-color:#ffffff;
-    border-radius:5px;
+    display:block;
+    font-size:1rem;
+    font-weight:600;
+    padding:.5rem;
+    color:var(--main-color)
 
 }
 
-figure {
+nav a:hover {
 
-    margin:.5rem 0;
-
-}
-
-figcaption {
-
-    padding:.25rem auto;
-    font-size:.875rem;
-    font-weight:300;
-
-}
-
-.article-header {
-
-    background-color:#46baf0;
-      
-}
-
-.article-content {
-
-    padding:0 1rem;
-
-}
-
-#main-nav {
-  
-    display: none;
-  
-  }
-  
-  #main-nav > a {
-  
+    opacity:.5;
     text-decoration: none;
-    color:#3d9497;
-    font-size:2.5vw;
-    font-weight:400;
-    padding:.75rem;
-    display:block; 
-    width:fit-content;
+
+}
+
+footer {
+
+    padding:2rem 0;
+    font-size:1rem;
+   
+}
+
+
+@media screen and (min-width:769px) {
+    
+    :root {
+
+        background-blend-mode: normal;
+        background-color: none;
+   
+    }
+
+    body {
+
+        width: 100vw;
+        height: 100vh;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        opacity:.8;
+        
+    }
+    
+    h1 {
+
+     font-size:4rem;
+
+    }
+
+    h2 {
+
+        font-size:2.5rem;
+
+    }
+
+    .blurb-text {
+
+        font-size:1.25rem;
+        font-weight:200;
+
+    }
+    
+    nav ul {
+        
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:.5rem;
+    
+    }
+
+
+    footer {
+
+    padding:2rem 1rem;
+    font-size:.875rem;
+    color:#FFF;
+    text-align:center;
   
   }
+
+    }
+   
