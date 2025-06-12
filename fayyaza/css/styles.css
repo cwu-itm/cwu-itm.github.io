@@ -1,4 +1,3 @@
-/* GENERAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   padding: 2rem;
 }
 
-/* HEADER STYLES */
 header {
   background-image: url('../images/l.jpg');
   background-size: cover;
@@ -21,7 +19,6 @@ header {
   padding: 1rem;
   color: white;
 }
-
 
 header h1 {
   font-size: 2.5rem;
@@ -32,7 +29,6 @@ header p {
   font-size: 1rem;
 }
 
-/* NAVIGATION STYLES */
 nav ul {
   display: flex;
   justify-content: center;
@@ -55,7 +51,6 @@ nav ul li a:hover {
   background-color: #666;
 }
 
-/* SECTION STYLING */
 section {
   margin-top: 2rem;
   padding: 1rem;
@@ -64,7 +59,15 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* IMAGE GRID */
+img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
 .image-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,12 +78,6 @@ section {
   margin-top: 2rem;
 }
 
-.image-bar img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-/* TWO-COLUMN FLEX LAYOUT */
 .blog-columns {
   display: flex;
   gap: 2rem;
@@ -91,7 +88,6 @@ section {
   flex: 1;
 }
 
-/* FIGURES & CAPTIONS */
 figure {
   margin: 1rem 0;
 }
@@ -102,7 +98,6 @@ figcaption {
   margin-top: 0.25rem;
 }
 
-/* FOOTER STYLING */
 footer {
   margin-top: 3rem;
   padding: 2rem;
