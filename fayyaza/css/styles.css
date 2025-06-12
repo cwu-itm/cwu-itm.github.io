@@ -1,3 +1,4 @@
+/* Reset and base */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +13,51 @@ body {
   padding: 2rem;
 }
 
+/* Navigation moved to top: separate styling */
+nav {
+  background-color: #222;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #666;
+  outline: none;
+}
+
+/* Page header styling (separate from nav) */
 header {
   background-image: url('../images/l.jpg');
   background-size: cover;
   background-position: center;
   padding: 1rem;
   color: white;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 8px;
 }
 
 header h1 {
@@ -26,95 +66,59 @@ header h1 {
 }
 
 header p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-  margin-top: 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  padding: 0.75rem 1rem;
-  background-color: #444;
-  color: #fff;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: #666;
-}
-
-section {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-img {
-  width: 100%;
-  max-width: 30rem;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-
-.image-bar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-top: 2rem;
-}
-
+/* Two columns flexbox for blog content */
 .blog-columns {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* space between columns */
   margin-top: 2rem;
 }
 
 .blog-columns .column {
   flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-figure {
-  margin: 1rem 0;
+/* Responsive images: ensure they scale proportionally */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: contain; /* Keeps image proportions */
 }
 
-figcaption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.25rem;
+/* Image bar grid with 3 images */
+.image-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
+.image-bar img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Footer styling */
 footer {
   margin-top: 3rem;
   padding: 2rem;
   background-color: #222;
   color: white;
   border-radius: 8px;
-}
-
-footer h3 {
-  margin-bottom: 1rem;
-}
-
-footer ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-footer ul li {
-  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
 }

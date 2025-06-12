@@ -497,106 +497,95 @@
 
 
          <!-- Module 3.2 Blog Post Starts here -->
-         <article>
-  <header>
-    <header>
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interaction That Matters: Designing with Feeling, Timing, and Ethics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <h1>Interaction That Matters: Designing with Feeling, Timing, and Ethics</h1>
   <p><strong>By Aroona Fayyaz</strong> | Module 3.2 Blog Post</p>
 </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<article class="blog-columns">
 
   <section>
-    <h2>Interaction Timing, Feedback, and Emotional Memory</h2>
-
-    <p>User experience (UX) is not merely about functionality or layout—it’s deeply rooted in how users feel when they interact with a system. Great UX design centers around emotions and memory, and the mechanisms that influence those perceptions. Timing, responsiveness, and feedback aren’t surface-level features; they are the invisible threads that shape trust, engagement, and satisfaction.</p>
-
-    <p>Let’s begin with the <strong>Peak–End Rule</strong>, a principle proposed by psychologist Daniel Kahneman. It states that people remember experiences based on the emotional peaks and how they end—not necessarily on the sum of all moments. This rule applies heavily in UX design. Imagine a shopping experience where everything flows smoothly, but the final checkout screen is confusing or fails to confirm the order clearly. That single moment can tarnish the entire experience, despite the rest going well (Kahneman, 1999).</p>
-
-    <p>I encountered this in a design project for a university's class registration tool. We received user complaints about frustration—even though the platform technically worked. By examining the flow, we found the confirmation message was plain and delayed. By adding a responsive animation and a clear, personalized message (“You’re registered for Fall!”), user satisfaction scores improved significantly. A small change at the emotional “end” of the journey transformed user memory.</p>
-
-    <figure>
-      <img src="images/image.c.jpg" alt="User giving feedback via smartphone interface">
-      <figcaption>Photo by RSI Geeks. Licensed under RSI Geeks License.</figcaption>
+    <h2>UX Laws, Motion, and Interface Intuition</h2>
+     <figure>
+      <img src="images/1_j27sXD63KzS0Si9Cx11HyA.jpg" alt="UX Laws, Motion, and interface Intuition" />
+      <figcaption>Image by medium.Beyond Static Screens.</figcaption>
     </figure>
 
-    <p>Another key principle is the <strong>Doherty Threshold</strong>, which suggests that interfaces should respond within 400 milliseconds to keep users engaged. The longer a user waits without feedback, the more anxious or irritated they become (Lidwell et al., 2010). This is why responsive design is so important—users feel respected and in control when systems respond quickly and clearly.</p>
+    <p>Interaction design is a multidisciplinary practice that blends psychology, technology, and art to create digital experiences that are intuitive, efficient, and emotionally satisfying. While it might seem straightforward on the surface, the craft of interaction design involves deep understanding of human cognitive limits and behaviors. This is where foundational UX laws come in—these laws are distilled from research and decades of design experience and offer essential guidelines that help designers shape digital products people love to use.</p>
 
-    <p>Think about loading indicators. When an interface delays and offers no visual response, users might click again or assume it's broken. That uncertainty leads to stress. A simple spinner, progress bar, or animated placeholder signals that the system is working, preserving user trust. Feedback reassures us our action was recognized—even if the task takes longer.</p>
+    <p><strong>Fitts’s Law</strong> is one of the most cited principles in UX. It articulates a clear relationship between the size of a target and the distance to it, indicating how quickly a user can reach a target. This has significant implications on the design of clickable or tappable elements in user interfaces. For example, small icons in the corner of a mobile app can slow down interaction and increase frustration, especially for users with motor impairments or those using their device in unstable environments, like walking or commuting. On the other hand, large touch targets placed within easy thumb reach can reduce errors and make navigation feel natural.</p>
 
-    <p>Audible and haptic feedback are other subtle yet powerful tools. Phone vibrations when typing, clicking sounds, or visual pulses help users feel connected to the interface. As Johnson (2020) notes, humans are biologically wired to seek confirmation—we want to know “Did that work?” even if the action is minor.</p>
+    <p>In a practical sense, Fitts’s Law informs common mobile app designs where key actions—like submitting a form or playing a video—are given large, distinct buttons placed at the bottom of the screen. This placement aligns with ergonomic studies showing that thumbs naturally rest near the bottom half of a device, making interactions faster and more comfortable. Apps like Instagram and TikTok leverage this by placing their main navigation controls along the bottom bar, making switching between home, search, notifications, and profile both seamless and fast. Ignoring this law can cause interface elements to feel "unreachable" or cumbersome, ultimately diminishing user satisfaction.</p>
 
-    <p><strong>Motion design</strong> also affects perception. Smooth transitions help users build spatial awareness within digital environments. When one page fades into another or elements slide naturally into place, it mirrors real-world movement and reduces cognitive effort. In a usability test, I saw users describe a basic dashboard as “cold and static,” until we added micro-interactions such as hover animations and entry transitions. Suddenly, it felt “alive.”</p>
+    <p><strong>Jakob’s Law</strong>, coined by usability expert Jakob Nielsen, teaches that users spend the majority of their time on other websites and expect your site or app to work similarly. This principle underscores the importance of familiarity in design—people bring mental models shaped by commonly accepted layouts, controls, and interaction patterns. For example, placing the main navigation menu in the top or left side of the screen is an expected norm, and deviating from this without clear benefit risks confusing users. Similarly, using standard icons like a magnifying glass for search or a hamburger icon for a menu ensures users immediately recognize and understand how to interact.</p>
 
-    <p>Importantly, motion must serve function, not decoration. A loading animation that delights for one second is good UX—but one that loops excessively causes frustration. And too much animation without purpose can be disorienting, especially for neurodivergent users or those with vestibular sensitivities. UX should always balance aesthetics and accessibility.</p>
+    <p>In one of my roles working with a university's student portal redesign team, Jakob’s Law was a critical consideration. The existing portal had a navigation structure that was unique to the university but inconsistent with other widely used platforms. This unfamiliar design caused significant user frustration, leading to frequent support tickets. We restructured the portal navigation to follow common web conventions, grouped related features logically, and applied standard iconography. Post-launch usability tests showed a 30% reduction in task completion time and positive user feedback highlighting the ease of finding information. This experience reinforced the power of meeting users where they are instead of forcing them to learn new interaction paradigms.</p>
 
-    <p>Interaction design is not about gimmicks; it’s about emotional intelligence. Thoughtful timing and feedback make users feel understood and respected. These choices don’t just improve performance—they shape memory and build loyalty. When users walk away feeling good, they come back.</p>
+    <p><strong>Tesler’s Law</strong>, or the Law of Conservation of Complexity, states that every application has an inherent amount of complexity that cannot be reduced, only shifted between the user and the system. This law forces designers to think critically about what complexity to expose and what to hide. Great design removes unnecessary cognitive load from users by automating repetitive tasks, simplifying decision-making, and revealing complexity only when needed.</p>
 
-    <p>In summary, designing for emotional memory isn’t optional—it’s fundamental. Laws like the Peak–End Rule and Doherty Threshold provide guidance, but lived experience and reflection make them actionable. By focusing on timely feedback, seamless motion, and human-centered flow, we can craft interfaces that feel trustworthy and even joyful.</p>
+    <p>For example, in a project where I collaborated with a nonprofit focused on community health data collection, we faced the challenge of complex data entry forms required by regulatory standards. Our initial forms presented all fields upfront, overwhelming users. By applying Tesler’s Law, we restructured the form into progressive disclosure, showing only essential fields initially and allowing users to expand sections for additional detail if necessary. We also integrated real-time validation and smart defaults based on previous inputs, reducing user errors and cognitive load. The end result was a more approachable interface that respected user time and attention without compromising data integrity.</p>
+
+    <p>Beyond static design principles, motion plays a vital role in user experience. Motion design isn’t simply decorative—it provides feedback, guides attention, and makes interactions feel alive. For instance, when a button visually "presses down" on tap, the user receives confirmation that their input was registered. These microinteractions create an emotional connection, signaling that the system is responsive and trustworthy.</p>
+
+    <p>Microinteractions are small, contained moments that revolve around a single use case—such as liking a post, toggling a setting, or receiving a notification. Well-designed microinteractions have four parts: a trigger (user action or system event), rules (what happens in response), feedback (visual or audio cues), and loops/modes (how long the interaction lasts or if it can be undone). For example, in an app I helped develop for task management at a local nonprofit, we introduced animated checkmarks when users completed tasks. The subtle bounce effect was not just fun—it gave users a sense of accomplishment and encouraged continued engagement.</p>
+
+    <p>However, motion must be carefully balanced. Excessive or poorly timed animations can overwhelm or annoy users, especially those with cognitive or vestibular sensitivities. Accessibility guidelines recommend respecting users’ preferences for reduced motion, which many operating systems now support. During our nonprofit project, we ensured our app checked for this setting and adapted animations accordingly—providing a smooth experience for all users.</p>
+
+    <figure>
+      <img src="images/lk.png" alt="Clean user interface showing visual hierarchy and motion cues" />
+      <figcaption>Image by medium. Licensed under medium License.</figcaption>
+    </figure>
+
+    <p>In summary, effective interaction design is grounded in a blend of science and empathy. Laws like Fitts’s Law, Jakob’s Law, and Tesler’s Law guide us in designing interfaces that are not only usable but intuitive and satisfying. Thoughtful use of motion and microinteractions enhances user understanding and emotional connection. From my experiences working with university teams and nonprofits, the best results come when we listen to users, test assumptions, and use these laws as a foundation rather than a constraint. After all, at the heart of interaction design is the desire to create digital experiences that feel natural, human, and empowering.</p>
   </section>
-  <section>
-  <h2>UX Laws, Motion, and Interface Intuition</h2>
+    <section>
+    <h2>Persuasive Design, Ethics, and Emotional Responsibility</h2>
 
-  <p>Interaction design isn’t just about solving problems—it’s about creating experiences that feel seamless, intuitive, and psychologically sound. To design experiences that “just work,” we must rely on cognitive principles and proven user experience (UX) laws. These include Fitts’s Law, Jakob’s Law, Tesler’s Law, and others that provide guidance on how humans interact with technology. When we build with these rules in mind, we reduce friction, improve learnability, and empower users.</p>
+    <p>Persuasive design is an influential subset of UX focused on shaping user behavior to benefit both users and organizations. While it offers powerful techniques to motivate users toward positive actions—like adopting healthier habits or improving financial literacy—it also carries significant ethical considerations. Responsible designers must balance the effectiveness of persuasion with respect for autonomy, transparency, and emotional well-being.</p>
 
-  <p><strong>Fitts’s Law</strong> is foundational in interface design. It states that the time to reach a target depends on the size of the target and the distance to it. In UX, this translates into the importance of clickable areas. A large button that is close to the expected action flow is easier to hit than a small, faraway one. This is especially important on mobile devices where thumbs are less precise than cursors. Consider how frequently-used actions in apps like Instagram—such as the home or like button—are placed at the bottom of the screen, within thumb range. This is Fitts’s Law in action.</p>
+    <p>One foundational concept in this field is the identification and avoidance of <em>dark patterns</em>, a term coined by Harry Brignull to describe design choices that trick or coerce users into unintended actions (Brignull, 2010). Examples include hidden subscription fees, disguised ads, and forced continuity, where users find it difficult to cancel a service. Dark patterns exploit cognitive biases and attentional limits, damaging user trust and potentially exposing companies to legal risks.</p>
 
-  <p>Then there’s <strong>Jakob’s Law</strong>: “Users spend most of their time on other websites.” This law teaches us that familiarity breeds usability. People come to new apps with expectations shaped by common design conventions. If your navigation menu breaks common patterns or your form fields behave differently than those on similar platforms, you risk confusing your users. Good design is not about being radically different—it’s about meeting users where they are. A weather app shouldn’t surprise users with hidden navigation or unconventional gestures. The less users have to learn, the faster they accomplish their goals.</p>
+    <p>Recognizing the risks, many organizations now emphasize ethical design frameworks that promote user empowerment rather than manipulation. The Nielsen Norman Group’s Ethical Heuristics advocate principles such as full disclosure of persuasive intent, user control over decisions, and providing easy opt-out options (Nielsen Norman Group, 2023). These heuristics serve as guiding beacons to ensure that persuasive design supports user interests without undermining informed consent.</p>
 
-  <p><strong>Tesler’s Law</strong>, also known as the Law of Conservation of Complexity, reminds us that every application has inherent complexity. The key is deciding who should manage it: the system or the user. Ethical and effective UX design hides unnecessary technical detail and presents information progressively. A great example is Google’s minimalist homepage—it offers a single search bar, hiding the complex algorithms behind it. This makes a powerful system feel simple.</p>
+    <p>Gamification is one of the most common persuasive techniques. By integrating game-like elements such as points, badges, and streaks, apps aim to increase user engagement and motivation. For example, Duolingo uses daily streaks to encourage consistent language practice. While this can boost habit formation, it can also trigger anxiety or guilt when users break their streaks. Recognizing this, Duolingo added the option to "freeze" streaks, allowing users to pause progress without penalty, which reflects a commitment to balancing motivation with user well-being (Duolingo, 2023).</p>
 
-  <p>Beyond laws, motion plays an often-underestimated role in interface usability. Motion design isn’t just eye candy—it gives users feedback, helps guide attention, and establishes relationships between elements. For instance, when you drag a card and it follows your finger with realistic momentum, your brain interprets this as an object with weight and physics. This natural mapping enhances comprehension.</p>
+    <p>In my personal project designing a mindfulness app for university students, we initially implemented streaks and frequent reminders to encourage daily meditation. However, feedback revealed that many users felt pressured and stressed by the rigid tracking system, which was counterproductive for a mindfulness tool. After redesigning the app to emphasize flexibility, with optional reminders and a focus on user choice, we observed improved user satisfaction and retention. This experience highlighted how ethical persuasive design requires ongoing user research, empathy, and willingness to iterate based on emotional impact.</p>
 
-  <p>Microinteractions—tiny animations triggered by user actions—are a prime example. A heart that animates when clicked, a shake when a form fails, or a “swipe to delete” motion all convey clear meaning. These moments help users feel connected to the system. In a usability study I conducted, users responded more positively to a form that included animations than to a static one. The motion guided their focus and reduced their cognitive load during data entry.</p>
+    <figure>
+      <img src="images/uuyy.jpg" alt="Design ethics concept with positive visual cues" />
+      <figcaption>Image by Unsplash. Licensed under Unsplash License.</figcaption>
+    </figure>
 
-  <figure>
-    <img src="images/image.b.jpg" alt="Clean user interface showing visual hierarchy and motion cues">
-    <figcaption>Image by medium. Licensed under medium License.</figcaption>
-  </figure>
+    <p>Persuasive design is closely tied to emotional responsibility. Each interaction can shape a user’s mood, motivation, and trust. Ethical designers must consider the emotional states that features induce—avoiding fear, guilt, or frustration as motivators. Instead, designers should aim to foster feelings of competence, autonomy, and relatedness, which psychological research shows support long-term engagement and wellbeing.</p>
 
-  <p>However, motion must be purposeful. Overuse of animations can lead to slower performance, visual fatigue, and accessibility issues. Designers must strike a balance: keep animations brief, subtle, and supportive of tasks. Tools like <em>Google Material Design</em> and Apple’s <em>Human Interface Guidelines</em> offer best practices for timing and behavior of animations to avoid disorientation or delay.</p>
+    <p>Another example comes from a digital fundraising tool I worked on with a local nonprofit. Early versions used urgency messaging like "Only 1 spot left!" to drive quick donations. Although this tactic temporarily increased clicks, many users expressed skepticism and a sense of manipulation. After switching to transparent progress indicators that showed real impact ("You’ve helped fund 3 meals"), we saw donations become more consistent and user feedback became more positive. This reinforced the idea that ethical persuasion grounded in honesty and respect outperforms pressure tactics.</p>
 
-  <p>One real-world application I worked on was a task manager for a local nonprofit. Users reported feeling overwhelmed by the interface, even though it had minimal text. After a UX audit, we added animated transitions to gently slide in and out of task views, fading tooltips, and delayed button feedback to prevent accidental double clicks. These additions didn’t change the underlying functionality—but users described the experience as “clearer” and “more professional.”</p>
+    <p>Persuasive technology expert Johnson (2020) emphasizes supporting user agency rather than overriding it. This means designing systems that scaffold progress without exploiting vulnerabilities. For example, offering meaningful choices, clear explanations, and undo options respects users' autonomy and builds trust.</p>
 
-  <p>Importantly, motion also plays a role in accessibility. For example, respecting users' "prefers-reduced-motion" settings ensures inclusive design. Not all users want or can tolerate animated transitions. Designers must ensure their products do not create barriers for people with sensory sensitivities or neurological conditions. Good UX is good for <em>everyone</em>.</p>
+    <p>In conclusion, persuasive design is a double-edged sword. It can improve lives when done thoughtfully, but can cause harm if misused. As UX professionals, we must approach persuasion with humility, transparency, and empathy. Designing with ethics means designing for human dignity. When we align persuasion with user values and emotions, we create digital experiences that not only achieve goals but also enrich lives.</p>
 
-  <p>In conclusion, strong interaction patterns rely on deeply human-centered principles. UX laws like Fitts’s Law and Jakob’s Law guide where and how to place elements for efficiency. Tesler’s Law teaches us to hide complexity when possible. And motion—used wisely—creates continuity, confidence, and delight. By grounding our decisions in psychology and usability research, we ensure our designs are not only beautiful but functional and empathetic.</p>
-</section>
-<section>
-  <h2>Persuasive Design, Ethics, and Emotional Responsibility</h2>
-
-  <p>Persuasive design is a powerful tool. It can guide users toward healthier habits, increase engagement, and help people achieve goals more easily. However, with that power comes responsibility. Designers must consider the ethical implications of every persuasive element—because while UX can nudge, it can also manipulate. The line between help and coercion is thin, and crossing it can damage both users and brands.</p>
-
-  <p>Consider the concept of “dark patterns,” coined by Harry Brignull. These are deceptive design strategies that trick users into taking actions they didn’t intend—like subscribing to newsletters or unknowingly giving away personal data (Brignull, 2010). Common examples include pre-checked boxes, hidden costs during checkout, and deliberately confusing opt-out links. These tactics may boost short-term conversions, but they erode trust. Ethical design should aim for transparency, clarity, and user control.</p>
-
-  <p>One of the most debated persuasive design techniques is the use of streaks and gamification. Take Duolingo, for example: its daily streak counter motivates users to continue language learning. While this can be positive reinforcement, it can also create anxiety or guilt. In their own UX writing, Duolingo acknowledges this balance and allows users to “freeze” a streak—a small feature with a big impact on mental wellbeing (Duolingo, 2023).</p>
-
-  <p>In a personal project, I designed a mindfulness app targeting university students. Our initial tests used streaks and reminders to boost retention. But users reported feeling pressured—some even said the app made them feel like they were failing if they missed a session. We revised the design to allow more flexible tracking and reframed reminders as “gentle check-ins.” After the redesign, both retention and satisfaction improved. This experience taught me that ethical persuasion must prioritize the user’s emotional state and autonomy.</p>
-
-  <figure>
-    <img src="images/image.a.jpg"Design ethics concept with positive visual cues">
-    <figcaption>Image by Unsplash. Licensed under Unsplash License.</figcaption>
-  </figure>
-
-  <p>To navigate ethical challenges, UX professionals can refer to resources like the Nielsen Norman Group’s <em>Ethical Heuristics</em>, which advocate for things like consent, clarity, and reversibility (Nielsen Norman Group, 2023). These heuristics encourage designers to be honest about persuasive intentions and ensure users can make informed choices. For example, confirmation dialogs, undo buttons, and clear explanations empower users rather than deceive them.</p>
-
-  <p>Another core idea comes from Johnson’s (2020) discussion of persuasive technology. He argues that systems should support user agency rather than override it. This means avoiding fear-based triggers, exploiting user insecurities, or leveraging addiction cycles. Instead, persuasive elements should affirm the user’s goals and offer scaffolding to make progress feel achievable.</p>
-
-  <p>Ethical UX also involves emotional responsibility. We design not just screens, but states of mind. A poorly timed notification can interrupt a moment of peace. A misleading progress bar can cause false hope. We must consider emotional outcomes of every feature. Are we building something that uplifts—or undermines—wellbeing?</p>
-
-  <p>In my work with a local nonprofit’s digital fundraising tool, we found that donation forms that used urgency messaging (“Only 1 spot left!”) increased clicks, but led to lower follow-through rates and complaints. After replacing this with a progress bar and transparent impact summaries (“You’re helping fund 3 meals”), donations became more consistent and user trust increased. This showed us that ethical persuasion can still be effective—without resorting to tricks.</p>
-
-  <p>Ultimately, persuasive design must be paired with empathy and integrity. It’s not wrong to nudge users—but they must understand and agree with the direction they’re being nudged. When we design with clarity, consent, and compassion, we create digital spaces that support not just goals, but growth.</p>
+  </section>
 
   <footer>
     <h3>References</h3>
@@ -612,7 +601,6 @@
 
 
 
-  </section>
 </article>
 
 
