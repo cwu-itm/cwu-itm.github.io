@@ -20,10 +20,8 @@ html {
   color:#D9027D;
   padding:1rem;
   font-family: Roboto, sans-serif; 
-  text-orientation: center;
+  text-align: center;
   overflow: hidden;
-
-
 
  }
 body {
@@ -122,17 +120,16 @@ img {
 
 .image-bar {
     display: flex;
-    justify-content: center; /* Centers images */
-    gap: 15px; /* Adds space between images */
+    justify-content: center; 
+    gap: 15px; 
     padding: 10px;
-    background-color: #F8C8DC; /* Optional background */
+    background-color: #F8C8DC; 
 }
 
 .image-bar img {
-    width: 70px; /* Adjust image size */
+    width: 10px; 
     height: auto;
-    border-radius: 5px;
-    align: center img /* Optional rounded edges */
+    border-radius: 5px; 
 }
 
 
