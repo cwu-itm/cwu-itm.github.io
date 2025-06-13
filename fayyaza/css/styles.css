@@ -1,54 +1,125 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+  padding: 2rem;
 }
 
-main {
-
-    margin-bottom:3rem;
-
+/* HEADER STYLES */
+header {
+  background-image: url('../images/l.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  color: white;
 }
 
-h1 {
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+header p {
+  font-size: 1rem;
 }
 
-ol {
+/* NAVIGATION STYLES */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+nav ul li a {
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
 
+nav ul li a:hover {
+  background-color: #666;
+}
+
+/* SECTION STYLING */
+section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* IMAGE GRID */
+.image-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.image-bar img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* TWO-COLUMN FLEX LAYOUT */
+.blog-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-columns .column {
+  flex: 1;
+}
+
+/* FIGURES & CAPTIONS */
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* FOOTER STYLING */
+footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
 }

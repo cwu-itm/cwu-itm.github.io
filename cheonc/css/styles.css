@@ -2,53 +2,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;    
+}
+
+:root {
+    font-size:18px;
+    font-family:Roboto;
+    --primary-color:rgba(255, 255, 255, 1);
+    --secondary-color:#135b6d;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    background-blend-mode:overlay;
+    width: 100%;
+    height: 100vh;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+
+    color:var(--primary-color);
+    padding:2rem;
+    opacity:.7;
+    
+}
+
+p {
+
+ margin:2rem 0;
+
 }
 
 main {
 
-    margin-bottom:3rem;
-
+    max-width:48rem;
+ 
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+ font-size:3rem;
+ font-family: 'Oswald', san-serif;
 }
 
 h2 {
 
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
     font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-family: 'Oswald', san-serif;
+
 }
 
-ol {
+nav {
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
+    display:block;
+}
+
+nav ul {
+
+    margin:0 2rem;
+    list-style-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+
+}
+
+nav ul li a {
+
+    display:block;
+    font-size:1rem;
+    font-weight:600;
+    padding:.5rem;
+    color:var(--main-color)
+
+}
+
+nav a:hover {
+
+    opacity:.5;
+    text-decoration: none;
+
+}
+
+footer {
+
+    padding:2rem 0;
+    font-size:1rem;
+   
+}
+
+
+@media screen and (min-width:769px) {
+    
+    :root {
+
+        background-blend-mode: normal;
+        background-color: none;
+   
+    }
+
+    body {
+
+        width: 100vw;
+        height: 100vh;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        opacity:.8;
+        
+    }
+    
+    h1 {
+
+     font-size:4rem;
+
+    }
+
+    h2 {
+
+        font-size:2.5rem;
+
+    }
+
+    .blurb-text {
+
+        font-size:1.25rem;
+        font-weight:200;
+
+    }
+    
+    nav ul {
+        
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:.5rem;
+    
+    }
+
+
+    footer {
+
+    padding:2rem 1rem;
     font-size:.875rem;
+    color:#FFF;
+    text-align:center;
+  
+  }
 
-}
+    }
+   

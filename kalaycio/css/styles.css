@@ -1,54 +1,90 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body and General */
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f0; /* soft warm cream */
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
 }
 
-main {
-
-    margin-bottom:3rem;
-
+/* Section Boxes (Cards) */
+.container {
+  background-color: #3e3e5b; /* deep indigo */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+.container h1,
+.container h2 {
+  color: #ffffff;
+  text-align: center;
 }
 
+.container p {
+  color: #f4f4f4;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Headings Outside Cards */
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+  font-size: 1.4rem;
+  margin: 30px 0 16px;
+  text-align: center;
+  color: #ff6b35;
 }
 
-ol {
+/* Plain Paragraphs */
+p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+/* Navigation Buttons */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  background-color: #3e3e5b;
+  padding: 15px;
+  border-radius: 8px;
+}
 
+nav a {
+  background-color: #ff6b35;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e55b28;
+}
+
+/* Optional Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: #999;
 }
