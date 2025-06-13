@@ -6,29 +6,46 @@
 
 html {
     font-size: 16px;
-    color: #000000;
+    color: #FFFFFF;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
-    background-color:#ffffff ;
+    background-color:#D9027D ;
+
+
+body {
+    background-image: url(../background heart.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background size: cover;
+    /* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+
+html {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+    background-color:#D9027D ;
+
+
+}
+.page-header{
+ background-image: url('background heart.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
 
 
 }
 
-.page-header { 
- background:#FFB6C1 url(../images/flowersss.jpg) center/cover no-repeat;
-  background-blend-mode: overlay;
-  color:#D9027D;
-  padding:1rem;
-  font-family: Roboto, sans-serif; 
-  text-orientation: center;
-  overflow: hidden;
-
-
-
- }
 body {
 
-    background-color: #ffffff;
+    background-color: #D9027D;
     margin: 1% auto;
     width: 100%;
     max-width: 50rem;
@@ -37,8 +54,14 @@ body {
     line-height: 1.3;
     padding-top: 0;
     padding-left: 1;
-    padding-right: 1;   
-}
+    padding-right: 1;  
+    background-image: url('background heart.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+
 main {
 
     margin-bottom:0 px;
@@ -69,16 +92,11 @@ main {
     position: absolute;
     top: 10px; 
     height: auto;
-    image:url(../images/Isabella Furuc);
+    image:url(../images/Isabella Furuc.jpg);center/cover no-repeat; 
   }
 
 
-h1 {
-    color: #D9027D;
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-    text-align: center;
-}
+
 
 h2 {
     color: #D9027D;
@@ -87,11 +105,6 @@ h2 {
 
 }
 
-h3 {
-     color: #D9027D;
-    font-family: Oswald, sans-serif;
-    font-size:.875rem;
-}
 
 ol {
 
@@ -103,16 +116,6 @@ ol {
 
 }
 
-dl {
-
-    margin-top:0;
-    margin-bottom: 1.5rem;
-    padding-left:1;
-    padding-right: 1;
-    list-style-type: none;
-    font-size:.875rem;
-
-} 
 img {
     width: 35%;
     max-width: 30rem;
@@ -120,21 +123,6 @@ img {
 
 } 
 
-.image-bar {
-    display: flex;
-    justify-content: center; /* Centers images */
-    gap: 15px; /* Adds space between images */
-    padding: 10px;
-    background-color: #F8C8DC; /* Optional background */
+
+
 }
-
-.image-bar img {
-    width: 70px; /* Adjust image size */
-    height: auto;
-    border-radius: 5px;
-    align: center img /* Optional rounded edges */
-}
-
-
-
-
