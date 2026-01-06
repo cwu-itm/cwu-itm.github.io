@@ -4,14 +4,14 @@
 
 /* Global Styles */
 html {
-    font-size: 20px;
-    color: #191818;
+    font-size: 16px;
+    color: #333;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #bb1b1b;
+    background-color: #FFF;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
