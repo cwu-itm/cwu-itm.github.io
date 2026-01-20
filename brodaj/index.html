@@ -164,7 +164,128 @@
       </article>
 
       <!-- Module 1.2 Blog Post Starts here -->
-
+      <article>
+         <header class="article-header">
+            <h2>Module 1.2 Blog Post</h2>
+         </header>
+         <p>
+            Whenever we design a system, it’s easy to get caught up in the immediate build phase. Everyone’s excited to
+            get something implemented and create something new. However, among this excitement, we need someone to
+            think:
+            “how can we maintain this into the future?” In Systems Engineering Demystified, Jon Holt (2023) defines a
+            Life Cycle as a way to define the evolution of a system over time, providing a representation of how that
+            system moves from conception to retirement.
+         </p>
+         <p>This is called the Systems Development Life Cycle (SDLC). At its core, the SDLC is a framework used to
+            manage the complexities of planning, creating, testing, deploying, and managing a system. Without this
+            framework, we risk falling into the “Three Evils”: Lack of understanding, communication, and complexity
+            (Holt, 2023). These stages ensure that every stakeholder is on the same page about the system’s current
+            state and future needs.</p>
+         <p>Digital systems, being intangible pools of 1’s and 0’s, are never truly static like you’d see in an
+            infrastructure or manufacturing project. Even if the core product is locked in, elements outside of your
+            control like dependencies, protocols, and system architectures can change at a moment’s notice. If you view
+            your project as finished the moment a system is up and running, you are setting yourself up for failure. By
+            following SDLC, you are acknowledging that the system will eventually need refactoring or retirement (Holt,
+            2023). This mindset forces one to plan for things like data migration and security patching before they
+            become emergencies to ensure the system remains sustainable and secure throughout its entire lifespan.</p>
+         <h3>SDLC Models</h3>
+         <p>There’s no one-size-fits-all approach to building a system. Instead, we have to choose between different
+            models based on our goals, timeline, and tolerance for messiness.</p>
+         <h4>Linear: No U-Turns Allowed</h4>
+         <p>The Linear model, often referred to as “Waterfall”, is essentially linear thinking applied to systems
+            engineering. It follows a strict, logical sequence: you finish one stage completely before moving to the
+            next. In a perfect world, this works great. You define your needs, design the system, build it, test it,
+            ship it, and you’re done.</p>
+         <p>The advantage of this model is predictability. Because the requirements are locked in from the start, it’s
+            easier to manage budgets and milestones. However, the drawback is its extreme rigidity. In software and IT,
+            you rarely know what you need on day one. If you are halfway through the build phase and a new, better
+            technology comes out or a new security vulnerability has been discovered, the model makes it very difficult
+            to go back.</p>
+         <p>This creates a massive risk during the verification, where each stage of development should be verified
+            against its requirements. In a linear model, you don’t actually verify that the system works for the user
+            until the very end. If you realize in testing that the initial requirements were misunderstood or are now
+            obsolete, you have already spent your project’s budget. You are essentially stuck shipping an insecure,
+            outdated system because it is too expensive and time-consuming to fix.</p>
+         <h4>Iterative: A Living Document</h4>
+         <p>In contrast, the Iterative model treats the system like a living document. Rather than building the whole
+            thing in one shot, you build a rough draft of the entire system, test it, and then refine it in cycles. This
+            is essentially “trial and error” with a plan.</p>
+         <p>This model allows for immense flexibility because it prioritizes the feedback loop. You get to see a working
+            version of the system much earlier in the process, which allows you to catch major flaws in logic or user
+            experience before they are set in stone. However, the danger of a system that is never truly done is scope
+            creep. Because stakeholders see a functional prototype early on, they often suggest constant changes.
+            Without the strict decision gates Holt (2023) mentions, points where you must stop and agree that a stage is
+            finished, an iterative project can spiral out of control. You might find yourself in an endless loop of
+            refining the perfect interface while the actual system remains unfinished.</p>
+         <h4>Incremental: Ship Now, Fix Later</h4>
+         <p>The Incremental model is about shipping a Minimum Viable Product (MVP) and doing the rest later. You break
+            the system into chunks and deliver them one by one. This is highly efficient for getting a system into the
+            hands of users quickly, but it is also where we see the most dangerous accumulation of technical debt.</p>
+         <p>Technical debt, as defined by Tim Mucci (2025), refers to the future costs associated with relying on
+            short-term or suboptimal decisions during development. When you ship an MVP, you often take shortcuts to
+            meet a deadline, promising to go back and clean up code or documentation later. In reality, later rarely
+            comes. And as I’ve learned in my years of automotive work, there’s nothing more permanent than a temporary
+            fix.</p>
+         <p>
+            We can see the crust of this debt in the Windows operating system. One of Windows 11’s biggest marketing
+            points is a sleek, modern interface and modern reinterpretations of classic Windows apps. Yet if you dig
+            just two or three layers deep into the settings or poke around system utilities, you’ll discover the horror
+            of UI/UX elements that haven’t been touched since the Clinton administration, and sometimes even older.
+            This is the result of decades of incremental additions and backwards compatibility requirements. Microsoft
+            chose the short-term benefit of keeping old apps working, which satisfies the needs of the enterprise, one
+            of Microsoft’s biggest stakeholders, over the long-term sustainability of a clean, modern architecture.
+            While this meets immediate business needs (Mucci, 2025), the interest on that debt is a system that becomes
+            increasingly bloated and harder to secure over time. And if you look at the sheer amount of bugs and
+            performance inconsistencies in modern Windows, it’s clear that the interest has compounded to a breaking
+            point. It feels as though the debt collectors have finally arrived, and Microsoft is being forced to pay
+            for decades of shortcuts with the stability of their software.</p>
+         <h3>Reflection on Design, Sustainability, and Evolution</h3>
+         <p>Sustainability in IT is often measured by human capital. We usually think of a system as a set of servers
+            and code, but it also requires a steady supply of people who understand how it works. This is where the SDLC
+            is critical. Abhay Talreja (2024) discusses how legacy systems are often “so deeply embedded in the
+            operational fabric” of a business that they become nearly impossible to remove.</p>
+         <p>
+            You see this in the finance industry, where some institutions are still running on Fortran or COBOL code
+            from over half a century ago. These developers are practically worth their weight in gold because they are
+            the only ones left who can navigate this level of digital archaeology. When a system reaches this point, it
+            is no longer sustainable. It is a zombie system that stays alive not because it’s efficient or the best way
+            to do it, but because the risk of changing it is higher than the massive cost of keeping it on life support.
+            This is the worst-case consequence of ignoring the retirement stage of the SDLC. You eventually become a
+            prisoner to your own infrastructure.</p>
+         <p>However, there is another side to this legacy trap. In some systems, like the point-of-sales terminals you
+            see emulating ancient Unix interfaces at a grocery store, stay in place because of a “if it ain’t broke,
+            don’t fix it” philosophy. Over decades of refinement and bug-squashing, these systems have become nearly
+            indestructible. While they look like relics, their code has been polished to a point of reliability and
+            resiliency that modern, more complex software often struggles to reach.</p>
+         <p>This creates a paradox for sustainability. On one hand, you have a system that is incredibly stable and
+            reliable. On the other hand, you’re still accruing what Tim Mucci (2025) describes as the future costs of
+            technical debt. Even if the system is solid, the world around it is moving towards new standards and
+            security protocols. By choosing to stay with a perfected legacy system, you are essentially betting that the
+            cost of maintaining that archaic infrastructure will never exceed the cost of a catastrophic failure during
+            an upgrade. It is a fine line between a system that is battle-tested and one that is simply waiting for its
+            last expert to retire.</p>
+         <h3>Conclusion</h3>
+         <p>Whether you are looking at the rigid structure of a linear model or the living document approach of
+            iterative design, it becomes clear that these frameworks are not rules to be followed blindly. They are a
+            balance of trade-offs. There is no correct way to build a system; there is only the way that best aligns
+            with your specific objectives and the needs of your stakeholders. A high-security government database might
+            require the slow, verified pace of a linear cycle, while a consumer-facing app might need the rapid feedback
+            loops of an incremental rollout. The goal isn’t to pick the best model because a textbook said so; it
+            requires careful thinking from the very start of the system’s inception. </p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>Holt, J. (2023). <em>Systems Engineering Demystified</em> (2nd ed.). Packt Publishing Ltd.</li>
+               <li>Mucci, T. (2025, March 27). <em>Technical debt</em>. Ibm.com. <a
+                     href="https://www.ibm.com/think/topics/technical-debt">https://www.ibm.com/think/topics/technical-debt</a>
+               </li>
+               <li>Talreja, A. (2024, April 19). <em>Managing Legacy Systems: With a Case Study on Modernization –
+                     Nextra</em>. Teachingagile.com. <a
+                     href="https://teachingagile.com/sdlc/maintenance/managing-legacy-systems">https://teachingagile.com/sdlc/maintenance/managing-legacy-systems</a>
+               </li>
+            </ol>
+         </footer>
+      </article>
       <!-- Module 2.1 Blog Post Starts here -->
 
       <!-- Module 2.2 Blog Post Starts here -->
