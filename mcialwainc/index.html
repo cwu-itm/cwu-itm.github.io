@@ -40,8 +40,69 @@
             </footer>
          </article>
 
-         <!-- Module 1.2 Blog Post Starts here -->
-
+         <head>
+         <title>Understanding the Systems Development Life Cycle: Why Thinking in Life Cycles Matters for Digital Systems</title>
+         </head>
+         <body>
+         <h2>Defining the Systems Development Life Cycle (SDLC)</h2>
+         <p>The Systems Development Life Cycle (SDLC) is a structured way of thinking about how digital systems are conceived, designed, built, deployed, maintained, and eventually retired. Rather than viewing software or digital products as static deliverables, the SDLC frames them as evolving systems that move through a series of interconnected phases over time. These phases typically include planning, requirements analysis, design, development, testing, deployment, maintenance, and retirement or replacement. While the exact names and number of stages vary depending on the model used, the underlying idea remains the same: digital systems have a life span, and each phase influences the success of the next.</p>
+         <p>At its core, the SDLC is not just a technical framework but a decision-making lens. It encourages designers, developers, and stakeholders to consider trade-offs related to time, cost, usability, risk, and long-term sustainability. From a systems perspective, every choice made early in the life cycle—such as architecture decisions or user experience assumptions—creates ripple effects that shape how adaptable, maintainable, and user-centered the system will be later on. This holistic way of thinking aligns closely with human-centered design principles, including those outlined in Laws of UX, which emphasize designing systems that account for how people perceive, process, and interact with information over time (Yablonski, 2020).</p>
+         <h1>Key Characteristics of Life Cycle Models</h1>
+         <p>Life cycle models provide structured approaches for organizing the SDLC. While dozens of variations exist, most can be grouped into three broad categories: linear, iterative, and incremental models. Each model reflects different assumptions about uncertainty, user involvement, and system complexity.</p>
+         <h2>Linear Life Cycle Models</h2>
+         <h3>Characteristics</h3>
+         <p>Linear life cycle models, often associated with the Waterfall model, follow a strict, sequential progression through SDLC phases. Each stage must be completed and formally approved before the next begins. Requirements are defined upfront, design follows requirements, development follows design, and testing occurs only after implementation is complete.</p>
+         <p>This model assumes that system requirements are stable, well-understood, and unlikely to change. Documentation plays a central role, and progress is measured by the completion of predefined milestones rather than working software.</p>
+         <h3>Advantages</h3>
+         <p>One of the primary strengths of linear models is clarity and predictability. Because each phase has defined deliverables, project timelines and budgets are easier to estimate early on. This can be especially valuable in regulated industries or environments where compliance, traceability, and formal approval processes are critical.</p>
+         <P>Linear models also work well for smaller or well-bounded systems with minimal uncertainty. When requirements are unlikely to change—such as replicating an existing system with minor updates—the structured nature of the linear approach can reduce ambiguity and keep teams aligned.</P>
+         <h3>Potential Drawbacks</h3>
+         <p>Despite their structure, linear models struggle in environments where change is inevitable. One major drawback is the delayed discovery of problems. Because testing and user validation occur late in the process, usability flaws or misunderstood requirements may not surface until significant time and resources have already been invested.</p>
+         <p>From a UX perspective, this rigidity conflicts with what Laws of UX emphasizes about human behavior. Users often cannot fully articulate their needs upfront, and their mental models evolve as they interact with prototypes or early versions of a system (Yablonski, 2020). A linear model leaves little room to adapt to these insights, increasing the risk that the final product technically works but fails to align with real user behavior.</p>
+         <h2>Iterative Life Cycle Models</h2>
+         <h3>Characteristics</h3>
+         <p>Iterative life cycle models break the development process into repeated cycles, or iterations. Instead of completing the entire system in one pass, teams design, build, and test portions of the system repeatedly, refining the solution with each iteration. Requirements are treated as evolving rather than fixed, and feedback is continuously incorporated.</p>
+         <P>In iterative models, learning is a central feature. Early versions may be incomplete or imperfect, but they provide valuable insight that informs future decisions.</P>
+         <h3>Advantages</h3>
+         <p>The biggest advantage of iterative models is adaptability. By revisiting design and development multiple times, teams can respond to new requirements, emerging technologies, or user feedback without restarting the entire project. This aligns well with modern digital environments, where user expectations and competitive landscapes change rapidly.</p>
+         <p>Iterative approaches also support user-centered design. Frequent testing allows designers to observe how users actually interact with a system, revealing cognitive biases and usability challenges described in Laws of UX, such as Hick’s Law or the Law of Prägnanz (Yablonski, 2020). These insights can then be incorporated into subsequent iterations, improving usability over time.</p>
+         <h3>Potential Drawbacks</h3>
+         <P>While flexibility is a strength, it can also become a weakness. Iterative models may suffer from scope creep if changes are not carefully managed. Without clear boundaries, projects can extend indefinitely as teams continuously refine features.</P>
+         <p>Additionally, iterative development can be difficult for stakeholders who expect fixed timelines and budgets. The evolving nature of requirements may create discomfort for organizations accustomed to traditional planning methods. Without disciplined prioritization, iteration can lead to inefficiency rather than improvement.</p>
+         <h2>Incremental Life Cycle Models</h2>
+         <h3>Characteristics</h3>
+         <p>Incremental models combine elements of both linear and iterative approaches. The system is divided into smaller, functional components (increments), each of which goes through a mini life cycle. Core functionality is delivered early, with additional features added over time.</p>
+         <p>Each increment is planned and developed systematically, but the overall system evolves through successive releases. Agile frameworks are often considered a form of incremental development.</p>
+         <h3>Advantages</h3>
+         <P>ncremental models offer early value delivery, allowing users to benefit from working software sooner rather than waiting for a complete system. This is especially important in digital systems where user adoption and feedback are critical to success.</P>
+         <p>From a sustainability standpoint, incremental development supports long-term system evolution. Systems can grow organically, adapting to new user needs or technologies without requiring complete redesigns. This mirrors how users mentally adapt to interfaces over time, reinforcing UX principles such as familiarity and consistency (Yablonski, 2020).</p>
+         <P>Incremental models also reduce risk. By delivering functionality in stages, teams can validate assumptions early and correct course before problems become deeply embedded.</P>
+         <h2>Potential Drawbacks</h2>
+         <p>One challenge of incremental models is architectural complexity. If early increments are not designed with future expansion in mind, the system may accumulate technical debt. Poor early decisions can constrain later growth, making future increments harder to implement.</p>
+         <p>There is also a risk that stakeholders may view early increments as “finished” products, leading to misaligned expectations about system completeness or quality.</p>
+         <h2>Why Life Cycle Thinking Matters for Digital Systems</h2>
+         <h3>Design Quality and User Experience</h3>
+         <p>Thinking in terms of a system’s life cycle encourages designers and developers to move beyond short-term functionality and consider long-term user experience. Laws of UX emphasizes that human cognition is shaped by habits, expectations, and repeated exposure (Yablonski, 2020). A life cycle perspective ensures that usability is not treated as a one-time concern but as an evolving relationship between users and the system.</p>
+         <p>When teams anticipate how users will learn, adapt to, and potentially struggle with a system over time, they can design interfaces that support gradual mastery, reduce cognitive load, and remain intuitive as features expand.</p>
+         <h3>Sustainability and Maintainability</h3>
+         <p>Digital sustainability is not just about energy efficiency or cost—it is about building systems that can be maintained, updated, and repurposed over time. Life cycle thinking highlights the importance of maintainability as a first-class design concern rather than an afterthought.</p>
+         <p>Iterative and incremental models, in particular, encourage modular design and continuous evaluation, which makes systems more resilient to change. This is critical in modern environments where software is expected to evolve for years, not months.</p>
+         <h3>Evolution and Organizational Learning</h3>
+         <p>Finally, life cycle thinking supports organizational learning. Each phase of the SDLC provides feedback—not just about the system, but about processes, assumptions, and decision-making practices. Over time, organizations that embrace life cycle models develop better intuition about trade-offs between speed, quality, and user satisfaction.</p>
+         <p>This systems-oriented mindset reinforces the idea that digital products are never truly “finished.” Instead, they are living systems shaped by human behavior, technological constraints, and organizational priorities. Recognizing this reality allows teams to design with humility, flexibility, and foresight.</p>
+         <h2>Conclusion</h2>
+         <p>The Systems Development Life Cycle provides a powerful framework for understanding how digital systems are created, sustained, and transformed over time. Linear, iterative, and incremental models each offer distinct advantages and limitations, reflecting different assumptions about certainty, change, and user involvement. While linear models emphasize predictability, iterative and incremental approaches better align with the realities of modern, user-centered digital systems.</p>
+         <p>Most importantly, thinking in life cycle terms encourages a systems perspective—one that recognizes the interconnectedness of design decisions, user experience, and long-term sustainability. When combined with UX principles such as those outlined in Laws of UX, life cycle thinking enables designers and developers to create digital systems that are not only functional, but adaptable, humane, and enduring.</p>
+         <footer>
+         <h2>References</h2>
+         <P>Pressman, R. S., & Maxim, B. R. (2020). Software engineering: A practitioner’s approach (9th ed.). McGraw-Hill Education.</P>
+         <P>Sommerville, I. (2016). Software engineering (10th ed.). Pearson Education.</P>
+         <P>ablonski, J. (2020). Laws of UX: Using psychology to design better products & services. O’Reilly Media.</P>
+         </footer>
+         
+         </body>
+         
+         
          <!-- Module 2.1 Blog Post Starts here -->
 
          <!-- Module 2.2 Blog Post Starts here -->
