@@ -104,6 +104,94 @@
          </article>
 
          <!-- Module 1.2 Blog Post Starts here -->
+          <article>
+            <header class="article-header">
+               <h2>Module 1.2 Blog Post</h2>
+            </header>
+            <h3>Systems Development Life Cycle</h3>
+            <p>Hi everyone! Im back for my second post in IT 312. After our deep dive into systems thinking last time, we're moving into something that feels practical for anyone building or managing digital environments: the Systems Development Life Cycle (SDLC). We've been reading through chapters three, four, and five of Systems Engineering Demystified (Holt, 2019), and it's honestly changed how I look at my own projects, like the cost and risk modeler I'm building on GitHub.</p>
+            <p>When we think about a system, it's easy to just focus on the "cool" part—the actual building or the code. If we don't have a plan for how that system is going to be supported or retired, we're just creating a wasteful situation down the road.</p>
+
+            <h3>Defining the Life Cycle</h3>
+            <p>The Systems Development Life Cycle is essentially the life story of a system. It's the roadmap that takes an idea from a simple "What if?" all the way to the moment it's finally turned off and replaced. It isn't just a technical checklist; it's a way to manage the "Three Evils" we talked about last time—Complexity, Communication, and Understanding.</p>
+            <p>According to Jon Holt (2019), a life cycle is a way to partition the life of a system into manageable chunks called stages. These stages give us a foundation to make sure we are actually meeting the needs of the stakeholders at every point in time. If you don't think in terms of a life cycle, you're basically just winging it, and that's how airplanes fall out of the sky or IT systems bring companies to their knees.</p>
+            <p>The standard life cycle typically includes several key stages (Holt, 2019):</p>
+            <ul>
+               <li><strong>Conception:</strong> Where the initial idea is born.</li>
+               <li><strong>Development:</strong> Where the system is actually designed and built.</li>
+               <li><strong>Production:</strong> Where we make copies or deploy the system for real-world use.</li>
+               <li><strong>Utilization:</strong> Where the system is actually doing its job.</li>
+               <li><strong>Support:</strong> Where we troubleshoot and maintain the system.</li>
+               <li><strong>Retirement:</strong> Where the system is phased out.</li>
+            </ul>
+
+            <h3>Systems and Interfaces</h3>
+            <p>Before we dive into the models, we have to talk about how these systems are actually put together. Building on what I said in my last post about systems thinking being the “connective tissue” of a project, Chapter 3 takes that even further by looking at the actual physical and technical connective tissue: the interfaces. An interface is the boundary where two system elements meet to exchange information or materials.</p>
+            <p>If we don't define these interfaces during the development stage, we end up with what I call the "Inedible System" problem. In a letter I helped my grandparents write to a chef, I mentioned that if vegetables in a soup are cut too large, they are impossible to eat with any dignity. Interfaces are the same. If they aren't defined into "bite-size" pieces that follow a clear protocol, the data can't "flow," and the system becomes a mess of gristly, unworkable parts. Thinking about the life cycle means designing these interfaces so they work not just today but five years from now during the utilization stage.</p>
+
+            <h3>Comparing Life Cycle Models: Linear, Iterative, and Incremental</h3>
+            <p>Not every project should follow the same path. Depending on what you're building, you might choose a different life cycle model. Holt (2019) breaks these down into three main types, and they each have their own pros and cons.</p>
+
+            <h4>1. Linear Models</h4>
+            <p>The linear model is the straight line of systems engineering. You do one stage, finish it completely, and then move to the next. It's very logical and easy to explain to people who aren't technical.</p>
+            <ul>
+               <li><strong>Characteristics:</strong> Every stage has a clear start and end point. You don't move forward until the previous stage is perfect.</li>
+               <li><strong>Advantages:</strong> It's great for projects where the requirements are set in stone and aren't going to change. It feels very stable and organized.</li>
+               <li><strong>Potential Drawbacks:</strong> This is where things can get "inedible." If you wait until the very end to show the customer stakeholder the system, and it's not what they wanted, you've wasted a massive amount of time and money. According to the NASA Systems Engineering Handbook (2016), linear models are often criticized because they don't allow for the rework that usually happens when people realize they missed a requirement halfway through. If you can't backtrack easily, you're stuck with a "woody peach" of a system—it looks okay on the outside, but it's unusable.</li>
+            </ul>
+
+            <h4>2. Iterative Models</h4>
+            <p>Iterative models are all about the growth mindset. Instead of trying to get it perfect in one go, you go through cycles. Each cycle (or iteration) gets you closer to the final goal.</p>
+            <ul>
+               <li><strong>Characteristics:</strong> You repeat the development processes over and over, refining the system each time based on what you learned in the last cycle.</li>
+               <li><strong>Advantages:</strong> It's excellent for troubleshooting. You find mistakes early because you're constantly reviewing the model. It allows for a lot of flexibility if the requirements shift.</li>
+               <li><strong>Potential Drawbacks:</strong> It can feel like you're overthinking the project if you aren't careful. Without a clear process to drive the iterations, you might just keep going in circles without ever actually finishing. It requires a lot of discipline to know when a version is good enough for that cycle.</li>
+            </ul>
+
+            <h4>3. Incremental Models</h4>
+            <p>Incremental models are about getting results fast. You break the system into chunks and deliver them one by one. I think this approach has advantages because it means the user gets to use part of the system while you're still building the rest.</p>
+            <ul>
+               <li><strong>Characteristics:</strong> Each increment is a functional piece of the system. You build the foundation first, then add the features.</li>
+               <li><strong>Advantages:</strong> It reduces waste because the customer can see progress right away. As the Department of Defense Systems Engineering Guidebook (2024) explains, this incremental approach is the preferred method for modern digital systems because it allows us to provide capabilities to the user early and often while managing risks in smaller, more manageable pieces.</li>
+               <li><strong>Potential Drawbacks:</strong> The integration can get messy. If you don't have a solid architecture or ontology from the start, the different increments might not talk to each other correctly when you try to integrate them at the end.</li>
+            </ul>
+
+            <h3>Deep Dive: The V-Model and Technical Management</h3>
+            <p>One concept from the reading that really stuck with me is the V-model. It's a way to visualize how we move from high-level requirements down to detailed design and then back up through testing and verification (Holt, 2019). The left side of the V is where we define what we want, and the right side is where we check to make sure we actually built it right.</p>
+            <p>This is where the Technical Management Processes from Chapter 5 come in. To keep a project from spiraling out of control, we have to use processes like:</p>
+            <ul>
+               <li><strong>Risk Management:</strong> Identifying potential problems early.</li>
+               <li><strong>Configuration Management:</strong> Making sure we know exactly which version of the model we are working on so we don't have a communication failure.</li>
+               <li><strong>Information Management:</strong> Ensuring that the right people have the right data at the right time.</li>
+               <li><strong>Agreement Processes:</strong> These are the supply and acquisition processes (Holt, 2019). They make sure that when we buy a component or a service, we actually get what we paid for.</li>
+            </ul>
+            <p>If we don't have these processes in place, our life cycle is just a series of accidents. I've realized that failing to document a technical issue properly means the next person has to repeat the entire troubleshooting process from scratch. That is a total waste of time and energy (Holt, 2019).</p>
+
+            <h3>Why Life Cycle Thinking is Critical for Digital Systems</h3>
+            <p>Reflecting on all this, I've realized that thinking in terms of a life cycle is the only way to ensure sustainability and evolution. In IT, we often get caught up in the deployment phase, but we forget about the retirement or support phases.</p>
+            
+            <h4>1. Design and Sustainability</h4>
+            <p>If we don't plan for the support stage during the development stage, the system is going to be a nightmare to maintain. This is exactly what I mean when I talk about attention to detail. Digital systems are the same way. If you don't cut your code or your hardware interfaces correctly during the design phase, the support team is going to struggle to fix it later. Sustainability means the system can keep running without being a drain on resources.</p>
+            
+            <h4>2. Evolution and the Single Source of Truth</h4>
+            <p>Digital systems are never truly finished. They have to evolve. By using Model-Based Systems Engineering (MBSE) within our life cycle, our model becomes the single source of truth that allows us to see how a change in 2026 might impact the system in 2030 (Holt, 2019). This helps us avoid accidental complexity that comes from patching old systems without understanding the original design.</p>
+
+            <h4>3. Retirement: Avoiding the Wasteful End</h4>
+            <p>One of my biggest pet peeves is waste. In the system life cycle, waste happens when we don't plan for the end of a process. The retirement stage is where we figure out how to transition data and hardware responsibly. If we don't plan for retirement, we end up with zombie systems that are insecure and just take up space and power without providing any real value.</p>
+
+            <h3>My Reflection: The People, Process, Tools Mantra</h3>
+            <p>Success in IT 312 isn't just about knowing the definitions; it's about seeing how they all link together. I've learned that whether I'm developing a complex satellite model or tackling a new technical challenge, I have to follow a process. The life cycle models give us that process.</p>
+            <p>I'm a self-starter, and I love a challenge, but I also know that I have to balance my credit load with my work hours. Thinking in terms of a life cycle for my own time management has helped me stop leaving things to the last day. I'm motivated to keep closing my knowledge gaps in IT and cybersecurity, and I think understanding these life cycle models is going to be a huge part of my growth.</p>
+
+            <footer class="article-footer">
+                <h3>References:</h3>
+                <ol>
+                    <li>Hirshorn, S. (2007). <em>NASA Systems Engineering Handbook</em>. <a href="https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf">https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf</a></li>
+                    <li>Holt, J. (2019). <em>Systems engineering demystified</em> (2nd ed.). Packt Publishing.</li>
+                    <li>Office of the Under Secretary of Defense for Research and Engineering. (2022). <em>Systems Engineering Guidebook</em>. <a href="https://www.dau.edu/sites/default/files/Migrated/CopDocuments/Systems-Eng-Guidebook%20Feb2022-Cleared.pdf">https://www.dau.edu/sites/default/files/Migrated/CopDocuments/Systems-Eng-Guidebook%20Feb2022-Cleared.pdf</a></li>
+                </ol>
+            </footer>
+         </article>
 
          <!-- Module 2.1 Blog Post Starts here -->
 
