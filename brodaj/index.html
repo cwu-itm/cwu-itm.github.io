@@ -289,7 +289,7 @@
       <!-- Module 2.1 Blog Post Starts here -->
       <article>
          <header class="article-header">
-            <h2>Module 1.2 Blog Post</h2>
+            <h2>Module 2.1 Blog Post</h2>
          </header>
          <p>Human-Centered Design (HCD) is the philosophy of designing around ourselves. On the surface, that sounds
             like it should be an easy task: who would know us better than us? In practice, reality is rarely that ideal.
@@ -411,7 +411,143 @@
          </footer>
       </article>
       <!-- Module 2.2 Blog Post Starts here -->
-
+      <article>
+         <header class="article-header">
+            <h2>Module 2.2 Blog Post</h2>
+         </header>
+         <p>For many of us, usability in UX means only one thing: get out of the way and let us focus on the task at
+            hand. Whether that’s crunching numbers in a spreadsheet or scrolling through your for you page, we often
+            reach a flow state where the surrounding interface and device fade away, and the only thing we see are our
+            formulas or cat videos. In Designing with the Mind in Mind, Jeff Johnson (2020) points out that users are
+            goal-focused; we don’t use software for the sake of using software, we use it to get something done. It’s a
+            tool no different from a hammer, where we don’t think about the specific grain of wood the handle is using
+            and focus entirely on moving our arm to drive a nail in, and our virtual tools are no different.</p>
+         <p>When a system is designed well, it taps into our brain’s love for shortcuts. We don’t read a screen like we
+            would a novel, we instead rely on recognition rather than recall (Johnson, 2020). It takes no effort to
+            identify the shape of a floppy disk icon for save or a red button as close or delete. This allows our brains
+            to shift into a sort of autopilot, where muscle memory takes over the heavy lifting of operating a system so
+            we can focus on the task within it.</p>
+         <p>However, this autopilot is a double-edged sword. While it makes a system intuitive, it also creates a
+            massive vulnerability: Inattentional Blindness. Because our brains are wired to filter out what we perceive
+            as noise to focus on our primary goal, we often stop seeing the actual details of the interface once we’ve
+            learned it (Johnson, 2020). If a system is too consistent, we might click OK on a catastrophic error message
+            simply because we’ve been conditioned to click OK in that same spot for the last three hours.</p>
+         <p>To reach this level of seamless interaction, someone has to do the hard work. Tesler's Law, or the law of
+            Conservation of Complexity, states that every process has a core of inherent complexity that cannot be
+            removed; it can only be moved from one party to another (Yablonski, 2024). This usually ends up with
+            designers and engineers of a system taking on the grunt work and abstracting the complexity in ways to make
+            the end-user’s experience frictionless. However, if done wrong, we risk hiding critical information that the
+            end-user does need. And sometimes, that friction is exactly what saves us from ourselves.</p>
+         <h3>The Digital Speed Bump</h3>
+         <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 40px;">
+            <div style="flex: 1;">
+               <p>An example of where this friction works well is a system like Apple Pay. When it was introduced, it
+                  required one factor, Touch ID, to authenticate a payment. It was incredibly frictionless while still
+                  requiring a physical motion, touching the home button, to complete. This allowed users to use Apple
+                  Pay without triggering the accidental payments that a purely tap-to-pay experience might cause.</p>
+               <p>With the introduction of Face ID on the iPhone X in 2017, there was a problem. Since Face ID
+                  authenticates by simply having the user look at their phone, you lose the deliberate touch action a
+                  fingerprint requires. Without a physical check, Face ID would turn every casual glance at your phone
+                  into a potential checkout. This made Apple introduce a bit of intentional complexity: double pressing
+                  the side button. This took users out of an automatic, goal-focused state into a deliberate, manual
+                  action. It makes you stop and ask yourself, “do I really want to spend money on this?”, while ensuring
+                  the burden of the final decision stays with the user, not Apple or the store (Yablonski, 2024).</p>
+            </div>
+            <figure style="width: 250px; flex-shrink: 0; margin: 0;">
+               <img src="assets/2-2/apple_pay_example.png" alt="Apple Pay Screenshot"
+                  style="width: 100%; border-radius: 8px;">
+               <figcaption style="font-size: 0.8rem; color: #666; margin-top: 8px;">Apple Pay in the Taco Bell
+                  app. (2026).</figcaption>
+            </figure>
+         </div>
+         <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 40px;">
+            <figure style="width: 300px; flex-shrink: 0; margin: 0;">
+               <img src="assets/2-2/robux.gif" alt="Roblox Purchase Animation" style="width: 100%; border-radius: 8px;">
+               <figcaption style="font-size: 0.8rem; color: #666; margin-top: 8px;">Robux Purchase Animation
+                  in Roblox. (2026).</figcaption>
+            </figure>
+            <div style="flex: 1;">
+               <p>Platforms like Roblox and Fortnite use a similar tactic with their in-app purchases. When a user,
+                  often a child who lacks impulse control, clicks to buy an item, the system doesn’t immediately process
+                  the transaction. Instead, a short animation plays out. This five-second window acts as a buffer for
+                  the brain to catch up with the finger. It prevents pop-up ads from “stealing” a user’s digital
+                  currency and saves support staff from thousands of “my kid accidentally spent $500” calls.</p>
+               <p>This is usability at its most protective. By acknowledging that human attention is limited and memory
+                  is imperfect (Johnson, 2020), the system uses a deliberate delay to lower the cognitive load of the
+                  interaction. It gives the user a chance to realize what they’ve done and provides a clear window to
+                  cancel, rather than forcing them to deal with the mental tax of a high-stakes mistake after the fact.
+               </p>
+            </div>
+         </div>
+         <h3>Consent Fatigue</h3>
+         <p>However, there is a point where friction stops being a speed bump to slow down impulsiveness and starts
+            being noise. This is where we run into the concept of Consent Fatigue. Syrenis, a firm that specializes
+            in data privacy compliance, defines consent fatigue as the phenomenon where users are bombarded with the
+            constant permissions and privacy popups so much that they become numb to it and habitually press “yes”
+            (Syrenis, 2024). They just stop reading them and view them as an obstruction to their task.</p>
+         <p>This is exactly what happened with Windows User Account Control (UAC). In an attempt to make Windows more
+            secure, Microsoft introduced a system that required administrative approval for almost every system change.
+            Because the prompts appeared so frequently, sometimes to even just open their web browser, they were treated
+            as the “boy who cried wolf”.</p>
+         <figure>
+            <img src="assets/2-2/uac.png" alt="Windows User Account Control Screenshot" style="width: 75%;">
+            <figcaption>Windows User Account Control prompt. (2022). Microsoft.
+               https://en.wikipedia.org/wiki/User_Account_Control</figcaption>
+         </figure>
+         <br>
+         <p>From a psychological perspective, this is a failure of habituation. Because the UAC prompt always looked the
+            same and appeared in the same place, as well as blocked any other action from taking place until dealt with,
+            the users’ vision stopped processing the text and only looked for the yes button. The friction was no longer
+            meaningful; it was just a nuisance that disrupted the user’s workflow. As a result, users either developed
+            the muscle memory to immediately click yes whenever the screen dims and that dreaded box comes up that made
+            them more vulnerable to malware, or their hubris took over and disabled the feature entirely to stop the
+            interruptions.</p>
+         <h3>User Interaction in the AI Age</h3>
+         <p>As we move into an era of AI agents, or AI that can operate autonomously, we are opening a new can of worms
+            when it comes to interacting with a system. We are moving from a system where the user performs the action
+            to one where the user simply gives a high-level command and the AI figures out how to accomplish it.</p>
+         <p>This takes the tradeoff of Tesler’s Law to the extreme. By moving almost all of the complexity to the
+            system, the user is left with a mental model that is dangerously thin. If a systems administrator tells an
+            AI agent to “optimize server permissions” and the AI confidently executes a command that accidentally locks
+            out an entire group, the administrator might not even notice until it’s too late. Because the AI is so
+            usable and frictionless, it encourages a level of inattentional blindness that makes the old UAC prompts
+            look like minor inconveniences.</p>
+         <p>The feedback loop is broken here because these systems often violate the most fundamental rule of usability:
+            Visibility of System Status. As noted by the Aurora Harley (2018), a system should always keep users
+            informed about what is going on through appropriate feedback within a reasonable amount of time. When an AI
+            agent operates in the background without clear, consistent status updates, the user loses their situational
+            awareness. </p>
+         <p>This creates a paradox where the system is usable because it’s easy to start, but unusable because it’s
+            impossible to monitor. Sometimes it’s as hands-on as managing a team of junior developers and inspecting
+            every line of code an agent writes, and other times it’ll execute low-level commands without intervention
+            and accidentally delete your repository. Without consistent interface feedback, like a log of proposed
+            actions or a “confirm all” button, the end-user is flying blind. True usability in the AI age requires a
+            balance where the system handles the complexity but provides enough transparency that the human can still
+            recognize an error before it snowballs into a catastrophic incident.</p>
+         <h3>Conclusion</h3>
+         <p>At the end of the day, digital systems are only as good as the people using them. Because our memory is a
+            mess and our attention is always a split second away from drifting, we are always going to look for the
+            "autopilot" path. A truly usable system isn't one that just lets us go fast, it’s one that’s smart enough to
+            know when we need to slow down. As we move away from clicking buttons and toward managing AI agents, we
+            shouldn’t forget the cases when good friction made us stop and think when a decision needs to be made or
+            when an error occurs.</p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>Harley, A. (2018, June 3). <em>Visibility of system status (usability heuristic #1)</em>. Nielsen
+                  Norman Group. <a
+                     href="https://www.nngroup.com/articles/visibility-system-status/">https://www.nngroup.com/articles/visibility-system-status/</a>
+               </li>
+               <li>Johnson, J. (2020). <em>Designing with the Mind in Mind: simple guide to understanding user
+                     interface design guidelines</em>. Morgan Kaufmann Publisher.</li>
+               <li>Syrenis. (2024, February 15). <em>Consent fatigue: User burnout in the era of endless
+                     pop-ups</em>. Syrenis. <a
+                     href="https://syrenis.com/resources/blog/consent-fatigue-user-burnout-endless-pop-ups/">https://syrenis.com/resources/blog/consent-fatigue-user-burnout-endless-pop-ups/</a>
+               </li>
+               <li>Yablonski, J. (2024). <em>Laws of UX</em>. O'Reilly Media, Inc.</li>
+            </ol>
+         </footer>
+      </article>
       <!-- Module 2.3 Blog Post Starts here -->
 
       <!-- Module 3.1 Blog Post Starts here -->
