@@ -482,7 +482,231 @@
          </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
+          <article>
+            <header>
+               <h1>What Makes Digital Systems Usable: Designing for Memory, Mental Models, Complexity, and Responsibility</h1>
+               <i>
+                  Usability isn’t just “nice design.” It’s the outcome of building interfaces that match how people think,
+                  remember, and decide, while also acknowledging that design choices can shape behavior in powerful ways.
+               </i>
+            </header>
 
+            <section>
+               <h2>Introduction</h2>
+               <p>
+                  Digital systems succeed when people can accomplish goals without feeling confused, overloaded, or unsure.
+                  That sounds simple, but it’s difficult because users do not approach an interface as blank slates. They bring
+                  habits from other tools, expectations about how controls should behave, and mental shortcuts developed through
+                  repeated experiences. When a system fits those expectations, interaction feels intuitive; when it does not,
+                  users are forced to spend mental effort translating the interface instead of doing the task.
+               </p>
+               <p>
+                  This post argues that “usable” systems are those that respect human cognitive limits and manage complexity
+                  intentionally. To do that, designers must first design for memory limits and mental models, reduce unnecessary
+                  cognitive load through consistency and feedback, and accept Tesler’s Law in which complexity can’t be eliminated, only
+                  moved, and decide where it belongs. Finally, must apply behavioral design principles responsibly, because design can
+                  influence user choices and well-being (Johnson, 2014; Yablonski, 2020).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/MentalModel.jpg"  alt="A visual showing mental models and expectations mapping to an interface" height="720" width="720"/>
+               <figcaption>
+                  <strong>Figure 1.</strong> Mental models guide what users expect an interface to do.
+                  Image credit: <em>Ayush</em>, <em>The Wisdom Project</em>. <a href="https://thewizdomproject.com/mental-models-basics">https://thewizdomproject.com/mental-models-basics</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Memory and Mental Models: Why “Intuitive” Isn’t Magic</h2>
+               <p>
+                  People rely on memory, but memory is fragile, especially in the moment. Short-term memory is limited, and users
+                  quickly forget arbitrary steps, hidden menus, or multi-screen instructions. That’s why good interfaces reduce
+                  “recall” demands and instead support “recognition”: the system shows users what they need when they need it,
+                  rather than forcing them to remember it (Johnson, 2014).
+               </p>
+               <p>
+                  Mental models are the user’s internal explanation of how a system works. These models come from prior tools and
+                  real-world metaphors. For example, most people understand that a trash can icon means “delete” because it matches
+                  a real-world concept and appears consistently across platforms. When a system supports mental models, learning is
+                  faster because users can transfer knowledge. When a system violates mental models, users experience friction:
+                  they slow down, hesitate, and second-guess their actions.
+               </p>
+               <p>
+                  A practical design goal is to keep the user’s attention on their objective, not on the interface. If the user is
+                  constantly thinking “Where is that setting?” or “Did my click do anything?” then the interface is consuming
+                  cognitive resources that should be reserved for the real task (Johnson, 2014).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Consistency and Feedback: The Fastest Way to Reduce Cognitive Load</h2>
+               <p>
+                  Consistency is one of the most effective usability strategies because it reduces the number of new rules a user
+                  must learn. When the same interaction patterns show up across screens, navigation in the same place, buttons
+                  behaving predictably, and terminology staying intuitive, users build confidence and operate on “autopilot” in a healthy,
+                  efficient way. Consistency doesn’t mean everything looks identical; it means users don’t have to re-learn the
+                  system every time they change pages.
+               </p>
+               <p>
+                  Feedback is the system’s response that confirms a user action has been received, understood, and is being acted
+                  upon. Without feedback, users are forced to guess. Nielsen Norman Group emphasizes “visibility of system status”
+                  as a core usability principle; users should always understand what’s going on through timely, meaningful
+                  information (Nielsen Norman Group, 2020). That can be as simple as indicating a pressed button, a loading indicator, a
+                  success message, or a clear error that explains what happened and how to fix it.
+               </p>
+               <p>
+                  Feedback is also how systems build trust. If users repeatedly feel uncertain, like a form silently fails or a
+                  button appears unresponsive, they may retry actions, abandon tasks, or assume the system is unreliable. In that
+                  sense, feedback is not decoration; it is part of the system’s conversation with the user (Nielsen Norman Group,
+                  2020).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/Good vs Bad.jpg" alt="An example comparing good feedback versus poor feedback in an interface" height="600" width="1080"/> 
+               <figcaption>
+                  <strong>Figure 2.</strong> Clear feedback reduces uncertainty and prevents repeated errors.
+                  Image credit: <em>Daxesh Italiya</em>, <em>tsttechnology</em>.
+                  <a href="https://tsttechnology.io/blog/good-and-bad-ux-design-examples">https://tsttechnology.io/blog/good-and-bad-ux-design-examples</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Tesler’s Law: Complexity Can’t Be Deleted, Only Relocated</h2>
+               <p>
+                  Chapter 9 of <em>Laws of UX</em> covers Tesler’s Law; The key idea is that every system has a certain amount of inherent complexity that cannot be removed; it can only be
+                  shifted between the system and the user (Yablonski, 2020, chap. 9). If designers try to “simplify” by hiding
+                  complexity in confusing ways, users still pay the price, just later, through trial-and-error and frustration.
+               </p>
+               <p>
+                  The usability question becomes: <strong>Where should the complexity live?</strong> In many cases, the best answer
+                  is: inside the system. Systems can automate repetitive steps, remember user preferences, validate inputs, and
+                  prevent errors before they happen. When design pushes complexity onto the user by requiring memorization of
+                  special rules, forcing manual configuration, or presenting too many decisions at once, the user becomes the system’s
+                  “processor,” and cognitive load spikes.
+               </p>
+               <p>
+                  A real-world example is account security. Older approaches often forced users to invent and remember multiple
+                  complex passwords with frequent changes. Newer approaches (password managers, passkeys, biometrics) shift the
+                  complexity into tools and infrastructure, reducing user effort while often improving security. This reflects the
+                  spirit of Tesler’s Law: the complexity still exists, but it’s handled by systems that are better suited to managing
+                  it (Yablonski, 2020, chap. 9).
+               </p>
+               <p>
+                  Importantly, Tesler’s Law does not mean removing advanced features. It means arranging complexity so that novice
+                  users are not overwhelmed, while expert users can still access powerful controls. Progressive disclosure, showing
+                  advanced options only when needed, is one way to respect both audiences (Johnson, 2014; Yablonski, 2020, chap. 9).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Chapter 11: With Power Comes Responsibility</h2>
+               <p>
+                  Chapter 11 of <em>Laws of UX</em> shifts the conversation from “How do we apply psychology to make products easier?”
+                  to “What happens when we succeed?” Yablonski argues that because UX principles can shape attention, decisions, and behavior, designers carry responsibility for the outcomes of those choices (Yablonski, 2020, chap. 11). In other
+                  words: if design can steer people, design can also manipulate people.
+               </p>
+               <p>
+                  This matters because many usability techniques can be used in both user-centered and user-extractive ways. For
+                  example, reducing friction can help users complete tasks faster but it can also remove the “pause” that helps a
+                  user reflect before making a purchase. Clear calls to action can support good navigation but they can also be used
+                  to pressure users into decisions they didn’t intend.
+               </p>
+               <p>
+                  Ethical usability means aligning outcomes with user interests. Donald Norman describes how good design helps
+                  people feel in control, preventing avoidable errors and confusion (Norman, 2013). When systems intentionally blur
+                  choices or hide consequences, they may still “work,” but they fail the deeper goal of supporting users’ thinking.
+                  Chapter 11 pushes designers to ask: <strong>Are we reducing cognitive load for the user, or removing their agency?</strong>
+                  (Yablonski, 2020, chap. 11).
+               </p>
+               <p>
+                  A responsible approach is to treat “persuasion” as transparency rather than pressure. Helpful nudges like reminders,
+                  clear defaults, or warnings before irreversible actions, can protect users. However, patterns that exploit biases to keep
+                  users scrolling, subscribing, or spending can cause harm even if the interface feels “smooth.” In that sense,
+                  usability is not only a technical goal; it becomes an ethical one (Norman, 2013; Yablonski, 2020, chap. 11).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/FacebookUserControl.jpg" alt="A conceptual image representing ethical design and user agency" height="720" width="900" />
+               <figcaption>
+                  <strong>Figure 3.</strong> Responsible UX protects user agency, not just task completion.
+                  Image credit: <em>[Photographer/Creator Name]</em>, <em>Primer Magazine</em>.
+                  <a href="https://www.primermagazine.com/2018/earn/scrubbing-your-social-media-clean-how-your-digital-self-might-be-stopping-you-from-getting-hired">https://www.primermagazine.com/2018/earn/scrubbing-your-social-media-clean-how-your-digital-self-might-be-stopping-you-from-getting-hired</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Examples of Poor Design That Create Unnecessary Cognitive Load</h2>
+               <p>
+                  One way to see usability clearly is to notice when it breaks. Poor design commonly increases cognitive load in
+                  predictable ways:
+               </p>
+               <ul>
+                  <li>
+                     <strong>Hidden system status:</strong> When progress indicators are missing or unclear, users don’t know if the
+                     system is working. They may click repeatedly, interrupt processes, or assume failure (Nielsen Norman Group, 2020).
+                  </li>
+                  <li>
+                     <strong>Inconsistent navigation:</strong> If menu labels or locations change across pages, users must constantly
+                     re-orient themselves, re-reading the interface instead of acting (Johnson, 2014).
+                  </li>
+                  <li>
+                     <strong>Overloaded choice:</strong> Presenting too many options at once forces users into decision fatigue.
+                     When complexity is unavoidable, Tesler’s Law suggests handling it through defaults and staged options rather than
+                     pushing it onto the user all at once (Yablonski, 2020, chap. 9).
+                  </li>
+                  <li>
+                     <strong>Ethically questionable friction:</strong> When cancelation flows are harder than sign-up flows, the user
+                     is paying a “cognitive tax” for trying to leave. This is where usability and responsibility collide (Yablonski,
+                     2020, chap. 11).
+                  </li>
+               </ul>
+               <p>
+                  These patterns reveal a consistent theme: the interface becomes the task. When users spend effort decoding the UI,
+                  they have less mental capacity for meaningful work, and the experience becomes slower, more error-prone, and more
+                  frustrating (Johnson, 2014).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Conclusion</h2><p>
+                  A usable digital system is one that cooperates with human cognition. It supports memory through recognition,
+                  strengthens mental models through predictability, and reduces cognitive load through consistency and feedback.
+                  Tesler’s Law reminds us that complexity cannot be erased and designers must choose whether the system handles it or the
+                  user does (Yablonski, 2020, chap. 9). And Chapter 11 of <em>Laws of UX</em> adds an important layer: applying
+                  psychology in design is powerful, so it must be done responsibly, protecting user agency rather than exploiting it
+                  (Yablonski, 2020, chap. 11).
+               </p>
+               <p>
+                  Ultimately, good UX is not just about smoother interactions. It is about building systems that help users think,
+                  act confidently, and feel in control while ensuring that the design choices behind the interface respect the people
+                  who must live with them (Norman, 2013).
+               </p>
+            </section>
+         </article>
+         
+         <footer>
+            <h2>Sources</h2>
+            <ul>
+               <li>
+                  Johnson, J. (2014). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (2nd ed.). Morgan Kaufmann.
+               </li>
+               <li>
+                  Nielsen Norman Group. (2020). <em>Visibility of system status</em>.<a href="https://www.nngroup.com/articles/visibility-system-status/
+                  ">https://www.nngroup.com/articles/visibility-system-status/</a>
+               </li>
+               <li>
+                  Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.
+               </li>
+               <li>
+                  Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O’Reilly Media.
+               </li>
+            </ul>
+         </footer>
+         
+         
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
