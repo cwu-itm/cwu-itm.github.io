@@ -118,7 +118,7 @@
                   <li>system-to-system/inside a system</li>
                </ul>
                <p>Systems engineering provides structured processes and methodologies to manage complexity, enhance communication, and ensure a shared understanding among stakeholders. By adopting systems engineering principles, organizations can improve project outcomes and deliver successful systems that meet stakeholder needs.</p>
-               <img src="images/model_of_communication.svg" alt="Communication model depicting a sender and reciever communicating via a channel; each message is encoded and decoded while potential noise interferes with the process." width="100%" citation="https://en.wikipedia.org/wiki/Communication_model"/>
+               <img src="images/model_of_communication.svg" alt="Communication model depicting a sender and receiver communicating via a channel; each message is encoded and decoded while potential noise interferes with the process." width="100%" citation="https://en.wikipedia.org/wiki/Communication_model"/>
                By <a href="//commons.wikimedia.org/wiki/User:Phlsph7" title="User:Phlsph7">Phlsph7</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=125956073">Link</a>
                <p>One way to mitigate these communication breakdowns and handle the complexity of modern systems is to move away from document-based approaches and towards specific, rigorous models. Standardizations such as SysML and methodologies like MBSE provide frameworks to achieve this.</p>
             <h3>Model-Based Systems Engineering</h3>
@@ -143,7 +143,112 @@
          <!-- Module 2.1 Blog Post Starts here -->
 
          <!-- Module 2.2 Blog Post Starts here -->
-
+         <article>
+            <header class="article-header">
+               <h2>Designing for Human Minds</h2>
+            </header>
+            <p>In this blog post, we will cover how to support user thinking in digital design. This entails making a digital system "usable" by taking users' memory, habits, mental shortcuts, and shape interactions into account as we design a digital system.</p>
+               <div class="hook">
+                  <p>There's more to "usability" than a system that works--functional, accurate, and outputs correct information.</p>
+                  <p>A digital system also needs to be easier than doing the same task "by hand", without the system.</p>
+                  Without this key feature, the system has no real value, as it doesn't benefit the user.
+               </div>
+            <h3>Introduction: Designing for the Human Mind</h3>
+               <p>How do we make a digital system more usable? In short: by decreasing the user's cognitive load. Users have a limited attention span; they expect digital systems to do the "heavy lifting" so to speak. Take, for example, this interface of DataCamp, which is designed to teach users about programming languages.</p>
+               <img src="images/datacamp_ui.png" alt="DataCamp User Interface Featuring Multiple Panels with Specific Purposes" width="100%" citation="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.datacamp.com%2Fproduction%2Frepositories%2F288%2Fdatasets%2F6e9856e39fc8e942896d9c91f78d3739ebdbba30%2Fdc_ui.png&f=1&ipt=fe40e9ac0a4cfb9958e13d15ceac18b77602938843f6b9462cfd2df9f599f6de"/>
+               <p>This interface provides users with several panels. Each panel has a specific purpose, each with features that reduce what the user has to commits to memory.</p>
+               <p>A good digital system guides users through their interaction; it supports the users' natural thinking process, keeping them thinking and engaged on the problem at hand--not how to use the tool to address the problem at hand. It does so by using mental shortcuts, borrowing from natural human tendencies users are likely already fluent in. By doing so, the user's journey isn't led astray, lost, or confused; they are guided by instinct already ingrained in them.</p>
+               <p>The panels are arranged in a way that flows in the same direction as we read a paper or a comic (upper left to lower right). This supports the user's thinking process. A user will naturally move between panels from the upper left to lower right--the same order as each panel will be needed by the user.</p>
+               <p>In this instance, the first part of the user's journey requires context and instructions. Without this information, the user will be lost as to what to do. The "hint" button lies at the bottom of the instructions; as a hint is also a form of instruction, it makes the most sense to group it with other instructions.</p>
+               <p>The upper right panel (with the scrypt.py tab) introduces the user to a simplistic coding environment. Here the user is exposed to key elements of a real coding environment, but is stripped of features unnecessary for the task at hand. By reducing the amount of elements commonly found in a full fledged, plugin cluttered IDE (Integrated Development Environment--powerful text editors for coding), the cognitive load is reduced, allowing the user to focus on the problem at hand.</p>
+               <p>A user should need to commit memory to how to use the digital system. Designs should guide users through the process of the system; the ideal system needs no explanation (intuitive design) and is essentially invisible to the user. This is oftentimes accomplished with pictures people recognize from other systems or the real world, and and intuit their function based on their past experiences.</p>
+            <h3>Cognitive Bottleneck</h3>
+               <p>On the limitations of working memory and how long-term memory functions.</p>
+               <p>Humans have two types of memory: working memory (short term) and long-term memory. (Yablonski, 2020). By using users' past experiences, designers can "offload" users' need to think about the digital system, allowing users to concentrate in full on the task at hand.</p>
+               <p>First, let's take a closer look at the two types of memory.</p>
+               <dl>
+                  <dt>Working memory</dt>
+                  <dd>More commonly known as "short term-memory", this memory is the memory we work are actively working with. Rather than a separate entity, our short-term memory is a combination of our perception, attention, and our long-term memory (Johnson, 2021).</dd>
+                  <dd>For designers, it is important to keep in mind the working memory is of low capacity and is volatile (i.e. fickle). The average capacity of one's working memory works works out to 3-5 items (Broadbent, 1975; Mastin, 2010). While this might seem like very little to work with, there are many tricks designers can utilize to our long-term memory.</dd>
+                  <dt>Long-Term Memory</dt>
+                  <dd>Pattern recognition drives our long-term memory. As biological beings, it is not files of documents like computers but a neural network distributed throughout the brain (Johnson, 2021). This means our long-term memory holds a great deal of information, but is also prone to errors and biases.</dd>
+               </dl>
+            <h3>Tesler's Law</h3>
+               <p>On the Management and Conservation of Complexity</p>
+               <blockquote>"For any system there is a certain amount of complexity that cannot be reduced." (Yalblonski, 2020).</blockquote>
+               <p>While a designer's goal is to solve a problem statement, making users' lives easier, it isn't quite possible to "design away" all of the complexity of a problem (Yalblonski, 2020). The mental load of a problem can be significantly reduced, but designers must be careful not to oversimplify the digital system, less the digital system loses its effectiveness or capabilities. In other words, digital systems will always have a degree of mental burden due to the complexity of the problem statement.</p>
+               <p>When a problem statement is simplified as far as possible, the remaining mental load must be carried by either the user or the digital system. Designers might use the digital system's user interface (UI) or other elements along the users' journey, within the process or workflow.</p>
+               <p>In the Datacamp example from earlier, we can see many features that reduce the mental load of the user. Within the instructions, key words are formatted with a black background and a font associated with computer command line interfaces (CLI). This formatting is naturally recognized to the user as "code" that is to be used in the script to the right.</p>
+               <p>Another example of "mental off-loading" is tucked away in a tab in the lower right corner--The tab labeled "slides". In the event a user (which, in this case, is learning new concepts in code) is likely to need to refer to the learning material from time to time (I know I do!). Rather than leaving the user to navigate back and forth between videos, cheat sheets, third-party sources and/or AI, all of the information necessary for the problem is provided within the interface.</p>
+               <p>With the rapid advancements of artificial intelligence (AI) and machine learning (ML), possibilities of digital systems have tremendously expanded. Rather than users needing to think in terms of "computer language" as they work, users can use natural language (i.e. layman's terms) to describe the desired end results--and oftentimes receiving the desired output in a a prompt or two.</p>
+               <p>Designers can also use AI and ML in other ways--ML can be used on the backend (i.e. "behind the scenes") to better interpret user intentions, needs and interests via context, retrieved and training data.</p>
+               <p>In the Datacamp example, an AI element is used to explain errors. Running a script and receiving an error, an option to use AI to explain the error appears near the hint button, listing exactly what went wrong and how to fix the error--reducing the users' mental load of flipping through resources to find an answer to their (long and tedious) error message.</p>
+               <p>In short, Tesler's law offers designers and developers a guideline to how complexity is managed. In digital designs, we must understand there is a degree of complexity that cannot be reduced without losing the digital system's required functionality. While AI and ML are changing what complexity can and can not be managed with digital systems, it is important not to become overdependent on AI and ML, less we fail to properly manage the complexity of our problem statement.</p>
+            <h3>Recognition vs. Recollection</h3>
+               <p>On the ease of recognition and the difficulties of recollection</p>
+               <p>In Designing with the Mind in Mind, Johnson dedicates an entire chapter on two simple facts: Recognition is Easy; Recall is Hard (2021). These concepts are are important to designers to ensure users' working memory is free for the task at hand (which often requires recollection), meanwhile the operation of the digital system utilizes users' long-term memory with easily recognizable elements.</p>
+            <h4>The Easy: See & Choose</h4>
+               <p>An excellent example of a design that utilizes the advantages of recognition to reduce users' cognitive load is graphical user interfaces, or GUI for short (Johnson, 2021). By using icons or pictures, which we can recognize very quickly, digital literate users can navigate through digital systems without much (or any!) thought, free to use their 3-5 item short-term memory for their task (or entertainment) at hand.</p>
+            <h4>The Difficult: Recall and Type</h4>
+               <p>Before the design and implementation of GUI interfaces, humans interfaced with computers with command line interfaces (CLI). This method required users to remember specific words, or commands, to execute desired actions. CLI is used by professionals in many industries (including designers and developers) due to the capabilities to be more specific and to access features unavailable in a GUI. Prior to GUI and CLI, other even more technical methods were used, such as punch cards. Imagine punching holes in cards to tell a computer what you wanted! </p>
+            <h3>The Goal-Execute-Evaluate Cycle</h3>
+               <p>On the Cycle of Progress</p>
+               <p>As adults, we are driven by goal-oriented motivations. Johnson explains this concept with an example using a kitchen "throw-all" drawer (2021). Most households have a "catch all" or "throw all" drawer with miscellaneous items in the kitchen. When a child is sent to retrieve something from the drawer, they are likely able to describe what other (fun) items were in the drawer. On the other hand, an adult sent to retrieve the same item is unlikely able to describe the rest of the contents of the drawer.</p>
+               <p>This phenomena is due to the fact that our past experiences, present contexts, and future goals all affect our perception. In short: our goals filter out our perceptions--including vision.</p>
+               <p>In the context of the "human action cycle", this means there will be elements of our digital designs that will go unnoticed; they are not perceived as users seek for the elements that are most likely relevant to their goal.</p>
+               <p>To guide users throughout the workflow of a digital system, designers and developers can borrow from paths users are likely to already be familiar with. This avoids the mentally taxing involved when we problem-solve as we search for a path or means to accomplish our goal.</p>
+               <p>In Johnson's book Designing with the Mind in Mind, they note how one test participant said "I'm in a hurry, so I'll do it the long way." (2021). While the sentence might seem counterintuitive at first, Johnson uses it as an example of how people are likely to utilize the methods they are familiar with rather than spending the time and energy in finding a more efficient path. In short: users prefer familiar paths.</p>
+               <p>With these facts in mind, lets take a look at cognitive scientist Don Norman's pattern, the "human action cycle" (Card et al., 1983; Norman, 1988).</p>
+               <dl>
+                  <dt>Form a Goal</dt>
+                  <dd></dd>
+                  <dt>Choose/Execute Actions</dt>
+                  <dd>In an attempt to make progress towards goal. This includes transforming the goal into tasks, that are then ordered and executed.</dd>
+                  <dt>Evaluate Results</dt>
+                  <dd>To decide whether tasks were effective. This includes checking results, comparing results with expectations, and determining whether the tasks were effective in getting closer to the goal.</dd>
+                  <dd>Repeat until goal is reached (or deemed impossible/not worth the time).</dd>
+               </dl>
+               <p>To designers and developers, this entails several implications (Johnson, 2021):</p>
+               <dl>
+                  <dt>Goals</dt>
+                  <dd>Provide users with clear paths; in the Datacamp example, panels are ordered in the sequence the user will use them.</dd>
+                  <dt>Execute</dt>
+                  <dd>Objects and actions within the digital environment are task-based; above each line of code is a comment line with a description of the following code's task. Users aren't left with a blank slate to start with; they're given breadcrumbs that lead to the solution.</dd>
+                  <dt>Evaluate</dt>
+                  <dd>Datacamp provides feedback to users in the form of a correct/incorrect notification upon submission, a shell that outputs the actual script's outputs (including errors), an AI "explain the error" feature, and a hint button should the user need some extra "breadcrumbs".</dd>
+               </dl>
+            <h3>Cognitive Load and Friction</h3>
+               <p>On the Costs of Poor Design</p>
+               <p>When using a digital system, users require split second feedback yet are capable of missing what should be obvious changes. It's up to designers and developers to use the above concepts to maintain the user's attention--and ensure that users' attention notices relevant information.</p>
+            <h4>Inattentional Blindness</h4>
+               <p>Users can miss important details quite easily. Without good design to guide users, important information can be missed, leading to frustrations and failures.</p>
+               <p>Consider the kitchen drawer example from earlier. We can see that our goal-orientation can cause us to fail to perceive things that are irrelevant to our goal. This phenomena is called inattentional blindness.</p>
+               <p>A popular example of inattentional blindness is the "invisible gorilla" study, where subjects were tasked with watching a video of players passing a ball and counting the number of times the ball was passed by players in white shirts. Their goal orientation led half of the study's subjects fail to perceive a person in a gorilla suit acting and walking through the scene (Simons and Chabris, 1999).</p>
+            <h4>Change Blindness</h4>
+               <p>Another type of inattentive blindness is change blindness, where we fail to perceive changes that are irrelevant from our goal (Angier, 2008). This is due to the earlier stated fact that our short-term memory can only handle 3-5 items at a time--in this case, items being features of the object.</p>
+            <h4>Doherty Threshold: 400ms</h4>
+               <p>The need for instantaneous feedback</p>
+               <p>The Doherty Threshold: to keep the user's attention (and thusly increased productivity), systems need to provide users with feedback within 400ms--less than half a second (Yablonski, 2020).</p>
+               <p>For the (many) instances 400ms isn't enough time, designers and developers can extend this time with the use of perceived performance--objects such as loading bars, progress animations, time estimations provide the user the split-second feedback necessary for maintaining attention and productivity.</p>
+            <h3>Conclusion</h3>
+               <p>In this blog post, we've covered how "good design" isn't just about finding the perfect color swatches and cool CSS effects, but is design with (as Johnson so aptly named their book) with users' minds in mind.</p>
+               <p>Good design respects users' time, their attention span, and their mental capacity. While many of these concepts might seem like we have very limited resources at hand, it is important not to become overdependent on AI and ML, less we fail to properly manage the complexity of our problem statement. Good designers and developers keep these concepts in mind in their products by creating a digital system that acts like a staircase--one that guides users to their goal, one step, one iteration at a time.</p>
+            <footer class="article-footer">
+                  <div class="sources">
+                     <b>Sources:</b>
+                     <ul class="source-list">
+                        <li>Angier, N., April 1, 2008. Blind to change, even as it stares us in the face. New York Times. https://www.nytimes.com/2008/04/01/science/01angi.html</li>
+                        <li>Broadbent, D.E., 1975. The magical number seven after fifteen years. Studies in Long-Term Memory. Wiley, London, pp. 3-18.</li>
+                        <li>Card, S., Moran, T., Newell, A., 1983. The Psychology of Human-Computer Interaction. Lawrence Erlbaum Associates, Hillsdale, NJ.</li>
+                        <li>Johnson, J. (2021). Designing with the Mind in Mind (Third Edition). Elsevier. https://doi.org/10.1016/B978-0-12-818202-4.02001-8</li>
+                        <li>Mastin, L., 2010. Short-term (Working) Memory. The Human Memory: What it is, How it Works, and How it Can Go Wrong. http://www.human-memory.net/types_short.html</li>
+                        <li>Norman, D.A., 1988. The Design of Everyday Things. Basic Books, New York, NY.</li>
+                        <li>Simons, D.J., Chabris, C.F., 1999. Gorillas in our midst: sustained inattentional blindness for dynamic events. Perception 28, 1059-1074.</li>
+                        <li>Yablonski, J. (2024). Laws of UX (2nd ed.). O'Reilly Media, Inc.. https://cwu.vitalsource.com/books/9781098146924</li>
+                     </ul>
+                  </div>
+            </footer>
+         </article>
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->

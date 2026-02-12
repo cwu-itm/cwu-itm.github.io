@@ -133,14 +133,15 @@ blockquote {
 .article-header {
 
     margin-bottom:1.5rem;
-    color:#333
+    padding-top: 20px;
+    color:#333;
 
 }
 
 .article-footer {
 
     margin-top:2rem;
-    color:#333
+    color:#333;
 
 }
 
@@ -173,7 +174,7 @@ p.half-spacing {
 }
 
 .sources {
-
+    
     text-align: left;
     font-size: .875rem;
     margin-top: 2rem;
@@ -189,5 +190,5 @@ p.half-spacing {
     padding-left: 3rem;
     text-indent: -3rem;
     list-style-type:none;
-
+    
 }
