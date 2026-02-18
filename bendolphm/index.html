@@ -16,87 +16,697 @@
          <!-- Module 1.1 Blog Post Starts Here-->
          <article>
             <header class="article-header">
-               <!-- TITLE -->
-<!-- The title element is only used in the header section of the document; use an h1 element instead as coded below. I'd also move this to line 12 and replace the existing h1 element because this reads more like the title to your blog as a whole rather than the specific blog post.-->
-            <h1>iMarius, not iCarly's Blog</h1>
-            <!-- WARM WELCOME TEXT -->
-            <p>Good evening, Night City! My name is <strong>Marius Bendolph</strong>! Welcome to my blog where we talk IT 312. I hope you all are just as excited as I am to get this started, so lets do it!</p>
-            <!-- DATE --> 
-
-<!-- INSTRUCTOR COMMENT: Switch up the code to use an h2 element for the title and the time element for the date as coded in the next two lines. -->
-
-              <h2>Module 1.1 Blog</h2>
-            <time datetime="13-01-2026">13JAN2026</time>
-            <!-- FIRST PARAGRAPH -->
-            <p>While reading through our first modules' chapters one and two, I already knew id be very excited to start this class! Like every great book, we start with the "lore" of it all, how "Systems Engineering" came to be in our present. Our first note is that Systems Engineering dates back to the 20th Century in Bell laboratories in the USA (Fagen, 1978). But wait a second, what is Systems Engineering and what are Systems? Well "Systems" has a dynamic definition; They are defined in different ways by different, not necessarily a fixed situation. On the bright side, there is a system for this system, designed by Peter Checkland in five separate types; Natural Systems (NS), Designed Physical Systems(DPS), Designed Abstract Systems(DAS), Human Activity Systems(HAS), and last but not least, Transcendental Systems (TS) (Checkland, 1999). As listed, each have their own indicators; Ns are beyond human control, think of natural as in nature; DPS are moreovera limitless amount of items ranging from IoT devices to cars to bridges; DAS are more tailored to one's understanding of an item, object, concept, equation, etc; HAS consists of grouping in efforts to achieve a common goal or purpose, a presidential campaign may qualify; Finally, TS can translate into what is better said as "we dont know what we dont know", information gaps and beyond.</p>
-            <!-- SECOND PARAGRAPH -->
-            <p>Continuing, Holt frames systems engineering as the work of ensuring that a systems' goals, stakeholder needs, constraints, and technical solutions stay aligned as complexity rises and as teams, suppliers, and technologies multiply (Holt, 2023). This framing matters because it positions systems engineering as a “throughline” from concept to retirement. It also highlights that systems engineering is not limited to one engineering domain; instead, it exists because modern systems demand coordination across mechanical, electrical, software, human factors, operations, sustainment, and management concerns. Holts' definition and scope align with widely used references. INCOSE describes systems engineering as an interdisciplinary approach that enables successful systems by focusing on stakeholder needs early, documenting requirements, and proceeding through design synthesis and validation across the life cycle (Walden et al., 2023). NASA similarly describes systems engineering as a robust approach to design, creation, and operation that links stakeholder expectations, technical baselines, trade studies, and verification activities into one coherent effort (National Aeronautics and Space Administration (NASA), 2016). The overlap across Holt, INCOSE, and NASA suggests that the “demystified” view is not a simplified alternative to mainstream systems engineering; it is a practical introduction to the same core commitments: lifecycle thinking, interdisciplinary integration, and explicit management of requirements and interfaces.</p>
-            <!-- THIRD PARAGRAPH -->
-
-<!-- INSTRUCTOR COMMENT: To create a heading, use one of the heading elements; h3 would be appropriate as coded in the next line. Repeat for each section of text you want to display as a heading.-->
-
-             <h3>Systems, Boundaries, and Emergence</h3>
-            <p>Holt emphasizes that a “system” is not merely a collection of parts but an organized whole whose behaviour depends on interactions. This leads to the important idea of emergent properties; The system exhibits capabilities and risks that no individual component possesses in isolation (Holt, 2023). For newcomers, the practical implication is that many failures are not “component failures” but “interaction failures.” Integration defects, inconsistent assumptions about timing or data formats, poorly defined interfaces, and unmodeled environmental conditions can cause the overall system to behave unexpectedly even if each component passes its local tests. By highlighting emergence early, Holt motivates why systems engineering must pay attention to system boundaries (what is inside the system of interest, what is external), operating contexts (the environment and usage conditions), and interfaces (where interactions occur).</p>
-            <!-- FOURTH PARAGRAPH -->
-             <p><strong>The “Evils” Systems Engineering is Meant to Counter</strong></p>
-             <p>One of Holts' most memorable teaching tools is his description of the “three evils” that systems engineering seeks to address as follows: complexity, ambiguous communication, and lack of understanding (Holt, 2023). Although other references may use different language, they describe the same underlying problems. Complexity grows with the number of components, the diversity of disciplines, and nonlinear effects of interactions. Ambiguous communication arises when stakeholders use the same words differently or rely on implicit assumptions. Lack of understanding appears when teams are unsure what stakeholders truly need, how the system behaves in context, or what trade offs are being made. Holts' insight is that these problems reinforce each other, complexity increases the chance of misunderstanding, and misunderstanding makes complexity harder to control.</p>
-            <p>The most important analytical takeaway from this “three evils” framing is that systems engineering is not merely a checklist of steps. It is a governance mechanism for learning and alignment. INCOSE’s handbook likewise emphasizes disciplined processes and traceability that keep requirements, architecture, verification, and validation connected (Walden et al., 2023). NASA similarly frames systems engineering as decision making under uncertainty—exploring alternatives, managing interfaces, assessing risk, and maintaining a coherent technical baseline as the system matures (NASA, 2016). Holts’ “evils” help explain why those disciplined processes exist: without them, teams tend to build local solutions that do not integrate well, communicate inconsistently across boundaries, and discover fundamental misunderstandings too late, when fixes are expensive.</p>
-             <!-- FIFTH PARAGRAPH -->
-              <P><strong>Lifecycle Thinking</strong></P>
-              <p>Chapter 1 also sets up a dual mandate that appears throughout systems engineering practice. The first step in this process is to build the right system (does it satisfy stakeholder needs in the intended context?) and step 2 is to build the system right (does it satisfy specified requirements and design constraints?). Holts’ early framing makes the point that you cannot validate late stage hardware or software into a fundamentally wrong concept; you must uncover stakeholder intent early and keep it connected to design decisions throughout development (Holt, 2023). NASA’s handbook reinforces this distinction by treating verification and validation as different but complementary activities that should be planned from early phases and performed continuously as the design evolves (NASA, 2016).</p>
-            <p>A useful insight here is that requirements are not “paperwork”; they are the bridge between stakeholder intent and engineering decisions. If requirements are unclear, incomplete, or untraceable, then verification becomes a box checking exercise rather than evidence that the system will work. Holts Chapter 1 prepares the reader to see requirements, trade studies, and interface definition as tools for reducing uncertainty and ensuring the team’s understanding remains coherent (Holt, 2023). INCOSE’s handbook similarly stresses that requirements and architecture should be mutually supportive, and that verification evidence must trace back to requirements and stakeholder needs (Walden et al., 2023)</p>
-              <!-- SIXTH PARAGRAPH -->
-               <p><strong>Why MBSE Changes the Game</strong></p>
-               <p>Chapter 2 introduces a strong <strong>“how.”</strong> Holt presents MBSE as a response to document-centric practice that can struggle under scale. A key insight is that natural language documents are often ambiguous and can become inconsistent as systems evolve. When teams rely on many disconnected documents, change propagation is slow, errors hide in gaps between artifacts, and different readers interpret the same text differently. MBSE shifts the technical baseline toward a coherent system model, using structured modelling languages, tools, and methods so that architecture, behaviour, interfaces, requirements relationships, and verification intent remain connected (Holt, 2023).</p>
-            <p>This aligns with a widely used INCOSE definition: MBSE is the formalized application of modelling to support system requirements, design, analysis, verification, and validation activities, beginning in conceptual design and continuing through development and later life cycle phases (International Council on Systems Engineering [INCOSE]). The phrase “formalized application” is important because it signals that the model is not just illustrative. Instead, it is part of the controlled technical baseline, managed under configuration control and used for engineering analysis and decision-making. In practical terms, this is like how organizations treat code repositories; The artifacts are controlled, changes are reviewed, and consistency is continuously maintained.</p>
-              <!-- SEVENTH PARAGRAPH -->
-            <p><strong>Models as a Shared Language </strong></p>
-            <p>Holt makes a strong case that modelling is about communication as much as it is about analysis. A well-constructed model provides a shared vocabulary and a structured representation of the system’s logic. Because modelling languages define explicit semantics (for example, how a component relates to an interface or how an activity relates to flows), models reduce the likelihood that two stakeholders interpret the same artifact differently (Holt, 2023). This directly targets one of the “evils” from Chapter 1: ambiguous communication. In a model, relationships are explicit and navigable, and teams can review the same structure rather than trying to reconcile different mental models from separate documents.</p>
-            <p>NASA recognizes the same value of models for shared understanding, particularly as systems become more software-intensive and tightly integrated with operations (NASA, 2016). INCOSE also positions MBSE to scale systems engineering by using integrated models to support traceability and analysis across the life cycle (INCOSE; Walden et al., 2023). Holts value add in Chapter 2 is how directly he ties these benefits to everyday frustrations that engineers experience on complex projects: unclear requirements, conflicting diagrams, interface mismatches, and late discovery of assumptions that were never captured explicitly.</p>
-            <!-- SEVENTH PARAGRAPH -->
-             <p><strong>Managing complexity Through Multiple Consistent Views</strong></p>
-             <p>A second core insight is that MBSE helps manage complexity by enabling multiple consistent views of the same underlying model. Rather than maintaining separate artifacts that drift apart, such as a requirements document, a design document, an interface control document, and a test plan, MBSE aims to connect these views via explicit relationships. When done well, a team can answer questions that matter for delivery: Which requirements drive this interface? Which components realize this behaviour? What tests provide evidence for this requirement? What happens to downstream verification if we change this allocation? Holt’s Chapter 2 prepares readers to see MBSE as a way to “thread” these questions through the engineering baseline (Holt, 2023).</p>
-            <p>INCOSE emphasizes that traceability and tailoring are essential for applying systems engineering effectively to different project contexts, and MBSE can strengthen traceability by making relationships first-class citizens in the baseline (Walden et al., 2023). NASA likewise emphasizes the importance of managing interfaces and assumptions explicitly as a system matures (NASA, 2016). Hol’ts chapters connect these ideas to a practical claim: complexity is not eliminated by better intentions, but it can be made manageable when the baseline makes dependencies visible and navigable (Holt, 2023).</p>
-             <!-- EIGHTH PARAGRAPH -->
-             <p><strong>Verification and Validation Embedded in the Modelling Lifecycle</strong></p>
-             <p>Holt emphasizes that MBSE is not separate from verification and validation (V&V); rather, V&V can be designed into the model from the start. Early concept models can be used to explore operational scenarios, validate the concept of operations with stakeholders, and identify missing requirements before implementation. As the design becomes more detailed, models can support interface verification planning, simulation, and consistency checks. The larger insight is that MBSE encourages earlier, cheaper learning by shifting discovery left in the life cycle (Holt, 2023).</p>
-             <p>NASA’s handbook reflects the same principle: validation of stakeholder expectations and verification planning should begin early and continue as the design evolves, because late stage discovery is costly and risky (NASA, 2016). INCOSE also treats verification and validation as life cycle processes tied to requirements and architecture, and MBSE can strengthen these linkages by tying requirements, design, and evidence together in a single navigable structure (Walden et al., 2023; INCOSE). Holt’s Chapter 2 primes readers to view models as active instruments for V&V rather than passive documentation.</p>
-             <!-- NINTH PARAGRAPH -->
-              <p><strong>Implementation Insight</strong></p>
-              <p>A practical and often underappreciated insight in Holt’s Chapter 2 is that adopting MBSE is not only a tooling decision. Even when teams select a standard modelling language (commonly SysML) and a modelling environment, success depends on people and process: shared conventions, governance, training, review practices, and the discipline to keep the model current as the system evolves (Holt, 2023). Without that discipline, organizations risk producing attractive diagrams that are disconnected from real decisions; an outcome that reproduces document centered failure modes in a new form.</p>
-             <p>This point aligns with the broader guidance from NASA and INCOSE, both of which emphasize configuration management, lifecycle governance, and disciplined technical baselines (NASA, 2016; Walden et al., 2023). MBSE changes the artifacts, but it does not eliminate the need for clear roles, review points, and controlled baselines. Holt’s first two chapters implicitly teach that systems engineering methods are only effective when they are embedded in how an organization actually makes decisions, manages change, and learns from evidence.</p>
-              <!-- TENTH PARAGRAPH -->
-               <p><strong>How Chapters 1 and 2 fit Together </strong></p>
-               <p>Read together, Chapters 1 and 2 present a coherent argument. Chapter 1 establishes the problem space: complex systems fail not only due to technical challenges but because teams cannot reliably maintain shared understanding and alignment under complexity (Holt, 2023). Chapter 2 introduces MBSE as a modern response: use formal models to reduce ambiguity, 9 connect views, preserve traceability, and enable earlier verification and validation (Holt, 2023; INCOSE). The key insight is that MBSE does not replace systems engineering fundamentals; it strengthens the ability to practice those fundamentals at scale.</p>
-             <p>The strongest takeaway from Holt’s framing is that systems engineering is the discipline of alignment, and MBSE is a particularly powerful set of tools and practices for sustaining alignment through change. When requirements evolve, when design alternatives are traded, and when verification strategies mature, MBSE helps keep the baseline coherent by maintaining explicit relationships among needs, architecture, behaviours, interfaces, and evidence (Holt, 2023). INCOSE and NASA support this direction: systems engineering is fundamentally lifecycle integration, and model-based artifacts can strengthen integration by improving consistency, analysis friendly, and communication across disciplines (Walden et al., 2023; NASA, 2016).</p>
-             <p><strong>Conclusion</strong></p>  
-             <p>Holt’s first two chapters demystify systems engineering by framing it as the discipline of maintaining understanding and alignment across a system’s life cycle. Chapter 1 explains why systems engineering exists, highlighting complexity, ambiguous communication, and lack of understanding as recurring failure modes that drive cost and schedule risk (Holt, 2023). Chapter 2 explains why MBSE has become central in many domains: by treating a structured system model as a core baseline, teams can reduce ambiguity, manage complexity through consistent views, and integrate verification and validation into engineering work earlier and more continuously (Holt, 2023; INCOSE). Taken together, these chapters provide a practical foundation: systems engineering is not “extra paperwork,” but a way to make complex projects more predictable by making meaning, relationships, and evidence explicit (Walden et al., 2023; NASA, 2016).</p>
-             <ul>
-               <li>Marius Bendolph</li>
-               <li>Marius.Bendolph@cwu.edu</li>
-               <li>Central Washington University</li>
-             </ul>
+               <h2>Module 1.1 Blog Post</h2>
+            </header>
+            <h3>Health Cronut la Croix</h3>
+            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
+            <h3>Offal Tofu Cred Green Juice</h3>
+            <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
+            <h3>Blue Roof Pour-Over Man Bun</h3>
+            <p>Yuccie mukbang pickled activated charcoal. PBR&B selfies DSA mustache authentic. Gochujang kombucha big mood retro, you probably haven't heard of them +1 lomo. Tbh pour-over yr viral gorpcore poutine four dollar toast. Bicycle rights man bun try-hard, mlkshk roof party occupy succulents taxidermy kogi enamel pin brunch paleo poutine yr. Blue bottle street art waistcoat typewriter yr hot chicken polaroid helvetica pitchfork.</p>
+            <ul>
+               <li>Neutra umami slow-carb vegan dreamcatcher.</li>
+               <li>Tacos cornhole humblebrag ethical.</li>
+               <li>DSA santo big mood organic charcoal bitters.</li>
+               <li>Hot chicken pitchfork poutine.</li>
+            </ul>
+            <h3>Mlkshk Stumptown Hot Chicken</h3>
+            <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
             <footer class="article-footer">
                 <h3>Sources:</h3>
                 <ol>
-                    <li>Holt, J. (2023). Systems Engineering Demystified (2nd ed.). Packt Publishing. 
-                     International Council on Systems Engineering. (n.d.). MBSE Initiative.</li>
-                     <li>National Aeronautics and Space Administration. (2016). NASA Systems Engineering
-                        Handbook (NASA SP-2016-6105 Rev2). <em>Direct manipulation: Definition</em>. Retrieved January 13, 2026, from  <a href="https://www.nasa.gov/wp-content/uploads/20 18/09/nasa_systems_engineering_handbook_0.pdf">https://www.nasa.gov/wp-content/uploads/20 18/09/nasa_systems_engineering_handbook_0.pdf</a></li>
-                        <li>Walden, D. D., Roedler, G. J., Forsberg, K. J., Hamelin, R. D., & Shortell, T. M. (Eds.).
-                           (2023) INCOSE Systems Engineering Handbook: A Guide for System Life Cycle Processes and Activities (5th ed.). Wiley.
-
-
+                    <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
                     </ol>
             </footer>
          </article>
 
          <!-- Module 1.2 Blog Post Starts here -->
+<article>
+          <P><strong>20JAN2026</strong></P>
+          <h1>1.2 Blog Post: Thinking in Life Cycles</h1>
+          <p>
+            In systems engineering, a “life cycle” is not just a timeline, it’s a way of organizing decisions about requirements, design, 
+            verification/validation, deployment, and sustainment so the system remains useful over time. The model you choose shapes how your
+            team handles uncertainty, how quickly you can learn from real-world feedback, and how painful (or manageable) change becomes.
+            In <em>Systems Engineering Demystified</em>, Holt emphasizes that life cycles are essential for understanding how systems evolve,
+            but they are often oversimplified in practice because real systems are complex and interconnected (Holt, 2023).
+         </p>
 
+         <p>
+            This post compares three common life cycle models: <strong>linear</strong>, <strong>iterative</strong>, and <strong>incremental</strong> and
+            explains when each makes sense. I also connect Holt’s explanations to two widely recognized external references: the
+            ISO/IEC/IEEE 15288 standard for system life cycle processes (ISO/IEC/IEEE, 2015) and the NASA Systems Engineering Handbook
+            (NASA, 2016). The goal is not to “pick a winner,” but to understand what each model optimizes for and what tradeoffs you accept
+            when you commit to it.
+         </p>
+
+         <h2>Why life cycle thinking matters more than it sounds</h2>
+
+         <p>
+            The easiest mistake to make is to treat a life cycle model like a checklist. In reality, a life cycle model is a strategy for
+            managing risk. It sets expectations about when you lock decisions, when you can revisit assumptions, and how you prove that the
+            system is ready to move forward. Holt points out that in real organizations, systems often involve multiple life cycles happening
+            at the same time, with interaction points that may shift or appear unexpectedly (Holt, 2023). That means a model that looks
+            “clean” on paper can fail in practice if it doesn’t match the system’s environment and stakeholder behavior.
+         </p>
+         
+         <p>
+            Another reason life cycle thinking matters: <em>systems are not isolated</em>. A system is made of interconnected elements within a
+            boundary, and it interacts with its environment through interfaces (Holt, 2023). Those interfaces may exchange information,
+            energy, materials, money, or combinations of these, and complex systems can have many interfaces and internal interactions.
+            When you choose a life cycle model, you are also choosing how you will discover, define, and control those interfaces over time
+            (Holt, 2023).
+         </p>
+
+         <h2>The basic life cycle “stages”</h2>
+         
+         <p>
+            Holt describes life cycles using stages (such as concept, development, production, and utilization) that represent the kinds of
+            activities a system typically goes through from idea to real-world use (Holt, 2023). The three models in this post arrange those
+            stages differently and repeat them in different ways.
+         </p>
+         
+         <ul>
+            <li><strong>Concept</strong>: define the problem, stakeholders, and what “success” means.</li>
+            <li><strong>Development</strong>: shape the solution, design the architecture, and reduce uncertainty.</li>
+            <li><strong>Production</strong>: build/implement the system elements and integrate them.</li>
+            <li><strong>Utilization</strong>: operate the system in the real environment and learn from performance.</li>
+            <li><strong>Sustainment &amp; retirement</strong>: maintain, update, and eventually dispose/replace the system when needed.</li>
+         </ul>
+         
+         <p>
+            ISO/IEC/IEEE 15288 frames similar work using defined process groups and technical processes that apply across a system’s life
+            (ISO/IEC/IEEE, 2015). NASA also treats systems engineering as an activity that spans the full life cycle rather than a single
+            “phase” you finish and forget (NASA, 2016). This matters because life cycle models are ultimately about <strong>when</strong> and
+            <strong>how</strong> you apply those processes to guide decisions.
+         </p>
+         
+         <h2>Model #1: Linear life cycle (clear phases, controlled transitions)</h2>
+         
+         <p>
+            A linear model moves through the stages in a mostly one-way flow. The basic idea is simple; do concept work, then development,
+            then production, then utilization. Linear approaches are attractive when the system is short, well-defined, and unlikely to face
+            major requirement changes. The “best case” is a stable environment where stakeholders agree early, requirements can be
+            documented clearly, and the system’s interfaces and constraints can be managed without constant redesign (Holt, 2023).
+         </p>
+         
+         <h3>Strengths of linear approaches</h3>
+         <ul>
+            <li><strong>Clarity</strong>: everyone knows what stage the project is in and what deliverables are expected.</li>
+            <li><strong>Control</strong>: reviews and gates can enforce discipline before the team moves forward.</li>
+            <li><strong>Auditability</strong>: documentation and traceability are easier to maintain in regulated contexts.</li>
+         </ul>
+         
+         <h3>Weaknesses of linear approaches</h3>
+         <ul>
+            <li><strong>Change is expensive</strong>: late discoveries often trigger rework across multiple stages.</li>
+            <li><strong>Feedback arrives late</strong>: you may not find real-world usability or integration issues until deployment.</li>
+            <li><strong>False certainty</strong>: a “complete” requirements set early on can be an illusion when stakeholders learn over time.</li>
+         </ul>
+         
+         <p>
+            In other words, the linear model tends to work best when uncertainty is already low, or when constraints demand strict control.
+            If uncertainty is high, the linear model can create brittle plans that look confident until reality forces change.
+         </p>
+         
+         <h2>Model #2: Iterative life cycle (repeat the stages to learn faster)</h2>
+         
+         <p>
+            Holt describes iterative life cycles as an approach built on a practical assumption; if a linear model works for small,
+            well-defined projects, you can break a large complex system into a series of shorter, simpler “mini life cycles,” called
+            iterations (Holt, 2023). Each iteration passes through the stages and produces a workable version of the final system that can
+            be deployed in the target environment (Holt, 2023).
+         </p>
+         <p>
+            The iteration-by-iteration idea changes how teams think. Instead of betting everything on a single final delivery, the team
+            treats each iteration as a learning opportunity. Holt notes a key benefit: each release is typically more complete and improved
+            compared to the previous one, and if a release is a disaster, it can be easier to revert to a prior version and restore
+            functionality (Holt, 2023).
+         </p>
+         
+         <h3>Advantages of iterative approaches</h3>
+         <ul>
+            <li><strong>Earlier feedback</strong>: you learn from real use sooner, not at the end.</li>
+            <li><strong>Risk reduction</strong>: you can detect integration or performance issues earlier.</li>
+            <li><strong>Continuous improvement</strong>: each cycle refines requirements and design based on evidence.</li>
+         </ul>
+         
+         <h3>Real-world cautions Holt emphasizes</h3>
+         <ul>
+            <li>
+               <strong>Schedule-driven releases</strong>: Holt points out that in software contexts, iterative cycles may push teams to ship on time
+               rather than wait for something that truly works (Holt, 2023).
+            </li>
+            <li>
+               <strong>Stakeholder volatility</strong>: iterative approaches can invite frequent changes in basic needs, so a robust needs process is
+               critical and often missing (Holt, 2023).
+            </li>
+         </ul>
+         
+         <p>
+            A common misconception is that iterative delivery conflicts with Model-Based Systems Engineering. Holt explicitly rejects this:
+            MBSE can be applied wherever you need to control complexity, define understanding, and communicate with stakeholders (Holt, 2023).
+            That’s a major point: iteration does not remove the need for disciplined engineering; it increases the need for strong models,
+            traceability, and well-defined interfaces because you are making changes more frequently.
+         </p>
+
+         <h2>Model #3: Incremental life cycle</h2>
+         
+         <p>
+            Holt explains that the incremental model is similar to the iterative model in that the system is delivered through multiple
+            passes and multiple releases both are often grouped as “evolutionary” models (Holt, 2023). The difference is the structure:
+            in an incremental approach, the concept stage covers <em>all</em> needs up front, but later development and production focus on
+            subsets of needs to produce a partial solution that can be deployed (Holt, 2023).
+         </p>
+         
+         <p>
+            Put simply, iterative development often emphasizes refining the same overall product repeatedly, while incremental delivery
+            emphasizes expanding capability by delivering chunks of the overall system. Holt highlights an important advantage: the system
+            can be seen working earlier, even if deployed in reduced form compared to the final system (Holt, 2023). That can be valuable
+            when stakeholders need operational capability sooner, or when you want early “proof of value” while you continue building.
+         </p>
+         
+         <h3>Strengths of incremental approaches</h3>
+         <ul>
+            <li><strong>Early operational value</strong>: stakeholders get usable capability sooner.</li>
+            <li><strong>Funding and support</strong>: visible progress can help sustain organizational buy-in.</li>
+            <li><strong>Focused scope per release</strong>: teams can isolate complexity into manageable delivery blocks.</li>
+         </ul>
+         
+         <h3>Weaknesses of incremental approaches</h3>
+         <ul>
+            <li><strong>Integration burden</strong>: each new increment must integrate cleanly with what already exists.</li>
+            <li><strong>Architecture pressure</strong>: early decisions must support future increments, or growth becomes painful.</li>
+            <li><strong>Interface creep</strong>: partial deployments can multiply interfaces and operational constraints.</li>
+         </ul>
+         
+         <h2>Life cycle models in real systems: interfaces, boundaries, and “multiple life cycles”</h2>
+         
+         <p>
+            The reason life cycles become complicated is that systems interact. Holt defines a system as a set of interconnected elements
+            inside a boundary, and emphasizes that interfaces are the connections between the system and its environment (Holt, 2023).
+            In practice, those interfaces are where many projects struggle, especially when multiple organizations, suppliers, or legacy
+            systems are involved.
+         </p>
+         
+         <p>
+            Holt also warns that the “single life cycle diagram” is often not the full story. Large organizations may run multiple life cycles
+            simultaneously for different subsystems, and those life cycles may intersect at critical points (Holt, 2023). That explains why
+            teams can feel like they are “doing iterative development” while their acquisition or governance structure forces linear gates.
+            Life cycle alignment is not only a technical issue, it’s organizational.
+         </p>
+         
+         <h2>Processes across the life cycle: why verification and validation can’t be an afterthought</h2>
+         
+         <p>
+            Chapter 5 shifts from life cycle models to the processes that make systems engineering work. Holt says processes lie at the heart
+            of systems engineering because systems engineering is an approach to realizing successful systems (Holt, 2023). In other words,
+            life cycle models are the “shape,” but processes are the “engine” that moves the work forward.
+         </p>
+         
+         <p>
+            Holt also lists desirable process properties. One clearly stated property is that processes must be <strong>repeatable</strong>,
+            meaning they can be executed consistently by stakeholders (Holt, 2023). Repeatability matters because when teams are large,
+            distributed, or working with suppliers, “how we do things” must be stable enough to produce reliable outcomes.
+         </p>
+         
+         <p>
+            Holt uses ISO 15288 as a concrete example and describes process groups including Agreement, Organizational Project-Enabling,
+            Technical Management, and Technical Processes (Holt, 2023). Within the technical processes, ISO 15288 includes activities such as
+            stakeholder needs and requirements, system requirements, architecture definition, design definition, implementation, integration,
+            verification, validation, operation, maintenance, and disposal (Holt, 2023; ISO/IEC/IEEE, 2015).
+         </p>
+         
+         <h3>Verification vs. validation: A difference that affects every life cycle model </h3>
+         
+         <p>
+            ISO 15288 (as summarized by Holt) distinguishes verification and validation in a way that directly connects to life cycle models:
+         </p>
+         
+         <dl>
+            <dt><strong>Verification</strong></dt>
+            <dd>
+               Providing objective evidence that a system (or system element) fulfills its specified needs (Holt, 2023).
+            </dd>
+            <dt><strong>Validation</strong></dt>
+            <dd>
+               Providing objective evidence that the system, when in use, fulfills its intended purpose in its intended operational environment
+               (Holt, 2023).
+            </dd>
+         </dl>
+         
+         <p>
+            That distinction is one reason iterative and incremental models can be powerful: they can deliver earlier chances to validate in
+            the real environment. But it’s also why those models can fail if teams focus only on shipping increments without maintaining
+            disciplined verification and requirements traceability.
+         </p>
+         
+         <h2>A practical way to choose between linear, iterative, and incremental</h2>
+         
+         <p>
+            If you are deciding which model makes sense, think in terms of uncertainty and constraints. Holt’s discussion implies that model
+            choice should reflect stakeholder behavior, system complexity, and how fast the team needs feedback (Holt, 2023). ISO 15288 and
+            NASA both reinforce the idea that systems engineering processes span the life cycle, so the question becomes: <em>how will you
+               structure learning and control?</em> (ISO/IEC/IEEE, 2015; NASA, 2016).
+            </p>
+            
+            <ol>
+               <li>
+                  <strong>Assess volatility:</strong> If stakeholder needs are likely to change frequently, iterative/incremental approaches can
+                  handle learning better,<em>if</em>, you have a robust needs process (Holt, 2023).
+               </li>
+               <li>
+                  <strong>Assess integration risk:</strong> If interfaces and integration are high-risk, plan for earlier integration and earlier
+                  evidence. Incremental delivery can help, but it also creates repeated integration events.
+               </li>
+               <li>
+                  <strong>Assess compliance and governance:</strong> If strict gates, audits, or certification dominate, a linear structure may be
+                  required, but you can still incorporate iterative learning inside phases (NASA, 2016).
+               </li>
+               <li>
+                  <strong>Plan verification and validation intentionally:</strong> Don’t push validation to the end. Use the model to create
+                  opportunities to validate in realistic conditions (Holt, 2023; ISO/IEC/IEEE, 2015).
+               </li>
+            </ol>
+            
+            <h2>Final Thoughts</h2>
+            
+            <p>
+               The biggest takeaway from Chapters 3-5 is that life cycle models are not just academic diagrams. They affect how teams think about
+               boundaries, interfaces, and change. Holt’s argument that life cycles are often oversimplified is not pessimistic, it is realistic.
+               Real systems are built inside organizations, connected to environments, and shaped by stakeholders who learn over time (Holt, 2023).
+            </p>
+            
+            <p>
+               Linear models provide clarity and control when uncertainty is low or governance is strict. Iterative models create faster learning
+               loops and reduce the risk of betting everything on a single delivery, but they demand strong needs management and disciplined
+               engineering. Incremental models deliver capability earlier and build momentum, but they put pressure on architecture and integration.
+               No matter the model, the core processes/needs, requirements, architecture, design, integration, verification, validation,
+               operations, maintenance, and disposal still matter, and standards like ISO 15288 and guidance like NASA’s handbook exist because
+               consistent process execution is what turns complexity into outcomes (Holt, 2023; ISO/IEC/IEEE, 2015; NASA, 2016).
+            </p>
+</article>
          <!-- Module 2.1 Blog Post Starts here -->
+          <article>
+            <header>
+               <h1>Designing for People: Human-Centered Design (HCD) Starts With Perception</h1>
+               <p>
+                  Designing for people means more than creating interfaces that look visually appealing it means understanding how humans
+                  perceive, process, and interact with information. Human-centered design (HCD) puts users at the center of the design
+                  process by considering their cognitive limits, expectations, and emotional needs. When designers account for
+                  perception, attention, and empathy early in the design process, they create systems that feel intuitive rather than
+                  frustrating. This post explains what it means to “design for people,” compares the perspectives of ISO 9241-210 and
+                  IDEO’s Field Guide, and shows how perception, visual hierarchy, and four UX laws shape usability.
+               </p>
+            </header>
+            
+            
+            <h2>What Does Human-Centered Design Mean Exactly?</h2>
+            <p>
+               Human-centered design is an approach that prioritizes the needs, abilities, and limitations of users throughout the
+               entire design lifecycle. Instead of designing for ideal conditions, HCD acknowledges real-world human behavior;
+               distraction, limited attention, memory constraints, and learned expectations. ISO 9241-210 describes a human-centered
+               process that emphasizes understanding users, involving them throughout design, iterating based on evaluation, and
+               improving the user experience holistically (International Organization for Standardization [ISO], 2019).
+            </p>
+            <p>
+               In practice, HCD is not just “nice to have”, it is the difference between an interface that feels self-explanatory
+               and one that feels like a puzzle. Empathy is central here; designers must understand not only what users do, but why
+               they do it, and what gets in the way. That includes visual perception, attention limits, and the emotional impact of
+               friction.
+            </p>
+            
+            
+            
+            <h2>ISO 9241-210 vs. IDEO’s Field Guide</h2>
+            <p>
+               ISO 9241-210 and IDEO’s Field Guide both promote human-centered design, but they come at it from different angles.
+               ISO provides a structured framework focused on usability principles, documentation, and iterative evaluation based on
+               user feedback (ISO, 2019). This is especially useful in professional, enterprise, or regulated environments where
+               repeatable process and measurable outcomes matter.
+            </p>
+            <p>
+
+               IDEO’s Fiel Guide presents a more flexible, creative toolkit. It emphasizes inspiration, experimentation, and
+               storytelling as ways to understand people and uncover needs that users may not state directly. IDEO encourages methods
+               like observation, rapid prototyping, and co-creation to learn quickly and refine ideas in real contexts (IDEO, 2015).
+            </p>
+            <p>
+               I see these as complementary; ISO helps ensure the design is usable and consistently evaluated, while IDEO’s approach
+               helps teams discover deeper motivations and opportunities. When paired, they support both reliability 
+               and meaning; It works well and it fits our customers. 
+            </p>
+            
+            
+            <h2>Perception and Visual Hierarchy</h2>
+            <p>
+               Humans do not read screens the way we read a book. We scan, we search for patterns, and we rely on visual cues to
+               decide what matters first. Visual hierarchy is portrayed by the intentional arrangement of size, contrast, spacing, and position which guides
+               attention and reduces effort. When hierarchy is clear, users can quickly answer: “Where am I?” “What can I do?” and
+               “What should I click next?”
+            </p>
+            <p>
+               A practical example is a dashboard. If the primary action, such as “Submit,” “Continue,” or “Save”, is visually distinct
+               and placed consistently, users can move with confidence. If everything has the same weigh, same button style, similar
+               colors, crowded layout, users have to work harder to interpret the interface, which increases cognitive load andfrustration. These are early-stage design choices, and fixing them later is often costly.
+            </p>
+            
+            
+            
+            <h2>Jakob’s Law: People Expect Familiar Patterns</h2>
+            <p>
+               Jakob’s Law says users spend most of their time on other sites, so they expect your interface to behave similarly
+               (Nielsen, 2020). This is basically the “don’t make me learn everything from scratch” principle. Familiar patterns
+               reduce friction because users can rely on recognition rather than figuring out a new system.
+            </p>
+            <p>
+               For example, placing a navigation menu in a predictable area (top or left) and using standard labels (“Home,” “About,”
+               “Contact”) supports quick orientation. A “creative” navigation layout might look unique, but it can slow users down,
+               especially when they are tired, distracted, or task-focused. Human-centered design recognizes that novelty should not
+               come at the expense of clarity.
+            </p>
+            
+            
+            <h2>Fitts’s Law: Make Important Targets Easier to Hit</h2>
+            <p>
+               Fitts’s Law explains that the time required to reach a target depends on its size and distance (Fitts, 1954). In UI
+               terms: small buttons and far-away controls are slower and more prone to error, especially on mobile where thumbs and
+               touch accuracy are limited.
+            </p>
+            <p>
+               A human-centered design choice is to make primary actions large enough and placed where users naturally reach. Think
+               of a “Next” button at the bottom of a phone screen, it’s fast and comfortable. If that button were small, tucked into
+               a corner, or too close to other controls, users would misinput more often. This is usability that starts with human
+               motor behavior, not just aesthetics.
+            </p>
+            
+            <h2>Hick’s Law: Too Many Choices Slow People Down</h2>
+            <p>
+               Hick’s Law states that decision time increases with the number of choices available (Hick, 1952). When an interface               throws many options at users at once, it can create decision fatigue. Users may hesitate, pick incorrectly, or abandon
+               the task.
+            </p>
+            <p>
+               Human-centered design reduces choice overload by prioritizing options, grouping related actions, and using progressive
+               disclosure (showing advanced options only when needed). For example, a clean checkout flow usually highlights one
+               primary action. An example of this is a "continue" button which keeps secondary actions less prominent. That supports attention and helps users stay
+               on track.
+            </p>
+            
+            
+            <h2>Miller’s Law: Respect Working Memory Limits</h2>
+            <p>
+               Miller’s Law suggests people can hold only a limited number of items in working memory at once, often cited as about
+               seven, plus or minus two (Miller, 1956). When an interface forces users to remember long lists, complex sequences, or
+               many categories at once, it increases errors and stress.
+            </p>
+            <p>
+               A human-centered solution is chunking: breaking content into smaller, meaningful groups. Navigation menus, settings
+               pages, and forms are all better when items are grouped logically and supported with clear headings. This reduces the
+               need to “keep everything in your head” and allows users to focus on completing the task.
+            </p>
+            
+            <h2>How Early Design Choices Support or Hurt Usability</h2>
+            <p>
+               Early stage design choices, such as layout, hierarchy, interaction patterns, and content structure, set the direction for the
+               entire experience. If the foundation is built around human perception and cognition, usability becomes the natural
+               result. If those factors are ignored, usability problems often show up later as “bugs,” “confusing UI,” or “user
+               errors.”
+            </p>
+            <p>
+               This is why both ISO 9241-210 and IDEO’s Field Guide emphasize iteration: build, test, learn, and refine. ISO frames
+               this as an evaluation driven process focused on meeting user needs (ISO, 2019). IDEO frames it as rapid learning
+               through prototyping and observation (IDEO, 2015). Either way, the message is similar: usability is not something you
+               add at the end, it is something you design from the start.
+            </p>
+            
+            <h2>Conclusion</h2>
+            <p>
+               Designing for people requires empathy and an understanding of how people actually perceive and process information.
+               Human-centered design helps designers create interfaces that match real human behavior attention span, memory
+               constraints, and familiar expectations. ISO 9241-210 provides a structured, evaluative foundation, while IDEO’s Field
+               Guide offers flexible tools for discovery and empathy. When designers connect perception and visual hierarchy to UX
+               laws like Jakob’s, Fitts’s, Hick’s, and Miller’s, they build experiences that feel intuitive, efficient, and respectful
+               of the user.
+            </p>
+            
+            <footer>
+               <ol>
+                  <h2>References</h2>
+                  <ul>
+                     <li>
+                        Fitts, P. M. (1954). The information capacity of the human motor system in controlling the amplitude of movement."
+                        <em>Journal of Experimental Psychology, 47</em>(6), 381-391.
+                     </li>
+                     <li>
+                        Hick, W. E. (1952). On the rate of gain of information. <em>Quarterly Journal of Experimental Psychology, 4</em>(1),
+                        11–26.
+                     </li>
+                     <li>
+                        IDEO. (2015). <em>The field guide to human-centered design</em>. IDEO.org. <a href="https://www.designkit.org">https://www.designkit.org</a>
+                     </li>
+                     <li>
+                        International Organization for Standardization. (2019). <em>ISO 9241-210: Ergonomics of human-system interaction - Human-centred design for interactive systems</em>.
+                        <a href="https://www.iso.org/standard/77520.html">https://www.iso.org/standard/77520.html</a>
+                     </li>
+                     <li>
+                        Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information.
+                        <em>Psychological Review, 63</em>(2), 81-97.
+                     </li>
+                     <li>
+                        Nielsen, J. (2020). Jakob’s law of internet user experience. <em>Nielsen Norman Group</em>.
+                        <a href="https://www.nngroup.com/articles/jakobs-law/">https://www.nngroup.com/articles/jakobs-law/</a>
+                     </li>
+                  </ul>
+               </ol>
+            </footer>
+         </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
+          <article>
+            <header>
+               <h1>What Makes Digital Systems Usable: Designing for Memory, Mental Models, Complexity, and Responsibility</h1>
+               <i>
+                  Usability isn’t just “nice design.” It’s the outcome of building interfaces that match how people think,
+                  remember, and decide, while also acknowledging that design choices can shape behavior in powerful ways.
+               </i>
+            </header>
 
+            <section>
+               <h2>Introduction</h2>
+               <p>
+                  Digital systems succeed when people can accomplish goals without feeling confused, overloaded, or unsure.
+                  That sounds simple, but it’s difficult because users do not approach an interface as blank slates. They bring
+                  habits from other tools, expectations about how controls should behave, and mental shortcuts developed through
+                  repeated experiences. When a system fits those expectations, interaction feels intuitive; when it does not,
+                  users are forced to spend mental effort translating the interface instead of doing the task.
+               </p>
+               <p>
+                  This post argues that “usable” systems are those that respect human cognitive limits and manage complexity
+                  intentionally. To do that, designers must first design for memory limits and mental models, reduce unnecessary
+                  cognitive load through consistency and feedback, and accept Tesler’s Law in which complexity can’t be eliminated, only
+                  moved, and decide where it belongs. Finally, must apply behavioral design principles responsibly, because design can
+                  influence user choices and well-being (Johnson, 2014; Yablonski, 2020).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/MentalModel.jpg"  alt="A visual showing mental models and expectations mapping to an interface" height="720" width="720"/>
+               <figcaption>
+                  <strong>Figure 1.</strong> Mental models guide what users expect an interface to do.
+                  Image credit: <em>Ayush</em>, <em>The Wisdom Project</em>. <a href="https://thewizdomproject.com/mental-models-basics">https://thewizdomproject.com/mental-models-basics</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Memory and Mental Models: Why “Intuitive” Isn’t Magic</h2>
+               <p>
+                  People rely on memory, but memory is fragile, especially in the moment. Short-term memory is limited, and users
+                  quickly forget arbitrary steps, hidden menus, or multi-screen instructions. That’s why good interfaces reduce
+                  “recall” demands and instead support “recognition”: the system shows users what they need when they need it,
+                  rather than forcing them to remember it (Johnson, 2014).
+               </p>
+               <p>
+                  Mental models are the user’s internal explanation of how a system works. These models come from prior tools and
+                  real-world metaphors. For example, most people understand that a trash can icon means “delete” because it matches
+                  a real-world concept and appears consistently across platforms. When a system supports mental models, learning is
+                  faster because users can transfer knowledge. When a system violates mental models, users experience friction:
+                  they slow down, hesitate, and second-guess their actions.
+               </p>
+               <p>
+                  A practical design goal is to keep the user’s attention on their objective, not on the interface. If the user is
+                  constantly thinking “Where is that setting?” or “Did my click do anything?” then the interface is consuming
+                  cognitive resources that should be reserved for the real task (Johnson, 2014).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Consistency and Feedback: The Fastest Way to Reduce Cognitive Load</h2>
+               <p>
+                  Consistency is one of the most effective usability strategies because it reduces the number of new rules a user
+                  must learn. When the same interaction patterns show up across screens, navigation in the same place, buttons
+                  behaving predictably, and terminology staying intuitive, users build confidence and operate on “autopilot” in a healthy,
+                  efficient way. Consistency doesn’t mean everything looks identical; it means users don’t have to re-learn the
+                  system every time they change pages.
+               </p>
+               <p>
+                  Feedback is the system’s response that confirms a user action has been received, understood, and is being acted
+                  upon. Without feedback, users are forced to guess. Nielsen Norman Group emphasizes “visibility of system status”
+                  as a core usability principle; users should always understand what’s going on through timely, meaningful
+                  information (Nielsen Norman Group, 2020). That can be as simple as indicating a pressed button, a loading indicator, a
+                  success message, or a clear error that explains what happened and how to fix it.
+               </p>
+               <p>
+                  Feedback is also how systems build trust. If users repeatedly feel uncertain, like a form silently fails or a
+                  button appears unresponsive, they may retry actions, abandon tasks, or assume the system is unreliable. In that
+                  sense, feedback is not decoration; it is part of the system’s conversation with the user (Nielsen Norman Group,
+                  2020).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/Good vs Bad.jpg" alt="An example comparing good feedback versus poor feedback in an interface" height="600" width="1080"/> 
+               <figcaption>
+                  <strong>Figure 2.</strong> Clear feedback reduces uncertainty and prevents repeated errors.
+                  Image credit: <em>Daxesh Italiya</em>, <em>tsttechnology</em>.
+                  <a href="https://tsttechnology.io/blog/good-and-bad-ux-design-examples">https://tsttechnology.io/blog/good-and-bad-ux-design-examples</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Tesler’s Law: Complexity Can’t Be Deleted, Only Relocated</h2>
+               <p>
+                  Chapter 9 of <em>Laws of UX</em> covers Tesler’s Law; The key idea is that every system has a certain amount of inherent complexity that cannot be removed; it can only be
+                  shifted between the system and the user (Yablonski, 2020, chap. 9). If designers try to “simplify” by hiding
+                  complexity in confusing ways, users still pay the price, just later, through trial-and-error and frustration.
+               </p>
+               <p>
+                  The usability question becomes: <strong>Where should the complexity live?</strong> In many cases, the best answer
+                  is: inside the system. Systems can automate repetitive steps, remember user preferences, validate inputs, and
+                  prevent errors before they happen. When design pushes complexity onto the user by requiring memorization of
+                  special rules, forcing manual configuration, or presenting too many decisions at once, the user becomes the system’s
+                  “processor,” and cognitive load spikes.
+               </p>
+               <p>
+                  A real-world example is account security. Older approaches often forced users to invent and remember multiple
+                  complex passwords with frequent changes. Newer approaches (password managers, passkeys, biometrics) shift the
+                  complexity into tools and infrastructure, reducing user effort while often improving security. This reflects the
+                  spirit of Tesler’s Law: the complexity still exists, but it’s handled by systems that are better suited to managing
+                  it (Yablonski, 2020, chap. 9).
+               </p>
+               <p>
+                  Importantly, Tesler’s Law does not mean removing advanced features. It means arranging complexity so that novice
+                  users are not overwhelmed, while expert users can still access powerful controls. Progressive disclosure, showing
+                  advanced options only when needed, is one way to respect both audiences (Johnson, 2014; Yablonski, 2020, chap. 9).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Chapter 11: With Power Comes Responsibility</h2>
+               <p>
+                  Chapter 11 of <em>Laws of UX</em> shifts the conversation from “How do we apply psychology to make products easier?”
+                  to “What happens when we succeed?” Yablonski argues that because UX principles can shape attention, decisions, and behavior, designers carry responsibility for the outcomes of those choices (Yablonski, 2020, chap. 11). In other
+                  words: if design can steer people, design can also manipulate people.
+               </p>
+               <p>
+                  This matters because many usability techniques can be used in both user-centered and user-extractive ways. For
+                  example, reducing friction can help users complete tasks faster but it can also remove the “pause” that helps a
+                  user reflect before making a purchase. Clear calls to action can support good navigation but they can also be used
+                  to pressure users into decisions they didn’t intend.
+               </p>
+               <p>
+                  Ethical usability means aligning outcomes with user interests. Donald Norman describes how good design helps
+                  people feel in control, preventing avoidable errors and confusion (Norman, 2013). When systems intentionally blur
+                  choices or hide consequences, they may still “work,” but they fail the deeper goal of supporting users’ thinking.
+                  Chapter 11 pushes designers to ask: <strong>Are we reducing cognitive load for the user, or removing their agency?</strong>
+                  (Yablonski, 2020, chap. 11).
+               </p>
+               <p>
+                  A responsible approach is to treat “persuasion” as transparency rather than pressure. Helpful nudges like reminders,
+                  clear defaults, or warnings before irreversible actions, can protect users. However, patterns that exploit biases to keep
+                  users scrolling, subscribing, or spending can cause harm even if the interface feels “smooth.” In that sense,
+                  usability is not only a technical goal; it becomes an ethical one (Norman, 2013; Yablonski, 2020, chap. 11).
+               </p>
+            </section>
+            
+            <figure>
+               <img src="images/FacebookUserControl.jpg" alt="A conceptual image representing ethical design and user agency" height="720" width="900" />
+               <figcaption>
+                  <strong>Figure 3.</strong> Responsible UX protects user agency, not just task completion.
+                  Image credit: <em>[Photographer/Creator Name]</em>, <em>Primer Magazine</em>.
+                  <a href="https://www.primermagazine.com/2018/earn/scrubbing-your-social-media-clean-how-your-digital-self-might-be-stopping-you-from-getting-hired">https://www.primermagazine.com/2018/earn/scrubbing-your-social-media-clean-how-your-digital-self-might-be-stopping-you-from-getting-hired</a>
+               </figcaption>
+            </figure>
+            
+            <section>
+               <h2>Examples of Poor Design That Create Unnecessary Cognitive Load</h2>
+               <p>
+                  One way to see usability clearly is to notice when it breaks. Poor design commonly increases cognitive load in
+                  predictable ways:
+               </p>
+               <ul>
+                  <li>
+                     <strong>Hidden system status:</strong> When progress indicators are missing or unclear, users don’t know if the
+                     system is working. They may click repeatedly, interrupt processes, or assume failure (Nielsen Norman Group, 2020).
+                  </li>
+                  <li>
+                     <strong>Inconsistent navigation:</strong> If menu labels or locations change across pages, users must constantly
+                     re-orient themselves, re-reading the interface instead of acting (Johnson, 2014).
+                  </li>
+                  <li>
+                     <strong>Overloaded choice:</strong> Presenting too many options at once forces users into decision fatigue.
+                     When complexity is unavoidable, Tesler’s Law suggests handling it through defaults and staged options rather than
+                     pushing it onto the user all at once (Yablonski, 2020, chap. 9).
+                  </li>
+                  <li>
+                     <strong>Ethically questionable friction:</strong> When cancelation flows are harder than sign-up flows, the user
+                     is paying a “cognitive tax” for trying to leave. This is where usability and responsibility collide (Yablonski,
+                     2020, chap. 11).
+                  </li>
+               </ul>
+               <p>
+                  These patterns reveal a consistent theme: the interface becomes the task. When users spend effort decoding the UI,
+                  they have less mental capacity for meaningful work, and the experience becomes slower, more error-prone, and more
+                  frustrating (Johnson, 2014).
+               </p>
+            </section>
+            
+            <section>
+               <h2>Conclusion</h2><p>
+                  A usable digital system is one that cooperates with human cognition. It supports memory through recognition,
+                  strengthens mental models through predictability, and reduces cognitive load through consistency and feedback.
+                  Tesler’s Law reminds us that complexity cannot be erased and designers must choose whether the system handles it or the
+                  user does (Yablonski, 2020, chap. 9). And Chapter 11 of <em>Laws of UX</em> adds an important layer: applying
+                  psychology in design is powerful, so it must be done responsibly, protecting user agency rather than exploiting it
+                  (Yablonski, 2020, chap. 11).
+               </p>
+               <p>
+                  Ultimately, good UX is not just about smoother interactions. It is about building systems that help users think,
+                  act confidently, and feel in control while ensuring that the design choices behind the interface respect the people
+                  who must live with them (Norman, 2013).
+               </p>
+            </section>
+         </article>
+         
+         <footer>
+            <h2>Sources</h2>
+            <ul>
+               <li>
+                  Johnson, J. (2014). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (2nd ed.). Morgan Kaufmann.
+               </li>
+               <li>
+                  Nielsen Norman Group. (2020). <em>Visibility of system status</em>.<a href="https://www.nngroup.com/articles/visibility-system-status/
+                  ">https://www.nngroup.com/articles/visibility-system-status/</a>
+               </li>
+               <li>
+                  Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.
+               </li>
+               <li>
+                  Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O’Reilly Media.
+               </li>
+            </ul>
+         </footer>
+         
+         
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
