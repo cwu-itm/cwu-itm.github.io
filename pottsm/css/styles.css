@@ -5,13 +5,13 @@
 /* Global Styles */
 html {
     font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
+    color: #222;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
+    background-color: #f2f2f2;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -26,29 +26,29 @@ main {
 
 }
 
-h1 {
+h1, h2, h3 {
 
 font-family: Oswald, sans-serif;
 font-size:4rem;
+color: #f9f9f9;
+background-color: #333;
+padding: 1rem;
 
 }
 
-h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+p, ol, ul, figure, figcaption {
+    padding: 0 1rem;
 }
 
-ol {
+img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
-
+p, li, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem
 }
