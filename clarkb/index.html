@@ -226,7 +226,76 @@
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
-
+         <article>
+            <header class="article-header">
+               <h2>Designing Experiences: Interface Logic</h2>
+            </header>
+            <h3>Designing Movement: How an interface layout and Laws of UX can Shape User’s Behavior.</h3>
+            <p>Every digital interface tells its users how to behave. It isn’t through explicit instructions though; it’s through the layout, hierarchy, spacing, and the overall control of the design. Everything signifies priority or importance, like the placement of a button, the size of a headline. Other things like the color of a notification can signal urgency. Users rarely notice these kinds of design-based decisions, but there is always an immediate response.</p>
+            <p>After reading through Designing with Mind in Mind (Johnson, 2020) and Laws of UX (Yablonski, 2020), it was clear as to how deeply psychology and cognition can shape interface design. Layout and controlling design not only organize design; it also guides behavior, influences emotion, and can affect trust. Interfaces reduce friction and create flow, but they can also introduce hesitation and confusion. This post will reflect on how layouts can impact user movement, while exploring important UX laws, and analyzing personal experiences to demonstrate why these principles matter.</p>
+            <figure>
+               <img src="minimal_ui_layout.jpeg" alt="Examples of minimal UI based on simplicity" width="400" height="300">
+               <figcaption>
+                  Example of a clean interface with good hierarchy.
+                  Image by Figma
+               </figcaption>
+            </figure>
+            <h3>Interface Layouts as Behavioral Architecture</h3>
+            <p>Layout can be considered a form of behavioral architecture; it can determine how users will scan, interpret, and interact with content. Research shows that users don’t read websites word for word; rather, they scan through it in predictable patterns, like the F-shaped pattern by Nielsen (2006). This helps designers structure their layouts that follow with natural eye movement.</p>
+            <p>Johnson (2020) explains that people rely on prior knowledge and visual cues rather than using deliberate reasoning while navigating interfaces. Users have come to expect certain patterns or conventions, this includes navigation menus near the top, logos in the upper left corner, and call-to-actions displayed prominently. When layouts align with these expectations, the cognitive load decreases. When the opposite happens, friction ends up taking hold.</p>
+            <p>Cognitive load is important because the working memory of users is limited. Johnson (2020) talks about how people can only hold a specific, small amount of information at a certain time. If users need to search for basic controls or end up interpreting unclear hierarchies, the mental resources are depleted. This depletion often leads to frustration and possible abandonment.</p>
+            <p>Consider this example: a “Submit” button placed far away from the form’s original input fields. Even a tiny spatial disconnect ends up causing the user to pause and scan. This might seem insignificant, but repeated instances of this friction can snowball into frustration or dissatisfaction. An effective layout minimizes the unnecessary mental effort and supports the natural cognitive progression from one action to the next. Layout is not neutral; it directs users’ movement and communicates priority, while also silently answering the question: “What do I do next?”</p>
+            <h3>Controlling Design and the Aesthetic-Usability Effect</h3>
+            <figure>
+               <img src="modern_mobile_ui.webp" alt="A modernized mobile UI built for usability" width="396" height="300">
+               <figcaption>
+                  Polished interfaces increase usability perception.
+                  Image by Dribbble
+               </figcaption>
+            </figure>
+            <p>Going further beyond layout, control design plays a very powerful role in shaping the perception of the user. Buttons, sliders, switches, toggles, and forms are all physical touchpoints of digital systems. Their visual styling and overall responsiveness can influence how users end up feeling about the interface.</p>
+            <p>One important principle is the Aesthetic-Usability Effect. This law showcases that users perceive aesthetically pleasing designs as easier to use, even if they aren’t technically more usable (Yablonski, 2020). To put it into simpler terms, beauty does influence judgment.</p>
+            <p>Norman (2013) supports this notion by talking about how attractive things work better because they make people feel better. Positive emotional states can broaden cognitive processing and cause an increase in tolerance for minor issues. When users encounter a visually pleasing interface, they become more patient and are more willing to explore.</p>
+            <p>I have noticed this in my own experience with mobile apps with really well-rounded designs. Clean spacing, consistency in typography, and thoughtfulness in color palettes, all creating a sense of order. Even when learning more about a new feature, it feels less intimidating because the interface appears much more intentional and polished. This visual clarity builds trust before even fully interacting with the system. The key insight from all of this is that aesthetics and usability are intertwined, but they are not interchangeable. Strong visual design can enhance usability, but it cannot replace interaction logic.</p>
+            <h3>Visual Emphasis and the Von Restorff Effect</h3>
+            <figure>
+               <img src="contrast_guidelines.png" alt="Contrast guidelines regarding what colors to use" width="750" height="300">
+               <figcaption>
+                  A guideline of contrast methods.
+                  Image by IEEE
+               </figcaption>
+            </figure>
+            <p>The Von Restorff effect states that when multiple similar objects are present, the one that differs from the rest is the one most likely to be remembered (Yablonski, 2020). Designers use this principle to guide their users’ attention. Digital interfaces are always filled with competing elements: text, icons, images, links, and buttons. Without contrast, everything ends up blending together. When everything is bold, nothing truly stands out.</p>
+            <p>Johnson (2020) explains that attention is selective and very limited. Designers must create focal points that signal priority. This is often accomplished through contrast in color, size, spacing, or typography. A bright “Sign Up” button against a very neutral background can immediately draw attention. That contrast is an indication of importance. To contrast, if every button is the same level of contrast or boldness and color, the user has to stop and evaluate every option before making a decision.</p>
+            <p>This principle is very apparent in streaming platforms. The highlighted “Play” button is a very good example; it’s always larger and easier to spot than other options like adding something to a list or sharing. The difference simplifies decision-making. This interface does not force a user to deliberate; rather, it nudges them in the right direction. The Van Rietorff Effect is an important truth: hierarchy is an essential part of design. Visual design can create clarity, and without it, users have to rely on effort rather than instinct.</p>
+            <h3>Postel’s Law and Forgiving Systems</h3>
+            <p>Postel’s Law is “Be conservative in what you send: be liberal in what you accept” (Yablonski, 2020). In UX designs, this means that these systems should tolerate user variation whenever possible. One experience I had acts as a good highlight for the importance of this principle. Filling out a form that asked for my phone number, the form rejected my input because I used parentheses instead of dashes. The system provided a generic error message, without any specifications. This led me to guessing the required and correct format. The issue was not based on my information, but rather the system’s rigidity.</p>
+            <p>This is a violation of Postel’s Law because the interface had a clear priority of strict formatting rather than what the user’s intent was. Johnson (2020) explains that interfaces have to minimize the reliance on their users’ memory. Requiring users to remember a certain level of formatting is unnecessary and creates cognitive load.</p>
+            <p>In contrast, search engines accept misspelling, incomplete phrasing, and conversational-type queries. Rather than rejecting the initial input, it interprets the intention. This level of flexibility reduces overall friction and increases trust among users. Forgiving systems create respect for users. They assume good intent and adapt themselves accordingly. Rigid systems, however, can end up shifting the burden onto the users.</p>
+            <h3>Hidden Navigation and Frustrating Experiences</h3>
+            <p>One of the most frustrating experiences I have had with an interface was with the Central Washington University Wi-Fi registration page. The entire page has been broken every year I have been here, making it nearly impossible to register a device on a mobile device. A major glitch is apparent when viewing the page in portrait mode. Half the page is cut off, and it is consistent with every other page.</p>
+            <p>This violates the principle that recognition is easier than recalling (Johnson, 2020). On a computer, this interface is much easier to use since half of it isn’t broken. Even with recognition or remembering how it’s formatted, it does not fix the issue of not being able to use it. So, honestly, it probably breaks every principle by not being functional. </p>
+            <h3>Why Does This Matter?</h3>
+            <p>UX laws are not design trends; they reflect patterns in human cognition.</p>
+            <ul>
+               <li>The Aesthetic-Usability Effect justifies why visual polish builds trust.</li>
+               <li>The Von Restorff Effect is a demonstration of how contrast directs attention.</li>
+               <li>Postel’s Law gives an emphasis on flexibility and user-centered tolerance.</li>
+               <li>Recognition-over-recall reminds designers to reduce strain and memory requirements.</li>
+            </ul>
+            <p>All together, these principles have influences on how users navigate through interfaces. Layout determines how users scan, visual emphasis signals priority, and forgiving input design reduces friction. When properly utilized and aligned, these elements create flow.</p>
+            <p>Interfaces shape more than overall convenience; they shape behavior. They influence purchasing decisions, learning efficiency, and communication habits. Small choices have psychological-level consequences. Understanding these principles allows designers to move past just decoration and into intentional design. Rather than asking if, “this looks good?” designers can ask “How can this guide the attention?” “How does this reduce effort?” and more. </p>
+            <p>The best types of interfaces feel almost invisible, aligning so seamlessly with the rest of the system that the user rarely notices the design itself. This kind of invisibility is intentional, the result of deliberate psychological alignment. Design itself is not just a visual arrangement; it is behavioral guidance.</p>
+            <footer class="article-footer">
+               <h3>Sources:</h3>
+               <ol>
+                  <li>Johnson, J. (2020). Designing with the mind in mind (3rd ed.). Morgan Kaufmann.</li>
+                  <li>Nielsen, J. (2006). F-shaped pattern for reading web content. Nielsen Norman Group. https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/</li>
+                  <li>Norman, D. A. (2013). The design of everyday things: Revised and expanded edition. Basic Books.</li>
+                  <li>Yablonski, J. (2020). Laws of UX: Using psychology to design better products & services. O’Reilly Media.</li>
+               </ol>
+            </footer>
+         </article>
          <!-- Module 3.2 Blog Post Starts here -->
 
       </main>
