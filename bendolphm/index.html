@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
+      <link href="css\styles.css" rel="stylesheet">
       <title>Student Name | Portfolio</title>
    </head>
    <body>
@@ -706,11 +706,221 @@
             </ul>
          </footer>
          
-         
-         <!-- Module 2.3 Blog Post Starts here -->
-
          <!-- Module 3.1 Blog Post Starts here -->
-
+          <header class="blog-header">
+            <h2>Effects of Interface Logic: Shaping What Users Notice, Trust, and Do</h2>
+            <p class="blog-subtitle">
+               UX laws in action; Usability Effect, Von Restorff Effect, and Postel’s Law
+            </p>
+         </header>
+         
+         <section class="blog-content">
+            <p>
+               When a digital interface “feels easy,” it’s rarely just because the system is technically simple; It’s because the
+               interface logic reduces uncertainty. Users can predict what will happen, recognize what matters, recover from
+               mistakes, and maintain momentum without having to stop and think. In other words, usability is often the result of
+               invisible decisions, layout, hierarchy, feedback, and tolerance, that shape user behavior long before a user forms an
+               opinion about the product.
+            </p>
+            
+            <p>
+               This module gave me the opportunity to see a pattern constantly used in real apps. Users don’t experience a product as a
+               “set of features"; They experience it as a sequence of moments where they either understand what to do next or 
+               get forced into guessing. The more guessing an interface causes, the more it drains trust, attention, and
+               patience, that’s where UX laws help. UX laws offer practical mental models for why certain designs work (or don’t),
+               especially when you’re trying to guide users through complex tasks without overwhelming them (Johnson, 2020;
+               Yablonski, 2020).
+            </p>
+            
+            <h3>Why interface structure matters more than “presentation UI”</h3>
+            <p>
+               A clean interface can still be confusing if the logic is unclear. Likewise, a visually average interface can still
+               feel “easy” if it provides strong cues such as. obvious primary actions, consistent patterns, and immediate feedback after
+               user input. Johnson (2020), emphasizes that users rely on recognition over recall, meaning they want the interface to
+               make the next step obvious rather than forcing them to remember rules or search for meaning. This is where visual
+               hierarchy becomes a behavioral tool; The interface is essentially “leading the eye” to reduce decision friction.
+            </p>
+            
+            <p>
+               In practice, interface layout changes what users choose. If your primary action is visually weak (low contrast,
+               buried below the fold, competing with other buttons), users hesitate and often abandon. If an app shows too many
+               equally weighted options, users slow down to evaluate them, even if they came in with a simple goal. In that sense,
+               the structure is not just presentation; it is the product’s behavioral design.
+            </p>
+            
+            <h3>UX Law 1: Aesthetic Usability Effect</h3>
+            <p>
+               The Aesthetic Usability Effect explains a slightly uncomfortable truth. That is if something looks polished, users often
+               assume it works better even when the underlying usability is unchanged. Nielsen Norman Group describes how users tend to be more tolerant of minor usability issues when an interface appears visually appealing (Nielsen Norman
+               Group, 2024). The problem is that “tolerance” can hide real issues; users might struggle but blame themselves, or
+               they might not report friction because the design “seems fine.”
+            </p>
+            
+            <p>
+               I’ve experienced this personally in two common occurrences; onboarding screens that look beautiful but use vague
+               language such as “Let’s personalize your experience” or "choose your preferences". These phrases dont tell you what’s actually happening, and to
+               and to add on, check flows that feel premium but still contain confusing form requirements. In both cases, visual polish reduces my suspicion
+               just long enough for me to keep going until a problem is large enough that it can’t be ignored.
+            </p>
+            
+            <p>
+               The design takeaway isn’t “make everything loog good.” It is to not use aesthetics as a cover. Yablonski (2020), frames
+               aesthetic appeal as a factor that affects perceived usability, which means designers need to pair polish with clarity.
+               If a product looks trustworthy, users will attempt harder tasks inside it. That can be a positive if the logic and
+               feedback are strong, or a negative if the product quietly accumulates confusion.
+            </p>
+            
+            <figure>
+               <img
+               src="https://trone.com/sites/default/files/2025-08/starbucks-ux-example-personalized_0.png"
+               alt="A person using a laptop with a clean, modern interface displayed" width=900 height=720
+               />
+               <figcaption>
+                  Fig. 1. “Clean Starbucks UI on iPhone (Handheld Mobile Device)” - Photo Source: <a href="https://trone.com/blog/10-examples-good-user-experience-ux">"trone.com"</a>.
+                  Source:
+               </figcaption>
+            </figure>
+            
+            <h3>UX Law 2: Von Restorff Effect</h3>
+            <p>
+               The Von Restorff Effect (also called the isolation effect) describes how items that stand out from their neighbors
+               are more likely to be remembered. When one object differs strongly in color, size, position, or meaning, it grabs
+               attention and becomes more memorable than surrounding elements (Springer Nature, 2012). This law is extremely useful
+               for visual hierarchy because it can turn “important” into “unmissable.”
+            </p>
+            
+            <p>
+               But the Von Restorff Effect is also easy to misuse. If everything is emphasized, nothing is emphasized. This
+               mistake is seen a lot in dashboards and student portals; Mulltiple bright banners, multiple alert colors, multiple “urgent”
+               elements, and multiple competing calls to action. The result is that users stop trusting emphasis and start scanning
+               like they’re trying to survive a cluttered billboard.
+            </p>
+            
+            <p>
+               A good use of the Von Restorff Effect is intentional scarcity; One primary button color, one main action per screen,
+               and one “standout” element that truly deserves attention. For example, in a payment flow, the “Pay Now” button can be
+               the single high contrast action, while secondary options can be as simple as "save for later" and/or "edit details" which are visually quieter. That
+               reduces decision friction and guides the user through the intended path without removing autonomy.
+            </p>
+            <figure>
+               <img
+               src="https://miro.medium.com/v2/resize:fit:1400/0*NKjbPQRjd6ZQBYZ4.png"
+               alt="Fig. 2. Von Restorff Effect" width=1000 height=550
+               />
+               <figcaption>
+                  Image: Which did you <strong>(conciously)</strong> notice? - Photo Source: 
+                  <a href="https://medium.com/design-bootcamp/4-ways-i-know-to-apply-von-restorff-in-product-brand-design-30e504b72612">Medium.com</a>.
+               </figcaption>
+            </figure>
+            
+            <h3>UX Law 3: Robusness Principal: Postel’s Law applied to user input</h3>
+            <p>
+               Postel’s Law is often taught in networking as a robustness principle; “be liberal in what you accept, and conservative
+               in what you send” (Internet Engineering Task Force, 1989). Even though it originated in protocol design, it maps
+               cleanly to interface logic, especially forms, search boxes, and any area where humans provide input.
+            </p>
+            
+            <p>
+               From a user experience perspective, Postel’s Law is basically saying, "don’t punish users for being human". If users type
+               "(555) 123-4567" or "5551234567," the system should interpret both without forcing a redo. If users paste an address
+               with a comma in the "treet" field, the system should help them recover instead of throwing a generic error. Johnson
+               (2020) highlights that good interfaces support error recovery and reduce the cost of mistakes. Postel’s Law is a
+               concrete way to implement that; Accept flexible input, then standardize it behind the scenes.
+            </p>
+            
+            <p>
+               One of the most frustrating experiences I’ve had recently was a form that failed submission with the message,
+               "Invalid input," but didn’t highlight which field was wrong or what the expected format was. The interface gave me
+               no path forward except the "ol' reliable. guess-and-check". That’s the opposite of robust design. Robust design shifts the burden of interpretation
+               onto the user. A Postel-friendly interface would do three things:
+            </p>
+            
+            <ul>
+               <li><strong>Prevent:</strong> show formatting examples inline before the user submits (e.g., “MM/DD/YYYY”).</li>
+               <li><strong>Accept:</strong> allow common variations and convert them automatically when possible.</li>
+               <li><strong>Recover:</strong> if something truly fails, highlight the exact field and explain the fix clearly.</li>
+            </ul>
+            
+            <p>
+               When these three are in place, users don’t feel "ignorant" for making normal mistakes. They feel supported which 
+               directly improves trust, completion rates, and long-term willingness to use the product again (Yablonski,
+               2020).
+            </p>
+            
+            <figure>
+               <img
+               src="images\invalid pass.jpg"
+               alt="Invalid Password and Why"
+               />
+               <figcaption>
+                  Image: “Invalid Password” Photo Source:
+                  <a href="https://ux.stackexchange.com/questions/124627/input-validation-for-login-page">"UX Stack Exchange"</a>.
+               </figcaption>
+            </figure>
+            
+            <h3>Connectons Between Laws: Attention, Trust, and Momentum</h3>
+            <p>
+               What clicked for me this week? What clicked for me is that these laws are not tricks, they are connected through user psychology. If an individual
+               is more accustomed to their environment and benefits them, they will stay and come back.
+            </p>
+            
+            <ul>
+               <li>
+                  <strong>Aesthetic Usability</strong>- Influences initial trust and patience (Hooks and reels users in). 
+               </li>
+               <li>
+                  <strong>Von Restorff</strong>- Controls attention and memory (users notice what matters first).
+               </li>
+               <li>
+                  <strong>Postel’s Law</strong>- Builds on said trust while protecting momentum (users can recover without restarting or giving up).
+               </li>
+            </ul>
+            
+            <p>
+               With these laws, if you get all three right, the interface feels smooth to the user in a very specific way. Users don’t have to fight it. The UI
+               can still be complex, but the logic is humane. Users feel like the product “understands them,” which is often the
+               difference between someone completing a task and abandoning it midway.
+            </p>
+            
+            <h3>My takeaway: Design isn’t just guiding behavior, it’s reducing cognitive demand and/or debt</h3>
+            <p>
+               The biggest lesson I’m taking forward is that interfaces create either cognitive debt or cognitive relief. Cognitive
+               debt happens when users must remember rules, decode unclear labels, fix mysterious errors, or strive for what matters.
+               Cognitive relief happens when hierarchy is clear, feedback is immediate, and input is handled gracefully. UX laws
+               help explain why those outcomes happen, but more importantly, they give designers a checklist for improving real
+               systems; Polish without deception, emphasis without chaos, and tolerance without ambiguity.
+            </p>
+            
+            <p>Ultimately, interface logic shapes user behavior because it shapes the user’s mental state which comes in the following: confidence vs. doubt,
+               momentum vs. friction, and clarity vs. overload. If I had to summarize this module in one sentence, it would be that 
+               good design makes the next step feel obvious and makes mistakes feel recoverable.
+            </p>
+         </section>
+         
+         <footer class="blog-footer">
+            <h3>Sources</h3>
+            <ul>
+               <li>
+                  Internet Engineering Task Force. (1989). <em>RFC 1122: Requirements for Internet hosts Communication layers</em>.
+                  https://datatracker.ietf.org/doc/html/rfc1122
+               </li>
+               <li>
+                  Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design
+                     guidelines</em> (3rd ed.). Morgan Kaufmann.
+                  </li>
+                  <li>
+                     Nielsen Norman Group. (2024). <em>The Aesthetic-Usability Effect</em>. https://www.nngroup.com/articles/aesthetic-usability-effect/
+                  </li>
+                  <li>
+                     Springer Nature. (2012). <em>Von Restorff, Hedwig</em>. In <em>Encyclopedia of child behavior and development</em>.
+                     https://link.springer.com/rwe/10.1007/978-1-4419-0463-8_315
+                  </li>
+                  <li>
+                     Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O’Reilly Media.
+                  </li>
+               </ul>
+            </footer>
+         </section>
          <!-- Module 3.2 Blog Post Starts here -->
 
       </main>
