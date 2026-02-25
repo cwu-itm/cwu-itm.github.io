@@ -23,7 +23,14 @@ body {
 main {
 
     margin-bottom:3rem;
+    padding: 0 1rem;
 
+}
+
+header {
+background-color: #423A34;
+color: white;
+padding: 1rem;
 }
 
 h1 {
@@ -51,4 +58,15 @@ ol {
     list-style-type: none;
     font-size:.875rem;
 
+}
+
+img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+p, ul, ol, figcaption {
+  font-weight: 300;
+  font-size: 0.875rem;
 }
