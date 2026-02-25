@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: #ececec;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -36,7 +36,8 @@ font-size:4rem;
 h2 {
 
     font-family: Oswald, sans-serif;
-    font-size:2rem;
+    font: size 1rem;
+    background-color: #aecba6;
 
 }
 h3 {
@@ -50,5 +51,23 @@ ol {
     padding-left:0;
     list-style-type: none;
     font-size:.875rem;
+
+}
+
+p {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 300;
+    font-size: 0.875rem;
+
+}
+img {
+
+    width: 100%;
+    max-width: 30rem;
 
 }
