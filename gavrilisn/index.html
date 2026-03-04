@@ -617,11 +617,126 @@
 
 
          <!-- Module 3.2 Blog Post Starts here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Post 3.2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+        }
+        h1, h2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
 
-      </main>
-<!-- Page Footer  -->
+<body>
+
+<h1>Blog Post 3.2</h1>
+
+<h2>Introduction</h2>
+<p>When it comes to digital interfaces, factors such as color palettes or typography are important, but these do not guarantee that a digital product will succeed or fail. The more important factor is often more subtle. Factors such as how quickly a system responds, how motion guides the user’s attention, how errors are prevented, and how layouts support or overwhelm the user. These are considered micro-interactions. The timing, responsiveness, motion, and error handling help form an emotional connection (whether positive or negative) with the user. When they are designed with the user in mind, they can create trust, clarity, and a sense of flow. When they are designed poorly or misused, users may often feel frustrated, confused, or even manipulated.</p>
+
+<p>This blog post will show how these interactions can influence the user’s perception. I will also go over how psychological principles and UX laws can help designers create more humane systems. And lastly, we will cover why designers must consider their ethical responsibilities when using persuasive techniques.</p>
+
+<figure>
+    <img src="https://images.unsplash.com/photo-1559027615-ce3a9f4e47c7" alt="User interface design sketch">
+    <figcaption>Image credit: UX Store / Unsplash (Creative Commons)</figcaption>
+</figure>
+
+<h2>Feedback Timing and Responsiveness</h2>
+<p>One of the most important factors when it comes to user satisfaction is timing. Even just a fraction of a second can determine whether a user’s experience on a platform is positive and how they perceive it. The Doherty Threshold, described in the Laws of UX, tells us that productivity and engagement increase when a system response occurs with 400 milliseconds (Yablonski, 2020). When this metric is met, users are more likely to feel in control. When it is not, users are likely to experience frustration. People like instant interactions, so in my opinion the faster the platform reacts to user input, the better.</p>
+
+<p>This type of principle is also shown in usability research. Research has shown that there are three critical limits when it comes to response time. This includes: 0.1 seconds for instantaneous reactions, 1 second for uninterrupted flow, and 10 seconds before attention breaks entirely (Nielsen, 1993). These thresholds shape how a user emotionally perceives delays. While a one second delay may be tolerated without frustration, a ten second delay will often cause frustration and feel like abandonment.</p>
+
+<p>A great example of this concept is when I use several applications on my phone. My USAA banking app will give me immediate visual confirmations when I choose to do different actions. When a transfer goes through, there is an immediate notification, which makes the process of transferring money between accounts seem seamless. This instant feedback makes me feel that the system understands my request. The opposite of this would be when I use Roulette, an online poker application. The feedback during some actions is slower, often taking several seconds to give me feedback. The screen will freeze for a moment, which makes me unsure whether I tapped the right button. This type of delay causes cognitive friction and does not improve my trust with the application. In result of this, I will often close the application due to frustration, thinking the app is not worth my time.</p>
+
+<p>The reason that timing is so important is that it is directly related to memory. Another UX rule is the Peak-End rule, which states that people judge experience based on their most intense moment and their final impression (Yablonski, 2020). As stated before, the poker application having a slow confirmation screen once at the end of an action, can overshadow an overwise fun and entertaining experience. You could be enjoying a movie but if the ending is terrible, you will be left with a sour taste in your mouth. That is why it is important that designers keep this in mind and create strong “endings”. This can be achieved by clear notifications, satisfying animations, and other messages that leave the user with a positive emotional memory.</p>
+
+<h2>Motion and its Influence on User Feelings</h2>
+<p>Motion is not only about aesthetics, but it can also be a cognitive tool. When it is used correctly, motion communicates system status, reduces uncertainty, and guides the user’s attention. Google’s Material Design shows us the importance of motion, how it should be purposeful, reinforce relationships, and provide continuity between states (Google, n.d.). When designers respect these principles in regard to motion, it can help users understand what is happening with ease, reducing cognitive load. A great example of this is a sliding menu that shows where it lives in the interface. Another example is a progress bar that continues to fill, which makes the user believe that time is continuing smoothly.</p>
+
+<p>These patterns reduce cognitive load by aligning with how humans naturally process visual information. In our textbook, Designing with the Mind in Mind, it is explained that people are easily distracted and look for predictable visual cues to keep focus (Johnson, 2020). Motion that gives the users clarity will help support attention, while motion that distracts or manipulates will hurt it.</p>
+
+<p>I have seen motion being used well and not so well in the same application. When playing poker on the Roulette app, switching between tables is smooth and winning animations are done right, giving me a sense of progression/accomplishment. On the other hand, I have seen many deception patterns while using the app. For example, there will be pop-ups that consistently appear, telling me about a limited deal in the store (Ex: Buy 10,000 coins get 50% off). Because of this type of manipulative motion, it starts to erode the trust I have with the application. I also noticed that the decline button on this app is made to be small and not as noticeable as the accept button. This type of pattern violates ethical design principles.</p>
+
+<figure>
+    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" alt="Person using mobile app">
+    <figcaption>Image credit: Robin Worrall / Unsplash (Creative Commons)</figcaption>
+</figure>
+
+<h2>Perceived Responsiveness</h2>
+<p>As we previously covered, timing is important. But timing is not just the back-end speed of a system. The layout stability plays a vital role in how fast an interface feels. Great layouts need to contain a predictable flow, consistent spacing, and reliable structure that helps users interact with the platform, these elements help users understand how an interface works (MDN Web Docs, n.d.). So, if a user sees content jumping around, images slowing loading in, or poorly structured CSS, they are likely to perceive the system as slow or unreliable, even if the actual load time is normally acceptable.</p>
+
+<p>For those reasons, techniques such as reserving space for images, or using CSS grid for consistent alignment are essential. A stable layout tells the user the platform is competent, while an unstable layout can increase the users cognitive load and frustration. Layouts also can influence a user’s emotional memory. If a user is on the final step of an action and it is interrupted, the user’s last impression will be negative. Again, this is why it is important for designers to consider the Peak-End rule. If a person’s experience of a system is positive overall, it can still be tainted if the final moments are frustrating.</p>
+
+<h2>Error Prevention</h2>
+<p>One of the most important aspects of UX design is error prevention. As everyone knows, people often make mistakes, which is fine. But systems should be designed to help prevent, detect, and smoothly help users solve problems (Johnson, 2020). If an interface can help guide users through errors, it can reduce frustration and protect users.</p>
+
+<p>An example of this that everyone can relate to is password creation flows. Some systems wait for the user to submit the form before telling them why it is invalid. I have personally experienced this many times and am always left frustrated. This is often experienced when signing up for an account on a system and it being the last step can leave us with a negative emotion. Once again, the Peak-End rule is relevant in this case. Better designed systems would provide the users with real time feed back such as: “Your password in invalid: Need to include special character”. This notifies the users of an error, before it can occur.</p>
+
+<p>Layout is also an important factor in prevention of errors. Clarity, grouping, and predictable structure are key factors that can help users easily avoid mistakes (MDN Web Docs, n.d.). Other factors such as clear spacing, consistent alignment, and logical hierarchies are also important as they can prevent mistakes and reduce scanning time.</p>
+
+<p>Another UX principle that is relevant is Fitt’s Law. This law states that the time to acquire a target depends on its size and distance. So, tiny buttons, crowded elements, or inconsistent spacing can create avoidable errors. When a layout is created with this in mind, the user will have a more positive reaction to the system.</p>
+
+<h2>Aesthetic-Usability Law</h2>
+<p>Another UX law that impacts a user’s feelings is the Aesthetic-Usability law. This law suggests that users perceived aesthetically appealing designs as more usable, even if they are not (Yablonski, 2020). This effect influences how people feel during and after their interactions with the system. It seems obvious that a polished interface can soften the negative emotions that could come with minor delays or errors. There is also an ethical responsibility that comes with designing aesthetically pleasing interfaces. Since people will often trust interfaces that look pleasing, designers should not exploit that the trust of the user.</p>
+
+<figure>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Clean and aesthetic interface design">
+    <figcaption>Image credit: Kelly Sikkema / Unsplash (Creative Commons)</figcaption>
+</figure>
+
+<h2>Ethical Design</h2>
+<p>As people use a platform, every interaction can affect their cognitive load. This includes how the interface handles timing, motion, and error prevention. People often perceive more information than they can remember and are easily overwhelmed by complex interfaces (Johnson, 2020). It is important for designers to keep this in mind and attempt to reduce the user’s cognitive load. If they overwhelm the user, they increase the risk of manipulating users into actions they did not want to do. That is why it is important to use ethical design philosophies.</p>
+
+<p>Just because a design is persuasive, it does not automatically make it unethical. There are many systems that use persuasive techniques to encourage positive behaviors, like fitness apps encouraging more steps to take, or USSA budgeting tools. The ethical line is only crossed when users are pushed towards unwanted action or when designers intentionally exploit cognitive biases.</p>
+
+<p>Timing, motion, and layout can be tools of manipulation if design is unethical. If my poker application hides the decline button for purchasing pop-ups, they are trying to coerce me into making a purchase. Motion can be used to draw attention to the purchase/accept button. Layouts can also be structured to make the purchase button oversized or in the most visually apparent area. These types of patterns are all to common nowadays, especially with mobile games.</p>
+
+<p>Ethical design requires us to ask:</p>
+<ul>
+    <li>Does this interaction support the users’ goals?</li>
+    <li>Is the layout helpful or misleading?</li>
+    <li>Are users going to feel deceived or pressured?</li>
+</ul>
+
+<h2>Conclusion:</h2>
+<p>Timing, motion, and error prevention are powerful factors regarding how a user feels when using a system. They affect how we interpret a system’s competency, how interactions are remembered, and whether we as users feel respected or manipulated. By using psychological principles, UX laws, and ethical responsibility, designers can create experiences that are affected and appreciated.</p>
+
+<h2>References</h2>
+<p>Google. (n.d.). <i>Motion</i>. Material Design. (m3.material.io in Bing)</p>
+<p>Johnson, J. (2020). <i>Designing with the mind in mind: Simple guide to understanding user interface design rules</i> (3rd ed.). Morgan Kaufmann.</p>
+<p>MDN Web Docs. (n.d.). <i>CSS layout</i>. Mozilla. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout</p>
+<p>Nielsen, J. (1993). <i>Response times: The 3 important limits</i>. Nielsen Norman Group. (nngroup.com in Bing)</p>
+<p>Yablonski, J. (2020). <i>Laws of UX: Using psychology to design better products & services</i>. O’Reilly Media.</p>
+</main>
+
+      <!-- Page Footer  -->
       <footer class="page-footer">
-       <p>Copyright &copy; 2025</p>
+        <p>Copyright © 2025</p>
       </footer>
-   </body>
+
+
+</body>
 </html>
+
