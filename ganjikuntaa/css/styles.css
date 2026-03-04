@@ -66,3 +66,39 @@ ol {
     font-size:.875rem;
 
 }
+
+header {
+    position: relative; 
+    background-image: url("images/Heading Background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.imagebar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+.blog-section {
+    display: flex;
+    gap: 2rem;
+}
