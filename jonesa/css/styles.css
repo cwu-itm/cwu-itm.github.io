@@ -9,11 +9,11 @@
 }
 
 body {
-    margin: 0;
+    margin: 3;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f6f4;
-    color: #333;
+    background-color: #636b5c;
+    color: #020202;
 }
 
 .container {
@@ -25,17 +25,25 @@ body {
 header {
     background: linear-gradient(rgba (0,0,0,0.6), rgba(0,0,0,0.6)),
                 url("how-to-become-an-information-technology-specialist160684886950141.jpg") center/cover no-repeat;
-    color: rgb(2, 2, 2);
+    color: rgb(17, 87, 3);
     padding: 4rem 0;
     text-align: center;
 }
+
+header img {
+    max-width: 100%; 
+    height: auto;
+    margin: 10px 0; 
+    color: #0e0e0e;
+}
+
 header h1 {
     font-size: 3rem;
     margin: 0;
 }
 
 nav {
-    background: #333
+    background: #013d06
     padding 1rem;
 }
 
@@ -49,18 +57,18 @@ nav ul {
 }
 
 nav a {
-    color: rgb(7, 7, 7);
+    color: rgb(57, 141, 89);
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 nav a :hover {
-    color: #f1d23f;
+    color: #292828;
 }
 
 main {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 section {
@@ -75,8 +83,8 @@ h2 {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5 rem;
-    background: #cc4932;
-    color: #333;
+    background: #279219;
+    color: #0c831c;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -85,12 +93,12 @@ h2 {
 }
 
 .btn:hover {
-    background: #e5c500;
+    background: #070707;
 }
 
 footer {
-    background: #222;
-    color: white;
+    background: #5f5f5f;
+    color: rgb(81, 175, 87);
     text-align: center;
     padding: 2rem 0;
     font-size: 0.9rem;
@@ -100,27 +108,31 @@ footer {
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
+}
     header h1 {
         font-size: 2rem;
-    }
+}
 
     html {
         scroll-behavior: smooth;
-    }
+}
 
     .article-content img {
         max-width: 100%;
         height: auto;
         display: block;
         margin: 1rem 0;
-    }
+}
 
     .article-imagine figcaption {
         font-size: 0.875rem;
         font-style: italic;
-        color: #555;
+        color: #0a0a0a;
         margin-top: 0.5rem;
         text-align: center;
-    }
+}
+    .my-element {
+        margin: 100px;
+
+}
 }
