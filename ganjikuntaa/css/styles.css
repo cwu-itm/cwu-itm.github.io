@@ -42,6 +42,20 @@ h2 {
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
+    background-color: #222;
+    color: #fff; 
+    padding: 1rem;
+}
+p {
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+img {
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+    margin: 1rem 0;
 }
 
 ol {
@@ -51,4 +65,40 @@ ol {
     list-style-type: none;
     font-size:.875rem;
 
+}
+
+header {
+    position: relative; 
+    background-image: url("images/Heading Background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.imagebar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+.blog-section {
+    display: flex;
+    gap: 2rem;
 }

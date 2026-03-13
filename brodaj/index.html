@@ -304,14 +304,14 @@
             how real humans adapt real systems to get real things done.</p>
          <p>Both perspectives agree on one thing: you can't design a system in a vacuum. You have to start with the
             fundamentals of the human brain.</p>
-         <p></p>Take something as simple as a digital checkbox. In a modern UI, it might just be two thin lines forming
-         a
-         square and a check (☑). Yet, the reason we instinctively know that clicking the box selects an item isn't
-         because we were born with that knowledge. Our hunter-gatherer forefathers had no use for written ballots
-         when gathering berries. It's because the design is a skeuomorph of a physical ballot. We are leveraging an
-         existing mental model, a concept Jakob's Law tells us is vital because users spend most of their time using
-         other products (Yablonski, 2024). They expect your system to follow the "laws of physics" they've already
-         learned elsewhere.</p>
+         <p>Take something as simple as a digital checkbox. In a modern UI, it might just be two thin lines forming
+            a
+            square and a check (☑). Yet, the reason we instinctively know that clicking the box selects an item isn't
+            because we were born with that knowledge. Our hunter-gatherer forefathers had no use for written ballots
+            when gathering berries. It's because the design is a skeuomorph of a physical ballot. We are leveraging an
+            existing mental model, a concept Jakob's Law tells us is vital because users spend most of their time using
+            other products (Yablonski, 2024). They expect your system to follow the "laws of physics" they've already
+            learned elsewhere.</p>
          <p>This reliance on the familiar is a result of how our perception is biased by past experience. As Jeff
             Johnson (2020) explains, our brains are not neutral recorders of information: they are constantly filtering
             the present through the lens of what we have seen before. When we see that square box, our perceptual
@@ -439,7 +439,7 @@
             the end-user’s experience frictionless. However, if done wrong, we risk hiding critical information that the
             end-user does need. And sometimes, that friction is exactly what saves us from ourselves.</p>
          <h3>The Digital Speed Bump</h3>
-         <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 40px;">
+         <div class="inline-image">
             <div style="flex: 1;">
                <p>An example of where this friction works well is a system like Apple Pay. When it was introduced, it
                   required one factor, Touch ID, to authenticate a payment. It was incredibly frictionless while still
@@ -456,14 +456,14 @@
             <figure style="width: 250px; flex-shrink: 0; margin: 0;">
                <img src="assets/2-2/apple_pay_example.png" alt="Apple Pay Screenshot"
                   style="width: 100%; border-radius: 8px;">
-               <figcaption style="font-size: 0.8rem; color: #666; margin-top: 8px;">Apple Pay in the Taco Bell
+               <figcaption>Apple Pay in the Taco Bell
                   app. (2026).</figcaption>
             </figure>
          </div>
-         <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 40px;">
+         <div class="inline-image">
             <figure style="width: 300px; flex-shrink: 0; margin: 0;">
                <img src="assets/2-2/robux.gif" alt="Roblox Purchase Animation" style="width: 100%; border-radius: 8px;">
-               <figcaption style="font-size: 0.8rem; color: #666; margin-top: 8px;">Robux Purchase Animation
+               <figcaption>Robux Purchase Animation
                   in Roblox. (2026).</figcaption>
             </figure>
             <div style="flex: 1;">
@@ -491,7 +491,8 @@
             as the “boy who cried wolf”.</p>
          <figure>
             <img src="assets/2-2/uac.png" alt="Windows User Account Control Screenshot" style="width: 75%;">
-            <figcaption>Windows User Account Control prompt. (2022). Microsoft.
+            <figcaption>Windows User Account Control prompt.
+               (2022). Microsoft.
                https://en.wikipedia.org/wiki/User_Account_Control</figcaption>
          </figure>
          <br>
@@ -548,12 +549,337 @@
             </ol>
          </footer>
       </article>
-      <!-- Module 2.3 Blog Post Starts here -->
-
       <!-- Module 3.1 Blog Post Starts here -->
+      <article>
+         <header class="article-header">
+            <h2>Module 3.1 Blog Post</h2>
+         </header>
+         <p>Many people, including myself, equate good design with good internals. After all, why would someone go
+            through the extra effort of making superfluous fluff look and behave well if the underlying systems aren’t
+            perfect? This is the Aesthetic-Usability Effect in action: a cognitive bias where users perceive more
+            aesthetically pleasing designs as being more usable, regardless of their actual performance (Yablonski,
+            2024). In most cases, this bias rings true. An iPhone looks premium because the experience and build quality
+            are premium. However, this effect also presents a dangerous opportunity to put lipstick on a pig, and there
+            is no better example of this phenomenon than automotive infotainment systems; specifically, the Cadillac
+            User Experience, or CUE.</p>
+         <div class="inline-image">
+            <figure style="width: 300px; flex-shrink: 0; margin: 0;">
+               <img src="assets/3-1/brain.jpg" alt="Two halves of the brain" style="width: 100%;">
+               <figcaption>
+                  "<a href="https://www.flickr.com/photos/22651740@N00/6819862873">logos, eros, cosmos - cover art</a>"
+                  by <a href="https://www.flickr.com/photos/22651740@N00">yugenro</a> is licensed under <a
+                     href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0</a>
+               </figcaption>
+            </figure>
+            <div style="flex: 1;">
+               <p>CUE was the biggest reason why I walked away from buying one of the most well-regarded sport sedans
+                  ever
+                  built, the ATS-V. It fundamentally disproved my bias: if the underlying car was that good, the
+                  handling, the
+                  balance, the flawless feel of the clutch and shifter, then surely simple, solved interfaces like the
+                  radio
+                  or climate control would just be as great. This assumption is rooted in how our brains process
+                  information.
+                  As Jeff Johnson (2020) explains in Designing with the Mind in Mind, we operate using two distinct
+                  cognitive
+                  structures: System One and System Two. System One is automatic, fast, and driven by emotion and visual
+                  cues.
+                  It’s the part of my brain that sat in the ATS-V, saw the glowing chrome accents and glossy piano
+                  black, and
+                  instantly decided, “this is high quality.”</p>
+               <p>The problem is that System One doesn’t do logic. That’s the job of System Two, the conscious, slow,
+                  and
+                  effortful part of our brain used for novel problem-solving (Johnson, 2020). Cadillac used the
+                  Aesthetic-Usability Effect to hack the System One side of my brain into a state of total trust. It
+                  looks
+                  extremely impressive in a showroom, as Consumer Reports (2012) noted, but the moment I had to actually
+                  use
+                  the system while driving, System Two was forced to take over to navigate a convoluted and frustrating
+                  mess.
+                  The visual design wrote a check that the hardware and user experience couldn’t cash, and it soured the
+                  experience of an otherwise phenomenal car.</p>
+            </div>
+         </div>
+         <h3>A Bad Idea Made Worse</h3>
+         <div class="inline-image">
+            <div style="flex: 1;">
+               <p>The shift toward touchscreens in cars is the perfect example of design moving away from human-centric
+                  logic
+                  and toward aesthetic minimalism. Even in “good” systems, like Tesla’s, there is still an inherent
+                  friction.
+                  A screen lacks the tactile feedback of a physical knob; you can’t feel your way to a volume slider
+                  that only
+                  exists in software while keeping your eyes on a twisty back road. You are forced to move from the
+                  automatic,
+                  muscle-memory actions of System One and engage System Two just to turn down the heated seats. But
+                  where
+                  Tesla at least offers a responsive, high frame-rate experience, Cadillac seemingly went out of their
+                  way to
+                  make a bad idea even worse.</p>
+            </div>
+            <figure style="width: 300px; flex-shrink: 1; margin: 0;">
+               <img src="assets/3-1/showroom.jpg" alt="CUE as seen in a showroom" style="width: 100%;">
+               <figcaption>Cadillac CUE in showroom condition.
+                  (2012). GM Authority.
+                  https://gmauthority.com/blog/2011/10/cadillac-unveils-new-cue-infotainment-system/</figcaption>
+            </figure>
+         </div>
+         <div style="flex: 1;">
+            <p>The fundamental failure of CUE lies in its violation of Postel’s Law, also known as the Robustness
+               Principle. It states that a system should be conservative in what it does, and liberal in what it
+               accepts (Yablonski, 2024). A well-designed interface should be empathetic to the user’s messiness,
+               especially in a high-stakes environment like a 464 horsepower, manual-transmission sport sedan. CUE was
+               the exact opposite. It wasn’t liberal; it was rigid and demanding. The “buttons” were actually flush,
+               capacitive touch surfaces that required a precise, firm press or a non-relative gesture to register.
+               Consumer Reports (2012) described that the screen required a hard tap to work, seemingly to mimic the
+               tactile response of a real button, and proximity sensors would hide icons until your hand was close,
+               creating a moving target that was nearly impossible to hit while the car was in motion. For a car whose
+               entire ethos is based on tactility and engagement, a system requiring the driver to take their hand off
+               that shifter and eyes off the road to attempt to change volume was a slap in the face to the ATS-V’s
+               target demographic.</p>
+         </div>
 
+         <p>This lack of tactile feedback also ruins the Von Restorff Effect. This principle suggests that when
+            multiple similar objects are present, the one that differs from the rest is most likely to be remembered
+            and noticed (Yablonski, 2024). In an old-school interior, a physical volume knob stands out from the
+            flat surface on the dash by its shape and texture. Your brain isolates it instantly without you having to
+            look. CUE erased that isolation. By making every control a flat, glossy piece of piano-black plastic,
+            Cadillac created a uniformity trap. Nothing stood out to the touch. </p>
+         <p>This layout doesn’t just impact usability on paper; it changes how you drive. When I was test driving
+            that ATS-V, I found myself hesitating to change the radio or even the volume because I knew it would
+            require me to stop being a driver and start playing IT technician. Half the time, swipes on the volume
+            strip wouldn’t register, which led to an even more frustrating experience. According to Ellen Edmonds
+            (2017), interacting with these types of touch-heavy systems can distract a driver for more than 40
+            seconds. When you’re in a car built for precision, that’s not just a minor annoyance; it can risk the
+            lives of the passengers and other drivers on the road.</p>
+         <h3>The Gulf of Execution</h3>
+         <p>The tragedy of CUE isn’t that it was just poorly laid out; it’s that it was designed from the ground up to
+            prevent the user from ever reaching a flow state. Jeff Johnson (2020) emphasizes that human brains are wired
+            to make learned actions easy. When a task is repetitive and consistent, like reaching for a volume knob or
+            turning on the window defrosters, it moves from the slow, conscious System Two into the fast, automatic
+            System One. We don't think about the action; we just do it. However, for an action to become automatic, the
+            system must be consistent and responsive.</p>
+         <p>Cadillac’s hardware made this transition impossible, creating a gulf of execution. This is the gap between a
+            user’s goal, like turning down the radio to hear the engine, and the physical steps required to do it.
+            Because CUE used an underpowered processor and unreliable capacitive touch sensors, every interaction
+            remained a novel action. You couldn’t develop muscle memory because the system didn’t respond the same way
+            twice.</p>
+         <p>This novelty was made worse by Cadillac’s attempt to shoehorn tactility into a fundamentally untactile
+            interface. It’s a failure reminiscent of the BlackBerry Storm and its SurePress screen. Much like the Storm,
+            which forced users to physically click a glass screen to register a tap, CUE’s capacitive buttons often
+            required a "rather hard tap" to register an input (Consumer Reports, 2012). It was an attempt to fake the
+            feel of a button without the reliability of one. As Johnson (2020) notes, when a system is inconsistent or
+            requires excessive calculation for simple physical inputs, the brain can never offload the task to the
+            automatic system, leaving the driver in a state of permanent cognitive load.</p>
+         <div class="inline-image">
+            <figure style="width: 300px; flex-shrink: 0; margin: 0;">
+               <img src="assets/3-1/delam.jpg" alt="CUE delamination" style="width: 100%;">
+               <figcaption>Cadillac CUE delamination. (2019).
+                  Cadillac Society.
+                  https://cadillacsociety.com/2019/09/20/class-action-lawsuit-filed-over-delaminated-cadillac-cue-screens/
+               </figcaption>
+            </figure>
+            <div style="flex: 1;">
+               <p>Then there’s the pig beneath the lipstick of fingerprint-magnet glossy piano plastic meant to signal
+                  futuristic luxury: the physical failure of the hardware itself. If first impressions of CUE were
+                  already bad, the way it aged was even worse. CUE units suffered from delamination, where the screen
+                  literally begins to peel apart from the inside, causing ghost touches that make the car feel
+                  possessed. This brings us back to the Aesthetic-Usability Effect trap. Cadillac spent their budget on
+                  the appearance of innovation, while neglecting the robust engineering required to survive the heat and
+                  vibrations of a car’s dashboard.
+               </p>
+            </div>
+         </div>
+         <h3>Conclusion</h3>
+         <p>At the end of the day, a digital interface is a tool, not a piece of stationary art. Whether it’s a
+            smartphone or a 464-horsepower sport sedan, we don’t use these systems for the sake of using them; we use
+            them to get something done. My experience with the Cadillac ATS-V was a hard lesson in the limits of the
+            Aesthetic-Usability Effect. It proved that you can’t simply design your way out of poor logic with glossy
+            plastics and glowing icons. By prioritizing a high-tech look over the fundamental laws of UX, Cadillac
+            created a system that fought against the driver’s brain rather than supporting it. They ignored Postel’s Law
+            by being rigid instead of flexible, and they ruined the Von Restorff Effect by trading tactile isolation for
+            a uniform slab of plastic. They essentially took the lipstick on a pig approach to its logical extreme, and
+            in doing so, tthey turned a world-class driving machine into a source of constant frustration. It leaves the
+            buyer in a tough spot: you have to really want that backroad or track-day masterpiece to put up with
+            the daily travesty of CUE. It turns what should have been a modern classic into a cautionary
+            tale of what happens when overzealous design choices prioritize the showroom "wow factor" over the reality
+            of the road.</p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>Consumer Reports. (2012, November 21). <em>New Cadillac CUE infotainment system
+                     frustrates</em>. Consumerreports.org. <a
+                     href="https://www.consumerreports.org/cro/news/2012/11/new-cadillac-cue-infotainment-system-frustrates/index.htm">https://www.consumerreports.org/cro/news/2012/11/new-cadillac-cue-infotainment-system-frustrates/index.htm</a>
+               </li>
+               <li>Edmonds, E. (2017, October 5). <em>New Vehicle Infotainment Systems Create Increased Distractions
+                     Behind the Wheel</em>. AAA Newsroom. <a
+                     href="https://newsroom.aaa.com/2017/10/new-vehicle-infotainment-systems-create-increased-distractions-behind-wheel/">https://newsroom.aaa.com/2017/10/new-vehicle-infotainment-systems-create-increased-distractions-behind-wheel/</a>
+               </li>
+               <li>Johnson, J. (2020). <em>Designing with the Mind in Mind: simple guide to understanding user
+                     interface design guidelines</em>. Morgan Kaufmann Publisher.</li>
+               <li>Yablonski, J. (2024). <em>Laws of UX</em>. O'Reilly Media, Inc.</li>
+            </ol>
+         </footer>
+      </article>
       <!-- Module 3.2 Blog Post Starts here -->
-
+      <article>
+         <header class="article-header">
+            <h2>Module 3.2 Blog Post</h2>
+         </header>
+         <p>Human invention is fundamentally a quest for efficiency. A bicycle doesn’t behave all that differently than
+            walking; it just makes the action of moving your legs go further with less energy, all while keeping you in
+            total control. As personal transportation evolved from the humble bicycle to the automobile, we introduced
+            layers of abstraction (automatic transmissions, cruise control, and lane-keep assist), yet the car’s job
+            remained the same: to translate our desire for travel to movement while keeping us at the top of the chain
+            of command.</p>
+         <p>When Steve Jobs referred to the personal computer as a “bicycle for the mind,” he was describing a tool that
+            amplified human thinking through this same kind of efficiency. But just as the bicycle evolved into a
+            self-driving Tesla, our interaction with computers has lost the one-to-one agency we started with. We have
+            moved from soldering chips and writing machine-level code to graphical user interfaces and, eventually,
+            autonomous AI agents. In our pursuit of the frictionless, we may have engineered ourselves out of the chain
+            of command entirely.</p>
+         <p>In Laws of UX, Jon Yablonski (2024) warns that the total elimination of friction through these layers of
+            abstraction has shifted from a usability goal to a vehicle for exploitation. By removing the "speed
+            bumps" that force a user to stop and think, platforms have moved away from helping us accomplish tasks and
+            toward harvesting our attention. We are no longer always the pilots of our digital lives. Often, we are just
+            passengers along for the ride.</p>
+         <p>This is best understood through the Doherty Threshold. The law states that productivity skyrockets when a
+            system and its users interact at a pace faster than 400 milliseconds (Yablonski, 2024). When a tool is that
+            responsive, it taps directly into System One thinking: the fast, automatic, and emotional part of our brain
+            (Johnson, 2020). This is why a like button feels so satisfying or why scrolling through TikTok feels less
+            like a choice and more like an addiction.</p>
+         <p>The Doherty Threshold can often mask the gears of a system, but sometimes, seeing those gears is necessary
+            for trust. This is why loading screens exist, even when a process might be nearly instantaneous. On the
+            surface, a user can’t interact with a system whether they are looking at a blank screen or a branded
+            progress bar. Subconsciously, however, the difference is massive. A blank screen signals a breakdown,
+            triggering frustration. A progress bar provides helpful friction, telling the user to hold tight because the
+            system is working for them. It satisfies our need for feedback and keeps us grounded.</p>
+         <p>However, when a system responds faster than we can consciously process, it intentionally bypasses System
+            Two: the slow, deliberate, and logical part of our brain that handles complex decision-making (Johnson,
+            2020). By keeping the user trapped in a sub-400ms loop of instantaneous action and reaction, platforms can
+            nudge us into impulsive behaviors, spending money, sharing data, or scrolling for hours, before the rational
+            mind can even process the consequences.</p>
+         <p>Efficiency is beneficial when trying to save a document; it’s a detriment when you’re being lured into a
+            predatory space. It forces us to ask, who’s really in charge of our digital lives?</p>
+         <h3>A Tug of War</h3>
+         <p>While the timing of an interface affects our brain, the actual layout of the screen affects our hands. This
+            is where we see a weird, one-sided version of friction. If you’ve ever tried to cancel a subscription and
+            found that the "Stay Subscribed" button is huge and bright while the "Cancel" link is a tiny piece of gray
+            text hidden in the corner, you’ve experienced a manipulation of Fitts’s Law.</p>
+         <p>Fitts’s Law is a principle that says the time it takes to hit a target depends on how big it is and how far
+            away it is (Johnson, 2020). In a normal use of the law, the most important actions, like "Save" or "Submit,"
+            are made large and easy to hit to reduce effort. This becomes an ethical problem when platforms use this
+            principle to steer us toward choices that benefit them, instead of us. They make the "Yes" button a
+            massive, high-contrast target that’s hard to miss in a popup ad, while making the "No" option so small it’s
+            like playing I Spy without your reading glasses.</p>
+         <p>This isn’t bad design based on an ignorance of principles; it’s an intentional, malicious design
+            choice called a Dark Pattern. Harry Brignull (2010), who coined the term, describes dark patterns as methods
+            to "trick users into doing things they might not otherwise do." By using Fitts’s Law to make the wrong
+            choice (for us) physically easier to click, companies are using our own hand-eye coordination against us.
+         </p>
+         <div class="inline-image">
+            <div style="flex: 1;">
+               <p>We also see this with the Steering Law, which governs how we move a pointer through a constrained
+                  path,
+                  like
+                  a dropdown menu (Johnson, 2020). You are steered to where the designer wants you to go. Sometimes this
+                  aligns with your own desires, like Microsoft Office’s big, colored "File" button contrasting against a
+                  monochromatic backdrop to guide you to the main actions of the app. Other times, it’s a big "ACCEPT
+                  ALL"
+                  cookie popup with the "Decline" button hidden behind another menu entirely. This ties back into the
+                  concept
+                  of Consent Fatigue I discussed in post 2.2; if a system makes the right choice exhausting to reach,
+                  most
+                  people will just take the path of least resistance.</p>
+               <p>Platforms often use this to create negative steering. They will put privacy settings or the Delete
+                  Account button at the end of a long, narrow path of nested menus and pages. They know the more effort
+                  a
+                  user
+                  has to put in, the more likely they are to give up, tell themselves they'll do it later, and
+                  eventually
+                  forget. Just as users want less friction to get their jobs done at the expense of a developer working
+                  harder, these platforms want you to put in more effort on your end if you want to do something that
+                  makes
+                  their jobs harder or affects their bottom line.</p>
+            </div>
+            <figure style="width: 300px; flex-shrink: 1; margin: 0;">
+               <img src="assets/3-2/officefilebutton.jpg" alt="Microsoft Word File button" style="width: 100%;">
+               <figcaption>By Microsoft - Screenshots taken
+                  from a Windows 10 computer and uploaded by Philip Terry Graham, updated recently by Paowee., Fair use,
+                  https://en.wikipedia.org/w/index.php?curid=47435831</figcaption>
+            </figure>
+         </div>
+         <h3>Slips vs. Mistakes</h3>
+         <p>Good UX is often about knowing when to slow us down and make us think. This brings us to a conflict
+            between two types of errors Jeff Johnson (2020) defines: Slips and Mistakes. A mistake is when you
+            consciously choose the wrong path, but a "slip" is a failure in motor control or impulsively clicking the
+            wrong thing because your System One brain assumed the action you wanted was where the wrong action actually
+            is.</p>
+         <p>When a platform is too frictionless, it practically invites these slips. This is where the Peak-End Rule
+            comes in. This law states that we judge an experience based on its most intense point (the peak) and its
+            conclusion (the end), rather than the average of every moment (Yablonski, 2024). This phenomenon is found
+            everywhere, not just in the digital world. Your Quesarito from Taco Bell might be the tastiest thing
+            you’ve eaten all day, but you’re still going to be annoyed by a thirty-minute drive-thru wait. That negative
+            end to the experience will heavily influence your decision to return to that specific store, or even Taco
+            Bell in general, regardless of how good the food actually was.</p>
+         <div class="inline-image">
+            <figure style="width: 300px; flex-shrink: 1; margin: 0;">
+               <img src="assets/3-2/permissionsdialog.png" alt="iOS 26 Permissions Dialog" style="width: 85%;">
+               <figcaption>Sceenshot of a notification
+                  permission dialog in iOS 26.</figcaption>
+            </figure>
+            <div style="flex: 1;">
+               <p>To prevent these peaks, ethical design uses color and contrast to force us back into System Two. You
+                  can
+                  see this in how Apple handles notification or permission requests. Often, the "Decline" or "Don't
+                  Allow"
+                  button is colored or styled in a way that subtly tells the user to pause. If a user is acting
+                  impulsively
+                  and just clicks the shiny blue button out of habit, they still aren’t accidentally signing up for
+                  something
+                  they don't want or giving away their data. The system is designed to handle the slip by making the
+                  safe
+                  choice the most automatic one.</p>
+               <p>We are starting to see more coverage in this area with Humane Tech movements. One organization, The
+                  Center for Humane Technology (2018), argues that designers should prioritize "time well spent" over
+                  raw
+                  screen time. They suggest that adding friction for reflection is more ethical than a system that lets
+                  you act instantly without thinking. Platforms like Instagram are starting to implement this exact form
+                  of barrier.</p>
+            </div>
+         </div>
+         <div class="inline-image">
+            <div style="flex: 1;">
+               <p>
+                  If you try to post a comment that may be rude or harmful, it won’t post immediately. Instead, it
+                  displays a timed banner that makes the commenter take a breather and offers a big, shiny "Undo"
+                  button. Of course, they can wait a couple of seconds and let the comment post, but that requires a
+                  conscious decision. This prevents someone from impulsively posting a negative comment and
+                  immediately
+                  scrolling away, as that same impulsive behavior would instead trigger the "Undo" action.</p>
+            </div>
+            <figure style="width: 300px; flex-shrink: 1; margin: 0;">
+               <img src="assets/3-2/instagramcomment.jpg" alt="Instagram Undo button" style="width: 100%;">
+               <figcaption>Example of Instagram's comment
+                  barrier.</figcaption>
+            </figure>
+         </div>
+         <p>By adding these speed bumps, designers are actually protecting the end of the experience. A user who is
+            prevented from making a mistake feels more in control and has a higher level of trust in the system. It
+            proves that sometimes, the most usable thing a system can do is get in your way for your own good.</p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>Brignull, H. (2010). <em>Deceptive Design</em>. Www.deceptive.design.
+                  https://www.deceptive.design/</li>
+               <li>Johnson, J. (2020). <em>Designing with the Mind in Mind: simple guide to understanding user
+                     interface design guidelines</em>. Morgan Kaufmann Publisher.</li>
+               <li>The Center for Humane Technology. (2018). <em>Impact and Story</em>. Center for Humane Technology.
+                  https://www.humanetech.com/impact-and-story</li>
+               <li>Yablonski, J. (2024). <em>Laws of UX</em>. O'Reilly Media, Inc.</li>
+            </ol>
+         </footer>
+      </article>
    </main>
    <!-- Page Footer  -->
    <footer class="page-footer">
