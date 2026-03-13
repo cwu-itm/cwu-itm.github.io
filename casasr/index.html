@@ -9,7 +9,22 @@
    <body>
 <!-- Page Header  -->
       <header class="page-header">
-         <h1>Portfolio</h1>
+
+<div class="nav-container">
+
+<div class="logo">
+Ramiro Casas
+</div>
+
+<nav class="main-nav">
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+
+</div>
+
       </header>
 <!-- Main Content Area  -->
       <main>
@@ -221,8 +236,350 @@ International Council on Systems Engineering. (2022). <em>INCOSE vision 2035</em
 
          <!-- Module 3.1 Blog Post Starts here -->
 
-         <!-- Module 3.2 Blog Post Starts here -->
+         <h1>Interface Logic</h1>
+  <p>
+    This week’s material makes it clear that interface logic quietly shapes how people experience technology.
+    The readings explain how visual hierarchy directs attention, how feedback builds trust, and how design
+    principles help predict what users notice and what they miss (Johnson, 2020; Yablonski, 2024). I agree
+    with that framing, but what stood out to me most is how often these principles are treated as surface
+    refinements rather than structural safeguards. Many interfaces look intuitive at first glance yet become
+    frustrating in real use, not because designers misunderstand usability, but because they underestimate
+    how fragile attention and patience actually are.
+  </p>
 
+  <p>
+    Not everything that looks clear stays clear once people begin skimming, rushing, or multitasking.
+    Not everything that feels intuitive survives distraction, fatigue, or error. Interfaces are frequently
+    designed for ideal users operating under ideal conditions, even though real use rarely looks like that.
+    The gap between design intent and actual behavior is where usability either holds or collapses.
+    Principles such as Postel’s Law, the Aesthetic–Usability Effect, and the Von Restorff Effect help explain
+    why this gap exists and why it matters (Yablonski, 2024). Together, they show that usability is less about
+    visual order and more about how systems behave when users act imperfectly, which they almost always do.
+  </p>
+
+  <h2>Structure and Assumptions</h2>
+
+  <p>
+    Interface structure is often described as organization, but it is more accurate to see it as a reflection
+    of assumptions. Every structural decision assumes something about how users think, how carefully they will
+    read, and how much effort they are willing to spend. When those assumptions align with real behavior,
+    interfaces feel supportive. When they do not, usability degrades quietly, often without immediate
+    visibility (Johnson, 2020).
+  </p>
+
+  <p>
+    Postel’s Law is especially revealing in this context. The idea that systems should be conservative in what
+    they produce and liberal in what they accept highlights a core mismatch between machines and humans.
+    People provide inconsistent input. They mistype, misunderstand labels, and operate under distraction.
+    Interfaces that demand precision expose system rigidity rather than user error (Yablonski, 2024).
+  </p>
+
+  <p>
+    Forms make this problem obvious. Many interfaces reject names, addresses, or formats that are entirely
+    reasonable simply because they fall outside narrow validation rules. When a system tells a user their name
+    is invalid, the interface is not enforcing clarity. It is failing to translate human input into structured
+    data. A Postel-aligned interface would accept variation and normalize it internally, allowing users to
+    continue without friction.
+  </p>
+
+  <p>
+    What makes this important is not just efficiency, but confidence. Structure that anticipates mistakes
+    allows users to recover without feeling incompetent. Structure that punishes mistakes forces users to slow
+    down and second-guess themselves. Over time, this changes how usable an interface feels, even if tasks can
+    technically still be completed.
+  </p>
+
+  <h2>Visual Hierarchy</h2>
+
+  <p>
+    One of the strongest reminders in this week’s readings is that users do not read interfaces carefully.
+    They skim. They scan. They filter aggressively. This behavior is not laziness. It is a response to limited
+    attention and constant information pressure (Johnson, 2020).
+  </p>
+
+  <p>
+    The Von Restorff Effect explains how contrast shapes what stands out in this environment. When one element
+    clearly differs from the rest, it draws attention and is more likely to be remembered (Yablonski, 2024;
+    Kurosu & Kashimura, 1995). Designers rely on this effect to highlight primary actions, warnings, and
+    critical information. When applied with restraint, it reduces hesitation and supports faster decision
+    making.
+  </p>
+
+  <p>
+    Hierarchy fails not because information is missing, but because the interface never makes clear what
+    deserves attention first. When priority is left ambiguous, users are forced to decide what matters while
+    already under mental load. That shifts responsibility away from the system and onto the user, weakening
+    usability under pressure (Johnson, 2020).
+  </p>
+
+  <p>
+    A practical example of hierarchy handled well can be seen in Amazon’s navigation behavior. As screen size
+    decreases or text size increases, Amazon does not attempt to preserve every link. Instead, lower-priority
+    items are removed while core actions remain visible. The interface makes a decision about importance so the
+    user does not have to. This reflects the idea that hierarchy exists to guide attention, not to preserve
+    completeness.
+  </p>
+
+  <p>
+    Banner blindness illustrates the opposite case. Users learn to ignore anything that resembles advertising
+    or decorative filler. When important information is styled aggressively or placed near visual noise, it
+    disappears even if it is technically visible. Hierarchy fails not because content is absent, but because
+    attention was never guided (Yablonski, 2024).
+  </p>
+
+  <p>
+    Accessibility adds another layer to this problem. Not everyone perceives contrast in the same way.
+    Color alone cannot reliably communicate importance. Effective hierarchy relies on multiple signals working
+    together, including position, spacing, labeling, and shape. Interfaces that rely on a single visual cue
+    risk excluding users and weakening usability for everyone (Johnson, 2020).
+  </p>
+
+  <h2>Aesthetic–Usability Effect</h2>
+
+  <p>
+    The Aesthetic–Usability Effect introduces a tension that designers often underestimate. Research shows
+    that people perceive attractive interfaces as more usable, even when functionality is identical
+    (Tractinsky et al., 2000). This judgment happens quickly and with little conscious effort, aligning with
+    how fast, automatic processing shapes first impressions (Yablonski, 2024).
+  </p>
+
+  <p>
+    Visual appeal creates comfort, and comfort creates patience. Users are more forgiving when an interface
+    looks polished and coherent. That can improve perceived usability, but it can also hide real problems.
+  </p>
+
+  <p>
+    Apple provides a useful illustration. Much of Apple’s design language draws from Braun’s functional
+    minimalism, emphasizing restraint and clarity. As a result, Apple interfaces often receive more tolerance
+    from users. Minor usability issues are forgiven because the experience feels intentional, aligning with
+    research showing that aesthetic quality increases perceived usability and trust (Tractinsky et al., 2000).
+  </p>
+
+  <p>
+    The risk appears during evaluation. Attractive designs often receive positive feedback even when users
+    struggle quietly. Because the interface looks professional, users assume the problem lies with them rather
+    than the system. Research shows that aesthetic appeal can improve task performance while simultaneously
+    masking usability flaws (Sonderegger & Sauer, 2010).
+  </p>
+
+  <p>
+    Aesthetics are not opposed to usability. They become problematic only when they are used to compensate for
+    weak structure. Strong interfaces use visual refinement to reinforce clarity rather than distract from its
+    absence.
+  </p>
+
+  <h2>Feedback and Control</h2>
+
+  <p>
+    Feedback is one of the most underestimated elements of interface logic. It is how systems communicate that
+    actions were recognized, processes are underway, or errors occurred. Without feedback, users are left
+    guessing, and uncertainty escalates quickly (Johnson, 2020).
+  </p>
+
+  <p>
+    Effective feedback is timely and calm. A loading indicator reassures users that progress is happening.
+    A clear error message explains what went wrong and how to recover. These moments shape trust more than most
+    visual details because they answer the question users care about most: did the system understand me.
+  </p>
+
+  <p>
+    Postel’s Law applies here as well. Feedback must remain reliable even when conditions change. Network
+    delays, device limitations, and environmental distractions all affect perception. Interfaces that fail
+    silently or respond inconsistently break trust faster than obvious errors (Yablonski, 2024).
+  </p>
+
+  <p>
+    Control layout reinforces this sense of stability. When actions appear where users expect them,
+    interaction feels smoother and more predictable. Familiar patterns reduce mental effort because users rely
+    on recognition instead of memory. When interfaces break expectations without clear justification, users
+    slow down and make more mistakes, even if the underlying functionality remains intact (Nielsen & Molich,
+    1990).
+  </p>
+
+  <h2>Design Responsibility</h2>
+
+  <p>
+    Interface logic is not neutral. Design decisions determine who feels supported and who feels excluded.
+    Interfaces that assume perfect vision, precise input, or constant attention quietly marginalize many
+    users.
+  </p>
+
+  <p>
+    Resilient design plans for variation from the beginning. Text expansion, adjustable font sizes, flexible
+    layouts, and multiple input methods treat difference as expected rather than exceptional. This approach
+    aligns with Postel’s Law by accepting human variation instead of resisting it (Johnson, 2020).
+  </p>
+
+  <p>
+    The same responsibility applies to visual emphasis. Designers can use contrast to guide users or to
+    overwhelm them. Psychological principles like the Von Restorff Effect are tools, not shortcuts. When used
+    without restraint, they increase fatigue and distrust rather than clarity (Yablonski, 2024).
+  </p>
+
+  <h2>Conclusion</h2>
+
+  <p>
+    This week’s material makes it clear that usability lives in structure, not surface. Interface logic shapes
+    how much effort users must expend, how confident they feel, and whether an experience holds up outside
+    ideal conditions. Principles such as Postel’s Law, the Aesthetic–Usability Effect, and the Von Restorff
+    Effect help explain why some interfaces feel supportive while others collapse under pressure.
+  </p>
+
+  <p>
+    What ultimately matters is not whether an interface appears intuitive at first glance, but whether it
+    continues to feel usable when users skim, rush, or make mistakes. Interfaces succeed when they adapt to
+    people instead of asking people to adapt to them. When that alignment exists, usability does not call
+    attention to itself. It simply holds.
+  </p>
+</body>
+
+<footer>
+  <h2>References</h2>
+
+  <p>
+    Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.
+  </p>
+
+  <p>
+    Yablonski, J. (2024). <em>Laws of UX</em> (2nd ed.). O’Reilly Media, Inc.
+    https://cwu.vitalsource.com/books/9781098146924
+  </p>
+
+  <p>
+    Kurosu, M., & Kashimura, K. (1995). Apparent usability vs. inherent usability: Experimental analysis on the determinants of apparent usability.
+    In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em> (pp. 292–293). Association for Computing Machinery.
+  </p>
+
+  <p>
+    Nielsen, J., & Molich, R. (1990). Heuristic evaluation of user interfaces.
+    In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em> (pp. 249–256).
+    Association for Computing Machinery. https://doi.org/10.1145/97243.97281
+  </p>
+
+  <p>
+    Sonderegger, A., & Sauer, J. (2010). The influence of design aesthetics in usability testing: Effects on user performance and perceived usability.
+    <em>Applied Ergonomics, 41</em>(3), 403–410. https://doi.org/10.1016/j.apergo.2009.09.002
+  </p>
+
+  <p>
+    Tractinsky, N., Katz, A. S., & Ikar, D. (2000). What is beautiful is usable.
+    <em>Interacting with Computers, 13</em>(2), 127–145. https://doi.org/10.1016/S0953-5438(00)00031-X
+  </p>
+</footer>
+
+</body>
+         <!-- Module 3.2 Blog Post Starts here -->
+<article>
+
+<header class="site-header">
+<h1>Timing, Feedback, and the Subtle Psychology of Digital Interaction</h1>
+</header>
+
+<div class="two-column">
+<div class="column">
+<p>
+It is easy to assume that the quality of a digital system is determined mostly by the features it offers. Applications allow people to send messages, search for information, purchase products, or collaborate with others. At first glance these capabilities appear to define whether a product is useful or successful. However, the experience of using a system is rarely shaped by features alone. Much of the experience comes from how the system behaves while those features are being used. Small details such as how quickly a page responds, how clearly the interface communicates progress, and how an interaction concludes can determine whether a user feels confident or frustrated. These elements may appear subtle, but they strongly influence how users interpret and remember digital systems.
+</p>
+
+<p>
+Designers often refer to these details as interaction patterns. Interaction patterns describe the structure of an interaction over time. They include how an interface responds when a button is pressed, how the system communicates progress during a task, and how feedback helps users understand whether an action was successful. Although interaction patterns can appear minor when compared with larger design decisions, they play a critical role in shaping the overall user experience. When interaction patterns function smoothly, users move through tasks without needing to think about the interface itself. When those patterns break down, even simple actions can feel confusing or unreliable.
+</p>
+
+<p>
+One reason interaction patterns matter so much is that human attention operates within fairly narrow timing limits. Digital systems that respond quickly enough tend to feel seamless because the interaction happens faster than users consciously notice. Research in human computer interaction has identified several timing thresholds that illustrate how people perceive system responsiveness. Responses that occur within roughly four hundred milliseconds often maintain a sense of continuity between user and system. When response times approach one second, users begin to notice that the system is taking time to react. The interaction still functions, but it no longer feels instantaneous. When delays extend toward ten seconds, attention often drifts away from the task entirely and the interaction becomes more about waiting than doing (Johnson, 2010).
+</p>
+
+<p>
+These timing thresholds highlight an important idea about responsiveness. The goal is not simply to make systems technically fast. Instead, systems should respond within time boundaries that align with how people naturally perceive interaction. When the timing of a system falls outside those limits, even a technically functional interface can feel slow or unreliable. Users may repeat actions, refresh pages, or question whether their input was received at all. In these moments the issue is rarely the complexity of the task itself. The issue is uncertainty about what the system is doing.
+</p>
+</div> 
+<div class="column">
+<p>
+Feedback systems help resolve that uncertainty. When an interface immediately acknowledges a user action, people gain confidence that their input has been received. Even small signals such as highlighting a pressed button, displaying a loading animation, or showing a progress indicator can make a significant difference. These signals communicate that the system is responding and processing the request. Without feedback, delays become ambiguous. Users may assume that the system has frozen or that the original action failed.
+</p>
+
+<p>
+Research has demonstrated that feedback mechanisms such as progress indicators improve perceived responsiveness even when the underlying processing time remains unchanged. By showing visible progress during longer operations, systems help users remain oriented during an interaction and reduce the likelihood of repeated input or errors. In this way feedback becomes less about speed and more about communication. The interface tells the user what is happening and reassures them that the system is still working (Myers, 1985).
+</p>
+
+<p>
+Modern interfaces often use additional strategies to improve perceived performance. Many applications display placeholder elements or simplified content while full data loads in the background. For example, a page may show basic layout structures before the final text and images appear. This approach allows users to understand the structure of the interface immediately rather than staring at a blank screen. Similarly, systems may load information progressively so that some parts of the interface become interactive before others finish loading. These strategies do not necessarily reduce processing time, but they reduce the psychological discomfort associated with waiting.
+</p>
+
+<p>
+Responsiveness and feedback influence how people experience a system during interaction, but emotional memory also affects how those experiences are evaluated afterward. Human memory does not store events as detailed timelines. Instead, people tend to remember a few emotionally significant moments that stand out from the rest of the experience. One concept that explains this pattern is the Peak End Rule. According to this principle, people evaluate experiences largely based on the most emotionally intense moment and the final moment of the interaction rather than the average of everything that happened during it (Kahneman, Fredrickson, Schreiber, &amp; Redelmeier, 1993).
+</p>
+</div>
+</div>
+<p>
+The Peak End Rule has important implications for digital design. When users complete a task such as submitting a form, purchasing an item, or uploading a file, the final stage of that interaction often becomes the moment they remember most clearly. If the system confirms success with clear and reassuring feedback, the experience feels complete. If the interaction ends with confusion or uncertainty, users may remember the entire process as frustrating even if the earlier steps worked well.
+</p>
+
+<p>
+Designers often create positive emotional moments intentionally in order to strengthen user satisfaction. Many applications celebrate milestones or achievements through visual feedback such as animations, badges, or congratulatory messages. These moments create emotional peaks that reinforce the sense that progress has been made. When users associate these positive moments with a system, they are more likely to view the overall experience favorably.
+</p>
+
+<p>
+Negative emotional moments can be even more influential. Humans tend to remember problems more vividly than routine success. A confusing error message, an unexpected login failure, or a broken link can quickly become the most memorable part of an interaction. Because of this, error handling plays an important role in interface design. Systems that provide clear explanations and recovery options when something goes wrong help reduce frustration and prevent small problems from becoming lasting negative impressions.
+</p>
+
+<p>
+Another concept that connects closely to responsiveness is the idea of flow. Flow describes a state of deep concentration in which individuals become fully immersed in an activity. During flow, attention remains focused on the task rather than on distractions or external concerns. Digital systems can support this state when interactions remain smooth and predictable. When each action produces immediate feedback, users can move naturally from one step to the next without needing to pause and interpret what the system is doing.
+</p>
+
+<p>
+When responsiveness breaks down, this sense of flow can disappear quickly. Unexpected delays or unclear feedback force users to redirect attention toward understanding the interface rather than completing their task. Instead of focusing on their goal, users begin thinking about the mechanics of the system. This shift increases cognitive effort and can make simple activities feel more difficult than they actually are.
+</p>
+
+<p>
+These observations help explain why responsiveness has become such an important priority in modern digital design. Systems that maintain consistent interaction timing allow users to remain focused on their goals rather than on the interface itself. Feedback systems reinforce confidence and reduce uncertainty. Together these elements create an interaction environment that feels reliable and supportive.
+</p>
+
+<p>
+At the same time, the psychological principles behind responsiveness and feedback can influence user behavior in ways that extend beyond usability. Many digital platforms rely on rapid feedback loops to keep users engaged. Notifications appear instantly, new content loads immediately, and interactions refresh quickly. These rapid cycles of action and response encourage users to continue interacting with the system.
+</p>
+
+<p>
+One pattern that illustrates this influence involves variable rewards. Variable rewards occur when positive outcomes appear unpredictably rather than on a fixed schedule. Because users cannot predict when the next reward will occur, they may repeat actions frequently in anticipation of discovering something new. Many digital platforms incorporate this pattern through features such as refreshing social media feeds or checking notifications. While these mechanisms can increase engagement, they also raise ethical questions about the role of design in shaping user behavior.
+</p>
+
+<p>
+Ethical considerations have become increasingly important as designers recognize the influence digital systems can have on attention and habits. Interaction design decisions do not only affect usability. They can also influence how people spend their time and how often they return to certain platforms. Designers must therefore consider whether design choices support meaningful goals or simply encourage prolonged interaction.
+</p>
+
+<p>
+In some situations introducing small amounts of friction can actually improve user experience and safety. Although usability guidelines often encourage reducing friction to make systems easier to use, certain tasks benefit from deliberate pauses. Confirmation dialogs before deleting important information, privacy warnings before sharing sensitive data, or security prompts during financial transactions help prevent mistakes and encourage careful decisions. In these situations friction acts as protection rather than inconvenience.
+</p>
+
+<p>
+Looking at responsiveness, feedback, emotional memory, and ethical design together reveals how deeply timing influences digital experiences. Interaction timing determines whether systems feel smooth or interrupted. Feedback helps users understand what the system is doing and reduces uncertainty during delays. Emotional peaks and endings shape how users remember their experiences afterward. Ethical design considerations remind designers that the same psychological principles that improve usability can also influence behavior.
+</p>
+
+<p>
+Ultimately, effective digital systems do more than perform tasks quickly. They communicate clearly, respond within human timing limits, and guide users through interactions that feel coherent and understandable. When responsiveness, feedback, and emotional design work together, users experience technology as supportive rather than confusing. These principles show that interaction design is not only about technical performance but also about aligning digital systems with the ways people naturally perceive, remember, and engage with the world around them.
+</p>
+<section>
+<section class="image-bar">
+
+<img src="css/images/img1.jpg" alt="workspace laptop">
+
+<img src="css/images/img2.jpg" alt="writing workspace">
+
+<img src="css/images/img3.jpg" alt="design workspace">
+
+</section>
+<footer>
+<h2>References</h2>
+<p>Doherty, W. J., &amp; Thadani, A. J. (1982). The economic value of rapid response time. <em>IBM Systems Journal, 21</em>(4), 487–503. https://doi.org/10.1147/sj.214.0487</p>
+
+<p>Johnson, J. (2010). <em>Designing with the mind in mind: Simple guide to understanding user interface design rules</em>. Morgan Kaufmann.</p>
+
+<p>Kahneman, D., Fredrickson, B. L., Schreiber, C. A., &amp; Redelmeier, D. A. (1993). When more pain is preferred to less. Adding a better end. <em>Psychological Science, 4</em>(6), 401–405. https://doi.org/10.1111/j.1467-9280.1993.tb00589.x</p>
+
+<p>Myers, B. A. (1985). The importance of percent done progress indicators for computer human interfaces. <em>ACM SIGCHI Bulletin, 16</em>(4), 11–17. https://doi.org/10.1145/317456.317459</p>
+</footer>
+
+</body>
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
