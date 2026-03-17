@@ -5,124 +5,99 @@
 /* Global Styles */
 html {
     font-size: 16px;
-    color: #333;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
+    margin: 30% auto;
     background-color: #FFF;
-    margin: 1% auto;
     width: 90%;
     max-width: 57rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3;
-}
-
-main {
-
-    margin-bottom:3rem;
-    padding: 0 1rem;
-    margin: 0;
-
-}
-
-/* 2 column flexbox */
-.columns {
-    display: flex;
-    gap: 2rem;
-}
-
-.page-header {
-    background-image: url('bgheader.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #423A34;
-    background-blend-mode: overlay;
-    color: white;
-    padding: 1rem;
-}
-
-.article-header {
-    background-color: #423A34;
-    padding:1rem;
-    color: white;
-}
-
-/* nav flexbox */
-nav {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-nav a {
-    display: flex;
-    gap: 2rem;
-    margin: 1rem;
-    padding: 1rem;
+p {
+    margin: auto 10%;
+    text-indent: 1rem;
 }
 
-nav a:hover {
-    color:#c6bfba
-}
-
-/* logo */
-
-.logo {
-font-size: 2rem;
-color: white;
-padding: 0.5rem 1rem;
-}
 
 h1 {
-
+text-align: center;
 font-family: Oswald, sans-serif;
 font-size:4rem;
 
 }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3, dl {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
-}
-
-ol {
-
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+margin: 2rem 10% 2rem;
+font-family: Oswald, sans-serif;
+font-size:2rem;
 
 }
 
-img {
-  width: 100%;
-  max-width: 30rem;
-  height: auto;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 9.5rem;
+    padding: 1rem 0.5rem;
+    background-color: #de8d31;
+    border-radius: 1rem;
+    color: white;
 }
 
-/* imagebar grid layout */
-.image-bar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    background-color: #827070; 
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border-radius: 8px;
+nav a {
+  background-color: #de8d31;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 3rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
 }
 
-p, ul, ol, figcaption, dd {
-  font-weight: 300;
-  font-size: 0.875rem;
+nav a:hover {
+  background-color: #b1630a;
+}
+
+.dropdown {
+  position: relative;
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 3rem;
+  background-color: #f9f9f9;
+  min-width: 12.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+    background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
