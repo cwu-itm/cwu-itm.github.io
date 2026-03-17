@@ -28,8 +28,13 @@ main {
 
 h1 {
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
+    font-family: Oswald, sans-serif;
+    font-size:4rem;
+    /* additions below add underlines to headers*/
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #666;
+    margin-bottom:2rem;
 
 }
 
@@ -37,10 +42,23 @@ h2 {
 
     font-family: Oswald, sans-serif;
     font-size:2rem;
-
+    /* additions below add underlines to headers*/
+    display: inline;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #666;
+    margin-bottom:2rem;
 }
+
 h3 {
+    font-family: Oswald, sans-serif;
     font-size:1.5rem;
+    margin-bottom:.5rem;
+}
+
+h4 {
+
+    font-family: Oswald, sans-serif;
+    font-size:1rem;
     margin-bottom:.5rem;
 }
 
@@ -50,5 +68,126 @@ ol {
     padding-left:0;
     list-style-type: none;
     font-size:.875rem;
+
+}
+
+ul {
+
+    margin-top:0;
+    padding-left:1.5rem;
+    font-size:.875rem;
+
+}
+
+dl {
+
+    margin: 1rem;
+    padding: .5rem;
+    color: #222;
+    background-color: #f0f0f0;
+    border-left: 2.5px solid #333;
+    border-top: 2.5px solid #333;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #666;
+    border-radius: 5px;
+    padding-left:1.5rem;
+    font-size:.875rem;
+
+}
+
+dt {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    margin-top: .5rem;
+
+}
+
+dd {
+
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+
+}
+
+blockquote {
+
+    font-style: italic;
+    margin: 0;
+    padding: 1rem;
+    color: #222;
+    background-color: #f0f0f0;
+    border-left: 2.5px solid #333;
+    border-top: 2.5px solid #333;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #666;
+    border-radius: 5px;
+}
+
+.page-header {
+
+    margin-bottom:2rem;
+    color:#333
+
+}
+
+.article-header {
+
+    margin-bottom:1.5rem;
+    color:#333
+
+}
+
+.article-footer {
+
+    margin-top:2rem;
+    color:#333
+
+}
+
+.hook {
+
+    background-color: #f0f0f0;
+    border-left: 2.5px solid #333;
+    border-top: 2.5px solid #333;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #666;
+    padding: 4px 12px;
+    border-radius: 5px;;
+}
+
+p.half-spacing {
+
+    line-height: 12px;
+    margin-left: 1rem;
+}
+
+.page-footer {
+
+    text-align: center;
+    font-size: .875rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-top: 2rem;
+
+}
+
+.sources {
+
+    text-align: left;
+    font-size: .875rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+
+}
+.source-list {
+
+    font-size: .75rem;
+    font-style: italic;
+    margin-top: .5rem;
+    padding-left: 3rem;
+    text-indent: -3rem;
+    list-style-type:none;
 
 }
