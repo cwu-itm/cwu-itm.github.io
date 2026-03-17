@@ -6,18 +6,22 @@
 html {
     font-size: 16px;
     color: #333;
-    font-family: Roboto, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #FFF;
     margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
+    width: 100%;
+    max-width: 80rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
 }
 
 main {
@@ -28,20 +32,29 @@ main {
 
 h1 {
 
-font-family: Oswald, sans-serif;
+font-family: 'Times New Roman', Times, serif;
 font-size:4rem;
-
+background-color: darkviolet;
+padding: 1rem;
 }
 
 h2 {
 
-    font-family: Oswald, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size:2rem;
+    background-color: plum;
+    padding: 1rem;
 
 }
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
+}
+
+p {
+    font-size:0.9rem;
+    font-weight:300;
+    
 }
 
 ol {

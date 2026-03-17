@@ -23,32 +23,42 @@ body {
 main {
 
     margin-bottom:3rem;
-
+    padding: 0 1rem;    
 }
 
 h1 {
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-family: Oswald, sans-serif;
+    font-size:4rem;
+    background-color: red;
+    color: white;        
+    padding: 1rem;   
 }
 
 h2 {
 
     font-family: Oswald, sans-serif;
     font-size:2rem;
-
+    color: inherit;
+    margin: 0;
 }
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
 }
 
-ol {
+ol,li,figcaption {
 
     margin-top:0;
     padding-left:0;
     list-style-type: none;
     font-size:.875rem;
+    font-weight: 300;
 
+}
+
+img {
+  width: 100%;
+  max-width: 30rem;   
+  height: auto;
 }
