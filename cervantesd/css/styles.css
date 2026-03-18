@@ -11,63 +11,176 @@ html {
 }
 
 body {
-    background-color: #ececec;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
+    background-color: #faf8f4;
+    color: #1a1714;
+    margin: 0;    
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3;
 }
 
+.page-header {
+    background: #333 url(https://www.webnode.com/blog/wp-content/uploads/2021/04/Web-design.png);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 1rem;
+}
+
+.page-header > h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    border: solid 2px #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 20%;
+    margin-left: 10%;
+}
+
 main {
-
-    margin-bottom:3rem;
-
+    margin: 1rem;
+    display: grid;
 }
 
-h1 {
+main p {
+    font-size:1rem;
+    font-weight:300;
+    margin-top:0;
+    margin-left:10%;
+    margin-right: 10%;
+  }
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+.article-header {
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: 10%;
 }
+
+.article-content {
+    padding:0 1rem;
+}
+
+.page-footer {
+    padding: 2rem 1rem;
+    font-size: .875rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.page-footer a {
+    color:#F1D23F;
+  }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font: size 1rem;
-    background-color: #aecba6;
-
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #1a1714;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    border-left: 3px solid #c0392b;
+    margin-left:10%;
+    margin-right: 10%;
 }
+
 h3 {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size:1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1a1714;
+    font-style: bold;
     margin-bottom:.5rem;
+    margin-left:10%;
+    margin-right: 10%;
 }
 
-ol {
-
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
-
-}
-
-p {
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
+ul, p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size:1rem;
     font-weight: 300;
-    font-size: 0.875rem;
-
+    color: #1a1714;
+    margin-left:10%;
+    margin-right: 10%;
 }
-img {
 
+main ol {
+    font-family: 'Source Serif 4', Georgia, serif;
+    padding-left: 1rem;
+    font-size: .875rem;
+    font-weight: 300;
+    color: #1a1714;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+main ol > li {
+    padding-bottom:1rem;
+}
+
+.flex-list {
+    margin:1rem auto;
+    padding:1rem;
+    background-color:#333;
+    color:white;
+    border-radius:5px;
+}
+
+img {
     width: 100%;
     max-width: 30rem;
-
+    border-radius:5px;
+    margin-left:10%;
+    margin-right: 10%;
 }
+
+.image-bar {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    padding:2rem;
+    background-color:#F5F6F4;
+    border-radius:5px;
+}
+  
+  .page-footer {
+
+    display:grid;
+    grid: subgrid / subgrid;
+    grid-column: 2 / 12;
+    grid-row: 10 / 11;
+    font-size: 1rem;
+    color:#8a8078;
+    background-color:inherit;
+    text-align: left;
+    padding:0;
+  
+  }
+  
+  .page-footer a {
+  
+    color:#0000FF;
+  
+  }
+  
+  .copyright {
+  
+    grid-column: 1 / 9;
+    grid-row: 10 / 11;
+  
+  }
+  
+  .contact {
+  
+    grid-column: 9 / 11 ;
+    grid-row: 10 / 11;
+  
+  }
