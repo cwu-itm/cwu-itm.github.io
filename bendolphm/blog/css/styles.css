@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #FFF;
-    margin: 100% auto;
+    margin: 1% auto;
     width: 100%;
     max-width: 1000rem;
     font-weight: 400;
@@ -67,8 +67,8 @@ background-color: #1877f2;
 
 main {
 max-width: 920px;
-margin: auto;
-padding: 10rem;
+margin: 0 auto 50px auto;
+padding: 5rem;
 background-color: #ffffff;
 }
 
@@ -144,7 +144,7 @@ text-align: left;
 }
 
 .page-header {
-background-color: #ffffff;
+background-color: #cecece;
 color: white;
 padding: 1rem;
 text-align: center;
@@ -198,9 +198,27 @@ text-align: center;
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url("../images/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france.jpg");
+    background-image: url("../../images/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+
+
+.hero-text {
+    color: white;
+    text-align: center;
+
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
 }
