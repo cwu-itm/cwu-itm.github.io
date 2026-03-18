@@ -1,5 +1,8 @@
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Global Styles */
 html {
     font-size: 16px;
     color: #333;
@@ -14,7 +17,27 @@ body {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3;
-    margin-top: 13%;
+}
+
+.page-header {
+    background: #333 url(https://www.webnode.com/blog/wp-content/uploads/2021/04/Web-design.png);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 1rem;
+}
+
+.page-header > h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    border: solid 2px #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 20%;
+    margin-left: 10%;
 }
 
 main {
@@ -26,7 +49,7 @@ main p {
     font-size:1rem;
     font-weight:300;
     margin-top:0;
-    margin-left:13%;
+    margin-left:10%;
     margin-right: 10%;
   }
 
@@ -50,6 +73,10 @@ main p {
     margin-right: 10%;
 }
 
+.page-footer a {
+    color:#F1D23F;
+  }
+
 h2 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 2rem;
@@ -60,7 +87,7 @@ h2 {
     margin-bottom: 0;
     padding-left: 1rem;
     border-left: 3px solid #c0392b;
-    margin-left:13%;
+    margin-left:10%;
     margin-right: 10%;
 }
 
@@ -72,7 +99,7 @@ h3 {
     color: #1a1714;
     font-style: bold;
     margin-bottom:.5rem;
-    margin-left:13%;
+    margin-left:10%;
     margin-right: 10%;
 }
 
@@ -81,7 +108,7 @@ ul, p {
     font-size:1rem;
     font-weight: 300;
     color: #1a1714;
-    margin-left:13%;
+    margin-left:10%;
     margin-right: 10%;
 }
 
@@ -98,3 +125,62 @@ main ol {
 main ol > li {
     padding-bottom:1rem;
 }
+
+.flex-list {
+    margin:1rem auto;
+    padding:1rem;
+    background-color:#333;
+    color:white;
+    border-radius:5px;
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;
+    border-radius:5px;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.image-bar {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    padding:2rem;
+    background-color:#F5F6F4;
+    border-radius:5px;
+}
+  
+  .page-footer {
+
+    display:grid;
+    grid: subgrid / subgrid;
+    grid-column: 2 / 12;
+    grid-row: 10 / 11;
+    font-size: 1rem;
+    color:#8a8078;
+    background-color:inherit;
+    text-align: left;
+    padding:0;
+  
+  }
+  
+  .page-footer a {
+  
+    color:#0000FF;
+  
+  }
+  
+  .copyright {
+  
+    grid-column: 1 / 9;
+    grid-row: 10 / 11;
+  
+  }
+  
+  .contact {
+  
+    grid-column: 9 / 11 ;
+    grid-row: 10 / 11;
+  
+  }
