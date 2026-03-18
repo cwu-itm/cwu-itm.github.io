@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@700&display=swap');
+
+/* Base page */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #87f1e7a0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/aurora.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.7;
+}
+
+/* Main content area */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #87f1e7a0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs and lists */
+p,
+li {
+  color: #87f1e7a0;
+  font-size: 1.05rem;
+}
+
+p {
+  max-width: 85ch;
+  margin-bottom: 1.25rem;
+}
+
+ul,
+ol {
+  max-width: 110ch;
+  margin: 0 auto 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Images */
+figure {
+  margin: 1.5rem 0 0;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Figcaptions */
+figcaption {
+  color: #87f1e7a0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+
+/* Two-column layout for text + image */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+.two-column > div {
+  min-width: 0;
+}
+
+.two-column figure {
+  margin: 1rem 0 0;
+}
+
+.two-column img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.two-column ul,
+.two-column p {
+  margin-top: 0;
+  max-width: none;
+}
+/* Links */
+a {
+  color: #87f1e7a0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 1rem 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}

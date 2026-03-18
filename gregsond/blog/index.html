@@ -3,11 +3,11 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
+      <link href="blog-styles.css" rel="stylesheet">
       <title>Daniel Gregson | Portfolio</title>
    </head>
    <body>
-
+      <main>
 <!-- Module 1.1 Blog Post Starts here  -->
          <article>
          <header>
@@ -446,7 +446,7 @@
             <div class="two-column">
          <p>At the center of usability is a simple constraint: human memory is limited and imperfect. People do not approach interfaces as blank slates. They carry prior knowledge, expectations, and habits, what cognitive science calls mental models. A mental model is an internal representation of how a system works. Users rely on these models to predict outcomes, navigate workflows, and recover from errors.</p>
          <figure>
-            <img src="images/UI-Inter.jpg" alt="User Interacting with a UI Interface">
+            <img src="images/UI Inter.jpg" alt="User Interacting with a UI Interface" style="max-width: 400px;">
             <figcaption>
             Visually introduces how people perceive and interact with digital systems</figcaption>
          </figure>
@@ -494,7 +494,7 @@
             <div class="two-column">
          <p>Cognitive load refers to the mental effort required to process information and perform tasks. Poor design increases this load unnecessarily, turning simple interactions into problem-solving exercises.</p>
          <figure>
-            <img src="images/GBUX.jpg" alt="Good vs. Bad UX">
+            <img src="images/GBUX.jpg" alt="Good vs. Bad UX" style="max-width: 400px;">
             <figcaption>
             This graphic juxtaposes good design and poor design patterns.</figcaption>
          </figure>
@@ -520,18 +520,17 @@
 
          <section class="section-block">
             <h3>Principles from Designing with the Mind in Mind</h3>
-            <div class="two-column">
-         <p>Two principles from Johnson’s work are especially relevant to usability</p>
-         
-         <ul>
-         <li>1. Recognition Is Easier Than Recal: This principle underpins many usability practices: visible menus, labeled icons, and contextual hints. By favoring recognition, designers respect working memory limits. Systems become self-explanatory rather than dependent on memorization.</li>
-         <li>2. People Scan, Not Read: Users allocate attention selectively. Interfaces that rely on dense text or hidden information conflict with scanning behavior. Clear headings, visual hierarchy, and concise labeling guide perception and reduce cognitive effort.</li>
-         </ul>
+            
+         <p>Two principles from Johnson’s work are especially relevant to usability.</p>
+            
+         <p>Recognition Is Easier Than Recal: This principle underpins many usability practices: visible menus, labeled icons, and contextual hints. By favoring recognition, designers respect working memory limits. Systems become self-explanatory rather than dependent on memorization.</p>
+         <p>People Scan, Not Read: Users allocate attention selectively. Interfaces that rely on dense text or hidden information conflict with scanning behavior. Clear headings, visual hierarchy, and concise labeling guide perception and reduce cognitive effort.</p>
+         <div class="two-column">
 
          <figure>
-            <img src="images/UCI.jpg" alt="Usability Concept Illustration">
+            <img src="images/UCI.jpg" alt="Usability Concept Illustration" style="max-width: 400px;">
             <figcaption>
-            This diagram shows key usability factors like feedback, consistency, navigation, and clarity.</figcaption>
+            This diagram shows key factors in determining if something is usable</figcaption>
          </figure>
          </div>
 
@@ -586,12 +585,10 @@
             <section class="section-block">
             <h3>Introduction</h3>
             <div class="two-column">
-         <p>Digital interfaces are not neutral spaces. Every button placement, color choice, animation, and layout decision subtly directs user attention and influences behavior. What is aesthetic preference is often deeply tied to cognitive psychology.</p>
-         
-         <p>Users do not consciously analyze hierarchy, grouping, or feedback systems as they navigate an interface; instead, they rely on mental shortcuts, pattern recognition, and perceptual biases. As a result, interface structure either supports human cognition or works against it. When design aligns with how the brain processes information, users experience clarity and flow. When it does not, frustration follows.</p>
+         <p>Digital interfaces are not neutral spaces. Every button placement, color choice, animation, and layout decision subtly directs user attention and influences behavior. What is aesthetic preference is often deeply tied to cognitive psychology. Users do not consciously analyze hierarchy, grouping, or feedback systems as they navigate an interface; instead, they rely on mental shortcuts, pattern recognition, and perceptual biases. As a result, interface structure either supports human cognition or works against it. When design aligns with how the brain processes information, users experience clarity and flow. When it does not, frustration follows.</p>
 
          <figure>
-            <img src="images/ux-concept.jpg" alt="Abstract representation of UX and Elements">
+            <img src="images/ux-concept.jpg" alt="Abstract representation of UX and Elements" style="max-width: 400px;">
             <figcaption>Conceptual visualization of user interface elements and experience design.</figcaption>
          </figure>
          </div>
@@ -603,10 +600,10 @@
 
          <section class="section-block">
             <h3>Interface Layout and Control Design as Behavioral Architecture</h3>
-            <div class="two-column">
-         <p>Users do not read interfaces linearly. Instead, they scan, group, and interpret based on prior experience. Johnson (2014) explains that pattern recognition and mental models structure perception; users bring expectations about how interfaces “should” work. When layout aligns with those expectations, interaction feels intuitive. When it violates them, users must pause and reinterpret.</p>
+         <p>Users do not read interfaces linearly. Instead, they scan, group, and interpret based on prior experience. Johnson (2014) explains that pattern recognition and mental models structure perception; users bring expectations about how interfaces “should” work. When layout aligns with those expectations, interaction feels intuitive. When it violates them, users must pause and reinterpret.</p> 
+         <div class="two-column">
          <figure>
-            <img src="images/wireframe-example.jpg" alt="Website wireframe showing layout structure and content grouping">
+            <img src="images/wireframe-example.jpg" alt="Website wireframe showing layout structure and content grouping" style="max-width: 400px;">
             <figcaption>Example of a wireframe illustrating layout structure and content hierarchy.</figcaption>
          </figure>
          </div>
@@ -619,15 +616,12 @@
          </section>
 
          <section class="section-block">
-            <h3>Visual Hierarchy and Cognitive Processing/h3>
+            <h3>Visual Hierarchy and Cognitive Processing</h3>
             <div class="two-column">
-         <p>Visual hierarchy determines what users notice first, second, and third. It directs attention through size, color, contrast, spacing, and alignment. Without a clear hierarchy, interfaces become cognitively noisy.</p>
-         
-         <p>The Von Restorff Effect states that when multiple similar objects are present, the one that differs stands out and is more likely to be remembered (Yablonski, 2020). In practical terms, this means primary buttons should contrast with their environment. If every element is bold and colorful, nothing stands out. Designers must use contrast strategically.</p>
+         <p>Visual hierarchy determines what users notice first, second, and third. It directs attention through size, color, contrast, spacing, and alignment. Without a clear hierarchy, interfaces become cognitively noisy. The Von Restorff Effect states that when multiple similar objects are present, the one that differs stands out and is more likely to be remembered (Yablonski, 2020). In practical terms, this means primary buttons should contrast with their environment. If every element is bold and colorful, nothing stands out. Designers must use contrast strategically.</p>
          <figure>
-            <img src="images/contrast-example.jpg" alt="Interface example showing one contrasting button standing out">
-            <figcaption>
-            Illustration of the Von Restorff Effect, where contrast increases visual prominence.</figcaption>
+            <img src="images/contrast-example.png" alt="Interface example showing one contrasting button standing out" style="max-width: 400px;">
+            <figcaption>Illustration of the Von Restorff Effect, where contrast increases visual prominence.</figcaption>
          </figure>
          </div>
 
@@ -756,7 +750,7 @@
          <div class="two-column">
          <p>This principle reflects how people mentally interpret digital interactions. When users click a button or submit information, they immediately expect confirmation that their action has been recognized. If nothing happens, even for a brief period of time, users begin to question whether the system understood the command. The resulting hesitation interrupts the user’s thought process and creates friction within the interaction.</p>
          <figure>
-            <img src="images/Timing and phyc.png" alt="UX/Interface Interaction">
+            <img src="images/Timing and phyc.png" alt="UX/Interface Interaction" style="max-width: 400px;">
             <figcaption>
             Designs of wireframes or interfaces that visually represent interation and design</figcaption>
          </figure>
@@ -776,7 +770,7 @@
          <div class="two-column">
          <p>However, motion can also become distracting when it is overused. Excessive animation can interrupt task flow and force users to wait for transitions that do not provide meaningful information. Instead of clarifying the interaction, unnecessary motion introduces additional cognitive effort. Users must spend time processing visual movement that contributes little to their understanding of the system.</p>
          <figure>
-            <img src="images/Interface Motion.jpg" alt="Interface Motion/App Interaction">
+            <img src="images/Interface Motion.jpg" alt="Interface Motion/App Interaction"style="max-width: 400px;">
             <figcaption>
             Show how interfaces and interaction flows, which help visually represent how motion and transitions communicate meaning within digital systems.</figcaption>
          </figure>
@@ -791,10 +785,11 @@
             <h3>Emotional Memory and the Peak–End Rule</h3>
          <p>While responsiveness and motion influence moment-to-moment interactions, psychological research shows that people do not remember experiences evenly. Instead, memory tends to focus on the most intense moment of an experience and the final moment before it ends. This concept, known as the Peak–End Rule, explains why small design decisions lasting effects on can have how users evaluate digital systems (Yablonski, 2020).</p>
 
-         <div class="two-column">
+         
          <p>In digital interactions, the emotional peak often occurs during moments of uncertainty or frustration. Submitting an important document online, completing a financial transaction, or navigating a complicated form can produce anxiety if the system does not provide clear feedback. If something goes wrong at this stage, that negative experience can dominate the user’s overall impression of the system.</p>
+         <div class="two-column">
          <figure>
-            <img src="images/UX experience.jpg" alt="UX Journey/Emotional Experience">
+            <img src="images/UX experience.jpg" alt="UX Journey/Emotional Experience" style="max-width: 400px;">
             <figcaption>
             This image shows a journey map. Journey maps visually represent the stages of a user’s experience and are commonly used to analyze emotional highs and lows across an interaction process.</figcaption>
          </figure>
