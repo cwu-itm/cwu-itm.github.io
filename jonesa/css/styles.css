@@ -6,14 +6,24 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-main: #0a0a0a;
+    --bg-secondary: #111111;
+    --accent: #c19a6b;
+    --text-main: #f5f5f5;
+    --text-muted: #888;
+    --border: #1f1f1f;
 }
 
 body {
-    margin: 3;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #636b5c;
-    color: #020202;
+    background-color: var(--bg-main);
+    color: var(--text-main);
 }
 
 .container {
@@ -23,28 +33,33 @@ body {
 }
 
 header {
-    background: linear-gradient(rgba (0,0,0,0.6), rgba(0,0,0,0.6)),
-                url("how-to-become-an-information-technology-specialist160684886950141.jpg") center/cover no-repeat;
-    color: rgb(17, 87, 3);
-    padding: 4rem 0;
+    background: linear-gradient(rgba (0,0,0,0.7), rgba(0,0,0,0.7)),
+    color: var(--text-main);
+    padding: 6rem 0;
     text-align: center;
+    border-bottom: 1px solid var(--border);
 }
 
 header img {
     max-width: 100%; 
     height: auto;
-    margin: 10px 0; 
-    color: #0e0e0e;
+    margin: 15px;
 }
 
 header h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
 }
 
 nav {
-    background: #013d06
-    padding 1rem;
+    background: rgba(10,10,10,0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -52,39 +67,46 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 0;
-    padding: 0;
 }
 
 nav a {
-    color: rgb(57, 141, 89);
+    color: var(--text-main);
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 nav a :hover {
-    color: #292828;
+    color: var(--accent)
 }
 
 main {
     padding: 5rem 0;
+    text-align: center;
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
 }
 
 h2 {
+    font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+p {
+    color: var(--text-muted);
 }
 
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5 rem;
-    background: #279219;
-    color: #0c831c;
+    background: var(--accent)
+    color: #000;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -93,15 +115,20 @@ h2 {
 }
 
 .btn:hover {
-    background: #070707;
+    background: #fff;
+    color: #000;
 }
 
 footer {
-    background: #5f5f5f;
-    color: rgb(81, 175, 87);
+    background: var(--bg-secondary);
+    color: var(--text-muted);
     text-align: center;
     padding: 2rem 0;
     font-size: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
@@ -110,29 +137,12 @@ footer {
         align-items: center;
 }
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
 }
 
-    html {
-        scroll-behavior: smooth;
-}
-
-    .article-content img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem 0;
-}
-
-    .article-imagine figcaption {
-        font-size: 0.875rem;
-        font-style: italic;
-        color: #0a0a0a;
-        margin-top: 0.5rem;
-        text-align: center;
-}
-    .my-element {
-        margin: 100px;
+    main {
+        padding: 3rem 0;
 
 }
+
 }
