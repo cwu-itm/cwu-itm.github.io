@@ -1,0 +1,135 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+html {
+    font-size: 16px;
+    color: #eee; 
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1e1e1e; 
+    margin: 1% auto;
+    width: 90%;
+    max-width: 57rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffcc00; 
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    color: #ffdd66;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #333;
+    color: #fff; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+p {
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+
+img {
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+ol, ul {
+    margin-top: 0;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+
+header {
+    position: relative; 
+    background-image: url("../images/Heading Background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.imagebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffdd66;
+}
