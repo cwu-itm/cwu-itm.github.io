@@ -5,22 +5,41 @@
 /* Global Reset / Base Styles */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f6f8;
-  color: #222;
+  font-family: Georgia, serif;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("../images/aurora.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  color: #cfe9ff;
+  padding: 2rem 1rem 1rem;
+
+  
 }
 
 
 /* Main Content Container */
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+main p {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70ch;
+  color: #8dee72b7;
+  text-align: center
 }
 
 
@@ -28,19 +47,23 @@ main {
 h1 {
   font-family: 'Merriweather', serif;
   font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  color: #b3fd9fb3;
 }
 
 h2 {
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #b3fd9fb3;
 }
 
 h3 {
   font-size: 1.25rem;
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #b3fd9fb3;
 }
 
 
@@ -48,6 +71,21 @@ h3 {
 p {
   margin-bottom: 1rem;
   max-width: 70ch;
+  line-height: 1.6;
+}
+
+/* Lists */
+ul {
+  margin-bottom: 2.5rem; 
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 
@@ -61,6 +99,10 @@ nav ul {
   gap: 1rem;
 }
 
+nav ul {
+  justify-content: center;
+}
+
 nav li {
   margin: 0;
 }
@@ -68,10 +110,7 @@ nav li {
 nav a {
   text-decoration: none;
   font-weight: 600;
-  color: #005fa3;
-  background: #eef5fb;
-  padding: 0.4rem 0.7rem;
-  border-radius: 4px;
+  color: #87f1e7a0;
 }
 
 nav a:hover {
@@ -86,21 +125,11 @@ nav a:hover {
   margin-bottom: 2rem;
 }
 
-
-/* Two Column Layout */
-.two-column {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1.5rem;
-  align-items: start;
-}
-
-
 /* Images */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
+  display: block;
 }
 
 
@@ -130,4 +159,24 @@ a:hover {
     flex-direction: column;
   }
 
+}
+
+/* Two Column Layout */
+.two-column {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.two-column figure {
+  margin: 0;
+}
+
+.two-column img {
+  width: 100% !important;
+  max-width: 250px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
