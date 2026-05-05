@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/styles.css" rel="stylesheet">
+      <title>Ana Hernandez | Portfolio</title>
+   </head>
+   <body>
+<!-- Page Header  -->
+      <header class="page-header">
+         <h1>Portfolio</h1>
+      </header>
+<!-- Main Content Area  -->
+      <main>
+         <!-- Module 1.1 Blog Post Starts Here-->
+         <article>
+            <header class="article-header">
+               <h2>Module 1.1 Blog Post</h2>
+            </header>
+            <h3>Why Systems Thinking Is the Foundation of Modern Engineering</h3>
+            <p>Engineering complex systems has never been a matter of solving isolated problems. Systems thinking asks us to zoom out to see not just the components, but the relationships, feedback loops, and emergent behaviors that arise when those components interact. At its core, systems thinking recognizes that a change in one part of a system ripples outward in ways that are not always predictable from examining parts in isolation. This perspective is especially critical in fields like aerospace, defense, and infrastructure, where a misunderstood dependency can cascade into catastrophic failure.</p>
+            <h3>The MBSE Shift</h3>
+            <p>For decades, systems engineering relied primarily on text heavy documentation, requirements specs, interface control documents, and design rationale buried in PDFs. Model-Based Systems Engineering (MBSE) challenges this idea by replacing static documents with living, interconnected digital models. As the source explains, MBSE "uses models to support the entire lifecycle of a system, from conception and design to verification and validation activities, through to decommissioning" (McGrath & Jonkker, 2023). The shift matters because models are interactive and traceable in ways that documents simply aren't, when one element changes, its downstream impacts are visible immediately across the whole model.</p>
+            <h3>What Makes a Methodology</h3>
+            <p>The word "methodology" is frequently misused as a synonym for "process," but the distinction is important. According to Estefan's foundation survey of MBSE methologies for INCOSE, a methodology is properly defined as "a collection of related processes, methods, and tools" (Estefan, 2008). Processes define what needs to be done, while methods define how to do it, and tools enhance the efficiency of execution. Conflating these three concepts leads engineering teams to adopt a tool while neglecting the underlying process discipline that gives that tool its power. True MBSE adoption requires alignement across all three layers.</p>
+            <h3>The Real World Value of MBSE</h3>
+            <p>The practical benefits of MBSE are well documented. Research evaluating MBSE adoption across industries consistently points to improvements in communcation, error reduction, and lifecycle cost savings (Campos et. al 2022). there are several identified key advantages, including enhanced collaboration through visual representation, improved accuracy by reducing document cenrtic inconsistencies, and greater ability to manage system of systems complexity (Campos et. al 2022). The most compellingly MBSE enables engineers to detect and resolve design conflicts before physical prototypes are built, a shift that can dramatically reduce rework costs in late stage development.</p>
+            <h3>Challenges and the Path Forward</h3>
+            <p>Despite its promise, MBSE adoption is not without friction. Organizations face steep learning curves, cultural resistance to abandoning familiar document based workflows,and the challenge of selecting among competing methodologies. Estefan's survey alone catalogues numerous candidate MBSE methodologies in active industry use, each with different strengths depending on the domain, lifecycle phase, and organizational context (Estefan, 2008). The takeaway is not that one methodology is superior, but that thoughtful selection matched to an organization's processes and culture is what drives real transformation. Systems thinking, after all, applies to the engineering organization itself, not just the systems it builds.</p>
+            <ul>
+               <li>MBSE shifts the source of truth from documents to interconnected digital models.</li>
+               <li>Methodology encompasses processes, methods, and tools, not just software.</li>
+               <li>Early conflict detection through simulation is one of MBSE's highest value capabilities.</li>
+               <li>Successful adoption requires cultural and process change alongside tooling investments.</li>
+            </ul>
+          
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Estefan, J. A. (2008). <em>Survey of model-based systems engineering (MBSE) methodologies</em> (Rev. B). INCOSE MBSE Initiative / Jet Propulsion Laboratory. https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf</li>
+                    <li>Campo, K., Teper, T., Eaton, C., Shipman, A., Bhatia, G., & Mesmer, B. (2022). Model-based systems engineering: Evaluating perceived value, metrics, and evidence through literature. <em>Systems Engineering</em>. https://www.researchgate.net/publication/364423108</li>
+                      <li>McGrath, A., & Jonker, A. (2023). <em>What is model-based systems engineering (MBSE)?</em> IBM Think. https://www.ibm.com/think/topics/model-based-systems-engineering</li>
+                  </ol>
+            </footer>
+         </article>
+
+         <!-- Module 1.2 Blog Post Starts here -->
+<article>
+            <header class="article-header">
+               <h2>Module 1.2 Blog Post</h2>
+               </header>
+                <h3>Systems Life Cycle Models</h3>
+
+            <p>Ask a room full of engineers which life cycle model is "best" and you will get a debate that runs well past dinner. Waterfall purists argue that iterative methods produce chaotic documentation trails. Systems theorists retreat to the abstract comfort of the V-model. Everyone is at least partly right and partly wrong. That productive tension is precisely what makes systems life cycle models one of the most intellectually alive corners of systems engineering. This post argues that the real insight behind life cycle models is not which one to pick, but understanding why each exists, what assumptions it encodes, and what it quietly asks you to give up.</p>
+
+            <h3>What a Life Cycle Model Actually Does</h3>
+            <p>At its core, a systems life cycle model is a framework that organizes the activities, decisions, and artifacts that carry a system from an idea all the way through to retirement. According to Life Cycle Models (2025), a life cycle represents the evolution of a system, product, service, or other human-made entity from conception through retirement. That definition sounds deceptively simple. In practice, a life cycle model answers three questions: what needs to happen, when should it happen, and who is responsible. What is easy to miss is that by answering those questions, a life cycle model also encodes assumptions about risk, uncertainty, and stakeholder relationships. A model that assumes requirements are stable at the outset will fail spectacularly in an environment where they are not. This is the hidden contract every model makes with the project that adopts it.</p>
+            <h3>The Waterfall Model</h3>
+            <p>No model has been critiqued more thoroughly than Waterfall, and arguably none has been more widely misapplied. The model's sequential logic includes requirements first, then design, then implementation, then verification, which made it the dominant idea for government and defense projects through much of the late twentieth century. Its appeal is real, it produces clear documentation, defined milestones, and auditable decision points. For projects where requirements are genuinely stable and the cost of late stage changes is catastrophic, that discipline is a feature, not a bug. The trouble is that Waterfall was broadly applied to domains where its central assumption, fully knowable upfront requirements simply does not hold. What critics often overlook, is that Winston Royce, whose 1970 paper is frequently cited as Waterfall's origin, actually argued that a pure sequential model was risky and recommended iteration (Holt).</p>
+            <h3>The V-Model</h3>
+            <p>The V-model extends Waterfall's logic by making the relationship between decomposition and integration explicit. The left side of the V represents the breakdown of requirements into subsystems and components while the right side mirrors each of those steps with a corresponding verification or validation activity. The elegance of the V-model lies in its insistence that testing is the logical inverse of design and must be planned in parallel with it, not tacked on at the end. For safety-critical systems in aerospace, defense, and medical devices, this pairing of development with validation is often a regulatory requirement as much as a best practice (Yokell, 2025). The model forces teams to ask, at every decomposition step, how they will know the system works. Its weakness mirrors Waterfall's, it still assumes requirements can be fully defined before design begins, creating a risk of false rigor built on uncertain foundations.</p>
+            <h3>Agile and Iterative Methods</h3>
+            <p>The widespread adoption of Agile methodologies represents the largest shift in systems development practice in the past three decades. The core insight of Agile is that requirements are not discovered before development, they are negotiated throughout it. By delivering working increments early and incorporating stakeholder feedback at short intervals, iterative models compress the feedback loop between what was built and what was actually needed. Holt traces iterative and incremental development back further than most practitioners realize, to NASA's Project Mercury in the early 1960s, demonstrating that adaptive iteration is not a modern invention but a rediscovery of sound engineering instincts. The challenge arises at scale, large systems with hardware components, safety certification requirements, or multi-organization supply chains do not naturally fit a sprint rhythm.</p>
+            <h3>The Hidden Dimension</h3>
+            <p>The most under discussed variable in life cycle model selection is organizational fit. A model's success depends not only on the technical characteristics of the system being built but on the culture, incentive structures, and capabilities of the organization building it. An Agile model implemented inside an organization with rigid hierarchical approval processes will fail, not because Agile is wrong for the problem, but because the organizational substrate cannot support it. A Waterfall approach executed by an experienced team with stable stakeholder relationships can outperform a dysfunctionally implemented Agile process on almost any metric. This is why the framing of "which model is best" is the wrong question. The right question is what combination of technical characteristics, risk profile, stakeholder dynamics, and organizational context points toward a particular approach, and what modifications might compensate for that model's inherent weaknesses in this specific situation?</p>
+            <h3>Key Takeaways</h3>
+
+            <ul>
+                  <li>Every life cycle model encodes assumptions about requirements stability, risk, and organizational context, choosing a model means accepting those assumptions.</li>
+                  <li>Waterfall's troubled legacy stems less from the model itself than from its misapplication to environments where requirements were never actually stable.</li>
+                  <li>Agile's strengths in high volatility environments are well documented, but scaling it to hardware intensive or regulated systems requires careful hybrid design.</li>
+                  <li>Organizational culture is as important as technical fit, the best model is the one the organization can actually execute.</li>
+            </ul>
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                  <li>John, H., Systems Engineering Demystified (2nd ed.). Packt</li>
+                  <li>Yokell, M., Endler, D., Roedler, G. (2025). Life Cycle Models. https://sebokwiki.org/wiki/Life_Cycle_Models</li>
+                  <li>Kozma, D., Varga, P., Larrinaga, F. (2021). System of Systems Lifecycle Management—A New Concept Based on Process Engineering Methodologies. https://www.mdpi.com/2076-3417/11/8/3386</li>
+               </ol>
+  </footer>
+
+</article>
+
+         <!-- Module 2.1 Blog Post Starts here -->
+
+         <!-- Module 2.2 Blog Post Starts here -->
+
+         <!-- Module 2.3 Blog Post Starts here -->
+
+         <!-- Module 3.1 Blog Post Starts here -->
+
+         <!-- Module 3.2 Blog Post Starts here -->
+
+      </main>
+<!-- Page Footer  -->
+      <footer class="page-footer">
+       <p>Copyright &copy; 2025</p>
+      </footer>
+   </body>
+</html>
