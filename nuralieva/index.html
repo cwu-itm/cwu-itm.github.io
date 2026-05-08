@@ -21,6 +21,7 @@
 
          <li><a href="#article3">Designing for People: How Perception, Attention, and Empathy Shape User Experience</a></li>
 
+         <li><a href="#article4">What Makes Digital Systems Usable: Memory, Mental Models, Consistency, and Feedback</a></li>
          </ul>
 
       </header>
@@ -848,15 +849,15 @@
 
                <footer class="article-footer">
 
-                  <h3>Sources:</h3>
+                  <h3 id="references"><strong>References</strong></h3>
 
                   <ol>
 
                     <li>Holt, J. (2020). <em>Systems engineering demystified (2nd ed)</em> (Chs. 1–5). From <a href="https://cwu.instructure.com/courses/116124/files/15995843?wrap=1"> https://cwu.instructure.com/courses/116124/files/15995843?wrap=1</a></li>
                      <p></p>
-                    <li>International Organization for Standardization (ISO). (2019). <em>ISO 9241-210: Ergonomics of human-system interaction. </em>. From <a href="https://www.iso.org/standard/77520.html"> https://www.iso.org/standard/77520.html</a></li>
+                    <li>International Organization for Standardization (ISO). (2019). <em>ISO 9241-210: Ergonomics of human-system interaction</em>. From <a href="https://www.iso.org/standard/77520.html"> https://www.iso.org/standard/77520.html</a></li>
                      <p></p>
-                    <li>IDEO. (2015). <em>Field Guide to Human-Centered Design. </em>. From <a href="https://d1r3w4d5z5a88i.cloudfront.net/assets/guide/Field%20Guide%20to%20Human-Centered%20Design_IDEOorg_English-0f60d33bce6b870e7d80f9cc1642c8e7.pdf"> https://d1r3w4d5z5a88i.cloudfront.net/assets/guide/Field%20Guide%20to%20Human-Centered%20Design_IDEOorg_English-0f60d33bce6b870e7d80f9cc1642c8e7.pdf</a></li>
+                    <li>IDEO. (2015). <em>Field Guide to Human-Centered Design</em>. From <a href="https://d1r3w4d5z5a88i.cloudfront.net/assets/guide/Field%20Guide%20to%20Human-Centered%20Design_IDEOorg_English-0f60d33bce6b870e7d80f9cc1642c8e7.pdf"> https://d1r3w4d5z5a88i.cloudfront.net/assets/guide/Field%20Guide%20to%20Human-Centered%20Design_IDEOorg_English-0f60d33bce6b870e7d80f9cc1642c8e7.pdf</a></li>
                      <p></p>
                     <li>Yablonski, J. (2020). <em>UX Laws: 100 Laws of UX Design</em>. From <a href="https://lawsofux.com/book/"> https://lawsofux.com/book/</a></li>
                   
@@ -867,6 +868,362 @@
          </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
+
+         <article>
+
+             <header class="article-header">
+
+               <h2 id="article4"><strong>What Makes Digital Systems Usable: Memory, Mental Models, Consistency, and Feedback</strong></h2>
+
+
+                <h3>Navigation</h3>
+
+               <ul>
+
+               <li><a href="#usablesys">What Makes Digital Systems Usable</a></li>
+
+               <li><a href="#m&m">Memory and Mental Models</a></li>
+
+               <li><a href="#tesler">Tesler’s Law and Complexity</a></li>
+
+               <li><a href="#feedback">Consistency and Feedback</a></li>
+
+               <li><a href="#realuse">Cognitive Load in Real Use</a></li>
+
+               <li><a href="#pererflection">Personal Reflection</a></li>
+
+               <li><a href="#conc">Conclusion</a></li>
+
+               <li><a href="#ref">Reference</a></li>
+
+               <li><a href="#key">Key Takeaways</a></li>
+
+               </ul>
+
+               </header>
+
+               <h3 id="usablesys"><strong>What Makes Digital Systems Usable</strong></h3>
+
+               <p>
+               Digital systems are usable when they fit the way people think, remember, and make 
+               decisions. A usable interface does not simply look polished or offer powerful features. 
+               It helps users accomplish goals without forcing them to work harder than necessary. 
+               In practice, that means the system should reduce memory demands, support familiar 
+               patterns, and provide feedback that reassures users about what is happening. When 
+               those elements are missing, the experience becomes confusing, error-prone, and 
+               mentally exhausting. Usability is therefore not just a design preference, but a 
+               cognitive requirement that shapes whether a system feels manageable or frustrating.
+               </p>
+
+               <p>
+               This idea becomes clearer when we think about how users approach technology in 
+               real life. People usually do not sit down with a perfectly focused mind and a 
+               detailed understanding of how a system works. Instead, they arrive with expectations 
+               formed by previous experiences, habits, and assumptions about what should happen 
+               next. Those expectations influence how they interpret labels, icons, menus, and 
+               messages. If the interface matches their expectations, they can move through tasks 
+               smoothly. If the interface behaves unpredictably, they must stop and figure out the 
+               rules, which increases cognitive load and lowers confidence. That is why usability 
+               is closely tied to human psychology rather than just surface-level aesthetics.
+               </p>
+
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" 
+                alt="Laptop displaying code on a desk" />
+
+                <p><strong>Key takeaways:</strong></p>
+                  <ul>
+                     <li><strong>Usability is cognitive as much as visual.</strong></li>
+                     <p></p>  
+                     <li><strong>Users rely on prior experience and expectations.</strong></li>
+                     <p></p>
+                     <li><strong>Interfaces should reduce mental effort, not increase it.</strong></li>
+                     <p></p>
+                  </ul>
+
+               <h3 id="m&m"><strong>Memory and Mental Models</strong></h3>
+
+               <p>
+               Memory strongly affects interaction because users rarely remember every detail 
+               of a system while they are using it. Most digital tasks involve some degree of 
+               interruption, distraction, or time pressure, and those conditions make memory even 
+               less reliable. Users depend on cues in the interface because they cannot reasonably 
+               be expected to recall every instruction, path, or function from memory. Johnson 
+               (2020) explains that design should support human cognitive limits rather than assume 
+               people can remember unlimited information. This is especially important when a 
+               system requires several steps, multiple decisions, or repeated use over time. The 
+               more a design depends on memory, the more vulnerable it becomes to confusion and errors.
+               </p>
+
+               <p>
+               Mental models are the internal expectations people build about how a system should 
+               behave. Megan Chan (2024) describes mental models as the user’s understanding of how 
+               things work based on past experience. These models matter because they shape what users 
+               expect when they click a button, open a menu, or submit a form. For example, if a user 
+               expects a cart icon to show selected items, but the icon instead opens a promotional 
+               page, that mismatch creates immediate friction. The user must now pause and reinterpret 
+               the interface, which interrupts the task. A strong interface works with the user’s 
+               mental model rather than against it.
+               </p>
+
+               <p>
+               A good design example is a checkout flow that preserves common expectations. If 
+               users see a progress indicator, a clear back button, and recognizable field labels, 
+               they are more likely to feel oriented and in control. If the flow instead hides 
+               steps or changes behavior unexpectedly, users must rely on guesswork. That guesswork 
+               is mentally expensive because it forces users to hold more information in working 
+               memory. Yablonski (2024) argues that good UX design is shaped by psychology, 
+               meaning the interface should make the user’s mental effort as small as possible. 
+               In that sense, design is not only about adding useful features but it is also about 
+               removing unnecessary thinking.
+               </p>
+
+               <p>
+               The importance of mental models becomes even more obvious in everyday systems 
+               that people use repeatedly. A student portal, for example, might include announcements, 
+               grades, assignments, and financial information in separate sections. If those 
+               sections use inconsistent labels or different interaction patterns, the user 
+               must constantly rebuild their understanding of where things are located. Even 
+               if the site contains all the necessary information, it still feels difficult 
+               because the system does not align with the user’s expectations. Good usability 
+               depends on predictability, and predictability depends on matching users’ existing 
+               mental models when possible. When that match exists, the interface becomes easier 
+               to navigate, even if the underlying system is complex.
+
+               <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" 
+               alt="Person working at a desk with a computer and notes" />
+
+               </p>
+
+               <h3 id="tesler"><strong>Tesler’s Law and Complexity</strong></h3>
+
+               <p>
+               Tesler’s Law, also called the law of conservation of complexity, is one of the 
+               most useful ideas for understanding usability. The law says that every system 
+               has some unavoidable complexity, and the key question is whether that complexity 
+               is handled by the user or by the system itself. Tesler did not claim that 
+               complexity disappears. He rather argued that it should be managed intelligently 
+               so the user does not bear more than necessary. This principle applies directly to 
+               digital interfaces because many tasks involve hidden rules, technical constraints, 
+               and multiple possible outcomes. If those complexities are exposed too directly, 
+               the user ends up doing the work of the system.
+               </p>
+
+               <p>
+               Yablonski (2024) connects this idea to design by showing that psychologically 
+               informed interfaces can reduce frustration and improve task completion. A complex 
+               system can still be usable if it presents information gradually, uses smart defaults, 
+               and minimizes unnecessary decisions. For example, a travel booking site may need 
+               to manage date rules, fare classes, luggage policies, and passenger information. 
+               Those rules are inherently complex, but the interface can make them easier to 
+               handle through guided steps and clear explanations. If the same site simply dumps 
+               all decisions onto one screen, the user is left with too much to process at once. 
+               Tesler’s Law reminds designers that simplicity is often achieved by moving 
+               complexity behind the scenes, not by pretending it does not exist.
+               </p>
+
+               <p>
+               This matters because many poor interfaces fail not by being technically broken, 
+               but by making users absorb avoidable complexity. A form with too many required 
+               fields, vague instructions, or hidden requirements creates uncertainty before 
+               the task even begins. Users may hesitate because they do not know which fields 
+               matter, which ones are optional, or what format is expected. That hesitation is 
+               not a sign of user weakness. It is a sign that the system has not done enough 
+               to support the interaction. As Johnson (2020) emphasizes, good design should 
+               reduce cognitive strain by making expectations visible and behavior consistent. 
+               When complexity is hidden from the user’s immediate view, the experience becomes 
+               much easier to manage.
+               </p>
+
+               <p>
+               A related example is account setup. Many services require users to create passwords, 
+               choose preferences, verify identity, and accept permissions before they can even 
+               begin the main task. Each of those steps may be necessary from a business perspective, 
+               but every extra step adds burden. If the system does not explain why each step 
+               exists, users may feel that the process is arbitrary or intrusive. A more usable 
+               system would explain requirements in plain language and only ask for information 
+               when it is truly needed. That approach respects the user’s time and mental energy 
+               while still meeting technical or security goals.
+               </p>
+
+               <h3 id="feedback"><strong>Consistency and Feedback</strong></h3>
+
+               <p>
+               Consistency improves usability because it allows users to reuse what they already 
+               know. When the same actions produce the same results across a system, users can rely 
+               on habit instead of relearning each screen. Megan Chan (2024) notes that users 
+               benefit when interface behavior remains predictable and stable. This is especially 
+               important for navigation, button placement, icon meaning, and terminology. If one 
+               page uses “Save” while another uses “Done” for the same action, users may pause to 
+               determine whether there is a difference. Small inconsistencies like that can accumulate 
+               into a larger sense of confusion.
+               </p>
+
+               <p>
+               Consistency also matters because it supports efficiency. People are naturally good at 
+               recognizing patterns, and once they learn a pattern, they expect to use it again. 
+               Johnson (2020) argues that interfaces should reduce the amount of thinking users must 
+               do by making patterns clear and repeatable. A good example is placing primary action 
+               buttons in the same location throughout a workflow. If a site changes the location of 
+               the submit button on every page, users are forced to search instead of act. That 
+               extra searching creates friction and slows task completion. When layout and interaction 
+               patterns stay stable, users can focus on the content rather than the mechanics of the 
+               interface.
+               </p>
+
+               <p>
+               Feedback is the other side of usability because users need to know whether the system 
+               understood their action. A click without feedback creates uncertainty, and uncertainty 
+               quickly becomes frustration. Kathryn Whitenton (2013) explains that systems should 
+               show status and communicate what is happening so users can judge whether they need to 
+               wait, retry, or continue. Feedback can take many forms, including loading indicators, 
+               confirmation messages, progress bars, success icons, or error explanations. Each of 
+               these cues helps users stay oriented. Without them, users may repeat actions 
+               unnecessarily or abandon the task because they assume the system failed.
+               </p>
+
+               <p>
+               The lack of feedback is especially noticeable in form submissions and online transactions. 
+               If a user clicks “Submit” and nothing appears to happen, they will often click again or 
+               refresh the page. That behavior is understandable because the system has not indicated 
+               whether it is working. A visible loading state or confirmation screen would prevent that 
+               confusion. In a well-designed system, feedback does not merely say “something happened.” 
+               It also explains what the user should do next, which reduces uncertainty and keeps the 
+               interaction moving. That is one reason feedback is so closely connected to trust. Users 
+               trust systems that clearly communicate their state.
+               </p>
+
+               <p>
+               Poor feedback can also create social and emotional friction. If a user makes a mistake 
+               but receives only a generic error message, they may feel blamed rather than supported. 
+               A helpful system explains what went wrong and how to fix it. For example, instead of 
+               saying “Invalid input,” it should say which field is wrong and why. This difference 
+               matters because vague errors force users to guess, while specific feedback allows them 
+               to recover efficiently. That recovery process is part of usability, not separate from it. 
+               A system that helps users recover gracefully is more usable than one that simply blocks them.
+               </p>
+
+               <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" '
+               alt="Person using laptop with interface on screen" />
+
+               <h3 id="realuse"><strong>Cognitive Load in Real Use</strong></h3>
+
+               <p>
+               Cognitive load becomes especially visible when users are under pressure. Many people 
+               interact with digital systems while multitasking, distracted, or trying to finish quickly. 
+               In those moments, they have less mental capacity for figuring out unclear instructions or 
+               strange behavior. Kathryn Whitenton (2013) argues that reducing cognitive load improves 
+               usability because the interface should not demand more attention than necessary. A cluttered 
+               dashboard, a confusing icon set, or a navigation system with too many branches can become 
+               exhausting simply because the user must spend too much mental energy orienting themselves. 
+               Usability improves when the interface does more of that work for them.
+               </p>
+
+               <p>
+               This is why cluttering is such a serious problem. A cluttered interface is not just 
+               visually busy. It also taxes working memory. Every extra element competes for attention, 
+               and every unnecessary option increases the chance of hesitation. Yablonski (2024) 
+               explains that people are sensitive to decision load, meaning the number and arrangement 
+               of choices affects how easily they move forward. A form or dashboard can contain many 
+               features and still feel usable if the information is organized clearly. But if everything 
+               is presented at once without hierarchy, the user must mentally sort what matters and what 
+               does not. That sorting effort is part of the burden the interface has failed to remove.
+               </p>
+
+               <p>
+               One of the most effective ways to reduce this burden is progressive disclosure. Instead 
+               of showing every setting or option immediately, the system reveals details only when 
+               they become relevant. This makes the interface feel lighter because users see what 
+               they need in the moment without being overwhelmed by everything else. Progressive 
+               disclosure is not about hiding functionality. It is about sequencing complexity in a 
+               way that matches human attention. This principle is especially useful in settings 
+               like software preferences, booking systems, or educational portals, where users only 
+               need certain information at certain times. When used well, it allows the interface to 
+               remain powerful without feeling oppressive.
+               </p>
+
+               <h3 id="pererflection"><strong>Personal Reflection</strong></h3>
+
+               <p>
+               My own experience with poorly designed systems has shown that inconsistency is one 
+               of the fastest ways to create frustration. I have used portals where one section 
+               looked modern and simple while another section felt old, crowded, and completely 
+               different. Even when the information was technically available, I still had to stop 
+               and relearn how each section worked. That experience made the interface feel larger 
+               and more difficult than it really was. The problem was not the amount of content alone. 
+               It was the lack of continuity. Once the patterns disappeared, so did my confidence.
+               </p>
+
+               <p>
+               I have also noticed that lack of feedback can be more stressful than a visible error. 
+               If a site does not show whether something is loading, I immediately begin wondering 
+               whether I should click again or wait. That uncertainty makes even a short delay feel 
+               longer. A simple progress indicator would reduce that anxiety because it confirms that 
+               the system is responding. These experiences show why usability is closely tied to trust. 
+               People trust systems that communicate clearly, behave consistently, and respect their 
+               time. When a system fails to do those things, users may blame themselves even though 
+               the design is the real problem.
+               </p>
+
+               <p><strong>Practical takeaways</strong></p>
+                  <ul>
+                     <li><strong>Use familiar patterns to support recognition.</strong></li>
+                     <p></p>
+                     <li><strong>Keep layout and behavior consistent across screens.</strong></li>
+                     <p></p>
+                     <li><strong>Always show clear feedback after user actions.</strong></li>
+                  </ul>
+
+               <h3 id="conc"><strong>Conclusion</strong></h3>
+
+               <p>
+               Digital systems are usable when they respect how people think, remember, and make 
+               sense of the world. Memory and mental models shape what users expect, so good design 
+               uses familiar patterns and visible cues to support those expectations. Tesler’s Law 
+               reminds us that complexity cannot be eliminated, but it can be handled in a way that 
+               protects the user from unnecessary effort. Consistency helps users transfer knowledge 
+               from one part of an interface to another, and feedback helps them stay oriented and 
+               recover from errors. Together, these principles reduce cognitive load and make 
+               interactions feel smoother and more dependable. Johnson (2020), Yablonski (2024), and 
+               Nielsen Norman Group’s research all reinforce the same basic conclusion: usable systems 
+               are built around people, not around the assumptions of the interface itself.
+               </p>
+
+               <h3 id="key"><strong>Key Takeaways:</strong></h3>
+                  <ul>
+                     <li><strong>Usability depends on how well a system fits human memory, habits, and expectations.</strong></li>
+                     <p></p>
+                     <li><strong>Mental models shape what users expect, so familiar patterns reduce confusion.</strong></li>
+                     <p></p>
+                     <li><strong>Tesler’s Law shows that complexity cannot be removed, only managed better.</strong></li>
+                     <p></p>
+                     <li><strong>Consistency helps users transfer learning across screens and tasks.</strong></li>
+                     <p></p>
+                     <li><strong>Feedback reassures users, reduces uncertainty, and supports task completion.</strong></li>
+                     <p></p>
+                     <li><strong>Reducing cognitive load makes systems easier to learn, use, and trust.</strong></li>
+                  </ul>
+
+               <footer class="article-footer">
+
+                  <h3 id="ref"><strong>Reference</strong></h3>
+
+                  <ol>
+
+                    <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em>. From <a href="https://www.amazon.com/Designing-Mind-Understanding-Interface-Guidelines/dp/0128182024"> https://www.amazon.com/Designing-Mind-Understanding-Interface-Guidelines/dp/0128182024</a></li>
+                     <p></p>
+                    <li>Kathryn Whitenton. (2013, December 21). <em>Minimize cognitive load to maximize usability</em>. From <a href="https://www.nngroup.com/articles/minimize-cognitive-load/"> https://www.nngroup.com/articles/minimize-cognitive-load/</a></li>
+                     <p></p>
+                    <li>Megan Chan. (2024, January 25). <em>Mental models and user experience design</em>. From <a href="https://www.nngroup.com/articles/mental-models/ "> https://www.nngroup.com/articles/mental-models/</a></li>
+                     <p></p>
+                    <li>Yablonski, J. (2024). <em>Laws of UX: Using Psychology to Design Better Products & Services</em>. From <a href="https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/"> https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/</a></li>
+                    <p></p>
+                    <li>Laws of UX. (n.d.). <em>Tesler’s Law</em>. From <a href="https://lawsofux.com/teslers-law/"> https://lawsofux.com/teslers-law/</a></li>
+                    
+                  </ol>
+            </footer>
+
+
+         </article>
 
          <!-- Module 2.3 Blog Post Starts here -->
 
