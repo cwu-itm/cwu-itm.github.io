@@ -174,6 +174,51 @@
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Designing for Flow</h2>
+            </header>
+            <h3>Introduction</h3>
+               <p>There is a moment in almost every app where you have to stop. You are looking for a button or trying to figure out whether your last action actually worked or staring at a screen full of options with no sense of where to start. That moment is the result of an app that was not designed around how people actually think and move through digital interfaces. This post is about what it means to design for flow and how, something as simple as layout and logic can shape user behavior. I will explore what three UX laws reveal about the gap between interfaces that feel natural and ones that fight you every step of the way.</p>
+            <h3>Interface Layout Shaping Behavior</h3>
+               <p>The layout of an interface is not just an aesthetic decision. It is a visual set of instructions. Where elements are placed, how large they are, and grouped can tell the user what to do before they read a single word. When that structure is clear, a user can move through a screen quickly with confidence. When it is not, users slow down, can make errors, and eventually lose trust in the system. Johnson (2020) explains that systems must communicate clearly at every step so users always know what happened, what is happening, and what to do next. A well-designed interface uses layout to deliver that communication automatically. A poorly structured one will leave users guessing.</p>
+            <h3>Aesthetic-Usability Effect</h3>
+               <p>One of the more counterintuitive ideas in UX design is that a visually appealing interface is often perceived as easier to use. In spite of the fact that it is not objectively simpler. This is the Aesthetic-Usability Effect. Users who find an interface attractive are more tolerant of minor usability problems and more likely to persist through poor design. Nielsen Norman Group (2020) notes that this effect can actually mask usability problems during testing because users who like how something looks will report a better experience than the functionality actually delivered. This means that visual quality is not separate from usability. But instead is part of it. An interface that looks polished signals to users that care was taken, and that signal affects how they experience every interaction that follows. It is like reverse 'tainting the pot'.</p>
+               <div class="image-bar">
+                  <figure>
+                     <img src="https://images.unsplash.com/photo-1540612597331-63c67ea382fc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile Aesthetics">
+                     <figcaption>Photo by <a href="https://unsplash.com/@uxstore">UX Store</a> on <a href="https://unsplash.com/photos/jJT2r2n7lYA">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+                  </figure>
+               </div>
+            <h3>Von Restorff Effect</h3>
+               <p>The Von Restorff Effect, also called the Isolation Effect, states that when multiple similar elements are present, the one that looks different from the rest is the one users will notice and remember. UXtweak (2024) describes how this principle is applied in interface design to draw attention to primary calls to action, highlight important status changes, and guide users toward key decisions. The most obvious example is a "primary button". In a row of similar options, the one filled with a strong color stands out immediately. That visual difference is not decoration. It is a signal that tells the user where to direct their attention and possibly perform an action. However, there is a risk of overusing this effect, just as there is a risk to underusing it. If too many elements are visually distinct, then nothing would stand out and the effect would be lost entirely.</p>
+               <div class="image-bar">
+                  <figure>
+                     <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Von Restorff Effect">
+                     <figcaption>Photo by <a href="https://unsplash.com/@halacious">Hal Gatewood</a> on <a href="https://unsplash.com/photos/OV44gxH71DU">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+                  </figure>
+               </div>
+            <h3>Postel's Law</h3>
+               <p>Postel's Law states that systems should be conservative in what they send and liberal in what they accept. In UX terms, this means interfaces should accept user input in as many reasonable forms as possible while being consistent in what is output. For example, a phone number field that rejects input because the user typed dashes instead of spaces is a violation of this principle. The interface is forcing the user to conform to the system rather than the system adapting to the user. Yablonski (2024) frames this as designing with empathy, accepting that users will interact with a system in ways that were not anticipated and building interfaces that handle that gracefully rather than returning errors.</p>
+            <h3>My Personal Experience With Interfaces</h3>
+               <p>The ERP system I use at work is a clear example of what happens when interface logic is not designed around user behavior. The receiving workflow requires three separate screens to complete one task. Each screen uses different terminology for the same fields, buttons are placed in different corners depending on which screen you are on, and there is no progress indicator showing where you are in the process. The Von Restorff Effect works against you here because nothing is visually distinct in a meaningful way. Every screen looks equally important, which means nothing guides you toward the next action. New employees make errors in this workflow constantly, not because the task is complicated but because the interface gives them no signal about where to go or what to do next. A simple progress bar and consistent layout would solve 90% of it.</p>
+               <div class="image-bar">
+                  <figure>
+                     <img src="https://images.unsplash.com/photo-1573495613179-848ffd29f962?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Difficult UX">
+                     <figcaption>Photo by <a href="https://unsplash.com/@wocintechchat">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/KdeNuKdMQH4">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+                  </figure>
+               </div>
+            <h3>Conclusion</h3>
+               <p>Interface design is not purely about making things look good. It is about making sure users can move through a system without confusion. The Aesthetic-Usability Effect shows that visual quality shapes perception and tolerance. The Von Restorff Effect shows that visual distinction directs attention and guides action. Postel's Law shows that systems should absorb the messiness of human input rather than forcing users to be precise. Each of these principles points to the same thing: good interface logic puts the burden on the system, not the user. When that works, users will flow through an interface barely noticing it. When it does not  get frustrated and lose confidence in the product.</p>
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                  <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+                  <li>Nielsen Norman Group. (2020, September 27). <em>The aesthetic-usability effect.</em> Retrieved May 20, 2026 from <a href="https://www.nngroup.com/articles/aesthetic-usability-effect/">https://www.nngroup.com/articles/aesthetic-usability-effect/</a></li>
+                  <li>UXtweak. (2024, May 10). <em>Von Restorff effect: UX law of distinctiveness.</em> Retrieved May 20, 2026 from <a href="https://blog.uxtweak.com/von-restorff-effect/">https://blog.uxtweak.com/von-restorff-effect/</a></li>
+                  <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products and services</em> (2nd ed.). O'Reilly Media.</li>
+            </footer>
+         </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
 
