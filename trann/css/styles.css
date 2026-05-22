@@ -1,54 +1,145 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+/* ==========================================================================
+   1. Reset & Global Base Styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: #2d3748; /* Dark slate for high readability */
+    background-color: #f7fafc; /* Soft off-white to reduce eye strain */
+    padding: 0;
+}
+
+/* ==========================================================================
+   2. Typography & Hierarchy
+   ========================================================================== */
+h1, h2, h3 {
+    color: #1a202c; /* Deep near-black for strong headings */
+    font-weight: 700;
     line-height: 1.3;
 }
 
-main {
-
-    margin-bottom:3rem;
-
-}
-
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
 }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+    font-size: 1.85rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.35rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    color: #2b6cb0; /* Accent blue for sub-sections */
 }
 
-ol {
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+strong {
+    color: #1a202c;
+    font-weight: 600;
+}
 
+/* ==========================================================================
+   3. Layout Containers
+   ========================================================================== */
+.page-header {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+main {
+    max-width: 800px; /* Optimal line length for reading comfort */
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   4. Article Components
+   ========================================================================== */
+article {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.article-header h2 {
+    color: #2d3748;
+}
+
+/* Fallback for global H2 modules outside structural tags */
+main > h2 {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+}
+
+/* ==========================================================================
+   5. Footer & References
+   ========================================================================== */
+.article-footer {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.article-footer h3 {
+    font-size: 1.1rem;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+
+.article-footer p {
+    font-size: 0.95rem;
+    color: #718096;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    text-indent: -1rem; /* Clean hanging indent for citations */
+}
+
+/* ==========================================================================
+   6. Responsive Design
+   ========================================================================== */
+@media (max-width: 768px) {
+    main {
+        margin: 1.5rem auto;
+    }
+    
+    article {
+        padding: 1.5rem;
+        border-radius: 0; /* Full width appearance on tiny screens */
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+}
+.apple-map-img {
+    display: block;       /* Places the image on its own line */
+    max-width: 50%;       /* Restricts size so it is smaller and cleaner (adjust as needed) */
+    height: auto;         /* Keeps the original aspect ratio aspect intact */
+    margin: 2.5rem auto;  /* Centers the image horizontally and adds nice vertical spacing */
+    border: 1px solid #e2e8f0; /* Adds a subtle border around the UI screenshot */
+    border-radius: 12px;  /* Matches modern smartphone UI screen curves */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); /* Gives it a sleek, floating depth look */
 }
