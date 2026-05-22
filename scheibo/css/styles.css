@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: #f5f0e8;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -51,4 +51,70 @@ ol {
     list-style-type: none;
     font-size:.875rem;
 
+}
+
+/* Article Section Separation */
+article {
+   border-top: 4px solid #222;
+   padding: 2rem 0 2.5rem 0;
+   margin-bottom: 2rem;
+}
+
+.article-header h2 {
+   background-color: #222;
+   color: #f5f0e8;
+   padding: 0.5rem 1rem;
+   display: inline-block;
+   margin-bottom: 1.5rem;
+}
+
+/* Images */
+article img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 1.5rem 0 0.5rem 0;
+}
+
+/* Sources block */
+.sources {
+   background-color: #d3d2d2;
+   border-left: 4px solid #222;
+   padding: 1rem 1.5rem;
+   margin-top: 2rem;
+}
+
+.sources ol {
+   list-style-type: decimal;
+   padding-left: 1.5rem;
+   font-size: 0.875rem;
+   line-height: 1.7;
+}
+
+.sources li {
+   margin-bottom: 0.4rem;
+}
+
+/* Portfolio Header */
+.page-header {
+   background-image: url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1200&auto=format&fit=crop');
+   background-size: cover;
+   background-position: center;
+   padding: 3rem 1.5rem;
+   margin-bottom: 2rem;
+   position: relative;
+}
+
+.page-header::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 0.55);
+}
+
+.page-header h1 {
+   position: relative;
+   color: #f5f0e8;
+   margin: 0;
 }
