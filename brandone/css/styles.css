@@ -52,3 +52,38 @@ ol {
     font-size:.875rem;
 
 }
+
+figure {
+    display: flex;
+    justify-content: center; 
+    margin: 1.5rem 0; 
+}
+
+.article-header {
+    background-color: #163391; 
+    color: #FFF;            
+    padding: 1rem;          
+}
+
+.article-header h2 {
+    color: inherit;
+    margin: 0;              
+}
+
+article > *:not(.article-header) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;     
+    padding-right: 1rem;    
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;       
+    height: auto;           
+}
+
+p, ol, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;    
+}
