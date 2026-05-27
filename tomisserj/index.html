@@ -9,7 +9,15 @@
    <body>
 <!-- Page Header  -->
       <header class="page-header">
-         <h1>Portfolio</h1>
+         <h1 class="site-logo">DEV/BLOG</h1>
+         <nav id="main-nav">
+            <a href="#">Technology</a>
+            <a href="#">Culture</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">People</a>
+            <a href="#">About</a>
+            <a href="#">Subscribe</a>
+         </nav>
       </header>
 <!-- Main Content Area  -->
       <main>
@@ -171,8 +179,6 @@
             </footer>
          </article>
 
-         <!-- Module 2.3 Blog Post Starts here -->
-
          <!-- Module 3.1 Blog Post Starts here -->
          <article>
             <header class="article-header">
@@ -217,11 +223,52 @@
                   <li>Nielsen Norman Group. (2020, September 27). <em>The aesthetic-usability effect.</em> Retrieved May 20, 2026 from <a href="https://www.nngroup.com/articles/aesthetic-usability-effect/">https://www.nngroup.com/articles/aesthetic-usability-effect/</a></li>
                   <li>UXtweak. (2024, May 10). <em>Von Restorff effect: UX law of distinctiveness.</em> Retrieved May 20, 2026 from <a href="https://blog.uxtweak.com/von-restorff-effect/">https://blog.uxtweak.com/von-restorff-effect/</a></li>
                   <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products and services</em> (2nd ed.). O'Reilly Media.</li>
+                     </ol>
             </footer>
          </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
-
+         <article>
+            <header class="article-header">
+               <h2>Interaction That Matters</h2>
+               <p>How Timing, Feedback, and Ethics Shape the Way a User Feels</p>
+            </header>
+            <h3>Introduction</h3>
+               <p>Most users cannot explain why one app feels satisfying and another feels exhausting, they just know one feels good to use and the other does not. The difference is usually not about features. Instead, it is almost always about how the interface responds or how fast it reacts or how it handles the moments that matter most. This post explores how timing, feedback, and ethical design decisions shape the way users engage with digital systems. And, more importantly, what they remember after the interaction is over.</p>
+            <h3>The Doherty Threshold</h3>
+               <p>The Doherty Threshold states that system response time should be 400 milliseconds or less to keep users engaged. It is called the productive flow state. When a system responds faster than that, the interaction feels seamless. When it does not, users notice and feel lag. They start to wonder whether their tap registered, if the system even is working, and/or whether they should tap again. LogRocket (2025) describes this as a disruption in flow that leads to frustration and disengagement, even when the delay is only a second or two. This can feel like a minute or two to a user. The fix is not always making the system faster. Sometimes it is making the system feel faster by providing immediate visual feedback. For example a button that changes state or a simple progress animation. This will notify users their action was received, allowing time for the system to catch up in the background.</p>
+            <div class="image-bar">
+               <figure>
+                  <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone Loading Screen">
+                  <figcaption>Photo by <a href="https://unsplash.com/@rami_alzayat">Rami Al-zayat</a> on <a href="https://unsplash.com/photos/HOrhCnQsxnQ">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+               </figure>
+               <figure>
+                  <img src="https://images.unsplash.com/photo-1605165540422-ecd23dcad583?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Task Success!">
+                  <figcaption>Photo by <a href="https://unsplash.com/@dunc_in">Duncan Meyer</a> on <a href="https://unsplash.com/photos/LDpqbELJHXY">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+               </figure>
+               <figure>
+                  <img src="https://images.unsplash.com/photo-1658067517639-30eac0a01243?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone Error">
+                  <figcaption>Photo by <a href="https://unsplash.com/@shmatov">Konstantin Shmatov</a> on <a href="https://unsplash.com/photos/Lks7vei-eAg">Unsplash</a>. Free to use under the <a href="https://unsplash.com/license">Unsplash License</a>.</figcaption>
+               </figure>
+            </div>
+            <h3>The Peak-End Rule</h3>
+               <p>Users do not remember an interaction as a complete sequence of events. They remember how they felt and how things ended. This is the Peak-End Rule. A long and complicated checkout process can be forgiven if the confirmation screen is satisfying and clear. A smooth experience throughout can be undermined by a confusing or cold ending. Nielsen Norman Group (2024) explains that the most emotionally intense points of an experience and the final moments carry disproportionate weight in how users evaluate what they went through. For designers, this means the end of a flow is one of the most important moments in the entire experience. It deserves as much attention (if not more) as the first screen a user sees.</p>
+            <h3>The Feel of Responsiveness</h3>
+               <p>Motion in an interface is not decoration. When it is used well, it communicates causality and confirms that an action worked. It gives users a sense of control. When a toggle switches with a smooth animation it will communicate to the user that something changed. When a form field shakes on invalid input, the feedback is instant and clear without requiring a wall of error text. Johnson (2020) describes how users form mental models of a system based on how it behaves over time, and consistent, well-timed feedback is what allows those models to be accurate. An interface that gives no feedback or feedback that arrives too late will forces user to guess. This causes their understanding to have to rebuild with every interaction.</p>
+            <h3>Ethical Design</h3>
+               <p>Many of the same techniques that make interfaces feel responsive and rewarding can also be used to manipulate users into behaviors they would not otherwise choose. Things like countdown timers that create false urgency or dark patterns that make cancellation difficult to find. Yablonski (2024) argues that designers have a responsibility to use psychological principles in service of the user. Good design requires asking whether a technique is helping users accomplish their goals or simply exploiting their cognitive tendencies for business gain. Users eventually recognize manipulation even if they cannot name it, but that recognition destroys trust and is very hard to recover from.</p>
+            <h3>Conclusion</h3>
+               <p>How an interface responds, how fast it reacts, and how an interaction ends all shape what users feel and what they remember. The Doherty Threshold sets the standard for responsiveness. The Peak-End Rule explains why the moments that feel most intense and the final moments carry the most weight in memory. Motion and feedback build the mental model users rely on to feel in control. And ethical design is what ties all of those tools to the user's benefit. Designing interaction that matters means caring about every one of those dimensions, not just the ones that are easiest to measure.</p>
+            <footer class="article-footer">
+               <h3>Sources:</h3>
+               <ol>
+                  <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+                  <li>LogRocket. (2025, March 28). <em>Designing for instant feedback: The Doherty Threshold in UX.</em> Retrieved May 27, 2026 from <a href="https://blog.logrocket.com/ux-design/designing-instant-feedback-doherty-threshold/">https://blog.logrocket.com/ux-design/designing-instant-feedback-doherty-threshold/</a></li>
+                  <li>Nielsen Norman Group. (2024, February 2). <em>The peak-end rule: How impressions become memories.</em> Retrieved May 27, 2026 from <a href="https://www.nngroup.com/articles/peak-end-rule/">https://www.nngroup.com/articles/peak-end-rule/</a></li>
+                  <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products and services</em> (2nd ed.). O'Reilly Media.</li>
+               </ol>
+            </footer>
+         </article>
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
