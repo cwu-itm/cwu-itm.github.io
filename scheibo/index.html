@@ -640,8 +640,8 @@
 </article>        
          <!-- Module 3.1 Blog Post Starts here -->
     <article>
-        <header class="article-header">
-            <h2>Module 3.1 Blog Post</h2>
+            <header class="article-header">
+               <h2>Module 3.1 Blog Post</h2>
    </header>
 
    <h3>How Visual and Interaction Design Shapes the Way We Move Through Digital Spaces</h3>
@@ -823,6 +823,191 @@
 
 </article>
          <!-- Module 3.2 Blog Post Starts here -->
+      <article>
+         <header class="article-header">
+             <h2>Module 3.2 Blog Post</h2>
+   </header>
+
+   <h3>Interaction that Matters</h3>
+
+   <p>
+      Every time we tap a button, submit a form, or wait for a page to load, we are interacting with 
+      a designed system. Most of the time we do not think about it. But the way those interactions 
+      are timed, how they move, and whether they protect us from mistakes has a big impact on how we 
+      feel both during the experience and long after it ends. Good interaction design is not just 
+      about looks. It is about making people feel capable, respected, and in control.
+   </p>
+
+   <p>
+      In this post, I will explore how feedback timing, motion, and error prevention shape the user 
+      experience. I will reference UX laws that explain why these patterns matter, and reflect on 
+      my own experiences and what research says about ethical, human-centered design.
+   </p>
+
+   <h3>Why Timing Matters: The Doherty Threshold</h3>
+
+   <p>
+      One of the most important ideas in interaction design is the Doherty Threshold. According to 
+      Yablonski (2020), when a system responds in under 400 milliseconds, productivity goes up and 
+      users enter a state of flow. When responses take longer, attention breaks. The user starts 
+      wondering if the system even received their input, and that uncertainty is uncomfortable.
+   </p>
+
+   <p>
+      I noticed this while using an older school portal. Every time I clicked to navigate, there was 
+      a two to three second delay with no visual feedback. No spinner, no progress bar, nothing. I 
+      found myself clicking again, not sure if it had registered. Sometimes that caused duplicate 
+      submissions. The system was not broken, but the lack of feedback made it feel broken.
+   </p>
+
+   <p>
+      The fix is not always making things faster. Sometimes performance limits exist. The real solution 
+      is being honest with the user. A loading animation or progress bar tells users the system received 
+      their request and is working on it. That small signal is enough to keep people calm instead of 
+      confused. Timing is not just technical, it is psychological.
+   </p>
+
+   <img
+      src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop"
+      alt="A loading bar on a digital screen indicating progress"
+      width="800"
+   />
+   <p><em>Visual feedback during loading keeps users informed and reduces anxiety. Photo by <a href="https://unsplash.com/@markuswinkler" target="_blank" rel="noopener">Markus Winkler</a> on Unsplash.</em></p>
+
+   <h3>Motion as Communication: The Peak End Rule</h3>
+
+   <p>
+      Motion in interfaces is often treated as decoration. But motion is actually a form of 
+      communication. It tells users where something went, what something did, and how the system 
+      is responding. When used well, it creates clarity. When used poorly or not at all, it 
+      creates confusion.
+   </p>
+
+   <p>
+      Think about how a notification slides in from the top of a screen. That direction tells you 
+      it is temporary and came from the system. If it just appeared and disappeared with no motion, 
+      the transition would feel jarring. Motion gives context to change and helps us understand 
+      what happened and what to do next.
+   </p>
+
+   <p>
+      The Peak End Rule, described by Kahneman (as cited in Yablonski, 2020), tells us that people 
+      judge an experience by how it felt at its most intense moment and at the very end, not by 
+      the average. This matters a lot for interaction design. If a process is long, like a multi-step 
+      form, a satisfying animation at the end can make the whole thing feel positive. Duolingo does 
+      this well. After finishing a lesson, a celebration plays. That moment anchors the session as 
+      a good experience, even if parts were hard.
+   </p>
+
+   <p>
+      Motion should always serve a purpose. Lidwell, Holden, and Butler (2010) note that animation 
+      that exists only for visual flair can hurt usability by distracting users or slowing them down. 
+      The goal is motion that communicates, not motion that just looks cool.
+   </p>
+
+   <img
+      src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop"
+      alt="A smartphone screen showing a colorful celebration animation"
+      width="800"
+   />
+   <p><em>Satisfying end state animations help users remember an experience positively. Photo by <a href="https://unsplash.com/@robin_schreiner" target="_blank" rel="noopener">Robin Schreiner</a> on Unsplash.</em></p>
+
+   <h3>Error Prevention and Postel's Law</h3>
+
+   <p>
+      Nothing breaks a user's confidence faster than an unexplained error. When a form rejects 
+      input without saying why, it puts the blame on the user even when the design is the problem. 
+      Error prevention is one of the most important things a designer can focus on.
+   </p>
+
+   <p>
+      Postel's Law says systems should be conservative in what they send but flexible in what they 
+      accept (Yablonski, 2020). In practice, a well designed form should accept a phone number in 
+      any common format and handle the formatting itself. The user should never have to guess what 
+      format the system wants. That is the system's job.
+   </p>
+
+   <p>
+      I ran into this on a city government website. The form needed a date in MM/DD/YYYY format but 
+      gave no example. When I typed it with dashes instead of slashes, I got a generic error with 
+      no guidance. I tried multiple formats before one finally worked. The whole thing felt like it 
+      was designed for the developer, not the person filling it out.
+   </p>
+
+   <p>
+      Good error prevention means designing around how real people naturally behave. It means using 
+      examples, input masks, inline validation, and error messages that actually explain the problem. 
+      Norman (2013) describes this as designing for human error, accepting that mistakes will happen 
+      and making recovery easy. That mindset shift is at the heart of ethical interaction design.
+   </p>
+
+   <img
+      src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&auto=format&fit=crop"
+      alt="A person looking at a form on a laptop screen"
+      width="800"
+   />
+   <p><em>Clear form design and helpful error messages prevent user frustration before it starts. Photo by <a href="https://unsplash.com/@glvrdru" target="_blank" rel="noopener">Mikhail Nilov</a> on Unsplash.</em></p>
+
+   <h3>Designing Ethically: When Persuasion Becomes Manipulation</h3>
+
+   <p>
+      The same techniques that make interactions feel smooth can also be used to manipulate users 
+      into decisions that benefit the product at the user's expense. This is where interaction 
+      design crosses into ethics, and it is something every designer has to think about.
+   </p>
+
+   <p>
+      Dark patterns are a well known example. These are design choices that exploit psychology to 
+      push users toward decisions they might not make otherwise. A countdown timer that resets, a 
+      subscription that is easy to start and hard to cancel, a button that says "No thanks, I do 
+      not want to save money" are all examples of using the tools of good UX to manipulate rather 
+      than help.
+   </p>
+
+   <p>
+      Lidwell, Holden, and Butler (2010) point out that design carries moral weight. When millions 
+      of people use a system daily, even small nudges have enormous power. Designers who understand 
+      the psychology behind interaction have a responsibility to use that knowledge to help people.
+   </p>
+
+   <p>
+      The standard is simple: design should make the user's intended action easier. Feedback timing, 
+      motion, and error handling should all serve the user's goals. When those tools are turned 
+      against the user, design stops being helpful and becomes something else entirely.
+   </p>
+
+   <h3>Conclusion</h3>
+
+   <p>
+      Interaction design is about more than looks. The timing of a response, the motion of a 
+      transition, and the clarity of an error message all shape how users feel about themselves 
+      and the systems they use. When done well, users feel capable and confident. When done poorly, 
+      they feel confused, blamed, or stuck.
+   </p>
+
+   <p>
+      The UX laws covered here, the Doherty Threshold, the Peak End Rule, and Postel's Law, 
+      give names to patterns we experience every day without realizing it. Understanding them helps 
+      us design more intentionally and think more critically about the systems around us. Recognizing 
+      the ethical weight of these choices pushes us toward design that genuinely serves people.
+   </p>
+
+   <p>
+      The best interactions are the ones users never have to think about. They just work, feel 
+      right, and leave people a little better than when they started.
+   </p>
+
+   <div class="sources">
+      <h3>Sources:</h3>
+      <ol>
+         <li>Lidwell, W., Holden, K., &amp; Butler, J. (2010). <em>Universal principles of design</em> (2nd ed.). Rockport Publishers.</li>
+         <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.</li>
+         <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O'Reilly Media.</li>
+         <li>Kahneman, D. (2011). <em>Thinking, fast and slow</em>. Farrar, Straus and Giroux.</li>
+      </ol>
+   </div>
+
+</article>
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
