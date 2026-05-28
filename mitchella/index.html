@@ -340,8 +340,64 @@
          <!-- Module 3.1 Blog Post Starts here -->
 
          <!-- Module 3.2 Blog Post Starts here -->
+<article>
+  <header class="article-header">
+    <h2>Module 3.2 Blog Post</h2>
+    <p><em>The Moment That Matters: How Timing, Motion, and Ethical Design Shape What Users Remember</em></p>
+  </header>
 
-      </main>
+  <p>Think about the last time a digital product made you feel good. Maybe it was the satisfying animation when you sent a message or the mild vibration of a loading indicator that helped you stay calm during a short wait. Now, remember the last time a product left you frustrated. Maybe a form reset all your entries after a single small error, a spinner showed no sign of progress, or a button moved just as you tried to click it. Both agreeable and annoying moments come from design choices made long before you used the product. The timing of feedback, how motion shows what&rsquo;s happening, and whether a system protects users from costly mistakes all work together to create something more important than usability: they build trust.</p>
+
+  <p>User experience design is often seen as layout and visual hierarchy. However, some of the most important design choices are invisible. They happen in tiny moments, like the timing of an animation or the subtle red outline that catches an error before a form is lost. These small decisions affect the full emotional experience of using a product. Understanding the psychology behind them is key to designing responsibly and ethically.</p>
+
+  <h3>Timing and the Doherty Threshold</h3>
+
+  <p>In 1982, Walter Doherty and Ahrvind Thadani published research that introduced the Doherty Threshold. They found that both computers and users work best when the system responds in less than 400 milliseconds (Yablonski, 2024). This might sound like simply a technical goal, but it&rsquo;s really about psychology. When responses are faster than this limit, everything feels smooth and natural. If the response takes longer, even just 600 milliseconds, it can break the user&rsquo;s focus, create doubt, and make them wonder if their action worked.</p>
+
+  <p>This has a big impact on how feedback is designed. If a button changes right away &mdash; by darkening, showing a ripple animation, or displaying a checkmark &mdash; it tells the user their action worked. If a button does nothing for half a second, users might click again, which can cause duplicate actions, errors, or just worry. Johnson (2020) explains that users form mental models of how systems work by repeatedly using them. When a system acts differently from what users expect, even for a moment, it creates mental friction that can build up and make users feel less in control.</p>
+
+  <p>The Doherty Threshold also guides how designers handle slow operations. If a network request takes three or four seconds, it&rsquo;s better not to hide the wait behind a blank screen. Instead, skeleton screens &mdash; placeholders that look like the content that&rsquo;s coming &mdash; are now a common and effective way to manage how long the wait feels. Unlike a spinning icon, a skeleton screen shows users not just that something is happening, but what they can expect to see soon. This changes the feeling from anxious waiting to anticipation. In other words, how fast something <em>feels</em> is just as important as how fast it actually is, and designing for this indicates respect for the user&rsquo;s time and attention (Nielsen, 2014).</p>
+
+  <h3>Motion as Communication and the Peak-End Rule</h3>
+
+  <p>People often see motion in interface design as just a way to make things look modern or polished. But when used with purpose, motion is a powerful way to communicate. For example, when something slides in from the right, it shows the user they&rsquo;ve moved forward. If it slides out to the left, it means they&rsquo;ve moved on. A button that shakes when someone enters the wrong password says &ldquo;no&rdquo; without using any words. In these cases, motion isn&rsquo;t just for looks &mdash; it&rsquo;s a way to give information.</p>
+
+  <p>What users remember most from these animated moments is explained by the Peak-End Rule, a concept first described by psychologist Daniel Kahneman. Yablonski (2024) shows how this applies to UX: people don&rsquo;t judge an experience by its average quality, but by the most intense moment (the peak) and how it ended. For example, if a checkout process is mostly smooth but ends with a confusing confirmation screen, users will remember it as confusing. On the other hand, if there are a few minor issues but the process ends with a clear, positive success message, users are likely to remember the experience as good overall.</p>
+
+  <p>This greatly affects where designers should focus their efforts. Onboarding steps and confirmation screens need more attention than they usually get, because these form the moments that stick in users&rsquo; minds. A well-designed success moment &mdash; animated, positive, and clear &mdash; can shape how someone feels about the whole product. Johnson (2020) adds that memory works by rebuilding experiences from the most emotional moments, not by replaying everything exactly. So, carefully designing these key moments isn&rsquo;t just a nice extra; it&rsquo;s a core part of the job.</p>
+
+  <h3>Error Prevention and the Zeigarnik Effect</h3>
+
+  <p>A clear sign of ethical design is how errors are managed &mdash; not just how they&rsquo;re shown, but whether they&rsquo;re prevented from happening at all. Johnson (2020) explains that there are two kinds of user mistakes: slips, which are accidental actions such as clicking the wrong button, and mistakes, which occur when someone does something wrong because they misunderstood, such as entering a date in the wrong format because the field wasn&rsquo;t clear. Each type requires a different design solution, and understanding this difference is key to creating systems that help users rather than punish them.</p>
+
+  <p>Inline validation is a great way to prevent slips and mistakes before they become bigger problems. Instead of waiting for someone to submit a form to display all errors, a good input field checks for issues in real time and provides feedback while the user is still typing. This works partly because, as psychologist Bluma Zeigarnik found, people remember uncompleted tasks more than finished ones (Yablonski, 2024). If a form error isn&rsquo;t fixed, it stays in the user&rsquo;s mind, making it harder to focus on the rest of their work. Fixing errors as they happen removes that psychological load and helps users stay on track.</p>
+
+  <p>Actions that can&rsquo;t be undone &mdash; like deleting an account, overwriting a file, or sending a message to a large group &mdash; need special care in design. Confirm dialogs, clear undo options, and short delays give users a chance to think before making a permanent change. These features aren&rsquo;t just about slowing things down; they show respect for the user. If a system lets someone make a big mistake without warning, it&rsquo;s choosing speed over care, and that&rsquo;s an important ethical decision.</p>
+
+  <h3>Designing Ethically When Techniques Become Persuasion</h3>
+
+  <p>The same psychological ideas that make interaction design smooth can also be used to manipulate people. Designers who understand the Peak-End Rule can create powerful emotional moments. Those who understand the Doherty Threshold can make things feel urgent. These techniques aren&rsquo;t good or bad on their own &mdash; it depends on whose interests they serve.</p>
+
+  <p>Yablonski (2024) handles this tension directly, arguing that designers have an obligation to use psychological understanding in the service of users rather than against them. Dark patterns &mdash; interface designs that deliberately mislead or exploit cognitive shortcuts to benefit a business at the user&rsquo;s expense &mdash; represent the misuse of precisely the tools discussed throughout this post. A progress bar that fills artificially slowly makes a simple activity feel more substantial than it is. A subscription cancellation flow that buries the exit option behind five confirmation screens exploits the Zeigarnik Effect, making the task look so unfinished that users eventually give up. A countdown timer that resets to zero creates a false sense of urgency, pressuring the buyer to make a purchase decision.</p>
+
+  <p>It&rsquo;s not always easy to tell the difference between persuasion and manipulation, and that&rsquo;s something designers need to think about carefully. Persuasion helps users do things that are good for them. Manipulation pushes users to do things that help the business or designer, often without the user realizing it. For example, a good onboarding flow that builds confidence is ethical persuasion. Hiding a pre-checked consent box in fine print is manipulation. Both use the idea of making things easier, but the real question is always about who benefits.</p>
+
+  <p>Mathur et al. (2019) found dark patterns on almost 11,000 shopping websites, including hidden costs, trick questions, and misdirection. This shows these practices are common, not rare, and draws attention to the requirement for ethical standards in design. When users feel tricked, they quickly lose trust, and it&rsquo;s hard to win it back. Any brief gains from dark patterns are usually lost in the long run as users leave and brands are damaged. Designing ethically isn&rsquo;t just the right thing to do &mdash; it&rsquo;s also smart for any product that needs loyal customers.</p>
+
+  <h3>Conclusion</h3>
+
+  <p>Most of the time, interaction design works in ways users don&rsquo;t even notice. People don&rsquo;t pay attention to a 350-millisecond response or remember exactly when an animation confirms their action. They don&rsquo;t think about why a form was easy to fill out, but they feel the difference. The Doherty Threshold, the Peak-End Rule, and the Zeigarnik Effect aren&rsquo;t just theories; they describe how people really think and feel when using products. Designing with these ideas means building systems that are fast, use animation for a reason, protect users from big mistakes, and are honest about how they use psychology. When these things come together, the result is more than simply a usable product &mdash; it&rsquo;s an experience that develops trust, which is what great design is all about.</p>
+
+  <footer class="article-footer">
+    <h3>Sources:</h3>
+    <ol>
+      <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+      <li>Mathur, A., Acar, G., Friedman, M. J., Lucherini, E., Mayer, J., Chetty, M., &amp; Narayanan, A. (2019). Dark patterns at scale: Findings from a crawl of 11K shopping websites. <em>Proceedings of the ACM on Human-Computer Interaction, 3</em>(CSCW), 1&ndash;32. https://doi.org/10.1145/3359183</li>
+      <li>Nielsen, J. (2014). Response times: The three important limits. Nielsen Norman Group. https://www.nngroup.com/articles/response-times-3-important-limits/</li>
+      <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O&rsquo;Reilly Media.</li>
+    </ol>
+  </footer>
+</article>      </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
        <p>Copyright &copy; 2025</p>
