@@ -82,3 +82,143 @@ img {
     display: block;
     margin: 0 auto;
 }
+/* Page Header */
+
+.page-header {
+
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+/* Logo */
+
+.logo a {
+
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #5F6F52;
+   
+
+    text-decoration: none;
+
+    padding: 0.5rem 1rem;
+
+}
+
+/* Navigation */
+
+.main-nav ul {
+
+    display: flex;
+    gap: 1rem;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-nav a {
+
+    color: #FAF3E8;
+    background-color: #333333;
+
+    text-decoration: none;
+
+    padding: 0.5rem 0.75rem;
+
+    font-size: 0.875rem;
+
+    border-radius: 1.5rem;
+
+}
+
+.main-nav a:hover {
+
+    background-color: #5F6F52;
+}
+/* Two Column Layout */
+ .two-column {
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+
+.two-column .column {
+
+    flex: 1;
+    background-color: #333333;
+    color: #FAF3E8;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+}
+
+.two-column .column h3 {
+
+    padding: 0;
+    margin-top: 0;
+    color: #FAF3E8;
+
+}
+
+.two-column .column p {
+
+    color: #FAF3E8;
+
+}
+/* Image Bar */
+
+.image-bar {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    background-color: #FAF3E8;
+
+    padding: 1rem;
+    margin: 2rem 0;
+
+}
+
+.image-bar figure {
+
+    margin: 0;
+    text-align: center;
+
+}
+
+.image-bar img {
+
+    width: 100%;
+    height: 15rem;
+
+    object-fit: cover;
+
+    border-radius: 0.5rem;
+
+}
+
+.image-bar figcaption {
+
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+
+}
