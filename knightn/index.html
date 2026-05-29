@@ -431,7 +431,6 @@
 <script>
 const backToTop = document.getElementById("back-to-top");
 const menu = document.getElementById("blog-menu");
-
 window.addEventListener("scroll", () => {
     if (window.scrollY > menu.offsetHeight + 50) {
         backToTop.style.display = "block";
@@ -439,7 +438,6 @@ window.addEventListener("scroll", () => {
         backToTop.style.display = "none";
     }
 });
-
 backToTop.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
