@@ -26,7 +26,7 @@ body {
 /* Page Header*/
 
 .page-header {
-    background: #333 url(../../../images/karl-solano-FnD1bPuFxWw-unsplash.jpg) center/cover no-repeat;
+    background: #333 url(background.jpg) center/cover no-repeat;
     background-blend-mode: overlay;
     color: #FFF;
     padding: 1rem;
@@ -59,12 +59,22 @@ main p {
 }
 
 .article-header {
-    background-color: #c4c4c4;
+    background-color: #DDE5D5;
+    color: #333;
     padding: 1rem;
 }
 
 .article-content {
     padding: 0 1rem;
+}
+
+.two-column {
+    display: flex;
+    gap: 2rem; /* space between columns */
+}
+
+.two-column > * {
+    flex: 1;
 }
 
 /* Footer*/
@@ -147,12 +157,18 @@ img {
 }
 
 .image-bar {
-    background-color: #F5F6F4;
-    border-radius: 5px;
+    background-color: #F5F6F4; 
     display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 1.5rem; 
     padding: 2rem;
+    border-radius: 5px;
+
+}
+
+.image-bar img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 figure {
@@ -174,8 +190,25 @@ figcaption {
     position: relative;
 }
 
+
+
+/* Navigation Flexbox Layout */
 #main-nav {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#main-nav a {
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: #F1D23F;
 }
 
 #main-nav > a {
@@ -215,7 +248,56 @@ figcaption {
     color: #333;
 }
 
-/* Archives */
+/* Module Navigation Panel */
+.module-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background: #242222;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.module-nav button {
+    background: #1f480f;
+    color: #e0d8d8;
+    border: none;
+    padding: .75rem 1.25rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Oswald, sans-serif;
+}
+
+.module-nav button:hover {
+    background: #43bd33;
+}
+
+.module-section {
+    display: none;
+}
+
+.module-section.active {
+    display: block;
+}
+
+/* Welcome Screen */
+.welcome-box {
+    background: #1B2B1B; 
+    color: white; 
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    max-width: 700px;
+    margin: 2rem auto; 
+}
+
+
+
+/* Archives  I don't know why I have this, I think it's useless but I'll keep for now*/
 
 .archives {
     margin: 1rem;
@@ -307,9 +389,7 @@ figcaption {
         width: 90%;
     }
 
-    .image-bar {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    
 
     .archives {
         display: grid;
@@ -348,16 +428,16 @@ figcaption {
     }
 
     .page-footer {
-        background-color: inherit;
-        color: inherit;
-        display: grid;
-        font-size: 1rem;
-        grid: subgrid / subgrid;
-        grid-column: 2 / 12;
-        grid-row: 10 / 11;
-        padding: 0;
-        text-align: left;
+    background-color: #333; 
+    color: #FFF; 
+    display: grid;
+    font-size: 1rem;
+    grid-column: 1 / 13; 
+    grid-row: 10 / 11;
+    padding: 2rem 1rem;
+    text-align: center; 
     }
+
 
     .page-footer a {
         color: #0000FF;

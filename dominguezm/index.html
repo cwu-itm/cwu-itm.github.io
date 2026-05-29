@@ -14,7 +14,25 @@
       </header>
 <!-- Main Content Area  -->
       <main>
+         <!--Navigation Panel-->
+         <nav class="module-nav">
+            <button data-target="m11">Module 1.1</button>
+            <button data-target="m12">Module 1.2</button>
+            <button data-target="m21">Module 2.1</button>
+            <button data-target="m22">Module 2.2</button>
+            <button data-target="m31">Module 3.1</button>
+            <button data-target="m32">Module 3.2</button>
+         </nav>
+
+         <!--Welcome to my Blog-->
+         <section id="welcome-screen" class="module-section active">
+            <div class="welcome-box">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Select a module above to begin.</p>
+            </div>
+         </section>
          <!-- Module 1.1 Blog Post Starts Here-->
+      <section id="m11" class="module-section">
          <article>
             <header class="article-header">
                <h2>Module 1.1 Blog Post</h2>
@@ -140,8 +158,9 @@
                </ol>
             </footer>
          </article>
-
+      </section>
          <!-- Module 1.2 Blog Post Starts here -->
+      <section id="m12" class="module-section">
          <article>
             <header class="article-header">
                <h2>Module 1.2 Blog Post</h2>
@@ -332,11 +351,13 @@
                     <li>IBM. (n.d). <em>What is the software development life cycle?</em> IBM. <a href="https://www.ibm.com/think/topics/sdlc?">https://www.ibm.com/think/topics/sdlc?</a></li>
                     <li>NASA. (2019, February 6). <em>SEH 3.0: NASA program/project life cycle.</em>. <a href="https://www.nasa.gov/reference/3-0-nasa-program-project-life-cycle/">https://www.nasa.gov/reference/3-0-nasa-program-project-life-cycle/</a></li>
             </footer>
+         </section>
 
 
 
          </article>
          <!-- Module 2.1 Blog Post Starts here -->
+      <section id="m21" class="module-section">
          <article>
             <header class="article-header">
                <h2>Module 2.1 Blog Post</h2>
@@ -443,11 +464,13 @@
                     <li>Syracuse University School of Information Studies. (2026, February 24). <em>What is human-centered desing?</em> <a href="https://ischool.syracuse.edu/what-is-human-centered-design/">https://ischool.syracuse.edu/what-is-human-centered-design/</a></li>
                     <li>Yablonski, J. (2020) <em>Laws of UX: Using psychology to desing better products & services.</em>.</li>
 
-               </footer>
+            </footer>
 
          </article>
+      </section>
 
          <!-- Module 2.2 Blog Post Starts here -->
+      <section id="m22" class="module-section">
          <article>
             <header class="article-header">
                <h2>Module 2.2 Blog Post</h2>
@@ -667,8 +690,10 @@
                      </ol>
                </footer>
             </article>
+         </section>
 
          <!-- Module 3.1 Blog Post Starts here -->
+      <section id="m31" class="module-section">
          <article>
             <header class="article-header">
                <h2>Module 3.1 Blog Post</h2>
@@ -808,11 +833,212 @@
                         <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products & services</em>.</li>
                      </ol>
                </footer>
-         </article>  
-
-
+         </article>
+      </section>
 
          <!-- Module 3.2 Blog Post Starts here -->
+      <section id="m32" class="module-section">
+         <article>
+            <header class="article-header">
+               <h2>Module 3.2 Blog Post</h2>
+            </header>
+            <h3>How Timing, Motion, and Error Prevention Shape Ethical User Experiences</h3>
+            <p>Digital interfaces are more than just a way of completing tasks, they shape how we think, feel, and behave. Every small interaction, delay, animation, and hover can contribute to a user's emotional and cognitive experience. These design choices can influence trust, comprehension, satisfaction, and even long-term habits. Interaction patterns like timing, motion, and error prevention are not just aesthetic or technical considerations but ethics ones.</p>
+            <p>In this post, I examine how these interaction patterns can shape meaningful user experiences. Most information comes from Laws of UX by Yablonski, Designing with the Mind in Mind by Johnson, Implementing Skeleton Screens in React by Krofegha, and Huang, White & Dumais's No Click, No Problem: Using Cursor Movement to Understand and improve Search research.</p>
+            <p>Designers must understand the psychological weight of their decisions. When implemented carefully, you can support clarity, reduce cognitive loads, and allow users to efficiently use a digital interface to complete a task.</p>
+            <h3>Timing and Feedback: The Emotional Core of Interaction</h3>
+            <p>Timing is something to take into account when designing. Whether a system responds instantly or after a delay dramatically affects how users interpret the experience. According to Doherty Threshold, productivity and satisfaction increases when a system responds within 400 milliseconds, this ensures that "neither the user nor the computer has to wait on the other" (Yablonski, 2020). When feedback is too slow, users feel ignored and when it's too fast they feel like it can't be trusted or miss important information.</p>
+            <p>But timing is not just about speed. It is important to take into account : perception, emotion, and cognitive processing. People are sensitive to slow processes even if it's a small fraction of a second. A 100 millisecond feels instant because your brain doesn't register any gap between your action and the system's response, while a 300 millisecond delay becomes noticeable as a tiny pause that doesn't frustrate you but can make it seem not as smooth(Yablonski, 2020). If it's delayed by a second, it feels slow because your attention shifts from doing to waiting and you start to wonder whether you tap again and by 10 seconds it feels like it froze(Yablonski, 2020).</p>
+            <h4>The Psychology of Waiting</h4>
+            <p>Johnson (2020) explains that users rely on predictability and feedback loops to maintain a sense of control. When a system responds quickly, users feel competent and in sync with the interface. When a system responds slowly, users feel anxious, frustrated, or uncertain about their actions.</p>
+            <p>This is why perceived performance is more important than actual performance. Users judge speed not only by how long something takes but by how the wait feels. A 1 second delay with no feedback feels longer than a 2 second delay with visual progress.</p>
+            <p>Krofegha (2020) explains that skeleton screens "reduce loading-time frustration" by focusing on progress rather than waiting. This means that instead of starting a spinner which feels like watching the clock, users can see a preview of the layout which gives them confidence that content is on the way.</p>
+            <div class="image-bar">
+               <figure>
+                     <img src="Skeleton_Screen.jpg" alt="An example of a Skeleton Screen">
+                     <figcaption>"YouTube results screenshot" by Smile and Learn, Rockin Robin Cooks, Nicky's Kitchen is licensed under CC BY 3.0.</figcaption>
+               </figure>
+
+               <figure>
+                     <img src="Infite_Scrolling.jpg" alt="An example of a user scrolling far more than intended">
+                     <figcaption>"SIGNAGE" by Neal. is licensed under CC BY 2.0.</figcaption>
+               </figure>
+
+               <figure>
+                     <img src="motion.jpg" alt="Motion">
+                     <figcaption>"Cycle in Motion" by Ktoine is licensed under CC BY-SA 2.0.</figcaption>
+               </figure>
+            </div>
+            <p>This aligns with the Doherty Threshold in which users can stay engaged because they feel the system is responding even if it's still working behind the scenes.</p>
+            <h4>Timing Shapes Memory: The Peak-End Rule</h4>
+            <p>Timing also shapes how users remember an experience. The Peak-End Rule states that people remember an experience based on the most intense moment and its ending (Yablonski, 2020). This means the timing of feedback at critical moments such as completing a purchase, submitting a form, or finishing a task can shape how users remember the entire interaction.</p>
+            <p>Duolingo uses this principle (Yablonski, 2020). After completing a lesson, users see celebratory animations, sound effects, and colorful visuals (Yablonski, 2020). These moments create emotional peaks that reinforce motivation and make the learning experience feel rewarding.</p>
+            <h4>Timing as something that should be Ethically implemented</h4>
+            <p>Timing is something that should be ethically implemented but at times it can be unethically used to encourage user engagement. Social media platforms might delay a notification to encourage more engagement. Infinite scrolling removes a natural stopping point which makes it harder for  users to disengage. It can lead to compulsive behavior and simply isn't right for the user.</p>
+            <p>Ethical design requires using timing to support user goals.</p>
+            <h3> Motion: How Animation Guides Understanding</h3>
+            <p>Motion is mostly treated as a decoration but it is a tool to connect with users. Motion guides attention and explains transitions, and helps users build mental models of how an interface works. Johnson (2020) emphasizes that humans rely heavily on visual cues to understand cause and effect. Motion can reinforce this idea by showing how elements relate to one another.</p>
+            <h4>Motion Reduces Cognitive Load</h4>
+            <p>For example:</p>
+            <ul>
+               <li>When a menu slides from the left, most users understand this motion and know where to start</li>
+               <li>When a button is animated like the shopping cart, it can make users feel confident</li>
+               <li>It content fades away slowly, it can allow user to perceive the system as smoother</li>
+            </ul>
+            <p>These tiny interactions can reduce cognitive load and prevent errors by making the state of a system more visible.</p>
+            <h4>Motion as a way of improving Cognitive Load</h4>
+            <p>Johnson (2020) explains that humans build mental models based on spatial and temporal cues. </p>
+            <p>Motion helps users understand:</p>
+            <ul>
+               <li>What changed</li>
+               <li>Why it changed</li>
+               <li>Where it moved</li>
+               <li>What caused it</li>
+            </ul>
+            <p>Without motion, changes feel confusing. With motion, transitions feel natural and predictable.</p>
+            <h4>Motion Can Manipulate Attention</h4>
+            <p>Motion can also be misused. Scrolling for a long time with videos that automatically start playing is very common on platforms like TikTok and YouTube which uses motion to keep users engaged without requiring conscious decisions. These patterns remove friction and encourage users to continue being engaged and can lead to users spending more time on the platform than what they intended.</p>
+            <h3>Cursor Behavior</h3>
+            <p>There is a very fascinating insight into timing and motion that comes from Huang, White & Dumais's study of cursor movements on search engine results pages (No clicks, no problem: Using cursor movements to understand and improve search, 2011). Their research shows that cursor behavior is an indicator of user attention, hesitation, and what they perceive as relevant.</p>
+            <h4>Cursor Movements Correlate With Eye Gaze</h4>
+            <p>In their study, cursor and gaze positions were strongly aligned. Users often use the cursor to:</p>
+            <ul>
+               <li>Trace text</li>
+               <li>Mark interesting results</li>
+               <li>Follow reading direction</li>
+               <li>Avoid occluding content</li>
+            </ul>
+            <p>This means cursor motion is not random and it reflects cognitive processing.</p>
+            <h4>Hover Time Shows how Relevant it is Perceived </h4>
+            <p>Their findings show that:</p>
+            <ul>
+               <li>Users hover longer on higher-ranked text</li>
+               <li>Hover time decreases with lower-ranked text</li>
+               <li>The farther down a search result is on the page, the longer it takes for your mouse to reach it.</li>
+            </ul>
+            <p>This shows that timing of motion can reflect how users evaluate information.</p>
+            <h4> Unclicked Hovers Predict Future Clicks</h4>
+            <p>Huang, White, and Dumais (2011) found that when people hover over a search result without clicking it, that hover still matters. If a result gets no hover at all, it's clicked only about 7% of the time, but if a user hovers over it several times, the chance of a later click jumps to around 25% (Huang et al, 2011). Their research shows that even "unclicked" hovers are a strong sign that the user is interested in that result.</p>
+            <h4>Cursor Trails  helps Distinguish Good vs. Bad Abandonment</h4>
+            <p>When users find the answer directly on the Search Engine Results Page :</p>
+            <ul>
+               <li>Cursor trails are shorter</li>
+               <li>Movement time is lower</li>
+               <li>Cursor speed is slower</li>
+            </ul>
+            <p>When users are frustrated:</p>
+            <ul>
+               <li>They move more</li>
+               <li>They move faster</li>
+               <li>They explore more results</li>
+            </ul>
+            <p>This shows that motion patterns can reflect emotional states.</p>
+            <h3>Error Prevention</h3>
+            <p>One of the most ethical responsibilities designers have is preventing errors. People may make a mistake especially when interfaces are confusing, inconsistent, or have too much information that is placed incorrectly. Johnson (2020) categorizes slips into types such as capture slips, description slips, and mode slips, each caused by different cognitive limitations.</p>
+            <h4>Designing for Human Memory Limits</h4>
+            <p>Johnson (2020) emphasizes that working memory is extremely limited. Interfaces that stress users with choices, hidden states, or unclear labels increase the likelihood of errors.</p>
+            <h4>Error Prevention Techniques</h4>
+            <p>Designers can prevent these errors by:</p>
+            <ul>
+               <li>Making actions reversible</li>
+               <li>Providing clear system status</li>
+               <li>Using confirmation dialogs for actions that can't be reversed</li>
+               <li>Increasing target sizes</li>
+               <li>Avoiding hidden modes</li>
+               <li>Reducing unnecessary complexity</li>
+            </ul>
+            <p>These principles align with the Aesthetic-Usability Effect, which states that users find a system easier to use when it is aesthetically pleasing (Yablonski, 2020)Clean, well-organized interfaces reduce cognitive load and help users avoid mistakes.</p>
+            <h4>Error Prevention is something that should be Considered from an Ethical Standpoint</h4>
+            <p>When systems are designed to be confusing or deceptive, users are more likely to make errors that benefit the company instead of helping users accomplish what they intended. It can manipulate users into action they didn't intend to do, such as sharing data or making purchases. Ethical design requires transparency, clarity, and respect for users.</p>
+            <h3>Ethical Design </h3>
+            <p>Modern digital products are intertwined with user behavior. They shape how we communicate, learn, shop and spend our time. Designers must recognize the ethical implications of persuasive techniques.</p>
+            <h4> Persuasive Design vs. Manipulative Design</h4>
+            <p>Yablonski (2020) argues that persuasive design becomes harmful when it compromises user goals or takes advantage of psychological vulnerabilities. Scrolling on your phone, variable rewards, and personalized ads can all create compulsive usage patterns that prioritizes engagement metrics over user well-being.</p>
+            <h4>The Role of Friction in Ethical Design</h4>
+            <p>Friction is a valuable tool. Although many industries are trying to create a user experience without friction, friction can help by:</p>
+            <ul>
+               <li>Slow users down before irreversible actions</li>
+               <li>Encourage reflection</li>
+               <li>Prevent impulsive behavior</li>
+               <li>Protect privacy</li>
+               <li>Reduce compulsive usage</li>
+            </ul>
+            <p>An example of this is when you are shown a confirmation page after a purchase, or when you want to delete an account.</p>
+            <h4>Ethical Use of Timing and Motion</h4>
+            <p>Ethical design requires using timing and motion to:</p>
+            <ul>
+               <li>Make the content easier to grasp </li>
+               <li>Reduce anxiety</li>
+               <li>Strengthen the user's sense of control </li>
+               <li>Provide clarity</li>
+               <li>Avoid manipulation</li>
+            </ul>
+            <h3>Designing With Intention and Integrity</h3>
+            <p>Interaction patterns like timing, motion, and error prevention are tools that can be used to guide users or it can be misused to gather engagement from users. They shape how users feel, how they behave, and how they remember an experience. If used correctly, they create clarity, reduce frustrations, and support users goals. When used incorrectly, they exploit vulnerabilities and encourage compulsive behavior. It is highly essential to design something that helps users not feel confused and can have a pleasant experience in order to gather potential customers. </p>
+            
+            <h3>Error Prevention</h3>
+            <p>One of the most ethical responsibilities designers have is preventing errors. People may make a mistake especially when interfaces are confusing, inconsistent, or have too much information that is placed incorrectly. Johnson (2020) categorizes slips into types such as capture slips, description slips, and mode slips, each caused by different cognitive limitations.</p>
+            <h4>Designing for Human Memory Limits</h4>
+            <p>Johnson (2020) emphasizes that working memory is extremely limited. Interfaces that stress users with choices, hidden states, or unclear labels increase the likelihood of errors.</p>
+            <div class="two-column flex-list">
+                  <section>
+                     <h4>Error Prevention Techniques</h4>
+                     <p>Designers can prevent these errors by:</p>
+                     <ul>
+                           <li>Making actions reversible</li>
+                           <li>Providing clear system status</li>
+                           <li>Using confirmation dialogs for actions that can't be reversed</li>
+                           <li>Increasing target sizes</li>
+                           <li>Avoiding hidden modes</li>
+                           <li>Reducing unnecessary complexity</li>
+                     </ul>
+                     <p>These principles align with the Aesthetic-Usability Effect, which states that users find a system easier to use when it is aesthetically pleasing (Yablonski, 2020)Clean, well-organized interfaces reduce cognitive load and help users avoid mistakes.</p>
+
+                  </section>
+
+                  <section>
+                     <h4>Error Prevention is something that should be Considered from an Ethical Standpoint</h4>
+                     <p>When systems are designed to be confusing or deceptive, users are more likely to make errors that benefit the company instead of helping users accomplish what they intended. It can manipulate users into action they didn't intend to do, such as sharing data or making purchases. Ethical design requires transparency, clarity, and respect for users.</p>
+                  </section>
+            </div>
+            <h3>Ethical Design </h3>
+            <p>Modern digital products are intertwined with user behavior. They shape how we communicate, learn, shop and spend our time. Designers must recognize the ethical implications of persuasive techniques.</p>
+            <h4> Persuasive Design vs. Manipulative Design</h4>
+            <p>Yablonski (2020) argues that persuasive design becomes harmful when it compromises user goals or takes advantage of psychological vulnerabilities. Scrolling on your phone, variable rewards, and personalized ads can all create compulsive usage patterns that prioritizes engagement metrics over user well-being.</p>
+            <h4>The Role of Friction in Ethical Design</h4>
+            <p>Friction is a valuable tool. Although many industries are trying to create a user experience without friction, friction can help by:</p>
+            <ul>
+               <li>Slow users down before irreversible actions</li>
+               <li>Encourage reflection</li>
+               <li>Prevent impulsive behavior</li>
+               <li>Protect privacy</li>
+               <li>Reduce compulsive usage</li>
+            </ul>
+            <p>An example of this is when you are shown a confirmation page after a purchase, or when you want to delete an account.</p>
+            <h4>Ethical Use of Timing and Motion</h4>
+            <p>Ethical design requires using timing and motion to:</p>
+            <ul>
+               <li>Make the content easier to grasp </li>
+               <li>Reduce anxiety</li>
+               <li>Strengthen the user's sense of control </li>
+               <li>Provide clarity</li>
+               <li>Avoid manipulation</li>
+            </ul>
+            <h3>Designing With Intention and Integrity</h3>
+            <p>Interaction patterns like timing, motion, and error prevention are tools that can be used to guide users or it can be misused to gather engagement from users. They shape how users feel, how they behave, and how they remember an experience. If used correctly, they create clarity, reduce frustrations, and support users goals. When used incorrectly, they exploit vulnerabilities and encourage compulsive behavior. It is highly essential to design something that helps users not feel confused and can have a pleasant experience in order to gather potential customers. </p>
+
+         </article>  
+               <footer class="article-footer">
+                  <h3>References</h3>
+                     <ol>
+                        <li>Huang, J., White, R. W., & Dumais, S. (2011). <em>No clicks, no problem: Using cursor movements to understand and improve search. </em> </li>
+                        <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.).</li>
+                        <li>Krofegha, B. (2020). Implementing skeleton screens in React. <em>Smashing Magazine.</em></li>
+                        <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products & services</em>.</li>
+                     </ol>
+               </footer>
+         </article>
+      </section>
 
       </main>
 <!-- Page Footer  -->
@@ -820,5 +1046,20 @@
        <p>Copyright &copy; 2025</p>
       </footer>
       </div>
+<!--JavaScript for Buttons-->
+      <script>
+         document.querySelectorAll('.module-nav button').forEach(btn => {
+            btn.addEventListener('click', () => {
+               const target = btn.getAttribute('data-target');
+
+               // hide all sections including welcome
+               document.querySelectorAll('.module-section')
+                  .forEach(sec => sec.classList.remove('active'));
+
+               // show the selected one
+               document.getElementById(target).classList.add('active');
+            });
+         });
+      </script>
    </body>
 </html>
