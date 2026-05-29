@@ -69,6 +69,67 @@ a {
     overflow-wrap: anywhere;
 }
 a:hover {
-    color: #ffffff;
+    color: #007BFF;
     text-decoration: underline;
+}
+
+#blog-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;         
+    margin: 2rem 0;
+}
+
+#blog-menu .btn {
+    background: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    transition: 0.2s;
+}
+
+#blog-menu .btn:hover,
+#back-to-top:hover {
+    background: #007BFF;
+    border-color: #005FCC;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+#blog-menu .text-capitalize {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ffffff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+
+img {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
