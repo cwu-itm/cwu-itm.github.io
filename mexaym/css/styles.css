@@ -75,3 +75,12 @@ img {
     width: 100%;
     max-width: 30rem;
 }
+
+.hero {
+    background-image: url("https://www.shutterstock.com/search/ui-ux-mobile");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem;
+    color: white;
+    text-align: center;
+}
