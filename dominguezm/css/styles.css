@@ -2,53 +2,454 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
+/* Global Styles*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
-    font-size: 16px;
     color: #333;
     font-family: Roboto, sans-serif;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.3;
+    margin: 0;
 }
+
+/* Page Header*/
+
+.page-header {
+    background: #333 url(background.jpg) center/cover no-repeat;
+    background-blend-mode: overlay;
+    color: #FFF;
+    padding: 1rem;
+}
+
+.page-header > h1 {
+    border: 2px solid #FFF;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 15px;
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 35%;
+}
+
+/*Main Content*/
 
 main {
-
-    margin-bottom:3rem;
-
+    display: grid;
+    margin: 1rem;
 }
 
-h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+main p {
+    font-size: .875rem;
+    font-weight: 300;
+    margin-top: 0;
 }
+
+.article-header {
+    background-color: #DDE5D5;
+    color: #333;
+    padding: 1rem;
+}
+
+.article-content {
+    padding: 0 1rem;
+}
+
+.two-column {
+    display: flex;
+    gap: 2rem; /* space between columns */
+}
+
+.two-column > * {
+    flex: 1;
+}
+
+/* Footer*/
+
+.page-footer {
+    background-color: #333;
+    color: #FFF;
+    font-size: .875rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.page-footer a {
+    color: #F1D23F;
+}
+
+/* Typography*/
 
 h2 {
-
     font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 0;
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
 }
 
-ol {
+ul, p {
+    font-size: .875rem;
+    font-weight: 300;
+}
 
+main ol {
+    font-size: .875rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+main ol > li {
+    padding-bottom: 1rem;
+}
+
+/* Flex List*/
+
+.flex-list {
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/* Definition Lists*/
+
+dt {
+    font-family: Oswald;
+    font-weight: 400;
+    margin-bottom: .25rem;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+dd {
+    font-size: .875rem;
+    font-weight: 300;
+    margin-bottom: .75rem;
+    margin-left: 0;
+}
+
+/*Images*/
+
+img {
+    border-radius: 5px;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.image-bar {
+    background-color: #F5F6F4; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 1.5rem; 
+    padding: 2rem;
+    border-radius: 5px;
+
+}
+
+.image-bar img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+figcaption {
+    font-size: .75rem;
+    font-weight: 300;
+    padding: .25rem auto;
+}
+
+/* Mobile Menu*/
+
+.mobile-menu {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* Navigation Flexbox Layout */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#main-nav a {
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: #F1D23F;
+}
+
+#main-nav > a {
+    color: #FFF;
+    display: block;
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding: .75rem;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.mobile-menu a.icon {
+    color: white;
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#main-nav :nth-child(6) {
+    border: 2px solid #F1D23F;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 600;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: #c4c4c4;
+}
+
+#main-nav :nth-child(6):hover {
+    background-color: #F1D23F;
+    color: #333;
+}
+
+/* Module Navigation Panel */
+.module-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background: #242222;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.module-nav button {
+    background: #1f480f;
+    color: #e0d8d8;
+    border: none;
+    padding: .75rem 1.25rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Oswald, sans-serif;
+}
+
+.module-nav button:hover {
+    background: #43bd33;
+}
+
+.module-section {
+    display: none;
+}
+
+.module-section.active {
+    display: block;
+}
+
+/* Welcome Screen */
+.welcome-box {
+    background: #1B2B1B; 
+    color: white; 
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    max-width: 700px;
+    margin: 2rem auto; 
+}
+
+
+
+/* Archives  I don't know why I have this, I think it's useless but I'll keep for now*/
+
+.archives {
+    margin: 1rem;
+}
+
+.archives > header {
+    border-bottom: 2px solid #333;
+}
+
+.archives > nav {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+    margin: 1rem;
+}
+
+.archives > nav > h3 {
+    margin-bottom:0;
     margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
 
+}
+
+.archives > nav > ol {
+    font-size: .625em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top:0;
+}
+
+/*  Desktop Layout*/
+
+@media screen and (min-width: 1024px) {
+    .comparison img {
+        max-width: 40rem; 
+    }
+    
+    .page-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+
+    .page-header {
+        display: grid;
+        grid: subgrid / subgrid;
+        grid-column: 1 / 13;
+        grid-row: 1 / 4;
+    }
+
+    .page-header > h1 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        font-size:2rem;
+        width:100%;
+
+    }
+
+    .mobile-menu a.icon {
+        display: none;
+    }
+
+    #main-nav {
+        grid-column: 4 / 12;
+        grid-row: 2 / 3;
+        display:flex;
+        justify-content: space-evenly;
+        align-items:center;
+
+    }
+
+    #main-nav a {
+        font-size:1.25rem;
+        font-weight:600;
+        font-size:1.25rem;
+
+    }
+
+    .flex-list {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem auto;
+        width: fit-content;
+    }
+
+    dl {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    
+
+    .archives {
+        display: grid;
+        grid: subgrid / subgrid;
+        grid-column: 11 / 13;
+        grid-row: 6 / 12;
+        margin: 0;
+    }
+
+    .archives > header {
+        border: none;
+        grid-column: 1 / 2;
+    }
+
+    .archives > nav {
+        display: block;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0;
+    }
+    .archives > nav {
+  
+        display:block;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin:0;
+  
+    }
+
+
+    main {
+        grid-column: 2 / 12;
+        grid-row: 4 / 5;
+        margin: 2rem auto;     
+        max-width: 900px;      
+    }
+
+    .page-footer {
+    background-color: #333; 
+    color: #FFF; 
+    display: grid;
+    font-size: 1rem;
+    grid-column: 1 / 13; 
+    grid-row: 10 / 11;
+    padding: 2rem 1rem;
+    text-align: center; 
+    }
+
+
+    .page-footer a {
+        color: #0000FF;
+    }
+
+    .copyright {
+        grid-column: 1 / 9;
+        grid-row: 10 / 11;
+    }
+
+    .contact {
+        grid-column: 9 / 11;
+        grid-row: 10 / 11;
+    }
 }
