@@ -9,7 +9,20 @@
    <body>
 <!-- Page Header  -->
       <header class="page-header">
-         <h1>Portfolio</h1>
+       <div class="logo">
+      <a href="#">DEV/BLOG</a>
+   </div>
+
+   <nav class="main-nav">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Systems</a></li>
+         <li><a href="#">SDLC</a></li>
+         <li><a href="#">UX Laws</a></li>
+         <li><a href="#">Design Ethics</a></li>
+         <li><a href="#">Sources</a></li>
+      </ul>
+   </nav>
       </header>
 <!-- Main Content Area  -->
       <main>
@@ -199,7 +212,7 @@
             <p>Modern systems use feedback constantly, cars beep when keys are left inside the vehicle, Microsoft applications ask users whether they want to save a document before exiting, websites log users out after periods of inactivity to protect security. All of these notifications reduce the amount of information users must remember on their own. </p>
             <p>Graphical user interface (GUI) design also supports usability through recognition. According to Johnson (2014), it is easier for users to recognize and choose options than it is to recall and type information from memory. Icons and symbols simplify interactions by visually communicating what they mean, for example, the universal icon for email, the magnifying glass for search, or the shopping cart for purchase. These visual shortcuts reduce the mental effort it takes to read descriptions of what you are looking for. </p>
             <figure>
-    <img src="mail icon.jpg" alt="Universal mail icon" width="300">
+    <img src="mail.jpg" alt="Universal mail icon" width="300">
     <figcaption>
         Photo by Brett Jordan showing the universal mail icon.
     </figcaption>
@@ -209,14 +222,14 @@
             <p>According to the Cognitive Load Theory, there are three types of cognitive load: intrinsic load, extraneous load, and germane load. Intrinsic load refers to the natural difficulty of the task itself. Extraneous load is the unnecessary mental effort caused by poor design, and germane load relates to building long-term understanding and skills (Werkmeister, 2024). Developers primarily focus on reducing extraneous cognitive load because it is the one they can best control. </p>
             <p>Poor design creates unnecessary cognitive load in many ways. Cluttered layouts, excessive pop-ups, confusing navigation, tiny menus, and overall inconsistencies force users to expend more mental effort understanding how a system works instead of completing their actual task. Even small frustrations from confusion can negatively impact usability when repeated. A spreading example of unnecessary cognitive load is the growing expectation that users download apps to scan QR codes for once simple tasks. Many restaurants have customers scan QR codes to read a menu, adding extra steps that some users may find inconvenient. Instead of simplifying the experience, these systems sometimes make simple tasks more complicated. </p>
             <figure>
-    <img src="QR Code.jpg" alt="QR code at restaurant" width="350">
+    <img src="qrcode.jpg" alt="QR code at restaurant" width="350">
     <figcaption>
         QR Code photo at restaurant by Albert Hu.
     </figcaption>
 </figure>
             <p> At my workplace, we are currently redesigning our SharePoint page based on user feedback and analytics data. One major issue is that the site contains too much information on a single page, making it difficult for users to quickly locate what they need. Since users can only focus clearly on a limited amount of visual information at once, long drop-down lists increase cognitive strain. Furthermore, each department page is designed differently because each department has an editor maintaining their page, creating inconsistency throughout the system. </p>
            <figure>
-    <img src="SharePoint.png" alt="Cluttered SharePoint layout" width="700">
+    <img src="sharepoint.png" alt="Cluttered SharePoint layout" width="700">
     <figcaption>
         Example of cluttered SharePoint layout with long dropdown lists increasing cognitive load and navigation difficulty.
     </figcaption>
@@ -241,12 +254,174 @@
                   </ol>
             </footer>
          </article>
-         <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
+          <article>
+            <header class="article-header">
+               <h2>Module 3.1 Blog Post</h2>
+               <h3>The Influence of Visual Design Choices</h3>
+            </header>
+            <p>The average American adult spends approximately 5 hours and 4 minutes per day looking at a screen, not including their workday (Duarte, 2024). This means, if interactive systems want to be successful, they need to consider how their interface influences user behavior and interaction with technology. Every design decision, from visual hierarchy to button placement and color, affects how easily users can complete their tasks. When interfaces are familiar and predictable, users can navigate systems without straining their mental load. Since technology is now integrated into everyday life, interfaces and interaction design have become important components in usability, accessibility, and user satisfaction. UX Laws and principles can help designers understand why users respond the way they do, and how to give the user an overall positive experience with digital systems.</p>
+            <h3>How Interface Layout Influences User Behavior</h3>
+            <p>The interface layout of a system influences how users experience and interact with it, thus affecting their behavior. User recognition makes people feel more comfortable because they are familiar with the environment. Humans learn from experience and apply that knowledge to similar situations. As users become familiar with certain layouts and navigation patterns, systems become predictable and easy to use. According to Designing with the Mind in Mind, successful interface layouts should follow familiar patterns and maintain consistency to support usability and reduce cognitive load (Johnson, 2014).</p>
+            <p>An example from Designing with the Mind in Mind discussed a user attempting to purchase airline tickets who kept getting prompted for the password. The user later discovered the website assumed he was her husband, who has recently purchased tickets on the same device. Although the system was attempting to improve efficiency by remembering user information, it instead created confusion and frustration for the user (Johnson, 2014). This shows how systems that attempt to simplify tasks can unintentionally create usability problems when assumptions about user behavior are incorrect. </p>
+            <p>When interactive systems require user attention, such as login systems or password recovery, users can become frustrated if the interface is not predictable. For example, requiring users to guess if a login is asking for an email or username, can slow tasks and increase cognitive load. Most users prefer interfaces that are predictable and easy to navigate because familiarity is comfortable, and improves efficiency while reducing mistakes. </p>
+            <p>Consistent terminology is another important concept, when systems use multiple terms to describe the same concept, it can create confusion and ambiguity. Inconsistent wording can make interfaces feel less intuitive and increase the chance of user errors. Consistency across navigation, labels, and controls help users build mental models that improve usability. </p>
+            <p>Interface layouts also influence behavior through system feedback and responsiveness. Responsive systems help users understand the status of their actions and reduce uncertainty. For example, clear error messages or password prompts provide users with guidance rather than leaving them confused on why a system is not working. Delayed or unclear feedback can decrease productivity, frustrate users, and in some cases discourage them from continuing to use the system altogether. </p>
+            <h3>UX Laws</h3>
+            <h4>Postel's Law</h4>
+            <p>Postel’s Law focuses on making systems more flexible and forgiving for users. In digital interfaces, people are going to type things differently or make mistakes, therefore systems should be able to work with users. This allows systems to be easier to use for people with different accessibility and usability needs. </p>
+            <p>As mentioned in the Laws of UX, systems should be designed to recognize the intended input, process it correctly, and give proper feedback. For example, if a user were to misspell a word in Google’s search engine, Google will recognize the intended meaning and suggest corrections or similar search results. This improves usability and reduces frustration if a user were to make a small mistake. Because of this, users are still able to find the information they need without having to be perfect (Yablonski et al., 2020).</p>
+            <p></p>  
+            <figure>
+            <img src="google.jpg" alt="Google search with a misspelling" width="700">
+    <figcaption>
+        Photo of Google search correcting misspelling.
+    </figcaption>
+    </figure>
+    <p></p>
+            <p>This principle is important to adhere to because overly strict systems can make users feel limited or overwhelmed by small mistakes. Manny systems today can automatically make corrections because developers understand that users are not always going to interact with interfaces the same. These types of systems are easier to use and make the user feel like they understand the interface, which reduces cognitive load. </p>
+            <h4>Aesthetic-Usability Effect</h4>
+            <p>Another UX principle is the Aesthetic-Usability Effect. This principle explains how users often perceive visually appealing systems as easier to use, even when usability problems may exist. Aesthetic design choices like color palettes, clean layouts, spacing, and typography all influence how uses feel about an interface. The common phrase “don’t judge a book by its cover” does not apply to interface design because users naturally form opinions based on appearance and ease of use. For example, if users compared two websites that contain similar information, but look different, they are more likely to choose the website that appears more modern, organized, and visually appealing. Bright colors, clear spacing, and minimal clutter can make interfaces easier to process and navigate. When something appears visually overwhelming or cluttered, users may feel frustrated or less likely to continue using the interface (Yablonski et al., 2020). We saw this in the earlier reference to Apple’s recent updates, specifically the Photos application. Because of its new cluttered design, users took the time to learn how to revert it to its original format as much as possible.</p>
+            <h4>Von Restorff Effect</h4>
+            <p>Similar to the Aesthetic-Usability Effect, the Von Restorff Effect focuses on how visual elements stand out are more likely to be remembered. Every part of a design is hoping for user’s attention, especially in today’s digital world of people constantly scrolling through online platforms filled with information. Since users are exposed to large amounts of information every day, designers use visual hierarchy and emphasis to guide attention toward important actions or information. </p>
+            <p>This principle is most noticeable in online shopping and advertising. When users browse online stores with thousands of products, bright colors, pop-ups, and motion effects are used to direct attention to sales or important information. Since these platforms often contain large amounts of information at once, users tend to scan pages quickly rather than read carefully. A good interface design recognizes this behavior, and intentionally uses visual emphasis to influence what users notice first. This helps direct users toward actions such as clicking products or completing purchases. </p>
+            <p></p>  
+            <figure>
+            <img src="oldnavy.jpg" alt="Old Navy sale sign on website" width="700">
+    <figcaption>
+        Photo of Old Navy’s Memorial Day sale. They made the sale the focal point on the home page by making it bright red and large letters.
+    </figcaption>
+    </figure>
+    <p></p>
+            <p>Another important aspect of the Von Restorff Effect is accessibility. Even though visual emphasis can improve usability, designers also need to consider users with visual impairments or color blindness. Some users may not perceive contrast, color, or highlighted elements the same way others do, which can make navigation difficult if information relies too much on visual cues. This is why accessibility and moderation are important in interface design, too much of anything can overwhelm users and make it difficult to process information (Yablonski et al., 2020).  </p>
+            <h3>Experience with Interface Logic: Apple</h3>
+            <p>An unfortunate and seemingly ongoing frustration I have experience with interface logic involves Apple’s recent updates to the iPhone operating system. With the emergence of iOS 18, many users were surprised by the new configuration of the Photos application. Apple completely changed the layout, reorganizing and renaming folders while moving commonly used albums, such as Favorites and Videos, deeper into subcategories. Although users were provided the option to customize album placement, the updated layout still felt extremely difficult to navigate. Instead of improving usability, the redesign increased confusion and made it harder for users to locate content. As stated in Jakob’s Law, users want websites to be familiar and follow patterns to reduce cognitive load, from Apple’s update, they did not consider this principle. </p>
+            <p>One of the most frustrating aspects of the redesign was how older photos were automatically placed at the bottom of the camera roll by default. This disrupted familiar navigation patterns that many people who are familiar with digital photo albums are used to. Users often rely on predictable layouts and repeated behaviors when interacting with systems such as a smart phone, sudden changes to interface logic can create frustration and decrease efficiency. (Add source about Apple’s positive rep for UX). In addition to this change, Apple also introduced a large “Collections” section filled with categories such as media types, utilities, pinned items, and other albums you cannot opt out of. The amount of information displayed at once made the interface feel cluttered and overwhelming. Users were unable to disable these categories, even if they do not use them, which reduces the control over the application.</p>
+            <p>The redesign also created confusion through inconsistent organization and terminology. For example, the Favorites album is placed under the “Utilities” section, even though the term utility is generally associated with system settings. This required users to spend more time searching through categories and relearning where content was located. Instead of the update feeling familiar, it increased the effort required to complete simple tasks. This experience shows how interface changes that disrupt user expectations can negatively impact usability and increase cognitive load (Shvaya, 2025).</p>
+             <p></p>  
+             <figure>
+            <img src="iphone-update.jpg" alt="Apple iPhone photo library update" width="700">
+    <figcaption> 
+        Photo of Apple’s iPhone photo library update.
+    </figcaption>
+    </figure>
+    <p></p>
+            <p>Following the iOS 18 update, Apple introduced another update that included a “Liquid Glass” visual design update. This update focused on the icons, which have not been significantly changed in over ten years (Rogers, 2025). While the intention was to modernize the interface, many users were again upset due to the significant visual change of the icons. After the update, they appeared transparent, shadowed, and at times blurry. The redesign reduced readability and made icons more difficult to differentiate quickly, which negatively affects navigation and usability. Visual design experts that attended the Worldwide Developers Conference expressed concerns about usability and unnecessary distractions from this update (Rogers, 2025). This type of issue is an example as to why the Aesthetic-Usability Effect should be considered when revamping designs.</p>
+            <p>The update also required users to spend additional time researching settings and customization options in order to make the interface feel usable again. I personally had to search online for ways to reorganize settings and reduce some of the visual effects brought on by the update. The experience increased frustration and cognitive effort because users were forced to relearn navigation patterns that had previously felt automatic. Even though Apple later responded to user feedback and provided customization changes, the experience demonstrates how visual and interaction design decisions directly influence user behavior and satisfaction of a digital interface. </p>
+           <p>The design of an interface influences how users experience digital systems, users rely on familiarity, consistency, and feedback to navigate the digital world comfortably. When systems are designed with usability and human behavior in mind, users are more likely to complete their task seamlessly. However, poor interface logic, cluttered layouts, or unnecessary visual changes can increase cognitive load and negatively affect usability. UX principles such as Postel’s Law, the Aesthetic-Usability Effect, and the Von Restorff Effect help explain why certain design choices feel overwhelming to users. As technology continues to evolve and increase in complexity, it is imperative that designers consider accessibility, predictability, and user expectations. </p>
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                  <li>Johnson, J. (2014). <em>Designing with the Mind in Mind. </em> Morgan Kaufmann Publishers/Elsevier. </li>
+                  <p></p>
+                  <li>Yablonski, J., Isolde Kommer, & Christoph Kommer. (2020). <em>Laws of UX:Using Psychology to Design Better Products & Services. O’Reilly.</em></li>
+                  <p></p>
+                  <li>Duarte, F. (2024, June 24). <em>The Psychology Behind Effective Software Interfaces - eSEOspace. ESEOspace. </em></What><a href="https://eseospace.com/blog/the-psychology-behind-effective-software-interfaces/">https://eseospace.com/blog/the-psychology-behind-effective-software-interfaces/</a></li>
+                  <p></p>
+                  <li>Rogers, R. (2025, June 10). <em>“Beautiful” and “Hard to Read”: Designers React to Apple’s Liquid Glass Update. WIRED. </em></What><a href="https://www.wired.com/story/designers-react-to-apple-liquid-glass/">https://www.wired.com/story/designers-react-to-apple-liquid-glass/</a></li>
+                  <p></p>
+                  <li>Duarte, F. (2024, June 24). <em>Alarming average screen time statistics (2024). Exploding Topics. </em></What><a href="https://explodingtopics.com/blog/screen-time-stats">https://explodingtopics.com/blog/screen-time-stats</a></li>
+               </ol>
+            </footer>
+         </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
+           <article>
+            <header class="article-header">
+               <h2>Module 3.2 Blog Post</h2>
+               <h3>Human Interaction with Digital Systems</h3>
+            </header>
+            <p>Digital interactions are part of everyday life, whether they are voluntary or unavoidable. The interactions users have with digital systems can affect emotions and shape how people respond to technology. Small design choices such as responsiveness, feedback timing, and motion can influence whether users feel supported, frustrated, overwhelmed, or confident while using an interactive system. As technology continues to evolve and users develop a higher expectation for speed and usability, designers must consider UX laws such as the Peak-End Rule, Doherty Threshold, and Zeigarnik Effect to better understand how users perceive and remember their experiences with digital systems to create an ethical and accessible system. </p>
+    <section class="two-column">
 
+   <div class="column">
+      <h3>Interaction Patterns</h3>
+      <p>Feedback timing, responsiveness, and motion shape how users feel while interacting with digital systems. These patterns can reduce uncertainty, support task completion, and help users feel more confident.</p>
+   </div>
+
+   <div class="column">
+      <h3>Ethical Design</h3>
+      <p>UX laws and persuasive techniques can improve usability, but designers must use them carefully. Ethical design should support user wellbeing, accessibility, and informed decision-making.</p>
+   </div>
+
+</section>
+            <h3>User Emotions with Digital Interaction</h3>
+            <p>All users respond differently to digital interactions such as feedback timing, responsiveness, and motion, and it is important for a designer to consider all users. Some users naturally have more patience, while others may become frustrated quickly depending on how the system responds. </p>
+            <p>Feedback timing is the idea that users should not have to wonder whether a system is working or not. Systems that do not meet users’ timing expectations are generally considered less effective and can make users feel uncertain or ignored (Johnoson, 2014). For example, if a user tries to log into something but accidently enters the wrong password and receives no indication that the password is incorrect, they are left waiting and wondering if the website is functioning properly. In this case, a simple message or visual indicator can reduce confusion and reassure the user that the system heard and is responding to their actions. </p>
+            <p>Responsiveness is the most important part of digital interaction because interactive systems need to react to user actions in a timely manner. This can include icon changes, hover states, loading indicators, or buttons visually responding when clicked. Responsiveness refers to how quickly a system reacts to an action, while feedback is the confirmation that the action was received (Johnson, 2014). Systems that fail to provide responsiveness often leave users feeling frustrated and unsure if their input was acknowledged. </p>
+            <p>Recently, I have experienced an ongoing issue with the signature feature not responding in Adobe Pro. When I try to click the “X” to change my signature, it does not respond. Normally, it would take less than ten seconds to switch my signature to my supervisor’s signature, but instead it takes several minutes of repeated clicking, exiting the application, and sometimes even restarting my computer just to get it to function correctly. The lack of responsiveness makes it difficult to complete my work efficiently because the system gave no indication that it received my input. According to Johnson (2014), feedback that does not meet users’ deadlines or expectations can negatively affect usability because users begin to feel uncertain about their tasks. Situations like this can also increase cognitive load because users must spend their time trying to troubleshoot or find workarounds instead of focusing on their actual task. </p>
+            <figure>
+    <img src="adobe.jpeg" alt="Adobe signature feature" width="700">
+    <figcaption>
+        Adobe signature feature.
+    </figcaption>
+</figure>
+            <p>Motion also plays an important role in how users emotionally respond to a system. The motion in an interactive system should be smooth, intentional, and easy for all users to follow. Motion such as animation can help guide attention, communicate progress, and improve usability. If motion is too fast, overwhelming, or excessive, it can frustrate users and make interfaces harder to navigate. For example, if a menu or sale animation moves too quickly, users may not have enough time to read or process the information before it disappears. This negatively impacts accessibility, cognitive load, and the overall user experience. </p>
+            <p>To better support users’ emotional needs, interactive systems should acknowledge user actions when possible. Even if a task takes time to process, users should still receive indicators that the system is working, such as using loading wheels, progress bars, or confirmation messages. These small interaction patterns can help reassure users and create a more positive experience. </p>
+<figure>
+    <img src="mac.jpg" alt="Apple logo with loading bar" width="700">
+    <figcaption>
+        “Apple logo is shown on a black background” by Claudio Schwarz
+    </figcaption>
+</figure>
+<h3>UX Laws</h3>
+<h4>Peak-End Rule</h4>
+<p>The Peak-End Rule explains how people tend to remember an experience based on its emotional peak and its ending, rather than the small moments in between. People are more likely to remember highly emotional moments, positive or negative, instead of the mundane details. This happens because memory bias can sometimes override smaller details with stronger emotional reactions. </p>
+<p>Humans naturally remember emotional experiences more vividly than neutral ones, and this also applies to digital interactions. According to Yablonski (2020), examples of the Peak-End Rule can often be seen in digital spaces such as Spotify wrapped and Apple Music Replay. These features leave users with a strong emotional impression that is connected to impactful memories. </p>
+<p>A way designers can apply this rule is through journey mapping, where emotional peaks are identified throughout the user experience, typically though analyzing lens, experience, and insights (Yablonski et al., 2020). My experience using Adobe Pro at work illustrates an example of this rule in practice because the frustrating ending of the interaction shaped my overall perception of the software. Even if the program worked properly most of the time, the repeated lagging and lack of responsiveness during important tasks left me with a negative lasting impression and loss of trust. </p>
+<h4>Doherty Threshold</h4>
+<p>The Doherty Threshold intertwines with feedback timing and responsiveness since it focuses on keeping users engaged with an interactive system. System should provide feedback as fast as 400 milliseconds to maintain user attention. In today’s digital world, users expect fast and reliable performance, and delays can negatively affect the overall experience. </p>
+<p>The speed at which a system responds is extremely important because slow response times can increase frustration. When users have to stop what they are doing and wait for a system to process a task, they tend to lose focus. This can also increase cognitive load because users shift their attention away from their original task, then have to try to refocus once the system is working. Modern technology has conditioned many users to expect almost instant responses from websites and applications. According to Verint (2025), 56% of consumers prioritize speed over empathy during digital interactions, illustrating how responsiveness impacts users’ expectations. </p>
+<p>Interactive systems can maintain engagement when loading by using visual feedback such as loading pages, skeleton pages, or progress indicators. These interaction patterns help users see that a system is functioning, even if the content takes a moment to load. For instance, Reddit is a platform that uses loading animations to create the perception of responsiveness while content is processing. Instead of leaving users starting at a blank screen, the application provides visual feedback that communicates the system is working. </p>
+<figure>
+    <img src="reddit.png" alt="Reddit skeleton page="700">
+    <figcaption>
+        Screenshot of Reddit's loading skeleton page.
+    </figcaption>
+</figure>
+<h4>Zeigarnik Effect</h4>
+<p>The Zeigarnik Effect explains how unfinished tasks take up space in the mind, increasing cognitive load. It suggests that users tend to remember incomplete tasks better than completed ones because the brain continues to focus on unresolved actions. When an interactive system takes too long to respond and users move on to pass the time, they may still continue to think about their unfinished task. This can negatively affect focus, productivity, and the user experience. </p>
+<p>For example, when people create mental to-do lists and begin a task but do not finish it, the unfinish task often remains in their thoughts because they are aware it still needs to be completed. This creates mental tension and can sometimes trigger emotional fatigue or frustration. In digital environments, systems that fail to provide fast responsiveness or clear feedback can contribute to this feeling by leaving users uncertain on whether an action was completed successfully. </p>
+<p>The Zeigarnik Effect is also used in design to encourage users to continue interacting with a platform. Features such as progress bars, completion trackers, shopping cart notifications, and unread messages indicators all encourage users to return to the incomplete task. These interaction patterns can help users stay organized and remember important tasks (Dash, 2023). </p>
+<h3>Ethics in Design</h3>
+<p>As technology continues to rapidly evolve, it is the responsibility of designers to create interactive systems ethically while considering usability, accessibility, and user wellbeing. Although people technically have the option not to use smartphones or digital platforms, modern society is increasingly becoming dependent on technology for communication, information, work, and everyday tasks. Because of this, inaccessible design choices can create barriers for users. </p>
+<p>For example, many restaurants, information boards, and other services require scanning of QR codes in order to view the information. However, not all users’ own smartphones, have reliable internet access, or feel comfortable navigating digital systems for tasks that were once analog. Some websites also assume users already understand technology, forcing them to create accounts just to navigate a complicated interface before accessing the information they seek. Designers must recognize that users have different level of knowledge, abilities, and access to technology.</p>
+<p>Although designers may not have bad intentions, persuasive technologies can create ethical concerns depending on how they are used. Common features such as the Facebook like button, Instagram hearts, view count, and others all are part of a variable reward system to keep users engaged by enticing them to continuously check the applications. While these interactions can increase system usage, they can also negatively affect mental health, attention spans, and self-esteem when used too much. </p>
+<p>Designers must thoughtfully implement persuasive features and prioritize supporting users, rather than application engagement. Giving users the ability to change their notification settings, personalization options, set screen time reminders, adjust accessibility settings allow for an option of control for users and support them making their own decisions when interacting with a system. </p>
+<p>Ethical design also requires transparency and accountability. Users should understand when information is being collected, how systems can influence behavior, and why interaction patterns are being used. Designers can apply UX principles ethically by focusing on human-centered design rather than manipulation. IDEO’s design principles also support this by emphasizing empathy and designing around what is desirable and beneficial for users. All in all, designers have the responsibility to create systems that consider all types of users. </p>
+<section class="image-bar">
+   <figure>
+      <img src="phone.jpg" alt="Person holding smartphone">
+   <figcaption>"Person holding black android smartphone" by Jonas Leupe</figcaption>
+   </figure>
+   
+   <figure>
+      <img src="social.avif" alt="A thumbs up">
+   <figcaption>Photo by Valeria Nikitina</figcaption>
+   </figure>
+   
+   <figure>
+      <img src="screen.avif" alt="Apple phone settings">
+   <figcaption>"Person holding a smartphone displaying a settings menu" by Amanz </figcaption>
+   </figure>
+   
+</section>
+<p>There are many factors in a digital system that affects users’ emotions, some include responsiveness, feedback timing, motion, and persuasive design. UX laws such as Peak-End Rule, Doherty Threshold, and Zeigarnik Effect help designers understand why users remember certain interactions, expect fast responses, and continue thinking about unfinished tasks. As technology continues to become more integrated into daily life, ethical design is imperative because designers have the capability to influence users’ emotions, attention, and behavior. Designers should create systems that not only function well, but also support usability, accessibility, and user wellbeing. </p>
+ <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                  <li>Johnson, J. (2014). <em>Designing with the Mind in Mind. </em> Morgan Kaufmann Publishers/Elsevier. </li>
+                  <p></p>
+                  <li>Yablonski, J., Isolde Kommer, & Christoph Kommer. (2020). <em>Laws of UX:Using Psychology to Design Better Products & Services. O’Reilly.</em></li>
+                  <p></p>
+                  <li>VERINT. (2025). <em>State of Customer Experience 2025 Report. </em></What><a href="https://canvas.cwu.edu/courses/115100/assignments/1883390?module_item_id=4483505">https://canvas.cwu.edu/courses/115100/assignments/1883390?module_item_id=4483505</a></li>
+                  <p></p>
+                  <li>Dash, J.J. (2023, September 6). <em>The Zeigarnik Effect: The Art of Keeping Users Engaged in UX Design. </em></What><a href="https://medium.com/design-bootcamp/the-zeigarnik-effect-the-art-of-keeping-users-engaged-in-ux-design-dac5c653c20f">https://medium.com/design-bootcamp/the-zeigarnik-effect-the-art-of-keeping-users-engaged-in-ux-design-dac5c653c20f</a></li>
+                  <p></p>
+               </ol>
+            </footer>
+         </article>
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
