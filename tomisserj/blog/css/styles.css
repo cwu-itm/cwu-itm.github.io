@@ -103,6 +103,36 @@ ol {
     color: #EAD971;
 }
 
+/* Archive Nav */
+#archive-nav {
+    margin: 1.5rem 0;
+}
+
+#archive-nav h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#archive-nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#archive-nav ol li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #1E3A5F;
+    border: 1px solid #1E3A5F;
+    padding: 0.25rem 0.6rem;
+}
+
+#archive-nav ol li a:hover {
+    background-color: #1E3A5F;
+    color: #EAD971;
+}
+
 /* Blog heading background */
 .article-header {
     background-color: #1E3A5F;
