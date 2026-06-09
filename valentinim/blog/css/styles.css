@@ -148,21 +148,3 @@ article {
         gap: 1rem;
     }
 }
-.portfolio-links ul{
-    list-style: none;
-    padding: 0;
-}
-.portfolio-links li {
-    margin-bottom: 1rem;
-}
-.portfolio-links a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: darkblue;
-    padding: .75rem 1.25rem;
-    border-radius: 5px;
-}
-.portfolio-links a {
-    background-color: black;
-}
