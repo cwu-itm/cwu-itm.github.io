@@ -1,54 +1,103 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* ==============================================
+   Module 3.1 Blog Post Styles
+   ============================================== */
 
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+/* Blog heading: dark background, light contrasting text, 1rem (16px) padding */
+.blog-heading {
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+  padding: 1rem;
 }
 
-body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+.blog-heading h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
-main {
-
-    margin-bottom:3rem;
-
+.blog-heading .blog-meta {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #bbbbbb;
 }
 
-h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+/* Blog content: 0 top/bottom padding, 1rem (16px) left/right padding */
+.blog-content {
+  padding: 0 1rem;
 }
 
-h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+.blog-content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
 }
 
-ol {
+.blog-content h4 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+/* Paragraphs, lists, and figcaptions: font-weight 300, 0.875rem (14px) */
+.blog-content p,
+.blog-content ul,
+.blog-content ol,
+.blog-content li,
+.blog-content figcaption,
+.sources-list li {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: #222222;
+}
 
+/* Responsive images: 100% width, max-width 30rem (480px) */
+.blog-content img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* Figure spacing */
+.blog-content figure {
+  margin: 1.75rem 0;
+}
+
+/* Figcaption: italic, muted color */
+.blog-content figcaption {
+  color: #555555;
+  font-style: italic;
+  margin-top: 0.35rem;
+}
+
+/* Sources list */
+.sources-list {
+  list-style-type: none;
+  padding-left: 0;
+  border-top: 1px solid #dddddd;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.sources-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
+}
+
+.sources-list a {
+  color: #1a1a2e;
+  word-break: break-all;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
 }
