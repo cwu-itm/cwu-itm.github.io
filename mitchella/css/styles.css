@@ -1,103 +1,157 @@
 /* ==============================================
-   Module 3.1 Blog Post Styles
+   Final Portfolio — Amiir Mitchell
+   Design notes:
+   - One accent color used sparingly (Von Restorff: distinct = noticed)
+   - Large link cards (Fitts's Law: bigger targets = faster, fewer errors)
+   - Clear type scale & spacing (visual hierarchy guides scanning)
    ============================================== */
 
-/* Blog heading: dark background, light contrasting text, 1rem (16px) padding */
-.blog-heading {
-  background-color: #1a1a2e;
-  color: #f0f0f0;
-  padding: 1rem;
+:root {
+  --ink: #1a1a2e;        /* carried over from my blog styles for consistency (Jakob's Law) */
+  --paper: #fbfaf7;
+  --muted: #5c5c6e;
+  --line: #e3e1da;
+  --accent: #b4541e;     /* single warm accent — used only where attention belongs */
 }
 
-.blog-heading h2 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.4;
+* {
+  box-sizing: border-box;
 }
 
-.blog-heading .blog-meta {
+body {
   margin: 0;
-  font-size: 0.875rem;
-  color: #bbbbbb;
-}
-
-/* Blog content: 0 top/bottom padding, 1rem (16px) left/right padding */
-.blog-content {
-  padding: 0 1rem;
-}
-
-.blog-content h3 {
-  margin-top: 1.75rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a2e;
-}
-
-.blog-content h4 {
-  margin-top: 1.25rem;
-  margin-bottom: 0.25rem;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 600;
-  color: #333333;
+  line-height: 1.7;
+  /* single readable column, comfortably under ~70 characters per line */
+  max-width: 44rem;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Paragraphs, lists, and figcaptions: font-weight 300, 0.875rem (14px) */
-.blog-content p,
-.blog-content ul,
-.blog-content ol,
-.blog-content li,
-.blog-content figcaption,
-.sources-list li {
-  font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  color: #222222;
+/* ---------- Header ---------- */
+
+.eyebrow {
+  font-family: Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem 0;
 }
 
-/* Responsive images: 100% width, max-width 30rem (480px) */
-.blog-content img {
-  width: 100%;
-  max-width: 30rem;
-  height: auto;
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1.25rem 0;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- Main content ---------- */
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 3rem 0 0.75rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+main p {
+  margin: 0 0 2rem 0;
+  color: var(--ink);
+}
+
+/* ---------- Work links ---------- */
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+/* The whole card is the link — a large, forgiving click target */
+.work-link {
   display: block;
-  margin: 1rem 0 0.5rem 0;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ink);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-/* Figure spacing */
-.blog-content figure {
-  margin: 1.75rem 0;
+.work-link:hover,
+.work-link:focus-visible {
+  border-left-color: var(--accent);
+  transform: translateX(4px);
 }
 
-/* Figcaption: italic, muted color */
-.blog-content figcaption {
-  color: #555555;
-  font-style: italic;
-  margin-top: 0.35rem;
+.work-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
-/* Sources list */
-.sources-list {
-  list-style-type: none;
-  padding-left: 0;
-  border-top: 1px solid #dddddd;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+.work-label {
+  display: block;
+  font-family: Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
 }
 
-.sources-list li {
-  margin-bottom: 0.75rem;
-  padding-left: 2rem;
-  text-indent: -2rem;
+.work-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
 }
 
-.sources-list a {
-  color: #1a1a2e;
-  word-break: break-all;
+.work-desc {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
-.sources-list a:hover {
-  text-decoration: underline;
+/* ---------- Footer ---------- */
+
+.page-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
 }
+
+.page-footer p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
 }
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .work-link {
+    transition: none;
+  }
+  .work-link:hover {
+    transform: none;
+  }
+}
+
