@@ -1,343 +1,173 @@
-/* ==========================================================================
-   1. Global Resets & Base Styles
-   ========================================================================== */
+/* Dark cyber-style portfolio design */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #f4f6f8;
-    padding: 2rem 1rem;
+  margin: 0;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 195, 255, 0.25), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(149, 76, 255, 0.25), transparent 35%),
+    #0b1020;
+  color: #f5f7fa;
+  line-height: 1.6;
 }
 
-/* Central layout constraint to keep your content readable */
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; /* Even spacing between your various blog modules */
+/* Center content */
+body > h1,
+body > h2,
+body > p,
+body > nav {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ==========================================================================
-   2. Shared Portfolio Elements (Header & Standard Articles)
-   ========================================================================== */
-.page-header {
-    max-width: 1100px;
-    margin: 0 auto 2rem auto;
-    border-bottom: 3px solid #333333;
-    padding-bottom: 0.5rem;
+/* Main title */
+h1 {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  padding: 45px 30px;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  background: linear-gradient(135deg, #1f3b73, #6d5dfc, #00c3ff);
+  border-radius: 24px;
+  box-shadow: 0 0 35px rgba(0, 195, 255, 0.35);
+  letter-spacing: 1px;
 }
 
-.page-header h1 {
-    font-size: 2.5rem;
-    color: #111111;
+/* Paragraph cards */
+p {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8edf7;
+  padding: 24px 28px;
+  margin-top: 22px;
+  margin-bottom: 28px;
+  font-size: 1.1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
 }
 
-/* Formatting for all standard blog articles (Modules 1.1, 1.2, 2.1) */
-article {
-    background-color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+/* Portfolio heading */
+h2 {
+  margin-top: 50px;
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  color: #8edcff;
+  border-left: 6px solid #00c3ff;
+  padding-left: 16px;
+  text-shadow: 0 0 12px rgba(0, 195, 255, 0.35);
 }
 
-.article-header {
-    border-bottom: 1px solid #eaeaea;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
+/* Navigation area */
+nav {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+ -webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
 }
 
-.article-header h2 {
-    color: #0066cc;
-    font-size: 1.75rem;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-/* Typography elements within the essays */
-article h3, .blog-main-content h3 {
-    font-size: 1.35rem;
-    color: #222222;
-    margin: 1.75rem 0 0.75rem 0;
+nav li {
+  margin: 0;
 }
 
-article h4, .blog-main-content h4 {
-    font-size: 1.1rem;
-    color: #444444;
-    margin: 1.25rem 0 0.5rem 0;
+/* Project buttons */
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 22px 18px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #182848, #4b6cb7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  transition: 0.25s ease;
 }
 
-article p, .blog-main-content p {
-    margin-bottom: 1.25rem;
-    text-align: justify;
-    text-justify: inter-word;
+/* Different colors for each link */
+nav li:nth-child(1) a {
+  background: linear-gradient(135deg, #0061ff, #60efff);
 }
 
-article strong, .blog-main-content strong {
-    color: #111111;
+nav li:nth-child(2) a {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
 }
 
-/* Standard Article Reference Footers */
-.article-footer {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eaeaea;
+nav li:nth-child(3) a {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
 }
 
-.article-footer h3 {
-    font-size: 1.1rem;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
+nav li:nth-child(4) a {
+  background: linear-gradient(135deg, #ff512f, #f09819);
 }
 
-.article-footer p {
-    font-size: 0.9rem;
-    color: #555555;
-    margin-bottom: 0.5rem;
-    text-indent: -1.5rem;
-    padding-left: 1.5rem; /* Standard hanging indent */
+/* Button hover effect */
+nav a:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 28px rgba(0, 195, 255, 0.45);
+  filter: brightness(1.1);
 }
 
-/* ==========================================================================
-   3. Module 3.2 Blog Post Specific Layout
-   ========================================================================== */
-
-/* Outer frame wrapper for the sub-branded layout */
-.blog-container {
-    margin-top: 2rem;
-    padding: 2.5rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    border-top: 4px solid #0066cc; /* Draws visual focus to the new section */
+/* Keyboard accessibility */
+nav a:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 5px;
 }
 
-/* Sub-Header & Navigation Layout (Flexbox) */
-.blog-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid #f0f0f0;
-    margin-bottom: 2rem;
-}
+/* Mobile-friendly */
+@media (max-width: 700px) {
+  body {
+    padding: 0 16px;
+  }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #222222;
-    letter-spacing: -0.5px;
-}
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 40px;
+    padding: 34px 20px;
+  }
 
-.logo-accent {
-    color: #0066cc;
-}
+  h2 {
+    font-size: 1.7rem;
+  }
 
-.blog-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1.5rem;
-}
+  p {
+    font-size: 1rem;
+    padding: 20px;
+  }
 
-.blog-nav a {
-    text-decoration: none;
-    color: #555555;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-}
+  nav {
+    padding: 22px;
+  }
 
-.blog-nav a:hover {
-    color: #0066cc;
-}
-
-/* Module 3.2 Title Banner */
-.blog-title-banner {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.blog-title-banner h2 {
-    font-size: 2.25rem;
-    margin-bottom: 0.5rem;
-    color: #111111;
-}
-
-.blog-title-banner .subtitle {
-    font-size: 1.1rem;
-    color: #666666;
-    font-style: italic;
-}
-
-/* Structural Two-Column Core Layout (Flexbox responsive stack) */
-.blog-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin-bottom: 4rem;
-}
-
-.blog-main-content {
-    flex: 3;
-}
-
-.blog-sidebar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Sidebar Callout Blocks */
-.sidebar-box {
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 6px;
-    border-left: 4px solid #0066cc;
-}
-
-.sidebar-box h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #222222;
-    margin-bottom: 1rem;
-}
-
-.sidebar-box ul {
-    padding-left: 1.25rem;
-    margin: 0;
-}
-
-.sidebar-box li {
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-    color: #444444;
-}
-
-/* Custom Highlight Border for Quotes inside Sidebar */
-.quote-box {
-    border-left-color: #e06666; 
-}
-
-.quote-box blockquote {
-    margin: 0;
-    font-style: italic;
-    color: #333333;
-    line-height: 1.5;
-}
-
-.quote-author {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: #777777;
-    font-style: normal;
-    text-align: right;
-}
-
-/* Image Gallery System using CSS Grid */
-.blog-image-bar {
-    margin-bottom: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #eaeaea;
-}
-
-.blog-image-bar h3 {
-    margin-bottom: 1.5rem;
-    color: #222222;
-}
-
-.image-grid {
-    display: grid;
+  nav ul {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
+  }
 
-.image-grid figure {
-    margin: 0;
-    background-color: #f8f9fa;
-    padding: 0.75rem;
-    border: 1px solid #e1e1e1;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.image-grid img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.75rem;
-    border-radius: 2px;
-}
-
-.image-grid figcaption {
-    font-size: 0.85rem;
-    color: #666666;
-    line-height: 1.4;
-}
-
-/* Module 3.2 Formal Reference Footer */
-.blog-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #222222;
-}
-
-.blog-footer h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.references-list {
-    list-style: none;
-    padding: 0;
-}
-
-.references-list li {
-    margin-bottom: 0.75rem;
-    text-indent: -2rem;
-    padding-left: 2rem; /* Precise APA hanging indent layout styling */
-    font-size: 0.9rem;
-    color: #444444;
-    line-height: 1.5;
-}
-
-.footer-attribution {
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #999999;
-}
-
-/* ==========================================================================
-   4. Media Queries for Responsive Design (Desktop Optimization)
-   ========================================================================== */
-@media (min-width: 768px) {
-    body {
-        padding: 3rem 2rem;
-    }
-
-    /* Arranges Main content & Sidebar side-by-side on larger screens */
-    .blog-content-wrapper {
-        flex-direction: row;
-    }
-    
-    /* Transitions the stacking images into a clean 3-column horizontal rail */
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-.apple-map-img {
-    display: block;
-    margin: 2rem auto; /* Centers the image horizontally and adds top/bottom spacing */
-    width: 25vw;        /* Sets width to exactly 1/4 (25%) of the screen width */
-    height: auto;       /* Maintains the image's original aspect ratio */
-    border-radius: 6px; /* Smooth corners matching your portfolio theme */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow lift */
+  nav a {
+    padding: 18px;
+  }
 }
