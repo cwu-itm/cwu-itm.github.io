@@ -1,0 +1,202 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+html {
+    font-size: 16px;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF;
+    margin: 1% auto;
+    width: 90%;
+    max-width: 57rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+main {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+/* Paragraphs, lists, and figcaptions */
+p, ul, ol, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* List specific styles */
+ol {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* Page header - solid color */
+.page-header {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Logo */
+.site-logo {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #EAD971;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation flexbox layout */
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+#main-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.5rem 0.75rem;
+}
+
+#main-nav a:last-child {
+    border: 2px solid #EAD971;
+    border-radius: 5px;
+    color: #EAD971;
+    font-weight: 600;
+}
+
+#main-nav a:hover {
+    color: #EAD971;
+}
+
+/* Archive Nav */
+#archive-nav {
+    margin: 1.5rem 0;
+}
+
+#archive-nav h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#archive-nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#archive-nav ol li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #1E3A5F;
+    border: 1px solid #1E3A5F;
+    padding: 0.25rem 0.6rem;
+}
+
+#archive-nav ol li a:hover {
+    background-color: #1E3A5F;
+    color: #EAD971;
+}
+
+/* Blog heading background */
+.article-header {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.article-header p {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Blog content padding */
+.article-content {
+    padding: 0 1rem;
+}
+
+/* Responsive images */
+img {
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 5px;
+}
+
+/* Image bar grid layout */
+.image-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #F5F6F4;
+    border-radius: 5px;
+}
+
+/* Figure and figcaption */
+figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 0.25rem;
+}
+
+/* Article footer / sources */
+.article-footer {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #333;
+}
+
+/* Page footer */
+.page-footer {
+    padding: 1rem;
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+.page-footer a {
+    color: #EAD971;
+}
