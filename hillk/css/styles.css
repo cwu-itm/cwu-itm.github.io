@@ -2,53 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
-}
+/* ------------------------------
+   Global Styles
+------------------------------ */
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  background-color: #FDFBF7;  
+  color: #1A1A1A;             
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
+/* Layout container */
 main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
 
-    margin-bottom:3rem;
 
+h1, h2 {
+  color: #1A1A1A;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
 }
 
-ol {
-
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
-
+.blurb-text {
+  max-width: 750px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
+
+
+
