@@ -1,0 +1,115 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GLOBAL */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+background: #17203D;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* CONTENT Wrapper */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* HEADERS */
+header h1 {
+  font-size: 2.8rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* TEXT */
+.blurb-text {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.2rem;
+background: #6552D0;
+  border-radius: 10px;
+  font-size: 1.15rem;
+color: #ffffff;
+  backdrop-filter: blur(4px);
+}
+
+/* LINKS LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+ul li {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+ul li::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+ background: #ffffff;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+ul li a {
+  text-decoration: underline;
+  font-size: 1.15rem;
+color: #f7f7f7;
+background: rgba(101, 82, 208, 0.10);
+
+border: 1px solid rgba(101, 82, 208, 0.35);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  display: block;
+  text-align: left; 
+  width: 100%; 
+  max-width: 400px; 
+}
+
+ul li a:hover,
+ul li a:focus-visible {
+background: rgba(101, 82, 208, 0.28);
+border-color: rgba(101, 82, 208, 0.65);
+color: #f7f7f7;
+
+  transform: translateY(-2px);
+outline:none;
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  background: #cccccc;
+  color: #444;
+  font-size: 0.9rem;
+}
