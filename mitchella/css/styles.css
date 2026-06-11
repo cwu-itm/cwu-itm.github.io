@@ -1,54 +1,157 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* ==============================================
+   Final Portfolio — Amiir Mitchell
+   Design notes:
+   - One accent color used sparingly (Von Restorff: distinct = noticed)
+   - Large link cards (Fitts's Law: bigger targets = faster, fewer errors)
+   - Clear type scale & spacing (visual hierarchy guides scanning)
+   ============================================== */
 
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+:root {
+  --ink: #1a1a2e;        /* carried over from my blog styles for consistency (Jakob's Law) */
+  --paper: #fbfaf7;
+  --muted: #5c5c6e;
+  --line: #e3e1da;
+  --accent: #b4541e;     /* single warm accent — used only where attention belongs */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  /* single readable column, comfortably under ~70 characters per line */
+  max-width: 44rem;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-main {
+/* ---------- Header ---------- */
 
-    margin-bottom:3rem;
-
+.eyebrow {
+  font-family: Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem 0;
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1.25rem 0;
 }
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- Main content ---------- */
 
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 3rem 0 0.75rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
 }
 
-ol {
-
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
-
+main p {
+  margin: 0 0 2rem 0;
+  color: var(--ink);
 }
+
+/* ---------- Work links ---------- */
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+/* The whole card is the link — a large, forgiving click target */
+.work-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ink);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.work-link:hover,
+.work-link:focus-visible {
+  border-left-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.work-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.work-label {
+  display: block;
+  font-family: Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.work-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.work-desc {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ---------- Footer ---------- */
+
+.page-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.page-footer p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .work-link {
+    transition: none;
+  }
+  .work-link:hover {
+    transform: none;
+  }
+}
+

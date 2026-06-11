@@ -1,54 +1,173 @@
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Dark cyber-style portfolio design */
 
-/* Global Styles */
-html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  margin: 0;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 195, 255, 0.25), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(149, 76, 255, 0.25), transparent 35%),
+    #0b1020;
+  color: #f5f7fa;
+  line-height: 1.6;
 }
 
-main {
-
-    margin-bottom:3rem;
-
+/* Center content */
+body > h1,
+body > h2,
+body > p,
+body > nav {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Main title */
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+  margin-top: 70px;
+  margin-bottom: 25px;
+  padding: 45px 30px;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  background: linear-gradient(135deg, #1f3b73, #6d5dfc, #00c3ff);
+  border-radius: 24px;
+  box-shadow: 0 0 35px rgba(0, 195, 255, 0.35);
+  letter-spacing: 1px;
 }
 
+/* Paragraph cards */
+p {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8edf7;
+  padding: 24px 28px;
+  margin-top: 22px;
+  margin-bottom: 28px;
+  font-size: 1.1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
+}
+
+/* Portfolio heading */
 h2 {
-
-    font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+  margin-top: 50px;
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  color: #8edcff;
+  border-left: 6px solid #00c3ff;
+  padding-left: 16px;
+  text-shadow: 0 0 12px rgba(0, 195, 255, 0.35);
 }
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+
+/* Navigation area */
+nav {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+ -webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
 }
 
-ol {
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+nav li {
+  margin: 0;
+}
 
+/* Project buttons */
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 22px 18px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #182848, #4b6cb7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  transition: 0.25s ease;
+}
+
+/* Different colors for each link */
+nav li:nth-child(1) a {
+  background: linear-gradient(135deg, #0061ff, #60efff);
+}
+
+nav li:nth-child(2) a {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+
+nav li:nth-child(3) a {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+nav li:nth-child(4) a {
+  background: linear-gradient(135deg, #ff512f, #f09819);
+}
+
+/* Button hover effect */
+nav a:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 28px rgba(0, 195, 255, 0.45);
+  filter: brightness(1.1);
+}
+
+/* Keyboard accessibility */
+nav a:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 5px;
+}
+
+/* Mobile-friendly */
+@media (max-width: 700px) {
+  body {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 40px;
+    padding: 34px 20px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  nav {
+    padding: 22px;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    padding: 18px;
+  }
 }

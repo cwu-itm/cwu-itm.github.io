@@ -1,54 +1,148 @@
-/* Importing Fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
+/* Global */
 html {
     font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 2rem;
     width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+    max-width: 900px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
 }
 
-main {
-
-    margin-bottom:3rem;
-
-}
-
+/* Headings */
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-family: Oswald, sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
-
     font-family: Oswald, sans-serif;
-    font-size:2rem;
-
-}
-h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-ol {
+/* Text */
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #dddddd;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+/* Navigation Buttons */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+nav a {
+    display: block;
+    padding: 14px 22px;
+    background-color: #0f0f0f;
+    border: 2px solid #00eaff;
+    border-radius: 4px;
+    color: #00eaff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 0 12px #00eaff55;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #00eaff22;
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #00eaffaa;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Lava Lamp Background */
+.lava-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(60px);
+    opacity: 0.55;
+}
+
+.lava-blob {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: floatBlob 18s infinite ease-in-out;
+    mix-blend-mode: screen;
+}
+
+.blob1 { background: #ff0066; top: 10%; left: 15%; animation-duration: 22s; }
+.blob2 { background: #00ccff; top: 40%; left: 60%; animation-duration: 26s; }
+.blob3 { background: #33ff00; top: 70%; left: 30%; animation-duration: 20s; }
+.blob4 { background: #ffcc00; top: 20%; left: 75%; animation-duration: 24s; }
+
+@keyframes floatBlob {
+    0%   { transform: translate(0, 0) scale(1); }
+    25%  { transform: translate(-80px, 60px) scale(1.2); }
+    50%  { transform: translate(60px, -80px) scale(0.9); }
+    75%  { transform: translate(100px, 40px) scale(1.3); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Matrix Decode Animation */
+@keyframes matrixLetter {
+    0% {
+        opacity: 0;
+        color: #00ff00;
+        filter: blur(3px);
+    }
+    50% {
+        opacity: 1;
+        color: #00ff00;
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        color: #ffffff;
+        filter: blur(0);
+    }
+}
+
+/* FIX: matrix letters behave like normal text */
+.matrix-reveal span {
+    display: inline;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
 }
