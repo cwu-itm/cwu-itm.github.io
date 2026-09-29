@@ -18,8 +18,251 @@
             <header class="article-header">
                <h2>Module 1.1 Blog Post</h2>
             </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
+            <h3>Systems Thinking and the Design of Complex Digital Systems</h3>
+            <p># Systems Thinking and the Design of Complex Digital Systems
+
+When I think about systems thinking, I think about changing the question from **“What is wrong with this part?”** to **“How are all of these parts interacting to create what I am seeing?”** That distinction is important because complex digital systems rarely operate as isolated pieces. Software, hardware, databases, networks, users, business processes, and organizational goals all interact with one another. A change to one part can create consequences somewhere else that were not immediately obvious.
+
+After reviewing the module readings from *Systems Engineering Demystified*, I see systems thinking as more than simply looking at the “big picture.” It is a way of understanding the **relationships among the parts of a system, the different perspectives of stakeholders, and the way a system behaves as a connected whole**. Holt and Perry (2019) emphasize that the relationships between system elements are just as important as the elements themselves. This idea is particularly relevant to digital environments because modern systems depend on numerous interconnected components.
+
+Systems thinking also helps explain why a model-based approach is useful for complex systems. Instead of relying entirely on separate documents to describe requirements, architecture, processes, and behavior, Model-Based Systems Engineering (MBSE) uses a model as an organized representation of the system. The model can provide different views of the same system while maintaining consistency among those views (Holt & Perry, 2019). In my view, this makes MBSE a practical extension of systems thinking because it gives teams a structured way to see, communicate, and manage system relationships.
+
+## What Is Systems Thinking?
+
+In my own words, **systems thinking is the practice of understanding a problem by examining the whole system and the relationships among its components rather than analyzing each component independently**.
+
+For example, consider a university's online learning environment. At first, it might seem like the system is simply a website where students access course materials and submit assignments. However, the actual system is much larger. It may include students, instructors, administrators, authentication services, databases, cloud infrastructure, notification systems, accessibility requirements, cybersecurity controls, mobile devices, and internet connections.
+
+These components do not operate independently.
+
+Suppose a university changes its authentication process to improve security. From a narrow perspective, this could appear to be a cybersecurity project. From a systems-thinking perspective, however, the change could affect login times, help-desk requests, students' ability to access assignments, instructors' workflows, mobile-device compatibility, and the university's support processes.
+
+The security system itself might work exactly as designed while the overall system experiences new problems.
+
+This illustrates one of the ideas I found particularly important in the module reading: **the relationships between system elements matter just as much as the elements themselves** (Holt & Perry, 2019). A system cannot always be understood simply by examining its components separately.
+
+NASA makes a similar point in its *Systems Engineering Handbook*. NASA defines a system as elements that function together to meet a need and explains that the value created by the system as a whole comes largely from the relationships among its interconnected parts (National Aeronautics and Space Administration [NASA], n.d.). ([NASA][1])
+
+This is what makes systems thinking different from simply having a broad perspective. It requires actively examining **dependencies, interactions, boundaries, stakeholders, constraints, and consequences**.
+
+## Systems Thinking and Linear Thinking
+
+Systems thinking differs from traditional linear thinking because linear thinking tends to focus on straightforward cause-and-effect relationships.
+
+A simplified linear approach might look like this:
+
+**Problem → Cause → Solution → Result**
+
+This approach can be extremely useful for simple problems. For example, if a computer will not turn on because its power cable is disconnected, identifying the immediate cause and reconnecting the cable may completely solve the problem.
+
+However, complex digital systems rarely behave this simply.
+
+Imagine that a company experiences declining employee productivity. A linear approach might identify the problem as employees not completing enough work and respond by increasing employee monitoring. However, productivity might actually be influenced by outdated software, unclear requirements, excessive meetings, insufficient training, poor communication, workload, management practices, or inefficient business processes.
+
+Increasing monitoring could then introduce additional effects that were not considered initially.
+
+The important difference is that **linear thinking tends to search for a primary cause, while systems thinking examines relationships and interactions among multiple causes and effects**.
+
+The module reading reinforces this idea through its discussion of the three major problems that can contribute to system failures: **complexity, communication, and understanding**. Holt and Perry (2019) explain that these problems can influence one another. Unmanaged complexity can contribute to communication problems and a lack of understanding, while poor communication and misunderstanding can increase complexity.
+
+This is an important systems-thinking concept because it shows that problems can reinforce one another. Instead of:
+
+**A causes B**
+
+the relationship can sometimes look more like:
+
+**A affects B → B affects C → C affects A**
+
+This creates feedback within the system.
+
+For digital systems, this could happen when a poorly understood requirement creates a software design problem, which creates additional work, which creates schedule pressure, which reduces testing time, which leads to more defects, which then creates additional work. There is no single event that completely explains the problem. The problem emerges from the interactions among several parts of the project.
+
+## Stakeholder Perspectives and Context
+
+Another concept from the module reading that changed how I think about systems is **context**.
+
+Different stakeholders can look at the same system and have completely different interpretations of what the system needs to accomplish. Holt and Perry (2019) explain that stakeholders may perceive or interpret the same need differently depending on their point of view and context.
+
+This seems especially important in information technology.
+
+Consider a statement such as:
+
+**“The system must be easy to use.”**
+
+That sounds straightforward, but what does “easy to use” actually mean?
+
+For a student, it might mean being able to log in quickly and find assignments without additional training. For an instructor, it might mean being able to create assignments and grade submissions efficiently. For an IT administrator, it might mean having centralized management and troubleshooting capabilities. For a cybersecurity professional, ease of use cannot come at the expense of appropriate security controls.
+
+Everyone could agree that the system should be easy to use while having different interpretations of what that requirement actually means.
+
+This demonstrates why systems thinking requires more than understanding technology. It also requires understanding **people and their perspectives**.
+
+The module reading describes systems engineering through the relationship among **People, Process, and Tools** (Holt & Perry, 2019). I think this is particularly applicable to digital systems because organizations sometimes focus too heavily on technology while overlooking the people and processes surrounding that technology.
+
+Buying a new software platform does not automatically solve a business problem. The organization also needs people who understand how to use the system and processes that allow the technology to support the organization's goals.
+
+This is an important lesson for project management as well. A project can technically deliver everything that was requested and still fail to produce the intended outcome if the people and processes surrounding the technology were not considered.
+
+## Why Model-Based Systems Engineering Is Applicable
+
+This leads directly into the second major part of the assignment: **why is a model-based approach useful when designing complex digital systems?**
+
+The module reading explains that MBSE is not simply a small part of systems engineering. Instead, it represents a way of performing systems engineering through a rigorous model-based approach (Holt & Perry, 2019).
+
+The fundamental concept is that the **model acts as an abstraction of the system**.
+
+An abstraction does not attempt to reproduce every detail of the real system. Instead, it represents the information necessary to understand and successfully develop the system. Holt and Perry (2019) emphasize that a model is necessarily a simplification of the actual system. The important issue is whether the model contains the relevant information necessary for the purpose for which it is being used.
+
+I think this makes sense because trying to represent every single detail of a complex digital system at once would actually make the system harder to understand.
+
+For example, consider a university registration system. A model could represent:
+
+* Students
+* Courses
+* Instructors
+* Departments
+* Registration requirements
+* Authentication
+* Payment systems
+* Course capacity
+* Notifications
+* Databases
+* External systems
+
+A stakeholder does not necessarily need to see all of these elements at the same time.
+
+Instead, the model can provide different **views** of the system.
+
+A student-services administrator might need a view showing enrollment processes. A database administrator might need a structural view showing data relationships. A cybersecurity professional might need a view showing authentication and authorization. A project manager might need a higher-level view showing system components and dependencies.
+
+These can all represent the same underlying system while emphasizing different information.
+
+Holt and Perry (2019) explain that each view has a particular audience, purpose, and collection of information. Importantly, the views must remain consistent with one another. If different diagrams contradict each other, they are essentially just a collection of pictures rather than a coherent model.
+
+That concept of **consistency** is one of the strongest arguments for MBSE.
+
+## Models Help Manage Complexity
+
+The module reading identifies complexity as one of the major problems in systems engineering and explains that modeling can help identify where complexity exists within a system (Holt & Perry, 2019).
+
+This is important because complexity itself is not necessarily bad.
+
+A large digital system may inherently be complex because it has many legitimate requirements and dependencies. The goal is not always to eliminate complexity. Instead, the goal is to **understand and manage it**.
+
+For example, a banking application might need strong authentication, encryption, fraud detection, transaction processing, regulatory compliance, customer support, mobile access, and integration with other financial systems. Removing these functions simply to make the system less complex might make the system incapable of fulfilling its purpose.
+
+Modeling can instead help identify where the complexity exists and how different components depend on one another.
+
+NASA similarly emphasizes the importance of considering system relationships and the overall system rather than evaluating components in isolation. Its systems engineering guidance describes systems engineering as a multidisciplinary approach that looks at the “big picture” and considers the interactions among system elements (NASA, n.d.). ([NASA][1])
+
+This is particularly applicable to digital systems because dependencies are often difficult to see when they are represented only through separate documents.
+
+## Moving From Documents to Models
+
+One of the most interesting ideas from the module reading is the evolution from **document-based systems engineering to model-based systems engineering**.
+
+In a traditional document-based approach, information about a system may be distributed among requirements documents, spreadsheets, diagrams, technical specifications, test plans, and other files. The module reading describes the first stage of MBSE evolution as a document-based approach in which knowledge about the system is spread throughout the document set (Holt & Perry, 2019).
+
+The problem is not that documents are useless. Documents are still valuable. The problem is that maintaining consistency across a large collection of separate documents can become increasingly difficult as the system grows.
+
+Imagine that a requirement changes. A project team might have to determine:
+
+1. Which requirements document contains the original requirement?
+2. Which architecture diagrams are affected?
+3. Which software components depend on it?
+4. Which interfaces need to change?
+5. Which tests verify the requirement?
+6. Which user documentation needs updating?
+7. Which stakeholders need to be informed?
+
+If those relationships are not clearly connected, someone can easily miss something.
+
+MBSE attempts to improve this situation by making the model a central representation of system information.
+
+INCOSE describes MBSE as the formalized application of modeling to support requirements, design, analysis, verification, and validation across the system lifecycle. It also describes MBSE as an approach intended to move systems engineering away from primarily document-oriented practices toward models. ([INCOSE][2])
+
+That does not mean that documentation disappears. Instead, the model becomes a more authoritative and connected source of system information.
+
+## Structure and Behavior
+
+Another concept from the module reading that connects directly to systems thinking is the distinction between **structure and behavior**.
+
+The structure of a system describes what exists and how the elements relate to one another. Behavior describes how those elements operate, including sequences, conditions, and timing (Holt & Perry, 2019).
+
+I think this distinction is useful because a digital system can have a technically correct structure while still behaving incorrectly.
+
+For example, a food-delivery application might have the correct relationships among customers, restaurants, drivers, orders, and payments. However, the application still needs to correctly handle what happens when a customer places an order, the restaurant accepts it, a driver receives the assignment, payment is processed, and the order is delivered.
+
+The structure answers questions such as:
+
+**“What are the parts and how are they connected?”**
+
+Behavior answers questions such as:
+
+**“What happens, when does it happen, and under what conditions?”**
+
+Both are necessary to understand the system.
+
+This reinforces the systems-thinking principle that understanding individual components is not enough. We also need to understand how those components interact over time.
+
+## Modeling Improves Communication
+
+I also think MBSE is useful because it can improve communication among stakeholders.
+
+One of the module reading's “three evils” of systems engineering is poor communication among stakeholders (Holt & Perry, 2019). This makes sense because complex systems involve people with different areas of expertise.
+
+A software developer, project manager, cybersecurity specialist, business analyst, and executive may all use different terminology when discussing the same system.
+
+A model provides a shared representation.
+
+The module reading explains that modeling can help create common communication mechanisms through notation and domain-specific language. SysML, for example, can provide standardized ways to visualize different aspects of a system (Holt & Perry, 2019).
+
+INCOSE similarly describes MBSE as supporting system requirements, design, analysis, verification, and validation throughout the system lifecycle (INCOSE, n.d.). ([INCOSE][2])
+
+This is important because communication problems can become technical problems. If a stakeholder misunderstands a requirement, the development team may build exactly what they were told to build but still produce the wrong solution.
+
+A good model can help expose those misunderstandings earlier.
+
+## Systems Thinking From a Project Management Perspective
+
+From a project management perspective, I think systems thinking is especially useful because project managers constantly deal with relationships among scope, schedule, cost, resources, stakeholders, risks, and quality.
+
+A traditional approach might consider each area separately. A systems-thinking approach asks how changing one area affects the others.
+
+For example:
+
+**Scope increases → more work is required → schedule may increase → additional resources may be needed → cost may increase → additional coordination may be required.**
+
+This is not simply a sequence of independent events. Each decision affects other parts of the project system.
+
+The same concept applies to digital system development. A change to a requirement can affect architecture, development, testing, training, documentation, schedule, and budget.
+
+This is why I think systems thinking is a valuable mindset for anyone working in IT or project management. It encourages people to consider consequences before making isolated decisions.
+
+## My Overall Takeaway
+
+The biggest lesson I take from systems thinking is that **a system is more than the sum of its individual parts**. Understanding each component is important, but understanding the relationships among those components is what allows us to understand the system as a whole.
+
+Traditional linear thinking is still valuable for simple and well-defined problems. If a problem has a clear cause and straightforward solution, there may be no reason to develop a complex model. However, digital systems increasingly involve large numbers of interconnected components, stakeholders, requirements, interfaces, and dependencies. In those environments, relying exclusively on linear thinking can cause important relationships to be overlooked.
+
+Systems thinking provides the mindset for examining those relationships.
+
+Model-Based Systems Engineering provides a practical way to represent them.
+
+The module reading's discussion of **complexity, communication, understanding, context, People-Process-Tools, structure, behavior, and system models** helped me see that MBSE is not simply about drawing diagrams. A model is useful because it provides an organized abstraction of the system that can help people understand complexity and communicate about the system consistently (Holt & Perry, 2019).
+
+The connection can ultimately be summarized with a simple idea:
+
+> **Do not just ask whether each component works. Ask whether the components work together to accomplish the purpose of the system.**
+
+That distinction is important in IT because successful technology is more than functioning software or hardware. A successful digital system has to work within a larger environment involving people, processes, information, technology, stakeholders, and organizational objectives.
+
+Systems thinking helps us see those connections. MBSE gives us a structured way to represent and manage them.
+
+As digital systems become more interconnected, I believe this way of thinking will become increasingly important. The challenge is no longer simply building individual technological components. The larger challenge is understanding how those components interact and designing the entire system so that its parts work together toward a meaningful goal.
+
+
+</p>
             <h3>Offal Tofu Cred Green Juice</h3>
             <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
             <h3>Blue Roof Pour-Over Man Bun</h3>
@@ -33,7 +276,13 @@
             <h3>Mlkshk Stumptown Hot Chicken</h3>
             <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
             <footer class="article-footer">
-                <h3>Sources:</h3>
+                <h3>Sources:
+                  Holt, J. D., & Perry, S. A. (2019). *Don't panic! The absolute beginner's guide to model-based systems engineering*. INCOSE UK Publishing.
+
+International Council on Systems Engineering. (n.d.). *MBSE Initiative Working Group*. [https://www.incose.org/group/mbse-initiative/](https://www.incose.org/group/mbse-initiative/?utm_source=chatgpt.com)
+
+National Aeronautics and Space Administration. (n.d.). *Systems Engineering Handbook: 2.0 Fundamentals of systems engineering*. [https://www.nasa.gov/reference/2-0-fundamentals-of-systems-engineering/](https://www.nasa.gov/reference/2-0-fundamentals-of-systems-engineering/?utm_source=chatgpt.com)
+</h3>
                 <ol>
                     <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
                     </ol>
