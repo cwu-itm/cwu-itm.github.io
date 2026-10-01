@@ -289,7 +289,296 @@ National Aeronautics and Space Administration. (n.d.). *Systems Engineering Hand
             </footer>
          </article>
 
-         <!-- Module 1.2 Blog Post Starts here -->
+         <# The Systems Development Life Cycle: Designing Systems That Can Evolve
+
+When I first think about developing a digital system, I tend to picture the project as a sequence of tasks: identify what needs to be done, design the solution, build it, test it, and release it. While that is part of the process, systems engineering requires a broader way of thinking. A system is not simply something that gets built and then finished. It evolves over time as people use it, technology changes, requirements change, and eventually the system is replaced or retired.
+
+This is why the **systems development life cycle** is important. The life cycle provides a way to think about a system from its initial concept through development, use, support, and eventual retirement. In *Systems Engineering Demystified*, Holt explains that a life cycle describes the stages involved in the evolution of an entity, while a Life Cycle Model describes how those stages are executed and in what order (Holt, 2023). 
+
+For digital systems in particular, thinking about the entire life cycle changes how I would approach a project. Instead of asking only, “How do we build this system?” I would also ask, “How will this system be used, maintained, supported, updated, and eventually replaced?” That shift is important because many of the problems with digital systems do not appear when the system is first released. They appear later when the system needs to adapt.
+
+## What Is the Systems Development Life Cycle?
+
+In my own words, the **systems development life cycle (SDLC)** is the complete path a system follows from the point when an organization recognizes a need until the system is eventually retired. It provides a structure for understanding how a system develops and changes throughout its existence.
+
+Holt's discussion of the System Life Cycle identifies six major stages: **Conception, Development, Production, Utilization, Support, and Retirement**. Conception focuses on understanding the system's needs and stakeholders. Development involves considering possible solutions and selecting a preferred solution. Production creates the actual system and includes verification and validation activities. Utilization is when users and operators actually use the system. Support includes maintenance and services needed to keep the system operating effectively. Finally, Retirement addresses decommissioning and safe disposal of the system. 
+
+One important point from the reading is that these stages should not necessarily be viewed as rigid steps that are identical for every system. Holt explains that the stages can be executed in different sequences, and some stages can even be omitted depending on the system and the Life Cycle Model being used. 
+
+This is particularly relevant to digital systems because technology changes quickly. A software application might be updated hundreds of times during its operational life. A system might also need to be redesigned because of cybersecurity threats, changes in user expectations, new hardware, changes in regulations, or the retirement of an underlying technology.
+
+The National Institute of Standards and Technology (NIST) similarly describes the system development life cycle as covering activities from initiation and development through implementation, operation, maintenance, and ultimately disposal. NIST also emphasizes incorporating security throughout the life cycle rather than treating security as something that happens only after development. ([NIST][1])
+
+This reinforces an important idea: **development is only one part of a system's life.**
+
+## The Difference Between a Life Cycle and a Life Cycle Model
+
+Another concept from the reading that I found useful is the distinction between a **Life Cycle** and a **Life Cycle Model**.
+
+A Life Cycle describes **what stages exist**. A Life Cycle Model describes **how those stages are executed**. Holt essentially describes the Life Cycle as the structural representation of an entity's evolution and the Life Cycle Model as the behavioral representation that explains the order in which the stages occur. 
+
+This distinction matters because two systems can have similar stages but use very different approaches to moving through them.
+
+For example, one project might complete requirements, design, development, testing, and deployment once in a fairly predictable sequence. Another project might repeatedly move through those activities, releasing increasingly complete versions of the system. A third might divide the system's functionality into pieces and deploy those pieces over time.
+
+The three Life Cycle Models discussed in the reading—**linear, iterative, and incremental**—illustrate these differences.
+
+---
+
+## Linear Life Cycle Model
+
+The **linear Life Cycle Model** is probably the easiest model to understand. Each stage is completed in sequence before moving to the next stage. There is normally no planned route back to an earlier stage.
+
+Holt uses the Waterfall Model as the classic example of a linear Life Cycle Model. The model works particularly well when the original needs are clearly understood, the technology is familiar, resources are readily available, and the project is relatively short. 
+
+### Characteristics
+
+A linear model generally has:
+
+* A clearly defined sequence of stages
+* A predictable progression from one stage to another
+* Limited movement back to previous stages
+* Well-defined gates or decision points
+* A relatively stable set of requirements
+* A final product or system delivered toward the end of the project
+
+### Advantages
+
+One major advantage of a linear approach is **simplicity**. Everyone involved can understand where the project is and what comes next. This can make planning, scheduling, budgeting, documentation, and project management easier.
+
+The model can also work well when requirements are unlikely to change. If an organization knows exactly what it needs and the technology is well understood, there may be little reason to repeatedly revisit earlier decisions.
+
+Another advantage is that clearly defined stages and gates can provide control. A project manager can establish specific criteria that must be satisfied before the project moves forward.
+
+### Potential Drawbacks
+
+The biggest problem is that a linear model assumes a level of certainty that many modern digital projects simply do not have.
+
+Holt specifically explains that the linear model is not well suited for large, complex systems where needs can change. It is also less appropriate for long-term projects because the product is delivered in a single release at the end. 
+
+Imagine developing a university online learning platform using a strictly linear model. The project team could spend months gathering requirements and designing the entire platform. By the time the system is ready for deployment, students, faculty, security requirements, or university policies may have changed.
+
+The problem is not necessarily that the original plan was poorly created. The problem is that **the environment changed while the plan was being executed**.
+
+That is one reason linear development can become risky for complex digital systems.
+
+---
+
+## Iterative Life Cycle Model
+
+The **iterative Life Cycle Model** approaches development differently. Instead of moving through the stages only once, the project moves through them multiple times. Each pass is called an **iteration**.
+
+Holt describes an iteration as essentially a smaller pass through the Life Cycle, producing a workable version of the system. Each subsequent iteration can provide a more complete or improved version. 
+
+This approach is especially familiar in software development, where new versions can be released frequently.
+
+### Characteristics
+
+An iterative model generally includes:
+
+* Multiple passes through Life Cycle stages
+* Frequent development and testing
+* Repeated opportunities for improvement
+* Working versions of the system
+* Feedback between releases
+* The ability to learn from previous iterations
+
+### Advantages
+
+The biggest advantage of iteration is **learning**.
+
+Instead of assuming that the team knows everything at the beginning, the project allows knowledge to develop over time. Users can interact with an early version, provide feedback, and influence later versions.
+
+Another advantage is recoverability. Holt notes that if a particular release does not work, it may be possible to return to a previous version that still provides useful functionality. 
+
+Iteration can also reduce the risk of waiting until the end of a project to discover that the system does not work as expected.
+
+For a digital product, this could mean releasing a basic version of an application, observing how users interact with it, identifying problems, and then improving it during the next iteration.
+
+### Potential Drawbacks
+
+Iteration is not automatically easier. One potential problem is that frequent releases can create pressure to release something simply because the schedule says it is time to release it.
+
+Holt specifically identifies this concern, noting that iterative software development can sometimes place emphasis on getting a release out on time rather than waiting until it fully works. 
+
+Another problem is changing stakeholder needs. If requirements change constantly without a strong process for managing them, the project can lose direction.
+
+Therefore, iteration requires discipline. Feedback needs to be evaluated rather than automatically accepted. Otherwise, the project can become a continuous cycle of changes without a clear definition of what the system is ultimately supposed to accomplish.
+
+---
+
+## Incremental Life Cycle Model
+
+The **incremental Life Cycle Model** is similar to the iterative model because the system is developed through multiple releases. However, there is an important difference.
+
+With an iterative approach, each version generally represents an improved version of the system. With an incremental approach, the system is divided into **subsets of functionality**, and those subsets are developed and deployed over time.
+
+Holt explains that the incremental model begins with the Concept Stage covering the overall needs, while later development and production activities address different subsets of those needs. The result is a partial version of the overall system that can be deployed before the entire system is complete. 
+
+### Characteristics
+
+An incremental model generally includes:
+
+* Multiple releases
+* A defined overall set of needs
+* Development of portions of the system
+* Early deployment of usable functionality
+* Expansion of the system over time
+* A final system assembled from multiple increments
+
+### Advantages
+
+The biggest advantage is that users do not necessarily have to wait until the entire project is finished.
+
+Holt describes the incremental model as particularly useful for long projects where some functionality is needed before the entire system is complete. 
+
+For example, imagine a university developing a new student information system. Instead of waiting years to release everything, the university might first deploy student registration, followed by financial aid, then advising, and later additional services.
+
+This approach could provide organizational value earlier while allowing the team to continue developing the remaining functionality.
+
+### Potential Drawbacks
+
+The biggest limitation is that **not every system can be divided into independent pieces**.
+
+Holt specifically points out that some systems cannot be broken down into subsets of the overall system, making the incremental approach unsuitable in those situations. 
+
+There can also be integration challenges. If individual increments are developed separately, the project team has to make sure that the pieces eventually work together as one coherent system.
+
+This is where systems thinking becomes especially important. Developing pieces independently does not eliminate the need to understand the whole.
+
+---
+
+## Comparing the Three Models
+
+| Life Cycle Model | Basic Approach                                                  | Major Advantage                                                    | Potential Drawback                                          |
+| ---------------- | --------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **Linear**       | Complete stages sequentially                                    | Simple, predictable, and easy to manage                            | Difficult to accommodate changing needs                     |
+| **Iterative**    | Repeat the Life Cycle to improve versions                       | Encourages learning and feedback                                   | Can lead to frequent changes or pressure for rapid releases |
+| **Incremental**  | Deliver different portions of the system over multiple releases | Provides useful functionality before the entire system is finished | Some systems cannot be divided effectively                  |
+
+What stands out to me is that these models are not simply different ways of scheduling tasks. They represent different assumptions about **certainty and change**.
+
+The linear model assumes that we can understand much of the problem early.
+
+The iterative model assumes that we will learn more as we develop and use the system.
+
+The incremental model assumes that the overall system can be separated into useful pieces that can be delivered independently.
+
+That distinction is useful for project management because choosing a Life Cycle Model should depend on the characteristics of the project rather than personal preference.
+
+---
+
+## Why the Life Cycle Matters for Digital Systems
+
+The most important lesson I take from this chapter is that a digital system should not be viewed as a finished product. It should be viewed as something that **continues to exist and evolve**.
+
+This has major implications for design.
+
+If developers only think about initial deployment, they may create a system that works today but becomes difficult to maintain tomorrow. A system's architecture, technology choices, documentation, security controls, and interfaces can all affect how easily it can evolve.
+
+The reading makes this point particularly clear through its discussion of the **Technology Life Cycle**. Technologies move through stages such as research and development, adoption, maturity, and decline. Holt explains that a system's life cycle can depend heavily on the technologies incorporated into the system, and technologies can become obsolete while a system is still operating. 
+
+This is something I think is easy to overlook.
+
+A system might be designed correctly and still become difficult to support because one of its underlying technologies disappears. For example, an application could depend on an outdated programming framework, database platform, hardware component, or third-party service. If that technology is no longer supported, the system can become increasingly expensive or risky to maintain.
+
+Therefore, **good system design needs to consider future change**.
+
+---
+
+## Life Cycle Thinking and Sustainability
+
+Life cycle thinking also connects directly to sustainability.
+
+When I hear the word sustainability, I initially think about environmental sustainability. However, for digital systems, sustainability can also mean the ability of a system to remain useful, supportable, secure, and adaptable over time.
+
+A system that requires complete replacement every few years may create more cost and disruption than a system designed for controlled evolution.
+
+This does not mean that every system should be kept forever. Retirement is an important part of the life cycle. Holt specifically includes Retirement as one of the stages of the System Life Cycle and describes it as the process of decommissioning and safely disposing of the system. 
+
+NIST similarly includes disposal as part of the system development life cycle rather than treating it as something outside the development process. ([NIST][1])
+
+This changes how I think about sustainability. A sustainable system is not necessarily a system that lasts forever. Instead, it is a system for which the organization has considered **how it will be maintained, changed, replaced, and retired**.
+
+That means retirement should not be an afterthought.
+
+If an organization waits until a system becomes completely obsolete before thinking about replacement, it may have difficulty migrating data, training users, replacing interfaces, or finding compatible technology.
+
+---
+
+## Life Cycle Thinking and System Evolution
+
+NASA provides another useful perspective. Its Systems Engineering Handbook explains that systems engineering is applied to the design, realization, technical management, operation, and retirement of systems. NASA also describes life-cycle phases as a way to divide complex programs into manageable pieces and uses decision points to determine whether a project is ready to progress. ([NASA][2])
+
+What I find interesting about this is that the life cycle does not mean the system stops changing once it reaches operation.
+
+NASA's life-cycle guidance recognizes that systems engineering continues during operations and sustainment. Systems may require configuration changes, adjustments, maintenance, and responses to problems even after they are operational. ([NASA][2])
+
+This is especially applicable to digital systems.
+
+Consider an online game. The game may officially launch, but development does not necessarily stop. Developers may release patches, add content, respond to security issues, fix bugs, change infrastructure, and eventually migrate the game to newer technologies. The "finished product" at launch is actually only one point in a much longer system life cycle.
+
+The same idea applies to university systems, banking applications, healthcare platforms, business software, and mobile applications.
+
+The system's launch is not the end.
+
+It is another stage of its evolution.
+
+---
+
+## My Perspective: Life Cycle Thinking Is a Form of Risk Management
+
+My biggest takeaway from this topic is that thinking about the life cycle is really a form of **risk management**.
+
+A project team that considers only development is primarily asking, “Can we build it?”
+
+A systems engineering team has to ask much broader questions:
+
+* Can we maintain it?
+* Can users operate it effectively?
+* Can we support it?
+* Can we modify it?
+* What happens when technology changes?
+* What happens when requirements change?
+* What happens if the system fails?
+* How will we migrate its data?
+* What happens when we eventually retire it?
+
+These questions make the project more complicated initially, but they can prevent much larger problems later.
+
+This also connects to project management. From a project management perspective, it can be tempting to define success as delivering the project on time, within budget, and according to scope. Those measures are important, but systems engineering suggests that project success should also consider what happens after the project team is finished.
+
+A system that is delivered on time but becomes impossible to maintain is not necessarily a successful system.
+
+A system that meets the original requirements but cannot adapt to changing technology may also have a limited useful life.
+
+The Life Cycle Model therefore becomes more than a project schedule. It becomes a way of thinking about **how decisions made today affect the system years into the future**.
+
+## Conclusion
+
+The systems development life cycle provides a framework for understanding a system from its initial conception through development, production, utilization, support, and retirement. The three Life Cycle Models discussed in *Systems Engineering Demystified*—linear, iterative, and incremental—provide different ways of moving through those stages.
+
+The linear model provides structure and predictability but is less flexible when requirements change. The iterative model supports repeated learning and improvement but requires strong control over changing needs and release quality. The incremental model allows useful portions of a system to be delivered earlier but depends on the system being capable of being divided into meaningful pieces.
+
+For me, the most important lesson is that **a system is never just the product that gets delivered**. It includes the people who use it, the technology that supports it, the processes surrounding it, and the changes that occur throughout its existence.
+
+Thinking about the entire life cycle encourages better decisions because it forces designers and project teams to look beyond the initial implementation. It encourages them to consider sustainability, maintenance, technology obsolescence, future requirements, and eventual retirement.
+
+In a world where digital systems are constantly changing, this perspective is especially important. A system that is designed only for today may quickly become outdated. A system designed with its entire life cycle in mind has a better opportunity to remain useful, maintainable, and adaptable as its environment changes.
+
+Ultimately, I think life cycle thinking changes the fundamental question from **“How do we build this system?”** to **“How do we create, operate, maintain, evolve, and eventually retire this system responsibly?”** That broader question is what makes the systems engineering life cycle valuable for modern digital systems.
+
+---
+
+## Sources
+
+Holt, J. (2023). *Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems* (2nd ed.). Packt Publishing. ([O'Reilly Media][3])
+
+National Aeronautics and Space Administration. (2017). *NASA systems engineering handbook* (Rev. 2). NASA. ([NASA][4])
+
+Radack, S. M. (2009). *The system development life cycle (SDLC).* National Institute of Standards and Technology. ([NIST][1])
+
+[1]:>
 
          <!-- Module 2.1 Blog Post Starts here -->
 
