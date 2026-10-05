@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Karina Color Palette*/
+:root {
+    --cream: #f7f3eb;
+    --charcoal: #1d2326;
+    --green: #1f513f;
+    --burgundy: #963b58;
+    --gold: #b99245;
+    --blue-gray: #38576b;
+    --muted-text: #666;
+}
+
 /* Global Styles */
 html {
     font-size: 16px;
@@ -11,44 +22,131 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: var(--cream);
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 main {
 
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
 
 }
 
 h1 {
 
-font-family: Oswald, sans-serif;
-font-size:4rem;
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
 
 }
 
 h2 {
 
     font-family: Oswald, sans-serif;
-    font-size:2rem;
+    font-size: 2rem;
 
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 ol {
 
-    margin-top:0;
-    padding-left:0;
+    margin-top: 0;
+    padding-left: 0;
     list-style-type: none;
-    font-size:.875rem;
+    font-size: .875rem;
 
+}
+
+/* Page Header */
+.page-header {
+    padding: 2.5rem 0 1.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #333;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.page-header p {
+    margin: 0.75rem 0 0;
+    font-family: Oswald, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Figures and Images */
+figure {
+    margin: 2rem 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted-text);
+    font-style: italic;
+}
+
+.strategy-figure {
+    float: left;
+    width: 45%;
+    margin: 0 1.5rem 1rem 0;
+}
+
+.strategy-figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* KarinaOS Manual Excerpts */
+.manual-excerpt {
+    float: left;
+    width: 60%;
+    margin: 0 1.5rem 0;
+}
+
+.manual-excerpt img {
+    width: 100%;
+    height: auto;
+}
+
+/*KarinaOS Internal Review */
+.system-memo {
+    background-color: var(--charcoal);
+    color: var(--cream);
+    border-left: 0.4rem solid var(--gold);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.memo-title {
+    font-family: Oswald, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--gold);
+}
+
+.clear-float {
+    clear: both;
 }
