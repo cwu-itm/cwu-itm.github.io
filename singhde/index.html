@@ -139,6 +139,102 @@
 
          <!-- Module 1.2 Blog Post Starts here -->
 
+
+<article>
+<h2>Thinking in Life Cycles: How Digital Systems Grow and Change</h2>
+
+<h3>Introduction</h3>
+<p>When I first heard the term systems engineering life cycle, I thought it was mainly about the steps needed to build a product. After learning more, I realized that a system does not stop being important when it is launched. It still needs maintenance, improvements, security updates, and eventually replacement. A website, mobile app, or online banking service may look finished to users, but people behind the scenes are constantly working to keep it useful. Thinking about the whole life cycle helps engineers make better decisions from the beginning instead of only reacting when something goes wrong.</p>
+
+<p>In this post, I will explain the systems development life cycle and three common ways to organize development: linear, iterative, and incremental models. I will discuss what makes each approach useful, where it can create problems, and how it connects to the future of digital systems. My main takeaway is that there is no single model that works best for every project. The right choice depends on how clear the requirements are, how much change is expected, and how important it is to receive feedback early.</p>
+
+<h3>What Is the Systems Development Life Cycle?</h3>
+<p>The systems development life cycle is a structured way to plan, design, build, test, operate, maintain, and eventually retire a system. The purpose is to help a team think about more than the first version of a product. Before building anything, engineers need to understand the problem and the people who will use the system. During development, they must check that the design actually meets those needs. After release, they still need to monitor performance, correct errors, and respond to new requirements. NASA (2016) describes systems engineering as work that connects technical decisions and management across the life of a system.</p>
+
+<p>For example, imagine a college creates an app where students can register for classes, view grades, and pay tuition. The first step is learning what students, professors, and administrators need. Next, the team designs and builds the app, tests important functions, and launches it. But the work continues after launch. New courses appear, payment methods change, and security risks develop. Eventually the college might replace the app with a newer system. Every one of those decisions is part of the life cycle.</p>
+
+<p>I think this idea matters because it encourages long-term responsibility. A team might save time by skipping documentation or testing, but that choice can create bigger problems later. Planning for maintenance and replacement can seem less exciting than launching a new product, yet it is just as important. Holt and Weilkiens (2023) connect systems engineering to the challenge of organizing complex work so that many parts can function together. A life cycle gives that work a clearer structure.</p>
+
+<h3>The Linear Life Cycle Model</h3>
+<p>The linear model follows a planned sequence of stages. A team usually gathers requirements first, then moves into design, development, testing, deployment, and maintenance. It is often compared with the waterfall approach because work moves mainly in one direction. Each stage has a purpose, and the team normally completes major activities in one stage before moving to the next. IBM (n.d.) explains that software development life cycle models provide different ways to organize development activities, including sequential approaches.</p>
+
+<p>One advantage of the linear model is that it is easy to understand and manage. Teams can prepare schedules, budgets, and documentation before major development begins. Everyone has a clearer idea of what should happen next. This approach can work well when the requirements are stable and the project must follow strict procedures. For example, a company updating a predictable internal reporting system might already know exactly which reports and controls it needs.</p>
+
+<p>However, the biggest drawback is that changes can be expensive. If users discover a major problem after development is almost finished, the team may need to revisit earlier decisions. The model can also delay useful feedback because people might not see a working product until later. Imagine that a university spends months designing a student portal and then learns that students find the navigation confusing. Fixing the design at that point could require rewriting several connected parts.</p>
+
+<p>My opinion is that the linear model is useful when predictability matters more than flexibility. It can keep a project organized, but teams should not assume that an early plan will always be correct. Even a well-planned project needs communication with users and careful testing. I would be cautious about using a strictly linear approach for a new consumer app because people's expectations can change quickly.</p>
+
+<h3>The Iterative Life Cycle Model</h3>
+<p>The iterative model develops a system through repeated cycles. Instead of trying to get everything perfect on the first attempt, a team creates a version, tests it, collects feedback, and improves it. Each cycle helps the team learn more about what works and what needs to change. The same feature may be redesigned several times. This approach treats learning as part of development rather than as a sign that the original plan failed.</p>
+
+<p>A good example is a college website that helps students find academic advising appointments. The team could first create a basic booking page and ask a small group of students to try it. Students might say that the available appointment times are difficult to read. The team could improve the layout, test it again, and later adjust the reminders. The system becomes better through repeated evaluation. This fits the broader systems engineering goal of checking whether a solution actually meets stakeholder needs (NASA, 2016).</p>
+
+<p>The main advantage of iteration is flexibility. Teams can discover problems early, respond to user feedback, and improve usability before investing too much in a weak design. This is especially helpful when the problem is complex or the users are not completely sure what they need. It also gives engineers opportunities to review performance and security as the design changes.</p>
+
+<p>There are drawbacks, too. Repeated changes can make schedules difficult to predict. A team might keep adjusting small details and never agree that a feature is ready. Testing the same system again and again also requires time and money. If the team does not document decisions, people may forget why an earlier design was changed. I think iteration works best when each cycle has a clear goal and a reasonable stopping point.</p>
+
+<p>What I like most about this model is that it accepts mistakes as opportunities to learn. In real life, people rarely understand every requirement at the beginning. Asking users for feedback and improving the system seems more realistic than expecting the first version to be perfect. At the same time, feedback should guide meaningful improvements rather than endless redesign.</p>
+
+<h3>The Incremental Life Cycle Model</h3>
+<p>The incremental model builds and delivers a system in smaller, usable pieces. Instead of waiting for every planned feature to be finished, a team releases one set of functions and adds more later. Each increment expands what the system can do. This is different from iteration: iteration mainly improves or revises something, while incremental development mainly adds new capabilities. In practice, a project can use both approaches at the same time.</p>
+
+<p>For example, imagine a small business creating an online shopping website. Its first release might allow customers to browse products and place orders. A second release could add order tracking. A third might introduce customer reviews, and a fourth could include personalized recommendations. Customers get value from the earlier releases while the company continues building the rest. The development team can also learn which features customers actually use.</p>
+
+<p>One advantage is that useful parts of the system can become available sooner. The team can divide a large project into smaller tasks and make progress easier to see. If funding or priorities change, the business may still have a working product rather than a half-finished project. This approach can also reduce some risks because the team does not need to deliver every feature at once.</p>
+
+<p>However, incremental development requires careful planning of the overall system. Features released at different times still need to work together. If the first version is built without considering future additions, the team may face integration problems. Users might also become frustrated if an important feature is promised but not delivered until much later. A small initial release should still be reliable, secure, and useful.</p>
+
+<p>I think the incremental model is especially practical for digital products because people often want something they can use now rather than a perfect product years later. Still, releasing early should not mean ignoring quality. The first increment needs a strong foundation so later features can be added without breaking what already works.</p>
+
+<h3>Comparing the Three Models</h3>
+<p>The easiest way for me to remember the difference is to think about what each model emphasizes. Linear development emphasizes completing planned stages in order. Iterative development emphasizes revisiting a solution and making it better. Incremental development emphasizes adding working pieces over time. These models are not automatically good or bad. Each one answers a different project need.</p>
+
+<ul>
+<li><strong>Linear:</strong> Helpful when requirements are clear, documentation is important, and changes are limited. Its main risk is difficulty adapting to late discoveries.</li>
+<li><strong>Iterative:</strong> Helpful when user feedback and experimentation are important. Its main risk is repeated rework without clear limits.</li>
+<li><strong>Incremental:</strong> Helpful when a system can provide value in smaller releases. Its main risk is poor integration between new and existing features.</li>
+</ul>
+
+<p>Consider a banking application. Some parts, such as required financial controls, may benefit from careful planning and formal approval. The design of a customer dashboard may benefit from repeated usability testing. New features, such as budgeting tools or spending alerts, may be delivered in increments. This example shows why a team may combine ideas from different models instead of following one approach rigidly.</p>
+
+<p>The choice also depends on risk. A small mistake in a casual entertainment app might be inconvenient, while a mistake in a medical or financial system could have serious consequences. Teams need to consider reliability, security, costs, user needs, and the difficulty of making changes. A life cycle model is a guide for organizing decisions, not a replacement for good judgment.</p>
+
+<h3>Why Life Cycle Thinking Matters for Digital Systems</h3>
+<p>Digital systems constantly change because technology, user behavior, and security threats change. A website may need to support new devices. A business may need to follow updated privacy requirements. A university system may need to serve more students than it did five years ago. Thinking in life cycles helps engineers prepare for these changes instead of treating launch day as the end of the project.</p>
+
+<p>Security is one important example. If developers think only about getting a product released, they might overlook how updates will be delivered or how old accounts will be removed. Later, those weaknesses could create risks for users. Life cycle thinking encourages teams to plan for monitoring, patches, backups, and responsible retirement. In my view, maintaining a secure system is an ongoing responsibility, not a one-time checklist.</p>
+
+<p>Another important issue is sustainability. Digital products may seem invisible, but they rely on physical devices, data centers, electricity, and networks. A poorly designed system can waste computing resources or require expensive replacements. When engineers plan for efficiency, repair, updates, and reuse, they can reduce unnecessary costs and potentially reduce environmental impacts. The complete life cycle includes what happens when technology is no longer supported.</p>
+
+<p>For example, a company might replace computers every few years because its software no longer works on older hardware. If software is designed to remain compatible with reasonable hardware for longer, the company may be able to delay some replacements. That can save money and reduce electronic waste. Of course, older devices can also become unsafe when they stop receiving security updates. Sustainable decisions must balance efficiency, safety, and long-term support rather than focusing on only one factor.</p>
+
+<p>NASA's systems engineering guidance emphasizes looking across a system's life rather than treating individual stages as unrelated activities (NASA, 2016). I think this is a useful reminder that early design choices can affect years of maintenance. Holt and Weilkiens (2023) also show why complex systems need structured thinking. If many components depend on each other, even a small change can affect the larger system. Understanding those connections makes long-term decisions more responsible.</p>
+
+<h3>My Personal Reflection</h3>
+<p>Before this assignment, I mostly judged technology by whether it worked when I opened it. If an app loaded quickly and did what I needed, I considered it successful. Now I understand that a successful system also needs to be reliable over time, adaptable to change, and manageable for the people maintaining it. Users usually do not see the planning, testing, or maintenance behind a digital service, but those activities strongly affect their experience.</p>
+
+<p>If I were part of a team developing a new student app, I would probably choose an incremental approach combined with iteration. I would start with a small set of important features, such as viewing class schedules and deadlines. After students used those features, I would collect feedback and improve confusing parts before adding more tools. This would give students something useful early while still leaving room to learn. I would also make sure security and accessibility were considered from the beginning rather than added only at the end.</p>
+
+<p>One challenge I would expect is deciding when to stop improving a feature and move on. It is easy to imagine a team spending too much time making a small detail perfect. I would want the team to agree on priorities, measure whether changes help users, and document major decisions. This balance between flexibility and discipline seems important no matter which model is used.</p>
+
+<p>I also learned that sustainability is not only about saving energy. It can mean building systems that remain useful, understandable, and maintainable for a long time. Good documentation, updates, and thoughtful design can help future teams work with a system instead of starting over every time something changes. That is a practical form of sustainability that I had not considered much before.</p>
+
+<h3>Conclusion</h3>
+<p>The systems development life cycle gives engineers a way to think about a system from its first idea through operation and eventual retirement. The linear model provides a clear sequence, the iterative model supports repeated learning and improvement, and the incremental model delivers useful capabilities in stages. Each has advantages and limitations, so choosing the right approach requires understanding the project rather than following a model automatically.</p>
+
+<p>My biggest lesson is that building a digital system is not just about making something work today. It is about making decisions that support users tomorrow, next year, and sometimes much longer. When engineers consider feedback, security, maintenance, sustainability, and future change, they can create systems that are more useful and responsible throughout their lives.</p>
+
+<footer class="article-footer">
+<h3>Sources</h3>
+<ol>
+<li>Holt, J., &amp; Weilkiens, T. (2023). <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). Packt Publishing.</li>
+<li>National Aeronautics and Space Administration. (2016). <em>NASA systems engineering handbook</em> (NASA/SP-2016-6105 Rev. 2). https://www.nasa.gov/reference/systems-engineering-handbook/</li>
+<li>IBM. (n.d.). <em>What is the software development life cycle (SDLC)?</em> https://www.ibm.com/think/topics/sdlc</li>
+</ol>
+</footer>
+</article>
+
+
          <!-- Module 2.1 Blog Post Starts here -->
 
          <!-- Module 2.2 Blog Post Starts here -->
