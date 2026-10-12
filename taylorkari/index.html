@@ -9,18 +9,42 @@
 </head>
 
 <body>
-
-   <!-- Page Header -->
-   <header class="page-header">
+<header class="page-header">
       <h1>Karina Taylor</h1>
       <p>IT 312 | Design the Digital Environment Portfolio</p>
    </header>
+<main>
+<section id="portfolio-home" data-view aria-labelledby="portfolio-heading">
+  <div class="landing-intro">
+    <p class="field-label">KARINAOS™ INTERNAL DOCUMENTATION</p>
+    <h2 id="portfolio-heading">Life has bugs.</h2>
+    <p class="landing-subtitle">Someone leaked the logs.</p>
+    <p class="landing-description">Exploring systems thinking and digital design through the ongoing development of my own digital environment.</p>
+    <p class="landing-aside">Distribution status: unauthorized, apparently.</p>
+  </div>
+  <div class="collection-heading"><h3>From the leaked archive</h3><span>Two entries · IT 312</span></div>
+  <div class="blog-grid">
+    <section class="blog-card" aria-labelledby="blog-11-heading">
+      <p class="card-module">01 / Module 1.1</p>
+      <p class="card-topic">Systems Thinking</p>
+      <h3 id="blog-11-heading">The system is working exactly as designed. Unfortunately.</h3>
+      <p class="card-description">A look inside KarinaOS, where useful tools still need useful relationships.</p>
+      <a href="#module-1-1">Open incident report <span aria-hidden="true">↗</span><span class="visually-hidden">: Module 1.1</span></a>
+    </section>
+    <section class="blog-card" aria-labelledby="blog-12-heading">
+      <p class="card-module">02 / Module 1.2</p>
+      <p class="card-topic">Thinking in Life Cycles</p>
+      <h3 id="blog-12-heading">KarinaOS™ 2.0: You can't patch your way out of a bad life cycle.</h3>
+      <p class="card-description">KarinaOS™ 2.0 meets empty spreadsheet rows, real workflows, and better development decisions.</p>
+      <a href="#module-1-2">Open incident report <span aria-hidden="true">↗</span><span class="visually-hidden">: Module 1.2</span></a>
+    </section>
+  </div>
+  <p class="notebook-note">Built with curiosity. Revised with evidence. Maintained with dinner.</p>
+</section>
+<!-- Module 1.1 Blog Post Starts Here -->
+<article id="module-1-1" data-view>
+<nav aria-label="Portfolio navigation"><a href="#portfolio-home">← Back to portfolio</a></nav>
 
-   <!-- Main Content Area -->
-   <main>
-
-      <!-- Module 1.1 Blog Post Starts Here -->
-      <article>
 
          <header class="article-header">
             <h2>Leaked from KarinaOS™: The System Is Working Exactly as Designed. Unfortunately...</h2>
@@ -424,26 +448,172 @@
          </footer>
 
       </article>
+<!-- Module 1.2 Blog Post Starts here -->
+<article id="module-1-2" data-view aria-labelledby="module-12-title">
+<nav aria-label="Portfolio navigation"><a href="#portfolio-home">← Back to portfolio</a></nav>
 
-      <!-- Module 1.2 Blog Post Starts here -->
-
-      <!-- Module 2.1 Blog Post Starts here -->
-
-      <!-- Module 2.2 Blog Post Starts here -->
-
-      <!-- Module 2.3 Blog Post Starts here -->
-
-      <!-- Module 3.1 Blog Post Starts here -->
-
-      <!-- Module 3.2 Blog Post Starts here -->
-
-   </main>
-
-   <!-- Page Footer -->
-   <footer class="page-footer">
-      <p>Copyright &copy; Karina Taylor 2026</p>
-   </footer>
-
+  <header class="article-header">
+    <p>Module 1.2 · Thinking in Life Cycles</p>
+    <h2 id="module-12-title">KarinaOS™ 2.0: You Can't Patch Your Way Out of a Bad Life Cycle</h2>
+  </header>
+    <aside class="system-memo" aria-label="Fictional KarinaOS™ memo">
+      <p class="memo-title">KARINAOS™ INTERNAL REVIEW</p>
+      <p><strong>Subject:</strong> Automating assignment management</p>
+      <p><strong>Goal:</strong> Spend less time managing homework.</p>
+      <p><strong>Current activity:</strong> Troubleshooting the system that manages homework.</p>
+      <p><strong>Recommendation:</strong> Review the development process before installing another motivational update.</p>
+    </aside>
+    <p>My first post introduced KarinaOS™, the unofficial operating system I use to organize coursework, responsibilities, and the limited resources of being a person. One of its projects is the Cybernetic Desk, a digital workspace for school, projects, and resources. Within that workspace, the Signal Board is a SharePoint list where I track assignments, deadlines, priorities, and the support I need to get started.</p>
+    <figure>
+      <img src="assets/signal-board-workspace.png"
+           alt="The Signal Board page in the Cybernetic Desk SharePoint workspace, with a steampunk banner reading Capture, Organize, Prioritize, Take Action."
+           loading="lazy">
+      <figcaption>The Signal Board provides the assignment-management home within my Cybernetic Desk workspace.</figcaption>
+    </figure>
+    <p>The Signal Board provided a place to manage assignments, but entering them individually created another administrative task. I already had an Excel workbook called <em>Class Assignment WBS</em>, so I decided to use it for bulk intake. A Power Automate flow would read the spreadsheet, create the appropriate SharePoint items, and record which assignments had been imported.</p>
+    <p>Failed tests, date errors, empty rows, and partially completed operations turned a convenience project into a practical lesson in systems development. They also revealed why a useful system needs more than successful patches.</p>
+    <figure>
+      <img src="assets/signal-board-bulk-intake.png"
+           alt="Power Automate bulk intake flow showing successful trigger and Excel table-reading steps for the Cybernetic Desk."
+           loading="lazy">
+      <figcaption>The Signal Board bulk intake workflow reads assignments from my Excel workbook. These steps succeeded; completing the transfer into SharePoint required further testing.</figcaption>
+    </figure>
+  <section aria-labelledby="module-12-a-system-s-life-extends-beyond-its-first-successful-run">
+    <h3 id="module-12-a-system-s-life-extends-beyond-its-first-successful-run">A system’s life extends beyond its first successful run</h3>
+    <p>The systems development life cycle, or SDLC, organizes how a system moves from an identified need through development, use, support, and eventual replacement or retirement. Common activities include planning, requirements analysis, design, implementation, testing, deployment, and maintenance. Different frameworks organize these activities differently, but each addresses an important part of development.</p>
+    <p>Planning establishes purpose and feasibility. Requirements identify stakeholder needs and constraints. Design determines how components will interact, while implementation creates or configures them. Testing evaluates the result, deployment introduces it into use, and maintenance addresses defects and changing conditions. Retirement may involve migrating information, preserving records, or securely disposing of obsolete components.</p>
+    <p>Holt (2023) distinguishes a life cycle, which identifies stages in an entity’s evolution, from a life cycle model, which describes how those stages are executed (p. 144). Identifying development activities does not establish how work will move between them. Linear, iterative, and incremental models provide different ways to organize that progression.</p>
+    <p>For my workflow, success means transferring assignment information accurately, handling ordinary inputs, avoiding unnecessary duplication, and remaining manageable. A green checkmark provides evidence about execution. It does not establish that the system fulfills its purpose.</p>
+  </section>
+  <section aria-labelledby="module-12-linear-development-the-limits-of-an-orderly-plan">
+    <h3 id="module-12-linear-development-the-limits-of-an-orderly-plan">Linear development: the limits of an orderly plan</h3>
+    <p>A linear model executes stages in a defined sequence, with each stage following completion of the previous one. Holt (2023) identifies its simplicity, clear stage gates, and suitability for small projects with stable needs and well-understood technologies. Its limitations become more significant when needs change or functionality cannot wait until the final release (pp. 145–146).</p>
+    <p>My initial plan followed a clear sequence: read the Excel rows, determine whether each assignment had already been imported, create a SharePoint item when appropriate, and update the original Excel row. The SharePoint item had to exist before its ID could be recorded in Excel.</p>
+    <p>However, an orderly plan can contain untested assumptions. I treated the spreadsheet as a collection of assignments ready for processing. Its table contained eighteen rows, most of which were empty placeholders, and the automation attempted to process them.</p>
+    <aside class="system-memo" aria-label="Fictional KarinaOS™ memo">
+      <p class="memo-title">KARINAOS™ DATA QUALITY REPORT:</p>
+      <p>Available rows: Eighteen.</p>
+      <p>Available assignments: Fewer than advertised.</p>
+      <p>Original assumption: Withdrawn.</p>
+    </aside>
+    <p>Other failures involved SharePoint field values and date conversion. The sequence made sense, but the information passed between components did not always satisfy the receiving component’s expectations.</p>
+    <p>This experience illustrates a risk of delaying feedback: later activities depend on earlier assumptions. Small tests could expose those assumptions before additional work accumulated around them. Linear planning remained useful, but its foundations needed checking.</p>
+  </section>
+  <section aria-labelledby="module-12-iterative-development-learning-through-revision">
+    <h3 id="module-12-iterative-development-learning-through-revision">Iterative development: learning through revision</h3>
+    <p>An iterative model makes repeated passes through the life cycle stages. Holt (2023) describes each iteration as producing a working version that can be deployed, with later versions becoming more complete or improved. Benefits include progressive refinement and the possibility of returning to a previous working release. Drawbacks include changing stakeholder needs and pressure to release before a version works adequately (pp. 146–147).</p>
+    <p>My troubleshooting used iterative refinement within implementation and testing. Initially, I had difficulty configuring Excel’s “Update a row” action. The automation needed to identify the correct source row after creating its corresponding SharePoint item. Introducing a unique Import Key and mapping the SharePoint ID back into Excel addressed that problem, but others remained.</p>
+    <p>These debugging cycles illustrate iterative thinking, although they were not all complete, deployable iterations of the entire life cycle. NASA’s handbook similarly describes iteration at the process level as applying processes again to the same product to address discrepancies or variations from requirements (National Aeronautics and Space Administration [NASA], 2016).</p>
+    <p>Iteration made actual behavior available for evaluation. However, repeated changes became easier to manage when each had a specific objective: skip an empty row, identify the correct source record, or transfer a valid assignment. Without those questions, troubleshooting risked becoming a sequence of changes whose effects were difficult to distinguish.</p>
+  </section>
+  <section aria-labelledby="module-12-empty-rows-exposed-incomplete-requirements">
+    <h3 id="module-12-empty-rows-exposed-incomplete-requirements">Empty rows exposed incomplete requirements</h3>
+    <p>The placeholder rows required a more precise definition of an eligible assignment. Before importing a row, the flow needed to establish that the assignment had not already been imported and that its Task Name contained meaningful content.</p>
+    <p>An apparently empty cell could contain a null value, an empty string, or whitespace. The condition needed to account for those possibilities instead of relying on how the spreadsheet looked.</p>
+    <aside class="system-memo" aria-label="Fictional KarinaOS™ memo">
+      <p class="memo-title">KARINAOS™ REQUIREMENTS UPDATE:</p>
+      <p>An assignment must exist before it can be imported.</p>
+      <p>Implementation requests that this clarification be recorded without commentary.</p>
+    </aside>
+    <p>I also reorganized the flow so that actions were placed in the correct conditional branch. Building the workflow revealed cases that the original description overlooked.</p>
+    <p>“Import assignments” became a more useful requirement when it included valid inputs, eligibility rules, and expected outcomes. </p>
+  </section>
+  <section aria-labelledby="module-12-incremental-development-expanding-useful-capability">
+    <h3 id="module-12-incremental-development-expanding-useful-capability">Incremental development: expanding useful capability</h3>
+    <p>In Holt’s incremental model, the initial concept stage considers the overall needs, while subsequent development delivers subsets as usable partial solutions. Some functionality can therefore become available before the whole system is complete. However, the approach is unsuitable when a system cannot be divided into useful subsets (Holt, 2023, pp. 148–149).</p>
+    <p>The Cybernetic Desk illustrates the value of delivering capabilities in portions. The Signal Board provides assignment tracking, its existing connection to Google Tasks supports downstream planning in Lifestack, and bulk intake from Excel adds another capability. This resembles incremental development, although my workspace has evolved through discovery rather than from a completely specified initial plan.</p>
+    <figure>
+      <img src="assets/cybernetic-desk-workflow.png"
+           alt="Assignment workflow from Excel through Power Automate to the SharePoint Signal Board, then Google Tasks and Lifestack."
+           loading="lazy">
+      <figcaption>The Cybernetic Desk connects assignment intake, central tracking, and daily planning. Bulk intake adds a capability to the existing system.</figcaption>
+    </figure>
+    <p>A practical distinction is that <strong>iteration revisits and improves a version, while an increment delivers another portion of the intended capability</strong>. The approaches overlap: an increment can undergo several iterations, and an iterative release can add functionality.</p>
+    <p>Incremental development lets me improve intake without rebuilding the entire workspace. However, each addition still requires coordination. New capabilities can conflict with existing assumptions, duplicate information, or increase maintenance demands. </p>
+  </section>
+  <section aria-labelledby="module-12-partial-success-revealed-an-interface-and-recovery-problem">
+    <h3 id="module-12-partial-success-revealed-an-interface-and-recovery-problem">Partial success revealed an interface and recovery problem</h3>
+    <p>One failed run created an assignment in SharePoint even though the overall flow reported failure. </p>
+    <p>Holt (2023) explains that system elements interact through interfaces supporting the exchange of flows or services (pp. 106–108). In my workflow, field mappings, identifiers, and date representations determine whether information moves meaningfully between Excel and SharePoint. Problems at those connections could affect the overall result even when individual actions succeeded.</p>
+    <p>Creating the destination item and updating the source row were separate operations. If SharePoint contained the assignment but Excel had not recorded that outcome, rerunning the flow could risk creating a duplicate.</p>
+    <aside class="system-memo" aria-label="Fictional KarinaOS™ memo">
+      <p class="memo-title">KARINAOS™ INCIDENT REPORT:</p>
+      <p>Failure reported.</p>
+      <p>Assignment created.</p>
+      <p>Recovery procedure requires further development.</p>
+    </aside>
+    <p>Recording the SharePoint ID helps connect the records, but does not prove that every partial failure is handled safely. A future improvement would check whether the destination item already exists before creating another after an interrupted run. This remains an identified limitation rather than a capability I can claim is fully proven.</p>
+  </section>
+  <section aria-labelledby="module-12-verification-and-validation-require-different-evidence">
+    <h3 id="module-12-verification-and-validation-require-different-evidence">Verification and validation require different evidence</h3>
+    <p>The breakthrough came through a controlled test. I entered a new assignment into Excel, left its Imported field blank, and ran the automation. It read the table, identified the eligible assignment, created the SharePoint item, marked the source row as imported, and recorded the SharePoint ID.</p>
+    <p>NASA (2016) distinguishes verification, which checks compliance with requirements, from validation, which checks whether a product serves its intended purpose in its intended environment. My test demonstrated the expected sequence for one input. Broader validation asks whether normal use reduces duplicate entry and administrative effort.</p>
+    <p>Holt (2023) also identifies repeatability, measurability, and demonstrability as desirable process properties (p. 164). </p>
+    <p>Further checks should examine previously imported records, blank rows, and recovery after partial failure. Repeated testing and normal use would provide better evidence of reliability and time savings, without imposing procedures disproportionate to a personal assignment tracker.</p>
+  </section>
+  <section aria-labelledby="module-12-sustainability-includes-the-person-maintaining-the-system">
+    <h3 id="module-12-sustainability-includes-the-person-maintaining-the-system">Sustainability includes the person maintaining the system</h3>
+    <p>Sustainability concerns whether a system and its effects can endure responsibly. Becker et al. (2015) identify environmental, social, economic, technical, and individual dimensions of sustainability and emphasize their interdependence.</p>
+    <p>Applied to my workspace, these dimensions raise questions about device requirements, accessibility, time costs, information longevity, and well-being. These are applications of the researchers’ framework to my experience, rather than findings they measured about my workflow.</p>
+    <p>An automation that reduces data entry but requires constant troubleshooting may transfer effort rather than reduce it. Documentation, clear field meanings, stable identifiers, and understandable recovery procedures could make maintenance easier. Export and replacement plans also matter if my access or tools change.</p>
+    <p>Holt (2023) warns that processes can become unrealistic, irrelevant, or outdated and require periodic review (p. 165). A workflow that helps this quarter may need revision as coursework or technology changes.</p>
+    <p>Each model offers sustainability opportunities and risks. Linear planning can establish requirements early but overlook changing conditions. Iteration can reveal burdens but consume resources through repeated rebuilding. Incremental delivery can avoid unnecessary features while accumulating integration complexity. Tomorrow’s Karina should inherit a useful workflow, not an archaeological investigation into today’s conditions.</p>
+  </section>
+  <section aria-labelledby="module-12-github-provides-another-example-of-staged-development">
+    <h3 id="module-12-github-provides-another-example-of-staged-development">GitHub provides another example of staged development</h3>
+    <p>My planned blog submission combines these approaches. The complete academic article comes first, while optional diagrams and visual improvements can follow through further commits to the same pull request.</p>
+    <p>Adding a diagram is an increment; correcting an explanation is iteration. Following the required submission steps provides an ordered sequence. The initial version must still satisfy the assignment, since required analysis cannot be deferred as an optional enhancement.</p>
+    <p>My earlier submission was awaiting merging and grading when I discussed this plan. That distinguishes making work available from receiving review. </p>
+  </section>
+  <section aria-labelledby="module-12-the-development-process-is-part-of-the-upgrade">
+    <h3 id="module-12-the-development-process-is-part-of-the-upgrade">The development process is part of the upgrade</h3>
+    <p>No single life cycle model is appropriate everywhere. My workflow benefits from ordered dependencies, iterative learning, and incremental capability. </p>
+    <p>This experience showed me that a patch can be necessary without addressing the underlying problem. An incomplete requirement, unchecked assumption, or missing recovery procedure may require a change in how the system is developed and evaluated.</p>
+    <p>The Cybernetic Desk now has a bulk intake workflow that passed a controlled test, along with a developer who understands its limitations more clearly. Its next improvements can build on evidence rather than optimism alone.</p>
+    <aside class="system-memo" aria-label="Fictional KarinaOS™ memo">
+      <p class="memo-title">KARINAOS™ 2.0 RELEASE NOTES:</p>
+      <p>Improved assignment intake.</p>
+      <p>Added respect for empty cells.</p>
+      <p>Revised acceptance criteria.</p>
+      <p>User maintenance continues to include dinner.</p>
+    </aside>
+  </section>
+  <footer class="article-footer" aria-labelledby="module-12-references">
+    <h3 id="module-12-references">References</h3>
+    <ol>
+      <li>Becker, C., Chitchyan, R., Duboc, L., Easterbrook, S., Penzenstadler, B., Seyff, N., &amp; Venters, C. C. (2015). Sustainability design and software: The Karlskrona manifesto. In <em>2015 IEEE/ACM 37th IEEE International Conference on Software Engineering</em> (Vol. 2, pp. 467–476). IEEE. <a href="https://doi.org/10.1109/ICSE.2015.179">https://doi.org/10.1109/ICSE.2015.179</a></li>
+      <li>Holt, J. (2023). <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). Packt Publishing. <a href="https://www.packtpub.com/en-us/product/systems-engineering-demystified-9781804610688">https://www.packtpub.com/en-us/product/systems-engineering-demystified-9781804610688</a></li>
+      <li>National Aeronautics and Space Administration. (2016). <em>NASA systems engineering handbook</em> (Rev. 2, NASA/SP-2016-6105). <a href="https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf">https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf</a></li>
+    </ol>
+  </footer>
+</article>
+</main>
+<footer class="page-footer"><p>Copyright &copy; Karina Taylor 2026</p></footer>
+<script>
+(() => {
+  const views = [...document.querySelectorAll('[data-view]')];
+  const home = document.getElementById('portfolio-home');
+  const originalTitle = document.title;
+  function showView(moveFocus = false) {
+    const requested = window.location.hash.slice(1);
+    let active = views.find(view => view.id === requested);
+    if (!active && requested) {
+      const target = document.getElementById(requested);
+      active = target ? target.closest('[data-view]') : null;
+    }
+    active = active || home;
+    views.forEach(view => { view.hidden = view !== active; });
+    const heading = active.querySelector('h2');
+    document.title = active === home ? originalTitle : `${heading.textContent.trim()} | Karina Taylor`;
+    if (moveFocus && heading) {
+      heading.setAttribute('tabindex', '-1');
+      heading.focus({ preventScroll: true });
+      window.scrollTo(0, 0);
+    }
+  }
+  window.addEventListener('hashchange', () => showView(true));
+  showView();
+})();
+</script>
 </body>
-
 </html>
