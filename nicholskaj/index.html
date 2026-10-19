@@ -585,7 +585,218 @@ Radack, S. M. (2009). *The system development life cycle (SDLC).* National Insti
 [1]:>
 =======
 
-         <!-- Module 2.1 Blog Post Starts here -->
+         <# Designing for People: How Perception, Attention, and Empathy Shape Better Systems
+
+IT 248: Systems Engineering Demystified — Blog Post
+
+## Introduction: Technology Is Only Successful When People Can Use It
+
+A system can be technically advanced, visually attractive, and full of useful features while still being difficult to use. A website may contain all the information a customer needs, but if that information is hard to find, the customer may leave. A mobile application may offer dozens of features, but if users cannot figure out how to complete a simple task, those features provide little practical value. These examples demonstrate why successful design must consider more than technology. It must consider the people who interact with it.
+
+Human-centered design is an approach to developing products, services, and systems by understanding the people who will use them, their goals, their environments, and their limitations. Instead of expecting users to adapt to a system, designers work to make the system fit users' needs. The International Organization for Standardization (ISO, 2019) explains that human-centered design incorporates human factors and usability throughout the life cycle of interactive systems. IDEO.org (2015) also emphasizes understanding people's experiences, exploring possible solutions, creating prototypes, and learning through experimentation.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.iso.org\&sz=32)
+
+ISO
+
++1
+
+
+
+Human-centered design is especially important in systems engineering because technology does not operate independently of people. Even when a system performs its technical functions correctly, its overall effectiveness depends on how people interact with it. Designers must consider whether users can recognize important information, understand available choices, complete tasks, and recover from mistakes.
+
+Johnson (2020), in Designing with the Mind in Mind, explains how principles of interface design connect to human perception and cognitive psychology. His work reinforces the idea that designers should understand how people see, think, remember, learn, and make decisions rather than simply follow visual design trends. These concepts are relevant to almost every interactive system, from online shopping websites to project management applications.
+
+In my view, designing for people means recognizing that users are not simply interacting with buttons, screens, or software functions. They are trying to accomplish something while managing their time, attention, expectations, and emotions. Perception determines how users interpret what they see, attention determines what receives their mental effort, and empathy helps designers understand why an experience may be frustrating or confusing. By combining human-centered design principles with visual hierarchy and four important UX laws—Jakob's Law, Fitts's Law, Hick's Law, and Miller's Law—designers can create systems that are more understandable, accessible, and effective.
+
+## Human-Centered Design: ISO 9241-210 and IDEO's Field Guide
+
+### ISO 9241-210: A Structured Approach to Usability
+
+ISO 9241-210:2019 provides requirements and recommendations for incorporating human-centered design into the life cycle of interactive systems. Its focus is on establishing a systematic process that accounts for users, their needs, and the circumstances in which they interact with a product. Human-centered design should influence planning, development, evaluation, and ongoing improvement rather than being treated as a final visual adjustment (ISO, 2019).
+
+This perspective is valuable in systems engineering and project management because it connects user experience to requirements and measurable outcomes. For example, suppose a university develops a student registration system. A development team might initially define success as having a database that stores student records correctly and processes registration requests quickly. Those are important technical requirements, but they do not establish whether students can actually use the system successfully.
+
+A human-centered approach would also investigate whether students understand course availability, can identify registration deadlines, receive clear explanations when a class is full, and recover from mistakes without losing their progress. The team could then turn those findings into interface requirements, usability tests, and acceptance criteria.
+
+ISO's perspective makes an important contribution by encouraging organizations to treat usability as a design responsibility throughout development. It also recognizes that interactive systems must function within real contexts, including different devices, environments, abilities, and levels of experience. ISO 9241-210:2019 remains the current edition, having been reviewed and confirmed in 2025 (ISO, 2019).&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.iso.org\&sz=32)
+
+ISO
+
+
+
+However, following a structured process does not automatically guarantee empathy. A team can document user requirements, conduct scheduled tests, and meet project milestones without fully understanding the experiences behind those requirements. Documentation and compliance are valuable only when they help the team make better decisions for real people.
+
+### IDEO's Field Guide: Empathy and Experimentation
+
+IDEO.org's The Field Guide to Human-Centered Design approaches the subject through practical design methods, mindsets, and examples. It emphasizes learning about people, generating ideas, building prototypes, and developing solutions through experimentation (IDEO.org, 2015). The guide encourages designers to investigate people's experiences instead of relying exclusively on assumptions about what they need.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.ideo.org\&sz=32)
+
+IDEO.org
+
++1
+
+
+
+Consider the same university registration system. A team using IDEO's approach might interview students, observe how they currently plan their schedules, and ask them to demonstrate the process of finding and enrolling in a course. Researchers might discover that students repeatedly switch between pages to compare class times or misunderstand the difference between a prerequisite and a registration restriction.
+
+Instead of immediately building a complicated solution, the team could sketch a redesigned schedule page and ask students to try it. Their feedback might reveal that a weekly calendar, clearer prerequisite explanations, and more visible registration warnings solve more problems than adding additional features.
+
+The difference between the two perspectives is primarily their emphasis. ISO provides a formal framework for integrating human-centered activities into system development, while IDEO offers practical methods for discovering user needs and exploring potential solutions. The approaches are complementary: ISO helps teams establish a repeatable process, and IDEO encourages the curiosity and experimentation needed to make that process meaningful.
+
+Johnson's (2020) work adds another dimension to this comparison. Understanding human psychology helps designers explain why a particular design choice may improve usability. IDEO's methods help teams discover problems through observation and experimentation, while ISO helps teams integrate those findings into a structured development process. Johnson's research-based design principles help explain how perception, attention, memory, and motor behavior should influence the resulting interface.
+
+Neither approach should be treated as a complete substitute for the others. Empathy without evaluation can produce ideas that sound promising but fail in practice. A formal process without genuine user involvement can produce a system that satisfies technical specifications while frustrating its intended audience. Likewise, applying design rules without testing them in context can result in decisions that work for one group of users but create barriers for another.
+
+My main takeaway is that effective design requires both discipline and curiosity. Teams need documented requirements, measurable usability goals, and consistent testing, but they also need to question their assumptions about what users want and how they behave. Designing for people means being willing to change a technically sound idea when evidence shows that it does not serve people well.
+
+## Perception, Attention, and Visual Hierarchy
+
+Human-centered design requires an understanding of how people interpret information. Users rarely examine every part of a screen equally. Instead, they scan for recognizable patterns, important words, contrasting elements, and visual cues that suggest what they should do next.
+
+Perception is how people organize and interpret sensory information. In interface design, it influences whether users recognize a button as clickable, understand that two items belong together, or distinguish an error message from ordinary text.
+
+Attention is the limited mental focus people direct toward particular information. A page filled with competing colors, animations, alerts, and instructions can make it difficult to identify the most important element.
+
+Visual hierarchy is the arrangement of interface elements to communicate their relative importance. Designers establish hierarchy through size, contrast, position, spacing, typography, and grouping.
+
+Johnson (2020) explains that human vision is particularly sensitive to visual structure, while attention and memory have limitations that affect how people interact with interfaces. These principles suggest that designers should not assume users will carefully read everything on a screen. Instead, information should be organized so that its purpose and importance are easy to recognize.
+
+Imagine a university website displaying an upcoming tuition deadline. In one design, the date appears in small gray text between promotional banners, navigation links, and unrelated announcements. In another, the deadline appears near the top of the page in a clear heading, followed by a concise explanation and a prominent link to the payment portal. Both designs contain the same information, but the second makes the deadline easier to notice and act upon.
+
+The difference is not merely aesthetic. The second design reduces the effort required to locate essential information and lowers the risk that students will overlook an important deadline.
+
+Visual hierarchy also helps users understand relationships. For example, a checkout page should visually group a product's price with its description, separate shipping costs from the order subtotal, and make the final total easy to locate. If the final price is hidden among unrelated information, customers may misunderstand what they are paying. A clear hierarchy supports accurate interpretation and informed decisions.
+
+Designers must also consider accessibility. Color alone should not communicate whether a form field contains an error, because users with color-vision differences may not perceive the distinction. A clear error message, a recognizable icon, and a text explanation provide additional signals. Similarly, small text, weak contrast, and crowded layouts can create barriers for users with visual impairments or cognitive difficulties.
+
+These examples show why visual simplicity is not the same as removing as much information as possible. The objective is to make important information understandable and actionable. Sometimes that requires removing unnecessary elements; at other times, it requires adding labels, explanations, or feedback.
+
+Empathy becomes particularly important here. A designer who understands a system thoroughly may know where everything is located and what every icon means. A first-time user may have none of that knowledge. The designer must evaluate the experience from the perspective of someone who does not already understand the system.
+
+A useful question is not simply, "Can a user find this information?" It is, "Can a user recognize that this information matters, understand what it means, and use it to make the correct decision?" That question shifts design from information placement to human understanding.
+
+## Applying the Four UX Laws to Human-Centered Design
+
+UX laws help designers understand common patterns in human behavior and translate them into practical interface decisions. They are not guarantees that every person will respond identically, and they should not replace user research. Instead, they provide useful starting points for designing and evaluating interactive systems.
+
+### 1. Jakob's Law: Users Bring Existing Expectations
+
+Jakob's Law, associated with usability expert Jakob Nielsen, states that users spend much of their time using other digital products. Consequently, they bring expectations from those experiences to the products they encounter next (Nielsen, 2020).
+
+For example, users generally expect a website's logo to lead to its home page, a shopping cart icon to represent selected products, and a magnifying-glass icon to indicate search. If every website invents entirely different meanings for familiar symbols, users must repeatedly learn new interaction patterns.
+
+Following familiar conventions reduces unnecessary learning and allows people to focus on their actual goals. A university registration website, for instance, should not require students to learn an unfamiliar navigation structure when established menu patterns would communicate the same functions more clearly.
+
+Johnson (2020) explains that people learn many familiar actions through experience and that previously learned behaviors influence how they interact with interfaces. This supports the idea that designers should consider users' existing mental models when developing new systems.
+
+However, Jakob's Law does not mean every design should be identical. A system may need specialized interactions because its users have unique requirements. The important distinction is between intentional innovation and unnecessary inconsistency. A new interaction should solve a meaningful problem rather than simply make a product look different.
+
+From a human-centered perspective, familiar conventions respect users' existing knowledge and reduce the mental effort needed to get started. Designers should innovate where doing so provides value while preserving recognizable patterns wherever possible.
+
+### 2. Fitts's Law: Important Targets Should Be Easy to Reach
+
+Fitts's Law describes the relationship between the time required to reach a target and the target's size and distance. In general, larger targets that are closer to the user's current position are faster and easier to select than smaller, more distant targets (MacKenzie, 1992).
+
+This principle has direct implications for buttons, links, menus, and touch-screen controls. Consider a mobile banking application in which the "Transfer Money" button is small and placed near several competing controls. Users may struggle to tap it accurately, particularly when using the application one-handed or while moving.
+
+A larger, clearly labeled button in a predictable location can improve interaction speed and reduce accidental selections. Touch targets also need adequate spacing so users do not unintentionally activate neighboring controls.
+
+Fitts's Law is particularly important when designing for accessibility. Users with limited motor control may find small targets difficult to select even when the text and instructions are understandable. Increasing target size and separating controls can make the same system usable for a wider range of people.
+
+Johnson (2020) discusses the relationship between human hand-eye coordination and interface design. His explanation reinforces the importance of considering physical interaction alongside visual and cognitive demands. A button may be visually obvious, but if it is difficult to reach or activate, the interface still creates an unnecessary barrier.
+
+Nevertheless, making every button enormous is not the answer. Excessively large controls can crowd the screen and obscure other information. Designers must balance target size, distance, spacing, and the importance of each action.
+
+The central lesson is that usability depends on the physical effort required to interact with a system, not just the logic of its software. A function that is technically correct but difficult to activate is still a design problem.
+
+### 3. Hick's Law: More Choices Can Increase Decision Time
+
+Hick's Law explains the relationship between the number of choices available and the time required to make a decision. As the number and complexity of choices increase, decision-making generally becomes slower (Hick, 1952).
+
+Consider a software application that presents new users with twenty-five equally prominent menu options on its opening screen. Although every option may be useful, the interface forces users to spend time determining which one fits their goal.
+
+A more effective approach might group related functions into categories such as "Projects," "Reports," and "Account Settings." Users can first identify a category and then select a specific action within it. A search function or a short onboarding process may further reduce the effort required to find a feature.
+
+Hick's Law is not an argument for eliminating every choice. Users sometimes need detailed control, and hiding too many options can make advanced features difficult to discover. The goal is to organize choices according to users' tasks and expectations.
+
+This principle also illustrates the importance of context. A first-time user may benefit from a simplified interface, while an experienced project manager may prefer a dashboard that exposes frequently used functions. Human-centered design recognizes that the right amount of complexity depends on the user's experience, task, and circumstances.
+
+Johnson (2020) explains that human decision-making is influenced by cognitive limitations and that designers should account for the mental effort required to evaluate alternatives. This suggests that interfaces should make meaningful distinctions between options rather than presenting every available function as equally important.
+
+In my view, Hick's Law highlights a common mistake in technology development: assuming that more features automatically create a better product. Additional functionality creates value only when people can understand and use it. Designers should measure success by how effectively users accomplish their goals, not simply by how many options a product contains.
+
+### 4. Miller's Law: Organize Information to Support Working Memory
+
+Miller's Law is commonly summarized as the idea that people can hold approximately seven, plus or minus two, chunks of information in immediate memory. Miller's original 1956 paper examined limits in short-term memory and absolute judgment, but the familiar numerical rule should not be treated as a universal capacity limit for every interface or every person (Miller, 1956).
+
+The more useful design lesson is that people have limited cognitive resources and benefit when information is organized into meaningful groups. For example, a project management dashboard might display dozens of individual tasks, deadlines, risks, and team assignments. Presenting every item at once could overwhelm a user trying to determine which project needs attention.
+
+Instead, the dashboard could group tasks by project phase, summarize upcoming deadlines, and highlight the most significant risks. Users could then open a section to access more detailed information when needed.
+
+Chunking makes information easier to process because users can recognize meaningful patterns rather than treating every item as a separate piece of information. Telephone numbers, for instance, are commonly divided into smaller groups instead of presented as one uninterrupted string of digits.
+
+Johnson (2020) emphasizes that attention is limited and memory is imperfect. This has direct implications for interface design: users should not have to remember unnecessary information from one screen while navigating to another. Keeping relevant details visible, using consistent labels, and grouping related information can reduce the mental effort required to complete tasks.
+
+However, Miller's Law should not be applied as a rigid rule that every menu must contain between five and nine items. The difficulty of a decision depends on familiarity, complexity, labels, task demands, and other factors. Some users may prefer more visible options when those options are clearly organized.
+
+For designers, the practical objective is to reduce unnecessary cognitive load without hiding information people need. Clear categories, meaningful labels, concise summaries, and progressive disclosure can help users manage complex systems more effectively.
+
+Together, these four UX laws show that good design depends on more than appearance. Jakob's Law addresses expectations, Fitts's Law addresses physical interaction, Hick's Law addresses decision-making, and Miller's Law draws attention to information processing and working memory. When applied thoughtfully, they help teams anticipate usability problems and develop interfaces that better support human behavior.
+
+## Empathy as a Design and Systems Engineering Skill
+
+Although the four UX laws explain important aspects of human behavior, they cannot fully explain why people use a system or how they feel while using it. That is where empathy becomes essential. Empathy involves making a deliberate effort to understand another person's perspective, including their goals, frustrations, limitations, and circumstances.
+
+IDEO.org (2015) emphasizes understanding the people a design is intended to serve and learning from them throughout the design process. This means designers should not assume that their own preferences represent the needs of every user. Instead, they should investigate users' experiences, identify unmet needs, and test possible solutions.
+
+For example, imagine a project management application used by software developers, project managers, executives, and clients. A developer may need detailed task information, a project manager may need to identify schedule risks, and an executive may need a concise overview of project progress. If the application presents the same information in the same way to every user, some stakeholders may struggle to find what they need.
+
+A human-centered solution would investigate the responsibilities and priorities of each group before determining how information should be presented. The system might provide role-specific dashboards while maintaining consistent terminology and shared project data. This approach respects different user needs without creating disconnected systems.
+
+Empathy also requires considering people who are often overlooked during development. Users may have limited technical experience, disabilities, unreliable internet access, or little time to learn a new application. A design that works well for a technically experienced employee in a quiet office may not work equally well for a first-time user accessing the same system on a phone.
+
+This is an important systems engineering consideration because usability problems rarely exist in isolation. A confusing interface can lead to incorrect data entry, which can create inaccurate reports and poor management decisions. A poorly designed notification system can cause users to miss important information, creating delays across an entire project. Improving the user experience can therefore improve the performance of the broader system.
+
+In project management, this means user experience should be considered during requirements gathering, risk analysis, design reviews, testing, and maintenance. Teams should define measurable usability objectives, observe representative users completing realistic tasks, and use feedback to guide improvements. These activities help ensure that human-centered design influences the actual product rather than remaining a statement of good intentions.
+
+I also believe empathy requires designers to recognize that users do not always know how to explain what they need. Someone may request an additional feature when the underlying problem is that an existing feature is difficult to understand. Listening to the request is important, but observing the user's workflow may reveal a better solution. This reinforces the value of IDEO's emphasis on observation and experimentation alongside ISO's structured design process.
+
+A further challenge is balancing individual user needs with organizational constraints. A project team may have limited funding, a fixed release date, or security requirements that prevent certain interface changes. Human-centered design does not mean granting every request. Instead, it means using evidence to prioritize changes that create the greatest benefit while respecting technical, financial, and operational constraints.
+
+For project managers, this is where empathy and systems thinking intersect. A design decision affects more than the appearance of a screen. It can influence training costs, support requests, error rates, productivity, accessibility, and stakeholder satisfaction. Evaluating these relationships helps teams make informed trade-offs rather than optimizing one feature at the expense of the entire system.
+
+## Conclusion: Design for Understanding, Not Just Functionality
+
+Designing for people means creating systems that support human goals instead of expecting people to overcome unnecessary obstacles. ISO 9241-210 provides a structured foundation for incorporating human needs and usability throughout system development, while IDEO's Field Guide emphasizes empathy, exploration, and experimentation. Johnson's (2020) textbook helps explain the psychological principles behind these decisions, connecting interface design to human perception, attention, memory, and behavior.
+
+Perception, attention, and visual hierarchy influence how users recognize information, determine what matters, and decide what to do next. The four UX laws provide additional guidance: Jakob's Law emphasizes familiar conventions, Fitts's Law highlights accessible interaction targets, Hick's Law explains how choices influence decision-making, and Miller's Law encourages thoughtful organization of information.
+
+The most important lesson I take from these concepts is that a technically successful system is not necessarily a human-centered one. A system can meet every functional requirement and still create confusion, frustration, or unnecessary work. True success requires evaluating whether people can use the system effectively in the situations that matter to them.
+
+For someone working in project management, this perspective is especially relevant. Project managers must balance scope, cost, schedule, technical requirements, and stakeholder expectations. Human-centered design adds another essential question: Does the solution actually improve the user's experience? Answering that question requires collaboration, research, testing, and sometimes the willingness to reconsider an approach that initially seemed correct.
+
+Ultimately, designing for people is not about making technology look attractive or adding features to satisfy every request. It is about understanding human behavior and translating that understanding into practical design decisions. When designers prioritize clarity, accessibility, empathy, and continuous improvement, they create systems that are not only functional but also understandable, dependable, and genuinely useful.
+
+## References
+
+Hick, W. E. (1952). On the rate of gain of information. Quarterly Journal of Experimental Psychology, 4(1), 11–26. [https://doi.org/10.1080/17470215208416600](https://doi.org/10.1080/17470215208416600?utm_source=chatgpt.com)
+
+IDEO.org. (2015). The field guide to human-centered design. [https://www.designkit.org/resources/1.html](https://www.designkit.org/resources/1.html?utm_source=chatgpt.com)
+
+International Organization for Standardization. (2019). Ergonomics of human-system interaction—Part 210: Human-centred design for interactive systems (ISO Standard No. 9241-210:2019). [https://www.iso.org/standard/77520.html](https://www.iso.org/standard/77520.html?utm_source=chatgpt.com)
+
+Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann. [https://cwu.vitalsource.com/books/9780128182031](https://cwu.vitalsource.com/books/9780128182031?utm_source=chatgpt.com)
+
+MacKenzie, I. S. (1992). Fitts' law as a research and design tool in human-computer interaction. Human-Computer Interaction, 7(1), 91–139. [https://doi.org/10.1207/s15327051hci0701_3](https://doi.org/10.1207/s15327051hci0701_3?utm_source=chatgpt.com)
+
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97. [https://doi.org/10.1037/h0043158](https://doi.org/10.1037/h0043158?utm_source=chatgpt.com)
+
+Nielsen, J. (2020). 10 usability heuristics for user interface design. Nielsen Norman Group. [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/?utm_source=chatgpt.com)
+
 
          <!-- Module 2.2 Blog Post Starts here -->
 
