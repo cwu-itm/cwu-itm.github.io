@@ -1,61 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
-      <title>Conner Smith | Portfolio</title>
-   </head>
-   <body>
-<!-- Page Header  -->
-      <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
-<!-- Main Content Area  -->
-      <main>
-         <!-- Module 1.1 Blog Post Starts Here-->
-         <article>
-            <header class="article-header">
-               <h2>Module 1.1 Blog Post</h2>
-            </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
-            <h3>Offal Tofu Cred Green Juice</h3>
-            <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
-            <h3>Blue Roof Pour-Over Man Bun</h3>
-            <p>Yuccie mukbang pickled activated charcoal. PBR&B selfies DSA mustache authentic. Gochujang kombucha big mood retro, you probably haven't heard of them +1 lomo. Tbh pour-over yr viral gorpcore poutine four dollar toast. Bicycle rights man bun try-hard, mlkshk roof party occupy succulents taxidermy kogi enamel pin brunch paleo poutine yr. Blue bottle street art waistcoat typewriter yr hot chicken polaroid helvetica pitchfork.</p>
-            <ul>
-               <li>Neutra umami slow-carb vegan dreamcatcher.</li>
-               <li>Tacos cornhole humblebrag ethical.</li>
-               <li>DSA santo big mood organic charcoal bitters.</li>
-               <li>Hot chicken pitchfork poutine.</li>
-            </ul>
-            <h3>Mlkshk Stumptown Hot Chicken</h3>
-            <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
-            <footer class="article-footer">
-                <h3>Sources:</h3>
-                <ol>
-                    <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
-                    </ol>
-            </footer>
-         </article>
 
-         <!-- Module 1.2 Blog Post Starts here -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="css/styles.css" rel="stylesheet">
+   <title>Conner Smith | Portfolio</title>
+</head>
 
-         <!-- Module 2.1 Blog Post Starts here -->
+<body>
+   <!-- Page Header  -->
+   <header class="page-header">
+      <h1>Portfolio</h1>
+   </header>
+   <!-- Main Content Area  -->
+   <main>
+      <!-- Module 1.1 Blog Post Starts Here-->
+      <article>
+         <header class="article-header">
+            <h2>Seeing the Whole System: Why Systems Thinking and MBSE Matter in Digital Design</h2>
+         </header>
 
-         <!-- Module 2.2 Blog Post Starts here -->
+         <h3>What Systems Thinking Means</h3>
 
-         <!-- Module 2.3 Blog Post Starts here -->
+         <p>
+            When people think about solving a technology problem, the first instinct is often to break it into smaller
+            pieces and fix each piece separately. That can work when a problem is simple, but modern digital systems are
+            rarely simple. A website, mobile app, cloud service, or cybersecurity platform can involve users, databases,
+            networks, interfaces, policies, hardware, software, and outside services. A change in one area can create an
+            unexpected effect somewhere else. Systems thinking is useful because it encourages us to look beyond
+            individual parts and focus on how those parts interact as a whole.
+         </p>
 
-         <!-- Module 3.1 Blog Post Starts here -->
+         <p>
+            In my own words, systems thinking is a way of understanding a problem by looking at relationships,
+            dependencies, feedback, and the larger environment surrounding it. Instead of asking only, "What is broken?"
+            it also asks, "What is connected to this?" and "What else could change if I fix it?" Arnold and Wade (2015)
+            describe systems thinking as a set of related skills that help people recognize interconnections, understand
+            system behavior, and view a system from multiple perspectives. This matters because the behavior of an
+            overall system cannot always be understood by studying its individual pieces.
+         </p>
 
-         <!-- Module 3.2 Blog Post Starts here -->
+         <p>
+            A simple example is a university registration website. If students complain that registration is slow, a
+            linear approach might focus on the webpage itself. A team may assume it needs faster code or a better
+            layout. Systems thinking would widen the investigation. The delay could be caused by the database,
+            authentication service, network traffic, a third-party payment system, or thousands of students logging in
+            at once. It could even involve a policy decision, such as opening registration for too many students at the
+            same time. The visible problem is a slow webpage, but the real cause may exist somewhere else in the system.
+         </p>
 
-      </main>
-<!-- Page Footer  -->
-      <footer class="page-footer">
-       <p>Copyright &copy; 2025</p>
-      </footer>
-   </body>
+         <h3>Systems Thinking Versus Linear Thinking</h3>
+
+         <p>
+            This is one of the biggest differences between systems thinking and traditional linear thinking. Linear
+            thinking generally assumes a direct chain of cause and effect: event A causes event B, which causes event C.
+            That model is useful for straightforward problems. If a computer will not turn on because the power cable is
+            unplugged, the relationship is simple. Complex systems, however, usually involve multiple causes, feedback,
+            delays, and interactions. Fixing one problem can create another, and the result of a decision may not appear
+            immediately.
+         </p>
+
+         <p>
+            Systems thinking is more comfortable with that complexity. Instead of immediately searching for one root
+            cause, it considers patterns and relationships. This does not mean every problem needs to become
+            complicated. It means we should first decide whether the problem exists within a larger network of
+            dependencies before treating it as isolated. Arnold and Wade (2015) emphasize both seeing the system as a
+            whole and understanding the parts that make it up. To me, that balance is important. Systems thinking is not
+            about ignoring details; it is about understanding where those details fit.
+         </p>
+
+         <p>
+            Jon Holt's <em>Systems Engineering Demystified</em> connects this way of thinking to the practical work of
+            systems engineering. Holt (2021) explains systems engineering as an approach for understanding, specifying,
+            and developing increasingly complex systems. One of the most important ideas I take from this is that a
+            system cannot be judged only by whether each individual component works. The components also have to
+            interact correctly and support the purpose of the entire system. This is especially relevant to digital
+            environments because they are built from many technologies that may be designed or maintained by different
+            teams.
+         </p>
+
+         <p>
+            For example, imagine a cybersecurity team creates a login process with extremely strict security
+            requirements. From a narrow technical perspective, adding more authentication steps may appear to make the
+            system safer. But if the process becomes frustrating enough, users may look for shortcuts, reuse passwords,
+            or avoid the system. The security control cannot be evaluated separately from the behavior it creates. A
+            systems-thinking approach considers security, usability, user behavior, support costs, and technical
+            requirements together instead of treating them as separate problems.
+         </p>
+
+         <h3>Why Complexity Changes the Design Process</h3>
+
+         <p>
+            This becomes more important as digital systems grow. A modern organization might depend on cloud platforms,
+            local networks, APIs, employee devices, databases, identity providers, and security monitoring tools at the
+            same time. Each component may have its own requirements, but the organization depends on all of them working
+            together. A change to an authentication service could affect applications across the company. A software
+            update could create compatibility problems elsewhere. Looking only at separate documents or separate teams
+            makes it easier to miss those relationships.
+         </p>
+
+         <p>
+            Holt (2021) presents a model-based approach as a way to improve understanding and communication when
+            developing complex systems. That idea is important because complexity is not only about having many parts.
+            It also comes from the number of relationships between those parts. The more connections a system has, the
+            harder it becomes to understand the consequences of a change by relying only on memory, meetings, or written
+            documents. A model provides a structured way to represent those relationships.
+         </p>
+
+         <h3>How MBSE Supports Systems Thinking</h3>
+
+         <p>
+            Model-Based Systems Engineering, or MBSE, provides a practical way to apply systems thinking to this
+            complexity. NASA (2022) describes MBSE as the formal use of models to support activities such as
+            requirements, design, analysis, verification, and validation throughout a system's life cycle. Instead of
+            relying mainly on separate text documents, spreadsheets, diagrams, and presentations, MBSE creates
+            structured models that represent important parts of the system and the relationships between them.
+         </p>
+
+         <p>
+            One advantage is that models make connections easier to see. If a requirement changes, a model can help
+            identify which functions, components, interfaces, or tests are connected to it. In a document-centered
+            process, the same information may be scattered across files maintained by different people. That creates a
+            risk that one document will be updated while another remains outdated. NASA's systems modeling guidance
+            shows how model elements can connect needs, requirements, system structure, behaviors, and verification
+            activities (NASA, 2022). That traceability is valuable because complex systems change constantly.
+         </p>
+
+         <p>
+            A model can also act as a shared language between groups. Software developers may think about code and APIs,
+            network engineers may focus on infrastructure, cybersecurity professionals may focus on threats and
+            controls, managers may focus on cost and schedule, and users mainly care whether the system helps them
+            complete a task. These viewpoints can conflict. MBSE does not automatically solve disagreements, but it
+            gives teams a common representation that can make assumptions and dependencies easier to discuss.
+         </p>
+
+         <p>
+            For me, this is where systems thinking and MBSE fit together. Systems thinking provides the mindset, while
+            MBSE provides a method for representing that mindset. Systems thinking tells us that relationships and
+            context matter. MBSE gives us tools to map those relationships so they can be examined throughout
+            development. A model does not replace engineering judgment, but it can help people see consequences before
+            those consequences become expensive problems.
+         </p>
+
+         <h3>An Example in a Digital System</h3>
+
+         <p>
+            Consider an online banking system. A linear approach could divide the project into separate tasks: build the
+            login page, create the account database, develop transfers, add notifications, and install security
+            controls. Each group could complete its task successfully and the overall product could still fail. Maybe
+            the notification service exposes private data. Maybe fraud detection blocks legitimate transactions. Maybe
+            an authentication method is secure but difficult for customers to use. These are system-level problems
+            created by interactions, not necessarily failures of one component.
+         </p>
+
+         <p>
+            Using systems thinking, the team would examine how customers, software, data, security controls, outside
+            financial networks, regulations, and operational processes affect one another. With MBSE, the team could
+            represent requirements, interfaces, and validation activities in connected models. This makes it easier to
+            ask questions early: What happens if this service goes down? Which requirements depend on this component?
+            What data moves across this interface? Which test proves this security requirement is met? Those questions
+            are much cheaper to answer during design than after deployment.
+         </p>
+
+         <h3>Limits of a Model-Based Approach</h3>
+
+         <p>
+            MBSE should not be treated as a perfect solution, though. A model is still a simplified representation of
+            reality. If a team leaves out an important assumption, user group, dependency, or threat, the model can
+            create false confidence. Models can also become overly detailed and difficult to maintain. Their value
+            depends on choosing the right level of detail and keeping them connected to the real goals of the project.
+            Holt (2021) also emphasizes the importance of communication and disciplined systems engineering practices,
+            which means a model is only useful if the team keeps it meaningful and current.
+         </p>
+
+         <h3>Conclusion</h3>
+
+         <p>
+            Overall, systems thinking changes the way I look at technology problems. It encourages me to move past the
+            first visible symptom and think about interactions, users, constraints, and unintended consequences. Linear
+            thinking is still useful for simple and well-defined problems, but it becomes less reliable as complexity
+            increases. MBSE builds on the systems-thinking mindset by turning relationships into models that teams can
+            analyze and communicate. The strongest lesson for me is that successful digital design requires more than
+            making individual components work. The real challenge is making the entire system work together, and that is
+            the main value I see in systems thinking and model-based systems engineering.
+         </p>
+
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>
+                  Arnold, R. D., &amp; Wade, J. P. (2015). A definition of systems thinking: A systems approach.
+                  <em>Procedia Computer Science, 44</em>, 669-678.
+                  <a href="https://www.sciencedirect.com/science/article/pii/S1877050915002860">
+                     https://www.sciencedirect.com/science/article/pii/S1877050915002860
+                  </a>
+               </li>
+
+               <li>
+                  Holt, J. (2021). <em>Systems engineering demystified: A practitioner's handbook for developing complex
+                     systems using a model-based approach</em>. Packt Publishing.
+                  <a href="https://www.packtpub.com/en-US/product/systems-engineering-demystified-9781838985806">
+                     https://www.packtpub.com/en-US/product/systems-engineering-demystified-9781838985806
+                  </a>
+               </li>
+
+               <li>
+                  National Aeronautics and Space Administration. (2022).
+                  <em>NASA systems modeling handbook for systems engineering</em> (NASA-HDBK-1009).
+                  <a
+                     href="https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/NASA-HDBK-1009-Final_0.pdf">
+                     https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/0/NASA-HDBK-1009-Final_0.pdf
+                  </a>
+               </li>
+            </ol>
+         </footer>
+      </article>
+
+      <!-- Module 1.2 Blog Post Starts here -->
+
+      <!-- Module 2.1 Blog Post Starts here -->
+
+      <!-- Module 2.2 Blog Post Starts here -->
+
+      <!-- Module 2.3 Blog Post Starts here -->
+
+      <!-- Module 3.1 Blog Post Starts here -->
+
+      <!-- Module 3.2 Blog Post Starts here -->
+
+   </main>
+   <!-- Page Footer  -->
+   <footer class="page-footer">
+      <p>Copyright &copy; 2025</p>
+   </footer>
+</body>
+
 </html>
