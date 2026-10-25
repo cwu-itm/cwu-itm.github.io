@@ -1,8 +1,10 @@
-/* Importing Fonts */
+/* ==================================================
+   1. Fonts and Color Palette
+   ================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Karina Color Palette*/
 :root {
     --cream: #f7f3eb;
     --charcoal: #1d2326;
@@ -13,7 +15,11 @@
     --muted-text: #666;
 }
 
-/* Global Styles */
+
+/* ==================================================
+   2. Global Layout and Typography
+   ================================================== */
+
 html {
     font-size: 16px;
     color: #333;
@@ -23,72 +29,325 @@ html {
 
 body {
     background-color: var(--cream);
-    margin: 1% auto;
+    color: var(--charcoal);
     width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
+    max-width: 68rem;
+    margin: 1% auto;
     font-size: 1rem;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 main {
-
     margin-bottom: 3rem;
+}
 
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
 }
 
 h1 {
-
-    font-family: Oswald, sans-serif;
     font-size: 4rem;
-
 }
 
 h2 {
-
-    font-family: Oswald, sans-serif;
     font-size: 2rem;
-
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 ol {
-
     margin-top: 0;
     padding-left: 0;
     list-style-type: none;
-    font-size: .875rem;
-
+    font-size: 0.875rem;
 }
 
-/* Page Header */
+
+/* ==================================================
+   3. Accessibility and View Switching
+   ================================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+[data-view] {
+    display: flow-root;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--burgundy);
+    outline-offset: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.clear-float {
+    clear: both;
+}
+
+
+/* ==================================================
+   4. Page Header and Footer
+   ================================================== */
+
 .page-header {
-    padding: 2.5rem 0 1.5rem;
-    margin-bottom: 3rem;
-    border-bottom: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem 0 1.5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--gold);
 }
 
 .page-header h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1;
     letter-spacing: 0.02em;
+    color: var(--green);
 }
 
 .page-header p {
-    margin: 0.75rem 0 0;
+    margin: 0;
     font-family: Oswald, sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    color: var(--blue-gray);
 }
 
-/* Figures and Images */
+.page-footer {
+    border-top: 1px solid var(--gold);
+    padding: 1rem 0;
+    color: var(--muted-text);
+    font-size: 0.8rem;
+}
+
+
+/* ==================================================
+   5. Portfolio Landing Page
+   ================================================== */
+
+.landing-intro {
+    padding: 4.5rem 0 3.5rem;
+    max-width: 48rem;
+}
+
+.field-label,
+.card-module {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.field-label {
+    color: var(--burgundy);
+    margin: 0 0 1.2rem;
+}
+
+#portfolio-heading {
+    font-family: Georgia, serif;
+    font-size: clamp(2.8rem, 6vw, 4.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    color: var(--green);
+    margin: 0 0 1.5rem;
+}
+
+.landing-subtitle {
+    font-family: Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.25;
+    color: var(--burgundy);
+    margin: -0.5rem 0 1.5rem;
+}
+
+.landing-description {
+    max-width: 38rem;
+    color: var(--blue-gray);
+    font-size: 1.15rem;
+}
+
+.landing-aside {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--muted-text);
+}
+
+.collection-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.collection-heading h3 {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.collection-heading span {
+    color: var(--muted-text);
+    font-size: 0.8rem;
+}
+
+.notebook-note {
+    margin: 2rem 0 3rem;
+    color: var(--muted-text);
+    font-size: 0.85rem;
+}
+/* Small accent beside the landing introduction */
+.landing-intro {
+  position: relative;
+  max-width: none;
+  padding-right: 31rem;
+}
+
+.landing-accent {
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  width: 28rem;
+  height: auto;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(29, 35, 38, 0.1);
+}
+
+/* Give the introduction its full width on smaller screens */
+@media (max-width: 800px) {
+  .landing-intro {
+    padding-right: 0;
+  }
+
+  .landing-accent {
+    position: static;
+    display: block;
+    width: 11rem;
+    max-width: 100%;
+    margin: 0 0 1.5rem auto;
+  }
+}
+
+
+/* ==================================================
+   6. Portfolio Cards
+   ================================================== */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid var(--gold);
+    border-top: 4px solid var(--green);
+    border-radius: 4px;
+    background: var(--cream);
+    box-shadow: 0 10px 25px rgba(29, 35, 38, 0.06);
+}
+
+.blog-card:nth-child(2) {
+    border-top-color: var(--burgundy);
+}
+
+.blog-card:nth-child(3) {
+    border-top-color: var(--blue-gray);
+}
+
+.card-module {
+    color: var(--muted-text);
+    margin: 0 0 1.5rem;
+}
+
+.card-topic {
+    color: var(--blue-gray);
+    font-size: 0.85rem;
+    margin: 0 0 0.6rem;
+}
+
+.blog-card h3 {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color: var(--green);
+    margin: 0 0 1rem;
+}
+
+.card-description {
+    color: var(--blue-gray);
+    margin: 0 0 1.8rem;
+}
+
+.blog-card a {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gold);
+    color: var(--burgundy);
+    font-weight: 700;
+    text-underline-offset: 0.25em;
+}
+
+.blog-card a:hover {
+    color: var(--green);
+}
+
+
+/* ==================================================
+   7. Article Layout and Navigation
+   ================================================== */
+
+article[data-view] {
+    padding-top: 1rem;
+}
+
+article > nav {
+    margin: 1rem 0 2rem;
+}
+
+article > nav a {
+    color: var(--burgundy);
+    text-underline-offset: 0.25em;
+}
+
+.article-header h2 {
+    color: var(--green);
+    line-height: 1.2;
+}
+
+
+/* ==================================================
+   8. Figures, Images, and Captions
+   ================================================== */
+
 figure {
     margin: 2rem 0;
 }
@@ -106,30 +365,75 @@ figcaption {
     font-style: italic;
 }
 
+/* Module 1.1 floating figures */
+
 .strategy-figure {
     float: left;
     width: 45%;
     margin: 0 1.5rem 1rem 0;
 }
 
-.strategy-figure img {
-    width: 100%;
-    height: auto;
-}
-
-/* KarinaOS Manual Excerpts */
 .manual-excerpt {
     float: left;
     width: 60%;
     margin: 0 1.5rem 0;
 }
+/* Final image in Blog 1: centered, without text wrapping */
+#module-1-1 .final-system-note {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: 42rem;
+    margin: 2rem auto;
+}
 
+/* Keep Blog 1 references below any floating images */
+#module-1-1 > footer {
+    clear: both;
+}
+
+.strategy-figure img,
 .manual-excerpt img {
     width: 100%;
     height: auto;
 }
+/* Blog 2: first screenshot tucked right */
+#module-1-2 .signal-board-figure {
+    float: right;
+    width: 42%;
+    margin: 0.5rem 0 1rem 2.5rem;
+}
 
-/*KarinaOS Internal Review */
+#module-1-2 .signal-board-figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Keep the next introductory figure below the floated image */
+#module-1-2 > figure {
+    clear: both;
+}
+/* Blog 2: smaller workflow diagram with wrapping text */
+#module-1-2 .workflow-figure {
+    float: left;
+    width: 42%;
+    margin: 0.5rem 2.5rem 1rem 0;
+}
+
+#module-1-2 .workflow-figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contain the floating image within its own section */
+#module-12-incremental-development-expanding-useful-capability {
+    display: flow-root;
+}
+
+/* ==================================================
+   9. KarinaOS Internal Review Memos
+   ================================================== */
+
 .system-memo {
     background-color: var(--charcoal);
     color: var(--cream);
@@ -142,64 +446,136 @@ figcaption {
     font-family: Oswald, sans-serif;
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
     color: var(--gold);
 }
 
-.clear-float {
+
+/* ==================================================
+   10. Module 2.1
+   ================================================== */
+
+#module-2-1 h4 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 2rem 0 0.75rem;
+    color: var(--green);
+}
+
+#module-2-1 .article-byline {
+    font-size: 0.9rem;
+    color: var(--blue-gray);
+}
+
+/* Shared screenshot styling */
+
+#module-2-1 .workspace-screenshot {
+    clear: both;
+    margin: 2rem 0;
+}
+
+#module-2-1 .workspace-screenshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+}
+
+#module-2-1 .workspace-screenshot a {
+    display: block;
+}
+
+/* Figure 3: smaller image with room for wrapping text */
+
+#module-2-1 .pdf-import-figure {
+    float: left;
+    width: 42%;
+    margin: 2rem 2.5rem 2rem 0;
+}
+
+/* Keep the next section below the floating figure */
+
+#module-21-feedback {
     clear: both;
 }
 
-/* Portfolio landing view and navigation */
-[hidden] { display: none !important; }
-[data-view] { display: flow-root; }
-.blog-card { border-top: 1px solid var(--gold); padding: 1rem 0 1.5rem; }
-article > nav { margin: 1rem 0 2rem; }
-a:focus-visible { outline: 3px solid var(--burgundy); outline-offset: 4px; }
-@media print {
-    [data-view][hidden] { display: block !important; }
-    #portfolio-home, article > nav { display: none !important; }
+/* Reference list */
+
+#module-2-1 .article-footer li {
+    margin-bottom: 0rem;
+    overflow-wrap: anywhere;
 }
 
 
-/* KarinaOS field notebook */
-body { max-width: 68rem; color: var(--charcoal); line-height: 1.7; }
-.page-header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-bottom: 1px solid var(--gold); padding: 2rem 0 1.5rem; margin-bottom: 0; }
-.page-header h1 { font-size: 2rem; color: var(--green); }
-.page-header p { margin: 0; color: var(--blue-gray); font-size: .8rem; letter-spacing: .1em; }
-.landing-intro { padding: 4.5rem 0 3.5rem; max-width: 48rem; }
-.field-label, .card-module { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
-.field-label { color: var(--burgundy); margin: 0 0 1.2rem; }
-#portfolio-heading { font-family: Georgia, serif; font-size: clamp(2.8rem, 6vw, 4.7rem); line-height: 1.08; letter-spacing: -.035em; color: var(--green); margin: 0 0 1.5rem; }
-.landing-description { max-width: 38rem; color: var(--blue-gray); font-size: 1.15rem; }
-.landing-aside { font-size: .9rem; font-style: italic; color: var(--muted-text); }
-.collection-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.2rem; }
-.collection-heading h3 { font-family: Georgia, serif; font-size: 1.2rem; margin: 0; }
-.collection-heading span { color: var(--muted-text); font-size: .8rem; }
-.blog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-.blog-card { display: flex; flex-direction: column; padding: 2rem; border: 1px solid var(--gold); border-top: 4px solid var(--green); border-radius: 4px; background: var(--cream); box-shadow: 0 10px 25px rgba(29,35,38,.06); }
-.blog-card:nth-child(2) { border-top-color: var(--burgundy); }
-.card-module { color: var(--muted-text); margin: 0 0 1.5rem; }
-.card-topic { color: var(--blue-gray); font-size: .85rem; margin: 0 0 .6rem; }
-.blog-card h3 { font-family: Georgia, serif; font-size: 1.75rem; line-height: 1.25; color: var(--green); margin: 0 0 1rem; }
-.card-description { color: var(--blue-gray); margin: 0 0 1.8rem; }
-.blog-card a { margin-top: auto; display: flex; justify-content: space-between; gap: 1rem; color: var(--burgundy); font-weight: 700; text-underline-offset: .25em; padding-top: 1rem; border-top: 1px solid var(--gold); }
-.blog-card a:hover { color: var(--green); }
-.notebook-note { margin: 2rem 0 3rem; color: var(--muted-text); font-size: .85rem; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
-article[data-view] { padding-top: 1rem; }
-article > nav a { color: var(--burgundy); text-underline-offset: .25em; }
-.article-header h2 { color: var(--green); line-height: 1.2; }
-.page-footer { border-top: 1px solid var(--gold); padding: 1rem 0; color: var(--muted-text); font-size: .8rem; }
+/* ==================================================
+   11. Responsive Layout
+   ================================================== */
+
+/* Stack Figure 3 before the reading area gets too narrow */
+
+@media (max-width: 800px) {
+    #module-2-1 .pdf-import-figure {
+        float: none;
+        width: 100%;
+        max-width: 32rem;
+        margin: 1.5rem auto;
+    }
+}
+
+/* Smaller screens */
+
 @media (max-width: 640px) {
-  .page-header { align-items: flex-start; flex-direction: column; gap: .6rem; }
-  .landing-intro { padding: 3rem 0 2.5rem; }
-  .blog-grid { grid-template-columns: 1fr; }
-  .blog-card { padding: 1.5rem; }
-  .collection-heading { align-items: flex-start; flex-direction: column; gap: .4rem; }
-  .manual-excerpt, .strategy-figure { float: none; width: 100%; margin: 1.5rem 0; }
+    .page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .landing-intro {
+        padding: 3rem 0 2.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card {
+        padding: 1.5rem;
+    }
+
+    .collection-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .manual-excerpt,
+    .strategy-figure {
+        float: none;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    #module-1-2 .workflow-figure {
+    float: none;
+    width: 100%;
+    max-width: 28rem;
+    margin: 1.5rem auto;
+}
 }
 
-/* Leaked archive headline */
-.landing-subtitle { font-family: Georgia, serif; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.25; color: var(--burgundy); margin: -.5rem 0 1.5rem; }
+
+/* ==================================================
+   12. Print Layout
+   ================================================== */
+
+@media print {
+    [data-view][hidden] {
+        display: block !important;
+    }
+
+    #portfolio-home,
+    article > nav {
+        display: none !important;
+    }
+}
