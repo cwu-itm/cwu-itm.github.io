@@ -16,58 +16,77 @@
         <!-- Module 2.1 Blog Starts Here -->
 <article>
    <header class="article-header">
-      <h2>Module 2.1 Blog Post</h2>
+      <<!-- Module 2.2 Blog Starts Here -->
+<article>
+   <header class="article-header">
+      <h2>Module 2.2 Blog Post</h2>
    </header>
 
-   <h3>Designing for Real People: How Perception, Empathy, and Psychology Shape Better Interfaces</h3>
+   <h3>When Systems Fight the Mind: Memory, Mental Models, and the Real Cost of Poor Design</h3>
 
-   <p>When most of us open an app or website, we rarely stop to ask why certain buttons feel natural to press or why some pages make us hesitate. We simply notice when something feels easy—or when it frustrates us. That quiet judgment is the result of human perception, attention, and expectation working together in real time. Human-centered design (HCD) begins with the recognition that these mental processes are not optional extras; they are the foundation of usable systems. Designing for people means understanding how users see, decide, and feel before a single pixel is placed.</p>
+   <p>Most of us have felt the quiet frustration of using a digital system that <em>should</em> be simple but somehow isn’t. We click the wrong button, forget where a setting lives, or hesitate because the interface doesn’t behave the way we expect. These moments are rarely random. They are the result of a mismatch between how the system was designed and how the human mind actually works — how we remember, form habits, and rely on mental shortcuts.</p>
 
-   <h3>Understanding Human-Centered Design</h3>
-   <p>Human-centered design is an approach that places the needs, capabilities, and contexts of real users at the center of every design decision. Rather than starting with technology or business goals and hoping users adapt, HCD starts with people. The goal is to create products, services, and interfaces that are useful, usable, and meaningful in the situations where people actually work and live.</p>
+   <p>Usability is not just about making something look clean or function without crashing. A usable system is one that aligns with the way people think, remember, and act. When that alignment is missing, users carry extra cognitive load. This post examines how memory and mental models shape interaction, how consistency and feedback reduce that load, and why ignoring these realities creates unnecessary difficulty for the people we design for.</p>
 
-   <p>Two influential frameworks shape modern HCD practice: the international standard ISO 9241-210 and IDEO’s Field Guide to Human-Centered Design. Although they share the same core philosophy, they emphasize different strengths.</p>
+   <h3>Memory, Mental Models, and Everyday Interaction</h3>
+   <p>Human memory is limited and selective. We do not store perfect records of every interface we encounter. Instead, we form simplified internal representations — mental models — of how systems work. These models are built from past experience, habits, and expectations. When a new interface matches an existing mental model, interaction feels almost effortless. When it conflicts, users must pause, rethink, and rebuild their understanding on the spot (Johnson, 2020).</p>
 
-   <p>ISO 9241-210 defines human-centred design as an approach that aims to make interactive systems usable and useful by focusing on users, their needs, and the requirements that arise from those needs (International Organization for Standardization [ISO], 2019). The standard outlines six key principles: the design is based on an explicit understanding of users, tasks, and environments; users are involved throughout design and development; the design is driven by user-centred evaluation; the process is iterative; the design addresses the whole user experience; and the design team includes multidisciplinary skills (ISO, 2019). ISO 9241-210 is particularly valuable in organizational and technical settings because it provides a structured, auditable process that can be integrated into larger development life cycles.</p>
+   <p>Working memory, the temporary workspace we use while performing a task, is especially constrained. We can hold only a small number of items in mind at once. Interfaces that force users to remember information from one screen while acting on another, or that present long unstructured lists of options, quickly overload this limited capacity. The result is slower performance, more errors, and a feeling that the system is “hard to use” even when every individual feature works correctly.</p>
 
-   <p>In contrast, IDEO’s Field Guide presents human-centered design as a creative, optimistic, and deeply human practice. It organizes the work into three overlapping phases—Inspiration, Ideation, and Implementation—and stresses mindsets such as empathy, creative confidence, and learning from failure (IDEO.org, 2015). Where ISO 9241-210 offers clear principles and process requirements, the Field Guide offers methods, worksheets, and stories that help teams stay close to the lived experience of the people they serve. Together, the two perspectives are complementary: ISO provides rigor and accountability, while IDEO supplies the imaginative and relational energy that keeps the process grounded in real human insight.</p>
+   <figure>
+      <img src="images/cognitive-load.jpg" alt="Illustration of a person overwhelmed by too much information on a screen">
+      <figcaption>Figure 1. High cognitive load occurs when an interface forces users to hold too much information in working memory at once.</figcaption>
+   </figure>
 
-   <h3>Perception, Attention, and Visual Hierarchy</h3>
-   <p>Even the most carefully researched system can fail if the interface fights against how people actually perceive information. Human vision does not work like a camera that records every detail equally. Instead, the brain actively constructs what we see, guided by expectations, goals, and limited attentional resources (Johnson, 2020). This has direct consequences for interface design.</p>
+   <p>Mental models also explain why habits are so powerful. Once users develop a routine — where to look for a menu, what a particular icon means, how to complete a common task — they stop thinking about the steps consciously. Good design supports these habits. Poor design forces users to break them repeatedly, turning automatic actions into deliberate, effortful ones.</p>
 
-   <p>Visual hierarchy is one of the most powerful tools designers have. By controlling size, contrast, color, spacing, and position, designers can guide attention to the most important elements first. When hierarchy is clear, users find what they need quickly and feel confident. When hierarchy is weak or contradictory, users experience cognitive friction—they must work harder to understand the page, which reduces efficiency and increases the chance of errors.</p>
+   <h3>Consistency and Feedback: The Quiet Supports of Usability</h3>
+   <p>Two of the strongest ways to reduce cognitive load are interface consistency and clear system feedback.</p>
 
-   <p>Consider a typical student dashboard. If the “Submit Assignment” button is small, low-contrast, and placed far from the main content area, students will struggle to locate it under time pressure. If the same button is large, high-contrast, and positioned near the assignment details, the action becomes almost automatic. The difference is not merely aesthetic; it is perceptual. Early design choices about size, color, and placement either support or hinder usability long before any usability test is run.</p>
+   <p>Consistency allows users to transfer knowledge from one part of a system (or from other systems) to another. When buttons, labels, navigation patterns, and interaction styles remain predictable, users spend less mental energy figuring out “how this part works” and more energy accomplishing their actual goal. Inconsistency forces constant re-learning. A settings panel that suddenly uses different terminology or places controls in unexpected locations breaks the user’s mental model and increases the chance of mistakes.</p>
 
-   <h3>Four Psychological Laws That Shape Everyday Interactions</h3>
-   <p>Four well-established principles from cognitive psychology offer practical guidance for these early decisions: Jakob’s Law, Fitts’s Law, Hick’s Law, and Miller’s Law.</p>
+   <figure>
+      <img src="images/consistency-example.webp" alt="Side-by-side comparison of consistent vs inconsistent interface patterns">
+      <figcaption>Figure 2. Consistent design patterns help users apply existing mental models; inconsistent patterns force them to relearn.</figcaption>
+   </figure>
 
-   <p><strong>Jakob’s Law</strong> states that users spend most of their time on other sites and therefore prefer your interface to work in ways they already understand (Yablonski, 2020). People bring mental models formed by years of experience with other digital products. When a new system violates those expectations—placing the navigation in an unusual location or using unfamiliar icons—users must pause and relearn. The cost is not only time; it is also confidence. Designers who respect Jakob’s Law reduce the learning curve and make the system feel immediately approachable.</p>
+   <p>Feedback closes the loop between action and result. When a system clearly shows that an action has been received, is being processed, or has succeeded or failed, users stay oriented. Without adequate feedback, people are left guessing: Did my click register? Is the system frozen? Did my change save? That uncertainty creates anxiety and extra checking behavior — another form of unnecessary cognitive load.</p>
 
-   <p><strong>Fitts’s Law</strong> addresses the physical act of pointing and selecting. The time required to move to a target depends on the distance to the target and its size (Yablonski, 2020). Larger targets that are closer to the user’s current focus are faster and less error-prone to hit. On desktop interfaces this means making primary action buttons sufficiently large and placing them in predictable locations. On mobile devices the principle becomes even more critical: touch targets must be large enough for fingers and positioned within easy reach of the thumb. Ignoring Fitts’s Law produces interfaces that feel clumsy and tiring.</p>
+   <h3>When Design Creates Unnecessary Cognitive Load</h3>
+   <p>Poor design rarely fails in dramatic ways. More often it fails quietly by forcing users to do extra mental work that the system should have handled. Common examples include forms that ask for the same information multiple times, navigation that changes labels between sections, tiny touch targets on mobile, or applications that give no confirmation after a critical action.</p>
 
-   <p><strong>Hick’s Law</strong> explains that the time required to make a decision increases with the number and complexity of choices (Yablonski, 2020). When users face too many options at once, decision-making slows and the likelihood of abandonment rises. Effective interfaces manage this load by progressive disclosure—showing only the choices needed at each step—and by grouping related options. A settings page that presents twenty equally weighted controls is harder to use than one that organizes the same controls into three or four clear categories.</p>
+   <p>Each of these situations requires the user to hold more information in working memory, suppress existing habits, or second-guess the system. The extra effort is invisible to the designer who already knows how the system works, but it is very real to the person trying to complete a task under time pressure.</p>
 
-   <p><strong>Miller’s Law</strong> reminds us that working memory is limited. The average person can hold roughly seven (plus or minus two) items in short-term memory at one time (Yablonski, 2020). Interfaces that present long unstructured lists or require users to remember information from one screen while acting on another quickly overload this capacity. Chunking information into meaningful groups, using clear visual structure, and minimizing the need to hold data in memory all reduce cognitive load and support better performance.</p>
+   <p>Tesler’s Law (also called the Law of Conservation of Complexity) helps explain why this happens. The law states that every application has an inherent amount of complexity that cannot be eliminated — it can only be moved. Complexity can be absorbed by the system (through better design, defaults, automation, and clear structure) or it can be pushed onto the user (Norman, 2013; Tesler, n.d.). When designers do not deliberately absorb complexity, users pay the price in cognitive load.</p>
 
-   <p>These four laws are not rigid rules; they are descriptions of human limitations and preferences. When designers treat them as design constraints rather than obstacles, the resulting interfaces feel more natural because they align with how people already think and move.</p>
+   <figure>
+      <img src="images/teslers-law.webp" alt="Diagram illustrating Tesler's Law - complexity is conserved and moved between system and user">
+      <figcaption>Figure 3. Tesler’s Law: Complexity cannot be removed, only shifted between the system and the user.</figcaption>
+   </figure>
 
-   <h3>Early Design Choices and Long-Term Usability</h3>
-   <p>One of the most important insights from both ISO 9241-210 and the IDEO Field Guide is that many usability problems are locked in early. Decisions about information architecture, visual hierarchy, and interaction patterns made in the first weeks of a project are expensive to reverse later. A system that forces users to hunt for primary actions, presents too many choices at once, or violates familiar conventions will continue to create friction long after launch.</p>
+   <p>Johnson (2020) reinforces this point through principles related to recognition over recall and the limits of attention and memory. Interfaces that require users to recall information rather than recognize it, or that scatter related controls across distant locations, systematically increase the mental effort required to complete even routine tasks.</p>
 
-   <p>This is why empathy and observation must come before solution generation. Sitting with real users, watching them work, and listening to their language reveals the gap between what designers assume and what people actually need. That gap is where the most valuable design opportunities live. When teams skip this step, they risk building interfaces that are technically functional yet psychologically misaligned.</p>
+   <h3>Supporting User Thinking by Design</h3>
+   <p>The practical implication is clear: usable systems are those that actively support human thinking rather than fight it. Designers and IT professionals can do this by matching interaction patterns to existing mental models, keeping related information and controls together, providing immediate clear feedback, absorbing complexity inside the system, and testing with real people early.</p>
+
+   <figure>
+      <img src="images/good-feedback.avif" alt="Example of clear system feedback after a user action">
+      <figcaption>Figure 4. Clear, timely feedback helps users stay oriented and reduces uncertainty.</figcaption>
+   </figure>
+
+   <p>These practices are not aesthetic preferences. They are direct responses to the documented limits of human memory, attention, and habit formation.</p>
 
    <h3>Conclusion</h3>
-   <p>Designing for people is not a soft skill added on top of technical work; it is a disciplined practice that begins with perception and empathy. ISO 9241-210 gives us a clear process and set of principles that can be applied across complex systems. IDEO’s Field Guide keeps that process human and imaginative. The psychology of perception and the four UX laws translate those high-level commitments into concrete interface decisions.</p>
+   <p>Digital systems become usable when they respect the way people actually think. Memory constraints, mental models, habits, and the need for consistency and feedback are not obstacles to be worked around — they are the conditions under which all interaction occurs. When design ignores them, users carry unnecessary cognitive load. When design acknowledges them, the system fades into the background and people can focus on their real goals.</p>
 
-   <p>When early design choices respect how people see, decide, and remember, the resulting systems feel almost invisible—users simply accomplish their goals with less effort and greater confidence. That quiet success is the true measure of human-centered design. In an era when digital tools mediate nearly every aspect of work and learning, the responsibility to design with the mind in mind is no longer optional. It is a core professional obligation.</p>
+   <p>Tesler’s Law reminds us that complexity never disappears; it only changes location. The most usable systems are those that deliberately take complexity away from the user and handle it inside the design. Combined with the insights from <em>Designing with the Mind in Mind</em> about recognition, memory limits, and attention, this perspective gives us a clear standard: a system is truly usable only when it supports, rather than burdens, the human mind that must work with it.</p>
 
    <footer class="article-footer">
       <h3>Sources:</h3>
       <ol>
-         <li>IDEO.org. (2015). <em>The field guide to human-centered design</em>. IDEO.org. <a href="https://www.designkit.org/resources/1">https://www.designkit.org/resources/1</a></li>
-         <li>International Organization for Standardization. (2019). <em>Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems</em> (ISO 9241-210:2019).</li>
          <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+         <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.</li>
+         <li>Tesler, L. (n.d.). <em>The law of conservation of complexity</em>. <a href="https://www.nomodes.com/Larry_Tesler_Consulting/Complexity_Law.html">https://www.nomodes.com/Larry_Tesler_Consulting/Complexity_Law.html</a></li>
          <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O’Reilly Media.</li>
       </ol>
    </footer>
