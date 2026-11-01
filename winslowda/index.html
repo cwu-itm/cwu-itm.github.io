@@ -169,6 +169,73 @@
       <!-- Module 2.1 Blog Post Starts here -->
 
       <!-- Module 2.2 Blog Post Starts here -->
+      <article>
+         <header class="article-header">
+            <h2>Module 2.2 Blog Post</h2>
+         </header>
+         <h3>Introduction</h3>
+         <p>Digital systems have become an integral part of our daily lives. They help us communicate more effectively, access valuable information, and complete tasks faster. But to ensure the effectiveness of these systems, it’s crucial to consider the system’s usability. This depends on how well it can address the needs, expectations, and limitations of the people interacting with it, and even small design choices like how readable text is can drastically alter a user’s ability to accomplish their goals. In this post, I’ll discuss how memory, user habits, interface consistency, and system feedback can influence the usability of a digital system. I’ll also explore how poor design choices can create unnecessary cognitive load and use examples from the course readings, credible outside sources, and my own experiences to support my reasoning.</p>
+         <h3>Memory, Mental Models, and User Interaction</h3>
+         <p>When we navigate websites or applications in our day-to-day life, we rely on our past experiences to understand how certain features work. For example, take a magnifying glass icon on a website. Based on our experiences with other websites, we intuitively know this likely represents a search button. This demonstrates how memory shapes interactions with digital systems. </p>
+         <p>With that in mind, a person’s memory has limitations that must be considered. Johnson (2021) explains that a working memory can only handle a small amount of information at a time, and that it can be easy to forget important details when distractions are introduced. Imagine searching for specific information on a website, only for the website to clear your search terms once the results load. As you scan through the results, you may forget specific keywords you used once the results display, making analysis of the results have worse context. This example also highlights Tesler’s Law, which states that every digital system has unavoidable complexity that must be managed by either the system or its users (Yablonski, 2024). By keeping the original search terms available, the website can help manage this complexity and reduce the amount of information that users need to remember so they can focus more on refining their results.</p>
+         <p>Implementing this correctly requires designers to consider the mental models their audience would have already developed. Mental models are expectations that people have about how things should work based on their past experiences. Keeping our magnifying glass example from earlier in mind, clicking on a magnifying glass for it to show an animation burning out search results, similar to a magnifying glass in the sun, would not be intuitive, but having it open a search bar to be able to search through a list of options would be expected by the website’s general audience. Johnson (2021) emphasizes that recognizing familiar features is easier than having to remember how everything works. When incorporating recognizable and obvious design elements, developers and system designers can make interfaces easier and more intuitive to navigate, since people already have preconceived notions about certain design elements.</p>
+         <h3>How Habits Influence Usability</h3>
+         <p>Our past experiences also influence the habits we develop when using digital systems. Johnson (2021) explains that people often prefer familiar ways of completing tasks, even if more efficient alternatives exist. One example of this is how my dad copies and pastes text and files on his computer. I’ve shown him how to use the Ctrl+C and Ctrl+V keyboard shortcuts, but he still prefers right-clicking to select the copy/paste options because it’s what he’s most familiar with. This demonstrates how once we’ve become familiar with a process, repeating it requires less mental effort than learning something new. Even though keyboard shortcuts are faster, changing my dad’s habits would require more effort than continuing with what he already knows. </p>
+         <figure style="max-width: 450px; margin: 20px auto;">
+            <img src="images/rightclick_paste.png"
+                  alt="An image showing the right-click context menu on Windows highlighting the paste button."
+                  loading="lazy"
+                  style="width: 50%; height: auto; display: block; margin: 0 auto; text-align: center;">
+            <figcaption>
+               <p>Right-click context menu highlighting paste button. <p style="text-align: center;">
+               <p>Image by Eli Winslow, 2026.<p style="text-align: center;">
+            </figcaption>
+         </figure>
+         <p>People also rely on familiar clues in digital systems to reduce mental effort and improve usability. Johnson (2021) describes this as information scent, where people look for words, icons, and other indicators to help guide them to their goals. For example, someone who’s trying to change their password is likely to look for a menu named “Security” or “Account Settings”, since their past experiences suggest that’s where this setting would be located. Familiar clues like this make it easier for people to find what they’re looking for without having to think too much about where to go. </p>
+         <h3>Interface Consistency and System Feedback</h3>
+         <p>It’s important to consider interface consistency and system feedback when designing digital systems. Interface consistency is ensuring that the design and layout of a digital system remain consistent and familiar to users. For example, using our search bar example again, users would expect to find the same search menu in different parts of the website. If the search menu suddenly went to a different corner of the website or functioned significantly differently, that could confuse users and make them spend unnecessary time learning how to navigate the same website in different ways. By keeping these elements consistent, website and app designers reduce confusion and help users navigate their systems better.</p>
+         <p>On the other hand, system feedback is the focus on communicating what happens when a user performs an action. In her article, ‘Visibility of System Status’, Harley (2018) emphasizes the importance of keeping users informed about a system’s status through feedback. For example, submitting an assignment through Canvas has a confetti animation on submission. If the submission didn’t have any indication of whether it was successful, you would have no idea if the assignment was actually submitted, and it would lead to feelings of stress and uncertainty. Website and app designers need to keep this in mind and provide clear feedback in the form of confirmation messages, progress bars, or other visual indicators to communicate to users what’s going on. System feedback ultimately makes digital systems easier to use and gives users more confidence in their interactions. </p>
+         <h3>Poor Design Increases Cognitive Load </h3>
+         <p>While interface consistency and system feedback can improve usability, poor design choices can increase unnecessary cognitive load. One example of this is change blindness. This occurs when users don’t notice changes in their environment because they're focused elsewhere (Johnson, 2021). For example, I commonly use OBS Studio to record commentary videos for my YouTube channel. Sometimes, when I adjust my recording settings, my audio input device automatically switches to my webcam’s microphone without me noticing. I’ve had to rerecord entire commentaries because of this, since OBS Studio doesn’t provide a clear indicator when your audio input device changes. As a result, I’ve grown used to constantly checking what audio input device is being used even if I haven’t changed it. By adding a clear notification whenever the audio input device changes, OBS Studio could reduce unnecessary cognitive load by letting users focus more on their recordings instead of whether the correct microphone is being used. This also reflects Tesler’s Law, since OBS Studio would take more responsibility for ensuring users are using their preferred microphone (Yablonski, 2024).</p>
+         <figure style="max-width: 450px; margin: 20px auto;">
+            <img src="images/obs_audiomixer.png"
+                  alt="An image showing the OBS Studio audio mixer interface."
+                  loading="lazy"
+                  style="width: 75%; height: auto; display: block; margin: 0 auto; text-align: center;">
+            <figcaption>
+               <p>The OBS Studio audio mixer interface. <p style="text-align: center;">
+               <p>Image by Eli Winslow, 2026.<p style="text-align: center;">
+            </figcaption>
+         </figure>
+         <p>Another poor design choice that can increase cognitive load is using text that’s difficult to read. Johnson (2021) highlights this by showing an older version of Apple’s App Store. In this example, estimated download times were displayed with dark gray text on a gray background, making it harder to see. As a result, this forced users to spend more time and mental effort trying to read basic information that should have been clearly visible. To avoid this, website and app designers should ensure that text contrasts enough with the background to make important information easy and effortless to read. This is supported by the World Wide Web Consortium (W3C, 2026), which recommends a minimum contrast ratio of 4.5:1 between normal-sized text and the background to improve readability, especially among older individuals or people with poor vision. </p>
+         <figure style="max-width: 450px; margin: 20px auto;">
+            <img src="images/appstore_gray_text.png"
+                  alt="An image showing the Apple App Store download text blending in with the background."
+                  loading="lazy"
+                  style="width: 75%; height: auto; display: block; margin: 0 auto; text-align: center;">
+            <figcaption>
+               <p>The old Apple App Store download text blending in with the background<p style="text-align: center;">
+               <p>(Johnson, 2021).<p style="text-align: center;">
+            </figcaption>
+         </figure>
+         <h3>Conclusion</h3>
+         <p>In conclusion, a digital system’s usability goes beyond just making it functional. It also considers the memory, mental models, habits, and expectations of its users. Understanding principles like information scent and change blindness can help system designers identify usability problems and create interfaces that align better with their audiences’ needs. By reducing a user’s cognitive load, system designers can create a more intuitive user experience that requires less mental effort and helps users achieve their goals faster. </p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>Johnson, J. (2021). <i>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</i> (3rd ed.). Morgan Kaufmann.</li>
+               <li>Yablonski, J. (2024). Tesler's law. <a
+                     href="https://jonyablonski.com/articles/2024/teslers-law/">https://jonyablonski.com/articles/2024/teslers-law/</a>
+               </li>
+               <li>Harley, A. (2018, June 3). <i>Visibility of System Status (usability heuristic #1).</i> <a
+                     href="https://www.nngroup.com/articles/visibility-system-status/">https://www.nngroup.com/articles/visibility-system-status//</a>
+               </li>
+               <li>World Wide Web Consortium. (2026, September 6). <i>Understanding success criterion 1.4.3: Contrast (minimum)</i>. <a
+                     href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html</a>
+               </li>
+            </ol>
+         </footer>
+      </article>
 
       <!-- Module 2.3 Blog Post Starts here -->
 
