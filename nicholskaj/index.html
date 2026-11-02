@@ -18,8 +18,251 @@
             <header class="article-header">
                <h2>Module 1.1 Blog Post</h2>
             </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
+            <h3>Systems Thinking and the Design of Complex Digital Systems</h3>
+            <p># Systems Thinking and the Design of Complex Digital Systems
+
+When I think about systems thinking, I think about changing the question from **“What is wrong with this part?”** to **“How are all of these parts interacting to create what I am seeing?”** That distinction is important because complex digital systems rarely operate as isolated pieces. Software, hardware, databases, networks, users, business processes, and organizational goals all interact with one another. A change to one part can create consequences somewhere else that were not immediately obvious.
+
+After reviewing the module readings from *Systems Engineering Demystified*, I see systems thinking as more than simply looking at the “big picture.” It is a way of understanding the **relationships among the parts of a system, the different perspectives of stakeholders, and the way a system behaves as a connected whole**. Holt and Perry (2019) emphasize that the relationships between system elements are just as important as the elements themselves. This idea is particularly relevant to digital environments because modern systems depend on numerous interconnected components.
+
+Systems thinking also helps explain why a model-based approach is useful for complex systems. Instead of relying entirely on separate documents to describe requirements, architecture, processes, and behavior, Model-Based Systems Engineering (MBSE) uses a model as an organized representation of the system. The model can provide different views of the same system while maintaining consistency among those views (Holt & Perry, 2019). In my view, this makes MBSE a practical extension of systems thinking because it gives teams a structured way to see, communicate, and manage system relationships.
+
+## What Is Systems Thinking?
+
+In my own words, **systems thinking is the practice of understanding a problem by examining the whole system and the relationships among its components rather than analyzing each component independently**.
+
+For example, consider a university's online learning environment. At first, it might seem like the system is simply a website where students access course materials and submit assignments. However, the actual system is much larger. It may include students, instructors, administrators, authentication services, databases, cloud infrastructure, notification systems, accessibility requirements, cybersecurity controls, mobile devices, and internet connections.
+
+These components do not operate independently.
+
+Suppose a university changes its authentication process to improve security. From a narrow perspective, this could appear to be a cybersecurity project. From a systems-thinking perspective, however, the change could affect login times, help-desk requests, students' ability to access assignments, instructors' workflows, mobile-device compatibility, and the university's support processes.
+
+The security system itself might work exactly as designed while the overall system experiences new problems.
+
+This illustrates one of the ideas I found particularly important in the module reading: **the relationships between system elements matter just as much as the elements themselves** (Holt & Perry, 2019). A system cannot always be understood simply by examining its components separately.
+
+NASA makes a similar point in its *Systems Engineering Handbook*. NASA defines a system as elements that function together to meet a need and explains that the value created by the system as a whole comes largely from the relationships among its interconnected parts (National Aeronautics and Space Administration [NASA], n.d.). ([NASA][1])
+
+This is what makes systems thinking different from simply having a broad perspective. It requires actively examining **dependencies, interactions, boundaries, stakeholders, constraints, and consequences**.
+
+## Systems Thinking and Linear Thinking
+
+Systems thinking differs from traditional linear thinking because linear thinking tends to focus on straightforward cause-and-effect relationships.
+
+A simplified linear approach might look like this:
+
+**Problem → Cause → Solution → Result**
+
+This approach can be extremely useful for simple problems. For example, if a computer will not turn on because its power cable is disconnected, identifying the immediate cause and reconnecting the cable may completely solve the problem.
+
+However, complex digital systems rarely behave this simply.
+
+Imagine that a company experiences declining employee productivity. A linear approach might identify the problem as employees not completing enough work and respond by increasing employee monitoring. However, productivity might actually be influenced by outdated software, unclear requirements, excessive meetings, insufficient training, poor communication, workload, management practices, or inefficient business processes.
+
+Increasing monitoring could then introduce additional effects that were not considered initially.
+
+The important difference is that **linear thinking tends to search for a primary cause, while systems thinking examines relationships and interactions among multiple causes and effects**.
+
+The module reading reinforces this idea through its discussion of the three major problems that can contribute to system failures: **complexity, communication, and understanding**. Holt and Perry (2019) explain that these problems can influence one another. Unmanaged complexity can contribute to communication problems and a lack of understanding, while poor communication and misunderstanding can increase complexity.
+
+This is an important systems-thinking concept because it shows that problems can reinforce one another. Instead of:
+
+**A causes B**
+
+the relationship can sometimes look more like:
+
+**A affects B → B affects C → C affects A**
+
+This creates feedback within the system.
+
+For digital systems, this could happen when a poorly understood requirement creates a software design problem, which creates additional work, which creates schedule pressure, which reduces testing time, which leads to more defects, which then creates additional work. There is no single event that completely explains the problem. The problem emerges from the interactions among several parts of the project.
+
+## Stakeholder Perspectives and Context
+
+Another concept from the module reading that changed how I think about systems is **context**.
+
+Different stakeholders can look at the same system and have completely different interpretations of what the system needs to accomplish. Holt and Perry (2019) explain that stakeholders may perceive or interpret the same need differently depending on their point of view and context.
+
+This seems especially important in information technology.
+
+Consider a statement such as:
+
+**“The system must be easy to use.”**
+
+That sounds straightforward, but what does “easy to use” actually mean?
+
+For a student, it might mean being able to log in quickly and find assignments without additional training. For an instructor, it might mean being able to create assignments and grade submissions efficiently. For an IT administrator, it might mean having centralized management and troubleshooting capabilities. For a cybersecurity professional, ease of use cannot come at the expense of appropriate security controls.
+
+Everyone could agree that the system should be easy to use while having different interpretations of what that requirement actually means.
+
+This demonstrates why systems thinking requires more than understanding technology. It also requires understanding **people and their perspectives**.
+
+The module reading describes systems engineering through the relationship among **People, Process, and Tools** (Holt & Perry, 2019). I think this is particularly applicable to digital systems because organizations sometimes focus too heavily on technology while overlooking the people and processes surrounding that technology.
+
+Buying a new software platform does not automatically solve a business problem. The organization also needs people who understand how to use the system and processes that allow the technology to support the organization's goals.
+
+This is an important lesson for project management as well. A project can technically deliver everything that was requested and still fail to produce the intended outcome if the people and processes surrounding the technology were not considered.
+
+## Why Model-Based Systems Engineering Is Applicable
+
+This leads directly into the second major part of the assignment: **why is a model-based approach useful when designing complex digital systems?**
+
+The module reading explains that MBSE is not simply a small part of systems engineering. Instead, it represents a way of performing systems engineering through a rigorous model-based approach (Holt & Perry, 2019).
+
+The fundamental concept is that the **model acts as an abstraction of the system**.
+
+An abstraction does not attempt to reproduce every detail of the real system. Instead, it represents the information necessary to understand and successfully develop the system. Holt and Perry (2019) emphasize that a model is necessarily a simplification of the actual system. The important issue is whether the model contains the relevant information necessary for the purpose for which it is being used.
+
+I think this makes sense because trying to represent every single detail of a complex digital system at once would actually make the system harder to understand.
+
+For example, consider a university registration system. A model could represent:
+
+* Students
+* Courses
+* Instructors
+* Departments
+* Registration requirements
+* Authentication
+* Payment systems
+* Course capacity
+* Notifications
+* Databases
+* External systems
+
+A stakeholder does not necessarily need to see all of these elements at the same time.
+
+Instead, the model can provide different **views** of the system.
+
+A student-services administrator might need a view showing enrollment processes. A database administrator might need a structural view showing data relationships. A cybersecurity professional might need a view showing authentication and authorization. A project manager might need a higher-level view showing system components and dependencies.
+
+These can all represent the same underlying system while emphasizing different information.
+
+Holt and Perry (2019) explain that each view has a particular audience, purpose, and collection of information. Importantly, the views must remain consistent with one another. If different diagrams contradict each other, they are essentially just a collection of pictures rather than a coherent model.
+
+That concept of **consistency** is one of the strongest arguments for MBSE.
+
+## Models Help Manage Complexity
+
+The module reading identifies complexity as one of the major problems in systems engineering and explains that modeling can help identify where complexity exists within a system (Holt & Perry, 2019).
+
+This is important because complexity itself is not necessarily bad.
+
+A large digital system may inherently be complex because it has many legitimate requirements and dependencies. The goal is not always to eliminate complexity. Instead, the goal is to **understand and manage it**.
+
+For example, a banking application might need strong authentication, encryption, fraud detection, transaction processing, regulatory compliance, customer support, mobile access, and integration with other financial systems. Removing these functions simply to make the system less complex might make the system incapable of fulfilling its purpose.
+
+Modeling can instead help identify where the complexity exists and how different components depend on one another.
+
+NASA similarly emphasizes the importance of considering system relationships and the overall system rather than evaluating components in isolation. Its systems engineering guidance describes systems engineering as a multidisciplinary approach that looks at the “big picture” and considers the interactions among system elements (NASA, n.d.). ([NASA][1])
+
+This is particularly applicable to digital systems because dependencies are often difficult to see when they are represented only through separate documents.
+
+## Moving From Documents to Models
+
+One of the most interesting ideas from the module reading is the evolution from **document-based systems engineering to model-based systems engineering**.
+
+In a traditional document-based approach, information about a system may be distributed among requirements documents, spreadsheets, diagrams, technical specifications, test plans, and other files. The module reading describes the first stage of MBSE evolution as a document-based approach in which knowledge about the system is spread throughout the document set (Holt & Perry, 2019).
+
+The problem is not that documents are useless. Documents are still valuable. The problem is that maintaining consistency across a large collection of separate documents can become increasingly difficult as the system grows.
+
+Imagine that a requirement changes. A project team might have to determine:
+
+1. Which requirements document contains the original requirement?
+2. Which architecture diagrams are affected?
+3. Which software components depend on it?
+4. Which interfaces need to change?
+5. Which tests verify the requirement?
+6. Which user documentation needs updating?
+7. Which stakeholders need to be informed?
+
+If those relationships are not clearly connected, someone can easily miss something.
+
+MBSE attempts to improve this situation by making the model a central representation of system information.
+
+INCOSE describes MBSE as the formalized application of modeling to support requirements, design, analysis, verification, and validation across the system lifecycle. It also describes MBSE as an approach intended to move systems engineering away from primarily document-oriented practices toward models. ([INCOSE][2])
+
+That does not mean that documentation disappears. Instead, the model becomes a more authoritative and connected source of system information.
+
+## Structure and Behavior
+
+Another concept from the module reading that connects directly to systems thinking is the distinction between **structure and behavior**.
+
+The structure of a system describes what exists and how the elements relate to one another. Behavior describes how those elements operate, including sequences, conditions, and timing (Holt & Perry, 2019).
+
+I think this distinction is useful because a digital system can have a technically correct structure while still behaving incorrectly.
+
+For example, a food-delivery application might have the correct relationships among customers, restaurants, drivers, orders, and payments. However, the application still needs to correctly handle what happens when a customer places an order, the restaurant accepts it, a driver receives the assignment, payment is processed, and the order is delivered.
+
+The structure answers questions such as:
+
+**“What are the parts and how are they connected?”**
+
+Behavior answers questions such as:
+
+**“What happens, when does it happen, and under what conditions?”**
+
+Both are necessary to understand the system.
+
+This reinforces the systems-thinking principle that understanding individual components is not enough. We also need to understand how those components interact over time.
+
+## Modeling Improves Communication
+
+I also think MBSE is useful because it can improve communication among stakeholders.
+
+One of the module reading's “three evils” of systems engineering is poor communication among stakeholders (Holt & Perry, 2019). This makes sense because complex systems involve people with different areas of expertise.
+
+A software developer, project manager, cybersecurity specialist, business analyst, and executive may all use different terminology when discussing the same system.
+
+A model provides a shared representation.
+
+The module reading explains that modeling can help create common communication mechanisms through notation and domain-specific language. SysML, for example, can provide standardized ways to visualize different aspects of a system (Holt & Perry, 2019).
+
+INCOSE similarly describes MBSE as supporting system requirements, design, analysis, verification, and validation throughout the system lifecycle (INCOSE, n.d.). ([INCOSE][2])
+
+This is important because communication problems can become technical problems. If a stakeholder misunderstands a requirement, the development team may build exactly what they were told to build but still produce the wrong solution.
+
+A good model can help expose those misunderstandings earlier.
+
+## Systems Thinking From a Project Management Perspective
+
+From a project management perspective, I think systems thinking is especially useful because project managers constantly deal with relationships among scope, schedule, cost, resources, stakeholders, risks, and quality.
+
+A traditional approach might consider each area separately. A systems-thinking approach asks how changing one area affects the others.
+
+For example:
+
+**Scope increases → more work is required → schedule may increase → additional resources may be needed → cost may increase → additional coordination may be required.**
+
+This is not simply a sequence of independent events. Each decision affects other parts of the project system.
+
+The same concept applies to digital system development. A change to a requirement can affect architecture, development, testing, training, documentation, schedule, and budget.
+
+This is why I think systems thinking is a valuable mindset for anyone working in IT or project management. It encourages people to consider consequences before making isolated decisions.
+
+## My Overall Takeaway
+
+The biggest lesson I take from systems thinking is that **a system is more than the sum of its individual parts**. Understanding each component is important, but understanding the relationships among those components is what allows us to understand the system as a whole.
+
+Traditional linear thinking is still valuable for simple and well-defined problems. If a problem has a clear cause and straightforward solution, there may be no reason to develop a complex model. However, digital systems increasingly involve large numbers of interconnected components, stakeholders, requirements, interfaces, and dependencies. In those environments, relying exclusively on linear thinking can cause important relationships to be overlooked.
+
+Systems thinking provides the mindset for examining those relationships.
+
+Model-Based Systems Engineering provides a practical way to represent them.
+
+The module reading's discussion of **complexity, communication, understanding, context, People-Process-Tools, structure, behavior, and system models** helped me see that MBSE is not simply about drawing diagrams. A model is useful because it provides an organized abstraction of the system that can help people understand complexity and communicate about the system consistently (Holt & Perry, 2019).
+
+The connection can ultimately be summarized with a simple idea:
+
+> **Do not just ask whether each component works. Ask whether the components work together to accomplish the purpose of the system.**
+
+That distinction is important in IT because successful technology is more than functioning software or hardware. A successful digital system has to work within a larger environment involving people, processes, information, technology, stakeholders, and organizational objectives.
+
+Systems thinking helps us see those connections. MBSE gives us a structured way to represent and manage them.
+
+As digital systems become more interconnected, I believe this way of thinking will become increasingly important. The challenge is no longer simply building individual technological components. The larger challenge is understanding how those components interact and designing the entire system so that its parts work together toward a meaningful goal.
+
+
+</p>
             <h3>Offal Tofu Cred Green Juice</h3>
             <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
             <h3>Blue Roof Pour-Over Man Bun</h3>
@@ -33,16 +276,527 @@
             <h3>Mlkshk Stumptown Hot Chicken</h3>
             <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
             <footer class="article-footer">
-                <h3>Sources:</h3>
+                <h3>Sources:
+                  Holt, J. D., & Perry, S. A. (2019). *Don't panic! The absolute beginner's guide to model-based systems engineering*. INCOSE UK Publishing.
+
+International Council on Systems Engineering. (n.d.). *MBSE Initiative Working Group*. [https://www.incose.org/group/mbse-initiative/](https://www.incose.org/group/mbse-initiative/?utm_source=chatgpt.com)
+
+National Aeronautics and Space Administration. (n.d.). *Systems Engineering Handbook: 2.0 Fundamentals of systems engineering*. [https://www.nasa.gov/reference/2-0-fundamentals-of-systems-engineering/](https://www.nasa.gov/reference/2-0-fundamentals-of-systems-engineering/?utm_source=chatgpt.com)
+</h3>
                 <ol>
                     <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
                     </ol>
             </footer>
          </article>
 
+<<<<<<< Updated upstream
+         <# The Systems Development Life Cycle: Designing Systems That Can Evolve
+=======
          <!-- Module 1.2 Blog Post Starts here -->
+# The Systems Development Life Cycle: Designing Systems That Can Evolve
+>>>>>>> Stashed changes
 
-         <!-- Module 2.1 Blog Post Starts here -->
+When I first think about developing a digital system, I tend to picture the project as a sequence of tasks: identify what needs to be done, design the solution, build it, test it, and release it. While that is part of the process, systems engineering requires a broader way of thinking. A system is not simply something that gets built and then finished. It evolves over time as people use it, technology changes, requirements change, and eventually the system is replaced or retired.
+
+This is why the **systems development life cycle** is important. The life cycle provides a way to think about a system from its initial concept through development, use, support, and eventual retirement. In *Systems Engineering Demystified*, Holt explains that a life cycle describes the stages involved in the evolution of an entity, while a Life Cycle Model describes how those stages are executed and in what order (Holt, 2023). 
+
+For digital systems in particular, thinking about the entire life cycle changes how I would approach a project. Instead of asking only, “How do we build this system?” I would also ask, “How will this system be used, maintained, supported, updated, and eventually replaced?” That shift is important because many of the problems with digital systems do not appear when the system is first released. They appear later when the system needs to adapt.
+
+## What Is the Systems Development Life Cycle?
+
+In my own words, the **systems development life cycle (SDLC)** is the complete path a system follows from the point when an organization recognizes a need until the system is eventually retired. It provides a structure for understanding how a system develops and changes throughout its existence.
+
+Holt's discussion of the System Life Cycle identifies six major stages: **Conception, Development, Production, Utilization, Support, and Retirement**. Conception focuses on understanding the system's needs and stakeholders. Development involves considering possible solutions and selecting a preferred solution. Production creates the actual system and includes verification and validation activities. Utilization is when users and operators actually use the system. Support includes maintenance and services needed to keep the system operating effectively. Finally, Retirement addresses decommissioning and safe disposal of the system. 
+
+One important point from the reading is that these stages should not necessarily be viewed as rigid steps that are identical for every system. Holt explains that the stages can be executed in different sequences, and some stages can even be omitted depending on the system and the Life Cycle Model being used. 
+
+This is particularly relevant to digital systems because technology changes quickly. A software application might be updated hundreds of times during its operational life. A system might also need to be redesigned because of cybersecurity threats, changes in user expectations, new hardware, changes in regulations, or the retirement of an underlying technology.
+
+The National Institute of Standards and Technology (NIST) similarly describes the system development life cycle as covering activities from initiation and development through implementation, operation, maintenance, and ultimately disposal. NIST also emphasizes incorporating security throughout the life cycle rather than treating security as something that happens only after development. ([NIST][1])
+
+This reinforces an important idea: **development is only one part of a system's life.**
+
+## The Difference Between a Life Cycle and a Life Cycle Model
+
+Another concept from the reading that I found useful is the distinction between a **Life Cycle** and a **Life Cycle Model**.
+
+A Life Cycle describes **what stages exist**. A Life Cycle Model describes **how those stages are executed**. Holt essentially describes the Life Cycle as the structural representation of an entity's evolution and the Life Cycle Model as the behavioral representation that explains the order in which the stages occur. 
+
+This distinction matters because two systems can have similar stages but use very different approaches to moving through them.
+
+For example, one project might complete requirements, design, development, testing, and deployment once in a fairly predictable sequence. Another project might repeatedly move through those activities, releasing increasingly complete versions of the system. A third might divide the system's functionality into pieces and deploy those pieces over time.
+
+The three Life Cycle Models discussed in the reading—**linear, iterative, and incremental**—illustrate these differences.
+
+---
+
+## Linear Life Cycle Model
+
+The **linear Life Cycle Model** is probably the easiest model to understand. Each stage is completed in sequence before moving to the next stage. There is normally no planned route back to an earlier stage.
+
+Holt uses the Waterfall Model as the classic example of a linear Life Cycle Model. The model works particularly well when the original needs are clearly understood, the technology is familiar, resources are readily available, and the project is relatively short. 
+
+### Characteristics
+
+A linear model generally has:
+
+* A clearly defined sequence of stages
+* A predictable progression from one stage to another
+* Limited movement back to previous stages
+* Well-defined gates or decision points
+* A relatively stable set of requirements
+* A final product or system delivered toward the end of the project
+
+### Advantages
+
+One major advantage of a linear approach is **simplicity**. Everyone involved can understand where the project is and what comes next. This can make planning, scheduling, budgeting, documentation, and project management easier.
+
+The model can also work well when requirements are unlikely to change. If an organization knows exactly what it needs and the technology is well understood, there may be little reason to repeatedly revisit earlier decisions.
+
+Another advantage is that clearly defined stages and gates can provide control. A project manager can establish specific criteria that must be satisfied before the project moves forward.
+
+### Potential Drawbacks
+
+The biggest problem is that a linear model assumes a level of certainty that many modern digital projects simply do not have.
+
+Holt specifically explains that the linear model is not well suited for large, complex systems where needs can change. It is also less appropriate for long-term projects because the product is delivered in a single release at the end. 
+
+Imagine developing a university online learning platform using a strictly linear model. The project team could spend months gathering requirements and designing the entire platform. By the time the system is ready for deployment, students, faculty, security requirements, or university policies may have changed.
+
+The problem is not necessarily that the original plan was poorly created. The problem is that **the environment changed while the plan was being executed**.
+
+That is one reason linear development can become risky for complex digital systems.
+
+---
+
+## Iterative Life Cycle Model
+
+The **iterative Life Cycle Model** approaches development differently. Instead of moving through the stages only once, the project moves through them multiple times. Each pass is called an **iteration**.
+
+Holt describes an iteration as essentially a smaller pass through the Life Cycle, producing a workable version of the system. Each subsequent iteration can provide a more complete or improved version. 
+
+This approach is especially familiar in software development, where new versions can be released frequently.
+
+### Characteristics
+
+An iterative model generally includes:
+
+* Multiple passes through Life Cycle stages
+* Frequent development and testing
+* Repeated opportunities for improvement
+* Working versions of the system
+* Feedback between releases
+* The ability to learn from previous iterations
+
+### Advantages
+
+The biggest advantage of iteration is **learning**.
+
+Instead of assuming that the team knows everything at the beginning, the project allows knowledge to develop over time. Users can interact with an early version, provide feedback, and influence later versions.
+
+Another advantage is recoverability. Holt notes that if a particular release does not work, it may be possible to return to a previous version that still provides useful functionality. 
+
+Iteration can also reduce the risk of waiting until the end of a project to discover that the system does not work as expected.
+
+For a digital product, this could mean releasing a basic version of an application, observing how users interact with it, identifying problems, and then improving it during the next iteration.
+
+### Potential Drawbacks
+
+Iteration is not automatically easier. One potential problem is that frequent releases can create pressure to release something simply because the schedule says it is time to release it.
+
+Holt specifically identifies this concern, noting that iterative software development can sometimes place emphasis on getting a release out on time rather than waiting until it fully works. 
+
+Another problem is changing stakeholder needs. If requirements change constantly without a strong process for managing them, the project can lose direction.
+
+Therefore, iteration requires discipline. Feedback needs to be evaluated rather than automatically accepted. Otherwise, the project can become a continuous cycle of changes without a clear definition of what the system is ultimately supposed to accomplish.
+
+---
+
+## Incremental Life Cycle Model
+
+The **incremental Life Cycle Model** is similar to the iterative model because the system is developed through multiple releases. However, there is an important difference.
+
+With an iterative approach, each version generally represents an improved version of the system. With an incremental approach, the system is divided into **subsets of functionality**, and those subsets are developed and deployed over time.
+
+Holt explains that the incremental model begins with the Concept Stage covering the overall needs, while later development and production activities address different subsets of those needs. The result is a partial version of the overall system that can be deployed before the entire system is complete. 
+
+### Characteristics
+
+An incremental model generally includes:
+
+* Multiple releases
+* A defined overall set of needs
+* Development of portions of the system
+* Early deployment of usable functionality
+* Expansion of the system over time
+* A final system assembled from multiple increments
+
+### Advantages
+
+The biggest advantage is that users do not necessarily have to wait until the entire project is finished.
+
+Holt describes the incremental model as particularly useful for long projects where some functionality is needed before the entire system is complete. 
+
+For example, imagine a university developing a new student information system. Instead of waiting years to release everything, the university might first deploy student registration, followed by financial aid, then advising, and later additional services.
+
+This approach could provide organizational value earlier while allowing the team to continue developing the remaining functionality.
+
+### Potential Drawbacks
+
+The biggest limitation is that **not every system can be divided into independent pieces**.
+
+Holt specifically points out that some systems cannot be broken down into subsets of the overall system, making the incremental approach unsuitable in those situations. 
+
+There can also be integration challenges. If individual increments are developed separately, the project team has to make sure that the pieces eventually work together as one coherent system.
+
+This is where systems thinking becomes especially important. Developing pieces independently does not eliminate the need to understand the whole.
+
+---
+
+## Comparing the Three Models
+
+| Life Cycle Model | Basic Approach                                                  | Major Advantage                                                    | Potential Drawback                                          |
+| ---------------- | --------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **Linear**       | Complete stages sequentially                                    | Simple, predictable, and easy to manage                            | Difficult to accommodate changing needs                     |
+| **Iterative**    | Repeat the Life Cycle to improve versions                       | Encourages learning and feedback                                   | Can lead to frequent changes or pressure for rapid releases |
+| **Incremental**  | Deliver different portions of the system over multiple releases | Provides useful functionality before the entire system is finished | Some systems cannot be divided effectively                  |
+
+What stands out to me is that these models are not simply different ways of scheduling tasks. They represent different assumptions about **certainty and change**.
+
+The linear model assumes that we can understand much of the problem early.
+
+The iterative model assumes that we will learn more as we develop and use the system.
+
+The incremental model assumes that the overall system can be separated into useful pieces that can be delivered independently.
+
+That distinction is useful for project management because choosing a Life Cycle Model should depend on the characteristics of the project rather than personal preference.
+
+---
+
+## Why the Life Cycle Matters for Digital Systems
+
+The most important lesson I take from this chapter is that a digital system should not be viewed as a finished product. It should be viewed as something that **continues to exist and evolve**.
+
+This has major implications for design.
+
+If developers only think about initial deployment, they may create a system that works today but becomes difficult to maintain tomorrow. A system's architecture, technology choices, documentation, security controls, and interfaces can all affect how easily it can evolve.
+
+The reading makes this point particularly clear through its discussion of the **Technology Life Cycle**. Technologies move through stages such as research and development, adoption, maturity, and decline. Holt explains that a system's life cycle can depend heavily on the technologies incorporated into the system, and technologies can become obsolete while a system is still operating. 
+
+This is something I think is easy to overlook.
+
+A system might be designed correctly and still become difficult to support because one of its underlying technologies disappears. For example, an application could depend on an outdated programming framework, database platform, hardware component, or third-party service. If that technology is no longer supported, the system can become increasingly expensive or risky to maintain.
+
+Therefore, **good system design needs to consider future change**.
+
+---
+
+## Life Cycle Thinking and Sustainability
+
+Life cycle thinking also connects directly to sustainability.
+
+When I hear the word sustainability, I initially think about environmental sustainability. However, for digital systems, sustainability can also mean the ability of a system to remain useful, supportable, secure, and adaptable over time.
+
+A system that requires complete replacement every few years may create more cost and disruption than a system designed for controlled evolution.
+
+This does not mean that every system should be kept forever. Retirement is an important part of the life cycle. Holt specifically includes Retirement as one of the stages of the System Life Cycle and describes it as the process of decommissioning and safely disposing of the system. 
+
+NIST similarly includes disposal as part of the system development life cycle rather than treating it as something outside the development process. ([NIST][1])
+
+This changes how I think about sustainability. A sustainable system is not necessarily a system that lasts forever. Instead, it is a system for which the organization has considered **how it will be maintained, changed, replaced, and retired**.
+
+That means retirement should not be an afterthought.
+
+If an organization waits until a system becomes completely obsolete before thinking about replacement, it may have difficulty migrating data, training users, replacing interfaces, or finding compatible technology.
+
+---
+
+## Life Cycle Thinking and System Evolution
+
+NASA provides another useful perspective. Its Systems Engineering Handbook explains that systems engineering is applied to the design, realization, technical management, operation, and retirement of systems. NASA also describes life-cycle phases as a way to divide complex programs into manageable pieces and uses decision points to determine whether a project is ready to progress. ([NASA][2])
+
+What I find interesting about this is that the life cycle does not mean the system stops changing once it reaches operation.
+
+NASA's life-cycle guidance recognizes that systems engineering continues during operations and sustainment. Systems may require configuration changes, adjustments, maintenance, and responses to problems even after they are operational. ([NASA][2])
+
+This is especially applicable to digital systems.
+
+Consider an online game. The game may officially launch, but development does not necessarily stop. Developers may release patches, add content, respond to security issues, fix bugs, change infrastructure, and eventually migrate the game to newer technologies. The "finished product" at launch is actually only one point in a much longer system life cycle.
+
+The same idea applies to university systems, banking applications, healthcare platforms, business software, and mobile applications.
+
+The system's launch is not the end.
+
+It is another stage of its evolution.
+
+---
+
+## My Perspective: Life Cycle Thinking Is a Form of Risk Management
+
+My biggest takeaway from this topic is that thinking about the life cycle is really a form of **risk management**.
+
+A project team that considers only development is primarily asking, “Can we build it?”
+
+A systems engineering team has to ask much broader questions:
+
+* Can we maintain it?
+* Can users operate it effectively?
+* Can we support it?
+* Can we modify it?
+* What happens when technology changes?
+* What happens when requirements change?
+* What happens if the system fails?
+* How will we migrate its data?
+* What happens when we eventually retire it?
+
+These questions make the project more complicated initially, but they can prevent much larger problems later.
+
+This also connects to project management. From a project management perspective, it can be tempting to define success as delivering the project on time, within budget, and according to scope. Those measures are important, but systems engineering suggests that project success should also consider what happens after the project team is finished.
+
+A system that is delivered on time but becomes impossible to maintain is not necessarily a successful system.
+
+A system that meets the original requirements but cannot adapt to changing technology may also have a limited useful life.
+
+The Life Cycle Model therefore becomes more than a project schedule. It becomes a way of thinking about **how decisions made today affect the system years into the future**.
+
+## Conclusion
+
+The systems development life cycle provides a framework for understanding a system from its initial conception through development, production, utilization, support, and retirement. The three Life Cycle Models discussed in *Systems Engineering Demystified*—linear, iterative, and incremental—provide different ways of moving through those stages.
+
+The linear model provides structure and predictability but is less flexible when requirements change. The iterative model supports repeated learning and improvement but requires strong control over changing needs and release quality. The incremental model allows useful portions of a system to be delivered earlier but depends on the system being capable of being divided into meaningful pieces.
+
+For me, the most important lesson is that **a system is never just the product that gets delivered**. It includes the people who use it, the technology that supports it, the processes surrounding it, and the changes that occur throughout its existence.
+
+Thinking about the entire life cycle encourages better decisions because it forces designers and project teams to look beyond the initial implementation. It encourages them to consider sustainability, maintenance, technology obsolescence, future requirements, and eventual retirement.
+
+In a world where digital systems are constantly changing, this perspective is especially important. A system that is designed only for today may quickly become outdated. A system designed with its entire life cycle in mind has a better opportunity to remain useful, maintainable, and adaptable as its environment changes.
+
+Ultimately, I think life cycle thinking changes the fundamental question from **“How do we build this system?”** to **“How do we create, operate, maintain, evolve, and eventually retire this system responsibly?”** That broader question is what makes the systems engineering life cycle valuable for modern digital systems.
+
+---
+
+## Sources
+
+Holt, J. (2023). *Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems* (2nd ed.). Packt Publishing. ([O'Reilly Media][3])
+
+National Aeronautics and Space Administration. (2017). *NASA systems engineering handbook* (Rev. 2). NASA. ([NASA][4])
+
+Radack, S. M. (2009). *The system development life cycle (SDLC).* National Institute of Standards and Technology. ([NIST][1])
+[1]:>
+=======
+
+         <# Designing for People: How Perception, Attention, and Empathy Shape Better Systems
+
+IT 248: Systems Engineering Demystified — Blog Post
+
+## Introduction: Technology Is Only Successful When People Can Use It
+
+A system can be technically advanced, visually attractive, and full of useful features while still being difficult to use. A website may contain all the information a customer needs, but if that information is hard to find, the customer may leave. A mobile application may offer dozens of features, but if users cannot figure out how to complete a simple task, those features provide little practical value. These examples demonstrate why successful design must consider more than technology. It must consider the people who interact with it.
+
+Human-centered design is an approach to developing products, services, and systems by understanding the people who will use them, their goals, their environments, and their limitations. Instead of expecting users to adapt to a system, designers work to make the system fit users' needs. The International Organization for Standardization (ISO, 2019) explains that human-centered design incorporates human factors and usability throughout the life cycle of interactive systems. IDEO.org (2015) also emphasizes understanding people's experiences, exploring possible solutions, creating prototypes, and learning through experimentation.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.iso.org\&sz=32)
+
+ISO
+
++1
+
+
+
+Human-centered design is especially important in systems engineering because technology does not operate independently of people. Even when a system performs its technical functions correctly, its overall effectiveness depends on how people interact with it. Designers must consider whether users can recognize important information, understand available choices, complete tasks, and recover from mistakes.
+
+Johnson (2020), in Designing with the Mind in Mind, explains how principles of interface design connect to human perception and cognitive psychology. His work reinforces the idea that designers should understand how people see, think, remember, learn, and make decisions rather than simply follow visual design trends. These concepts are relevant to almost every interactive system, from online shopping websites to project management applications.
+
+In my view, designing for people means recognizing that users are not simply interacting with buttons, screens, or software functions. They are trying to accomplish something while managing their time, attention, expectations, and emotions. Perception determines how users interpret what they see, attention determines what receives their mental effort, and empathy helps designers understand why an experience may be frustrating or confusing. By combining human-centered design principles with visual hierarchy and four important UX laws—Jakob's Law, Fitts's Law, Hick's Law, and Miller's Law—designers can create systems that are more understandable, accessible, and effective.
+
+## Human-Centered Design: ISO 9241-210 and IDEO's Field Guide
+
+### ISO 9241-210: A Structured Approach to Usability
+
+ISO 9241-210:2019 provides requirements and recommendations for incorporating human-centered design into the life cycle of interactive systems. Its focus is on establishing a systematic process that accounts for users, their needs, and the circumstances in which they interact with a product. Human-centered design should influence planning, development, evaluation, and ongoing improvement rather than being treated as a final visual adjustment (ISO, 2019).
+
+This perspective is valuable in systems engineering and project management because it connects user experience to requirements and measurable outcomes. For example, suppose a university develops a student registration system. A development team might initially define success as having a database that stores student records correctly and processes registration requests quickly. Those are important technical requirements, but they do not establish whether students can actually use the system successfully.
+
+A human-centered approach would also investigate whether students understand course availability, can identify registration deadlines, receive clear explanations when a class is full, and recover from mistakes without losing their progress. The team could then turn those findings into interface requirements, usability tests, and acceptance criteria.
+
+ISO's perspective makes an important contribution by encouraging organizations to treat usability as a design responsibility throughout development. It also recognizes that interactive systems must function within real contexts, including different devices, environments, abilities, and levels of experience. ISO 9241-210:2019 remains the current edition, having been reviewed and confirmed in 2025 (ISO, 2019).&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.iso.org\&sz=32)
+
+ISO
+
+
+
+However, following a structured process does not automatically guarantee empathy. A team can document user requirements, conduct scheduled tests, and meet project milestones without fully understanding the experiences behind those requirements. Documentation and compliance are valuable only when they help the team make better decisions for real people.
+
+### IDEO's Field Guide: Empathy and Experimentation
+
+IDEO.org's The Field Guide to Human-Centered Design approaches the subject through practical design methods, mindsets, and examples. It emphasizes learning about people, generating ideas, building prototypes, and developing solutions through experimentation (IDEO.org, 2015). The guide encourages designers to investigate people's experiences instead of relying exclusively on assumptions about what they need.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.ideo.org\&sz=32)
+
+IDEO.org
+
++1
+
+
+
+Consider the same university registration system. A team using IDEO's approach might interview students, observe how they currently plan their schedules, and ask them to demonstrate the process of finding and enrolling in a course. Researchers might discover that students repeatedly switch between pages to compare class times or misunderstand the difference between a prerequisite and a registration restriction.
+
+Instead of immediately building a complicated solution, the team could sketch a redesigned schedule page and ask students to try it. Their feedback might reveal that a weekly calendar, clearer prerequisite explanations, and more visible registration warnings solve more problems than adding additional features.
+
+The difference between the two perspectives is primarily their emphasis. ISO provides a formal framework for integrating human-centered activities into system development, while IDEO offers practical methods for discovering user needs and exploring potential solutions. The approaches are complementary: ISO helps teams establish a repeatable process, and IDEO encourages the curiosity and experimentation needed to make that process meaningful.
+
+Johnson's (2020) work adds another dimension to this comparison. Understanding human psychology helps designers explain why a particular design choice may improve usability. IDEO's methods help teams discover problems through observation and experimentation, while ISO helps teams integrate those findings into a structured development process. Johnson's research-based design principles help explain how perception, attention, memory, and motor behavior should influence the resulting interface.
+
+Neither approach should be treated as a complete substitute for the others. Empathy without evaluation can produce ideas that sound promising but fail in practice. A formal process without genuine user involvement can produce a system that satisfies technical specifications while frustrating its intended audience. Likewise, applying design rules without testing them in context can result in decisions that work for one group of users but create barriers for another.
+
+My main takeaway is that effective design requires both discipline and curiosity. Teams need documented requirements, measurable usability goals, and consistent testing, but they also need to question their assumptions about what users want and how they behave. Designing for people means being willing to change a technically sound idea when evidence shows that it does not serve people well.
+
+## Perception, Attention, and Visual Hierarchy
+
+Human-centered design requires an understanding of how people interpret information. Users rarely examine every part of a screen equally. Instead, they scan for recognizable patterns, important words, contrasting elements, and visual cues that suggest what they should do next.
+
+Perception is how people organize and interpret sensory information. In interface design, it influences whether users recognize a button as clickable, understand that two items belong together, or distinguish an error message from ordinary text.
+
+Attention is the limited mental focus people direct toward particular information. A page filled with competing colors, animations, alerts, and instructions can make it difficult to identify the most important element.
+
+Visual hierarchy is the arrangement of interface elements to communicate their relative importance. Designers establish hierarchy through size, contrast, position, spacing, typography, and grouping.
+
+Johnson (2020) explains that human vision is particularly sensitive to visual structure, while attention and memory have limitations that affect how people interact with interfaces. These principles suggest that designers should not assume users will carefully read everything on a screen. Instead, information should be organized so that its purpose and importance are easy to recognize.
+
+Imagine a university website displaying an upcoming tuition deadline. In one design, the date appears in small gray text between promotional banners, navigation links, and unrelated announcements. In another, the deadline appears near the top of the page in a clear heading, followed by a concise explanation and a prominent link to the payment portal. Both designs contain the same information, but the second makes the deadline easier to notice and act upon.
+
+The difference is not merely aesthetic. The second design reduces the effort required to locate essential information and lowers the risk that students will overlook an important deadline.
+
+Visual hierarchy also helps users understand relationships. For example, a checkout page should visually group a product's price with its description, separate shipping costs from the order subtotal, and make the final total easy to locate. If the final price is hidden among unrelated information, customers may misunderstand what they are paying. A clear hierarchy supports accurate interpretation and informed decisions.
+
+Designers must also consider accessibility. Color alone should not communicate whether a form field contains an error, because users with color-vision differences may not perceive the distinction. A clear error message, a recognizable icon, and a text explanation provide additional signals. Similarly, small text, weak contrast, and crowded layouts can create barriers for users with visual impairments or cognitive difficulties.
+
+These examples show why visual simplicity is not the same as removing as much information as possible. The objective is to make important information understandable and actionable. Sometimes that requires removing unnecessary elements; at other times, it requires adding labels, explanations, or feedback.
+
+Empathy becomes particularly important here. A designer who understands a system thoroughly may know where everything is located and what every icon means. A first-time user may have none of that knowledge. The designer must evaluate the experience from the perspective of someone who does not already understand the system.
+
+A useful question is not simply, "Can a user find this information?" It is, "Can a user recognize that this information matters, understand what it means, and use it to make the correct decision?" That question shifts design from information placement to human understanding.
+
+## Applying the Four UX Laws to Human-Centered Design
+
+UX laws help designers understand common patterns in human behavior and translate them into practical interface decisions. They are not guarantees that every person will respond identically, and they should not replace user research. Instead, they provide useful starting points for designing and evaluating interactive systems.
+
+### 1. Jakob's Law: Users Bring Existing Expectations
+
+Jakob's Law, associated with usability expert Jakob Nielsen, states that users spend much of their time using other digital products. Consequently, they bring expectations from those experiences to the products they encounter next (Nielsen, 2020).
+
+For example, users generally expect a website's logo to lead to its home page, a shopping cart icon to represent selected products, and a magnifying-glass icon to indicate search. If every website invents entirely different meanings for familiar symbols, users must repeatedly learn new interaction patterns.
+
+Following familiar conventions reduces unnecessary learning and allows people to focus on their actual goals. A university registration website, for instance, should not require students to learn an unfamiliar navigation structure when established menu patterns would communicate the same functions more clearly.
+
+Johnson (2020) explains that people learn many familiar actions through experience and that previously learned behaviors influence how they interact with interfaces. This supports the idea that designers should consider users' existing mental models when developing new systems.
+
+However, Jakob's Law does not mean every design should be identical. A system may need specialized interactions because its users have unique requirements. The important distinction is between intentional innovation and unnecessary inconsistency. A new interaction should solve a meaningful problem rather than simply make a product look different.
+
+From a human-centered perspective, familiar conventions respect users' existing knowledge and reduce the mental effort needed to get started. Designers should innovate where doing so provides value while preserving recognizable patterns wherever possible.
+
+### 2. Fitts's Law: Important Targets Should Be Easy to Reach
+
+Fitts's Law describes the relationship between the time required to reach a target and the target's size and distance. In general, larger targets that are closer to the user's current position are faster and easier to select than smaller, more distant targets (MacKenzie, 1992).
+
+This principle has direct implications for buttons, links, menus, and touch-screen controls. Consider a mobile banking application in which the "Transfer Money" button is small and placed near several competing controls. Users may struggle to tap it accurately, particularly when using the application one-handed or while moving.
+
+A larger, clearly labeled button in a predictable location can improve interaction speed and reduce accidental selections. Touch targets also need adequate spacing so users do not unintentionally activate neighboring controls.
+
+Fitts's Law is particularly important when designing for accessibility. Users with limited motor control may find small targets difficult to select even when the text and instructions are understandable. Increasing target size and separating controls can make the same system usable for a wider range of people.
+
+Johnson (2020) discusses the relationship between human hand-eye coordination and interface design. His explanation reinforces the importance of considering physical interaction alongside visual and cognitive demands. A button may be visually obvious, but if it is difficult to reach or activate, the interface still creates an unnecessary barrier.
+
+Nevertheless, making every button enormous is not the answer. Excessively large controls can crowd the screen and obscure other information. Designers must balance target size, distance, spacing, and the importance of each action.
+
+The central lesson is that usability depends on the physical effort required to interact with a system, not just the logic of its software. A function that is technically correct but difficult to activate is still a design problem.
+
+### 3. Hick's Law: More Choices Can Increase Decision Time
+
+Hick's Law explains the relationship between the number of choices available and the time required to make a decision. As the number and complexity of choices increase, decision-making generally becomes slower (Hick, 1952).
+
+Consider a software application that presents new users with twenty-five equally prominent menu options on its opening screen. Although every option may be useful, the interface forces users to spend time determining which one fits their goal.
+
+A more effective approach might group related functions into categories such as "Projects," "Reports," and "Account Settings." Users can first identify a category and then select a specific action within it. A search function or a short onboarding process may further reduce the effort required to find a feature.
+
+Hick's Law is not an argument for eliminating every choice. Users sometimes need detailed control, and hiding too many options can make advanced features difficult to discover. The goal is to organize choices according to users' tasks and expectations.
+
+This principle also illustrates the importance of context. A first-time user may benefit from a simplified interface, while an experienced project manager may prefer a dashboard that exposes frequently used functions. Human-centered design recognizes that the right amount of complexity depends on the user's experience, task, and circumstances.
+
+Johnson (2020) explains that human decision-making is influenced by cognitive limitations and that designers should account for the mental effort required to evaluate alternatives. This suggests that interfaces should make meaningful distinctions between options rather than presenting every available function as equally important.
+
+In my view, Hick's Law highlights a common mistake in technology development: assuming that more features automatically create a better product. Additional functionality creates value only when people can understand and use it. Designers should measure success by how effectively users accomplish their goals, not simply by how many options a product contains.
+
+### 4. Miller's Law: Organize Information to Support Working Memory
+
+Miller's Law is commonly summarized as the idea that people can hold approximately seven, plus or minus two, chunks of information in immediate memory. Miller's original 1956 paper examined limits in short-term memory and absolute judgment, but the familiar numerical rule should not be treated as a universal capacity limit for every interface or every person (Miller, 1956).
+
+The more useful design lesson is that people have limited cognitive resources and benefit when information is organized into meaningful groups. For example, a project management dashboard might display dozens of individual tasks, deadlines, risks, and team assignments. Presenting every item at once could overwhelm a user trying to determine which project needs attention.
+
+Instead, the dashboard could group tasks by project phase, summarize upcoming deadlines, and highlight the most significant risks. Users could then open a section to access more detailed information when needed.
+
+Chunking makes information easier to process because users can recognize meaningful patterns rather than treating every item as a separate piece of information. Telephone numbers, for instance, are commonly divided into smaller groups instead of presented as one uninterrupted string of digits.
+
+Johnson (2020) emphasizes that attention is limited and memory is imperfect. This has direct implications for interface design: users should not have to remember unnecessary information from one screen while navigating to another. Keeping relevant details visible, using consistent labels, and grouping related information can reduce the mental effort required to complete tasks.
+
+However, Miller's Law should not be applied as a rigid rule that every menu must contain between five and nine items. The difficulty of a decision depends on familiarity, complexity, labels, task demands, and other factors. Some users may prefer more visible options when those options are clearly organized.
+
+For designers, the practical objective is to reduce unnecessary cognitive load without hiding information people need. Clear categories, meaningful labels, concise summaries, and progressive disclosure can help users manage complex systems more effectively.
+
+Together, these four UX laws show that good design depends on more than appearance. Jakob's Law addresses expectations, Fitts's Law addresses physical interaction, Hick's Law addresses decision-making, and Miller's Law draws attention to information processing and working memory. When applied thoughtfully, they help teams anticipate usability problems and develop interfaces that better support human behavior.
+
+## Empathy as a Design and Systems Engineering Skill
+
+Although the four UX laws explain important aspects of human behavior, they cannot fully explain why people use a system or how they feel while using it. That is where empathy becomes essential. Empathy involves making a deliberate effort to understand another person's perspective, including their goals, frustrations, limitations, and circumstances.
+
+IDEO.org (2015) emphasizes understanding the people a design is intended to serve and learning from them throughout the design process. This means designers should not assume that their own preferences represent the needs of every user. Instead, they should investigate users' experiences, identify unmet needs, and test possible solutions.
+
+For example, imagine a project management application used by software developers, project managers, executives, and clients. A developer may need detailed task information, a project manager may need to identify schedule risks, and an executive may need a concise overview of project progress. If the application presents the same information in the same way to every user, some stakeholders may struggle to find what they need.
+
+A human-centered solution would investigate the responsibilities and priorities of each group before determining how information should be presented. The system might provide role-specific dashboards while maintaining consistent terminology and shared project data. This approach respects different user needs without creating disconnected systems.
+
+Empathy also requires considering people who are often overlooked during development. Users may have limited technical experience, disabilities, unreliable internet access, or little time to learn a new application. A design that works well for a technically experienced employee in a quiet office may not work equally well for a first-time user accessing the same system on a phone.
+
+This is an important systems engineering consideration because usability problems rarely exist in isolation. A confusing interface can lead to incorrect data entry, which can create inaccurate reports and poor management decisions. A poorly designed notification system can cause users to miss important information, creating delays across an entire project. Improving the user experience can therefore improve the performance of the broader system.
+
+In project management, this means user experience should be considered during requirements gathering, risk analysis, design reviews, testing, and maintenance. Teams should define measurable usability objectives, observe representative users completing realistic tasks, and use feedback to guide improvements. These activities help ensure that human-centered design influences the actual product rather than remaining a statement of good intentions.
+
+I also believe empathy requires designers to recognize that users do not always know how to explain what they need. Someone may request an additional feature when the underlying problem is that an existing feature is difficult to understand. Listening to the request is important, but observing the user's workflow may reveal a better solution. This reinforces the value of IDEO's emphasis on observation and experimentation alongside ISO's structured design process.
+
+A further challenge is balancing individual user needs with organizational constraints. A project team may have limited funding, a fixed release date, or security requirements that prevent certain interface changes. Human-centered design does not mean granting every request. Instead, it means using evidence to prioritize changes that create the greatest benefit while respecting technical, financial, and operational constraints.
+
+For project managers, this is where empathy and systems thinking intersect. A design decision affects more than the appearance of a screen. It can influence training costs, support requests, error rates, productivity, accessibility, and stakeholder satisfaction. Evaluating these relationships helps teams make informed trade-offs rather than optimizing one feature at the expense of the entire system.
+
+## Conclusion: Design for Understanding, Not Just Functionality
+
+Designing for people means creating systems that support human goals instead of expecting people to overcome unnecessary obstacles. ISO 9241-210 provides a structured foundation for incorporating human needs and usability throughout system development, while IDEO's Field Guide emphasizes empathy, exploration, and experimentation. Johnson's (2020) textbook helps explain the psychological principles behind these decisions, connecting interface design to human perception, attention, memory, and behavior.
+
+Perception, attention, and visual hierarchy influence how users recognize information, determine what matters, and decide what to do next. The four UX laws provide additional guidance: Jakob's Law emphasizes familiar conventions, Fitts's Law highlights accessible interaction targets, Hick's Law explains how choices influence decision-making, and Miller's Law encourages thoughtful organization of information.
+
+The most important lesson I take from these concepts is that a technically successful system is not necessarily a human-centered one. A system can meet every functional requirement and still create confusion, frustration, or unnecessary work. True success requires evaluating whether people can use the system effectively in the situations that matter to them.
+
+For someone working in project management, this perspective is especially relevant. Project managers must balance scope, cost, schedule, technical requirements, and stakeholder expectations. Human-centered design adds another essential question: Does the solution actually improve the user's experience? Answering that question requires collaboration, research, testing, and sometimes the willingness to reconsider an approach that initially seemed correct.
+
+Ultimately, designing for people is not about making technology look attractive or adding features to satisfy every request. It is about understanding human behavior and translating that understanding into practical design decisions. When designers prioritize clarity, accessibility, empathy, and continuous improvement, they create systems that are not only functional but also understandable, dependable, and genuinely useful.
+
+## References
+
+Hick, W. E. (1952). On the rate of gain of information. Quarterly Journal of Experimental Psychology, 4(1), 11–26. [https://doi.org/10.1080/17470215208416600](https://doi.org/10.1080/17470215208416600?utm_source=chatgpt.com)
+
+IDEO.org. (2015). The field guide to human-centered design. [https://www.designkit.org/resources/1.html](https://www.designkit.org/resources/1.html?utm_source=chatgpt.com)
+
+International Organization for Standardization. (2019). Ergonomics of human-system interaction—Part 210: Human-centred design for interactive systems (ISO Standard No. 9241-210:2019). [https://www.iso.org/standard/77520.html](https://www.iso.org/standard/77520.html?utm_source=chatgpt.com)
+
+Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann. [https://cwu.vitalsource.com/books/9780128182031](https://cwu.vitalsource.com/books/9780128182031?utm_source=chatgpt.com)
+
+MacKenzie, I. S. (1992). Fitts' law as a research and design tool in human-computer interaction. Human-Computer Interaction, 7(1), 91–139. [https://doi.org/10.1207/s15327051hci0701_3](https://doi.org/10.1207/s15327051hci0701_3?utm_source=chatgpt.com)
+
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97. [https://doi.org/10.1037/h0043158](https://doi.org/10.1037/h0043158?utm_source=chatgpt.com)
+
+Nielsen, J. (2020). 10 usability heuristics for user interface design. Nielsen Norman Group. [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/?utm_source=chatgpt.com)
+
 
          <!-- Module 2.2 Blog Post Starts here -->
 
