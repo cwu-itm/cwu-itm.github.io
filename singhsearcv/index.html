@@ -260,6 +260,110 @@
          </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Module 2.2 Blog Post</h2>
+            </header>
+            <h3>What Makes Digital Systems Usable: Memory, Mental Models, and the Hidden Cost of Complexity</h3>
+
+            <p>Last semester I spent nearly ten minutes trying to submit a simple file in an online course platform. The “Submit” button was not on the assignment page. It was buried three menus deep under a label I had never seen before. By the time I found it, I had already opened a support ticket and doubted whether the system had even received my work. That small moment of friction was not caused by a difficult task. It was caused by a design that ignored how human memory and attention actually work. Usable digital systems are not defined by visual polish or the number of features they contain. They are systems that work with the limits of human cognition rather than against them. When designers fail to account for those limits, they create unnecessary cognitive load that forces users to spend mental effort on the interface itself instead of on their goals.</p>
+
+           <h4>Mental Models Shape Every Interaction</h4>
+            <p>Users do not approach a new interface with a blank mind. They bring mental models—internal representations of how they believe a system works, based on prior experience with similar tools (<a href="https://www.nngroup.com/articles/mental-models/">Chan, 2026</a>). These models help people predict what will happen when they click a button or open a menu. When an interface matches the user’s mental model, interaction feels natural and almost effortless. When it does not, users must pause, guess, and relearn. Johnson (2020) explains that people form mental models quickly and hold onto them even when the system contradicts them. This is one of the core principles in <em>Designing with the Mind in Mind</em>: designers must align with existing mental models or make the mismatch obvious and easy to overcome.</p>
+
+            <figure style="float: right; width: 150px; margin: 0 0 15px 15px;">
+               <img src="images/human-psychology-mind-thought.jpg" 
+                  alt="Illustration of a head silhouette containing interface-like elements representing mental models" 
+                  style="width: 100%; height: auto; display: block;">
+               <figcaption style="font-size: 0.75em; margin-top: 4px; line-height: 1.2;">Image 1: human-psychology-mind-thought (geralt, 2025)</figcaption>
+            </figure>
+
+            <p>For example, most users expect a shopping cart icon to show items they have selected and a trash can to delete something. An interface that places a delete action inside a “settings” menu or uses a non-standard icon for the cart forces users to abandon their existing model and build a new one on the fly. This extra mental work is a form of cognitive load that has nothing to do with the user’s actual goal. The cost is paid in attention and in the risk of error.</p>
+
+            <p>I have seen this mismatch repeatedly in learning management systems. Students who are used to clear “Submit” buttons and visible assignment lists often struggle when a course platform buries submission options under multiple nested menus or uses non-standard terminology. The task itself is simple, but the interface requires users to reconstruct their mental model of how course platforms should work. Over time, these small mismatches accumulate into the feeling that a system is “hard to use.” Johnson’s emphasis on mental models shows why consistency with familiar patterns is not a limitation on creativity. It is a practical way to reduce the mental effort required of every user.</p>
+
+            <div style="clear: both;"></div>
+
+            <h4>Memory Limits and the Preference for Recognition</h4>
+            <p>Human working memory is severely limited. Johnson (2020) notes that people can hold only a small number of items in mind at once, and that information disappears quickly if it is not actively maintained. Because of this constraint, interfaces that require users to recall information (remember a command, a previous screen, or the exact name of a setting) place a higher demand on users than interfaces that allow recognition (seeing the options and choosing among them). This preference for recognition over recall is a second central principle from <em>Designing with the Mind in Mind</em>. See also <a href="https://www.nngroup.com/articles/recognition-and-recall/">Nielsen Norman Group on Recognition vs. Recall</a>.</p>
+
+            <p>Recognition is easier than recall because it provides external cues that reduce the need to retrieve information from long-term memory. A well-designed menu that shows the available actions, or a form that labels fields clearly, supports recognition. In contrast, a command-line interface or a system that expects users to remember obscure keyboard shortcuts forces recall. Most everyday users are not experts, so systems that rely heavily on recall create friction for the majority of people. This principle also explains why consistent labeling and placement matter. When the same action always appears in the same place with the same name, users can recognize it rather than search their memory for where it might be this time. Inconsistent systems force users to re-evaluate every screen, increasing the chance of errors and slowing task completion.</p>
+
+            <h4>Cognitive Load and the Cost of Poor Design</h4>
+            <p>Cognitive load is the total mental effort required to complete a task. Some of this load is intrinsic to the task itself (figuring out what data to enter or which option to choose). Additional load comes from the interface, the extraneous load created by confusing layouts, unclear feedback, or mismatched mental models. Good design reduces extraneous load so that users can focus their limited attention on the goal (see the <a href="https://www.interaction-design.org/literature/topics/cognitive-load">Interaction Design Foundation overview of Cognitive Load</a>). When extraneous load is high, users make more mistakes, take longer, and are more likely to abandon the task.</p>
+
+            <figure style="float: left; width: 320px; margin: 0 20px 15px 0;">
+               <img src="images/laptop-computer-stress-frustration.png" 
+                  alt="Cartoon illustration of a person holding their head in frustration while using a laptop" 
+                  style="width: 100%; height: auto; display: block;">
+               <figcaption style="font-size: 0.85em; margin-top: 5px;">Image 2: laptop-computer-stress-frustration (CreativeCanvasDesign, 2026)</figcaption>
+            </figure>
+
+            <p>I recently tried to update payment information on a service I use regularly. The site required me to re-enter my entire address even though it already had the information on file, then presented a confirmation screen that did not clearly indicate whether the change had been saved. I had to navigate back to the account page and check the information again to be sure. The task itself was straightforward, but the interface added multiple steps and moments of uncertainty. Each of those moments required attention and working memory that could have been directed elsewhere. Over a long session, or for users who are already tired or distracted, these small increases in load become significant. This experience illustrates how poor design converts a simple maintenance task into an exercise in uncertainty and re-checking.</p>
+
+            <div style="clear: both;"></div>
+
+            <h4>Consistency and Feedback Reduce Uncertainty</h4>
+            <p>I recently tried to update payment information on a service I use regularly. The site required me to re-enter my entire address even though it already had the information on file, then presented a confirmation screen that did not clearly indicate whether the change had been saved. I had to navigate back to the account page and check the information again to be sure. The task itself was straightforward, but the interface added multiple steps and moments of uncertainty. Each of those moments required attention and working memory that could have been directed elsewhere. Over a long session, or for users who are already tired or distracted, these small increases in load become significant. This experience illustrates how poor design converts a simple maintenance task into an exercise in uncertainty and re-checking.</p>
+
+            <h4>Consistency and Feedback Reduce Uncertainty</h4>
+            <p>Interface consistency and clear system feedback are two practical ways to lower cognitive load. Consistency means that similar actions work in similar ways and that visual patterns remain stable across the product. When users learn one part of a system, they can apply that knowledge elsewhere. Feedback tells users that their action was received and what the result was. Without feedback, users must guess whether a click registered, a form was submitted, or a change was saved. Johnson (2020) emphasizes that people rely on visual and structural cues to guide attention and action. When those cues are missing or inconsistent, users must expend extra effort to determine what is possible and what has already happened.</p>
+
+            <p>A button that changes appearance when hovered over, a progress indicator that shows an upload is underway, or a confirmation message after a successful save all reduce uncertainty. In their absence, users often repeat actions or abandon the task. Consistency and feedback do not eliminate complexity, but they make the remaining complexity easier to manage. They allow users to trust the system and to focus on their goals rather than on monitoring the interface.</p>
+
+            <h4>Tesler’s Law and the Conservation of Complexity</h4>
+            <p>Tesler’s Law, also called the law of conservation of complexity, states that every application has an inherent amount of complexity that cannot be eliminated; it can only be moved around (<a href="https://lawsofux.com/teslers-law/">Yablonski, 2024</a>). Designers can hide complexity from the user by making the system handle it, or they can push that complexity onto the user through additional steps, decisions, or required knowledge. The total complexity remains roughly the same; only the distribution changes. <a href="https://blog.logrocket.com/ux-design/teslers-law-in-ux/">Schwarz (2025)</a> warns against the temptation to oversimplify. Removing options or hiding advanced features can make an interface appear cleaner, but if users still need those capabilities, the complexity simply reappears later—often in less convenient forms such as support tickets, workarounds, or abandoned tasks.</p>
+
+            <figure style="float: right; width: 320px; margin: 0 0 15px 20px;">
+               <img src="images/ai-generated-brain-network.jpg" 
+                  alt="Illustration of a brain with network connections representing cognitive processing" 
+                  style="width: 100%; height: auto; display: block;">
+               <figcaption style="font-size: 0.85em; margin-top: 5px;">Image 3: ai-generated-brain-network (TheDigitalArtist, 2023)</figcaption>
+            </figure>
+
+            <p>Effective design does not pretend complexity does not exist. It decides which parts of the complexity the system should absorb and which parts the user must manage, then presents the user’s portion as clearly and efficiently as possible. Consider tax preparation software. The underlying rules are complex. A well-designed system asks clear questions, imports data where possible, and performs the calculations. A poorly designed system presents long forms with legal language and expects users to know which deductions apply. In both cases the complexity of the tax code remains; the difference is whether the software or the user bears most of it. Systems that force users to manage complexity they are not equipped to handle increase error rates and cognitive load. Tesler’s Law reminds designers that simplifying the interface is not always the same as simplifying the user’s work.</p>
+
+        <h4>Putting the Principles Together</h4>
+            <p>Usable systems align with users’ mental models, favor recognition over recall, provide consistent patterns and clear feedback, and carefully manage the distribution of complexity. When these elements are missing, users experience the system as difficult even if the underlying task is simple. The illustrations above show common points of friction: the effort required to form or revise a mental model, the frustration that appears when working memory is overloaded, and the value of clear visual structure that supports recognition and feedback.</p>
+
+            <figure style="float: left; width: 260px; margin: 0 15px 10px 0;">
+   <img src="images/data-analysis-illustration.png" 
+        alt="Illustration of a person reviewing charts on a clear analytics dashboard" 
+        style="width: 100%; height: auto; display: block;">
+   <figcaption style="font-size: 0.8em; margin-top: 4px; line-height: 1.2;">Image 4: data-analysis-illustration (tanrıca, 2026)</figcaption>
+</figure>
+
+<p style="margin-top: 25px; margin-bottom: 8px;">Key principles that support usability include:</p>
+<ul style="margin-top: 5px; padding-left: 20px;">
+   <li>Align interfaces with existing mental models so users do not have to relearn basic patterns (Johnson, 2020; Chan, 2026).</li>
+   <li>Favor recognition over recall by making options visible rather than forcing users to remember commands or paths (Johnson, 2020).</li>
+   <li>Provide clear feedback so users know their actions were received and what happened next.</li>
+   <li>Distribute complexity so the system handles what it can, rather than pushing unnecessary decisions onto the user (Tesler’s Law; Yablonski, 2024; Schwarz, 2025).</li>
+</ul>
+
+<div style="clear: both;"></div>
+
+            <p>In my own experience with both consumer apps and academic platforms, the difference between a usable and an unusable system is rarely about the number of features. It is about whether the design reduces the mental work required to accomplish the user’s goal. Interfaces that respect the limits of memory and attention, match common mental models, and handle complexity where the system is better equipped to do so feel faster and less stressful, even when the underlying work is the same. These principles are not abstract theory. They explain why some systems feel effortless and others feel exhausting after only a few minutes of use.</p>
+
+            <h4>Conclusion</h4>
+            <p>Designers who treat usability as an afterthought ultimately transfer the cost of that decision to every user who interacts with the system. By contrast, designs that start from an understanding of mental models, memory constraints, and the conservation of complexity make digital tools that people can actually use without constant effort. The accumulation of small decisions about what users must notice, decide, remember, and reach determines whether an interface supports or hinders people. When those decisions are made with the limits of human cognition in view, the interface can recede and the task can come forward.</p>
+
+            <p>For students and future IT professionals, this means treating usability as a core design requirement rather than a final polish step. It means testing early with real users, preferring familiar patterns unless there is a clear reason to break them, and deliberately deciding where complexity should live. The systems we build will always contain complexity. The question is whether that complexity will be absorbed by the system or pushed onto the people who have to use it every day. Choosing the former is what makes digital systems truly usable.</p>
+
+            <footer class="article-footer">
+               <h3>Sources:</h3>
+               <ol>
+                  <li>Chan, M. (2026, September 1). Mental models. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/mental-models/">https://www.nngroup.com/articles/mental-models/</a></li>
+                  <li>CreativeCanvasDesign. (2026, March 9). laptop-computer-stress-frustration. Pixabay. <a href="https://pixabay.com/vectors/laptop-computer-stress-frustration-10164303/">https://pixabay.com/vectors/laptop-computer-stress-frustration-10164303/</a></li>
+                  <li>geralt. (2025, September 8). human-psychology-mind-thought. Pixabay. <a href="https://pixabay.com/illustrations/human-psychology-mind-thought-9821474/">https://pixabay.com/illustrations/human-psychology-mind-thought-9821474/</a></li>
+                  <li>Johnson, J. (2020). Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Guidelines. Morgan Kaufmann.</li>
+                  <li>Schwarz, D. (2025, March 12). Tesler’s Law: The danger of oversimplifying complex products. LogRocket Blog. <a href="https://blog.logrocket.com/ux-design/teslers-law-in-ux/">https://blog.logrocket.com/ux-design/teslers-law-in-ux/</a></li>
+                  <li>tanrıca. (2026, January 22). data-analysis-illustration. Pixabay. <a href="https://pixabay.com/vectors/data-analysis-illustration-10079893/">https://pixabay.com/vectors/data-analysis-illustration-10079893/</a></li>
+                  <li>TheDigitalArtist. (2023, September 25). ai-generated-brain-network. Pixabay. <a href="https://pixabay.com/illustrations/ai-generated-brain-network-8273793/">https://pixabay.com/illustrations/ai-generated-brain-network-8273793/</a></li>
+                  <li>Yablonski, J. (2024). Laws of UX: Using Psychology to Design Better Products &amp; Services. O’Reilly Media, Inc. <a href="https://lawsofux.com/">https://lawsofux.com/</a></li>
+               </ol>
+            </footer>
+         </article>
 
          <!-- Module 2.3 Blog Post Starts here -->
 
