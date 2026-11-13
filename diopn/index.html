@@ -691,7 +691,343 @@
          <!-- Module 2.1 Blog Post Starts here -->
 
          <!-- Module 2.2 Blog Post Starts here -->
+<article>
+    <header class="article-header">
+        <h2>Make the System Do More of the Thinking</h2>
+    </header>
 
+    <p>
+        A digital system can work correctly and still be difficult to use. Sometimes the
+        problem is not that a feature is missing. The problem is the amount of thinking
+        the interface requires from the person using it. Users may have to remember
+        information, search for controls, learn inconsistent patterns, or wonder whether
+        an action actually worked. To me, a usable system should reduce this unnecessary
+        mental effort.
+    </p>
+
+    <p>
+        This module changed the way I think about usability. Memory, habits, mental
+        models, consistency, and feedback all influence how people interact with digital
+        systems. Good design supports the way people naturally think instead of expecting
+        people to constantly adjust to the technology.
+    </p>
+
+
+    <h3>Memory Is Limited</h3>
+
+    <p>
+        One important idea from <em>Designing with the Mind in Mind</em> is that human
+        attention is limited and memory is imperfect. Johnson (2020) explains that good
+        interface design should account for these cognitive limitations rather than
+        assuming that users can remember everything they have previously seen.
+    </p>
+
+    <p>
+        A simple example is a multi-step form. Imagine entering an account number on the
+        first page and then being asked to remember it several pages later. Technically,
+        the form may work, but it creates unnecessary cognitive load. The system already
+        has the information, so it could display it again when the user needs it.
+    </p>
+
+    <p>
+        I experience this in my own school workflow. For some assignments, I work in
+        Visual Studio Code, GitHub Desktop, GitHub, Canvas, and a web browser. If I had
+        to remember every step without visible confirmation, it would be easy to lose
+        track of what I had already completed. I might wonder whether I saved the file,
+        committed the change, pushed it to GitHub, or created the pull request.
+    </p>
+
+    <figure>
+        <img src="images/GitHub Desktop.png"
+             alt="GitHub Desktop showing repository status and workflow information">
+        <figcaption>
+            GitHub Desktop helps make project status visible instead of requiring the
+            user to remember every action. Screenshot by author.
+        </figcaption>
+    </figure>
+
+    <p>
+        GitHub Desktop is useful in this situation because the interface shows information
+        such as the current branch, commit history, synchronization status, and whether
+        there are local changes. Instead of depending completely on memory, I can look at
+        the screen and recognize the current state of my work.
+    </p>
+
+
+    <h3>Recognition Is Easier Than Recall</h3>
+
+    <p>
+        Another useful principle from Johnson (2020) is that recognition is easier than
+        recall. Recognition happens when the interface gives users enough information to
+        identify what they need. Recall requires a person to retrieve that information
+        from memory.
+    </p>
+
+    <p>
+        This is why menus, labels, browser history, recent files, and visible options can
+        be helpful. It is easier to recognize a button labeled “History” than to remember
+        a command that performs the same action. An unfamiliar icon without a label may
+        force a new user to memorize its meaning. A clear label reduces that burden.
+    </p>
+
+    <p>
+        Good design should therefore keep important information visible whenever possible.
+        Users should be able to recognize what to do instead of memorizing the interface.
+    </p>
+
+
+    <h3>Mental Models and Habits</h3>
+
+    <p>
+        People also develop mental models of how digital systems work. A mental model is
+        the understanding a person builds about what will happen after an action. For
+        example, most people expect a shopping cart icon to store products before
+        checkout. They would probably be surprised if clicking the cart immediately
+        purchased everything.
+    </p>
+
+    <p>
+        These expectations come from experience with other systems. Nielsen (1994)
+        explains that consistency helps users apply knowledge they already have instead
+        of learning a completely different interaction every time. When interfaces behave
+        consistently, experience can eventually become habit.
+    </p>
+
+    <p>
+        If one screen uses “Save,” another uses “Confirm,” and another uses “Apply” for
+        exactly the same action, users may stop and reconsider what each option means.
+        Consistency does not require every page to look identical. It means that similar
+        actions should behave in similar ways.
+    </p>
+
+    <figure>
+        <img src="images/VSC showing the structure of my course portfolio.png"
+             alt="Visual Studio Code showing the HTML structure of a course portfolio">
+        <figcaption>
+            My course portfolio in Visual Studio Code. Repeated use of the same structure
+            helps me build a mental model of where files and blog sections are located.
+            Screenshot by author.
+        </figcaption>
+    </figure>
+
+    <p>
+        Visual Studio Code is a good example from my experience. After using it repeatedly
+        for these blog assignments, I recognize where my <code>index.html</code> file is,
+        where the module comments appear, and where new content belongs. The program has
+        not actually become less complex, but my mental model of the interface has
+        improved. Because the layout remains relatively consistent, I can focus more on
+        the assignment and less on finding everything again.
+    </p>
+
+
+    <h3>Feedback Reduces Uncertainty</h3>
+
+    <p>
+        Feedback is another important part of usability. After a user performs an action,
+        the system should communicate what happened. Nielsen (1994) calls this visibility
+        of system status: users should receive appropriate feedback about what the system
+        is doing.
+    </p>
+
+    <p>
+        Imagine clicking a Submit button and seeing no change. The user may wonder whether
+        the click worked. They might click again, refresh the page, or leave the screen.
+        A simple message such as “Your assignment was submitted successfully” removes
+        much of that uncertainty.
+    </p>
+
+    <p>
+        The World Wide Web Consortium explains that status messages can communicate the
+        success or result of an action, waiting states, progress, and errors (World Wide
+        Web Consortium [W3C], n.d.). This type of feedback is especially important when
+        the system performs an action without moving the user to a completely different
+        page. :chatgpt-content-reference{index="1"}
+    </p>
+
+    <p>
+        I see this in GitHub Desktop as well. When it says “No local changes,” I know
+        there are no uncommitted edits. When it displays “Push origin,” “Pull origin,”
+        or “Publish branch,” I know another step is required. Those messages reduce the
+        amount of information I have to keep in my own memory.
+    </p>
+
+
+    <h3>Tesler's Law: Complexity Has to Go Somewhere</h3>
+
+    <p>
+        Tesler's Law, also called the law of conservation of complexity, suggests that
+        every system contains some amount of complexity that cannot simply disappear.
+        The important design decision is where that complexity should be handled
+        (Yablonski, 2024).
+    </p>
+
+    <p>
+        For example, when ordering something online, the customer should not have to
+        calculate shipping zones, carrier rules, package weight, and tax calculations
+        manually. The system can handle most of that complexity and show useful choices
+        such as Standard Delivery or Express Delivery.
+    </p>
+
+    <p>
+        The complexity still exists, but the system carries more of it. At the same time,
+        designers should not hide information people actually need. A banking application,
+        for example, should clearly show the amount and destination before a transfer is
+        completed.
+    </p>
+
+    <p>
+        To me, Tesler's Law means that technical and repetitive complexity should usually
+        be handled by the system, while meaningful decisions should remain with the user.
+    </p>
+
+
+    <h3>When Poor Design Creates Cognitive Load</h3>
+
+    <p>
+        Poor design often forces users to think about the interface instead of the task
+        they actually want to complete. One example is an unclear error message. A message
+        such as “Error 1047” might communicate something to a developer, but it gives an
+        ordinary user very little information about what happened or what to do next.
+    </p>
+
+    <p>
+        A better message would explain the problem and the next step, such as: “The file
+        is larger than 10 MB. Select a smaller file and try again.” The second message
+        removes the need for the user to guess.
+    </p>
+
+    <p>
+        Forms can create the same problem when they erase information after a small error.
+        If someone completes ten fields and only one field is incorrect, the interface
+        should not force the person to complete all ten fields again.
+    </p>
+
+    <figure>
+        <img src="images/laptop user.png"
+             alt="Person using a laptop while working with digital information">
+        <figcaption>
+    Working across multiple digital tools can increase cognitive load when users
+    must remember files, windows, instructions, and completed steps.
+    Photo by
+    <a href="https://unsplash.com/photos/person-using-macbook-hBuwVLcYTnA"
+       target="_blank">
+        Christin Hume on Unsplash
+    </a>.
+</figcaption>
+    </figure>
+
+    <p>
+        Working across several tools at the same time also shows how quickly cognitive
+        load can increase. A person may need to remember which application contains the
+        file, which window has the instructions, and which steps have already been
+        completed. Good interface design cannot eliminate all of that complexity, but it
+        can reduce unnecessary confusion.
+    </p>
+
+
+    <h3>A Real Example From My GitHub Workflow</h3>
+
+    <p>
+        My GitHub assignments gave me a practical example of these concepts. My workflow
+        involves editing <code>index.html</code> in Visual Studio Code, saving the file,
+        committing the changes in GitHub Desktop, publishing or pushing the branch,
+        creating a pull request on GitHub, and finally submitting the URL in Canvas.
+    </p>
+
+    <p>
+        At first, this process required a lot of attention because I was still developing
+        a mental model of how all of the tools connected. I also discovered how confusing
+        the workflow can become when different copies or branches of the same project
+        exist.
+    </p>
+
+    <p>
+        I could see content in Visual Studio Code and assume that it was the same content
+        being submitted through GitHub, even though GitHub Desktop could be tracking a
+        different version of the file. The individual tools were working correctly, but
+        understanding the relationship between them required additional mental effort.
+    </p>
+
+    <p>
+        That experience helped me understand why visible system status matters. A user
+        should be able to answer questions such as: Which branch am I working on? Which
+        version contains this content? Has the file been committed? Has the branch been
+        published? Has the pull request been created?
+    </p>
+
+    <p>
+        When those states are clearly visible, the workflow becomes much easier to manage.
+        This experience also shows why usability does not mean removing every difficult
+        concept. Git and version control are still complex. A good interface simply helps
+        the user manage that complexity more successfully.
+    </p>
+
+
+    <h3>Conclusion</h3>
+
+    <p>
+        A usable digital system supports human thinking instead of competing with it.
+        Johnson's principles show why interfaces should respect the limits of attention
+        and memory and make recognition easier than recall (Johnson, 2020). Consistency
+        allows users to develop expectations and habits instead of relearning an
+        interface each time (Nielsen, 1994). Feedback communicates system status and
+        reduces uncertainty (W3C, n.d.). Tesler's Law reminds designers that complexity
+        cannot always be eliminated, but they can decide how much of that burden the
+        system should carry (Yablonski, 2024).
+    </p>
+
+    <p>
+        My main takeaway is that users should spend their mental energy on their actual
+        goal rather than on remembering how an interface works. A good system remembers
+        information when possible, provides visible choices, behaves consistently, gives
+        useful feedback, and manages unnecessary technical complexity behind the scenes.
+        When those principles are applied well, technology becomes easier to understand,
+        easier to trust, and easier to use.
+    </p>
+
+
+    <footer class="article-footer">
+        <h3>Sources</h3>
+        <ol>
+            <li>
+                Johnson, J. (2020).
+                <em>Designing with the mind in mind: Simple guide to understanding
+                user interface design guidelines</em> (3rd ed.).
+                Morgan Kaufmann.
+            </li>
+
+            <li>
+                Yablonski, J. (2024).
+                <em>Laws of UX: Using psychology to design better products &amp; services</em>
+                (2nd ed.). O'Reilly Media.
+                <a href="https://www.oreilly.com/library/view/laws-of-ux/9781098146955/"
+                   target="_blank">
+                    https://www.oreilly.com/library/view/laws-of-ux/9781098146955/
+                </a>
+            </li>
+
+            <li>
+                Nielsen, J. (1994, April 24).
+                <em>10 usability heuristics for user interface design</em>.
+                Nielsen Norman Group.
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                   target="_blank">
+                    https://www.nngroup.com/articles/ten-usability-heuristics/
+                </a>
+            </li>
+
+            <li>
+                World Wide Web Consortium. (n.d.).
+                <em>Understanding Success Criterion 4.1.3: Status messages</em>.
+                Web Accessibility Initiative.
+                <a href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages"
+                   target="_blank">
+                    https://www.w3.org/WAI/WCAG21/Understanding/status-messages
+                </a>
+            </li>
+        </ol>
+    </footer>
+</article>
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
