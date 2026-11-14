@@ -1,6 +1,4 @@
-/* ==================================================
-   1. Fonts and Color Palette
-   ================================================== */
+/* Fonts and Color Palette */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -15,10 +13,7 @@
     --muted-text: #666;
 }
 
-
-/* ==================================================
-   2. Global Layout and Typography
-   ================================================== */
+/* Global Layout and Typography */
 
 html {
     font-size: 16px;
@@ -67,10 +62,7 @@ ol {
     font-size: 0.875rem;
 }
 
-
-/* ==================================================
-   3. Accessibility and View Switching
-   ================================================== */
+/* Accessibility and View Switching */
 
 [hidden] {
     display: none !important;
@@ -101,10 +93,7 @@ a:focus-visible {
     clear: both;
 }
 
-
-/* ==================================================
-   4. Page Header and Footer
-   ================================================== */
+/* Page Header and Footer */
 
 .page-header {
     display: flex;
@@ -141,14 +130,12 @@ a:focus-visible {
     font-size: 0.8rem;
 }
 
-
-/* ==================================================
-   5. Portfolio Landing Page
-   ================================================== */
+/* Portfolio Landing Page */
 
 .landing-intro {
-    padding: 4.5rem 0 3.5rem;
-    max-width: 48rem;
+    position: relative;
+    padding: 4.5rem 31rem 3.5rem 0;
+    max-width: none;
 }
 
 .field-label,
@@ -217,43 +204,18 @@ a:focus-visible {
     color: var(--muted-text);
     font-size: 0.85rem;
 }
-/* Small accent beside the landing introduction */
-.landing-intro {
-  position: relative;
-  max-width: none;
-  padding-right: 31rem;
-}
-
 .landing-accent {
-  position: absolute;
-  top: 4.5rem;
-  right: 0;
-  width: 28rem;
-  height: auto;
-  border: 1px solid var(--gold);
-  border-radius: 4px;
-  box-shadow: 0 6px 18px rgba(29, 35, 38, 0.1);
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 28rem;
+    height: auto;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(29, 35, 38, 0.1);
 }
 
-/* Give the introduction its full width on smaller screens */
-@media (max-width: 800px) {
-  .landing-intro {
-    padding-right: 0;
-  }
-
-  .landing-accent {
-    position: static;
-    display: block;
-    width: 11rem;
-    max-width: 100%;
-    margin: 0 0 1.5rem auto;
-  }
-}
-
-
-/* ==================================================
-   6. Portfolio Cards
-   ================================================== */
+/* Portfolio Cards */
 
 .blog-grid {
     display: grid;
@@ -320,10 +282,7 @@ a:focus-visible {
     color: var(--green);
 }
 
-
-/* ==================================================
-   7. Article Layout and Navigation
-   ================================================== */
+/* Article Layout and Navigation */
 
 article[data-view] {
     padding-top: 1rem;
@@ -343,10 +302,7 @@ article > nav a {
     line-height: 1.2;
 }
 
-
-/* ==================================================
-   8. Figures, Images, and Captions
-   ================================================== */
+/* Figures, Images, and Captions */
 
 figure {
     margin: 2rem 0;
@@ -378,6 +334,7 @@ figcaption {
     width: 60%;
     margin: 0 1.5rem 0;
 }
+
 /* Final image in Blog 1: centered, without text wrapping */
 #module-1-1 .final-system-note {
     float: none;
@@ -397,6 +354,7 @@ figcaption {
     width: 100%;
     height: auto;
 }
+
 /* Blog 2: first screenshot tucked right */
 #module-1-2 .signal-board-figure {
     float: right;
@@ -413,6 +371,7 @@ figcaption {
 #module-1-2 > figure {
     clear: both;
 }
+
 /* Blog 2: smaller workflow diagram with wrapping text */
 #module-1-2 .workflow-figure {
     float: left;
@@ -430,11 +389,10 @@ figcaption {
     display: flow-root;
 }
 
-/* ==================================================
-   9. KarinaOS Internal Review Memos
-   ================================================== */
+/* KarinaOS Internal Review Memos */
 
-.system-memo {
+.system-memo,
+#module-2-2 section[aria-labelledby="module-22-postscript"] {
     background-color: var(--charcoal);
     color: var(--cream);
     border-left: 0.4rem solid var(--gold);
@@ -442,7 +400,8 @@ figcaption {
     margin: 1.5rem 0;
 }
 
-.memo-title {
+.memo-title,
+#module-22-postscript {
     font-family: Oswald, sans-serif;
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
@@ -450,10 +409,7 @@ figcaption {
     color: var(--gold);
 }
 
-
-/* ==================================================
-   10. Module 2.1
-   ================================================== */
+/* Module 2.1 */
 
 #module-2-1 h4 {
     font-size: 1.2rem;
@@ -507,14 +463,67 @@ figcaption {
     overflow-wrap: anywhere;
 }
 
+/* Module 2.2 */
 
-/* ==================================================
-   11. Responsive Layout
-   ================================================== */
+#module-2-2 .module-22-figure {
+    clear: both;
+}
 
-/* Stack Figure 3 before the reading area gets too narrow */
+#module-2-2 .module-22-wrap {
+    display: flow-root;
+}
+
+@media (min-width: 801px) {
+    #module-2-2 .module-22-hopesource {
+        float: left;
+        width: 55%;
+        margin: 0.35rem 2.5rem 1.25rem 0;
+    }
+}
+
+#module-2-2 .module-22-figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+}
+
+#module-2-2 .module-22-optional-photo {
+    max-width: 32rem;
+    margin-inline: auto;
+}
+
+#module-2-2 .module-22-moving-photos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+#module-2-2 section[aria-labelledby="module-22-postscript"] figcaption {
+    color: var(--cream);
+}
+
+#module-2-2 .article-footer li {
+    overflow-wrap: anywhere;
+}
+
+/* Responsive Layout */
+
+/* Adjust the landing accent and stack the Module 2.1 PDF figure. */
 
 @media (max-width: 800px) {
+    .landing-intro {
+        padding-right: 0;
+    }
+
+    .landing-accent {
+        position: static;
+        display: block;
+        width: 11rem;
+        max-width: 100%;
+        margin: 0 0 1.5rem auto;
+    }
+
     #module-2-1 .pdf-import-figure {
         float: none;
         width: 100%;
@@ -556,18 +565,16 @@ figcaption {
         width: 100%;
         margin: 1.5rem 0;
     }
+
     #module-1-2 .workflow-figure {
-    float: none;
-    width: 100%;
-    max-width: 28rem;
-    margin: 1.5rem auto;
-}
+        float: none;
+        width: 100%;
+        max-width: 28rem;
+        margin: 1.5rem auto;
+    }
 }
 
-
-/* ==================================================
-   12. Print Layout
-   ================================================== */
+/* Print Layout */
 
 @media print {
     [data-view][hidden] {
