@@ -52,3 +52,64 @@ ol {
     font-size:.875rem;
 
 }
+
+/* =========================================
+   Module 3.1 - Designing for Flow
+   ========================================= */
+
+/* Blog headings */
+.blog-post-3-1__header h1,
+.blog-post-3-1 h2 {
+    background-color: #243B53;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+/* Blog content spacing, excluding headings */
+.blog-post-3-1__content,
+.blog-post-3-1__footer {
+    padding: 0 1rem;
+}
+
+/* Paragraphs, lists, and image captions */
+.blog-post-3-1 p,
+.blog-post-3-1 li,
+.blog-post-3-1 figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Images: full width with a maximum width of 480px */
+.blog-post-3-1 img,
+.blog-post-3-1 .blog-illustration {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Figure spacing */
+.blog-post-3-1__figure {
+    margin: 1.5rem 0;
+}
+
+/* Image captions */
+.blog-post-3-1 figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #475569;
+}
+
+/* Reference list spacing */
+.blog-post-3-1__references li {
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+/* Reference links */
+.blog-post-3-1__references a {
+    overflow-wrap: anywhere;
+}
