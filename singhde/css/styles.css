@@ -52,3 +52,157 @@ ol {
     font-size:.875rem;
 
 }
+
+
+/* Module 3.1 Blog Styling */
+
+.module31 {
+    background-color: #ffffff;
+    margin: 2rem 0;
+    line-height: 1.7;
+}
+
+/* Blog heading */
+.module31-heading {
+    background-color: #234e70;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.module31-heading h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.module31-heading p {
+    color: #ffffff;
+}
+
+/* Blog content */
+.module31-content {
+    padding: 0 1rem;
+}
+
+.module31-content section {
+    margin: 2rem 0;
+}
+
+.module31 h3 {
+    color: #234e70;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs, lists, and captions */
+.module31 p,
+.module31 li,
+.module31 figcaption {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* Responsive images */
+.module31 img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Blog illustrations */
+.module31-figure {
+    margin: 2rem auto;
+    max-width: 30rem;
+}
+
+.module31-demo {
+    background-color: #f2f6fa;
+    border: 1px solid #d0dce6;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.module31-demo-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #234e70;
+    margin-bottom: 1rem;
+}
+
+.module31-demo-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.module31-demo-panel {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.module31-demo-button {
+    display: inline-block;
+    background-color: #234e70;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+}
+
+.module31-demo-muted {
+    color: #555555;
+    margin-top: 1rem;
+}
+
+.module31-success {
+    background-color: #d9f5df;
+    color: #17652b;
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.module31-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.module31-actions span {
+    background-color: #dce3e9;
+    padding: 0.7rem;
+    border-radius: 6px;
+}
+
+.module31-actions .module31-important {
+    background-color: #234e70;
+    color: white;
+    font-weight: bold;
+}
+
+/* Image captions */
+.module31 figcaption {
+    text-align: center;
+    color: #555555;
+    margin-top: 0.75rem;
+}
+
+/* References */
+.module31-references {
+    padding: 1rem;
+    background-color: #f2f6fa;
+    border-top: 2px solid #234e70;
+}
+
+.module31-references p {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    overflow-wrap: anywhere;
+}
+
+.module31 a {
+    color: #165a9e;
+}
