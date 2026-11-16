@@ -52,3 +52,47 @@ ol {
     font-size:.875rem;
 
 }
+body {
+    background-color: #171C26;
+    color: #E6EAF0;
+}
+
+/* Main blog headings */
+h2,
+h3 {
+    background-color: #24344D;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+/* Blog content spacing */
+p,
+ul,
+ol,
+figure {
+    padding: 0 1rem;
+}
+
+/* Responsive images */
+img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+/* Paragraphs, lists, and captions */
+p,
+li,
+figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* Links */
+a {
+    color: #8DB4DD;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
