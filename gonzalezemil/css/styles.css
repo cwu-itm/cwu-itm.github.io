@@ -5,13 +5,13 @@
 /* Global Styles */
 html {
     font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
+    color: #fbff00;
+    font-family: 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
+    background-color: #1c3036;
     margin: 1% auto;
     width: 90%;
     max-width: 57rem;
@@ -37,11 +37,13 @@ h2 {
 
     font-family: Oswald, sans-serif;
     font-size:2rem;
+    color:blueviolet
 
 }
 h3 {
     font-size:1.5rem;
     margin-bottom:.5rem;
+    color:aqua
 }
 
 ol {
