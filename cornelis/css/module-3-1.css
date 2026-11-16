@@ -1,0 +1,16 @@
+/* Module 3.1 investigation blog. */
+#module-3-1{box-sizing:border-box;position:relative;left:50%;transform:translateX(-50%);width:min(87rem,calc(100vw - 2rem));margin:3rem 0;background:#241538;color:#f8f4ff;border:1px solid #76588f;border-radius:1.5rem;overflow:hidden;font-family:"Comic Sans MS",sans-serif;font-size:1.3125rem;font-weight:300;line-height:1.85}
+#module-3-1 *{box-sizing:border-box}
+#module-3-1 .m31-header,#module-3-1 h3{background:#3b2055;color:#fff;padding:1.5rem;line-height:1.35}
+#module-3-1 .m31-header{margin:0 0 2.25rem}
+#module-3-1 .m31-header h2{font-family:inherit;font-size:3rem;line-height:1.35;margin:0;color:#fff}
+#module-3-1 h3{font-family:inherit;font-size:1.95rem;margin:3rem 0 1.5rem}
+#module-3-1 p,#module-3-1 figure{margin:1.5rem 0;padding:0 1.5rem}
+#module-3-1 p,#module-3-1 li,#module-3-1 figcaption{font-family:inherit;font-size:1.3125rem;font-weight:300;line-height:1.85}
+#module-3-1 img{display:block;width:100%;max-width:45rem;height:auto;margin:auto}
+#module-3-1 figcaption{max-width:52.5rem;margin:1.125rem auto;color:#d8c9e9}
+#module-3-1 a{color:#edc76f;overflow-wrap:anywhere}
+#module-3-1 a:focus-visible{outline:3px solid #e9bc5a;outline-offset:3px}
+#module-3-1 footer{padding-bottom:1.5rem}
+#module-3-1 footer p{padding-left:3.75rem;text-indent:-2.25rem}
+@media(max-width:600px){#module-3-1{width:100vw;border-radius:0}#module-3-1 .m31-header h2{font-size:2.475rem}}
