@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/styles.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet"
       <title>Nziya Jake | Portfolio</title>
    </head>
    <body>
@@ -512,20 +513,208 @@
 
 
 
-         <!-- Module 2.3 Blog Post Starts here -->
+      
 
          <!-- Module 3.1 Blog Post Starts here -->
 
+      <article class="blog-post">
+         <header>
+             <h2>Module 3.1 Blog Post: Design for Flow </h2>
+         </header>
+
+         <section>
+         <h3>When tracking page answers only half the question</h3>
+         <p>When I was trying to figure out whether I could reroute a package headed to Everett. I had two questions. Where was the package,  and could I still change where it would go? The first question was about its status. The second was about what I could  do with that information.</p>
+         <p>I looked for help with both the delivery estimate and rerouting because knowing a package had reached a nearby hub did not tell me whether I could still act.That gap between information and action is what made the experience frustrating. That example changed how I think about flow.</p>
+         <p>I used to think an interface flowed well if I could finish a task in a few clicks.  Now I pay more attention to what I have to figure out between those clicks. On a tracking page I want to know where the package is, what actions are available, and what happens after I choose one.</p>
+         <p>Johnson (2020) explains perception is shaped by why people are trying to accomplish and that the way information is structured influences how people see it. If I am just checking when  a package might arrive,  the delivery estimate should just be easy to spot. If i need to change the address.</p>
+         <p>I should be able to find that option without studying the whole page.</p>    
+         </section>
+
+         
+
+         <section>
+           <figure>
+             <img
+               src="creatvise-QnjaUpDYNK8-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+
+         <section>
+         <h3>Put the action near  the information it depends on it</h3>
+         <p>I would arrange the  tracking page in the order people make decisions. At the top,  I would put the latest status and the delivery estimate.  Next I would show which delivery options are available. Finally I would show the full scan history for anyone who needs the details.</p> 
+         <p>Putting the delivery control near the status helps people connect the two.  For example if the service stops accepting changes after a package goes out for delivery it can explain that limit right beside the tracking update.</p>
+         <p>A customer should not have to open a help article just to find out why a familiar button is missing.The shape and wording of a control also tell people what they can do. A clearly labeled button that says “Review delivery option” suggests that I can explore the choices before committing.</p>
+         <p>“Manage” leaves me  guessing whether it applies to my account, my notification,  or my current package. I would  also keep the button near the status on a small screen, where actions that appear besides the text on a desktop might otherwise get pushed several screensfuls down.</p>
+         <p>I would use a visible keyboard focus indicator so someone moving through the page with the Tab could tell which controls are selected.</p>
+         </section>
+
+
+
+
+         <section>
+           <figure>
+             <img
+               src="kelsey-todd--AsYePwxn_w-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+
+          <section>
+         <h3>The Aestic- Usability Effect</h3>
+         <p>The Aestic- Usability Effect describes how people tend to judge attractive interfaces as easier to use (Yanlonski, 2024). A well-space page with consistent topography can make a tracking service feel orderly.</p>
+         <p>The risk is that the design can look more complete than the information it gives me.  An elegant timeline that says “in transit” for example,  still leaves me wondering whether the estimate changed or whether rerouting is possible.</p>
+         <p>I might give the page a good rating at first glance and then struggle when I need to do more than read the headline. I would evaluate the  appearance and the actual experience separately during a usability test.</p>
+         <p>First I would ask participants what they expect to be able to do after a quick glance. Then I would ask them to find out whether their package can be rerouted and explain their answers.</p>
+         <p>If they say the screen looks easy but most cannot find the option, that difference tells me to revisit the placement of wording of the control. I would also test with a slightly stale status update.</p>
+         <p>A timestamp like “last update at 8:15am”, gives people a concrete reason to treat the estimate as provisional,  even when the presentation looks polished.</p>
+         </section>
+
+
+
+         <section>
+           <figure>
+             <img
+               src="faizur-rehman-dJpupM4LiS4-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+
+          <section>
+         <h3>The Von Restorff Effect</h3>
+         <p>The Von Restorff Effect predicts that a distinctive item is more likely to be remembered amongst similar items (Yablonski, 2024). On a tracking page, a filled button can make “Review delivery option” stand apart from secondary links like “View scan history”. </p>
+         <P>Giving every control the same strong color makes it harder for the customer to tell which action the page  is emphasizing. Giving the strongest style to something unrelated, such as signing up for promotions, could draw attention from the delivery itself. </p>
+         <P>I would change the emphasis as the package moves through the system. When an address change is still possible, it makes sense to call attention to delivery options. Once the deadline passes, the relevant question changes to what the customer can do next. </p>
+         <P>At that point , the page could explain the limit and emphasize an available action, such as contacting the sender, if the carrier  supports that route. I would  use  a clear label and a different button treatment along with color so the distinction survives when someone cannot easily distinguish the colors.</p>
+         <P>The  visual emphasis should follow what the customer can actually do  at that moment.</p>
+         </section>
+
+
+
+         <section>
+           <figure>
+             <img
+               src="emily-bernal-v9vII5gV8Lw-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+          <section>
+         <h3>Postel’s Law and room for correction</h3>
+         <p>Postel’s Law  encourages a system to accept reasonable variation in input while processing predictable output (Yablonski, 2024). On a tracking page customers often copy identifiers out of messages. </p>
+         <p>I would let the form trim spaces at the beginning and the end when those spaces have no meaning for the carrier. I would also preserve what the customer entered when a lookup fails.</p>
+         <p>Reentering a long tracking number because the form reset adds work at exactly the moment the customer needs help. I would have a stricter limit when the system needs to interpret something consequential, like a delivery address. </p>
+         <p>If an address tool suggest a different apartment number, it should show the suggested address and ask the customer to verify it before sending the requested. For correctable input errors, the World Wide Web Consortium (2024) calls for giving people a known correction when appropriate. </p>
+         <p>A message such as “enter the five digit Zip code for this address” give the customer something specific to try. If the tracking service is temporarily unavailable,  the message should say that and offer a retry,  since asking someone to edit a valid input would send them in the wrong direction.</p>
+         </section>
+
+
+
+
+         <section>
+           <figure>
+             <img
+               src="ux-indonesia-qC2n6RQU4Vw-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+
+          <section>
+         <h3>Show what happen after the click</h3>
+         <p>A customer who submits an address change needs to know whether the service  received the request and whether the change was approved. Those are two different events. Harley (2018) explain that visible system status help people decide what to do and feel in control.</p>
+         <P>If approval time explains that visible system status helps people decide what to do and feel in control. I would show “Request received. Awaiting carrier approval” and  explain where to check for the result.</p>
+         <P>A generic “ Success” message could lead the customer to make plans around a new delivery address  before the carrier has approved it. I  would also keep the latest request visible if  the customer opens the tracking page on another device.</p>
+         <p>A confirmation that disappears after a few seconds helps only the person who sees it at the right time. A  persistent status can answer the question again when some come back to check the delivery after work.</p>
+         <p>The harder case is when the carrier cannot tell me yet whether rerouting is available . On that screen, I would  say when eligibility was last checked and show away to check again. A disabled button on its own makes several situations look identical.</p>
+         <p>The carrier might have closed the rerouting windows, the system might be waiting for a new scan, or the look up might have failed. Each state calls for a different next step. If I were  waiting for a new scan.  I would want to know when it makes sense to come back. If the windows had closed I would want to know whether the  sender could still help.</p>
+         <p>If I tested this redesign, I would ask someone to check a delivery estimate , correct  an incomplete ZIP code and explain  what a pending request means . I would record where they hesitate, which controls they overlook, and whether they think the address has already changed.</p>
+         <p>I would include an interrupted session,  because a person who returnS later should be able to  pick up from the current status without reconstructing the whole sequence. A tracking page feels easy to use  when I can return after a break, see  what happened, and know what to do next.</p>    
+         </section>
+
+
+
+
+         <section>
+           <figure>
+             <img
+               src="creatvise-K7igmbb11NQ-unsplash" alt="UX data visualization"
+            />
+           </figure>
+         </section>
+
+
+
+
+          <section>
+         <h3>References</h3>
+            
+            <p>Harley, A. (2018, June 3).
+               <em>Visibility of system status ().</em>
+               Nielsen Norman Group.
+               <a href="https://www.nngroup.com/articles/visibility-system-status/">
+               https://www.nngroup.com/articles/visibility-system-status/
+               </a>
+            </p>
+
+            <p>Johnson, J (2020).
+               <em>Deisgning with the mind in mind : Simple guide to understanding user interface desgn guideline</em>(3rd ed). Morgan Kaufmann. 
+            </p>
+
+            <p>World Wide Web Consortium. (2024, december 12).
+               <em>Web content accessibility guidelines (WCAG) 2.2</em>
+               <a href="https://www.w3.org/TR/2024/REC-WCAG22-20241212/">
+               https://www.w3.org/TR/2024/REC-WCAG22-20241212/
+               </a>
+            </p>
+
+            <p>Yablonski, J. (2024).
+               <em>Law of UX: Using psychology to design better products & service.</em>(2nd ed.).
+               O'Reilly  Media.
+            </p>
+            
+          
+         </section>
+
+              
+         </section>
+
+
+  
+
+      </article>   
+
+
+
+
+
+
+
+
+
+
+
          <!-- Module 3.2 Blog Post Starts here -->
-          <article class="blog-post">
+         
 
 
 
 
 
-          </article>
 
-         <!-- Module 3.2 Blog Post Starts here -->
+
+
+
+
 
       </main>
 <!-- Page Footer  -->

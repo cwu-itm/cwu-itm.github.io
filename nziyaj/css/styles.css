@@ -52,3 +52,24 @@ ol {
     font-size:.875rem;
 
 }
+/* Design */
+.blog-hearder,
+.blog-content h2 {
+    background-color: #174a4c;
+    color:#FFF
+    padding: 1rem;
+}
+
+
+.blog-content {
+    padding: 0 1rem;
+
+img {
+    width: 100%   
+    max-width: 30rem;
+    height: auto;
+}     
+
+}
+
+
