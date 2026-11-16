@@ -25,7 +25,7 @@
             <p class="landing-aside">Distribution status: unauthorized, apparently.</p>
          </div>
          <div class="collection-heading">
-            <h3>From the leaked archive</h3><span>Four entries · IT 312</span>
+            <h3>From the leaked archive</h3><span>Five entries · IT 312</span>
          </div>
          <div class="blog-grid">
             <section class="blog-card" aria-labelledby="blog-11-heading">
@@ -73,6 +73,16 @@
                <a href="#module-2-2">
                   Open incident report <span aria-hidden="true">&nearr;</span>
                   <span class="visually-hidden">: Module 2.2</span>
+               </a>
+            </section>
+            <section class="blog-card" aria-labelledby="blog-31-heading">
+               <p class="card-module">05 / Module 3.1</p>
+               <p class="card-topic">Interface Logic</p>
+               <h3 id="blog-31-heading">KarinaOS™ Has Imported the Chaos. Now What?</h3>
+               <p class="card-description">An internship PDF, a case of mistaken file format, and a little room for fishkeeping on the Cybernetic Desk.</p>
+               <a href="#module-3-1">
+                  Open interface review <span aria-hidden="true">&nearr;</span>
+                  <span class="visually-hidden">: Module 3.1</span>
                </a>
             </section>
          </div>
@@ -1639,6 +1649,114 @@
          </footer>
       </article>
       <!-- Module 2.2 Blog Ends Here -->
+      <!-- Module 3.1 Blog Starts Here -->
+      <article id="module-3-1" data-view aria-labelledby="module-31-title">
+         <nav aria-label="Portfolio navigation">
+            <a href="#portfolio-home">&larr; Back to portfolio</a>
+            &middot;
+            <a href="#module-2-2">Previous post: KarinaOS&trade; Has 500 Tabs Open</a>
+         </nav>
+         <header class="article-header">
+            <p class="field-label">05 / Module 3.1 &middot; Interface Logic</p>
+            <h2 id="module-31-title">KarinaOS™ Has Imported the Chaos. Now What?</h2>
+         </header>
+         <p class="module-31-content-note"><em>A brief mention of pet loss.</em></p>
+
+         <p>Keke was my koi betta, one of my four betta-babies. She kept me company in the wee hours while I did homework. I’d light my orange candle at my desk, and there she’d be, making that little mischievous face at me from her tank. I used to go over to the aquariums to check on everybody and stay because somebody was being weird. This is why I call fish water puppies.</p>
+
+         <p>Lately, between work, school, and a partial move to cut costs, I’ve had less time to linger. Even when I could step away, I’d tell myself I had one more thing to finish on the Cybernetic Desk. KarinaOS™ can apparently generate <em>one more thing</em> indefinitely. I appear to have built that feature myself.</p>
+
+         <p>When I realized something was wrong, I moved Keke into a hospital tank and tried my very best to save her. I still don’t know why she died. Part of me keeps wondering if I might have noticed something sooner. I miss turning toward her tank and seeing that little face looking back at me.</p>
+
+         <p>I built the Cybernetic Desk because I kept sitting down at my actual desk and asking myself, <em>What needs my attention right now?</em> Most of the answers on its homepage are about school, because that’s what I built it to show me. Lately, I’ve been thinking it might be nice to see a little fishkeeping reminder there too. Something like <em>Check Professor Tinte’s tail next time you’re by the tank.</em> But first, I had a few internship deadlines to import. That’s when I ran into an assumption I’d built into the Desk.</p>
+
+         <h3>The PDF was apparently the wrong kind of PDF</h3>
+
+         <p>My weekly internship assignments follow my work schedule, so I set my own planning deadlines. I put the assignments and the dates I’d worked out into a PDF, uploaded it to the Grade PDF Importer, and expected the usual review step.</p>
+
+         <p>It came back with an error asking for a <strong>Canvas grades PDF</strong>.</p>
+
+         <p>Fair enough. The button did say <em>Grade PDF Importer</em>. I would like to speak to whoever designed this workflow, but unfortunately, I know her schedule and she’s fully booked.</p>
+
+         <figure class="module-31-figure">
+            <a href="assets/module-31-internship-planning-pdf.png" aria-label="Open Figure 1 at full size">
+               <img src="assets/module-31-internship-planning-pdf.png" alt="Weeks 1 through 5 of the internship plan, with assignments and planned Friday due dates." width="1563" height="835" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Figure 1.</strong> My internship planning PDF with the weekly assignments and the dates I set for them.</figcaption>
+         </figure>
+
+         <p>For my other coursework, I upload a PDF printed from Canvas’s Grades page. The importer knows where to look in that layout for assignment names, due dates, and other information. My internship PDF had the assignment names and dates I needed, arranged differently.</p>
+
+         <p>The error did one thing well. It named the file the importer expected, which gave me a place to start. That addresses part of Nielsen’s (1994) guidance on helping users understand and recover from errors. For someone who picked the wrong file by accident, switching files might solve the problem. In my case, the Canvas export had a blank Due column for those weekly assignments. The dates I needed were still in my planning PDF.</p>
+
+         <figure class="module-31-figure module-31-error">
+            <a href="assets/module-31-grade-import-error.png" aria-label="Open Figure 2 at full size">
+               <img src="assets/module-31-grade-import-error.png" alt="Could not identify a Canvas Grades table. Use Print Grades → Save as PDF, with selectable text." width="1089" height="210" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Figure 2.</strong> Recreation of the error message shown after I uploaded the internship planning PDF.</figcaption>
+         </figure>
+
+         <h3>My homework needed a costume</h3>
+
+         <p>I asked ChatGPT to use my actual Canvas grades export as a template and put my planning dates into the Due column of a copy. Week 5 got December 11. Week 6 got January 8, after the break. I’d built a tool to save myself from entering assignments by hand. Anyway, I gave my homework a costume. It worked.</p>
+
+         <figure class="module-31-figure">
+            <a href="assets/module-31-canvas-style-internship-pdf.png" aria-label="Open Figure 3 at full size">
+               <img src="assets/module-31-canvas-style-internship-pdf.png" alt="A Canvas-style grades table with personal planning dates filled in under Due." width="2004" height="1135" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Figure 3.</strong> The Canvas-style planning copy that imported successfully, with my planning dates in the Due column.</figcaption>
+         </figure>
+
+         <p>What surprised me was that I knew what to try. I’d kept the upload steps the same and changed the document. Johnson (2021, Chapter 10) describes how practice makes familiar actions easier and how unfamiliar problems call for more deliberate effort. I could feel that switch. Uploading the file was routine. After the error, I had to figure out what the importer expected and how I could test my guess.</p>
+
+         <p>A while ago, I wouldn’t have expected to enjoy figuring this out. I’m an IT student, and most of my hands-on coding experience was a little Python on DataCamp in one of Dr. Ellen’s earlier classes and some dabbling on my own. Building the Desk with AI gave me somewhere to start. I could ask what happened after I clicked a button, change one step, and see what it did. Somewhere in there, I discovered that I actually <em>like</em> doing this. Which is mildly inconvenient, because now every time a piece of software annoys me, I wonder if I could build my own.</p>
+
+         <p>I still like to understand the part I’m changing before I get my hands into the code. Now I have a specific question to investigate. <em>What does the importer look for immediately after I select a file?</em></p>
+
+         <h3>Give the exception somewhere to stand</h3>
+
+         <p>Postel’s Law helped me think about what the importer could accept. Yablonski (2024, Chapter 5) applies it to interfaces that handle variation in what people provide. The W3C Web Accessibility Initiative (2019) makes a similar point about form validation by encouraging designers to accept reasonable variations in how people enter the same information. I’d apply that idea to PDF imports by supporting a simple assignment table with a title and either a date or a week label. My internship schedule already had that much.</p>
+
+         <p>I’d explain the supported formats beside the upload control. On the review screen, I’d show the title, week label, and date side by side so I could check what the Desk found before saving. If I supplied only a week number, the row could say <strong>Needs a due date</strong> and offer a <strong>Set due date</strong> control. My internship pauses between quarters. A guess based on the previous deadline could give me a perfectly tidy calendar full of wrong answers.</p>
+
+         <p>The Von Restorff Effect predicts that an item that differs from those around it is more likely to be remembered (Yablonski, 2024, Chapter 8). I think of the Minions box labeled <strong>CHAOS</strong> from my move. It was surrounded by a motorcycle, a desk, and half a household, and it was still the thing my brain silently chuckled about. That gave me a reason to try making the missing date stand out. If every row announces itself like the Minions box, I’m back to reading the whole screen to find the one thing I need to fix.</p>
+
+         <p>I’d test the flow with someone who’s never used the Desk. Can they tell which files it accepts, recover after a rejection, and spot the assignment that needs a date before saving? I already know where I put everything, and I like my antique drawers enough that I might overlook some friction. The Aesthetic–Usability Effect helps explain why a design I like might also feel easier to use (Yablonski, 2024, Chapter 7). I’d watch someone try the task before asking what they think of the look.</p>
+
+         <h3>What if there were fish on the homepage?</h3>
+
+         <p>I knew when Week 5 was due. I still had to reread a whole conversation to remember what I wanted to check on Professor Tinte, my pastel blue, double-tailed betta.</p>
+
+         <p>When I moved him into a hospital tank for suspected fin rot, I wrote down that I’d fed him and changed his water, that he started swimming around afterward, and that he later draped himself over a decoration. Those details are easy to hold in my head while I’m looking right at him. After a shift at work and a few hours of coursework, I’d like to be able to pick up where I left off.</p>
+
+         <p>I’d like to try one small fishkeeping card on the homepage. It would show the fish’s name, my last dated observation, and <strong>Next thing to check</strong> when I’ve left myself a follow-up. For Professor Tinte, that might be a note to look at his tail. Like the missing date in the importer, it’s the detail that might change what I do next, so I’d give it a little more visual weight.</p>
+
+         <p>I’d add an <strong>Add a note or photo</strong> control and show the fish’s name and date before saving. When I’m standing at the tank with my phone, I might have a useful photo and exactly zero interest in filling out a form. I’d let myself save the photo and add context later.</p>
+
+         <figure class="module-31-figure">
+            <a href="assets/module-31-fishkeeping-card-kaiju.png" aria-label="Open Figure 4 at full size">
+               <img src="assets/module-31-fishkeeping-card-kaiju.png" alt="The fishkeeping card highlights Kaiju No. 4’s next check, cleaning the tank and changing 50% of the water." width="1923" height="748" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Figure 4.</strong> The fishkeeping card showing Kaiju No. 4’s last dated observation, a highlighted follow-up, and controls for switching fish or adding a note or photo.</figcaption>
+         </figure>
+
+         <p>I’d test the card on my phone with one question. <em>What did I want to look at next time I checked on Professor Tinte?</em> I’d ask someone else to find the follow-up too. If we both spend our first few seconds admiring a tiny fish icon and miss the note, I will have made a cute fish icon. I know myself well enough to say I’d probably keep it. I’d still have to fix the layout.</p>
+
+         <p>The card is for the moment I need to remember something. The part I’ve missed most is what happens when I’ve put the phone down and I’m still there, watching.</p>
+
+         <p>I’ve been troubleshooting KarinaOS™ too, and it has taken me until week eight to figure out she really, really needs to unplug. I spend all day looking at screens and then open another one for fun. But when I think about closing the laptop, it feels like everything might fall apart the second I stop holding it together. Tonight I think I’ll light the orange candle, sit by the aquariums, and let the fish do absolutely nothing while they remind me how to be human again for a bit.</p>
+
+         <footer class="article-footer" aria-labelledby="module-31-references">
+            <h3 id="module-31-references">References</h3>
+            <ol>
+               <li>Johnson, J. (2021). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann. <a href="https://doi.org/10.1016/B978-0-12-818202-4.00010-6">Chapter 10</a></li>
+               <li>Nielsen, J. (1994, April 24). <em>10 usability heuristics for user interface design</em>. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/?utm_source=chatgpt.com">Article</a></li>
+               <li>W3C Web Accessibility Initiative. (2019, July 27). <em>Validating input</em>. <a href="https://www.w3.org/WAI/tutorials/forms/validation/?utm_source=chatgpt.com">Forms tutorial</a></li>
+               <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O’Reilly Media. <a href="https://www.oreilly.com/library/view/laws-of-ux/9781098146955/?utm_source=chatgpt.com">Book</a></li>
+            </ol>
+         </footer>
+      </article>
+      <!-- Module 3.1 Blog Ends Here -->
    </main>
    <footer class="page-footer">
       <p>Copyright &copy; Karina Taylor 2026</p>
