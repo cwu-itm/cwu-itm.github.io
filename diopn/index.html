@@ -1419,7 +1419,381 @@
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
+<article class="module-3-1">
 
+    <header class="blog-heading">
+        <h2>Designing for Flow: When the Interface Shows You What to Do Next</h2>
+    </header>
+
+    <div class="blog-content">
+
+        <p>
+            A good digital interface does more than display information. It guides the user
+            from one action to the next. When the layout is clear, important controls stand
+            out, and the system responds in a predictable way, the user can focus on the
+            task instead of trying to understand the interface. I think this is what good
+            flow means in interaction design.
+        </p>
+
+        <p>
+            I have noticed this especially while working with Canvas, Visual Studio Code,
+            GitHub Desktop, and GitHub for my course assignments. The individual tools are
+            very different, but my experience with them depends heavily on where information
+            is placed, how controls are labeled, and whether I can immediately understand
+            what I should do next. When those decisions are clear, the workflow feels natural.
+            When they are not, even a simple task can become frustrating.
+        </p>
+
+
+        <h3>Layout Guides Behavior</h3>
+
+        <p>
+            Interface layout influences where users look first and what they believe is
+            important. A screen with too many elements competing for attention makes it
+            difficult to know where to begin. Visual hierarchy helps solve this problem by
+            using differences in size, contrast, spacing, and grouping to indicate importance.
+        </p>
+
+        <p>
+            Gordon (2021) explains that visual hierarchy guides users toward the most
+            important elements on a page through factors such as scale, color, contrast,
+            and grouping. This means layout is not only about making a page attractive.
+            It also communicates the order in which information should be understood.
+        </p>
+
+        <p>
+            For example, on an assignment page in Canvas, I usually look for the assignment
+            title, due date, points, and submission information before reading everything
+            else. If those details were hidden inside several paragraphs of text, completing
+            the assignment would require much more searching.
+        </p>
+
+        <p>
+            The same idea applies to GitHub Desktop. The current branch appears near the
+            top, while actions such as Fetch Origin, Pull Origin, or Push Origin are given
+            visible positions. That layout affects my behavior because it tells me what state
+            the project is currently in and what action may be required next.
+        </p>
+
+        <figure>
+            <img src="images/GitHub Desktop.png"
+                 alt="GitHub Desktop showing repository status and workflow controls">
+
+            <figcaption>
+                GitHub Desktop uses visible status information and controls to guide the
+                next action. Screenshot by author, 2026.
+            </figcaption>
+        </figure>
+
+        <p>
+            A well-organized layout reduces the amount of interpretation users must do before
+            acting. Johnson (2020) explains that people do not process every item on a screen
+            equally. Attention is selective, so interfaces should make important information
+            easy to notice rather than expecting the user to carefully inspect everything.
+        </p>
+
+
+        <h3>Control Design Should Make the Next Action Clear</h3>
+
+        <p>
+            Buttons, links, fields, menus, and other controls are how users communicate with
+            a system. Their appearance and placement strongly influence whether the interface
+            feels easy or confusing.
+        </p>
+
+        <p>
+            A control should answer basic questions without requiring much thought: Can I
+            interact with this? What will happen if I select it? Is this the primary action
+            or a secondary option?
+        </p>
+
+        <p>
+            This is especially important when several controls are close together. If Save,
+            Delete, and Cancel all have the same visual appearance, a user has to slow down
+            and read each one carefully. A more thoughtful interface gives the most important
+            or common action greater visual emphasis while making dangerous actions distinct.
+        </p>
+
+        <p>
+            Control size also affects usability. The World Wide Web Consortium (2023)
+            recommends sufficient target size and spacing because small controls can be
+            difficult to select accurately, particularly on touchscreens or for users with
+            limited fine motor control. This shows that usability is not only about appearance.
+            A control must also be easy to operate.
+        </p>
+
+
+        <h3>The Aesthetic–Usability Effect</h3>
+
+        <p>
+            One UX law that influences flow is the Aesthetic–Usability Effect. Yablonski
+            (2024) explains that users often perceive visually attractive designs as easier
+            to use.
+        </p>
+
+        <p>
+            I have experienced this myself. When an application has consistent spacing,
+            readable typography, organized colors, and clean sections, I feel more confident
+            using it. Even before I fully understand the system, the organized appearance
+            makes it feel more manageable.
+        </p>
+
+        <p>
+            However, visual appearance can also hide usability problems. An interface can
+            look beautiful while still having confusing navigation or poorly placed controls.
+            Visual design should therefore support the task rather than distract from it.
+        </p>
+
+        <p>
+            This is important because flow depends on both appearance and logic. A beautiful
+            interface may encourage someone to begin using the system, but predictable
+            interaction is what allows that person to continue successfully.
+        </p>
+
+
+        <h3>The Von Restorff Effect</h3>
+
+        <p>
+            Another useful law is the Von Restorff Effect, which states that when similar
+            objects are presented together, the one that is visually different is more likely
+            to be noticed and remembered (Yablonski, 2024).
+        </p>
+
+        <p>
+            This principle can be useful for important interface actions. For example, imagine
+            an assignment page containing many neutral elements but one clearly colored
+            <strong>Submit Assignment</strong> button. Because it visually stands apart,
+            users can locate it more quickly.
+        </p>
+
+        <p>
+            The principle must be used carefully. If every button, warning, title, and card
+            uses a different bright color, nothing really stands out anymore. Visual
+            distinction is useful only when it is reserved for important information.
+        </p>
+
+        <p>
+            This is something I considered in my ORCA style guide as well. Primary actions
+            used the same strong blue, while warnings and status information used different
+            but consistent colors. That helped the interface communicate importance without
+            making every element compete for attention.
+        </p>
+
+
+        <h3>Postel's Law</h3>
+
+        <p>
+            Postel's Law is usually summarized as being conservative in what a system sends
+            and flexible in what it accepts. In interface design, I understand this as
+            designing systems that handle reasonable user variation instead of failing
+            whenever input does not exactly match one expected format.
+        </p>
+
+        <p>
+            For example, if a form asks for a phone number, users may type parentheses,
+            spaces, or hyphens. A good interface can recognize common variations instead
+            of immediately showing an error.
+        </p>
+
+        <p>
+            Yablonski (2024) connects Postel's Law to designing flexible and resilient
+            experiences. To me, this is important for flow because unnecessary errors
+            interrupt the user. When the system can safely interpret reasonable input,
+            the interaction continues naturally.
+        </p>
+
+        <p>
+            At the same time, flexibility should not create uncertainty. For financial,
+            security, or academic submissions, the system should still clearly confirm
+            what information it accepted and what action occurred.
+        </p>
+
+
+        <h3>Recognition, Memory, and Flow</h3>
+
+        <p>
+            Flow is also connected to memory. Johnson (2020) emphasizes that interfaces
+            should not unnecessarily require users to remember information that could
+            instead remain visible.
+        </p>
+
+        <p>
+            This became very real for me while working with GitHub branches. My workflow
+            might involve opening Visual Studio Code, editing an HTML file, saving it,
+            switching to GitHub Desktop, committing the change, publishing the branch,
+            creating a pull request, and finally copying the URL into Canvas.
+        </p>
+
+        <figure>
+            <img src="images/VSC showing the structure of my course portfolio.png"
+                 alt="Visual Studio Code showing the HTML structure of a course portfolio">
+
+            <figcaption>
+                Visual Studio Code showing the structure of my course portfolio and helping
+                me recognize where new content belongs. Screenshot by author, 2026.
+            </figcaption>
+        </figure>
+
+        <p>
+            The process became frustrating when I had different copies or branches of the
+            same project and did not immediately understand which version was currently
+            being shown. I could see content in Visual Studio Code but later discover that
+            GitHub Desktop was tracking a different state of the project.
+        </p>
+
+        <p>
+            The problem was not necessarily that one program was broken. The difficulty
+            came from the mental model required to understand how the tools were connected.
+        </p>
+
+        <p>
+            Once I learned to look at the branch name, GitHub status, and visible file
+            structure, the workflow became easier. Instead of remembering everything,
+            I began relying on the system's visible information.
+        </p>
+
+        <p>
+            That is one of the strongest lessons I have learned about interface flow:
+            the user should not need to mentally reconstruct the system every time they
+            perform a task.
+        </p>
+
+
+        <h3>A Frustrating Experience: Not Knowing What Comes Next</h3>
+
+        <p>
+            One of my most frustrating interface experiences happens when a system completes
+            an action but does not clearly indicate what the next step should be.
+        </p>
+
+        <p>
+            For example, when completing an assignment workflow, I may save my file
+            successfully but still need to commit it, push it, create a pull request, and
+            submit that URL somewhere else. If I do not understand the relationship between
+            those steps, completing one action can feel like finishing the entire process
+            even though several steps remain.
+        </p>
+
+        <p>
+            GitHub Desktop improves this somewhat through changing controls. When there are
+            changes, it provides commit options. After committing, it may display Push Origin
+            or Publish Branch. These changing controls help guide the user forward.
+        </p>
+
+        <p>
+            Canvas provides another example. After a successful assignment submission,
+            the interface normally displays submission information rather than forcing the
+            student to wonder whether the work was received.
+        </p>
+
+        <figure>
+            <img src="images/Canvas assignment submission.png"
+                 alt="Canvas assignment page showing assignment and submission information">
+
+            <figcaption>
+                Canvas uses assignment and submission information to show the current state
+                of the task. Screenshot by author, 2026.
+            </figcaption>
+        </figure>
+
+        <p>
+            These examples show why interface logic matters. A good workflow should provide
+            a clear relationship between the current state and the next possible action.
+        </p>
+
+
+        <h3>Flow Requires Both Visual and Interaction Design</h3>
+
+        <p>
+            Visual design and interaction design work together. A strong visual hierarchy
+            can guide attention, but it cannot compensate for an illogical workflow.
+            Similarly, an efficient workflow may still be difficult to discover if the
+            interface provides no visual clues.
+        </p>
+
+        <p>
+            The Aesthetic–Usability Effect shows why appearance influences how people
+            perceive usability. The Von Restorff Effect explains how visual distinction
+            can direct attention toward important controls. Postel's Law encourages systems
+            to tolerate reasonable user variation instead of interrupting interaction
+            unnecessarily (Yablonski, 2024).
+        </p>
+
+        <p>
+            These ideas connect with Johnson's (2020) discussion of perception, attention,
+            and memory. Users have limited attention and should not be expected to remember
+            unnecessary details while navigating an interface.
+        </p>
+
+
+        <h3>Conclusion</h3>
+
+        <p>
+            Designing for flow means helping users understand where they are, what matters,
+            and what they can do next.
+        </p>
+
+        <p>
+            Layout affects where people look. Control design affects which actions they
+            choose. Visual hierarchy reduces searching, while clear feedback reduces
+            uncertainty. UX laws such as the Aesthetic–Usability Effect, Von Restorff Effect,
+            and Postel's Law provide useful explanations for why certain design choices feel
+            natural while others interrupt interaction.
+        </p>
+
+        <p>
+            My experiences with Canvas, Visual Studio Code, and GitHub have shown me that
+            even powerful systems can become difficult when the relationship between steps
+            is unclear. At the same time, simple design decisions such as visible status
+            information, consistent controls, clear visual emphasis, and useful feedback
+            can make complex workflows much easier to understand.
+        </p>
+
+        <p>
+            For me, the best interface is not one that makes the user think about the design.
+            It is one that quietly guides the user toward the goal.
+        </p>
+
+
+        <footer class="article-footer">
+            <h3>Sources</h3>
+
+            <ol>
+                <li>
+                    Gordon, K. (2021, January 17).
+                    <em>Visual hierarchy in UX: Definition</em>.
+                    Nielsen Norman Group.
+                    <a href="https://www.nngroup.com/articles/visual-hierarchy-ux-definition/"
+                       target="_blank">
+                        Nielsen Norman Group
+                    </a>
+                </li>
+
+                <li>
+                    Johnson, J. (2020).
+                    <em>Designing with the mind in mind: Simple guide to understanding
+                    user interface design guidelines</em> (3rd ed.).
+                    Morgan Kaufmann.
+                </li>
+
+                <li>
+                    World Wide Web Consortium. (2023).
+                    <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>.
+                    <a href="https://www.w3.org/TR/WCAG22/" target="_blank">
+                        W3C WCAG 2.2
+                    </a>
+                </li>
+
+                <li>
+                    Yablonski, J. (2024).
+                    <em>Laws of UX: Using psychology to design better products &amp; services</em>
+                    (2nd ed.). O'Reilly Media.
+                </li>
+            </ol>
+        </footer>
+
+    </div>
+</article>
          <!-- Module 3.2 Blog Post Starts here -->
 
       </main>
