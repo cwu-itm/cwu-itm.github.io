@@ -52,3 +52,41 @@ ol {
     font-size:.875rem;
 
 }
+/* Module 3.1 Blog Styles */
+
+.module-3-1 .blog-heading {
+    background-color: #1e4f7a;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.module-3-1 .blog-heading h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.module-3-1 .blog-content {
+    padding: 0 1rem;
+}
+
+.module-3-1 img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+.module-3-1 p,
+.module-3-1 li,
+.module-3-1 figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.module-3-1 figure {
+    margin: 1.5rem 0;
+}
+
+.module-3-1 figcaption {
+    margin-top: 0.5rem;
+    color: #555555;
+}
