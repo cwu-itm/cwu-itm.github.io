@@ -52,3 +52,28 @@ ol {
     font-size:.875rem;
 
 }
+
+/* 1. Blog Headings */
+article h2 {
+    background-color: #011f4b;
+    color: #f8f8f8;
+    padding: 1rem; /* 16px */
+}
+
+/* 2. Content Padding (Excluding Headings) */
+article p, article ul, article figure {
+    padding: 0 1rem; /* 0 top/bottom, 16px left/right */
+}
+
+/* 3. Responsive Images */
+article img {
+    width: 100%;
+    max-width: 30rem; /* 480px */
+    height: auto;
+}
+
+/* 4. Font Styling for Content */
+article p, article ul, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem; /* 14px */
+}
