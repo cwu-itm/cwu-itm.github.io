@@ -51,4 +51,39 @@ ol {
     list-style-type: none;
     font-size:.875rem;
 
+}/* Blog heading colors and spacing */
+article h2,
+article h3 {
+  background-color: #264c70;
+  color: white;
+  padding: 1rem;
 }
+
+/* Blog content spacing */
+article section > :not(h3) {
+  padding: 0 1rem;
+}
+
+/* Images */
+article img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+/* Paragraphs, lists, and captions */
+article p,
+article ul,
+article ol,
+article figcaption {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+article p {
+  line-height: 1.7;
+} article img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
