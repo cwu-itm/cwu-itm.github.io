@@ -52,3 +52,35 @@ ol {
     font-size:.875rem;
 
 }
+/*Module 3.1 Blog Styles*/
+
+/*Main Blog Heading*/
+#module-3-1 h1 {
+    background-color: #333;
+    color: #FFF;
+    padding: 1rem;
+}
+/* Content spacing, excluding the main heading */
+#module-3-1 h2,
+#module-3-1 h3,
+#module-3-1 p,
+#module-3-1 ul,
+#module-3-1 ol,
+#module-3-1 figure,
+#module-3-1 footer {
+    padding: 01rem;
+}
+/* Blog images */
+#module-3-1 img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+}
+/* Paragraphs lists, and image captions */
+#module-3-1 p, 
+#module-3-1 li, 
+#module-3-1 figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
