@@ -21,34 +21,89 @@ body {
 }
 
 main {
-
-    margin-bottom:3rem;
-
+    margin-bottom: 3rem;
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
 }
 
 h2 {
-
     font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+    font-size: 2rem;
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-ol {
+/* Blog heading */
+.article-header h2,
+article > h2 {
+    background-color: #1B2A41;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
 
-    margin-top:0;
-    padding-left:0;
-    list-style-type: none;
-    font-size:.875rem;
+/* Content padding */
+article > *:not(.article-header):not(h2) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+/* Responsive images – left aligned */
+article img,
+.blog-post img {
+    width: 100%;
+    max-width: 30rem; /* 480px */
+    height: auto;
+    display: block;
+    margin: 1rem 0; /* left aligned */
+}
+
+/* Text styling */
+article p,
+article li,
+article figcaption,
+.blog-post p,
+.blog-post li,
+.blog-post figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Indent regular lists so bullets sit under paragraph text */
+article ul,
+article ol {
+    padding-left: 2.5rem;
+    margin-left: 4rem;
+}
+
+article ul li,
+article ol li {
+    margin-bottom: 0.25rem;
+}
+
+/* Sources list – numbers flush under the word "Sources" */
+.article-footer ol,
+footer ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+}
+
+.article-footer li,
+footer ol li {
+    margin-bottom: 0.5rem;
+}
+
+article figure {
+    margin: 1.5rem 0;
 }
