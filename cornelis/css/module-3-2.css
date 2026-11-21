@@ -1,0 +1,27 @@
+/* Module 3.2 */
+.m32-page-header{box-sizing:border-box;position:relative;left:50%;transform:translateX(-50%);width:min(1824px,calc(100vw - 48px));padding:1rem;background:#241238 url("../images/module-3-2/header-background.svg") center/cover;border-bottom:2px solid #9d77c4;color:#f6f0ff}
+.m32-page-header .top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.m32-page-header .logo{font:bold 27px Arial,sans-serif;letter-spacing:.06em;color:#e9bc5a}
+.m32-page-header nav{display:flex;gap:7px;flex-wrap:wrap}
+.m32-page-header nav a{padding:10px 13px;font:17px Arial,sans-serif;color:#f6f0ff;text-underline-offset:5px}
+#module-3-2{box-sizing:border-box;position:relative;left:50%;transform:translateX(-50%);width:min(1824px,calc(100vw - 48px));margin:48px 0;padding:48px clamp(24px,4vw,72px);background:#160d23;color:#f6f0ff;font:21px/1.7 "Comic Sans MS","Segoe UI",sans-serif}
+#module-3-2 *{box-sizing:border-box}
+#module-3-2 .eyebrow{font:700 16px Arial,sans-serif;letter-spacing:.15em;color:#e9bc5a}
+#module-3-2 .m32-title{font-family:inherit;font-size:clamp(32px,3.5vw,67px);line-height:1.18;max-width:none;margin:14px 0 29px;white-space:nowrap;color:#f6f0ff}
+#module-3-2 h3{font-family:inherit;font-size:28px;line-height:1.4;color:#e9bc5a;margin:0 0 19px;background:none;padding:0}
+#module-3-2 p{font:inherit;margin:0 0 24px;max-width:75ch}
+#module-3-2 .columns{display:flex;gap:60px;margin-top:48px;padding-top:48px;border-top:1px solid #62477e}
+#module-3-2 .columns section{flex:1;min-width:0}
+#module-3-2 .image-bar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;background:#38204f;padding:24px;margin:48px 0}
+#module-3-2 figure{margin:0;min-width:0;padding:0}
+#module-3-2 img{display:block;width:100%;height:auto;max-width:none;margin:0}
+#module-3-2 figcaption{font:17px/1.5 Arial,sans-serif;padding:17px 5px;color:#f6f0ff;text-align:left}
+#module-3-2 figcaption strong{color:#e9bc5a}
+#module-3-2 a{color:#ead0ff;text-underline-offset:5px;overflow-wrap:anywhere}
+#module-3-2 a:focus-visible,.m32-page-header a:focus-visible{outline:3px solid #e9bc5a;outline-offset:4px}
+#module-3-2 footer{border-top:2px solid #9d77c4;padding:48px 0 0;margin-top:48px;color:#f6f0ff;background:none}
+#module-3-2 footer p{font-size:18px;padding-left:29px;text-indent:-29px;overflow-wrap:anywhere}
+#module-3-2 [id]{scroll-margin-top:24px}
+@media(max-width:1000px){#module-3-2 .columns{flex-direction:column;gap:24px}#module-3-2 .image-bar{grid-template-columns:1fr}.m32-page-header .top{align-items:flex-start}}
+@media(max-width:700px){#module-3-2 .m32-title{white-space:normal}#module-3-2,.m32-page-header{width:calc(100vw - 24px)}#module-3-2{padding:24px 16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
