@@ -226,9 +226,9 @@ article ul.styled-list li {
     background-color: #ebe7e7;
     padding: 1rem;
     margin: 2rem 0;
-    margin-left: 0 !important;
+    margin-left: 1rem !important;
     margin-right: 0 !important;
-    width: 55%;
+    width: (55% - 1rem);
     max-width: none;
     box-sizing: border-box;
 }
