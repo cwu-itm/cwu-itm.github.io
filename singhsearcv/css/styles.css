@@ -39,6 +39,214 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
+/* === Header (Full Bleed) === */
+.page-header {
+    background: #333 url('../images/green white and yellow car print textile.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Logo style */
+.page-header .logo {
+    font-family: Oswald, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #fff;
+    border-radius: 12px 20px 12px 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+/* Navigation using Flexbox */
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+#main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Subscribe button */
+#main-nav a:last-child {
+    border: 2px solid #F1D23F;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#main-nav a:last-child:hover {
+    background-color: #F1D23F;
+    color: #333;
+    text-decoration: none;
+}
+
+/* White hamburger icon */
+.icon,
+.page-header .icon,
+.mobile-menu a.icon {
+    color: white !important;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+/* Black box flush with paragraphs – Module 3.2 only */
+article#module-3-2 .flex-list,
+article#module-3-2 ul.styled-list {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;          /* vertical spacing only */
+    margin-left: 1rem !important;     /* ← change this line */
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    list-style: none;
+    width: calc(100% - 1rem);         /* ← change this line */
+    max-width: none;
+    box-sizing: border-box;
+}
+
+article#module-3-2 .flex-list dl,
+article#module-3-2 ul.styled-list li {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+}
+
+article#module-3-2 .flex-list dt,
+article#module-3-2 ul.styled-list li strong {
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+    display: block;
+}
+
+article#module-3-2 .flex-list dd,
+article#module-3-2 ul.styled-list li {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* === Styled Lists (like the example) === */
+.flex-list,
+article ul.styled-list {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.flex-list dl,
+article ul.styled-list li {
+    flex: 1;
+    min-width: 220px;
+    margin: 0;
+}
+
+.flex-list dt,
+article ul.styled-list li strong {
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+    display: block;
+}
+
+.flex-list dd,
+article ul.styled-list li {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* === Two-column content layout with Flexbox === */
+.post-content,
+.two-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.post-content > *,
+.two-column > * {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Image bar – full width of the paragraph */
+.image-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: #ebe7e7;
+    padding: 1rem;
+    margin: 2rem 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 55%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.image-bar figure {
+    margin: 0;
+    width: 100%;
+}
+
+.image-bar img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* === Existing Styles === */
+
 /* Blog heading */
 .article-header h2,
 article > h2 {
@@ -56,14 +264,14 @@ article > *:not(.article-header):not(h2) {
     padding-right: 1rem;
 }
 
-/* Responsive images – left aligned */
+/* Responsive images */
 article img,
 .blog-post img {
     width: 100%;
-    max-width: 30rem; /* 480px */
+    max-width: 30rem;
     height: auto;
     display: block;
-    margin: 1rem 0; /* left aligned */
+    margin: 1rem 0;
 }
 
 /* Text styling */
@@ -78,7 +286,7 @@ article figcaption,
     line-height: 1.5;
 }
 
-/* Indent regular lists so bullets sit under paragraph text */
+/* Indent regular lists */
 article ul,
 article ol {
     padding-left: 2.5rem;
@@ -90,7 +298,7 @@ article ol li {
     margin-bottom: 0.25rem;
 }
 
-/* Sources list – numbers flush under the word "Sources" */
+/* Sources list */
 .article-footer ol,
 footer ol {
     list-style-type: decimal;
