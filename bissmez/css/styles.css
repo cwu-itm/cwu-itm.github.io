@@ -52,3 +52,392 @@ ol {
     font-size:.875rem;
 
 }
+
+/* =========================================
+   Module 3.1 - Designing for Flow
+   ========================================= */
+
+/* Blog headings */
+.blog-post-3-1__header h1,
+.blog-post-3-1 h2 {
+    background-color: #243B53;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+/* Blog content spacing, excluding headings */
+.blog-post-3-1__content,
+.blog-post-3-1__footer {
+    padding: 0 1rem;
+}
+
+/* Paragraphs, lists, and image captions */
+.blog-post-3-1 p,
+.blog-post-3-1 li,
+.blog-post-3-1 figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Images: full width with a maximum width of 480px */
+.blog-post-3-1 img,
+.blog-post-3-1 .blog-illustration {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Figure spacing */
+.blog-post-3-1__figure {
+    margin: 1.5rem 0;
+}
+
+/* Image captions */
+.blog-post-3-1 figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #475569;
+}
+
+/* Reference list spacing */
+.blog-post-3-1__references li {
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+/* Reference links */
+.blog-post-3-1__references a {
+    overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   MODULE 3.2 - INTERACTION THAT MATTERS
+   All rules are scoped to .blog-3-2
+   ========================================================= */
+
+/* Main wrapper */
+.blog-3-2 {
+    width: 100%;
+    color: #243447;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* Header background image and layout */
+.blog-3-2 .blog-3-2__header {
+    background-color: #17324d;
+    background-image:
+        linear-gradient(115deg, rgba(20, 48, 73, 0.97), rgba(40, 111, 112, 0.88)),
+        radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.18), transparent 30%);
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.blog-3-2 .blog-3-2__header-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.blog-3-2 .blog-3-2__logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.blog-3-2 .blog-3-2__logo-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+.blog-3-2 .blog-3-2__logo-text {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+}
+
+/* Six-link navigation using Flexbox */
+.blog-3-2 .blog-3-2__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.blog-3-2 .blog-3-2__nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 0.65rem;
+    border-radius: 0.3rem;
+}
+
+.blog-3-2 .blog-3-2__nav a:hover,
+.blog-3-2 .blog-3-2__nav a:focus {
+    background-color: #ffffff;
+    color: #17324d;
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Hero area */
+.blog-3-2 .blog-3-2__hero {
+    max-width: 72rem;
+    margin: 2.5rem auto 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.blog-3-2 .blog-3-2__eyebrow {
+    color: #b8e4dc;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+}
+
+.blog-3-2 .blog-3-2__hero h1 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    margin: 0.5rem 0;
+}
+
+.blog-3-2 .blog-3-2__hero p {
+    color: #e5eef5;
+    font-size: 1rem;
+}
+
+/* Introductory title */
+.blog-3-2 .blog-3-2__main {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+.blog-3-2 .blog-3-2__intro {
+    padding: 2rem 0 1rem;
+}
+
+.blog-3-2 .blog-3-2__category {
+    color: #287d72;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.blog-3-2 .blog-3-2__intro h2 {
+    color: #17324d;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    line-height: 1.25;
+    margin: 0.5rem 0;
+}
+
+.blog-3-2 .blog-3-2__byline {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Three-image bar using CSS Grid */
+.blog-3-2 .blog-3-2__image-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2.5rem;
+    background-color: #e8f0f4;
+    border-radius: 0.75rem;
+}
+
+.blog-3-2 .blog-3-2__image-card {
+    margin: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.blog-3-2 .blog-3-2__illustration {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    margin: 0 auto 0.75rem;
+}
+
+.blog-3-2 .blog-3-2__image-card figcaption {
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Two-column content using Flexbox */
+.blog-3-2 .blog-3-2__columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.blog-3-2 .blog-3-2__column {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.blog-3-2 .blog-3-2__column section {
+    margin-bottom: 2rem;
+}
+
+.blog-3-2 .blog-3-2__column h2 {
+    color: #17324d;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #b8d8d2;
+}
+
+.blog-3-2 .blog-3-2__column p {
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0 0 1rem;
+}
+
+/* Footer and references */
+.blog-3-2 .blog-3-2__footer {
+    background-color: #17324d;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.blog-3-2 .blog-3-2__footer-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.blog-3-2 .blog-3-2__footer h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #66849b;
+}
+
+.blog-3-2 .blog-3-2__references {
+    padding-left: 1.5rem;
+}
+
+.blog-3-2 .blog-3-2__references li {
+    color: #edf4f8;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+    padding-left: 0.25rem;
+    overflow-wrap: anywhere;
+}
+
+.blog-3-2 .blog-3-2__references a {
+    color: #b8e4dc;
+    overflow-wrap: anywhere;
+}
+
+.blog-3-2 .blog-3-2__references a:hover,
+.blog-3-2 .blog-3-2__references a:focus {
+    color: #ffffff;
+}
+
+.blog-3-2 .blog-3-2__copyright {
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-top: 1px solid #66849b;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* Tablet layout */
+@media (max-width: 800px) {
+    .blog-3-2 .blog-3-2__header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-3-2 .blog-3-2__nav {
+        justify-content: flex-start;
+    }
+
+    .blog-3-2 .blog-3-2__columns {
+        gap: 1.25rem;
+    }
+
+    .blog-3-2 .blog-3-2__image-bar {
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .blog-3-2 .blog-3-2__columns {
+        flex-direction: column;
+    }
+
+    .blog-3-2 .blog-3-2__column {
+        width: 100%;
+    }
+
+    .blog-3-2 .blog-3-2__image-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-3-2 .blog-3-2__nav {
+        gap: 0.25rem;
+    }
+
+    .blog-3-2 .blog-3-2__nav a {
+        font-size: 0.8rem;
+        padding: 0.45rem;
+    }
+
+    .blog-3-2 .blog-3-2__hero {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .blog-3-2 *,
+    .blog-3-2 *::before,
+    .blog-3-2 *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
