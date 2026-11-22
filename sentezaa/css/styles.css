@@ -4,152 +4,191 @@
 
 /* Global Styles */
 html {
-    font-size: 16px;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  color: #1e293b;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #FFF;
-    margin: 1% auto;
-    width: 90%;
-    max-width: 57rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3;
+  background-color: #f8fafc;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 57rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/*Page Header */
+/* ========== PAGE HEADER ========== */
 .page-header {
-    margin-bottom: 2rem;
+  background-image: linear-gradient(rgba(14, 165, 233, 0.75), rgba(2, 132, 199, 0.85)),
+                    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.page-header h1 {
-    font-family: Oswald, sans-serif;
-    font-size: 3.5rem;
-    margin: 0;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 57rem;
+  margin: 0 auto;
 }
 
-/* Main Content Styles */
+.logo {
+  font-family: Oswald, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border: 2px solid #ffffff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: #f0f9ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #fde047; /* soft yellow hover for contrast */
+}
+
+/* ========== BLOG POST STRUCTURE ========== */
 main {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
-/* ==== Blog Post Structure ==== */
 .blog-post {
-    margin-bottom: 4rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 4rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #bae6fd;
 }
 
 .blog-post:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2rem;
+  border-bottom: none;
 }
 
-/* REQUIRED STYLES FOR MODULE 3.1 (and applied consistenlty) */
-
-/* Background color + contrasting font color + 16px padding on blog headings */
-.blog-heading,
-.blog-heading h2 {
-    background-color: #4a5568;
-    color: #ffffff;
-    padding: 16px;
-    margin: 0 0 1.5rem 0;
-    font-family: Oswald, sans-serif;
+/* Blog Heading - Sky Blue */
+.blog-heading {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  font-family: Oswald, sans-serif;
 }
 
 .blog-heading h2 {
-    font-size: 1.75rem;
-    margin: 0;
-    background: none;         /* prevent double background */
-    padding: 0;                
-    color: inherit;
+  font-size: 1.75rem;
+  margin: 0;
+  color: inherit;
 }
 
-/*2. Pagging top/bottom 0 + left/right 16px on content (except the heading) */
-.blog-post >h3,
-.blog-post >p,
-.blog-post >ul,
-.blog-post >ol,
-.blog-post >figure {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
-
+/* Content spacing */
+.blog-post > h3,
+.blog-post > p,
+.blog-post > ul,
+.blog-post > ol,
+.blog-post > figure {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* 3. Responsive images - width 100% + max-width 480px */
+/* Two-column layout */
+.two-column {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.two-column .column {
+  flex: 1;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  background-color: #e0f2fe;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.image-grid figure {
+  margin: 0;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.image-grid figcaption {
+  font-size: 0.8rem;
+  color: #0369a1;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* General image styling */
 img {
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    display: block;
-    margin: 1.25rem 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* 4. Font weight 300 + font-size 14px for paragraphs, lists, and figcaptions */
-p,
-ul,
-ol,
-figcaption {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.55;
-}
-
-/* Supporting Styles */
+/* Typography */
 h3 {
-    font-family: Oswald, sans-serif;
-    font-size: 1.4rem;
-    margin: 1.75rem 0 0.6rem 0;
-    color: #2d3748;
+  font-family: Oswald, sans-serif;
+  font-size: 1.35rem;
+  margin: 1.75rem 0 0.6rem 0;
+  color: #0c4a6e;
 }
 
-ul, ol {
-    margin: 0.75rem 0 1.25rem 0;
-    padding-left: 1.75rem;
+p, ul, ol, figcaption {
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-li {
-    margin-bottom: 0.4rem;
-}
-
-figure {
-    margin: 1.5rem 0;
-}
-
-figcaption {
-    margin-top: 0.4rem;
-    color: #718096;
-    font-style:italic;
-}
-
-/* Article footers (Sources) */
+/* Article Footer */
 .article-footer {
-    margin-top: 2.5rem;
-    padding: 1.25rem 1rem 0 1rem;
-    border-top: 1px solid #e2e8f0;
+  margin-top: 2.5rem;
+  padding: 1.25rem 1rem 0 1rem;
+  border-top: 1px solid #bae6fd;
 }
 
 .article-footer h3 {
-    font-size: 1.15rem;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-.article-footer ol {
-     padding-left: 1.25rem;
-     font-size: 0.875rem;
+  font-size: 1.15rem;
+  margin-top: 0;
+  color: #0369a1;
 }
 
 /* Page Footer */
 .page-footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
-    border-top: 1px solid #e2e8f0;
-    font-size: 0.875rem;
-    color: #718096;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #bae6fd;
+  font-size: 0.875rem;
+  color: #0369a1;
 }
