@@ -52,3 +52,127 @@ ol {
     font-size:.875rem;
 
 }
+
+/* 1. Blog Headings */
+article h2 {
+    background-color: #011f4b;
+    color: #f8f8f8;
+    padding: 1rem; /* 16px */
+}
+
+/* 2. Content Padding (Excluding Headings) */
+article p, article ul, article figure {
+    padding: 0 1rem; /* 0 top/bottom, 16px left/right */
+}
+
+/* 3. Responsive Images */
+article img {
+    width: 100%;
+    max-width: 30rem; /* 480px */
+    height: auto;
+}
+
+/* 4. Font Styling for Content */
+article p, article ul, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem; /* 14px */
+}
+/* =========================================
+   Module 3.2 Layout & Styling
+   ========================================= */
+
+/* 1. Page Header with Background Image & 16px (1rem) Padding */
+.page-header {
+    background-image: linear-gradient(rgba(1, 31, 75, 0.75), rgba(1, 31, 75, 0.75)), url('../images/deng-xiang--WXQm_NTK0U-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem; /* 16px in rem units */
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 2. Logo & Flexbox Navigation Menu */
+.logo {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f8f8f8;
+    letter-spacing: 0.05rem;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.main-nav a:hover {
+    background-color: #f8f8f8;
+    color: #011f4b;
+}
+
+/* 3. Flexbox Two-Column Content Layout */
+.two-columns {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.two-columns .column {
+    flex: 1;
+}
+
+/* 4. CSS Grid 3-Image Bar with Contrasting Background */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    background-color: #011f4b;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.image-grid figure {
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: none;
+    height: 12rem;
+    object-fit: cover;
+    display: block;
+}
+
+.image-grid figcaption {
+    color: #f8f8f8;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Stack columns and grid on small screens */
+@media (max-width: 700px) {
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
