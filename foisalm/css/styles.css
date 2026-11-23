@@ -1,8 +1,13 @@
+
 /* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Styles */
+
+/* =================================
+   GLOBAL STYLES - ALL BLOG POSTS
+ */
+
 html {
     font-size: 16px;
     color: #333;
@@ -21,34 +26,129 @@ body {
 }
 
 main {
-
-    margin-bottom:3rem;
-
+    margin-bottom: 3rem;
 }
 
 h1 {
-
-font-family: Oswald, sans-serif;
-font-size:4rem;
-
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
 }
 
 h2 {
-
     font-family: Oswald, sans-serif;
-    font-size:2rem;
-
+    font-size: 2rem;
 }
+
 h3 {
-    font-size:1.5rem;
-    margin-bottom:.5rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 ol {
-
-    margin-top:0;
-    padding-left:0;
+    margin-top: 0;
+    padding-left: 0;
     list-style-type: none;
-    font-size:.875rem;
+    font-size: .875rem;
+}
 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 
+   MODULE 3.1 - UX BLOG POST
+ */
+
+/* Blog heading */
+.blog-post .blog-heading {
+    background-color: #17365D;
+    color: #FFFFFF;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.blog-post .blog-heading h1 {
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.blog-post .blog-heading p {
+    color: #FFFFFF;
+}
+
+
+.blog-post > section,
+.blog-post > footer {
+    padding: 0 1rem;
+}
+
+.blog-post > section h2,
+.blog-post > footer h2 {
+    color: #17365D;
+    margin-top: 1.5rem;
+}
+
+
+.blog-post p,
+.blog-post li,
+.blog-post figcaption {
+    font-weight: 300;
+    font-size: .875rem;
+}
+
+/* Lists */
+.blog-post ul,
+.blog-post ol {
+    padding-left: 1.5rem;
+}
+
+
+.blog-post img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+
+.blog-post figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.blog-post figcaption {
+    color: #666;
+    margin-top: .5rem;
+}
+
+
+.blog-post .references {
+    margin-top: 2rem;
+    border-top: 1px solid #CCC;
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .blog-post {
+        margin: 1rem auto;
+    }
+
+    .blog-post .blog-heading {
+        padding: 1rem;
+    }
 }
