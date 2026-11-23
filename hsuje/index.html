@@ -8,9 +8,19 @@
    </head>
    <body>
 <!-- Page Header  -->
-      <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
+    <header class="page-header">
+  <div class="logo">Jenny Hsu</div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 <!-- Main Content Area  -->
       <main>
          <!-- Module 1.1 Blog Post Starts Here-->
@@ -264,14 +274,83 @@
                   <li>Jung, J. (2025). I belong here, I will not intrude: Visual rhetoric in AI interface design and user experience. <em>M/C Journal</em>, 28(5).</li>
                   <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products & services</em>. O'Reilly Media.</li>
                </ol>
-         </footer>
+            </footer>
+      </article>
 
-         <!-- Module 3.2 Blog Post Starts here -->
+        <!-- Module 3.2 Blog Post Starts here -->
+        <article class="module-3-2">
+          <header class="article-header">
+            <h2>Module 3.2 Blog Post</h2>
+          </header>
+          <h1>The Hidden World Beneath Our Fingertips</h1>
 
-      </main>
-<!-- Page Footer  -->
-      <footer class="page-footer">
-       <p>Copyright &copy; 2025</p>
-      </footer>
-   </body>
-</html>
+          <p>Think about what happens when someone taps a button on a phone to send a text or buy groceries. If the screen reacts instantly, they probably do not think about it. They just move on with their day. If the app freezes or nothing happens for a few seconds, they get annoyed right away. They might wonder if the tap worked or if they should tap it again.</p>
+          <p>For a long time, many people thought app design was mostly about colors, fonts, and logos. However, interaction design is really about understanding how the human mind works (Johnson, 2020). Every fraction of a second a person waits for a page to load matters. Every movement a thumb makes to reach a button matters. The feelings people experience after closing an app also tie back to human biology and psychology (Yablonski, 2024).</p>
+          <p>Digital screens now guide much of our daily lives. People use them to organize their schedules, communicate, and learn new skills. Good apps feel like helpful tools that work with our hands and minds. Poorly built apps leave users feeling tired and stressed. Worse yet, some companies use psychology to keep eyes on screens for ad money, which takes away freedom of choice (Ahuja & Kumar, 2022). Timing, motion, physical design, and ethics all shape how people experience digital tools.</p>
+
+          <h2>Speed and Timing</h2>
+          <p>When programmers talk about performance, they usually mean how fast a computer chip processes data (Johnson, 2020). Everyday users do not care how hard the computer works behind the scenes. They only care about responsiveness and if the screen reacts immediately or has delays. Human brains evolved to interact with the physical world. If someone pushes a door, it moves. If they drop a stone, it falls. Software should follow human time limits to feel natural.</p>
+          <p>The most important time limit is one-tenth of a second, or 100 milliseconds (Johnson, 2020). This is the brain's window for cause and effect. If a user taps an icon and sees a reaction within 0.1 seconds, their brain feels like they physically moved it. The app feels solid and responsive. If the reaction takes 140 milliseconds or more, that feeling breaks. The brain notices the delay.</p>
+          <p>This type of delay happens when shopping on Amazon. Sometimes a shopper clicks the "Add to Cart" button and nothing happens. Usually, the number on the cart icon goes up at once. When that number stays the same, the user assumes the click did not work. They press the button again. If the icon still shows no response, they keep pressing until they see a higher total. Even though the icon lagged, the system recorded every press. That delay creates doubt and leads to accidental duplicate orders (Johnson, 2020).</p>
+          <p>Timing also affects the ability to stay focused. Psychologists call deep focus a state of flow (Yablonski, 2024). In 1982, IBM researchers Walter J. Doherty and Arvind J. Thadani studied how computer speed affects human focus. They found that slow responses made workers bored and distracted. When computer response times dropped below 400 milliseconds, or almost half a second, productivity increased sharply. This finding is called the Doherty Threshold. It states that productivity rises when a computer and a user interact at a pace where neither waits on the other.</p>
+          <p>If a delay lasts more than one second, users start to lose their train of thought (Johnson, 2020). If an app makes people wait ten seconds with no feedback, their brains drop the task completely. Then, they have to restart their mental process when the screen finally loads. Where a delay happens also matters. A freeze in the middle of typing a sentence feels frustrating. A short pause right after clicking "Save" feels fine because the task is already finished (Johnson, 2020).</p>
+          <p>Phones and computers talk to servers far away, so screens cannot always load in under 400 milliseconds. Good apps use visual tricks to make waiting feel shorter (Yablonski, 2024). Skeleton screens show gray placeholder boxes where text and photos will appear. This signals that the page is loading and keeps the layout from jumping around. Blur-up loading shows a blurry photo first and sharpens it a second later. Human eyes recognize basic shapes instantly, which keeps users engaged while the full image downloads. Optimistic UI shows success right away, such as turning a "Like" heart red the instant someone taps it, while the server finishes the work in the background.</p>
+
+          <!-- 3-Image CSS Grid Bar -->
+          <div class="image-grid">
+            <figure>
+              <img src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Close-up of software code on a dark screen">
+              <figcaption>Photo by Florian Olivo on Unsplash</figcaption>
+            </figure>
+            <figure>
+              <img src="images/hugo-rocha-qFpnvZ_j9HU-unsplash.jpg" alt="Colorful sticky notes mapping out a user experience workflow on a wall">
+              <figcaption>Photo by Hugo Rocha on Unsplash</figcaption>
+            </figure>
+            <figure>
+              <img src="images/akshar-dave-sgNc8aY6Z7E-unsplash.jpg" alt="A hand and thumb interacting with a glowing smartphone screen in the dark">
+              <figcaption>Photo by Akshar Dave on Unsplash</figcaption>
+            </figure>
+          </div>
+
+          <div class="two-columns">
+            <div class="column">
+              <h2>Motion and Animation</h2>
+              <p>Motion in an app is not just for looks. It helps communicate with human vision (Johnson, 2020). The center of the eye reads fine print and small details. Peripheral vision is built to notice movement. Good interfaces use movement to guide the eyes and keep users calm (Yablonski, 2024).</p>
+              <p>If a download takes more than a second, a frozen icon leaves users guessing. It is hard to tell if the app is working or crashed (Johnson, 2020). Animated spinners and progress bars solve this problem. Steady movement reassures the brain that the system is still active. Research shows that watching a progress bar makes the wait feel shorter (Yablonski, 2024). The best progress bars show how much work is left and move at a steady pace.</p>
+              <p>Movement also helps people keep track of where things go on a screen (Johnson, 2020). When a user minimizes a window on a computer, it shrinks down toward the taskbar at the bottom. That quick motion shows where the window went so the user knows where to click to open it again. Without that movement, the window would just vanish, and the user might wonder if it closed by mistake. Subtle motion also helps with errors. When someone types the wrong password on an Apple device, the box shakes gently from side to side. Peripheral vision catches that motion right away without needing a harsh pop-up box. Animations should stay brief and last around 0.25 to 0.5 seconds. Long, flashy animations quickly become annoying.</p>
+            </div>
+
+            <div class="column">
+              <h2>Hand and Eye Coordination</h2>
+              <p>People do not move their hands with robot precision. Fingers slip, hands get tired, and people often use their phones while walking (Johnson, 2020). Good design plans for these real-world limits. Fitts's Law states that a larger and closer target is faster and easier to hit. When people reach for a button, their hand makes a quick move toward the general area. Then they slow down to land right on the target. Tiny buttons in far corners force users to slow down and aim carefully. Good apps make buttons large enough for thumbs and make text labels next to checkboxes clickable. On desktop screens, buttons placed at the very edge or corner are easy to hit because the screen border stops the mouse pointer.</p>
+              <p>A related rule is the Steering Law (Johnson, 2020). It explains what happens when someone guides a mouse through a narrow path. Older websites often use layered drop-down menus. Users have to hover over one word and carefully slide the mouse into a small side list. If their hand moves slightly outside that narrow path, the whole menu closes. Modern sites avoid these traps by using wide menus and simple clickable boxes.</p>
+              <p>Designers also separate human errors into mistakes and slips (Johnson, 2020). A mistake happens in the mind when someone forms the wrong plan due to confusing information. A slip happens in the hands when someone knows what they want to do, but their finger misses or their attention lapses. Good software prevents slips by using tools like calendar date-pickers instead of typed dates. It also stays forgiving by offering an Undo button and a temporary Trash folder.</p>
+              <p>Confusing workflows can cause frustration even when the buttons are large. This happens on the Five Below website. When shoppers browse items, there is a clear "Add to Cart" button. Based on how almost every other shopping site works, users expect that clicking it will put the item in their cart. Instead, a side screen pops open and asks them to choose pickup or shipping. They then have to click Add to Cart a second time. If a shopper closes that side screen, nothing gets added. Breaking that basic expectation makes a simple task feel clunky and pointless.</p>
+            </div>
+          </div>
+
+          <h2>When Persuasion Becomes Manipulation</h2>
+          <p>The same psychology that makes apps easy to use can also be used to manipulate people (Ahuja & Kumar, 2022). Many companies measure success by how much time people spend on the site and how many visit each day. The longer people stay on the screen, the more ads companies can show them.</p>
+          <p>Social media apps borrow a trick from casino slot machines called intermittent variable rewards (Yablonski, 2024). This means people receive a reward at random times instead of every time they try. Pulling down to refresh a feed works like pulling a slot machine lever. Users never know if they will see new likes, an interesting post, or nothing at all. That unpredictability trains people to check their phones over and over. Features like infinite scroll and video autoplay also remove natural stopping points. A book gives readers the end of a chapter so they can pause and decide whether to stop. Infinite scroll keeps loading new content so people stay hooked. Research shows that having a smartphone on a desk can reduce available brainpower. Heavy screen time is also linked to higher loneliness and depression.</p>
+          <p>Context matters when it comes to stopping points. On social media, a pause can help protect a person's time. On a shopping website, the goal is different. Some shopping sites appear to use infinite scroll. However, they stop after a few rows and make shoppers click a "Load More" button. For shoppers who are actively browsing for a product, stopping to click that button can break their focus and feel annoying. When a page is already set up for continuous scrolling, many users expect the next items to load on their own. This shows why designers need to think about user intent instead of applying one rule to every situation.</p>
+          <p>When design tricks become deliberately dishonest, they are called dark patterns (Ahuja & Kumar, 2022). A review of 151 dark patterns found that these designs harm user autonomy in four main areas (Ahuja & Kumar, 2022). They reduce agency by pushing people into choices they did not intend, such as pop-ups that guilt shoppers into signing up for discounts. They limit freedom of choice by making it easy to subscribe but hard to cancel. They take away control by using pre-checked boxes or confusing wording to collect personal data. They also harm independence by using fake urgency and constant alerts to keep users coming back.</p>
+          <p>Educating designers and passing laws can help reduce these tricks, but dark patterns change quickly (Lu et al., 2024). Research shows that simply knowing a trick exists is often not enough to stop it from working. People also need practical ways to protect themselves while browsing. Giving users options to hide distractions, remove fake urgency, or adjust how a page behaves helps them regain control. Because everyone has different goals, people should be able to change these settings based on what they need in the moment.</p>
+          <p>Ethical designers also know that faster is not always better (Yablonski, 2024). Pointless extra steps only waste time. However, risky actions need helpful friction. Helpful friction is an intentional extra step that slows users down on purpose. Deleting a whole photo library or sending a large bank transfer should not happen in one quick tap. Adding a confirmation screen or asking users to type "Delete" forces them to pause and double-check their choice. This small delay protects people from serious errors.</p>
+
+          <h2>How We Remember Experiences</h2>
+          <p>People do not remember an experience by averaging every minute. Daniel Kahneman discovered the Peak-End Rule in 1993 (Yablonski, 2024). It states that people judge an experience mainly by its most intense moment and how it ended. Humans also have a negativity bias (Yablonski, 2024). This means people remember frustrating moments more clearly than smooth ones. Imagine someone spends twenty minutes filling out a long online form. If the page crashes when they click Submit, that single failure ruins the whole experience. They will remember that frustration long after they close the browser.</p>
+          <p>Designers can use this rule to build better software (Yablonski, 2024). They can fix pain points before they become big problems. For example, a form can check for errors while a person is still typing instead of waiting until they hit "Submit." It can show green checkmarks as users enter a valid email address or phone number. Designers can also create a clear and helpful ending. A simple confirmation screen after booking an appointment leaves a good final impression. A helpful error page that guides users back on track does the same.</p>
+
+          <h2>Respecting Human Limits</h2>
+          <p>Good interaction design is not about trapping attention or pushing ads (Ahuja & Kumar, 2022). It is about respecting human limits. Good apps respond quickly and use clear motion (Johnson, 2020). They also forgive normal hand slips and protect user choice (Lu et al., 2024). When digital tools follow these rules, technology works the way it should (Yablonski, 2024). People can finish their tasks with confidence, close their screens, and get back to real life.</p>
+
+          <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+              <li>Ahuja, S., & Kumar, J. (2022). Conceptualizations of user autonomy within the normative evaluation of dark patterns. <em>Ethics and Information Technology</em>, 24(4). https://doi.org/10.1007/s10676-022-09672-9</li>
+              <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+              <li>Lu, Y., Zhang, C., Yang, Y., Yao, Y., & Li, T. J.-J. (2024). From awareness to action: Exploring end-user empowerment interventions for dark patterns in UX. <em>Proceedings of the ACM on Human-Computer Interaction</em>, 8(CSCW1), 1–41. https://doi.org/10.1145/3637336</li>
+              <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products & services</em>. O'Reilly Media.</li>
+            </ol>
+          </footer>
+        </article>
