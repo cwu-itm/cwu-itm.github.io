@@ -52,3 +52,178 @@ ol {
     font-size:.875rem;
 
 }
+body {
+    background-color: #171C26;
+    color: #E6EAF0;
+}
+
+/* Main blog headings */
+h2,
+h3 {
+    background-color: #24344D;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+/* Blog content spacing */
+p,
+ul,
+ol,
+figure {
+    padding: 0 1rem;
+}
+
+/* Responsive images */
+img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+/* Paragraphs, lists, and captions */
+p,
+li,
+figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* Links */
+a {
+    color: #8DB4DD;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+
+/* Blog content spacing */
+p,
+ul,
+ol,
+figure {
+    padding: 0 1rem;
+}
+
+/* Responsive images */
+img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+/* Paragraphs, lists, and captions */
+p,
+li,
+figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* Links */
+a {
+    color: #8DB4DD;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Main page header */
+header {
+    background-image: url("../images/header-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 16px;
+    color: #FFFFFF;
+}
+
+/* Navigation menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #243447;
+}
+
+/* Website logo */
+nav .logo {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #8DB4DD;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Two-column content layout */
+.content-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.content-container .column {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Three-image grid */
+.image-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #243447;
+}
+
+.image-bar img {
+    width: 100%;
+    max-width: none;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-bar {
+        grid-template-columns: 1fr;
+    }
+}
