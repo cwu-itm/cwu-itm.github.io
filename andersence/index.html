@@ -9,10 +9,19 @@
    <body>
 <!-- Page Header  -->
       <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
+    <div class="logo">Cecelia Andersen</div>
+    <nav class="header-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Projects</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 <!-- Main Content Area  -->
-      <main>
+    <div class="blog-columns">
+    <main>
          <!-- Module 1.1 Blog Post Starts Here-->
          <article>
             <header class="article-header">
@@ -143,9 +152,93 @@
          <!-- Module 3.1 Blog Post Starts here -->
 
          <!-- Module 3.2 Blog Post Starts here -->
+          <article>
+            <header class="article-header">
+            <h2>Interaction That Matters</h2>   
+            </header>
+               <h3>Introduction</h3>
+               <p>In today’s world, almost all of us interact with some form of digital system daily. Students use interfaces to complete assignments, people scroll through their social media feeds, people shop online, etc. Most of the time, using these systems is mindless. The average user isn’t thinking about how things are designed, until an issue arises. When things don’t work as expected, even small things like loading speed, we become much more aware of the interface we are using and how it was set up.</p>
+               <p>UX design goes beyond creating an aesthetically pleasing application. It is about creating a system that responds properly to the user’s actions. Designers must consider how quickly the system provides feedback, how it handles mistakes, so on and so forth. The interactions that happen (particularly the unfavorable ones) when we use a system stick with us, further indicating the importance of psychological principles behind UX design.</p>
+               <p>To design a good user experience, is to understand how people think, what their expectations are, and how the choices in design will influence their behavior. However, with that in mind, there are ethical questions to be raised about the responsibility designers have for the people using their products.</p>
+               <div class="image-grid">
+               <img src="images/error.jpg" alt="Computer error screen">
+               <img src="images/brain.jpg" alt="Human brain illustration">
+               <img src="images/working.jpg" alt="Person working at a computer">
+               </div>       
+<p class="image-credits">
+    Image credits:
+    <a href="https://unsplash.com/photos/ii6BOPjAtVY">Brain</a>
+    by Shawn Day;
+    <a href="https://unsplash.com/photos/vCO1Frox2j4">Computer error</a>
+    by Joshua Hoehne;
+    <a href="https://unsplash.com/photos/ghVMdPN33vM">Working at a laptop</a>
+    by Microsoft Copilot.
+    All images used under the
+    <a href="https://unsplash.com/license">Unsplash License</a>.
+</p>
+               <h3>Responsiveness</h3>
+               <p>One of the most basic but important aspects of interacting with a digital system is its responsiveness. Users need to know that the system is responding to the action they are taking. Something we have all probably experienced at one time or another is using a website, clicking a button, and having nothing happen. No indication that something is loading, no error display, no confirmation that things are working. When things like that happen, it doesn’t take long for the user to wonder whether the website froze, if they need to refresh it and potentially resubmit a completed form, etc. This is obviously inconvenient because the interaction takes longer to successfully complete. However, the bigger issue lies in the fact that the user doesn’t know what is actually happening.</p>
+               <p>The Doherty Threshold is the idea that a computer has about 400 milliseconds to respond to a user’s action before losing their attention/productivity (Yablonski, 2020). To clarify, the claim isn’t that every task must be completed within that timeframe. Rather, the system needs to promptly respond to an action so that the user knows something is happening.</p>
+               <p>Consider the loading indicators we’re familiar with when using apps or websites. If we click something and a loading icon appears, we know that the system is working to complete our intended task. Even if the processing speed is slower than ideal, the immediate acknowledgment from the system makes the experience feel more responsive for the user.</p>
+               <p>Johnson (2020) references the importance of response times, and how those times impact how humans interact with systems. People generally have expectations around response times for different tasks. Naturally, we expect a simple button click to produce an almost instant response, and we understand that more complex tasks like uploading large files can take a lot longer. In any case, progress indicators should be given to users, so they know what is going on. A system can feel slower than it is when users have no way of knowing what is going on in the background. The system could be processing information to complete their tasks, but if there’s no indication of it, the experience can feel frustrating and the interface can be seen as unreliable.</p>
+               <figure>
+               <img src="images/error.jpg" alt="Windows error screen displaying a restart message and progress percentage">
+               <figcaption>Example of system feedback during an error.</figcaption>
+               </figure>
+               <p>This is where animation and motion come into play. Including these elements in your design isn’t always about visual appeal. These features have a practical purpose; they can communicate changes, guide attention, and provide valuable information so the user understands what is happening systemically. An example of this could be a button that changes into a different color after being clicked, which would give visual confirmation to the user that the system picked up on that interaction.</p>
+               <p>It is important to note, however, that animation has its limits as well; it can be excessive. If overused, it could slow down the experience instead of improving it. While it may be tempting to add transitions and effects for visual appeal, the priority is making the interface intuitive, not just fun to look at.</p>
+               <h3>Learning & Memory</h3>
+               <p>A study published by The Journal of Neuroscience examined the effect of immediate vs. delayed feedback on human learning and found that different brain systems were activated depending on when feedback was provided (Foerde & Shohamy, 2011). The two main areas of the brain involved in the study were the striatum and hippocampus. The Striatum is mostly concerned with things like movement, forming habits, and motivation. The Hippocampus is primarily responsible for forming and storing memories. The researchers found a strong correlation between immediate feedback and striatum activity. Similarly, Hippocampus activity was associated with delayed feedback.</p>             
+               <figure>
+               <img src="images/brain.jpg" alt="Illustration of the human brain">
+               <figcaption>Brain structures involved in learning and memory.</figcaption>
+               </figure>
+               <p>One of the reasons I found this study interesting is that the findings challenge the notion that quicker=better. Although most immediate feedback is what most people prefer when using digital systems, it is not necessarily optimal in terms of processing and remembering information. An experiment within this study revealed that participants remembered images connected with a  delayed feedback experience, where their peers were less successful remembering the same images associated with an immediate feedback experience.</p>
+               <p>Now, this doesn’t mean that a longer wait time will make the user experience better; we have to consider the context. Waiting a long time for a webpage to respond and taking time to process new information are clearly different. If I were to submit an assignment online, for example, I would want the immediate feedback that my submission went through. On the contrary, if I were taking a practice exam, I would probably prefer delayed feedback. If I received immediate feedback indicating whether each answer is right/wrong, I wouldn’t have to rely on my knowledge as much to work through all the questions. Delaying the feedback until the questions are completed would allow me to complete the exam independently before reviewing my performance. I would have the opportunity to go back, compare any incorrect answers with the correct ones, and evaluate my thought process and where it went wrong.</p>
+               <p>This goes to show that there is a time and place for both immediate and delayed feedback, and it all depends on what the user is trying to do. Immediate feedback is important in letting users know a system is responding, but delayed feedback can prove valuable when it comes to learning and remembering  information.</p>
+               <h3>What We Remember Most</h3>
+               <p>Certain interactions stand out more than others when using digital systems, especially those that go almost perfect or very poorly. The Peak-End Rule tells us people judge their experiences based on their most emotionally intense moments and how the experience ended (Yablonski, 2020).</p>
+               <p>Take online shopping for example. The website might be easy to navigate, and everything can function seemingly well. If you got to the checkout page and repeatedly received error messages with no explanation, the experience and memory will most likely be tainted, even if the error gets resolved. Despite most of the experience going smoothly, the frustration derived from the errors would stick with a lot of people. They may not want to use the website again, or as often. On the other hand, a user who experiences an issue like this and is provided with a clear explanation as to what’s wrong and how to fix it, would more likely leave the scenario with a positive memory. Instead of remembering the error itself, they’d likely remember that it was easy to resolve.</p>
+               <p>Sometimes, errors are unavoidable. It isn’t realistic to expect an interface to never present problems or mistakes. This is why error handling is a critical part of UX design; errors will occur but what matters is how the system responds to them. Ideally an interface should help its users understand problems and what they need to do to resolve them. Vague “Something went wrong, please try again later” messages don’t really accomplish anything; users want to know what they need to do next.</p>
+               <p>The Peak-End rule reminds us of how important the final moments of interactions can be. Small details can influence how users walk away feeling, which affects how they remember the experience and therefore how they choose to (or not) interact with the platform going forward. A small personal example I can think of is when I submit an assignment on canvas and confetti gets displayed as it indicates successful submission. This leaves me with a satisfied feeling and reinforces the behavior of making sure I get things turned in on time.</p>
+               <h3>Preventing Mistakes</h3>
+               <figure>
+               <img src="images/working.jpg" alt="Person working at a computer">
+               <figcaption>Everyday digital interactions involve opportunities for human error.</figcaption>
+               </figure>
+               <p>UX design recognizes that making mistakes is an inevitable part of human behavior. It doesn’t matter how well they understand the system, mistakes will be made, big and small. Johnson (2020) talks about human errors and their various forms; a very common one being “slips”. A slip is when someone means to do or say one thing, but accidentally does something else. People get distracted, forget what they’re doing, select the wrong button, etc. Someone might mean to click the save button, which might be close to the delete button, so they click that instead. In this example, the mistake could’ve been preventing by putting the delete button further away from the save button, or making it look more distinct. Fitts’ Law reminds us that the size and distance of a target impact how easily it is to be selected (Yablonski, 2020).</p>
+               <p>To reiterate, it is virtually impossible for all mistakes to be prevented. Thus, designers should prioritize error recovery in their designs. Programs like Microsoft Word or Google Docs provide users with the Undo feature, making it easy to reverse an action. By the same token, many applications display confirmation windows before completing certain actions like permanently deleting files or allowing those files to be recoverable for a certain amount of time.</p>
+               <p>The relationship between error prevention and responsiveness is something to note. As previously mentioned, the user experience can be improved when delays are minimized. However, sometimes adding extra steps like the example of confirmation windows can improve the user experience who might be taking a risk when completing an action. Requiring someone to confirm whether they want to permanently delete something makes the process take longer, but that gives them time to ensure they are making the right decision.</p>
+               <h3>Convenience and Manipulation</h3>
+               <p>The same psychological principles that UX designers leverage can be used to influence people in ways that aren’t in their best interests, which is where ethics come into play. Interfaces designed to keep users engaged and encourage certain behaviors can easily become manipulative if the primary goal is benefitting the company. One of the first platforms that comes to mind when I think about this is Tiktok. It is very convenient that users don’t have to manually request content or visit people’s pages. The platform is constantly pushing new, curated content to the users as they scroll.</p>
+               <p>This is great from a usability standpoint. People on the platform can effortlessly find interesting things to watch. The fact that it is so convenient is what makes it problematic for many users. There isn’t really a stopping point, so users can find themselves scrolling much longer than they originally intended. As someone who uses this platform, I struggle with this almost daily. I have noticed that recent updates display screentime warnings and wellness suggestions after spending a certain amount of time scrolling, which helps mitigate the issue a bit, and I appreciate the feature. Ironically enough, however, I get really frustrated when I’m wanting to keep scrolling, or I’m in the middle of watching a video and I’m interrupted by this update. I would argue that this new update makes my experience worse as a user, but ultimately, I know it is for my benefit. It goes to show you that UX design is complex and nuanced. Like the example of multiple confirmation messages displaying when trying to permanently delete files, it can create a bit of inconvenience for the user, but it is put in place to help them.</p>
+               <p>Yablonski (2020) explains that designers should be responsible with how they try to influence user behavior. What is interesting to consider is how much responsibility they have. According to The Stanford Behavior Design Lab (n.d.), persuasive technology should be used ethically and considerate of the people it aims to influence. Two of the apps on my phone I frequently receive notifications from are Shein (a online store) and MyFitnessPal (a fitness/food tracking app). One of these apps sends me notifications throughout the day reminding me to purchase the items in my shopping cart, that there’s a flash sale on items I saved, etc. The other app sends me notifications throughout the day reminding me to drink water, to do my daily exercise, and log my food.  These examples illustrate the difference between encouraging a user to make decisions that benefit them vs taking advantage of their habits. The fitness app reminding me to stay consistent with my goals is different from being pressured to make a purchase.</p>
+               <p>What benefits the user won’t always benefit the company, and vice versa. Going back to the TikTok example, the company would probably benefit more from allowing people to endlessly scroll. Encouraging users to take breaks or reminding them how long they’ve been scrolling could mean people spend less time on the app. Overall, ethical UX design requires balance. The experience should be enjoyable for the user while giving them the opportunity to make decisions that are best for them.</p>
+               <h3>Final Thoughts</h3>
+               <p>Studying concepts like the Peak-End rule and Doherty Threshold have helped me understand that good UX design extends beyond easy navigation and visual appeal. The way the system responds to actions, handles mistakes and influences user behavior plays a big role in how the user experiences using a platform and what sticks with them when they’re done. One of my biggest takeaways is that speed and convenience are not always better. Sometimes things that feel inconvenient are done for the user’s benefit. To be a good UX designer, one must understand user behavior and leverage that knowledge to create functional interfaces that people enjoy using, while still being considerate of the users and their respective needs.</p>
+               <footer class="article-footer">
+               <h3>Sources</h3>
+               <ol>
+               <li>Foerde, K., &amp; Shohamy, D. (2011). Feedback timing modulates brain systems for learning in humans. <em>The Journal of Neuroscience, 31</em>(37), 13157–13167. <a href="https://doi.org/10.1523/JNEUROSCI.2701-11.2011">https://doi.org/10.1523/JNEUROSCI.2701-11.2011</a></li>
+               <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+               <li>Stanford Behavior Design Lab. (n.d.). <em>The ethical use of persuasive technology.</em> <a href="https://behaviordesign.stanford.edu/ethical-use-persuasive-technology">https://behaviordesign.stanford.edu/ethical-use-persuasive-technology</a></li>
+               <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products &amp; services.</em> O'Reilly Media.</li>
+               </ol>
+               </footer>
+            </article>
 
-      </main>
-<!-- Page Footer  -->
+          </main>
+
+    <aside class="blog-sidebar">
+        <h2>About This Portfolio</h2>
+        <p>A collection of my coursework and projects exploring information technology, systems thinking, and user-centered design.</p>
+
+        <h3>Topics</h3>
+        <p>Systems Engineering | UX Design | Digital Environments</p>
+    </aside>
+</div>
+
+<!-- Page Footer -->
       <footer class="page-footer">
        <p>Copyright &copy; 2025</p>
       </footer>
