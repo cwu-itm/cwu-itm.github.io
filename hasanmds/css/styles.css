@@ -133,3 +133,217 @@ p, ul, ol, li, figcaption {
 }
 
 /* End of Module 3.1 Styling */
+
+/* ==================================
+   Module 3.2 - Interaction That Matters
+   ================================== */
+
+.m32-site-header {
+    background-color: #14263d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='300'%3E%3Crect width='800' height='300' fill='%2314263d'/%3E%3Ccircle cx='700' cy='30' r='180' fill='%23233f60'/%3E%3Ccircle cx='100' cy='290' r='150' fill='%231c3552'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.m32-header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.m32-logo {
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.m32-logo span {
+    font-size: 1.1rem;
+    color: #b9dcff;
+}
+
+.m32-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.m32-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+.m32-navigation a:hover,
+.m32-navigation a:focus-visible {
+    background-color: #ffffff;
+    color: #14263d;
+}
+
+.m32-navigation a:focus-visible {
+    outline: 3px solid #b9dcff;
+    outline-offset: 3px;
+}
+
+.module32 {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #263238;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    border: 1px solid #dce3eb;
+    border-radius: 8px;
+}
+
+.module32 h2 {
+    color: #14263d;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.module32 h3 {
+    color: #214f78;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.module32 p {
+    margin-bottom: 1rem;
+}
+
+.m32-author {
+    color: #546475;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #dce3eb;
+}
+
+.m32-intro {
+    margin-bottom: 2rem;
+}
+
+.m32-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.m32-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.m32-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background-color: #14263d;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.m32-image-grid figure {
+    margin: 0;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.m32-image-grid svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.m32-image-grid figcaption {
+    color: #374151;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding-top: 0.75rem;
+}
+
+.m32-reflection {
+    margin: 2rem 0;
+}
+
+.m32-references {
+    background-color: #edf2f7;
+    color: #263238;
+    padding: 1.5rem;
+    border-left: 4px solid #214f78;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+.m32-references p {
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    overflow-wrap: anywhere;
+}
+
+.module32 a {
+    color: #1559a0;
+    text-decoration: underline;
+}
+
+.module32 a:hover {
+    color: #14263d;
+}
+
+@media (max-width: 768px) {
+
+    .m32-columns {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .m32-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m32-header-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .module32 {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .module32 h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .module32 *,
+    .m32-site-header * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+/* End of Module 3.2 CSS */
