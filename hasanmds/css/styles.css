@@ -52,3 +52,84 @@ ol {
     font-size:.875rem;
 
 }
+
+/* Module 3.1 Blog Styling */
+
+.module31-blog {
+    margin: 2rem 0;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+.module31-heading {
+    background-color: #24577a;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.module31-content {
+    padding: 0 1rem;
+}
+
+.module31-content h3 {
+    color: #24577a;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+img,
+.module31-image {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+p, ul, ol, li, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.module31-content p {
+    margin-bottom: 1rem;
+}
+
+.module31-content figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.module31-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.module31-content figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #444444;
+}
+
+.module31-references {
+    border-top: 1px solid #cccccc;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.module31-references p {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+}
+
+.module31-references a {
+    color: #24577a;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+.module31-blog a:focus-visible {
+    outline: 2px solid #24577a;
+    outline-offset: 4px;
+}
+
+/* End of Module 3.1 Styling */
