@@ -8,9 +8,26 @@
    </head>
    <body>
 <!-- Page Header  -->
-      <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
+  
+<header class="m32-site-header">
+    <div class="m32-header-layout">
+
+        <h1 class="m32-logo">
+            SH<span> Digital Blog</span>
+        </h1>
+
+        <nav class="m32-navigation" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">UX Design</a>
+            <a href="#">Technology</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
 <!-- Main Content Area  -->
       <main>
          <!-- Module 1.1 Blog Post Starts Here-->
@@ -320,7 +337,1092 @@
 
          <!-- Module 3.1 Blog Post Starts here -->
 
+         
+<!-- Module 3.1 Blog Content -->
+
+<style>
+.module31-blog {
+    margin: 2rem 0;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+.module31-heading {
+    background-color: #24577a;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.module31-content {
+    padding: 0 1rem;
+}
+
+.module31-content h3 {
+    color: #24577a;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+img,
+.module31-image {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+p, ul, ol, li, figcaption {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.module31-content p {
+    margin-bottom: 1rem;
+}
+
+.module31-content figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.module31-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.module31-content figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #444444;
+}
+
+.module31-references {
+    border-top: 1px solid #cccccc;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.module31-references p {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+}
+
+.module31-references a {
+    color: #24577a;
+    text-decoration: underline;
+}
+
+.module31-blog a:focus-visible {
+    outline: 2px solid #24577a;
+    outline-offset: 4px;
+}
+</style>
+
+<article class="module31-blog">
+
+<h2 class="module31-heading">
+Designing for Flow: How Interface Design Shapes User Experience
+</h2>
+
+<div class="module31-content">
+
+<h3>Introduction</h3>
+
+<p>
+When people use a digital interface, they usually have a specific goal in mind. They may want to submit an assignment, purchase a product, send a message, or find information. Most users are not interested in understanding how the system was developed. Instead, they want to complete their tasks without unnecessary confusion or interruptions. This is where designing for flow becomes important. A well-designed interface helps users move naturally from one action to another while reducing frustration and maintaining their attention.
+</p>
+
+<p>
+Before studying user experience design, I mainly judged websites and applications based on their appearance and functionality. However, I have started to realize that even small design decisions can influence how users think, behave, and make decisions. The placement of a button, the organization of a navigation menu, and the wording of an error message can all affect the overall experience. In this blog, I explore how interface layout, control design, psychological principles, and accessibility contribute to a smoother digital experience.
+</p>
+
+<h3>Understanding Flow in Digital Interfaces</h3>
+
+<p>
+Flow in interface design describes how smoothly a person can progress through a digital task. When an interface supports flow, users spend less time figuring out what to do next and more time accomplishing their actual goals. A good example is an online shopping website that guides customers from selecting a product to reviewing their cart and completing payment.
+</p>
+
+<p>
+A poorly designed website may interrupt this process by introducing unnecessary registration requirements, confusing buttons, or unexpected navigation changes. Each interruption forces the user to stop and reconsider their next action. Although these problems may seem small individually, they can become significant when experienced repeatedly.
+</p>
+
+<p>
+Johnson (2020) connects interface design with human perception and cognitive psychology. This relationship is important because people have limitations in attention and memory. An interface should support these limitations rather than create additional mental effort. Designers should organize information around users' goals instead of expecting users to understand the technical structure behind a system.
+</p>
+
+<figure>
+
+<svg class="module31-image" viewBox="0 0 480 240" role="img" aria-label="Four stages of a smooth digital user journey">
+
+<rect width="480" height="240" rx="12" fill="#eef4fa"/>
+
+<text x="240" y="35" text-anchor="middle" font-size="19" font-weight="bold" fill="#18354c">A Smooth User Journey</text>
+
+<rect x="15" y="80" width="100" height="65" rx="8" fill="#24577a"/>
+<rect x="132" y="80" width="100" height="65" rx="8" fill="#24577a"/>
+<rect x="249" y="80" width="100" height="65" rx="8" fill="#24577a"/>
+<rect x="366" y="80" width="100" height="65" rx="8" fill="#23734d"/>
+
+<g fill="white" font-size="14" text-anchor="middle">
+<text x="65" y="118">Discover</text>
+<text x="182" y="118">Select</text>
+<text x="299" y="118">Review</text>
+<text x="416" y="118">Complete</text>
+</g>
+
+<g fill="#18354c" font-size="20" text-anchor="middle">
+<text x="123" y="119">→</text>
+<text x="240" y="119">→</text>
+<text x="357" y="119">→</text>
+</g>
+
+<text x="240" y="190" text-anchor="middle" font-size="14" fill="#18354c">Clear navigation reduces unnecessary interruptions.</text>
+
+</svg>
+
+<figcaption>
+Figure 1. A smooth digital user journey. Original illustrative diagram created for this blog with AI assistance.
+</figcaption>
+
+</figure>
+
+<h3>How Interface Layout Influences User Behavior</h3>
+
+<p>
+Interface layout determines how information and interactive elements are arranged on a screen. A clear layout helps users recognize important information, understand relationships between elements, and identify available actions. When headings, buttons, and navigation menus are organized consistently, users can develop expectations about how the system works.
+</p>
+
+<p>
+For example, an educational website should make assignments, grades, course materials, and submission options easy to locate. If these features are scattered across unrelated menus, students may spend more time searching for information than completing their academic work.
+</p>
+
+<p>
+Visual hierarchy is particularly important because not every element deserves the same level of attention. Headings should identify major sections, while buttons should indicate available actions. Spacing can separate unrelated information and connect related content. Johnson (2020) discusses how human perception influences the interpretation of visual information. Applying this understanding allows designers to create layouts that communicate meaning without requiring lengthy explanations.
+</p>
+
+<p>
+However, simplifying an interface does not necessarily mean removing as much information as possible. Some users need detailed instructions, especially when completing unfamiliar tasks. I believe the better approach is to present essential information first while keeping additional information available when needed. This creates a balance between simplicity and functionality.
+</p>
+
+<h3>Control Design and User Decisions</h3>
+
+<p>
+Interactive controls such as buttons, links, checkboxes, and input fields influence how users move through an interface. A control should communicate its purpose before the user interacts with it. For example, a button labeled Submit Assignment provides more useful information than a button labeled Continue when the action involves submitting academic work.
+</p>
+
+<p>
+Control placement also matters. When important buttons are located far away from related content, users may overlook them. Similarly, placing a destructive action directly beside a frequently used action can increase the possibility of accidental mistakes.
+</p>
+
+<p>
+Nielsen (1994) identifies principles such as error prevention, system feedback, and user control as important considerations in usability design. These principles can be applied to everyday interfaces by providing confirmation messages, clearly identifying available actions, and allowing users to recover from mistakes.
+</p>
+
+<p>
+In my opinion, good control design should reduce uncertainty rather than simply provide access to features. Users should understand what will happen when they select a button, whether their action was successful, and what options are available afterward. Clear controls create confidence and encourage users to continue interacting with a system.
+</p>
+
+<h3>The Aesthetic-Usability Effect</h3>
+
+<p>
+The aesthetic-usability effect explains how visually appealing interfaces can influence people's perceptions of usability. Yablonski (2024) discusses the tendency for users to perceive attractive designs as easier to use. Colors, typography, spacing, and visual consistency can contribute to a positive first impression.
+</p>
+
+<p>
+Consider two websites offering the same service. One uses inconsistent fonts, crowded text, and poorly aligned buttons. The other presents organized content, readable typography, and a consistent color scheme. Even before interacting with either website, users may feel more comfortable using the second option.
+</p>
+
+<p>
+Nevertheless, visual attractiveness cannot solve every usability problem. A website may look professional while containing confusing navigation, broken links, or inaccessible controls. In such cases, the attractive appearance may temporarily hide problems without addressing their underlying causes.
+</p>
+
+<p>
+I think designers should treat aesthetics as a way to support functionality rather than replace it. Visual design should communicate structure, establish trust, and make information easier to understand. A successful interface needs to look appropriate for its purpose while allowing people to accomplish their goals effectively.
+</p>
+
+<h3>The Von Restorff Effect</h3>
+
+<p>
+The Von Restorff effect, also known as the isolation effect, describes how distinctive elements are more likely to attract attention and be remembered than surrounding elements (Yablonski, 2024). In interface design, this principle can help users identify important controls and information.
+</p>
+
+<p>
+For example, an assignment submission page may contain several options, including viewing instructions, reviewing attached files, and submitting work. Giving the submission button a distinctive appearance helps communicate which action is most important at that stage of the process.
+</p>
+
+<figure>
+
+<svg class="module31-image" viewBox="0 0 480 250" role="img" aria-label="A distinctive primary action compared with ordinary buttons">
+
+<rect width="480" height="250" rx="12" fill="#eef4fa"/>
+
+<text x="240" y="32" text-anchor="middle" font-size="19" font-weight="bold" fill="#18354c">The Von Restorff Effect</text>
+
+<rect x="30" y="65" width="420" height="40" rx="7" fill="#d1dbe4"/>
+<rect x="30" y="118" width="420" height="40" rx="7" fill="#d1dbe4"/>
+<rect x="30" y="171" width="420" height="46" rx="7" fill="#24577a"/>
+
+<text x="240" y="91" font-size="16" text-anchor="middle" fill="#18354c">View Instructions</text>
+
+<text x="240" y="144" font-size="16" text-anchor="middle" fill="#18354c">Review Attachment</text>
+
+<text x="240" y="200" font-size="17" font-weight="bold" text-anchor="middle" fill="white">Submit Assignment</text>
+
+</svg>
+
+<figcaption>
+Figure 2. A distinctive primary button demonstrates the Von Restorff effect. Original illustrative diagram created for this blog with AI assistance.
+</figcaption>
+
+</figure>
+
+<p>
+However, this principle becomes less effective when every element is designed to stand out. If several buttons use bright colors, large fonts, and bold borders, users may struggle to determine which action deserves their attention. Emphasis works best when it is used selectively.
+</p>
+
+<p>
+There is also an ethical consideration. Designers should not use visual emphasis to pressure users into making decisions that benefit a business at the expense of the user. For example, emphasizing a paid subscription while making the cancellation option difficult to locate may manipulate behavior instead of improving the experience.
+</p>
+
+<p>
+For me, the most valuable lesson from this principle is that visual attention should be directed toward meaningful actions. The goal should be to help users make informed decisions rather than simply encourage them to click a particular button.
+</p>
+
+<h3>Postel's Law and Flexible Interaction</h3>
+
+<p>
+Postel's Law encourages flexibility when accepting user input while maintaining consistency in system behavior. Yablonski (2024) applies this idea to user experience design, where interfaces can accommodate reasonable differences in how people enter information.
+</p>
+
+<p>
+For instance, people may enter a telephone number using spaces, parentheses, or hyphens. A flexible form can recognize these different formats and convert them into a consistent format when appropriate. This prevents users from having to correct information that is already understandable.
+</p>
+
+<p>
+Another example involves searching for information. A search feature that recognizes minor spelling mistakes can help users find relevant results without requiring them to enter an exact phrase. This is especially useful when users are unfamiliar with technical terminology or are communicating in a second language.
+</p>
+
+<figure>
+
+<svg class="module31-image" viewBox="0 0 480 265" role="img" aria-label="Different valid phone number formats converted into one consistent format">
+
+<rect width="480" height="265" rx="12" fill="#eef4fa"/>
+
+<text x="240" y="30" text-anchor="middle" font-size="19" font-weight="bold" fill="#18354c">Postel's Law</text>
+
+<g fill="white" stroke="#7793a8">
+<rect x="90" y="48" width="300" height="35" rx="5"/>
+<rect x="90" y="91" width="300" height="35" rx="5"/>
+<rect x="90" y="134" width="300" height="35" rx="5"/>
+</g>
+
+<g text-anchor="middle" fill="#18354c" font-size="15">
+<text x="240" y="71">2065550100</text>
+<text x="240" y="114">206-555-0100</text>
+<text x="240" y="157">(206) 555-0100</text>
+<text x="240" y="190" font-size="20">↓</text>
+</g>
+
+<rect x="90" y="201" width="300" height="42" rx="7" fill="#23734d"/>
+
+<text x="240" y="227" text-anchor="middle" font-size="15" fill="white">Accepted: (206) 555-0100</text>
+
+</svg>
+
+<figcaption>
+Figure 3. Flexible input acceptance with consistent output. Original illustrative diagram created for this blog with AI assistance.
+</figcaption>
+
+</figure>
+
+<p>
+At the same time, flexibility should not mean accepting every possible input without validation. As an information technology student interested in cybersecurity, I recognize that input validation is necessary for protecting systems and maintaining reliable information. An application can accept different legitimate formats while rejecting invalid or potentially harmful input.
+</p>
+
+<p>
+This connection between usability and security is particularly interesting to me. Security controls should protect the system without introducing unnecessary barriers for legitimate users. A well-designed interface can provide helpful instructions when an input is rejected instead of displaying a vague error message.
+</p>
+
+<h3>Personal Experience with GitHub and Canvas</h3>
+
+<p>
+One experience that helped me understand interface logic involved using GitHub Desktop for academic assignments. As someone still developing experience with version control, I initially found several parts of the workflow confusing. Terms such as commit, branch, fetch origin, push origin, and pull request were not immediately familiar to me.
+</p>
+
+<p>
+The challenge was not necessarily that GitHub Desktop lacked functionality. Rather, I needed to understand the relationship between its controls and the overall assignment submission process. Saving an HTML file in Visual Studio Code did not automatically mean that the changes had been uploaded to GitHub. Similarly, committing changes was different from submitting a pull request for instructor review.
+</p>
+
+<p>
+During previous assignments, I also experienced uncertainty when multiple blog updates appeared within the same pull request. This made me question whether my latest assignment had been submitted correctly. From a user experience perspective, the situation demonstrates how difficult it can be for beginners to understand the current state of a technical system.
+</p>
+
+<p>
+In contrast, I generally find Canvas easier to navigate when submitting regular assignments. Its assignment pages provide instructions, submission options, and information about whether work has been submitted. These features help me understand my progress and determine what I need to do next.
+</p>
+
+<p>
+GitHub and Canvas serve different purposes, so it would not be fair to expect them to have identical interfaces. GitHub supports complex development workflows, while Canvas focuses on education. However, I believe technical applications could benefit from optional beginner-friendly guidance that explains the relationship between different stages of a task.
+</p>
+
+<p>
+For example, an educational version control interface could provide a progress indicator showing whether changes have been saved, committed, pushed, and submitted for review. This would help beginners understand their current position without removing advanced features needed by experienced developers.
+</p>
+
+<p>
+This experience taught me that usability depends partly on the user's knowledge and previous experience. An interface that feels efficient to an experienced developer may feel overwhelming to someone using it for the first time. Designers should consider both groups rather than assuming that every user has the same technical background.
+</p>
+
+<h3>Accessibility as Part of Designing for Flow</h3>
+
+<p>
+Accessibility is another important consideration because users interact with technology in different ways. Some people use keyboards instead of a mouse, while others depend on screen readers, enlarged text, or alternative input devices. An interface that works well for one person may create significant barriers for another.
+</p>
+
+<p>
+The World Wide Web Consortium (W3C, 2023) provides accessibility guidelines addressing areas such as contrast, keyboard interaction, and the presentation of digital information. These guidelines demonstrate that usability should extend beyond visual appearance and consider different interaction needs.
+</p>
+
+<p>
+For example, a form that communicates errors only through color may be difficult for someone with color vision limitations. Providing a descriptive error message alongside visual indicators makes the information more understandable. Likewise, descriptive alternative text can communicate the purpose of an informative image to someone who cannot see it.
+</p>
+
+<p>
+Responsive design is also relevant to accessibility and flow. Users frequently switch between laptops, tablets, and smartphones. If an image or navigation menu extends beyond a mobile screen, users may need to scroll horizontally or zoom repeatedly. These interruptions make completing tasks more difficult.
+</p>
+
+<p>
+I believe accessibility should be considered throughout the design process rather than treated as an additional requirement at the end. Many accessible design decisions, including clear labels and readable content, can improve the experience for everyone.
+</p>
+
+<h3>Balancing Efficiency, Flexibility, and Ethics</h3>
+
+<p>
+An important challenge in interface design is finding a balance between efficiency and flexibility. Experienced users may prefer shortcuts and faster interaction methods, while beginners may need more explanation. Providing both options can support different levels of experience without making the interface unnecessarily complicated.
+</p>
+
+<p>
+Designers must also consider whether reducing interaction steps is always beneficial. For example, deleting an important document should probably require confirmation, even though confirmation introduces an extra step. Similarly, security-related actions may require additional verification to protect sensitive information.
+</p>
+
+<p>
+These situations demonstrate that good flow does not mean eliminating every interruption. Some interruptions serve a meaningful purpose. The important question is whether each additional step helps the user or creates an unnecessary obstacle.
+</p>
+
+<p>
+I also believe designers have a responsibility to consider the consequences of their decisions. An interface can influence what people notice, how they respond, and which choices they make. Psychological principles should therefore be applied to support user understanding and independence instead of manipulating people into unwanted decisions.
+</p>
+
+<h3>Applying These Principles to Future Projects</h3>
+
+<p>
+In future academic and professional projects, I would begin by identifying the main goals of the intended users. Understanding these goals would help me determine which information and controls deserve priority. I would also consider whether the intended audience includes beginners, experienced users, or people with different accessibility needs.
+</p>
+
+<p>
+After developing an initial design, I would ask people to complete representative tasks without providing detailed instructions. Observing where they hesitate, make mistakes, or ask questions could reveal problems that are not obvious to the designer. Their feedback would help guide improvements to navigation, terminology, and layout.
+</p>
+
+<p>
+I would evaluate success based on more than appearance. Useful indicators could include task completion, the number of avoidable errors, and users' confidence in understanding what happened after an action. Comparing these results before and after design changes would provide practical evidence about whether the experience had improved.
+</p>
+
+<p>
+As someone preparing for a career in information technology and cybersecurity, I can also apply these ideas to security dashboards, authentication systems, and incident reporting tools. These systems often present complex information, and poor visual organization can make important warnings harder to identify. Clear priorities and meaningful feedback could help professionals respond more effectively while reducing confusion.
+</p>
+
+<h3>Conclusion</h3>
+
+<p>
+Designing for flow involves understanding how users perceive information, make decisions, and interact with digital systems. Interface layout and control design influence whether users can complete tasks confidently or become frustrated along the way. The aesthetic-usability effect, Von Restorff effect, and Postel's Law offer valuable perspectives on how visual appeal, selective emphasis, and flexible interaction can improve digital experiences.
+</p>
+
+<p>
+My experiences with GitHub and Canvas have helped me recognize that a functional system is not necessarily an intuitive system. Users need clear guidance, meaningful feedback, and opportunities to recover from mistakes. Accessibility and ethical considerations are equally important because designers should support different users without manipulating their decisions.
+</p>
+
+<p>
+Overall, I believe the most effective digital interfaces are those that allow people to focus on their goals rather than the technology itself. By combining psychological principles with thoughtful design decisions, developers and designers can create experiences that are more understandable, accessible, and efficient.
+</p>
+
+<footer class="module31-references">
+
+<h3>References</h3>
+
+<p>
+Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.
+</p>
+
+<p>
+Nielsen, J. (1994, April 24). <em>10 usability heuristics for user interface design.</em> Nielsen Norman Group.
+<a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a>
+</p>
+
+<p>
+World Wide Web Consortium. (2023, October 5). <em>Web Content Accessibility Guidelines (WCAG) 2.2.</em>
+<a href="https://www.w3.org/TR/2023/REC-WCAG22-20231005/">https://www.w3.org/TR/2023/REC-WCAG22-20231005/</a>
+</p>
+
+<p>
+Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O'Reilly Media.
+</p>
+
+<h3>Image Attribution</h3>
+
+<p>
+Figures 1, 2, and 3 are original SVG illustrations created for this blog with AI assistance. They illustrate user journey design, visual emphasis, and flexible input acceptance.
+</p>
+
+</footer>
+
+</div>
+
+</article>
+
+<!-- End of Module 3.1 Blog Content -->
+
+
          <!-- Module 3.2 Blog Post Starts here -->
+
+         <!-- Module 3.2 Content -->
+
+<article class="module32">
+
+    <h2>Interaction That Matters: Designing Meaningful and Ethical User Experiences</h2>
+
+    <p class="m32-author">By Sakib Hasan | Module 3.2</p>
+
+    <section class="m32-intro">
+
+        <h3>Introduction</h3>
+
+        <p>
+            Every time we interact with a digital platform, we expect
+            something to happen in response to our actions. Whether
+            we are submitting an assignment, purchasing a product,
+            checking our email, or accessing an online account, the
+            way a system responds influences our overall experience.
+            A website may have an attractive appearance, but if it
+            responds slowly, provides confusing instructions, or fails
+            to communicate what is happening, users can quickly become
+            frustrated. This demonstrates that effective user experience
+            design involves much more than visual appearance.
+        </p>
+
+        <p>
+            Interaction design connects users with digital systems
+            through actions, responses, and feedback. A meaningful
+            interaction should help users accomplish their goals while
+            making them feel confident and respected. Timing, motion,
+            responsiveness, and error prevention all contribute to this
+            process. However, designers also have an ethical
+            responsibility to ensure that these techniques are not
+            used to manipulate users into making decisions that are
+            against their interests.
+        </p>
+
+        <p>
+            In this blog post, I explore the relationship between
+            interaction design and user satisfaction through several
+            important UX principles, including the Doherty Threshold,
+            the Peak-End Rule, Jakob's Law, and Hick's Law. I also
+            examine how these principles relate to everyday digital
+            experiences, accessibility, and ethical decision-making.
+        </p>
+
+    </section>
+
+    <div class="m32-columns">
+
+        <div class="m32-column">
+
+            <h3>Timing and the Doherty Threshold</h3>
+
+            <p>
+                One of the most important aspects of interaction design
+                is how quickly a system responds. When users click a
+                button or select an option, they naturally expect some
+                indication that their action has been recognized.
+                Without this feedback, users may assume that the
+                system is not working correctly.
+            </p>
+
+            <p>
+                The Doherty Threshold suggests that maintaining a
+                response time of approximately 400 milliseconds or less
+                can support productivity and uninterrupted interaction
+                between people and computers (Yablonski, 2020b).
+                Although every digital task cannot be completed within
+                this period, designers can provide immediate feedback
+                while longer operations continue in the background.
+            </p>
+
+            <p>
+                Nielsen (1993) also explains that different response
+                times affect how users perceive a system. Very short
+                delays can make an interaction feel immediate, while
+                longer delays may interrupt concentration. When a
+                process takes considerable time, a progress indicator
+                can help users understand that the system is still
+                processing their request.
+            </p>
+
+            <p>
+                As a university student, I frequently use Canvas to
+                access learning materials and submit assignments.
+                When uploading an assignment, I want to know whether
+                the upload has started and whether it has been
+                completed successfully. If the page remains unchanged
+                after I click the submission button, I may become
+                concerned about whether my work was received.
+                A progress indicator followed by a clear confirmation
+                can reduce that uncertainty.
+            </p>
+
+            <p>
+                In my opinion, responsiveness is not simply about
+                making technology faster. It is also about maintaining
+                communication between the system and the user.
+                Even when an operation requires additional time,
+                honest feedback can make the experience more
+                understandable and less stressful.
+            </p>
+
+            <h3>Feedback and User Confidence</h3>
+
+            <p>
+                Feedback allows users to understand the consequences
+                of their actions. It can appear through confirmation
+                messages, changes in button appearance, loading
+                indicators, error notifications, or other visual cues.
+                Effective feedback answers an important question:
+                did the system recognize what I just did?
+            </p>
+
+            <p>
+                GitHub Desktop provides a useful example. When working
+                on a website project, users need to understand the
+                difference between saving a file, committing changes,
+                and pushing those changes to a remote repository.
+                Each operation serves a different purpose, and clear
+                feedback helps users understand their current progress.
+            </p>
+
+            <p>
+                For someone who is still developing technical skills,
+                these indicators are particularly valuable. A beginner
+                may not immediately understand whether a local change
+                has reached GitHub. An interface that clearly
+                communicates the current status can prevent unnecessary
+                confusion and repeated actions.
+            </p>
+
+            <p>
+                Designers should also avoid providing misleading
+                feedback. For example, displaying a success message
+                before an operation has actually finished could create
+                serious problems. Users might close a page believing
+                that their information has been saved when the process
+                is still incomplete. Feedback should accurately
+                represent the condition of the system.
+            </p>
+
+            <h3>Motion and Accessibility</h3>
+
+            <p>
+                Motion is another important element of interaction
+                design. Animations and transitions can guide attention,
+                communicate changes, and help users understand the
+                relationship between different interface elements.
+                A smooth transition between a menu and its content,
+                for example, can make navigation easier to follow.
+            </p>
+
+            <p>
+                However, motion should have a clear purpose.
+                Excessive animation may distract users from important
+                information or make simple tasks unnecessarily
+                complicated. Some people may also experience physical
+                discomfort when exposed to certain types of motion.
+            </p>
+
+            <p>
+                The World Wide Web Consortium (W3C, n.d.) explains
+                through its accessibility guidance that nonessential
+                motion triggered by user interaction should be capable
+                of being disabled under its Level AAA criterion.
+                This highlights the importance of respecting different
+                user needs when designing digital experiences.
+            </p>
+
+            <p>
+                I believe that designers should use animation to
+                support understanding rather than simply decorate a
+                website. A transition that helps explain a change is
+                useful, but an animation that delays access to
+                information may work against the user's actual goal.
+                Providing reduced-motion options can make an interface
+                more inclusive without removing its essential
+                functionality.
+            </p>
+
+        </div>
+
+        <div class="m32-column">
+
+            <h3>The Peak-End Rule and Emotional Experience</h3>
+
+            <p>
+                The Peak-End Rule describes how people often remember
+                experiences based on emotionally significant moments
+                and how those experiences conclude
+                (Yablonski, 2020a).
+                This principle is particularly relevant to digital
+                interactions because one frustrating moment or an
+                unclear ending can influence a user's impression of
+                an entire platform.
+            </p>
+
+            <p>
+                Consider an online shopping experience. A customer
+                may find a product easily, review its description,
+                and proceed through a well-organized checkout process.
+                However, if an unexpected error appears after payment
+                and the customer cannot determine whether the order
+                was successful, that uncertainty may become the most
+                memorable part of the experience.
+            </p>
+
+            <p>
+                On the other hand, a clear confirmation page that
+                displays the order number, payment status, and
+                delivery information can provide a positive ending.
+                It allows customers to leave the website knowing what
+                happened and what they should expect next.
+            </p>
+
+            <p>
+                This principle also applies to academic platforms.
+                Completing a difficult assignment can already involve
+                considerable effort. If the submission process ends
+                with clear confirmation, students can move on to
+                their next responsibility with greater confidence.
+                The final interaction should reduce uncertainty rather
+                than introduce additional stress.
+            </p>
+
+            <p>
+                Nevertheless, designers should not concentrate only
+                on creating an impressive ending. A positive
+                confirmation screen cannot completely compensate for
+                an inaccessible or misleading experience. The entire
+                interaction should remain respectful and functional.
+            </p>
+
+            <h3>Jakob's Law and Familiar Interaction Patterns</h3>
+
+            <p>
+                Jakob's Law suggests that users develop expectations
+                from their experiences with other digital products.
+                Familiar navigation patterns and recognizable
+                interface elements can therefore make a new website
+                easier to understand (Yablonski, 2020c).
+            </p>
+
+            <p>
+                For example, users commonly expect a website logo
+                near the top of a page, navigation links in an
+                identifiable area, and buttons that clearly indicate
+                available actions. When these familiar patterns are
+                maintained, users can spend more time accomplishing
+                their tasks instead of learning an unfamiliar
+                interface.
+            </p>
+
+            <p>
+                This idea is relevant to my own website development
+                activities. When creating a blog page with HTML and
+                CSS, I can organize the header, navigation menu,
+                article content, and footer in a predictable way.
+                A reader should not need detailed instructions simply
+                to locate the main information.
+            </p>
+
+            <p>
+                Familiarity does not mean that every website must
+                look identical. Designers can still introduce
+                creative visual elements while preserving interaction
+                patterns that users already understand. The challenge
+                is to balance innovation with usability.
+            </p>
+
+            <h3>Hick's Law and Decision-Making</h3>
+
+            <p>
+                Hick's Law explains that the time required to make
+                a decision generally increases as the number and
+                complexity of available choices increase
+                (Yablonski, 2020d).
+                This principle helps explain why crowded interfaces
+                can sometimes make simple tasks feel difficult.
+            </p>
+
+            <p>
+                Imagine opening a website that presents numerous
+                buttons, menus, advertisements, and notifications
+                simultaneously. Even if all of these elements are
+                functional, users may struggle to identify which
+                option is most relevant to their current goal.
+            </p>
+
+            <p>
+                Organizing related options into meaningful categories
+                can reduce unnecessary decision-making. A navigation
+                menu with clear labels can be more effective than
+                presenting every available feature at once.
+                Important actions should remain easy to locate without
+                competing with unrelated information.
+            </p>
+
+            <p>
+                At the same time, simplifying an interface should
+                not involve hiding important choices. Users still
+                need access to privacy settings, cancellation options,
+                and other controls that protect their interests.
+                Effective simplicity supports informed decisions
+                rather than restricting them.
+            </p>
+
+            <h3>Error Prevention and Recovery</h3>
+
+            <p>
+                Even experienced users make mistakes. They may select
+                the wrong option, enter incorrect information, or
+                accidentally attempt to delete an important file.
+                A well-designed system should anticipate common
+                mistakes and help users prevent or recover from them.
+            </p>
+
+            <p>
+                Useful error-prevention techniques include validating
+                form inputs, clearly labeling required information,
+                providing confirmation for destructive actions, and
+                allowing users to undo reversible changes. These
+                features help users maintain control over their
+                activities.
+            </p>
+
+            <p>
+                In cybersecurity, error prevention is especially
+                important. A security dashboard might contain controls
+                for blocking network traffic, changing permissions,
+                or responding to security alerts. Accidentally
+                selecting the wrong action could affect other users
+                or interrupt legitimate operations.
+            </p>
+
+            <p>
+                An effective security interface should clearly explain
+                significant actions before they are executed. However,
+                requiring confirmation for every minor action could
+                create unnecessary delays and encourage users to
+                ignore warnings. Designers should determine the
+                seriousness of each action and apply an appropriate
+                level of friction.
+            </p>
+
+        </div>
+
+    </div>
+
+    <h3>Visual Examples of Meaningful Interaction</h3>
+
+    <div class="m32-image-grid">
+
+        <figure>
+            <svg viewBox="0 0 320 220" role="img"
+                 aria-label="An upload progress bar showing 75 percent completion">
+                <rect width="320" height="220" rx="12" fill="#eaf2ff"/>
+                <rect x="25" y="35" width="270" height="150" rx="12"
+                      fill="#ffffff"/>
+                <text x="160" y="70" text-anchor="middle"
+                      font-size="18" fill="#17365d">Uploading Assignment</text>
+                <rect x="45" y="95" width="230" height="20" rx="10"
+                      fill="#dbe4ef"/>
+                <rect x="45" y="95" width="172" height="20" rx="10"
+                      fill="#2563eb"/>
+                <text x="160" y="145" text-anchor="middle"
+                      font-size="24" fill="#17365d">75%</text>
+            </svg>
+            <figcaption>
+                Figure 1. Progress indicators provide feedback during
+                longer operations. Original illustration created with SVG.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <svg viewBox="0 0 320 220" role="img"
+                 aria-label="A successful submission confirmation screen">
+                <rect width="320" height="220" rx="12" fill="#e8f5ec"/>
+                <circle cx="160" cy="75" r="37" fill="#15803d"/>
+                <path d="M140 75 L154 89 L182 60"
+                      stroke="white" stroke-width="9"
+                      fill="none" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <text x="160" y="140" text-anchor="middle"
+                      font-size="20" fill="#14532d">Submission Successful</text>
+                <text x="160" y="168" text-anchor="middle"
+                      font-size="13" fill="#14532d">Your work has been received.</text>
+            </svg>
+            <figcaption>
+                Figure 2. Clear confirmation creates a reassuring
+                ending. Original illustration created with SVG.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <svg viewBox="0 0 320 220" role="img"
+                 aria-label="Privacy dialog offering equal accept and reject choices">
+                <rect width="320" height="220" rx="12" fill="#fff4df"/>
+                <rect x="20" y="30" width="280" height="165" rx="12"
+                      fill="#ffffff"/>
+                <text x="160" y="65" text-anchor="middle"
+                      font-size="20" fill="#374151">Privacy Choices</text>
+                <text x="160" y="95" text-anchor="middle"
+                      font-size="13" fill="#374151">Choose your preferences.</text>
+                <rect x="40" y="120" width="112" height="40" rx="7"
+                      fill="#374151"/>
+                <rect x="168" y="120" width="112" height="40" rx="7"
+                      fill="#374151"/>
+                <text x="96" y="145" text-anchor="middle"
+                      font-size="13" fill="#ffffff">Accept</text>
+                <text x="224" y="145" text-anchor="middle"
+                      font-size="13" fill="#ffffff">Reject</text>
+            </svg>
+            <figcaption>
+                Figure 3. Balanced privacy choices support ethical
+                decision-making. Original illustration created with SVG.
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <section class="m32-reflection">
+
+        <h3>Ethical Design and Persuasive Techniques</h3>
+
+        <p>
+            Interaction design can influence human behavior, which
+            creates both opportunities and responsibilities. Persuasive
+            techniques can encourage beneficial activities, such as
+            enabling multifactor authentication, completing educational
+            tasks, or developing healthier habits. However, similar
+            techniques can also be used to manipulate users.
+        </p>
+
+        <p>
+            The Federal Trade Commission (FTC, 2022) discusses
+            deceptive interface practices known as dark patterns.
+            These practices can interfere with informed consumer
+            choices by concealing important information, complicating
+            cancellation processes, or encouraging unnecessary
+            disclosure of personal information.
+        </p>
+
+        <p>
+            One example is a subscription service that allows
+            customers to register through a simple process but makes
+            cancellation extremely difficult. Another example is a
+            privacy notification that highlights the acceptance
+            button while making the rejection option difficult to
+            identify. These designs may benefit an organization
+            financially, but they do not necessarily respect the
+            interests of the user.
+        </p>
+
+        <p>
+            Ethical interaction design should provide users with
+            understandable information and meaningful choices.
+            Designers should consider whether a person would still
+            make the same decision if all relevant information were
+            presented clearly. If the success of an interface depends
+            on users overlooking important details, its design
+            deserves careful reconsideration.
+        </p>
+
+        <p>
+            I believe transparency is particularly important when
+            personal information and cybersecurity are involved.
+            Users should understand why information is being collected,
+            what permissions they are granting, and how their
+            decisions may affect their privacy. Security should
+            protect people without relying on unnecessary pressure
+            or confusion.
+        </p>
+
+        <h3>Personal Reflection and Practical Application</h3>
+
+        <p>
+            Studying interaction design has encouraged me to look
+            differently at the digital platforms I use regularly.
+            Previously, it was easy to focus mainly on whether a
+            website looked professional or whether its features
+            worked. I now recognize that the smaller details of
+            interaction can have an equally important influence on
+            how users understand and experience technology.
+        </p>
+
+        <p>
+            My experience working with HTML, CSS, Canvas, and GitHub
+            has also helped me understand why clear navigation and
+            feedback matter. When learning a new technical process,
+            uncertainty can become a significant obstacle. A clear
+            instruction, recognizable button, or accurate status
+            message can make a complicated task feel more manageable.
+        </p>
+
+        <p>
+            As someone interested in cybersecurity, I see a strong
+            connection between usability and security. A system may
+            offer powerful security features, but those features
+            become less effective if users cannot understand or
+            operate them correctly. Designing understandable
+            authentication processes, meaningful security warnings,
+            and accessible dashboards can help users make safer
+            decisions.
+        </p>
+
+        <p>
+            I also recognize that different users may have different
+            expectations. An experienced technical professional may
+            prefer detailed controls, while a beginner may benefit
+            from additional explanations. A person using assistive
+            technology may interact with a website differently from
+            someone using a mouse. Good interaction design should
+            consider these differences instead of assuming that
+            everyone approaches technology in the same way.
+        </p>
+
+        <p>
+            When developing future digital projects, I want to pay
+            closer attention to the relationship between user
+            actions and system responses. I would evaluate whether
+            feedback is timely, whether navigation is predictable,
+            whether important choices are visible, and whether
+            unnecessary motion can be avoided. These considerations
+            can improve both usability and trust.
+        </p>
+
+        <h3>Conclusion</h3>
+
+        <p>
+            Meaningful interaction design combines technical
+            functionality with an understanding of human behavior.
+            The Doherty Threshold demonstrates the importance of
+            responsive systems, while the Peak-End Rule highlights
+            how significant moments and endings shape user memories.
+            Jakob's Law and Hick's Law further explain the benefits
+            of familiar patterns and manageable choices.
+        </p>
+
+        <p>
+            Feedback, motion, and error prevention should work together
+            to help users complete their tasks confidently.
+            Nevertheless, these techniques must be applied ethically.
+            Designers should respect accessibility requirements,
+            protect user autonomy, communicate honestly, and avoid
+            deceptive practices.
+        </p>
+
+        <p>
+            Ultimately, I believe a successful digital interaction
+            is one that allows people to accomplish their goals
+            without unnecessary confusion, frustration, or pressure.
+            Technology should adapt to human needs rather than
+            expecting people to adapt to every limitation of a
+            digital system. By combining usability, accessibility,
+            responsiveness, and ethical responsibility, designers
+            can create experiences that are not only efficient but
+            also trustworthy and meaningful.
+        </p>
+
+    </section>
+
+    <footer class="m32-references">
+
+        <h3>References</h3>
+
+        <p>
+            Federal Trade Commission. (2022).
+            <em>Bringing dark patterns to light.</em>
+            <a href="https://www.ftc.gov/reports/bringing-dark-patterns-light">
+                https://www.ftc.gov/reports/bringing-dark-patterns-light
+            </a>
+        </p>
+
+        <p>
+            Nielsen, J. (1993).
+            <em>Response times: The 3 important limits.</em>
+            Nielsen Norman Group.
+            <a href="https://www.nngroup.com/articles/response-times-3-important-limits/">
+                https://www.nngroup.com/articles/response-times-3-important-limits/
+            </a>
+        </p>
+
+        <p>
+            World Wide Web Consortium. (n.d.).
+            <em>Understanding SC 2.3.3: Animation from interactions.</em>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions">
+                https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+            </a>
+        </p>
+
+        <p>
+            Yablonski, J. (2020a). Peak-end rule.
+            In <em>Laws of UX.</em> O'Reilly Media.
+            <a href="https://www.oreilly.com/library/view/laws-of-ux/9781492055303/ch06.html">
+                Read chapter
+            </a>
+        </p>
+
+        <p>
+            Yablonski, J. (2020b). Doherty threshold.
+            In <em>Laws of UX.</em> O'Reilly Media.
+            <a href="https://www.oreilly.com/library/view/laws-of-ux/9781492055303/ch10.html">
+                Read chapter
+            </a>
+        </p>
+
+        <p>
+            Yablonski, J. (2020c). Jakob's law.
+            In <em>Laws of UX.</em> O'Reilly Media.
+            <a href="https://lawsofux.com/jakobs-law/">
+                Jakob's Law
+            </a>
+        </p>
+
+        <p>
+            Yablonski, J. (2020d). Hick's law.
+            In <em>Laws of UX.</em> O'Reilly Media.
+            <a href="https://lawsofux.com/hicks-law/">
+                Hick's Law
+            </a>
+        </p>
+
+        <h3>Image Attribution</h3>
+
+        <p>
+            Figures 1–3 are AI-assisted SVG illustrations created
+            specifically for this blog post. They represent progress
+            feedback, successful completion, and ethical privacy
+            choices. No third-party photographs were used.
+        </p>
+
+    </footer>
+
+</article>
+
+<!-- End of Module 3.2 Blog --> 
 
       </main>
 <!-- Page Footer  -->
