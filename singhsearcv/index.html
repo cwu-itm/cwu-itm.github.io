@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
-      <title>Vimish V Singhsearch | Portfolio</title>
-   </head>
-   <body>
-<!-- Page Header  -->
-      <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="css/styles.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Vimish V Singhsearch | Portfolio</title>
+</head>
+<body>
+<!-- Page Header -->
+<header class="page-header">
+   <h1 class="logo">Vimish's BLOG</h1>
+   <nav id="main-nav">
+      <a href="#module-1-1">Module 1.1</a>
+      <a href="#module-1-2">Module 1.2</a>
+      <a href="#module-3-1">Module 3.1</a>
+      <a href="#module-3-2">Module 3.2</a>
+      <a href="#">About</a>
+      <a href="#">Subscribe</a>
+   </nav>
+   <!-- Place the hamburger icon here -->
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+   </a>
+</header>
 <!-- Main Content Area  -->
       <main>
          <!-- Module 1.1 Blog Post Starts Here-->
@@ -472,11 +485,129 @@
          </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
+         <article id="module-3-2">
+            <header class="article-header">
+               <h2>Module 3.2 Blog Post</h2>
+            </header>
+            <h3>Timing, Feedback, and Memory: How Interaction Patterns Shape Ethical User Experience</h3>
 
+            <p>A loading spinner that appears the instant a button is pressed can feel reassuring. The same spinner that lingers for three seconds while nothing else happens can feel like a broken promise. These small differences in timing, motion, and feedback do more than affect efficiency; they shape how users feel in the moment and how they remember the experience afterward. Drawing on Jeff Johnson’s <em>Designing with the Mind in Mind</em> (Johnson, 2020) and Jon Yablonski’s <em>Laws of UX</em> (Yablonski, 2024) as the two course readings, plus Jakob Nielsen’s (2020) work on response times and Lexie Kane’s (2024) analysis of the Peak-End Rule as the two outside sources, this post examines how well-designed interaction patterns create meaningful experiences and where those same patterns become ethically problematic when used for persuasion.</p>
+
+            <div class="image-bar">
+               <figure>
+                  <img src="images/A white loading bar with five filled segments on a black wall.jpg" alt="A white loading bar with five filled segments on a black wall">
+                  <figcaption>Photo by Mike van den Bos on Unsplash (<a href="https://unsplash.com/photos/loading-bar-on-black-wall-jf1EomjlQi0">Van Den Bos, 2020</a>).</figcaption>
+               </figure>
+            </div>
+
+            <p>Clear visual feedback, such as a simple loading bar, helps users feel the system is responding even before full results arrive (<a href="https://unsplash.com/photos/loading-bar-on-black-wall-jf1EomjlQi0">Van Den Bos, 2020</a>). When this feedback appears quickly, it supports a sense of control.</p>
+
+            <h4>Feedback Timing, Responsiveness, and the Feeling of Control</h4>
+
+            <p>Users judge system quality largely by how quickly and clearly the interface responds. Nielsen (2020) identifies three practical limits: 0.1 second for the sensation of instantaneous reaction, 1 second for maintaining flow of thought, and 10 seconds before attention typically drifts. Johnson (2020) grounds these limits in human perceptual constants and shows that feedback arriving inside the first tenth of a second prevents users from wondering whether their action registered. Yablonski (2024) consolidates the research under the Doherty Threshold: when responses stay under roughly 400 milliseconds, users remain productive; beyond that point cognitive load rises and frustration grows.</p>
+
+            <p>In my own experience using a university registration system last term, the page would freeze for several seconds after I clicked “Add Course.” No spinner appeared. I repeatedly clicked, generating duplicate requests and an eventual error. The absence of immediate feedback turned a simple task into anxiety. When a later redesign added a subtle button state change and a progress indicator within 200 milliseconds, the same action felt reliable even though the actual processing time had not changed. The difference was entirely in perceived responsiveness.</p>
+
+            <p>Three UX laws that directly address timing and motion are:</p>
+            <div class="flex-list">
+               <dl>
+                  <dt>Doherty Threshold</dt>
+                  <dd>Sets approximately 400 milliseconds as the boundary for productive flow (Yablonski, 2024).</dd>
+               </dl>
+               <dl>
+                  <dt>Fitts’ Law</dt>
+                  <dd>Larger, closer targets reduce the time and effort of pointing (Johnson, 2020).</dd>
+               </dl>
+               <dl>
+                  <dt>Peak-End Rule</dt>
+                  <dd>The most intense moment and the final moment dominate memory (Kane, 2024; Yablonski, 2024).</dd>
+               </dl>
+            </div>
+
+            <h4>Pointing, Error Prevention, and Recovery</h4>
+
+            <p>Even a fast system feels clumsy if targets are hard to hit. Johnson (2020) presents Fitts’ Law and the Steering Law as quantitative guides for placing and sizing controls. Larger targets and shorter distances lower acquisition time; constrained paths such as cascading menus increase it. On a touch device I tested for a class project, small icons placed near the center of the screen required repeated taps. Moving the same icons to the bottom edge and increasing their size eliminated most errors without any change in the underlying code.</p>
+
+            <div class="image-bar">
+               <figure>
+                  <img src="images/a person's hand on a computer mouse.jpg" alt="A person’s hand resting on a computer mouse">
+                  <figcaption>Photo by ELLA DON on Unsplash (<a href="https://unsplash.com/photos/a-persons-hand-on-a-computer-mouse-nsJeucVd7E0">ELLA DON, 2021</a>).</figcaption>
+               </figure>
+            </div>
+
+            <p>Everyday motor actions, such as using a mouse, are governed by Fitts’ Law. Larger and closer targets reduce both time and error (<a href="https://unsplash.com/photos/a-persons-hand-on-a-computer-mouse-nsJeucVd7E0">ELLA DON, 2021</a>).</p>
+
+            <p>Slips, unintentional errors of execution, are especially sensitive to timing and feedback. Johnson (2020) catalogs capture slips, mode slips, and motor slips. Immediate visual confirmation reduces several of these because the user sees the result of the action before proceeding. Delayed or missing feedback allows the slip to compound.</p>
+
+            <div class="image-bar">
+               <figure>
+                  <img src="images/Red error messages on a black computer screen indicating blocked web resources.jpg" alt="Red error messages displayed on a black computer screen">
+                  <figcaption>Photo by David Pupăză on Unsplash (<a href="https://unsplash.com/photos/error-messages-on-computer-screen-heNwUmEtZzo">Pupăză, 2021</a>).</figcaption>
+               </figure>
+            </div>
+
+            <p>Stacked red error messages create a strong negative peak when recovery options are weak or delayed (<a href="https://unsplash.com/photos/error-messages-on-computer-screen-heNwUmEtZzo">Pupăză, 2021</a>). Better designs prevent the error or make recovery immediate.</p>
+
+            <h4>Emotional Memory and the Peak-End Rule</h4>
+
+            <p>People do not average every moment of an interaction. Kane (2024) and Yablonski (2024) explain the Peak-End Rule: retrospective evaluation is dominated by the emotional peak and the final moment. A checkout flow that runs smoothly until a surprise shipping fee appears at the last step creates a strong negative peak and a poor ending, even if the earlier steps were efficient. I experienced this recently when booking a flight; the entire process felt quick until the final screen revealed an unexpected baggage fee. That single moment overwrote the earlier convenience.</p>
+
+         <div class="image-bar">
+            <figure>
+               <img src="images/A black circular loading icon with dots.jpg" alt="Black circular loading icon with dots">
+               <figcaption>Illustration by Boxicons on Unsplash (<a href="https://unsplash.com/illustrations/a-black-circular-loading-icon-with-dots-gFg7yTRtHhs">Boxicons, 2026</a>).</figcaption>
+            </figure>
+         </div>
+
+            <p>A familiar loading spinner is neutral on its own. Its duration and what follows determine whether it creates a mild or negative peak (<a href="https://unsplash.com/illustrations/a-black-circular-loading-icon-with-dots-gFg7yTRtHhs">Boxicons, 2026</a>).</p>
+
+            <h4>Ethical Design When Persuasive Techniques Meet Timing</h4>
+
+            <p>The same laws that improve usability can be used to increase engagement at the user’s expense. Yablonski (2024) discusses variable-ratio rewards, infinite scroll, and notifications timed to interrupt moments of boredom. These techniques exploit the Doherty Threshold by delivering immediate visual rewards and the Peak-End Rule by engineering frequent small peaks. A social media feed that loads the next post in under 400 milliseconds and ends each session with a “You’re all caught up” message that is quickly followed by new content keeps users inside a loop of low-friction peaks.</p>
+
+         <div class="image-bar">
+            <figure>
+               <img src="images/a person is pointing at a tablet screen.jpg" alt="A person pointing at a tablet screen">
+               <figcaption>Photo by Tom Spentys on Unsplash (<a href="https://unsplash.com/photos/a-person-is-pointing-at-a-tablet-screen-OSpFXuGfj4U">Claes, 2024</a>).</figcaption>
+            </figure>
+         </div>
+
+            <p>Direct pointing reinforces the expectation of user agency. Ethical design preserves that sense of control rather than removing friction solely to increase engagement (<a href="https://unsplash.com/photos/a-person-is-pointing-at-a-tablet-screen-OSpFXuGfj4U">Claes, 2024</a>).</p>
+
+            <h4>Conclusion</h4>
+
+            <p>Well-designed interaction patterns, immediate feedback inside the 0.1 second and 400 millisecond windows, targets sized and placed according to Fitts’ Law, error prevention that stops slips before they occur, and endings that leave a positive or neutral memory, shape both performance and feeling. The course readings (Johnson, 2020; Yablonski, 2024) and the outside sources (Nielsen, 2020; Kane, 2024) converge on the same insight: users experience interfaces through time, motion, and memory rather than through specifications. When those elements are aligned with user goals, the result is competence and trust. When they are aligned only with engagement metrics, the result can be competent yet ethically compromised.</p>
+
+            <footer class="article-footer">
+               <h3>Sources:</h3>
+               <ol>
+                  <li>Boxicons. (2026, April 15). <em>A black circular loading icon with dots</em>. Unsplash. <a href="https://unsplash.com/illustrations/a-black-circular-loading-icon-with-dots-gFg7yTRtHhs">https://unsplash.com/illustrations/a-black-circular-loading-icon-with-dots-gFg7yTRtHhs</a></li>
+                  <li>Claes, T. (2024, February 1). <em>A person is pointing at a tablet screen</em>. Unsplash. <a href="https://unsplash.com/photos/a-person-is-pointing-at-a-tablet-screen-OSpFXuGfj4U">https://unsplash.com/photos/a-person-is-pointing-at-a-tablet-screen-OSpFXuGfj4U</a></li>
+                  <li>ELLA DON, E. (2021, November 9). <em>A person’s hand on a computer mouse</em>. Unsplash. <a href="https://unsplash.com/photos/a-persons-hand-on-a-computer-mouse-nsJeucVd7E0">https://unsplash.com/photos/a-persons-hand-on-a-computer-mouse-nsJeucVd7E0</a></li>
+                  <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (2nd ed.). Morgan Kaufmann.</li>
+                  <li>Kane, L. (2024, February 2). The peak-end rule: How impressions become memories. <em>Nielsen Norman Group</em>. <a href="https://www.nngroup.com/articles/peak-end-rule/">https://www.nngroup.com/articles/peak-end-rule/</a></li>
+                  <li>Nielsen, J. (2020, May 16). Website response times. <em>Nielsen Norman Group</em>. <a href="https://www.nngroup.com/articles/website-response-times/">https://www.nngroup.com/articles/website-response-times/</a></li>
+                  <li>Pupăză, D. (2021, June 6). <em>Red error messages on a black computer screen indicating blocked web resources</em>. Unsplash. <a href="https://unsplash.com/photos/error-messages-on-computer-screen-heNwUmEtZzo">https://unsplash.com/photos/error-messages-on-computer-screen-heNwUmEtZzo</a></li>
+                  <li>Van Den Bos, M. (2020, December 8). <em>A white loading bar with five filled segments on a black wall</em>. Unsplash. <a href="https://unsplash.com/photos/loading-bar-on-black-wall-jf1EomjlQi0">https://unsplash.com/photos/loading-bar-on-black-wall-jf1EomjlQi0</a></li>
+                  <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em>. O’Reilly Media.</li>
+                  <li>Zac, T. (2020, January 25). <em>Green white and yellow car print textile</em>. Unsplash. <a href="https://unsplash.com/photos/green-white-and-yellow-car-print-textile-rH6WSz0KN7I">https://unsplash.com/photos/green-white-and-yellow-car-print-textile-rH6WSz0KN7I</a></li>
+               </ol>
+            </footer>
+         </article>
       </main>
 <!-- Page Footer  -->
       <footer class="page-footer">
        <p>Copyright &copy; 2025</p>
       </footer>
+   <script>
+   function myFunction() {
+      var x = document.getElementById("main-nav");
+      if (x.style.display === "block") {
+         x.style.display = "none";
+      } else {
+         x.style.display = "block";
+      }
+   }
+   </script>
    </body>
 </html>
