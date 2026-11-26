@@ -586,3 +586,42 @@ figcaption {
         display: none !important;
     }
 }
+
+/* Module 3.1 figures and references */
+.blog-card[aria-labelledby="blog-31-heading"] {
+    border-top-color: var(--blue-gray);
+}
+
+#module-3-1 .module-31-content-note {
+    color: var(--muted-text);
+}
+
+#module-3-1 .module-31-figure {
+    margin: 2rem 0;
+}
+
+#module-3-1 .module-31-error {
+    max-width: 55rem;
+}
+
+#module-3-1 .module-31-figure a {
+    display: block;
+}
+
+#module-3-1 .module-31-figure img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+}
+
+#module-3-1 .article-footer li {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+    #module-3-1 .module-31-figure {
+        margin: 1.5rem 0;
+    }
+}
