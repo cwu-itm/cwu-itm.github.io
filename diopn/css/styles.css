@@ -52,3 +52,156 @@ ol {
     font-size:.875rem;
 
 }
+/* ======================================
+   Module 3.2 - Interaction That Matters
+   ====================================== */
+
+.module-3-2 {
+    background-color: #ffffff;
+}
+
+.module32-heading {
+    background-image:
+        linear-gradient(rgba(20, 45, 70, 0.75), rgba(20, 45, 70, 0.75)),
+        url("../images/laptop user.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.module32-heading h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.module32-heading p {
+    color: #ffffff;
+}
+
+.module32-content {
+    padding: 1rem;
+}
+
+/* Two-column Flexbox layout */
+.module32-columns {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.module32-column {
+    flex: 1;
+}
+
+/* Three-image Grid */
+.module32-image-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #e8eef4;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.module32-image-bar figure {
+    margin: 0;
+}
+
+.module32-image-bar img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.module32-image-bar figcaption {
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.module32-sources {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.module32-sources p {
+    font-size: 0.875rem;
+}
+
+/* Mobile layout */
+@media (max-width: 48rem) {
+    .module32-columns {
+        flex-direction: column;
+    }
+
+    .module32-image-bar {
+        grid-template-columns: 1fr;
+    }
+}
+/* Main Header, Logo, and Navigation */
+
+.site-header {
+    background-image:
+        linear-gradient(rgba(20, 45, 70, 0.78), rgba(20, 45, 70, 0.78)),
+        url("../images/laptop user.png");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #ffffff;
+}
+
+.logo-nkd {
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    padding: 0.35rem 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #ffffff;
+    color: #1e4f7a;
+}
+
+@media (max-width: 48rem) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+}
